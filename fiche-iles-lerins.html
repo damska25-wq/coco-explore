@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Îles de Lérins — Coco Explore</title>
+<meta name="description" content="Sainte-Marguerite et Saint-Honorat, au large de Cannes : toutes les plages et criques des deux îles sont accessibles aux chiens en laisse.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg style="display:none">
+  <defs>
+    <symbol id="i-paw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="16.5" rx="5.2" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2" ry="2.6"/><ellipse cx="10" cy="6.5" rx="2" ry="2.6"/><ellipse cx="14" cy="6.5" rx="2" ry="2.6"/><ellipse cx="18.5" cy="9.5" rx="2" ry="2.6"/>
+    </symbol>
+    <symbol id="i-leash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="6" cy="6" r="3"/><path d="M8.5 8 C13 11, 10 14, 14 17"/><circle cx="17" cy="19" r="2.3"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/>
+    </symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.5c3.5 4.2 6 7.4 6 10.3a6 6 0 0 1-12 0c0-2.9 2.5-6.1 6-10.3z"/>
+    </symbol>
+    <symbol id="i-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M9.5 16V8h3a2.5 2.5 0 0 1 0 5h-3"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12.5l5 5L20 6.5"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><svg class="paw"><use href="#i-paw"/></svg> Coco Explore</a>
+    <nav class="site-nav">
+      <a href="index.html#plages">Plages</a>
+      <a href="index.html#cote-azur">Côte d'Azur</a>
+      <a href="index.html#balades">Balades</a>
+      <a href="index.html#hebergements">Hébergements</a>
+      <a href="index.html#toiletteurs">Toiletteurs</a>
+      <a href="index.html#lacs">Lacs</a>
+    </nav>
+  </div>
+</header>
+
+<section class="fiche-hero" style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/La%20plage%20de%20tahiti2011.jpg')">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Coco Explore</a> / <a href="index.html#cote-azur">Côte d'Azur</a> / Îles de Lérins</div>
+    <span class="tag">Plage</span>
+    <h1>Îles de Lérins</h1>
+    <span class="lieu">Sainte-Marguerite et Saint-Honorat, au large de Cannes</span>
+  </div>
+</section>
+
+<section class="info-strip">
+  <div class="wrap info-grid">
+    <div class="info-item">
+      <svg class="icon"><use href="#i-leash"/></svg>
+      <div><span class="label">Chiens</span><span class="value">Autorisés partout, en laisse</span></div>
+    </div>
+    <div class="info-item">
+      <svg class="icon"><use href="#i-clock"/></svg>
+      <div><span class="label">Accès</span><span class="value">Navette maritime depuis Cannes</span></div>
+    </div>
+    <div class="info-item">
+      <svg class="icon"><use href="#i-drop"/></svg>
+      <div><span class="label">Spots</span><span class="value">Plus de 28 criques recensées</span></div>
+    </div>
+    <div class="info-item">
+      <svg class="icon"><use href="#i-parking"/></svg>
+      <div><span class="label">Affluence</span><span class="value">Élevée en été</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap avis" data-fiche="iles-lerins" id="avis">
+  <div class="avis-card">
+    <div class="avis-head">
+      <h2>Avis &amp; photos</h2>
+      <p>Partage ton passage avec Coco : quelques mots, une photo si tu en as une.</p>
+    </div>
+
+    <form class="avis-form" novalidate>
+      <div class="avis-form-row">
+        <input type="text" name="name" placeholder="Ton prénom" maxlength="60" required>
+        <label class="avis-photo-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <span>Photo</span>
+          <input type="file" name="photo" accept="image/*" hidden>
+        </label>
+      </div>
+      <textarea name="message" rows="2" maxlength="500" placeholder="Comment ça s'est passé avec ton chien ?" required></textarea>
+      <div class="avis-preview" hidden>
+        <img alt="Aperçu de la photo">
+        <button type="button" aria-label="Retirer la photo">×</button>
+      </div>
+      <button type="submit" class="avis-submit">Publier l'avis</button>
+      <p class="avis-status" role="status"></p>
+    </form>
+
+    <div class="avis-list">
+      <p class="avis-empty">Sois le premier à partager ton avis sur ce lieu.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap fiche-body">
+  <div>
+    <h2>L'ambiance</h2>
+    <p>Un vrai paradis pour chiens sur la Côte d'Azur : sur les deux îles de Lérins, toutes les plages et criques sont accessibles aux chiens tenus en laisse. Plus de 28 spots ont été recensés sur Sainte-Marguerite et Saint-Honorat, de quoi varier les balades à chaque visite.</p>
+
+    <h2>Ce qu'il faut savoir avant d'y aller</h2>
+    <p>L'accès se fait uniquement en navette maritime depuis le port de Cannes — pense à vérifier que la compagnie choisie accepte les chiens à bord, et prévois d'arriver tôt en été pour éviter la foule sur les premières traversées.</p>
+    <div class="callout">Le conseil de Coco : Sainte-Marguerite est plus grande et plus sauvage, idéale pour une vraie balade en forêt avant la baignade — Saint-Honorat, avec son abbaye, est plus tranquille mais moins étendue.</div>
+
+    <h2>Aux alentours</h2>
+    <p>Le port de Cannes, point de départ des navettes, regorge de terrasses où faire une pause avant ou après la traversée.</p>
+  </div>
+
+  <aside>
+    <div class="sidebar-card">
+      <h3>À vérifier sur place</h3>
+      <ul>
+        <li><svg><use href="#i-check"/></svg> Toutes les compagnies de navette n'acceptent pas forcément les chiens — à confirmer à la réservation.</li>
+        <li><svg><use href="#i-check"/></svg> Peu d'ombre sur certaines criques en été, pense à prévoir de l'eau pour ton chien.</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h3>Localisation</h3>
+      <ul>
+        <li><svg><use href="#i-pin"/></svg> Îles de Lérins, au large de Cannes (06)</li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="brand"><svg class="paw" width="20" height="20"><use href="#i-paw"/></svg> Coco Explore</span>
+    <span><a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a></span>
+    <span>Guide dog-friendly du Var, avec amour 🐾</span>
+  </div>
+</footer>
+
+<script src="avis.js" defer></script>
+</body>
+</html>

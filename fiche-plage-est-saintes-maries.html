@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plage de l'Est, Saintes-Maries-de-la-Mer — Coco Explore</title>
+<meta name="description" content="En Camargue, les chiens en laisse sont autorisés toute l'année sur les deux premiers kilomètres de la plage de l'Est, au-delà du canal.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg style="display:none">
+  <defs>
+    <symbol id="i-paw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="16.5" rx="5.2" ry="4.2"/><ellipse cx="5.5" cy="9.5" rx="2" ry="2.6"/><ellipse cx="10" cy="6.5" rx="2" ry="2.6"/><ellipse cx="14" cy="6.5" rx="2" ry="2.6"/><ellipse cx="18.5" cy="9.5" rx="2" ry="2.6"/>
+    </symbol>
+    <symbol id="i-leash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="6" cy="6" r="3"/><path d="M8.5 8 C13 11, 10 14, 14 17"/><circle cx="17" cy="19" r="2.3"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.5L2.5 20h19L12 3.5z"/><line x1="12" y1="10" x2="12" y2="14.5"/><circle cx="12" cy="17" r="0.4" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.5c3.5 4.2 6 7.4 6 10.3a6 6 0 0 1-12 0c0-2.9 2.5-6.1 6-10.3z"/>
+    </symbol>
+    <symbol id="i-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M9.5 16V8h3a2.5 2.5 0 0 1 0 5h-3"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><svg class="paw"><use href="#i-paw"/></svg> Coco Explore</a>
+    <nav class="site-nav">
+      <a href="index.html#plages">Plages</a>
+      <a href="index.html#cote-azur">Côte d'Azur</a>
+      <a href="index.html#balades">Balades</a>
+      <a href="index.html#hebergements">Hébergements</a>
+      <a href="index.html#toiletteurs">Toiletteurs</a>
+      <a href="index.html#lacs">Lacs</a>
+    </nav>
+  </div>
+</header>
+
+<section class="fiche-hero" style="background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/La%20plage%20de%20tahiti2011.jpg')">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Coco Explore</a> / <a href="index.html#cote-azur">Côte d'Azur</a> / Saintes-Maries-de-la-Mer</div>
+    <span class="tag">Plage</span>
+    <h1>Plage de l'Est</h1>
+    <span class="lieu">Saintes-Maries-de-la-Mer, Camargue</span>
+  </div>
+</section>
+
+<section class="info-strip">
+  <div class="wrap info-grid">
+    <div class="info-item">
+      <svg class="icon"><use href="#i-leash"/></svg>
+      <div><span class="label">Chiens</span><span class="value">Autorisés en laisse, toute l'année</span></div>
+    </div>
+    <div class="info-item">
+      <svg class="icon"><use href="#i-alert"/></svg>
+      <div><span class="label">Zone</span><span class="value">2 premiers km après le canal</span></div>
+    </div>
+    <div class="info-item">
+      <svg class="icon"><use href="#i-drop"/></svg>
+      <div><span class="label">Nature</span><span class="value">Plage sauvage, dunes</span></div>
+    </div>
+    <div class="info-item">
+      <svg class="icon"><use href="#i-parking"/></svg>
+      <div><span class="label">Parking</span><span class="value">Aucun parking dédié signalé</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap avis" data-fiche="plage-est-saintes-maries" id="avis">
+  <div class="avis-card">
+    <div class="avis-head">
+      <h2>Avis &amp; photos</h2>
+      <p>Partage ton passage avec Coco : quelques mots, une photo si tu en as une.</p>
+    </div>
+
+    <form class="avis-form" novalidate>
+      <div class="avis-form-row">
+        <input type="text" name="name" placeholder="Ton prénom" maxlength="60" required>
+        <label class="avis-photo-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <span>Photo</span>
+          <input type="file" name="photo" accept="image/*" hidden>
+        </label>
+      </div>
+      <textarea name="message" rows="2" maxlength="500" placeholder="Comment ça s'est passé avec ton chien ?" required></textarea>
+      <div class="avis-preview" hidden>
+        <img alt="Aperçu de la photo">
+        <button type="button" aria-label="Retirer la photo">×</button>
+      </div>
+      <button type="submit" class="avis-submit">Publier l'avis</button>
+      <p class="avis-status" role="status"></p>
+    </form>
+
+    <div class="avis-list">
+      <p class="avis-empty">Sois le premier à partager ton avis sur ce lieu.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap fiche-body">
+  <div>
+    <h2>L'ambiance</h2>
+    <p>Aux Saintes-Maries-de-la-Mer, cœur touristique de la Camargue, les chiens peuvent profiter des plages sauvages situées à l'extérieur du village — plus calmes que le front de mer central, entre sable, dunes et horizon plat à perte de vue.</p>
+
+    <h2>Ce qu'il faut savoir avant d'y aller</h2>
+    <p>La tolérance s'applique toute l'année en laisse sur les deux premiers kilomètres de la plage de l'Est, au-delà du canal. L'accès peut néanmoins être restreint en pleine saison estivale par arrêté municipal : mieux vaut vérifier les dates et horaires exacts auprès de la mairie avant de t'y rendre en juillet-août.</p>
+    <div class="callout">Le conseil de Coco : le Parc ornithologique du Pont de Gau, tout proche, mérite un détour pour observer les flamants roses — vérifie sur place s'il accueille les chiens.</div>
+
+    <h2>Aux alentours</h2>
+    <p>Le village des Saintes-Maries-de-la-Mer accueille bien les chiens : les arènes, certaines croisières de découverte de la Camargue et le petit train touristique les acceptent.</p>
+  </div>
+
+  <aside>
+    <div class="sidebar-card">
+      <h3>À vérifier sur place</h3>
+      <ul>
+        <li><svg><use href="#i-alert"/></svg> L'accès peut être restreint en haute saison — se renseigner en mairie avant de partir en été.</li>
+        <li><svg><use href="#i-check"/></svg> Apporte de l'eau, le soleil camarguais tape fort et l'ombre est rare.</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h3>Localisation</h3>
+      <ul>
+        <li><svg><use href="#i-pin"/></svg> Plage de l'Est, 13460 Saintes-Maries-de-la-Mer</li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="brand"><svg class="paw" width="20" height="20"><use href="#i-paw"/></svg> Coco Explore</span>
+    <span><a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a></span>
+    <span>Guide dog-friendly du Var, avec amour 🐾</span>
+  </div>
+</footer>
+
+<script src="avis.js" defer></script>
+</body>
+</html>
