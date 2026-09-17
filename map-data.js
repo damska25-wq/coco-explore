@@ -951,7 +951,6 @@ window.COCO_LIEUX = [
 // (le nom du fichier fiche-xxx.html doit exister dans la liste COCO_LIEUX au-dessus).
 window.COCO_CONSEILS_SEMAINE = [
   "fiche-bandol.html",
-  "fiche-bonporteau.html",
   "fiche-camping-cavalaire.html",
   "fiche-balade-giens.html"
 ];
