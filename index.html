@@ -6,6 +6,7 @@
 <title>Coco Explore — Le guide dog-friendly du Var</title>
 <meta name="description" content="Plages, balades, hébergements et adresses dog-friendly autour de Cavalaire-sur-Mer, avec Coco comme guide.">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
 
@@ -110,6 +111,20 @@
   </div>
 </section>
 
+<section class="wrap conseils-semaine" id="conseils">
+  <div class="section-head">
+    <span class="eyebrow">Les conseils de Coco</span>
+    <h2>Cette semaine, Coco recommande…</h2>
+  </div>
+  <div class="conseils-layout">
+    <div class="conseils-cards" id="coco-conseils-list"></div>
+    <div class="coco-map-wrap">
+      <div id="coco-map"></div>
+      <div id="coco-map-filters"></div>
+    </div>
+  </div>
+</section>
+
 <section class="categories wrap">
   <div class="section-head">
     <span class="eyebrow">Explorer par catégorie</span>
@@ -119,12 +134,17 @@
     <a href="index.html#plages" class="cat-card">
       <svg class="icon"><use href="#i-beach"/></svg>
       <h3>Plages</h3>
-      <span class="count">22 fiches</span>
+      <span class="count">30 fiches</span>
     </a>
     <a href="index.html#balades" class="cat-card">
       <svg class="icon"><use href="#i-trail"/></svg>
       <h3>Balades</h3>
-      <span class="count">6 fiches</span>
+      <span class="count">16 fiches</span>
+    </a>
+    <a href="index.html#activites" class="cat-card">
+      <svg class="icon"><use href="#i-activity"/></svg>
+      <h3>Activités</h3>
+      <span class="count">8 fiches</span>
     </a>
     <a href="index.html#hebergements" class="cat-card">
       <svg class="icon"><use href="#i-house"/></svg>
@@ -134,7 +154,12 @@
     <a href="index.html#toiletteurs" class="cat-card">
       <svg class="icon"><use href="#i-scissors"/></svg>
       <h3>Toiletteurs</h3>
-      <span class="count">1 fiche</span>
+      <span class="count">14 fiches</span>
+    </a>
+    <a href="index.html#veterinaires" class="cat-card">
+      <svg class="icon"><use href="#i-vet"/></svg>
+      <h3>Vétérinaires</h3>
+      <span class="count">5 fiches</span>
     </a>
     <a href="index.html#lacs" class="cat-card">
       <svg class="icon"><use href="#i-lake"/></svg>
@@ -1670,5 +1695,8 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="map-data.js"></script>
+<script src="map.js"></script>
 </body>
 </html>
