@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title | safe }}</title>
+<meta name="description" content="{{ description | safe }}">
+<link rel="canonical" href="https://cocoexplore.com/{{ permalinkPath }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coco Explore">
+<meta property="og:title" content="{{ title | safe }}">
+<meta property="og:description" content="{{ description | safe }}">
+<meta property="og:url" content="https://cocoexplore.com/{{ permalinkPath }}">
+<meta property="og:image" content="{{ (ogImage or 'https://cocoexplore.com/assets/coco-hero.jpg') | safe }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title | safe }}">
+<meta name="twitter:description" content="{{ description | safe }}">
+<meta name="twitter:image" content="{{ (ogImage or 'https://cocoexplore.com/assets/coco-hero.jpg') | safe }}">
+<link rel="stylesheet" href="style.css">
+{% if extraHead %}{{ extraHead | safe }}{% endif %}
+</head>
+<body>
+
+<svg style="display:none">
+  <defs>
+    <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="5" r="2.3"/><path d="M12 7.3v5l-3.5 3M12 12.3l4 2.5M9 14l-2 5M15 15l1.5 4"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.5L2.5 20h19L12 3.5z"/><line x1="12" y1="10" x2="12" y2="14.5"/><circle cx="12" cy="17" r="0.4" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-beach" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21c4-2.5 14-2.5 18 0"/>
+      <path d="M12 21V11"/>
+      <path d="M4 11c1-5 6-8 8-8s7 3 8 8c-5-2-11-2-16 0z"/>
+    </symbol>
+    <symbol id="i-boat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 15h18l-2 5H5l-2-5z"/><path d="M6 15V6h7l4 9"/><path d="M9 6V3"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12.5l5 5L20 6.5"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8.5"/>
+      <path d="M12 7v5l3.5 2"/>
+    </symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.5c3.5 4.2 6 7.4 6 10.3a6 6 0 0 1-12 0c0-2.9 2.5-6.1 6-10.3z"/>
+    </symbol>
+    <symbol id="i-fork" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 3v7a2 2 0 0 0 4 0V3M8 10v11M16 3c-1.5 0-2.5 2-2.5 5s1 5 2.5 5v8"/>
+    </symbol>
+    <symbol id="i-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 11.5 12 4l8 7.5"/>
+      <path d="M6 10v9.5h12V10"/>
+      <path d="M10 19.5V14h4v5.5"/>
+    </symbol>
+    <symbol id="i-lake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 9l4-6 4 6 4-6 4 6 4-6"/>
+      <path d="M3 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+    </symbol>
+    <symbol id="i-leash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="6" cy="6" r="3"/>
+      <path d="M8.5 8 C13 11, 10 14, 14 17"/>
+      <circle cx="17" cy="19" r="2.3"/>
+    </symbol>
+    <symbol id="i-parking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="3"/>
+      <path d="M9.5 16V8h3a2.5 2.5 0 0 1 0 5h-3"/>
+    </symbol>
+    <symbol id="i-paw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="16.5" rx="5.2" ry="4.2"/>
+      <ellipse cx="5.5" cy="9.5" rx="2" ry="2.6"/>
+      <ellipse cx="10" cy="6.5" rx="2" ry="2.6"/>
+      <ellipse cx="14" cy="6.5" rx="2" ry="2.6"/>
+      <ellipse cx="18.5" cy="9.5" rx="2" ry="2.6"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 3h3l2 5-2.3 1.6a11.5 11.5 0 0 0 5.7 5.7L18 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z"/>
+      <circle cx="12" cy="9.5" r="2.3"/>
+    </symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="6" cy="6" r="2.4"/>
+      <circle cx="6" cy="18" r="2.4"/>
+      <line x1="20" y1="4" x2="8" y2="15"/>
+      <line x1="8" y1="9" x2="20" y2="20"/>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="10.5" cy="10.5" r="6.5"/>
+      <line x1="20" y1="20" x2="15.3" y2="15.3"/>
+    </symbol>
+    <symbol id="i-trail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 20l6-15 4 8 2-4 6 11"/>
+      <circle cx="9" cy="4" r="1.6"/>
+    </symbol>
+    <symbol id="i-vet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><svg class="paw"><use href="#i-paw"/></svg> Coco Explore</a>
+    <nav class="site-nav">
+      {%- for item in nav %}
+      <a href="index.html#{{ item.id }}">{{ item.label | safe }}</a>
+      {%- endfor %}
+    </nav>
+  </div>
+</header>
+
+{{ content | safe }}
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="brand"><svg class="paw" width="20" height="20"><use href="#i-paw"/></svg> Coco Explore</span>
+    <span><a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="conditions-utilisation.html">CGU</a></span>
+    <span>Guide dog-friendly du Var, avec amour 🐾</span>
+  </div>
+</footer>
+
+{% if extraScripts %}{{ extraScripts | safe }}{% endif %}
+</body>
+</html>

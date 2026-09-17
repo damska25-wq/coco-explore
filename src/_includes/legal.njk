@@ -1,0 +1,17 @@
+---
+layout: base.njk
+extraHead: |
+  <style>
+    .legal-body { padding: 48px 0 60px; max-width: 72ch; }
+    .legal-body h2 { font-size: 1.3rem; color: var(--pin-deep); margin-top: 1.8em; }
+    .legal-body h2:first-child { margin-top: 0; }
+    .legal-body h3 { font-size: 1.05rem; color: var(--pin); margin-top: 1.2em; }
+    .legal-body p, .legal-body li { max-width: 72ch; }
+    .legal-body ul { padding-left: 1.2em; }
+    .legal-body table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.92rem; }
+    .legal-body th, .legal-body td { border: 1px solid rgba(34,58,46,0.15); padding: 8px 10px; text-align: left; vertical-align: top; }
+    .legal-body th { background: var(--sable); }
+    .legal-updated { color: var(--pin-soft); font-size: 0.9rem; margin-top: -0.6em; }
+  </style>
+---
+{{ bodyHtml | safe }}

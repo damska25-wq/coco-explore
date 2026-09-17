@@ -1,0 +1,22 @@
+---
+permalink: map-data.js
+eleventyExcludeFromCollections: true
+---
+// Généré à partir des fiches du site — position approximative au niveau de la commune.
+window.COCO_LIEUX = [
+{%- for fiche in collections.fiches %}
+  {
+    "slug": {{ fiche.data.permalinkPath | dump | safe }},
+    "titre": {{ fiche.data.h1 | dump | safe }},
+    "lieu": {{ fiche.data.lieu | dump | safe }},
+    "categorie": {{ fiche.data.tag | mapCategorie | dump | safe }},
+    "lat": {{ fiche.data.lat }},
+    "lng": {{ fiche.data.lng }}
+  }{% if not loop.last %},{% endif %}
+{%- endfor %}
+];
+
+// Les slugs ci-dessous sont "Les conseils de Coco" de la semaine.
+// Pour changer la sélection : remplace simplement les noms de fichiers ci-dessous par ceux de ton choix
+// (le nom du fichier fiche-xxx.html doit exister dans la liste COCO_LIEUX au-dessus).
+window.COCO_CONSEILS_SEMAINE = {{ conseilsSemaine | dump | safe }};

@@ -1,0 +1,26 @@
+---
+permalink: sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://cocoexplore.com/</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>1.0</priority>
+  </url>
+{%- for fiche in collections.fiches %}
+  <url>
+    <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+{%- endfor %}
+{%- for p in ["mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
+  <url>
+    <loc>https://cocoexplore.com/{{ p }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.2</priority>
+  </url>
+{%- endfor %}
+</urlset>

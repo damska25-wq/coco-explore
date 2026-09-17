@@ -1,0 +1,91 @@
+---
+layout: base.njk
+permalinkPath: ""
+permalink: "index.html"
+title: Coco Explore — Le guide dog-friendly du Var
+description: Plages, balades, hébergements et adresses dog-friendly autour de Cavalaire-sur-Mer, avec Coco comme guide.
+extraHead: |
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+extraScripts: |
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="map-data.js"></script>
+  <script src="map.js"></script>
+---
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="kicker">Guide dog-friendly du Var</span>
+      <h1>Partout avec mon chien</h1>
+      <p>Coco explore les plages, les sentiers et les bonnes adresses autour de Cavalaire-sur-Mer pour te dire, avant d'y aller, si ton chien y sera vraiment le bienvenu.</p>
+      <form class="search-bar" onsubmit="return false;">
+        <input type="text" placeholder="Une plage, une balade, un lieu…">
+        <button type="submit"><svg width="16" height="16"><use href="#i-search"/></svg></button>
+      </form>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/coco-hero.jpg" alt="Coco, labrador et mascotte de Coco Explore, en balade en laisse">
+      <figcaption>Coco, votre guide sur le terrain</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="wrap conseils-semaine" id="conseils">
+  <div class="section-head">
+    <span class="eyebrow">Les conseils de Coco</span>
+    <h2>Cette semaine, Coco recommande…</h2>
+  </div>
+  <div class="conseils-layout">
+    <div class="conseils-cards" id="coco-conseils-list"></div>
+    <div class="coco-map-wrap">
+      <div id="coco-map"></div>
+      <div id="coco-map-filters"></div>
+    </div>
+  </div>
+</section>
+
+<section class="categories wrap">
+  <div class="section-head">
+    <span class="eyebrow">Explorer par catégorie</span>
+    <h2>Où emmener son chien</h2>
+  </div>
+  <div class="cat-grid">
+    {%- for section in sections %}
+    {%- if section.catGrid %}
+    <a href="index.html#{{ section.id }}" class="cat-card">
+      <svg class="icon"><use href="#{{ section.catGrid.icon }}"/></svg>
+      <h3>{{ section.catGrid.label | safe }}</h3>
+      <span class="count">{{ collections.fiches | countByCats(section.catGrid.countIds) }} fiches</span>
+    </a>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+</section>
+
+{% for section in sections %}
+<section class="fiches wrap" id="{{ section.id }}">
+  <div class="section-head">
+    <span class="eyebrow">{{ section.eyebrow | safe }}</span>
+    <h2>{{ section.heading | safe }}</h2>
+    {%- if section.intro %}
+    <p style="margin-top: 10px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">{{ section.intro | safe }}</p>
+    {%- endif %}
+  </div>
+  <div class="fiche-grid">
+    {%- for fiche in collections.fiches | byCategory(section.id) %}
+    <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
+      <div class="thumb" style="background-image:url('{{ fiche.data.heroImage | safe }}');background-size:cover;background-position:center;"></div>
+      <div class="body">
+        <span class="tag">{{ fiche.data.cardTag | safe }}</span>
+        <h3>{{ fiche.data.cardTitle | safe }}</h3>
+        <p>{{ fiche.data.cardTeaser | safe }}</p>
+        <div class="pictos-row">
+          {%- for picto in fiche.data.cardPictos %}
+          <span class="picto"><svg><use href="#{{ picto }}"/></svg></span>
+          {%- endfor %}
+        </div>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+{% endfor %}
