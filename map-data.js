@@ -943,6 +943,110 @@ window.COCO_LIEUX = [
     "categorie": "Lacs & points d'eau",
     "lat": 43.7256,
     "lng": 5.8125
+  },
+  {
+    "slug": "fiche-restaurant-esquinade-plage.html",
+    "titre": "L'Esquinade Plage",
+    "lieu": "Plage de Pampelonne, Ramatuelle",
+    "categorie": "Restaurant",
+    "lat": 43.2145,
+    "lng": 6.6178
+  },
+  {
+    "slug": "fiche-restaurant-la-suite.html",
+    "titre": "La Suite",
+    "lieu": "Nouveau Port, Cavalaire-sur-Mer",
+    "categorie": "Restaurant",
+    "lat": 43.1729,
+    "lng": 6.5325
+  },
+  {
+    "slug": "fiche-restaurant-rotisseurs-cote.html",
+    "titre": "Les Rôtisseurs de la Côte",
+    "lieu": "Port de Cavalaire-sur-Mer",
+    "categorie": "Restaurant",
+    "lat": 43.1729,
+    "lng": 6.5325
+  },
+  {
+    "slug": "fiche-restaurant-grignoterie.html",
+    "titre": "La Grignoterie",
+    "lieu": "Face au port, Cavalaire-sur-Mer",
+    "categorie": "Restaurant",
+    "lat": 43.1729,
+    "lng": 6.5325
+  },
+  {
+    "slug": "fiche-restaurant-marius-plage.html",
+    "titre": "Marius à la Plage",
+    "lieu": "Plage de Gigaro, La Croix-Valmer",
+    "categorie": "Restaurant",
+    "lat": 43.2011,
+    "lng": 6.5719
+  },
+  {
+    "slug": "fiche-restaurant-nautic-beach.html",
+    "titre": "Nautic Beach",
+    "lieu": "Plage du Débarquement, La Croix-Valmer",
+    "categorie": "Restaurant",
+    "lat": 43.2011,
+    "lng": 6.5719
+  },
+  {
+    "slug": "fiche-restaurant-le-migon.html",
+    "titre": "Le Migon",
+    "lieu": "Plage de Pampelonne, Ramatuelle",
+    "categorie": "Restaurant",
+    "lat": 43.2145,
+    "lng": 6.6178
+  },
+  {
+    "slug": "fiche-restaurant-pescadou.html",
+    "titre": "Le Pescadou",
+    "lieu": "Port Santa Lucia, Saint-Raphaël",
+    "categorie": "Restaurant",
+    "lat": 43.425,
+    "lng": 6.7681
+  },
+  {
+    "slug": "fiche-restaurant-moelleuses-persillees.html",
+    "titre": "Moelleuses & Persillées",
+    "lieu": "Proche du vieux port, Saint-Raphaël",
+    "categorie": "Restaurant",
+    "lat": 43.425,
+    "lng": 6.7681
+  },
+  {
+    "slug": "fiche-restaurant-cabanon.html",
+    "titre": "Le Cabanon",
+    "lieu": "Entre Port-Fréjus et la Base Nature, Fréjus",
+    "categorie": "Restaurant",
+    "lat": 43.4331,
+    "lng": 6.737
+  },
+  {
+    "slug": "fiche-restaurant-o-creol.html",
+    "titre": "O Créol'",
+    "lieu": "Port de la Capte, Hyères",
+    "categorie": "Restaurant",
+    "lat": 43.1204,
+    "lng": 6.1286
+  },
+  {
+    "slug": "fiche-restaurant-petite-etoile.html",
+    "titre": "Brasserie-Restaurant La Petite Étoile",
+    "lieu": "Draguignan",
+    "categorie": "Restaurant",
+    "lat": 43.5372,
+    "lng": 6.4636
+  },
+  {
+    "slug": "fiche-restaurant-le-jardin.html",
+    "titre": "Restaurant Le Jardin",
+    "lieu": "Brignoles",
+    "categorie": "Restaurant",
+    "lat": 43.4058,
+    "lng": 6.0631
   }
 ];
 
