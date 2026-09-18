@@ -17,7 +17,22 @@ Le site ne couvre et n'alimente **que la région PACA** pour l'instant. Une fois
 
 **🎉 RÉGION PACA ENTIÈREMENT COMPLÈTE (18/09/2026) — les 6 départements ont une couverture complète sur toutes les catégories applicables.**
 
-**Prochaine étape (demandée explicitement par l'utilisateur) : référencement Google, gratuit uniquement — aucune dépense, pas de Google Ads ni d'outils payants.** Pistes prévues : Google Search Console (vérification du domaine + soumission du sitemap.xml déjà généré), données structurées Schema.org (LocalBusiness/Place) sur les fiches pour les résultats enrichis, vérification des balises meta/titres existantes, alt text des images. À détailler avec l'utilisateur au moment de s'y mettre — pas encore commencé.
+## Référencement Google gratuit — EN COURS (démarré 18/09/2026)
+
+Demandé explicitement par l'utilisateur, gratuit uniquement — aucune dépense, pas de Google Ads ni d'outils payants.
+
+**Fait :**
+- **Données structurées JSON-LD (Schema.org)** sur toutes les fiches (~300) : un bloc `Place`/`LocalBusiness` (type précis selon la catégorie : `BeachOrPool` pour les plages, `TouristAttraction` pour balades/lacs/activités, `Restaurant`, `LodgingBusiness`, `VeterinaryCare`, `LocalBusiness` pour toiletteurs/dogwash/dogsitters) + un `BreadcrumbList`, générés automatiquement dans `src/_includes/fiche.njk` à partir des champs de front-matter déjà présents partout (aucune maintenance manuelle nécessaire, ça s'applique tout seul aux futures fiches). Mapping catégorie→type dans `eleventy.config.js` (filtre `schemaType`).
+- **JSON-LD `WebSite`/`Organization`** sur la page d'accueil (`src/index.njk`).
+- **`og:locale` fr_FR** ajouté dans `src/_includes/base.njk`.
+- **Correction d'un vrai problème de fond** : plusieurs textes visibles (titre de la page d'accueil, meta description, texte du hero, tagline du footer, CGU, mentions légales) décrivaient encore le site comme "guide dog-friendly **du Var**" alors qu'il couvre désormais toute la région PACA — corrigé partout. C'était un problème de cohérence de contenu qui aurait nui au référencement pour les recherches hors Var.
+- Vérifié : build propre, JSON-LD valide (testé par script Python sur les 291 fiches + accueil), déploiement Netlify confirmé "ready".
+
+**Reste à faire (toujours gratuit) :**
+- **Google Search Console** : nécessite une action manuelle de l'utilisateur (accès à son propre compte Google) — vérifier la propriété du domaine `cocoexplore.com` puis soumettre `sitemap.xml` (déjà généré et à jour). Je peux guider étape par étape, ou ajouter une balise meta de vérification si l'utilisateur colle le code fourni par Google.
+- **Alt text sur les photos** : actuellement les photos des fiches sont posées en CSS `background-image` (aucun attribut `alt`), donc invisibles pour Google Images. Corriger proprement demande de convertir ces divs en vraies balises `<img>` avec alt text descriptif sur ~300 fiches + les cartes de la page d'accueil/pages département — changement plus large, pas encore fait, à prioriser avec l'utilisateur.
+- Vérifier les longueurs de title/meta description (bonnes pratiques Google ~50-60 et ~150-160 caractères) sur un échantillon de fiches — pas encore audité systématiquement.
+- Un futur `Sitemap ping`/resoumission n'est pas nécessaire à chaque changement, Google recrawle automatiquement une fois Search Console configuré.
 
 ## Tâches secondaires restantes avant/à côté du SEO
 
