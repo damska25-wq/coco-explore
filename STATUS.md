@@ -13,9 +13,21 @@ Le site ne couvre et n'alimente **que la région PACA** pour l'instant. Une fois
 - **Bouches-du-Rhône (13)** — ✅ complet
 - **Vaucluse (84)** — ✅ complet (pas de plages, département sans littoral)
 - **Alpes-de-Haute-Provence (04)** — ✅ complet (Balades, Hébergements, Restaurants, Toiletteurs, Vétérinaires — pas de plages, pas d'urgences vétérinaires 24h/24 trouvées, département rural)
-- **Hautes-Alpes (05)** — ❌ pas commencé, aucune catégorie
+- **Hautes-Alpes (05)** — 🟡 en cours : Balades ✅ (6 fiches), Hébergements ✅ (6 fiches). Restaurants : agent en cours au moment de la coupure (au moins 1 fiche déjà écrite, `restaurant-farandole-du-gout-embrun.njk` — vérifier si l'agent a continué et pushé d'autres fiches). Toiletteurs et Vétérinaires : **pas encore commencés**.
 
-**Prochaine étape immédiate : attaquer le 05 (Hautes-Alpes) en entier — mêmes catégories que le 04 (pas de plages), méthodologie identique.**
+**Prochaine étape immédiate : vérifier/terminer les restaurants du 05, puis toiletteurs et vétérinaires — dernières catégories avant que toute la région PACA soit complète.**
+
+## Navigation par département — FAIT (18/09/2026, session du soir)
+
+La navigation par secteur demandée par l'utilisateur est en place et déployée :
+- Chaque fiche a maintenant un champ `departement: ["83"]` (ou plusieurs codes pour les lieux à cheval sur deux départements : Sainte-Baume 83+13, Mercantour 06+04, Lac de Sainte-Croix 83+04, Serre-Ponçon 05+04, gorges de la Siagne 83+06, l'ancienne fiche "Alpes du Sud" 04+05).
+- `src/_data/departements.js` liste les 6 départements PACA (id, nom, slug, intro).
+- `src/departement.njk` génère automatiquement une page par département (`departement-var.html`, etc.) listant toutes ses fiches groupées par catégorie — aucune maintenance manuelle nécessaire, ça suit les fiches existantes.
+- Nouveaux filtres Eleventy : `byCategoryAndDept`, `countByCatsAndDept`, `countByDept` (dans `eleventy.config.js`).
+- Section "Explorer par secteur" ajoutée sur la page d'accueil (sous "Explorer par catégorie"), avec liens vers les 6 pages département.
+- Sitemap mis à jour avec les 6 nouvelles pages.
+
+**⚠️ IMPORTANT pour toute nouvelle fiche créée à partir de maintenant : il faut ajouter manuellement le champ `departement: ["XX"]` dans le front-matter (juste après `breadcrumbCatId`), sinon la fiche n'apparaîtra sur AUCUNE page département.** Le script de rattrapage ne tourne qu'une fois (déjà fait sur les 277 fiches existantes au moment de sa création) — il faut penser à instruire les agents de recherche d'ajouter ce champ pour du contenu futur, ou le rajouter soi-même après coup comme fait pour `restaurant-farandole-du-gout-embrun.njk`.
 
 ## Nouvelles catégories Dog Wash / Dog-sitter — état
 
@@ -37,7 +49,7 @@ Structure en place (nav.js, sections.js, map.js), contenu initial publié pour l
 ## Autres tâches en attente (pas urgentes, mentionnées par l'utilisateur)
 
 - **Printemps, avant la saison estivale** : revérifier tous les arrêtés municipaux sur l'accès chiens aux plages (les règles changent souvent d'une année à l'autre) — l'utilisateur a explicitement dit "on verra ça au printemps".
-- **Une fois toute la région PACA terminée** : ajouter une navigation par département (ex. cliquer sur "Var" → sous-page listant toutes les catégories de ce département). Nécessite d'ajouter un champ département aux ~260 fiches existantes (scriptable en une passe) + une nouvelle page de destination générée automatiquement. L'utilisateur a validé l'idée mais veut attendre la fin du PACA.
+- ~~Une fois toute la région PACA terminée : ajouter une navigation par département~~ → **FAIT**, voir section dédiée ci-dessus (l'utilisateur a finalement demandé de le faire avant la toute fin du PACA, pendant que le 05 était encore en cours).
 - **Rotation "Conseils de Coco"** : déjà automatisée (voir `eleventyConfig.addFilter("weeklyPick", ...)` dans `eleventy.config.js` + `src/map-data.njk`) — choix automatique chaque semaine d'une plage/balade/restaurant parmi toutes les fiches existantes, sans liste à maintenir à la main. Fonctionne à chaque build ; comme le site ne se reconstruit que sur un `git push`, ça reste à jour tant qu'on pousse régulièrement. Si le rythme de publication ralentit, il faudra un déclencheur de build hebdomadaire (Netlify Scheduled Function + Build Hook — nécessite une petite étape manuelle côté utilisateur sur le tableau de bord Netlify).
 - **Signalement continu de photos incorrectes** : l'utilisateur connaît personnellement le Var et repère des photos qui ne correspondent pas aux vrais lieux (déjà corrigé : Bonporteau, qui est une petite crique rocheuse, pas une plage ouverte). Rester attentif à ce type de retour et corriger au cas par cas.
 
