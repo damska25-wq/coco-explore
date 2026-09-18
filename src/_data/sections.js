@@ -18,10 +18,10 @@ export default [
     catGrid: { icon: "i-trail", label: "Balades", countIds: ["balades"] },
   },
   {
-    id: "activites",
-    eyebrow: "Activités",
-    heading: "Bouger, jouer et naviguer avec son chien",
-    catGrid: { icon: "i-activity", label: "Activités", countIds: ["activites"] },
+    id: "lacs",
+    eyebrow: "Lacs &amp; points d'eau",
+    heading: "Changer de la mer",
+    catGrid: { icon: "i-lake", label: "Lacs &amp; points d'eau", countIds: ["lacs"] },
   },
   {
     id: "restaurants",
@@ -36,6 +36,12 @@ export default [
     catGrid: { icon: "i-house", label: "Hébergements", countIds: ["hebergements"] },
   },
   {
+    id: "activites",
+    eyebrow: "Activités",
+    heading: "Bouger, jouer et naviguer avec son chien",
+    catGrid: { icon: "i-activity", label: "Activités", countIds: ["activites"] },
+  },
+  {
     id: "toiletteurs",
     eyebrow: "Toiletteurs",
     heading: "Pour un chien tout beau, tout propre",
@@ -46,11 +52,5 @@ export default [
     eyebrow: "Vétérinaires",
     heading: "Pour la santé de ton compagnon",
     catGrid: { icon: "i-vet", label: "Vétérinaires", countIds: ["veterinaires"] },
-  },
-  {
-    id: "lacs",
-    eyebrow: "Lacs &amp; points d'eau",
-    heading: "Changer de la mer",
-    catGrid: { icon: "i-lake", label: "Lacs &amp; points d'eau", countIds: ["lacs"] },
   },
 ];
