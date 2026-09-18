@@ -1,10 +1,10 @@
 # État d'avancement — Coco Explore
 
-_Dernière mise à jour : session du 18/09/2026 (soir). Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+_Dernière mise à jour : session du 18/09/2026 (soir). PACA est maintenant COMPLET sur toutes les catégories applicables. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
 
 ## Stratégie de croissance (décision de l'utilisateur, importante)
 
-Le site ne couvre et n'alimente **que la région PACA** pour l'instant. Une fois que le site aura des visiteurs/du trafic établi, l'utilisateur développera vers d'autres régions françaises. **Ne pas commencer un autre département/région hors PACA sans que l'utilisateur ne le redemande explicitement** — une fois les Hautes-Alpes (05) terminées, la couverture géographique s'arrête là jusqu'à nouvel ordre.
+Le site ne couvre et n'alimente **que la région PACA** pour l'instant. Une fois que le site aura des visiteurs/du trafic établi, l'utilisateur développera vers d'autres régions françaises. **Ne pas commencer un autre département/région hors PACA sans que l'utilisateur ne le redemande explicitement.** PACA étant désormais complète, la couverture géographique s'arrête là jusqu'à nouvel ordre — le prochain chantier (sauf demande contraire) est le référencement Google gratuit (voir plus bas).
 
 ## Départements PACA — état de couverture
 
@@ -13,11 +13,15 @@ Le site ne couvre et n'alimente **que la région PACA** pour l'instant. Une fois
 - **Bouches-du-Rhône (13)** — ✅ complet
 - **Vaucluse (84)** — ✅ complet (pas de plages, département sans littoral)
 - **Alpes-de-Haute-Provence (04)** — ✅ complet (Balades, Hébergements, Restaurants, Toiletteurs, Vétérinaires — pas de plages, pas d'urgences vétérinaires 24h/24 trouvées, département rural)
-- **Hautes-Alpes (05)** — 🟡 en cours : Balades ✅ (6 fiches), Hébergements ✅ (6 fiches). Restaurants : agent en cours au moment de la coupure (au moins 1 fiche déjà écrite, `restaurant-farandole-du-gout-embrun.njk` — vérifier si l'agent a continué et pushé d'autres fiches). Toiletteurs et Vétérinaires : **pas encore commencés**.
+- **Hautes-Alpes (05)** — ✅ **complet** (Balades, Hébergements, Restaurants, Toiletteurs, Vétérinaires — pas de plages, pas d'urgences vétérinaires 24h/24 trouvées malgré recherche ciblée, département rural/montagnard comme le 04)
 
-**Prochaine étape immédiate : terminer toiletteurs (agent en cours) et vétérinaires pour le 05 — dernières catégories avant que toute la région PACA soit complète.**
+**🎉 RÉGION PACA ENTIÈREMENT COMPLÈTE (18/09/2026) — les 6 départements ont une couverture complète sur toutes les catégories applicables.**
 
-**Ensuite (demandé explicitement par l'utilisateur) : référencement Google, gratuit uniquement — aucune dépense, pas de Google Ads ni d'outils payants.** Pistes prévues : Google Search Console (vérification du domaine + soumission du sitemap.xml déjà généré), données structurées Schema.org (LocalBusiness/Place) sur les fiches pour les résultats enrichis, vérification des balises meta/titres existantes, alt text des images. À détailler avec l'utilisateur au moment de s'y mettre.
+**Prochaine étape (demandée explicitement par l'utilisateur) : référencement Google, gratuit uniquement — aucune dépense, pas de Google Ads ni d'outils payants.** Pistes prévues : Google Search Console (vérification du domaine + soumission du sitemap.xml déjà généré), données structurées Schema.org (LocalBusiness/Place) sur les fiches pour les résultats enrichis, vérification des balises meta/titres existantes, alt text des images. À détailler avec l'utilisateur au moment de s'y mettre — pas encore commencé.
+
+## Tâches secondaires restantes avant/à côté du SEO
+
+- Dog Wash / Dog-sitter : encore Var-uniquement, à étendre aux 5 autres départements (voir section dédiée plus bas) — pas prioritaire, à faire "quand il y aura du temps" selon les propres mots de l'utilisateur.
 
 ## Navigation par département — FAIT (18/09/2026, session du soir)
 
