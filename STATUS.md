@@ -2,6 +2,10 @@
 
 _Dernière mise à jour : session du 18/09/2026 (soir). Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
 
+## Stratégie de croissance (décision de l'utilisateur, importante)
+
+Le site ne couvre et n'alimente **que la région PACA** pour l'instant. Une fois que le site aura des visiteurs/du trafic établi, l'utilisateur développera vers d'autres régions françaises. **Ne pas commencer un autre département/région hors PACA sans que l'utilisateur ne le redemande explicitement** — une fois les Hautes-Alpes (05) terminées, la couverture géographique s'arrête là jusqu'à nouvel ordre.
+
 ## Départements PACA — état de couverture
 
 - **Var (83)** — ✅ complet (toutes catégories)
