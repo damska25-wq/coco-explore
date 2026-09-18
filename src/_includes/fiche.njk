@@ -32,7 +32,8 @@ extraScripts: <script src="avis.js" defer></script>
   ]
 } %}
 <script type="application/ld+json">{{ jsonLdBreadcrumb | dump | safe }}</script>
-<section class="fiche-hero" style="background-image: url('{{ heroImage | safe }}')">
+<section class="fiche-hero">
+  <img class="fiche-hero-img" src="{{ heroImage | safe }}" alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager">
   <div class="wrap">
     <div class="breadcrumb"><a href="index.html">Coco Explore</a> / <a href="index.html#{{ breadcrumbCatId }}">{{ breadcrumbCatLabel | safe }}</a> / {{ breadcrumbLast | safe }}</div>
     <span class="tag">{{ tag | safe }}</span>
