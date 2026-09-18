@@ -48,9 +48,21 @@ export default [
     catGrid: { icon: "i-scissors", label: "Toiletteurs", countIds: ["toiletteurs"] },
   },
   {
+    id: "dogwash",
+    eyebrow: "Dog Wash",
+    heading: "Rincer son chien après la plage ou la balade",
+    catGrid: { icon: "i-drop", label: "Dog Wash", countIds: ["dogwash"] },
+  },
+  {
     id: "veterinaires",
     eyebrow: "Vétérinaires",
     heading: "Pour la santé de ton compagnon",
     catGrid: { icon: "i-vet", label: "Vétérinaires", countIds: ["veterinaires"] },
+  },
+  {
+    id: "dogsitters",
+    eyebrow: "Dog-sitters",
+    heading: "Faire garder son chien en toute confiance",
+    catGrid: { icon: "i-paw", label: "Dog-sitters", countIds: ["dogsitters"] },
   },
 ];
