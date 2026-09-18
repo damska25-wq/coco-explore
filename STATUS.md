@@ -15,7 +15,9 @@ Le site ne couvre et n'alimente **que la région PACA** pour l'instant. Une fois
 - **Alpes-de-Haute-Provence (04)** — ✅ complet (Balades, Hébergements, Restaurants, Toiletteurs, Vétérinaires — pas de plages, pas d'urgences vétérinaires 24h/24 trouvées, département rural)
 - **Hautes-Alpes (05)** — 🟡 en cours : Balades ✅ (6 fiches), Hébergements ✅ (6 fiches). Restaurants : agent en cours au moment de la coupure (au moins 1 fiche déjà écrite, `restaurant-farandole-du-gout-embrun.njk` — vérifier si l'agent a continué et pushé d'autres fiches). Toiletteurs et Vétérinaires : **pas encore commencés**.
 
-**Prochaine étape immédiate : vérifier/terminer les restaurants du 05, puis toiletteurs et vétérinaires — dernières catégories avant que toute la région PACA soit complète.**
+**Prochaine étape immédiate : terminer toiletteurs (agent en cours) et vétérinaires pour le 05 — dernières catégories avant que toute la région PACA soit complète.**
+
+**Ensuite (demandé explicitement par l'utilisateur) : référencement Google, gratuit uniquement — aucune dépense, pas de Google Ads ni d'outils payants.** Pistes prévues : Google Search Console (vérification du domaine + soumission du sitemap.xml déjà généré), données structurées Schema.org (LocalBusiness/Place) sur les fiches pour les résultats enrichis, vérification des balises meta/titres existantes, alt text des images. À détailler avec l'utilisateur au moment de s'y mettre.
 
 ## Navigation par département — FAIT (18/09/2026, session du soir)
 
