@@ -16,7 +16,11 @@ window.COCO_LIEUX = [
 {%- endfor %}
 ];
 
-// Les slugs ci-dessous sont "Les conseils de Coco" de la semaine.
-// Pour changer la sélection : remplace simplement les noms de fichiers ci-dessous par ceux de ton choix
-// (le nom du fichier fiche-xxx.html doit exister dans la liste COCO_LIEUX au-dessus).
-window.COCO_CONSEILS_SEMAINE = {{ conseilsSemaine | dump | safe }};
+// "Les conseils de Coco" de la semaine : une plage, une balade et un restaurant,
+// choisis automatiquement chaque semaine parmi toutes les fiches du site
+// (rotation par numéro de semaine — aucune liste à mettre à jour à la main).
+window.COCO_CONSEILS_SEMAINE = {{ [
+  collections.fiches | weeklyPick("Plage"),
+  collections.fiches | weeklyPick("Balade"),
+  collections.fiches | weeklyPick("Restaurant")
+] | dump | safe }};

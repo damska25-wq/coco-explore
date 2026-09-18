@@ -25,6 +25,22 @@ export default function (eleventyConfig) {
     tag === "Lac" || tag === "Point d'eau" ? "Lacs & points d'eau" : tag
   );
 
+  // Pioche automatiquement une fiche par semaine dans une catégorie donnée
+  // (rotation déterministe basée sur le numéro de semaine ISO — aucune liste à
+  // maintenir à la main, la sélection s'étend d'elle-même aux nouvelles fiches).
+  eleventyConfig.addFilter("weeklyPick", (fiches, tag) => {
+    const pool = fiches
+      .filter((f) => f.data.tag === tag)
+      .sort((a, b) => a.data.slug.localeCompare(b.data.slug));
+    if (!pool.length) return null;
+    const now = new Date();
+    const d = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+    d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    const weekNum = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+    return pool[weekNum % pool.length].data.permalinkPath;
+  });
+
   return {
     dir: {
       input: "src",
