@@ -21,6 +21,29 @@ export default function (eleventyConfig) {
     fiches.filter((f) => catIds.includes(f.data.breadcrumbCatId)).length
   );
 
+  // Fiches d'une catégorie (par countIds, comme countByCats) restreintes à un département.
+  eleventyConfig.addFilter("byCategoryAndDept", (fiches, catIds, deptId) =>
+    fiches
+      .filter(
+        (f) =>
+          catIds.includes(f.data.breadcrumbCatId) &&
+          (f.data.departement || []).includes(deptId)
+      )
+      .sort((a, b) => a.data.order - b.data.order)
+  );
+
+  eleventyConfig.addFilter("countByCatsAndDept", (fiches, catIds, deptId) =>
+    fiches.filter(
+      (f) =>
+        catIds.includes(f.data.breadcrumbCatId) &&
+        (f.data.departement || []).includes(deptId)
+    ).length
+  );
+
+  eleventyConfig.addFilter("countByDept", (fiches, deptId) =>
+    fiches.filter((f) => (f.data.departement || []).includes(deptId)).length
+  );
+
   eleventyConfig.addFilter("mapCategorie", (tag) =>
     tag === "Lac" || tag === "Point d'eau" ? "Lacs & points d'eau" : tag
   );

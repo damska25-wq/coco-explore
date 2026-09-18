@@ -61,6 +61,22 @@ extraScripts: |
   </div>
 </section>
 
+<section class="categories wrap">
+  <div class="section-head">
+    <span class="eyebrow">Explorer par secteur</span>
+    <h2>Toute la région PACA, département par département</h2>
+  </div>
+  <div class="cat-grid">
+    {%- for dep in departements %}
+    <a href="departement-{{ dep.slug }}.html" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>{{ dep.nom }}</h3>
+      <span class="count">{{ collections.fiches | countByDept(dep.id) }} fiches</span>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
 {% for section in sections %}
 <section class="fiches wrap" id="{{ section.id }}">
   <div class="section-head">

@@ -16,6 +16,13 @@ eleventyExcludeFromCollections: true
     <priority>0.6</priority>
   </url>
 {%- endfor %}
+{%- for dep in departements %}
+  <url>
+    <loc>https://cocoexplore.com/departement-{{ dep.slug }}.html</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+{%- endfor %}
 {%- for p in ["mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
   <url>
     <loc>https://cocoexplore.com/{{ p }}</loc>

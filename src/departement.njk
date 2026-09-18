@@ -1,0 +1,68 @@
+---
+pagination:
+  data: departements
+  size: 1
+  alias: dep
+permalink: "departement-{{ dep.slug }}.html"
+permalinkPath: "departement-{{ dep.slug }}.html"
+layout: base.njk
+title: "{{ dep.nom }} ({{ dep.id }}) — Coco Explore"
+description: "Toutes les fiches dog-friendly du {{ dep.nom }} sur Coco Explore : {{ dep.intro }}"
+---
+<section class="hero" style="padding-bottom: 2rem;">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="kicker">Explorer par secteur</span>
+      <h1>{{ dep.nom }}</h1>
+      <p>{{ dep.intro | safe }}</p>
+      <p style="margin-top: 8px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">{{ collections.fiches | countByDept(dep.id) }} fiches dans ce département.</p>
+    </div>
+  </div>
+</section>
+
+<section class="categories wrap">
+  <div class="section-head">
+    <span class="eyebrow">Autres secteurs</span>
+    <h2>Changer de département</h2>
+  </div>
+  <div class="cat-grid">
+    {%- for other in departements %}
+    <a href="departement-{{ other.slug }}.html" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>{{ other.nom }}</h3>
+      <span class="count">{{ collections.fiches | countByDept(other.id) }} fiches</span>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+{% for section in sections %}
+{%- if section.catGrid %}
+{%- set deptFiches = collections.fiches | byCategoryAndDept(section.catGrid.countIds, dep.id) %}
+{%- if deptFiches.length > 0 %}
+<section class="fiches wrap" id="{{ section.id }}">
+  <div class="section-head">
+    <span class="eyebrow">{{ section.catGrid.label | safe }}</span>
+    <h2>{{ section.heading | safe }}</h2>
+  </div>
+  <div class="fiche-grid">
+    {%- for fiche in deptFiches %}
+    <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
+      <div class="thumb" style="background-image:url('{{ fiche.data.heroImage | safe }}');background-size:cover;background-position:center;"></div>
+      <div class="body">
+        <span class="tag">{{ fiche.data.cardTag | safe }}</span>
+        <h3>{{ fiche.data.cardTitle | safe }}</h3>
+        <p>{{ fiche.data.cardTeaser | safe }}</p>
+        <div class="pictos-row">
+          {%- for picto in fiche.data.cardPictos %}
+          <span class="picto"><svg><use href="#{{ picto }}"/></svg></span>
+          {%- endfor %}
+        </div>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+{%- endif %}
+{% endfor %}
