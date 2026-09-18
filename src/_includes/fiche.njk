@@ -2,6 +2,36 @@
 layout: base.njk
 extraScripts: <script src="avis.js" defer></script>
 ---
+{%- set jsonLdPlace = {
+  "@context": "https://schema.org",
+  "@type": breadcrumbCatId | schemaType,
+  "name": h1,
+  "description": description,
+  "image": heroImage,
+  "url": "https://cocoexplore.com/" + permalinkPath,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": lieu,
+    "addressRegion": "Provence-Alpes-Côte d'Azur",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": lat,
+    "longitude": lng
+  }
+} %}
+<script type="application/ld+json">{{ jsonLdPlace | dump | safe }}</script>
+{%- set jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Coco Explore", "item": "https://cocoexplore.com/" },
+    { "@type": "ListItem", "position": 2, "name": breadcrumbCatLabel, "item": "https://cocoexplore.com/index.html#" + breadcrumbCatId },
+    { "@type": "ListItem", "position": 3, "name": breadcrumbLast, "item": "https://cocoexplore.com/" + permalinkPath }
+  ]
+} %}
+<script type="application/ld+json">{{ jsonLdBreadcrumb | dump | safe }}</script>
 <section class="fiche-hero" style="background-image: url('{{ heroImage | safe }}')">
   <div class="wrap">
     <div class="breadcrumb"><a href="index.html">Coco Explore</a> / <a href="index.html#{{ breadcrumbCatId }}">{{ breadcrumbCatLabel | safe }}</a> / {{ breadcrumbLast | safe }}</div>

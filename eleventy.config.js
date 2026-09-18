@@ -48,6 +48,22 @@ export default function (eleventyConfig) {
     tag === "Lac" || tag === "Point d'eau" ? "Lacs & points d'eau" : tag
   );
 
+  // Type schema.org (données structurées JSON-LD) selon la catégorie de la fiche.
+  const SCHEMA_TYPES = {
+    plages: "BeachOrPool",
+    "cote-azur": "BeachOrPool",
+    balades: "TouristAttraction",
+    lacs: "TouristAttraction",
+    activites: "TouristAttraction",
+    restaurants: "Restaurant",
+    hebergements: "LodgingBusiness",
+    toiletteurs: "LocalBusiness",
+    dogwash: "LocalBusiness",
+    dogsitters: "LocalBusiness",
+    veterinaires: "VeterinaryCare",
+  };
+  eleventyConfig.addFilter("schemaType", (catId) => SCHEMA_TYPES[catId] || "LocalBusiness");
+
   // Pioche automatiquement une fiche par semaine dans une catégorie donnée
   // (rotation déterministe basée sur le numéro de semaine ISO — aucune liste à
   // maintenir à la main, la sélection s'étend d'elle-même aux nouvelles fiches).
