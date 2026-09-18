@@ -1,6 +1,6 @@
 # État d'avancement — Coco Explore
 
-_Dernière mise à jour : session du 18/09/2026. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+_Dernière mise à jour : session du 18/09/2026 (soir). Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
 
 ## Départements PACA — état de couverture
 
@@ -8,24 +8,19 @@ _Dernière mise à jour : session du 18/09/2026. Ce fichier sert de mémoire de 
 - **Alpes-Maritimes (06)** — ✅ complet
 - **Bouches-du-Rhône (13)** — ✅ complet
 - **Vaucluse (84)** — ✅ complet (pas de plages, département sans littoral)
-- **Alpes-de-Haute-Provence (04)** — 🟡 en cours :
-  - Balades ✅, Hébergements ✅, Restaurants ✅
-  - Toiletteurs : agent de recherche lancé, en cours au moment de la coupure (voir fichiers non commités dans `src/fiches/toiletteur-*04*` ou vérifier `git log` / `git status`)
-  - Vétérinaires : **pas encore commencé**
+- **Alpes-de-Haute-Provence (04)** — ✅ complet (Balades, Hébergements, Restaurants, Toiletteurs, Vétérinaires — pas de plages, pas d'urgences vétérinaires 24h/24 trouvées, département rural)
 - **Hautes-Alpes (05)** — ❌ pas commencé, aucune catégorie
 
-**Prochaine étape immédiate : terminer toiletteurs + vétérinaires pour le 04, puis attaquer le 05 en entier (mêmes 7 catégories que les autres départements PACA, méthodologie identique).**
+**Prochaine étape immédiate : attaquer le 05 (Hautes-Alpes) en entier — mêmes catégories que le 04 (pas de plages), méthodologie identique.**
 
-## Nouvelles catégories en cours de création
+## Nouvelles catégories Dog Wash / Dog-sitter — état
 
-Le site vient d'ajouter deux nouvelles catégories, structure déjà en place (nav.js, sections.js, map.js) mais **sans aucune fiche encore vérifiée/publiée** :
+Structure en place (nav.js, sections.js, map.js), contenu initial publié pour le Var uniquement :
 
-- **Dog Wash** (stations de lavage pour chiens, souvent dans les ports/marinas)
-  - Le propriétaire du site a personnellement signalé deux emplacements à vérifier en priorité :
-    - Au bout du **Port de Cavalaire** (Cavalaire-sur-Mer, Var)
-    - Sur/près des **plages marines de Cogolin** (marina de Cogolin, golfe de Saint-Tropez, Var)
-  - Un agent de recherche a été lancé pour vérifier ces deux lieux + en trouver d'autres dans le Var — voir résultat dans les commits récents ou relancer si pas encore fait.
-- **Dog-sitter** (garde de chiens) — même agent, recherche de vrais services de garde dans le Var, avec la même discipline "zéro risque" que pour hébergements/restaurants (jamais de téléphone/adresse non confirmé).
+- **Dog Wash** (4 fiches, Var) : Toutou Douche (Marines de Cogolin — confirmé, correspond à ce que l'utilisateur avait signalé), The Dog Wash (Saint-Cyr-sur-Mer), Dog Wash du Port (Hyères), Laverie La Baleine (Six-Fours-les-Plages).
+  - ⚠️ **Cavalaire-sur-Mer (port)** : l'utilisateur a signalé un dog wash au bout du port de Cavalaire, mais aucune source n'a pu être trouvée malgré plusieurs recherches ciblées — **pas publié**. À revérifier plus tard (installation peut-être trop récente/informelle pour apparaître en ligne), ou demander à l'utilisateur des détails plus précis (nom de l'enseigne, rue exacte).
+- **Dog-sitter** (2 fiches, Var) : Pat'Enfoliz (Toulon/Hyères), Pinou & Co (Gassin).
+- **Pas encore fait** : Dog Wash / Dog-sitter pour les autres départements (06, 13, 84, 04, à faire aussi pour 05 une fois couvert). Ces deux catégories sont donc partielles sur tout le site — à compléter département par département, comme les autres catégories, quand il y aura du temps (l'utilisateur n'a pas donné d'ordre de priorité explicite pour ça vs. finir le 05 — le 05 semble prioritaire vu la demande explicite de "continuer 04 et 05").
 
 ## Méthodologie standard (à respecter pour tout nouveau contenu)
 
