@@ -4,6 +4,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/avis.js");
   eleventyConfig.addPassthroughCopy("src/map.js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/google42d095cf02301eb6.html");
 
   eleventyConfig.addCollection("fiches", (collectionApi) =>
     collectionApi.getFilteredByGlob("src/fiches/*.njk").sort((a, b) =>
