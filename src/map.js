@@ -6,6 +6,7 @@
     "Lacs & points d'eau": "#3E7CB1",
     "Toiletteur": "#A65C8C",
     "Vétérinaire": "#B0413E",
+    "Urgences vétérinaires": "#8B1E1E",
     "Activité": "#3E8E7E",
     "Restaurant": "#D98E3E"
   };
