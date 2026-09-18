@@ -30,9 +30,11 @@ Demandé explicitement par l'utilisateur, gratuit uniquement — aucune dépense
 
 - **Google Search Console** : ✅ FAIT (18/09/2026) — propriété `https://cocoexplore.com` vérifiée via fichier HTML (`src/google42d095cf02301eb6.html`, servi en passthrough copy dans `eleventy.config.js` — ne pas supprimer, c'est la preuve de propriété du site pour Google, la retirer casserait la vérification), sitemap.xml soumis avec succès. Google va indexer les ~300 pages progressivement (quelques jours à quelques semaines). Rien à refaire ici sauf si l'utilisateur change de domaine/hébergeur.
 
+- **Alt text sur les photos** : ✅ FAIT (18/09/2026) — les photos (hero de fiche + vignettes des cartes sur accueil/pages département) sont maintenant de vraies balises `<img>` avec un texte alternatif descriptif généré automatiquement à partir des champs de front-matter existants (h1/tag/lieu pour le hero, cardTitle/cardTag pour les vignettes) — aucune maintenance manuelle nécessaire, s'applique aussi aux futures fiches. Rendu visuel identique à avant (vérifié avec une image de test locale + `object-fit: cover`, le réseau vers Unsplash étant bloqué dans ce sandbox). Modifs dans `src/_includes/fiche.njk`, `src/index.njk`, `src/departement.njk`, `src/style.css`.
+
 **Reste à faire (toujours gratuit) :**
-- **Alt text sur les photos** : actuellement les photos des fiches sont posées en CSS `background-image` (aucun attribut `alt`), donc invisibles pour Google Images. Corriger proprement demande de convertir ces divs en vraies balises `<img>` avec alt text descriptif sur ~300 fiches + les cartes de la page d'accueil/pages département — changement plus large, pas encore fait, à prioriser avec l'utilisateur.
 - Vérifier les longueurs de title/meta description (bonnes pratiques Google ~50-60 et ~150-160 caractères) sur un échantillon de fiches — pas encore audité systématiquement.
+- Attendre quelques jours/semaines que Google indexe le site (rien à faire, c'est automatique une fois Search Console configuré) puis vérifier le rapport "Performances" avec l'utilisateur pour voir les premiers résultats.
 - Un futur `Sitemap ping`/resoumission n'est pas nécessaire à chaque changement, Google recrawle automatiquement une fois Search Console configuré.
 
 ## Tâches secondaires restantes avant/à côté du SEO
