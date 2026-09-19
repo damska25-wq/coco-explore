@@ -1,0 +1,128 @@
+---
+permalink: faq.html
+permalinkPath: faq.html
+title: "FAQ — Questions fréquentes — Coco Explore"
+description: "Les réponses aux questions les plus fréquentes sur Coco Explore : chiens en laisse, meilleure période, fiabilité des informations, comment signaler une erreur."
+layout: legal.njk
+extraHead: |
+  <style>
+    .faq-item { border-bottom: 1px solid rgba(38,48,42,0.1); padding: 14px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item summary {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.02rem;
+      color: var(--pin-deep);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: "+";
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--terracotta);
+      flex-shrink: 0;
+      transition: transform 0.15s ease;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p { margin-top: 10px; color: rgba(38,48,42,0.85); }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Est-ce que mon chien doit être tenu en laisse partout ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ça dépend du lieu : la plupart des plages et sentiers autorisent les chiens en laisse, mais certaines communes ont des règles plus strictes (créneaux horaires en été, zones interdites). Chaque fiche du site précise la règle locale — vérifie toujours l'encadré \"À vérifier sur place\" avant de partir, et prends une laisse par précaution même sur les rares zones en liberté." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la meilleure période pour aller à la plage avec son chien en PACA ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Le printemps et l'automne sont les périodes les plus simples : les chiens sont souvent acceptés sans restriction horaire, contrairement à l'été où beaucoup de communes limitent l'accès aux plages surveillées entre juin et septembre. En été, mieux vaut viser tôt le matin ou en fin de journée, à la fois pour la réglementation et pour éviter que le sable ne brûle les coussinets." }
+      },
+      {
+        "@type": "Question",
+        "name": "Les informations du site sont-elles toujours à jour ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "On fait le maximum pour vérifier chaque information (adresse, téléphone, règles d'accès) au moment de la publication, en croisant plusieurs sources. Mais certaines règles, notamment les arrêtés municipaux sur l'accès des chiens aux plages, changent d'une année sur l'autre. Un appel rapide avant de se déplacer reste toujours la meilleure garantie, surtout en pleine saison." }
+      },
+      {
+        "@type": "Question",
+        "name": "J'ai repéré une erreur ou une info périmée, comment la signaler ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Chaque fiche a un lien \"Une erreur ? Nous la signaler\" dans le bandeau d'informations, qui ouvre directement un e-mail pré-rempli avec le nom et le lien de la fiche concernée. C'est la manière la plus rapide de nous prévenir." }
+      },
+      {
+        "@type": "Question",
+        "name": "Est-ce que Coco Explore couvre toute la France ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pour l'instant, le site se concentre uniquement sur la région Provence-Alpes-Côte d'Azur (Var, Alpes-Maritimes, Bouches-du-Rhône, Vaucluse, Alpes-de-Haute-Provence, Hautes-Alpes), pour garder un niveau de vérification élevé sur chaque fiche plutôt que de s'étendre trop vite. D'autres régions pourraient suivre à l'avenir." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment sont choisies les adresses présentées sur le site ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Chaque lieu est vérifié avant publication : recherches croisées sur plusieurs sources pour les adresses et numéros de téléphone, et un signal clair et sans ambiguïté sur l'accueil des chiens avant d'ajouter un restaurant ou un hébergement. Quand une information ne peut pas être confirmée avec un niveau de confiance suffisant, on préfère ne pas publier plutôt que de risquer une erreur." }
+      },
+      {
+        "@type": "Question",
+        "name": "Je connais un lieu dog-friendly qui n'est pas encore sur le site, comment le proposer ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Avec plaisir ! Écris-nous à contact@cocoexplore.com avec le nom du lieu, la ville et si possible ce qui te fait dire qu'il est dog-friendly (règle affichée, expérience vécue...). On vérifie et on l'ajoute si tout est confirmé." }
+      },
+      {
+        "@type": "Question",
+        "name": "Le site est-il gratuit ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui, entièrement gratuit et sans compte à créer. Coco Explore est un guide indépendant, sans lien avec les établissements référencés." }
+      }
+    ]
+  }
+  </script>
+bodyHtml: |
+  <section class="wrap legal-body">
+    <span class="tag">Questions fréquentes</span>
+    <h1>FAQ</h1>
+    <p class="legal-updated">Tout ce qu'on nous demande le plus souvent.</p>
+
+    <details class="faq-item" open>
+      <summary>Est-ce que mon chien doit être tenu en laisse partout ?</summary>
+      <p>Ça dépend du lieu : la plupart des plages et sentiers autorisent les chiens en laisse, mais certaines communes ont des règles plus strictes (créneaux horaires en été, zones interdites). Chaque fiche du site précise la règle locale — vérifie toujours l'encadré « À vérifier sur place » avant de partir, et prends une laisse par précaution même sur les rares zones en liberté.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Quelle est la meilleure période pour aller à la plage avec son chien en PACA ?</summary>
+      <p>Le printemps et l'automne sont les périodes les plus simples : les chiens sont souvent acceptés sans restriction horaire, contrairement à l'été où beaucoup de communes limitent l'accès aux plages surveillées entre juin et septembre. En été, mieux vaut viser tôt le matin ou en fin de journée, à la fois pour la réglementation et pour éviter que le sable ne brûle les coussinets.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Les informations du site sont-elles toujours à jour ?</summary>
+      <p>On fait le maximum pour vérifier chaque information (adresse, téléphone, règles d'accès) au moment de la publication, en croisant plusieurs sources. Mais certaines règles, notamment les arrêtés municipaux sur l'accès des chiens aux plages, changent d'une année sur l'autre. Un appel rapide avant de se déplacer reste toujours la meilleure garantie, surtout en pleine saison.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>J'ai repéré une erreur ou une info périmée, comment la signaler ?</summary>
+      <p>Chaque fiche a un lien « Une erreur ? Nous la signaler » dans le bandeau d'informations, qui ouvre directement un e-mail pré-rempli avec le nom et le lien de la fiche concernée. C'est la manière la plus rapide de nous prévenir.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Est-ce que Coco Explore couvre toute la France ?</summary>
+      <p>Pour l'instant, le site se concentre uniquement sur la région Provence-Alpes-Côte d'Azur (Var, Alpes-Maritimes, Bouches-du-Rhône, Vaucluse, Alpes-de-Haute-Provence, Hautes-Alpes), pour garder un niveau de vérification élevé sur chaque fiche plutôt que de s'étendre trop vite. D'autres régions pourraient suivre à l'avenir.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Comment sont choisies les adresses présentées sur le site ?</summary>
+      <p>Chaque lieu est vérifié avant publication : recherches croisées sur plusieurs sources pour les adresses et numéros de téléphone, et un signal clair et sans ambiguïté sur l'accueil des chiens avant d'ajouter un restaurant ou un hébergement. Quand une information ne peut pas être confirmée avec un niveau de confiance suffisant, on préfère ne pas publier plutôt que de risquer une erreur.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Je connais un lieu dog-friendly qui n'est pas encore sur le site, comment le proposer ?</summary>
+      <p>Avec plaisir ! Écris-nous à <a href="mailto:contact@cocoexplore.com">contact@cocoexplore.com</a> avec le nom du lieu, la ville et si possible ce qui te fait dire qu'il est dog-friendly (règle affichée, expérience vécue...). On vérifie et on l'ajoute si tout est confirmé.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Le site est-il gratuit ?</summary>
+      <p>Oui, entièrement gratuit et sans compte à créer. Coco Explore est un guide indépendant, sans lien avec les établissements référencés.</p>
+    </details>
+  </section>
+---
