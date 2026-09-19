@@ -10,6 +10,7 @@ window.COCO_LIEUX = [
     "titre": {{ fiche.data.h1 | dump | safe }},
     "lieu": {{ fiche.data.lieu | dump | safe }},
     "categorie": {{ fiche.data.tag | mapCategorie | dump | safe }},
+    "img": {{ fiche.data.heroImage | dump | safe }},
     "lat": {{ fiche.data.lat }},
     "lng": {{ fiche.data.lng }}
   }{% if not loop.last %},{% endif %}

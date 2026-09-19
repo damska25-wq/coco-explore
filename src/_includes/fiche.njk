@@ -1,6 +1,8 @@
 ---
 layout: base.njk
-extraScripts: <script src="avis.js" defer></script>
+extraScripts: |
+  <script src="avis.js" defer></script>
+  <script src="favoris.js" defer></script>
 ---
 {%- set jsonLdPlace = {
   "@context": "https://schema.org",
@@ -34,6 +36,9 @@ extraScripts: <script src="avis.js" defer></script>
 <script type="application/ld+json">{{ jsonLdBreadcrumb | dump | safe }}</script>
 <section class="fiche-hero">
   <img class="fiche-hero-img" src="{{ heroImage | safe }}" alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager">
+  <button type="button" class="fav-toggle" id="fav-toggle" data-slug="{{ permalinkPath }}" aria-pressed="false" aria-label="Ajouter aux favoris">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.6 6.1.6-4.6 4.2 1.3 6.1L12 17l-5.4 3 1.3-6.1-4.6-4.2 6.1-.6z"/></svg>
+  </button>
   <div class="wrap">
     <div class="breadcrumb"><a href="index.html">Coco Explore</a> / <a href="index.html#{{ breadcrumbCatId }}">{{ breadcrumbCatLabel | safe }}</a> / {{ breadcrumbLast | safe }}</div>
     <span class="tag">{{ tag | safe }}</span>
