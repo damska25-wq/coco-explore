@@ -23,7 +23,7 @@ eleventyExcludeFromCollections: true
     <priority>0.7</priority>
   </url>
 {%- endfor %}
-{%- for p in ["faq.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
+{%- for p in ["a-propos.html", "faq.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
   <url>
     <loc>https://cocoexplore.com/{{ p }}</loc>
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
