@@ -46,6 +46,11 @@ export default function (eleventyConfig) {
     fiches.filter((f) => (f.data.departement || []).includes(deptId)).length
   );
 
+  // Les N fiches ajoutées le plus récemment (order croissant à chaque nouvelle fiche).
+  eleventyConfig.addFilter("latest", (fiches, n) =>
+    [...fiches].sort((a, b) => b.data.order - a.data.order).slice(0, n)
+  );
+
   eleventyConfig.addFilter("mapCategorie", (tag) =>
     tag === "Lac" || tag === "Point d'eau" ? "Lacs & points d'eau" : tag
   );

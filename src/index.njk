@@ -96,6 +96,30 @@ extraScripts: |
   </div>
 </section>
 
+<section class="fiches wrap" id="nouveautes">
+  <div class="section-head">
+    <span class="eyebrow">Nouveautés</span>
+    <h2>Les dernières fiches ajoutées</h2>
+  </div>
+  <div class="fiche-grid">
+    {%- for fiche in collections.fiches | latest(6) %}
+    <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
+      <div class="thumb"><img src="{{ fiche.data.heroImage | safe }}" alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy"></div>
+      <div class="body">
+        <span class="tag">{{ fiche.data.cardTag | safe }}</span>
+        <h3>{{ fiche.data.cardTitle | safe }}</h3>
+        <p>{{ fiche.data.cardTeaser | safe }}</p>
+        <div class="pictos-row">
+          {%- for picto in fiche.data.cardPictos %}
+          <span class="picto"><svg><use href="#{{ picto }}"/></svg></span>
+          {%- endfor %}
+        </div>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
 {% for section in sections %}
 <section class="fiches wrap" id="{{ section.id }}">
   <div class="section-head">
