@@ -32,9 +32,10 @@ Demandé explicitement par l'utilisateur, gratuit uniquement — aucune dépense
 
 - **Alt text sur les photos** : ✅ FAIT (18/09/2026) — les photos (hero de fiche + vignettes des cartes sur accueil/pages département) sont maintenant de vraies balises `<img>` avec un texte alternatif descriptif généré automatiquement à partir des champs de front-matter existants (h1/tag/lieu pour le hero, cardTitle/cardTag pour les vignettes) — aucune maintenance manuelle nécessaire, s'applique aussi aux futures fiches. Rendu visuel identique à avant (vérifié avec une image de test locale + `object-fit: cover`, le réseau vers Unsplash étant bloqué dans ce sandbox). Modifs dans `src/_includes/fiche.njk`, `src/index.njk`, `src/departement.njk`, `src/style.css`.
 
+- **Longueurs title/meta description** : ✅ FAIT (19/09/2026) — audit systématique des 310 fiches (pas juste un échantillon). 68 fiches corrigées : 39 descriptions trop courtes (surtout des toiletteurs/vétérinaires avec une description d'une seule ligne) enrichies avec des faits déjà vérifiés ailleurs dans la même fiche (adresse, services) ; 23 descriptions trop longues raccourcies en gardant les faits et réserves de sourcing importants ; 6 titres largement au-dessus de 70 caractères raccourcis. Zéro problème restant (title 15-70 car., description 70-160 car.) au dernier passage.
+
 **Reste à faire (toujours gratuit) :**
-- Vérifier les longueurs de title/meta description (bonnes pratiques Google ~50-60 et ~150-160 caractères) sur un échantillon de fiches — pas encore audité systématiquement.
-- Attendre quelques jours/semaines que Google indexe le site (rien à faire, c'est automatique une fois Search Console configuré) puis vérifier le rapport "Performances" avec l'utilisateur pour voir les premiers résultats.
+- Attendre quelques jours/semaines que Google indexe le site (rien à faire, c'est automatique une fois Search Console configuré) puis vérifier le rapport "Performances" avec l'utilisateur pour voir les premiers résultats. **C'est maintenant le seul élément restant du chantier référencement.**
 - Un futur `Sitemap ping`/resoumission n'est pas nécessaire à chaque changement, Google recrawle automatiquement une fois Search Console configuré.
 
 ## Tâches secondaires restantes avant/à côté du SEO
