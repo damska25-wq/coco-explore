@@ -39,7 +39,7 @@ Demandé explicitement par l'utilisateur, gratuit uniquement — aucune dépense
 
 ## Tâches secondaires restantes avant/à côté du SEO
 
-- Dog Wash / Dog-sitter : encore Var-uniquement, à étendre aux 5 autres départements (voir section dédiée plus bas) — pas prioritaire, à faire "quand il y aura du temps" selon les propres mots de l'utilisateur.
+- Dog Wash / Dog-sitter : ✅ FAIT (19/09/2026) — étendu aux 5 autres départements PACA (06, 13, 84, 04, 05), voir section dédiée plus bas pour le détail complet. Ces deux catégories couvrent maintenant toute la région PACA comme les autres.
 
 ## Navigation par département — FAIT (18/09/2026, session du soir)
 
@@ -53,14 +53,18 @@ La navigation par secteur demandée par l'utilisateur est en place et déployée
 
 **⚠️ IMPORTANT pour toute nouvelle fiche créée à partir de maintenant : il faut ajouter manuellement le champ `departement: ["XX"]` dans le front-matter (juste après `breadcrumbCatId`), sinon la fiche n'apparaîtra sur AUCUNE page département.** Le script de rattrapage ne tourne qu'une fois (déjà fait sur les 277 fiches existantes au moment de sa création) — il faut penser à instruire les agents de recherche d'ajouter ce champ pour du contenu futur, ou le rajouter soi-même après coup comme fait pour `restaurant-farandole-du-gout-embrun.njk`.
 
-## Nouvelles catégories Dog Wash / Dog-sitter — état
+## Nouvelles catégories Dog Wash / Dog-sitter — ✅ COMPLET SUR TOUTE LA RÉGION PACA (19/09/2026)
 
-Structure en place (nav.js, sections.js, map.js), contenu initial publié pour le Var uniquement :
+Structure en place (nav.js, sections.js, map.js). Contenu par département :
 
-- **Dog Wash** (4 fiches, Var) : Toutou Douche (Marines de Cogolin — confirmé, correspond à ce que l'utilisateur avait signalé), The Dog Wash (Saint-Cyr-sur-Mer), Dog Wash du Port (Hyères), Laverie La Baleine (Six-Fours-les-Plages).
-  - ⚠️ **Cavalaire-sur-Mer (port)** : l'utilisateur a signalé un dog wash au bout du port de Cavalaire, mais aucune source n'a pu être trouvée malgré plusieurs recherches ciblées — **pas publié**. À revérifier plus tard (installation peut-être trop récente/informelle pour apparaître en ligne), ou demander à l'utilisateur des détails plus précis (nom de l'enseigne, rue exacte).
-- **Dog-sitter** (2 fiches, Var) : Pat'Enfoliz (Toulon/Hyères), Pinou & Co (Gassin).
-- **Pas encore fait** : Dog Wash / Dog-sitter pour les autres départements (06, 13, 84, 04, à faire aussi pour 05 une fois couvert). Ces deux catégories sont donc partielles sur tout le site — à compléter département par département, comme les autres catégories, quand il y aura du temps (l'utilisateur n'a pas donné d'ordre de priorité explicite pour ça vs. finir le 05 — le 05 semble prioritaire vu la demande explicite de "continuer 04 et 05").
+- **Var (83)** — Dog Wash (5) : Toutou Douche (Marines de Cogolin), The Dog Wash (Saint-Cyr-sur-Mer), Dog Wash du Port (Hyères), Laverie La Baleine (Six-Fours-les-Plages), Dog Wash du Port (Cavalaire-sur-Mer — seule fiche du site sourcée sur connaissance personnelle de l'utilisateur plutôt que sur une recherche web, explicitement indiqué dans le corps de la fiche). Dog-sitter (2) : Pat'Enfoliz (Toulon/Hyères), Pinou & Co (Gassin).
+- **Alpes-Maritimes (06)** — Dog Wash (2) : Doggy Wash Express (Nice), DogWash Perle & Co (Mouans-Sartoux). Dog-sitter (3) : AntibesDogz, DogSitting à Nice, Dog Attitude (Mougins, chenil professionnel).
+- **Bouches-du-Rhône (13)** — Dog Wash (6) : Teddy Wash, Dogwash La Valentine, My Dog Wash (tous Marseille), Dogwash de Ceyreste (La Ciotat), Liberty Dog Wash (Châteauneuf-les-Martigues), Les Copains de Romy (Salon-de-Provence). Dog-sitter (4) : AD Petsitting (Salon-de-Provence), Les Animaux d'Élodie (Allauch), Naïa & Co (Aix-en-Provence), Mélissa Cô (Lambesc).
+- **Vaucluse (84)** — Dog Wash : 0 (aucune station trouvée, département rural sans littoral — recherche exhaustive faite, résultat honnête). Dog-sitter (2) : Animob'Isle (L'Isle-sur-la-Sorgue, pension sans box), Chenil des Confines (Sorgues, chenil professionnel avec boxes).
+- **Alpes-de-Haute-Provence (04)** — Dog Wash (2) : deux bornes Dogwash à Manosque (Relais des Ponches / station Total, et devant l'animalerie Top Animal). Dog-sitter : 0 (rien de solidement sourcé trouvé).
+- **Hautes-Alpes (05)** — Dog Wash : 0 (rien trouvé, attendu pour ce département rural/montagnard). Dog-sitter (1) : Coco Pet Sitting (Gap) — sourcing plus faible que les autres (une seule source pour tarifs/avis), explicitement signalé dans la fiche.
+
+**Ces deux catégories couvrent désormais toute la région PACA**, comme toutes les autres. Beaucoup de fiches Dog Wash/Dog-sitter comportent plus de hedging ("à confirmer sur place", tarifs non publiés) que les catégories plus anciennes du site (plages, restaurants) car ce sont des services plus récents/informels avec moins de présence en ligne — c'est normal et assumé, pas un signe de mauvais travail.
 
 ## Méthodologie standard (à respecter pour tout nouveau contenu)
 
