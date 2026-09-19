@@ -1,6 +1,29 @@
 # État d'avancement — Coco Explore
 
-_Dernière mise à jour : session du 19/09/2026. PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+_Dernière mise à jour : session du 19/09/2026 (soir). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404 et favicon ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+
+## Améliorations du site — FAIT (session du 19/09/2026, soir)
+
+Une série d'idées d'amélioration proposées par Claude et validées une par une par l'utilisateur, toutes gratuites (aucun service payant) :
+
+- **Recherche fonctionnelle sur l'accueil** : la barre de recherche était purement décorative (`onsubmit="return false"`) — remplacée par une vraie recherche côté client (`src/search.js`), filtre `window.COCO_LIEUX` (titre/lieu/catégorie, insensible aux accents), affiche jusqu'à 8 résultats en menu déroulant, Entrée/submit va vers le premier résultat. Zéro dépendance externe.
+- **Bug d'accessibilité mobile corrigé** : le menu de navigation par catégorie était en `display: none` sur mobile, sans aucun autre moyen d'accès — remplacé par un vrai menu hamburger fonctionnel (`src/_includes/base.njk`, bouton `#nav-toggle` + script inline), testé et vérifié.
+- **Section "Nouveautés"** sur l'accueil : affiche automatiquement les 6 dernières fiches ajoutées (nouveau filtre Eleventy `latest(n)`, tri par `data.order` décroissant) — zéro maintenance, suit les futurs ajouts tout seul.
+- **Icône Instagram** dans l'en-tête (`danslesyeuxdecoco`), placée hors du menu mobile collapsible pour rester toujours visible (`.header-actions`), corrigé après un premier essai où elle était invisible sur téléphone.
+- **Lien "Signaler une erreur"** sur chaque fiche : `mailto:contact@cocoexplore.com` pré-rempli avec le nom et l'URL de la fiche.
+- **Partage WhatsApp** sur chaque fiche : lien `wa.me` pré-rempli avec un message décrivant le lieu.
+- **Page FAQ** (`src/faq.njk`) : 8 questions/réponses en accordéons natifs `<details>`, plus JSON-LD `FAQPage` (texte identique au contenu visible, requis par Google).
+- **Page "À propos"** (`src/a-propos.njk`) : histoire d'origine du site, valeurs, lien Instagram/contact. **⚠️ Contenu volontairement générique par endroits — l'utilisateur doit fournir de vrais détails personnels (âge de Coco, élément déclencheur du projet, depuis quand le site existe) pour enrichir cette page. Il a dit "je te donnerai ça demain" — à relancer.**
+- **Favicon** (`src/favicon.svg`, patte de couleur marque) + `apple-touch-icon.png` (512×512, généré par capture d'écran headless faute d'outil SVG→PNG dans le sandbox).
+- **Page 404 personnalisée** (`src/404.njk`) : message convivial + 3 suggestions de fiches dynamiques (`latest(3)`). Repose sur la convention Netlify par défaut (sert `404.html` pour toute route non trouvée, aucune config `netlify.toml` nécessaire). **Piège rencontré et corrigé** : la première version mettait la boucle Nunjucks dans le champ de données `bodyHtml` affiché via le layout `legal.njk` (qui fait juste `{{ bodyHtml | safe }}`) — une donnée de front-matter n'est jamais re-analysée comme un template, donc la boucle s'affichait en texte brut. Corrigé en utilisant `layout: base.njk` directement avec le contenu dans le corps du fichier (comme `index.njk`), qui lui est bien compilé par Nunjucks (`{{ content | safe }}` dans `base.njk`).
+- **Système de favoris** (`src/favoris.js`, `localStorage`) : bouton étoile sur chaque fiche (`#fav-toggle`), section "Mes favoris" sur l'accueil qui n'apparaît que si l'utilisateur a au moins un favori enregistré. `window.COCO_LIEUX` étendu avec un champ `"img"` pour permettre le rendu des cartes favoris.
+
+Tout testé fonctionnellement en headless (Playwright) avant déploiement : recherche, menu mobile, bascule favori + persistance localStorage + apparition de la section sur l'accueil, page 404 sans résidu de syntaxe Nunjucks. Build propre, déployé, Netlify confirmé `state: "ready"`.
+
+**En attente pour la suite (explicitement reportée par l'utilisateur à "demain") :**
+- **Google Analytics (GA4)** : bloqué en cours de configuration par des soucis d'interface mobile côté Google (bouton "Créer le flux" introuvable sur téléphone après plusieurs tentatives). À reprendre soit en mode "Affichage bureau" sur le navigateur mobile, soit depuis un ordinateur. Une fois le flux créé : installer le snippet de suivi GA4 + une bannière de consentement cookies RGPD gratuite et maison (pas encore construite).
+- **Enrichir "À propos"** avec les vrais détails personnels que l'utilisateur va fournir.
+- Une fois ces deux points traités, l'utilisateur veut continuer à demander des idées d'amélioration jusqu'à épuisement, puis basculer vers la recherche de fiches supplémentaires (portée pas encore définie — la règle "PACA uniquement sauf demande contraire" reste en vigueur).
 
 ## Liens "Site officiel" sur les fiches commerciales — FAIT (19/09/2026)
 
