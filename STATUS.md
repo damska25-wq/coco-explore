@@ -1,6 +1,28 @@
 # État d'avancement — Coco Explore
 
-_Dernière mise à jour : session du 18/09/2026 (soir). PACA est maintenant COMPLET sur toutes les catégories applicables. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+_Dernière mise à jour : session du 19/09/2026. PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+
+## Liens "Site officiel" sur les fiches commerciales — FAIT (19/09/2026)
+
+Demande de l'utilisateur : sur les fiches restaurant/toiletteur/vétérinaire/hébergement, permettre un accès direct au site web du commerce. Consigne explicite et répétée par l'utilisateur : **rester strict, ne jamais publier un lien qui ne correspond pas exactement au bon établissement — plutôt ne rien mettre que de deviner.**
+
+**Infrastructure (générique, s'applique automatiquement à toute fiche) :**
+- Nouveau champ optionnel `siteWeb` en front-matter (placé juste après `departement`).
+- `src/_includes/fiche.njk` affiche un lien "Site officiel ↗" dans le bandeau d'infos UNIQUEMENT si `siteWeb` est renseigné — sinon rien ne s'affiche, pas de lien cassé ni deviné.
+- Nouvelle icône `i-link` dans `src/_includes/base.njk`. Style dans `src/style.css`.
+
+**Contenu : 126 fiches sur ~176 fiches commerciales ont désormais un lien confirmé** (toiletteurs, vétérinaires, restaurants, hébergements/campings, dog wash, dog-sitters). Le reste (~50 fiches) a été volontairement laissé sans lien — pas de site officiel trouvé/confirmable, ou seulement des annuaires génériques (PagesJaunes, Google Maps, etc., qui ne comptent jamais comme "site officiel"). Une page Facebook/Instagram dédiée à l'établissement compte comme "officiel" si aucun site propre n'existe.
+
+**Contrôle qualité fait sérieusement (pas juste le rapport des agents pris pour argent comptant) :**
+- Une passe de vérification indépendante (nouvel agent, recherches fraîches) a été lancée spécifiquement sur les cas les plus à risque (adresses ambiguës, domaines similaires, catégorie vétérinaire).
+- **2 erreurs réelles trouvées et corrigées :**
+  1. `restaurant-petite-etoile.njk` (Draguignan) : deux domaines quasi-identiques existent pour ce restaurant, correspondant à deux adresses différentes sur la même avenue (14 vs 26). Le mauvais avait été choisi initialement — corrigé vers celui qui correspond réellement à l'adresse de la fiche (confirmée par un arrêté municipal officiel de Draguignan).
+  2. `camping-huttopia-serre-poncon-ubaye.njk` : la fiche situait le camping sur la commune "Le Lauzet-Ubaye", qui est en réalité une commune distincte et non voisine-fusionnée. Le camping est en fait à Saint-Vincent-les-Forts (commune d'Ubaye-Serre-Ponçon). Nom de lieu, adresse et coordonnées GPS corrigés. Le lien du site officiel, lui, était déjà correct.
+- Un numéro de téléphone potentiellement discordant (CHV Massilia, urgences vétérinaires Marseille) a été personnellement revérifié par recherche web directe : le numéro de la fiche (04 91 82 13 13) est confirmé exact par 7+ sources indépendantes fraîches — fausse alerte, aucune correction nécessaire.
+- 3 vérifications supplémentaires par échantillonnage (Nice, Cogolin, La Seyne-sur-Mer) toutes confirmées bonnes.
+- Aucun autre problème structurel détecté (0 doublon de champ, bon placement partout, build propre, JSON-LD toujours valide).
+
+**Reste à faire si on veut pousser plus loin (pas urgent, l'essentiel est fait) :** les ~50 fiches sans lien pourraient être revisitées ponctuellement si l'utilisateur repère lui-même qu'un établissement a ouvert un site depuis. Pas de suivi automatique nécessaire — c'est un champ optionnel, zéro maintenance si rien ne change.
 
 ## Stratégie de croissance (décision de l'utilisateur, importante)
 
