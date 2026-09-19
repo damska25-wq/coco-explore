@@ -57,6 +57,12 @@ extraScripts: <script src="avis.js" defer></script>
       <div><span class="label">Site officiel</span><span class="value"><a href="{{ siteWeb | safe }}" target="_blank" rel="noopener nofollow">Voir le site ↗</a></span></div>
     </div>
     {%- endif %}
+    {%- set reportSubject = "Signalement — " + h1 %}
+    {%- set reportBody = "Bonjour,\n\nJe souhaite signaler une information à corriger sur la fiche « " + h1 + " » :\nhttps://cocoexplore.com/" + permalinkPath + "\n\nCe qui ne correspond plus :\n[décris ici]\n\nMerci !" %}
+    <div class="info-item">
+      <svg class="icon"><use href="#i-alert"/></svg>
+      <div><span class="label">Une erreur ?</span><span class="value"><a href="mailto:contact@cocoexplore.com?subject={{ reportSubject | urlencode }}&amp;body={{ reportBody | urlencode }}">Nous la signaler</a></span></div>
+    </div>
   </div>
 </section>
 
