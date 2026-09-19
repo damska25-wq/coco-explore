@@ -298,6 +298,8 @@ p { max-width: 62ch; }
 
 .info-item .label { font-size: 0.74rem; color: rgba(38,48,42,0.55); font-weight: 600; display: block; }
 .info-item .value { font-weight: 700; font-size: 0.95rem; line-height: 1.25; }
+.info-item .value a { color: var(--terracotta-deep); text-decoration: none; }
+.info-item .value a:hover { text-decoration: underline; }
 
 .fiche-body { padding: 40px 0 30px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; }
 .fiche-body h2 { font-size: 1.5rem; color: var(--pin-deep); margin-top: 1.4em; }

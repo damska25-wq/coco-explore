@@ -51,6 +51,12 @@ extraScripts: <script src="avis.js" defer></script>
       <div><span class="label">{{ item.label | safe }}</span><span class="value">{{ item.value | safe }}</span></div>
     </div>
     {%- endfor %}
+    {%- if siteWeb %}
+    <div class="info-item">
+      <svg class="icon"><use href="#i-link"/></svg>
+      <div><span class="label">Site officiel</span><span class="value"><a href="{{ siteWeb | safe }}" target="_blank" rel="noopener nofollow">Voir le site ↗</a></span></div>
+    </div>
+    {%- endif %}
   </div>
 </section>
 
