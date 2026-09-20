@@ -35,7 +35,7 @@ extraScripts: |
 } %}
 <script type="application/ld+json">{{ jsonLdBreadcrumb | dump | safe }}</script>
 <section class="fiche-hero">
-  <img class="fiche-hero-img" src="{{ heroImage | safe }}" alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager">
+  <img class="fiche-hero-img" src="{{ heroImage | safe }}" alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager"{% if heroImagePosition %} style="object-position: {{ heroImagePosition | safe }};"{% endif %}>
   <button type="button" class="fav-toggle" id="fav-toggle" data-slug="{{ permalinkPath }}" aria-pressed="false" aria-label="Ajouter aux favoris">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.6 6.1.6-4.6 4.2 1.3 6.1L12 17l-5.4 3 1.3-6.1-4.6-4.2 6.1-.6z"/></svg>
   </button>
@@ -45,7 +45,9 @@ extraScripts: |
     <h1>{{ h1 | safe }}</h1>
     <span class="lieu">{{ lieu | safe }}</span>
   </div>
+  {%- if photoUsername %}
   <span class="fiche-photo-credit">Photo : <a href="https://unsplash.com/@{{ photoUsername | safe }}?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">{{ photoName | safe }}</a> / <a href="https://unsplash.com/?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>
+  {%- endif %}
 </section>
 
 <section class="info-strip">
