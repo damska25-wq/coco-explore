@@ -4,6 +4,15 @@ _Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur to
 
 **Note technique (20/09/2026) :** le crédit d'hébergement Netlify de l'utilisateur a été épuisé (101 déploiements de production consommés), ce qui a bloqué le déploiement automatique pendant plusieurs commits. L'utilisateur a rechargé son crédit. Si une session future constate à nouveau que `currentDeploy` reste bloqué sur un vieil ID malgré des commits poussés, vérifier d'abord ce point (tableau de bord Netlify → Billing → Credit usage) avant de chercher un bug côté code.
 
+## Photo réelle sur la fiche Bonporteau — FAIT (20/09/2026)
+
+L'utilisateur a pris ses propres photos de la plage de Bonporteau (Cavalaire-sur-Mer) et a demandé de remplacer la photo Unsplash générique par une vraie photo du lieu. Photo choisie, redimensionnée (1600px de large, JPEG qualité 0.82, via un canvas headless — pas d'outil ImageMagick/sharp dans ce sandbox) et enregistrée en local dans `src/assets/bonporteau.jpg` (plus d'URL Unsplash externe pour cette fiche).
+
+**Point technique important pour toute future fiche avec une photo perso (pas Unsplash) :**
+- Le champ `photoUsername`/`photoName` ne doit plus être renseigné (ces champs déclenchent l'affichage du crédit "Photo : ... / Unsplash" dans `fiche.njk`, désormais conditionnel — `{% if photoUsername %}` — donc rien ne s'affiche si absent).
+- **La photo était au format portrait (téléphone), alors que le bandeau `.fiche-hero` du site est très large et bas (ratio proche de 5:1)** — un centrage par défaut ne montrait qu'une fine bande horizontale de l'image, coupant la plage/le sable. Nouveau champ optionnel `heroImagePosition` (ex: `"center 55%"`) ajouté dans `fiche.njk` (`style="object-position: ..."` sur le `<img>` du bandeau) pour recentrer verticalement une photo portrait dans ce bandeau très large, sans toucher au recadrage des vignettes (cartes plages sur l'accueil/pages département), qui utilisent un ratio 16:10 bien plus tolérant et affichent déjà toute la composition correctement par défaut.
+- Réglage trouvé par test empirique (capture d'écran headless), pas par calcul seul — le rapport entre la largeur du bandeau et la hauteur du contenu texte rend le calcul peu intuitif, mieux vaut toujours vérifier visuellement avant de valider un `heroImagePosition`.
+
 ## Toilettes publiques sur les fiches plages — FAIT (20/09/2026)
 
 Demande de l'utilisateur suite à une correction terrain (voir ci-dessous) : indiquer les toilettes publiques à proximité sur les fiches plages, uniquement quand une source fiable le confirme (jamais deviner).
