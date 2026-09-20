@@ -108,3 +108,25 @@ extraScripts: |
 </section>
 
 {{ bodyHtml | safe }}
+
+{%- set relatedFiches = collections.fiches | related(breadcrumbCatId, departement, permalinkPath, 3) %}
+{%- if relatedFiches.length %}
+<section class="fiches wrap" id="a-proximite">
+  <div class="section-head">
+    <span class="eyebrow">À proximité</span>
+    <h2>Autres idées pour continuer l'exploration</h2>
+  </div>
+  <div class="fiche-grid">
+    {%- for f in relatedFiches %}
+    <a href="{{ f.data.permalinkPath }}" class="fiche-card">
+      <div class="thumb"><img src="{{ f.data.heroImage | safe }}" alt="{{ f.data.cardTitle | safe }} — {{ f.data.cardTag | safe }}" loading="lazy"></div>
+      <div class="body">
+        <span class="tag">{{ f.data.cardTag | safe }}</span>
+        <h3>{{ f.data.cardTitle | safe }}</h3>
+        <p>{{ f.data.cardTeaser | safe }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}

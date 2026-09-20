@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 {%- for fiche in collections.fiches %}
   <url>
     <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath }}</loc>
-    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <lastmod>{{ fiche.inputPath | lastmod }}</lastmod>
     <priority>0.6</priority>
   </url>
 {%- endfor %}

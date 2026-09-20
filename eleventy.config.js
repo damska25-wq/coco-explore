@@ -1,6 +1,23 @@
+import { execSync } from "node:child_process";
+
+const gitDateCache = new Map();
+function gitLastModified(filePath) {
+  if (gitDateCache.has(filePath)) return gitDateCache.get(filePath);
+  let date = null;
+  try {
+    const out = execSync(`git log -1 --format=%cI -- "${filePath}"`).toString().trim();
+    if (out) date = out.slice(0, 10);
+  } catch (e) {
+    /* pas un dépôt git, ou fichier non suivi — on retombera sur la date du jour */
+  }
+  gitDateCache.set(filePath, date);
+  return date;
+}
+
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/favicon.svg");
+  eleventyConfig.addPassthroughCopy("src/site.webmanifest");
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/avis.js");
   eleventyConfig.addPassthroughCopy("src/map.js");
@@ -73,6 +90,26 @@ export default function (eleventyConfig) {
     veterinaires: "VeterinaryCare",
   };
   eleventyConfig.addFilter("schemaType", (catId) => SCHEMA_TYPES[catId] || "LocalBusiness");
+
+  // Date de dernière modification réelle d'un fichier source (dernier commit git),
+  // pour un sitemap.xml dont le <lastmod> reflète les vraies corrections de contenu.
+  eleventyConfig.addFilter("lastmod", (inputPath) =>
+    gitLastModified(inputPath) || new Date().toISOString().slice(0, 10)
+  );
+
+  // Autres fiches de la même catégorie à suggérer en bas d'une fiche
+  // (priorité à celles du même département, puis complété par les autres).
+  eleventyConfig.addFilter("related", (fiches, catId, dept, excludePath, n) => {
+    const pool = fiches.filter(
+      (f) => f.data.breadcrumbCatId === catId && f.data.permalinkPath !== excludePath
+    );
+    const bySlug = (a, b) => a.data.slug.localeCompare(b.data.slug);
+    const sameDept = pool
+      .filter((f) => (f.data.departement || []).some((d) => (dept || []).includes(d)))
+      .sort(bySlug);
+    const rest = pool.filter((f) => !sameDept.includes(f)).sort(bySlug);
+    return [...sameDept, ...rest].slice(0, n);
+  });
 
   // Pioche automatiquement une fiche par semaine dans une catégorie donnée
   // (rotation déterministe basée sur le numéro de semaine ISO — aucune liste à

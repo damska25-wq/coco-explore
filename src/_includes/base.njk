@@ -8,6 +8,8 @@
 <link rel="canonical" href="https://cocoexplore.com/{{ permalinkPath }}">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#BE5B3B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coco Explore">
 <meta property="og:locale" content="fr_FR">
@@ -23,6 +25,8 @@
 {% if extraHead %}{{ extraHead | safe }}{% endif %}
 </head>
 <body>
+
+<a href="#main-content" class="skip-link">Aller au contenu</a>
 
 <svg style="display:none">
   <defs>
@@ -138,7 +142,9 @@
   </div>
 </header>
 
+<main id="main-content">
 {{ content | safe }}
+</main>
 
 <div class="cookie-banner" id="cookie-banner" hidden role="dialog" aria-label="Consentement aux cookies">
   <div class="wrap cookie-banner-inner">
