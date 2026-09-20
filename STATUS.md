@@ -1,6 +1,27 @@
 # État d'avancement — Coco Explore
 
-_Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon, Google Analytics, fiches similaires, manifeste web, accessibilité clavier, mode sombre, flux RSS et partage du site ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+_Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon, Google Analytics, fiches similaires, manifeste web, accessibilité clavier, mode sombre, flux RSS, partage du site et infos toilettes publiques ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+
+## Toilettes publiques sur les fiches plages — FAIT (20/09/2026)
+
+Demande de l'utilisateur suite à une correction terrain (voir ci-dessous) : indiquer les toilettes publiques à proximité sur les fiches plages, uniquement quand une source fiable le confirme (jamais deviner).
+
+**Déclencheur** : l'utilisateur a personnellement vérifié sur place que la fiche `bonporteau.njk` mentionnait à tort une douche canine ("Douche sur la plage") — corrigée en "Aucune douche sur la plage", avec ajout de l'info WC public confirmée par lui de visu.
+
+**Infrastructure** : nouvelle icône `i-wc` dans `src/_includes/base.njk` (simple pictogramme porte/poignée, cohérent avec le style des autres icônes du site). Nouvelle entrée `infoItems` standard :
+```yaml
+  - icon: "i-wc"
+    label: "Toilettes"
+    value: "<description factuelle>"
+```
+
+**Recherche menée sur les 40 fiches plages du site** (catégories `plages` + `cote-azur`), via 4 agents en parallèle, chacun avec consigne stricte : n'ajouter l'info que si une source officielle (mairie, office de tourisme, CRT/CDT régional) confirme explicitement des toilettes pour CETTE plage précise — jamais une mention vague de forum, jamais une déduction ("d'autres plages de la commune en ont, donc celle-ci doit en avoir aussi" a été explicitement rejeté comme insuffisant par les agents).
+
+- **23 fiches complétées** avec l'info toilettes (sourcée, vérifiée individuellement) : bonporteau, canadel, escalet, mourillon-toulon, pampelonne, port-grimaud, antibes-salis, bormes-les-mimosas, cap-dail, capucins-la-ciotat, carro-martigues, iles-lerins, le-pradet-caniplouf, napoleon-port-saint-louis, nice-carras, piemanson-arles, roquebrune-cap-martin, saint-jean-cap-ferrat, saint-laurent-du-var-vespins, saint-raphael-beaurivage, six-fours, villefranche, villeneuve-loubet.
+- **17 fiches laissées inchangées**, faute de source fiable spécifique à la plage (ou source confirmant explicitement l'absence de toilettes) : bonne-terrasse, ramatuelle, sainte-maxime, bandol, beauduc-camargue, cagnes-hippodrome, frejus-argens, frioul-marseille, hyeres-merou, ile-verte, la-londe-bormettes, la-seyne-toutou-beach, menton, nice-lanterne, nice-lenval, niolon, plage-est-saintes-maries.
+- Build vérifié propre après chaque lot, rendu HTML contrôlé sur un échantillon de chaque lot avant commit, déployé.
+
+**Reste à faire si on veut pousser plus loin (pas urgent)** : les 17 fiches sans info pourraient être revisitées si l'utilisateur repère lui-même des toilettes lors d'une visite (comme pour Bonporteau) — c'est un champ optionnel, zéro maintenance si rien ne change.
 
 ## Mode sombre, RSS, partage du site, correction CLS — FAIT (20/09/2026)
 
