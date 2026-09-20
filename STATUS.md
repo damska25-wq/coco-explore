@@ -2,6 +2,19 @@
 
 _Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon, Google Analytics, fiches similaires, manifeste web, accessibilité clavier, mode sombre, flux RSS, partage du site et infos toilettes publiques ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
 
+## Bug réel sur l'envoi d'avis — PARTIELLEMENT DIAGNOSTIQUÉ (20/09/2026)
+
+L'utilisateur a testé le formulaire d'avis en conditions réelles (plage de Bonporteau, prénom + message + photo réelle) et a eu "L'envoi a échoué, réessaie dans un instant." au moment de publier.
+
+**Ce qui a été corrigé, confirmé par des tests headless (pas juste supposé) :**
+- `netlify/functions/avis.mjs` limite les photos à ~300 Ko en base64 (`MAX_PHOTO_CHARS`). Le message d'erreur générique ne disait pas pourquoi ça échouait — corrigé : `src/avis.js` distingue maintenant une vraie erreur serveur (4xx, ex: photo trop lourde) d'un échec réseau générique, et affiche le message exact renvoyé par le serveur dans le premier cas.
+- `src/avis.js` : la compression de la photo essaie maintenant plusieurs niveaux de qualité/taille avant d'abandonner, au lieu d'un seul réglage fixe qui pouvait dépasser la limite serveur.
+- **Bug trouvé en testant mon propre correctif** (pas juste le cas nominal) : une vraie coupure réseau simulée affichait le message technique brut du navigateur ("Failed to fetch") au lieu du message générique convivial — corrigé (`err.isKnownApiError` distingue maintenant une erreur serveur connue d'une erreur JS/réseau quelconque).
+
+**Ce qui N'A PAS été confirmé comme la cause de l'échec réel de l'utilisateur** : la photo qu'il a soumise ce jour-là (celle de Coco sur le sentier) a été testée après coup et compresse à ~282 Ko, sous la limite de 300 Ko — donc la taille de la photo n'explique probablement PAS son échec précis. Cet outil (sandbox Claude) n'a pas accès aux logs de la fonction Netlify pour voir l'erreur serveur réelle. Deux pistes restantes, à explorer si le problème se reproduit :
+1. Un problème de réseau/signal ponctuel (l'utilisateur avait 2 barres de réseau dans la crique, signal probablement faible) — dans ce cas c'était transitoire, rien à corriger.
+2. Un souci lié à Netlify Blobs ou aux quotas de fonctions, potentiellement encore affecté par l'épisode de crédit épuisé (voir section plus bas) même après la recharge — si le problème se reproduit, consulter les logs de la fonction `avis` dans le tableau de bord Netlify (Functions → avis → logs) pour voir l'erreur exacte.
+
 **Note technique (20/09/2026) :** le crédit d'hébergement Netlify de l'utilisateur a été épuisé (101 déploiements de production consommés), ce qui a bloqué le déploiement automatique pendant plusieurs commits. L'utilisateur a rechargé son crédit. Si une session future constate à nouveau que `currentDeploy` reste bloqué sur un vieil ID malgré des commits poussés, vérifier d'abord ce point (tableau de bord Netlify → Billing → Credit usage) avant de chercher un bug côté code.
 
 ## Photo réelle sur la fiche Bonporteau — FAIT (20/09/2026)
