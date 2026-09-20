@@ -139,6 +139,10 @@
           if (preview) preview.hidden = false;
           if (photoBtn) photoBtn.classList.add("has-photo");
           if (photoBtnLabel) photoBtnLabel.textContent = "Photo ajoutée";
+          // Sur mobile, revenir du sélecteur de photo natif laisse parfois le
+          // clavier fermé même après un tap sur le champ de message. On remet
+          // le focus dessus pour éviter à la personne de devoir taper deux fois.
+          if (messageInput && !messageInput.value) messageInput.focus();
         });
       });
     }
