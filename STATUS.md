@@ -1,6 +1,19 @@
 # État d'avancement — Coco Explore
 
-_Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon, Google Analytics, fiches similaires, manifeste web, accessibilité clavier, mode sombre, flux RSS, partage du site et infos toilettes publiques ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+_Dernière mise à jour : session du 20/09/2026 (après-midi). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon, Google Analytics, fiches similaires, manifeste web, accessibilité clavier, mode sombre, flux RSS, partage du site, infos toilettes publiques, itinéraire, mode hors-ligne, retour en haut et "Conseils de Coco" cohérents géographiquement ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+
+## Conseils de Coco cohérents géographiquement — FAIT (20/09/2026)
+
+L'utilisateur a repéré que les "Conseils de Coco" (une plage, une balade, un restaurant par semaine) pouvaient être dans des secteurs totalement différents (ex: plage à Nice, restaurant à Marseille) — pas cohérent pour quelqu'un qui planifie sa journée. Corrigé : nouveau filtre `weeklyConseils` (remplace `weeklyPick`) dans `eleventy.config.js` — choisit d'abord UN département qui a bien les trois catégories (seuls Var/83, Alpes-Maritimes/06 et Bouches-du-Rhône/13 en ont — Vaucluse/84, 04 et 05 n'ont aucune fiche "Plage"), puis une fiche de chaque catégorie dans ce même département. Vérifié par simulation sur 20 semaines : toujours cohérent, bonne rotation entre les 3 départements éligibles.
+
+## Quatre améliorations supplémentaires — FAIT (20/09/2026, après-midi)
+
+- **Lien "S'y rendre" (itinéraire Google Maps)** sur chaque fiche, généré à partir de `lat`/`lng` déjà présents dans le front-matter — aucune fiche à modifier une par une.
+- **Mode hors-ligne basique** (`src/sw.js`, service worker réseau-d'abord-puis-cache) : une page déjà consultée reste lisible sans connexion — pertinent pour les zones à réseau faible (constaté ce matin même à Bonporteau). Enregistré dans `base.njk`. Testé avec une vraie coupure réseau simulée (Playwright `context.setOffline(true)`), pas juste supposé.
+- **Bouton "Retour en haut"** flottant, apparaît après ~600px de scroll. Point d'attention géré : il se repositionne dynamiquement au-dessus de la bannière cookies tant qu'elle est affichée (sinon les deux se chevauchent en bas d'écran).
+- **`<link rel="preconnect">`** vers les domaines Google Fonts, pour accélérer légèrement le premier affichage.
+
+**Point technique pour la suite** : si un futur changement de `style.css`/`base.njk`/`sw.js` doit être visible immédiatement pour les visiteurs récurrents, il faut penser à changer `CACHE_NAME` (actuellement `"coco-explore-v1"`) dans `src/sw.js` — sinon un visiteur qui a déjà mis le site en cache continuera de voir l'ancienne version de ces fichiers tant que le service worker ne se réactive pas avec un nouveau nom de cache. Pas grave pour du contenu (les pages HTML sont re-fetchées réseau-d'abord à chaque visite en ligne), mais à surveiller pour des changements structurels du CSS/JS partagé.
 
 ## Bug réel sur l'envoi d'avis — PARTIELLEMENT DIAGNOSTIQUÉ (20/09/2026)
 
