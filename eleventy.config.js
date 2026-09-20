@@ -24,6 +24,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/search.js");
   eleventyConfig.addPassthroughCopy("src/favoris.js");
   eleventyConfig.addPassthroughCopy("src/cookie-consent.js");
+  eleventyConfig.addPassthroughCopy("src/sw.js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/google42d095cf02301eb6.html");
 

@@ -12,6 +12,8 @@
   } catch (e) {}
 })();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <title>{{ title | safe }}</title>
 <meta name="description" content="{{ description | safe }}">
 <link rel="canonical" href="https://cocoexplore.com/{{ permalinkPath }}">
@@ -171,6 +173,10 @@
 {{ content | safe }}
 </main>
 
+<button type="button" class="back-to-top" id="back-to-top" aria-label="Retour en haut de la page" hidden>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
 <div class="cookie-banner" id="cookie-banner" hidden role="dialog" aria-label="Consentement aux cookies">
   <div class="wrap cookie-banner-inner">
     <p>Coco Explore utilise Google Analytics pour mesurer sa fréquentation de façon anonyme. Tu peux accepter ou refuser ce cookie — ton choix ne change rien à ta navigation sur le site.</p>
@@ -217,6 +223,32 @@
     } catch (e) {}
   });
 })();
+
+(function () {
+  var btn = document.getElementById("back-to-top");
+  if (!btn) return;
+  var banner = document.getElementById("cookie-banner");
+  function reposition() {
+    // Reste au-dessus de la bannière cookies tant qu'elle est affichée,
+    // sinon elle finit par la recouvrir en bas d'écran.
+    var offset = banner && !banner.hidden ? banner.getBoundingClientRect().height + 16 : 20;
+    btn.style.bottom = offset + "px";
+  }
+  window.addEventListener("scroll", function () {
+    btn.hidden = window.scrollY < 600;
+    reposition();
+  }, { passive: true });
+  window.addEventListener("resize", reposition);
+  btn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+})();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("sw.js").catch(function () {});
+  });
+}
 </script>
 
 <footer class="site-footer">

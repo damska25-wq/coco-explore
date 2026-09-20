@@ -58,6 +58,12 @@ extraScripts: |
       <div><span class="label">{{ item.label | safe }}</span><span class="value">{{ item.value | safe }}</span></div>
     </div>
     {%- endfor %}
+    {%- if lat and lng %}
+    <div class="info-item">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <div><span class="label">S'y rendre</span><span class="value"><a href="https://www.google.com/maps/dir/?api=1&amp;destination={{ lat }},{{ lng }}" target="_blank" rel="noopener">Itinéraire ↗</a></span></div>
+    </div>
+    {%- endif %}
     {%- if siteWeb %}
     <div class="info-item">
       <svg class="icon"><use href="#i-link"/></svg>
