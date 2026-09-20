@@ -13,6 +13,10 @@ L'utilisateur a pris ses propres photos de la plage de Bonporteau (Cavalaire-sur
 - **La photo était au format portrait (téléphone), alors que le bandeau `.fiche-hero` du site est très large et bas (ratio proche de 5:1)** — un centrage par défaut ne montrait qu'une fine bande horizontale de l'image, coupant la plage/le sable. Nouveau champ optionnel `heroImagePosition` (ex: `"center 55%"`) ajouté dans `fiche.njk` (`style="object-position: ..."` sur le `<img>` du bandeau) pour recentrer verticalement une photo portrait dans ce bandeau très large, sans toucher au recadrage des vignettes (cartes plages sur l'accueil/pages département), qui utilisent un ratio 16:10 bien plus tolérant et affichent déjà toute la composition correctement par défaut.
 - Réglage trouvé par test empirique (capture d'écran headless), pas par calcul seul — le rapport entre la largeur du bandeau et la hauteur du contenu texte rend le calcul peu intuitif, mieux vaut toujours vérifier visuellement avant de valider un `heroImagePosition`.
 
+**Précisions d'accès ajoutées (mêmes photos, panneaux officiels sur place)** : parking exact (Chemin Pierre Foncin, 1,4 km à pied) et mention du sentier de la Corniche des Maures (site naturel protégé, classé patrimoine national) dans le corps de la fiche + sidebar.
+
+**Photo de Coco sur le sentier ajoutée à la page "À propos"** (`src/assets/coco-sentier.jpg`), dans le premier paragraphe de l'histoire — illustre concrètement le goût de Coco pour les balades en nature.
+
 ## Toilettes publiques sur les fiches plages — FAIT (20/09/2026)
 
 Demande de l'utilisateur suite à une correction terrain (voir ci-dessous) : indiquer les toilettes publiques à proximité sur les fiches plages, uniquement quand une source fiable le confirme (jamais deviner).
