@@ -85,4 +85,23 @@
       window.location.href = matches[0].slug;
     }
   });
+
+  var copyBtn = document.getElementById("copy-link-btn");
+  var copyStatus = document.getElementById("copy-link-status");
+  if (copyBtn && copyStatus) {
+    copyBtn.addEventListener("click", function () {
+      var url = "https://cocoexplore.com/";
+      function showCopied() {
+        copyStatus.textContent = "Lien copié !";
+        setTimeout(function () { copyStatus.textContent = ""; }, 2500);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(showCopied, function () {
+          copyStatus.textContent = url;
+        });
+      } else {
+        copyStatus.textContent = url;
+      }
+    });
+  }
 })();

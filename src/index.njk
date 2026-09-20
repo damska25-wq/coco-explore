@@ -41,6 +41,15 @@ extraScripts: |
         </form>
         <div class="search-results" id="site-search-results" hidden></div>
       </div>
+      <div class="share-site">
+        <a href="https://wa.me/?text={{ 'Coco Explore : un guide gratuit pour trouver des plages, balades et adresses dog-friendly dans toute la région PACA — https://cocoexplore.com/' | urlencode }}" target="_blank" rel="noopener" class="share-site-btn">
+          <svg width="16" height="16"><use href="#i-whatsapp"/></svg> Partager Coco Explore
+        </a>
+        <button type="button" id="copy-link-btn" class="share-site-btn share-site-btn-ghost">
+          <svg width="16" height="16"><use href="#i-link"/></svg> Copier le lien
+        </button>
+        <span id="copy-link-status" class="copy-link-status" role="status"></span>
+      </div>
     </div>
     <figure class="hero-photo">
       <img src="assets/coco-hero.jpg" alt="Coco, labrador et mascotte de Coco Explore, en balade en laisse">

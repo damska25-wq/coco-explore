@@ -6,13 +6,13 @@ description: "Les réponses aux questions les plus fréquentes sur Coco Explore 
 layout: legal.njk
 extraHead: |
   <style>
-    .faq-item { border-bottom: 1px solid rgba(38,48,42,0.1); padding: 14px 0; }
+    .faq-item { border-bottom: 1px solid rgba(var(--ink),0.1); padding: 14px 0; }
     .faq-item:last-child { border-bottom: none; }
     .faq-item summary {
       cursor: pointer;
       font-weight: 700;
       font-size: 1.02rem;
-      color: var(--pin-deep);
+      color: var(--heading);
       list-style: none;
       display: flex;
       align-items: center;
@@ -29,7 +29,7 @@ extraHead: |
       transition: transform 0.15s ease;
     }
     .faq-item[open] summary::after { transform: rotate(45deg); }
-    .faq-item p { margin-top: 10px; color: rgba(38,48,42,0.85); }
+    .faq-item p { margin-top: 10px; color: rgba(var(--ink),0.85); }
   </style>
   <script type="application/ld+json">
   {

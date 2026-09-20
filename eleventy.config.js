@@ -97,6 +97,11 @@ export default function (eleventyConfig) {
     gitLastModified(inputPath) || new Date().toISOString().slice(0, 10)
   );
 
+  // Date au format RFC 822, requis par la spec RSS pour <pubDate>.
+  eleventyConfig.addFilter("rfc822", (isoDate) =>
+    new Date(isoDate + "T12:00:00Z").toUTCString()
+  );
+
   // Autres fiches de la même catégorie à suggérer en bas d'une fiche
   // (priorité à celles du même département, puis complété par les autres).
   eleventyConfig.addFilter("related", (fiches, catId, dept, excludePath, n) => {

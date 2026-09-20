@@ -3,9 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("cocoTheme");
+    var wantsDark = t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    if (wantsDark) document.documentElement.setAttribute("data-theme", "dark");
+  } catch (e) {}
+})();
+</script>
 <title>{{ title | safe }}</title>
 <meta name="description" content="{{ description | safe }}">
 <link rel="canonical" href="https://cocoexplore.com/{{ permalinkPath }}">
+<link rel="alternate" type="application/rss+xml" title="Coco Explore — Nouvelles adresses" href="feed.xml">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
@@ -120,6 +130,13 @@
       <path d="M4 20l1.3-4.1A7.9 7.9 0 1 1 8.3 19L4 20z"/>
       <path d="M9 10.2c0 2.9 2.4 5.3 5.3 5.3.5 0 .9-.6.7-1.1l-.4-1a.7.7 0 0 0-.8-.4l-1 .2a4 4 0 0 1-2.4-2.4l.2-1a.7.7 0 0 0-.4-.8l-1-.4c-.5-.2-1.1.2-1.1.7z"/>
     </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4.3"/>
+      <path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/>
+    </symbol>
   </defs>
 </svg>
 
@@ -130,6 +147,10 @@
       <a href="https://www.instagram.com/danslesyeuxdecoco/" class="nav-social" target="_blank" rel="noopener" aria-label="Coco Explore sur Instagram">
         <svg width="20" height="20"><use href="#i-instagram"/></svg>
       </a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Basculer le thème sombre">
+        <svg class="icon-sun" width="19" height="19"><use href="#i-sun"/></svg>
+        <svg class="icon-moon" width="19" height="19"><use href="#i-moon"/></svg>
+      </button>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -176,12 +197,28 @@
     if (e.key === "Escape") closeNav();
   });
 })();
+
+(function () {
+  var themeToggle = document.getElementById("theme-toggle");
+  if (!themeToggle) return;
+  themeToggle.addEventListener("click", function () {
+    var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      document.documentElement.removeAttribute("data-theme");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+    try {
+      localStorage.setItem("cocoTheme", isDark ? "light" : "dark");
+    } catch (e) {}
+  });
+})();
 </script>
 
 <footer class="site-footer">
   <div class="wrap">
     <span class="brand"><svg class="paw" width="20" height="20"><use href="#i-paw"/></svg> Coco Explore</span>
-    <span><a href="a-propos.html">À propos</a> · <a href="faq.html">FAQ</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="conditions-utilisation.html">CGU</a> · <a href="#" id="cookie-manage">Gérer les cookies</a></span>
+    <span><a href="a-propos.html">À propos</a> · <a href="faq.html">FAQ</a> · <a href="feed.xml">RSS</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="conditions-utilisation.html">CGU</a> · <a href="#" id="cookie-manage">Gérer les cookies</a></span>
     <span>Guide dog-friendly de la région PACA, avec amour 🐾</span>
   </div>
 </footer>

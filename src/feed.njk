@@ -1,0 +1,23 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Coco Explore — Nouvelles adresses dog-friendly en PACA</title>
+  <link>https://cocoexplore.com/</link>
+  <atom:link href="https://cocoexplore.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Les dernières adresses dog-friendly ajoutées sur Coco Explore : plages, balades, restaurants, hébergements et plus, dans toute la région PACA.</description>
+  <language>fr-fr</language>
+{%- for fiche in collections.fiches | latest(30) %}
+  <item>
+    <title>{{ fiche.data.cardTitle }} — {{ fiche.data.cardTag }}</title>
+    <link>https://cocoexplore.com/{{ fiche.data.permalinkPath }}</link>
+    <guid>https://cocoexplore.com/{{ fiche.data.permalinkPath }}</guid>
+    <description>{{ fiche.data.cardTeaser }}</description>
+    <pubDate>{{ fiche.inputPath | lastmod | rfc822 }}</pubDate>
+  </item>
+{%- endfor %}
+</channel>
+</rss>
