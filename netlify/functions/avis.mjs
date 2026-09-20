@@ -40,13 +40,13 @@ export default async (req) => {
     const photo = typeof body.photo === "string" ? body.photo : null;
 
     if (!fiche || !name || !message) {
-      return json({ error: "champs manquants" }, 400);
+      return json({ error: "Merci de remplir ton prénom et un petit message." }, 400);
     }
     if (name.length > MAX_NAME || message.length > MAX_MESSAGE) {
-      return json({ error: "texte trop long" }, 400);
+      return json({ error: "Le prénom ou le message est trop long." }, 400);
     }
     if (photo && (photo.length > MAX_PHOTO_CHARS || !photo.startsWith("data:image/"))) {
-      return json({ error: "photo invalide ou trop volumineuse" }, 400);
+      return json({ error: "Cette photo est trop lourde, réessaie avec une photo plus légère." }, 400);
     }
 
     const entries = (await store.get(fiche, { type: "json" })) || [];

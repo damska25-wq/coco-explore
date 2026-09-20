@@ -5,6 +5,7 @@
   var API = "/api/avis";
   var MAX_PHOTO_SIDE = 900; // px, redimensionnement côté navigateur
   var JPEG_QUALITY = 0.72;
+  var MAX_PHOTO_DATA_URL_CHARS = 380000; // marge sous la limite serveur (400 000)
 
   document.addEventListener("DOMContentLoaded", function () {
     var section = document.querySelector(".avis[data-fiche]");
@@ -111,13 +112,31 @@
       reader.onload = function (e) {
         var img = new Image();
         img.onload = function () {
-          var scale = Math.min(1, MAX_PHOTO_SIDE / Math.max(img.width, img.height));
-          var canvas = document.createElement("canvas");
-          canvas.width = Math.round(img.width * scale);
-          canvas.height = Math.round(img.height * scale);
-          var ctx = canvas.getContext("2d");
-          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-          callback(canvas.toDataURL("image/jpeg", JPEG_QUALITY));
+          function renderAt(maxSide) {
+            var scale = Math.min(1, maxSide / Math.max(img.width, img.height));
+            var canvas = document.createElement("canvas");
+            canvas.width = Math.round(img.width * scale);
+            canvas.height = Math.round(img.height * scale);
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            return canvas;
+          }
+
+          // La fonction serveur refuse les photos trop lourdes en base64 ;
+          // on essaie plusieurs qualités puis, si besoin, une taille plus
+          // petite, pour ne jamais renvoyer une image que le serveur rejettera.
+          var qualities = [JPEG_QUALITY, 0.6, 0.5, 0.4];
+          var canvas = renderAt(MAX_PHOTO_SIDE);
+          var dataUrl = null;
+          for (var i = 0; i < qualities.length; i++) {
+            dataUrl = canvas.toDataURL("image/jpeg", qualities[i]);
+            if (dataUrl.length <= MAX_PHOTO_DATA_URL_CHARS) break;
+          }
+          if (dataUrl.length > MAX_PHOTO_DATA_URL_CHARS) {
+            canvas = renderAt(Math.round(MAX_PHOTO_SIDE * 0.65));
+            dataUrl = canvas.toDataURL("image/jpeg", 0.5);
+          }
+          callback(dataUrl.length <= MAX_PHOTO_DATA_URL_CHARS ? dataUrl : null);
         };
         img.src = e.target.result;
       };
@@ -134,6 +153,11 @@
           return;
         }
         resizePhoto(file, function (dataUrl) {
+          if (!dataUrl) {
+            setStatus("Cette photo est trop lourde même après compression, essaie une autre photo.", "err");
+            photoInput.value = "";
+            return;
+          }
           photoDataUrl = dataUrl;
           if (previewImg) previewImg.src = dataUrl;
           if (preview) preview.hidden = false;
@@ -182,8 +206,15 @@
           })
         })
           .then(function (r) {
-            if (!r.ok) throw new Error("request_failed");
-            return r.json();
+            if (r.ok) return r.json();
+            // Une erreur 4xx vient d'un champ invalide (ex: photo trop
+            // lourde) : réessayer sans rien changer échouera à nouveau, donc
+            // on affiche le vrai motif plutôt que le message réseau générique.
+            return r.json().catch(function () { return {}; }).then(function (body) {
+              var err = new Error(body.error || "request_failed");
+              err.isKnownApiError = r.status < 500 && !!body.error;
+              throw err;
+            });
           })
           .then(function (entry) {
             renderComment(entry, true);
@@ -194,8 +225,11 @@
             if (photoBtnLabel) photoBtnLabel.textContent = "Photo";
             setStatus("Merci, ton avis a été publié !", "ok");
           })
-          .catch(function () {
-            setStatus("L'envoi a échoué, réessaie dans un instant.", "err");
+          .catch(function (err) {
+            setStatus(
+              err && err.isKnownApiError ? err.message : "L'envoi a échoué, réessaie dans un instant.",
+              "err"
+            );
           })
           .finally(function () {
             submitBtn.disabled = false;
