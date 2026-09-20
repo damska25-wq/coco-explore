@@ -1,6 +1,14 @@
 # État d'avancement — Coco Explore
 
-_Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon et Google Analytics ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+_Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon, Google Analytics, fiches similaires, manifeste web et accessibilité clavier ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+
+## Quatre améliorations supplémentaires — FAIT (20/09/2026)
+
+- **"Autres idées à proximité"** : en bas de chaque fiche, jusqu'à 3 suggestions de la même catégorie (même département en priorité, complété par les autres si besoin). Nouveau filtre Eleventy `related` dans `eleventy.config.js`, section ajoutée dans `src/_includes/fiche.njk`, masquée automatiquement si aucune fiche à suggérer (catégories très restreintes).
+- **`site.webmanifest`** : permet d'ajouter proprement Coco Explore en icône sur l'écran d'accueil d'un téléphone (nom, couleurs de marque, favicon + apple-touch-icon déjà existants). Lié dans `src/_includes/base.njk` avec un `<meta name="theme-color">`.
+- **`sitemap.xml` avec de vraies dates `<lastmod>`** : remplacé l'ancien système qui affichait la date du build pour toutes les URLs (donc sans aucune valeur informative) par la date du dernier commit git de chaque fichier fiche (nouveau filtre `lastmod`, `execSync("git log -1 --format=%cI -- <fichier>")`, mémoïsé). Résultat vérifié : la fiche Escalet (photo corrigée le 19/09) affiche bien `2026-09-19`, différente des autres fiches non touchées — aide Google à identifier les pages réellement mises à jour. Ajoute ~4-5s au temps de build (310 appels git), sans impact pratique.
+- **Accessibilité clavier** : lien "Aller au contenu" (`.skip-link`, visible uniquement au focus clavier) + landmark sémantique `<main id="main-content">` autour du contenu de chaque page + contour de focus visible (`:focus-visible`, couleur terracotta) sur tous les liens/boutons/champs du site, pour la navigation au clavier et les lecteurs d'écran.
+- Tout testé en headless (Playwright) avant déploiement : fiches similaires rendues avec les bons titres, lien d'évitement qui devient visible au focus (Tab), manifeste et sitemap vérifiés directement dans le HTML/XML généré.
 
 ## Google Analytics (GA4) + bannière cookies — FAIT (20/09/2026)
 
