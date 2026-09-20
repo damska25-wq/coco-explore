@@ -479,6 +479,41 @@ p { max-width: 62ch; }
 .site-footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
 .site-footer .brand { color: var(--blanc); }
 
+/* ---------- Bandeau cookies ---------- */
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  background: var(--pin-deep);
+  color: rgba(255,253,248,0.9);
+  box-shadow: 0 -6px 24px rgba(0,0,0,0.2);
+}
+.cookie-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+}
+.cookie-banner-inner p { margin: 0; max-width: 60ch; font-size: 0.92rem; }
+.cookie-banner-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.cookie-btn {
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.cookie-btn-solid { background: var(--terracotta); color: var(--blanc); }
+.cookie-btn-solid:hover { background: var(--terracotta-deep); }
+.cookie-btn-ghost { background: transparent; color: var(--blanc); border-color: rgba(255,253,248,0.4); }
+.cookie-btn-ghost:hover { border-color: var(--blanc); }
+
 /* ---------- Conseils de Coco & carte ---------- */
 
 .conseils-semaine { padding: 44px 0 8px; }

@@ -140,6 +140,16 @@
 
 {{ content | safe }}
 
+<div class="cookie-banner" id="cookie-banner" hidden role="dialog" aria-label="Consentement aux cookies">
+  <div class="wrap cookie-banner-inner">
+    <p>Coco Explore utilise Google Analytics pour mesurer sa fréquentation de façon anonyme. Tu peux accepter ou refuser ce cookie — ton choix ne change rien à ta navigation sur le site.</p>
+    <div class="cookie-banner-actions">
+      <button type="button" id="cookie-decline" class="cookie-btn cookie-btn-ghost">Refuser</button>
+      <button type="button" id="cookie-accept" class="cookie-btn cookie-btn-solid">Accepter</button>
+    </div>
+  </div>
+</div>
+
 <script>
 (function () {
   var toggle = document.getElementById("nav-toggle");
@@ -165,11 +175,12 @@
 <footer class="site-footer">
   <div class="wrap">
     <span class="brand"><svg class="paw" width="20" height="20"><use href="#i-paw"/></svg> Coco Explore</span>
-    <span><a href="a-propos.html">À propos</a> · <a href="faq.html">FAQ</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="conditions-utilisation.html">CGU</a></span>
+    <span><a href="a-propos.html">À propos</a> · <a href="faq.html">FAQ</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="conditions-utilisation.html">CGU</a> · <a href="#" id="cookie-manage">Gérer les cookies</a></span>
     <span>Guide dog-friendly de la région PACA, avec amour 🐾</span>
   </div>
 </footer>
 
 {% if extraScripts %}{{ extraScripts | safe }}{% endif %}
+<script src="cookie-consent.js" defer></script>
 </body>
 </html>
