@@ -18,10 +18,6 @@ window.COCO_LIEUX = [
 ];
 
 // "Les conseils de Coco" de la semaine : une plage, une balade et un restaurant,
-// choisis automatiquement chaque semaine parmi toutes les fiches du site
-// (rotation par numéro de semaine — aucune liste à mettre à jour à la main).
-window.COCO_CONSEILS_SEMAINE = {{ [
-  collections.fiches | weeklyPick("Plage"),
-  collections.fiches | weeklyPick("Balade"),
-  collections.fiches | weeklyPick("Restaurant")
-] | dump | safe }};
+// tous les trois dans le même département, choisis automatiquement chaque
+// semaine (rotation par numéro de semaine — aucune liste à mettre à jour à la main).
+window.COCO_CONSEILS_SEMAINE = {{ (collections.fiches | weeklyConseils(departements)) | dump | safe }};

@@ -116,20 +116,32 @@ export default function (eleventyConfig) {
     return [...sameDept, ...rest].slice(0, n);
   });
 
-  // Pioche automatiquement une fiche par semaine dans une catégorie donnée
-  // (rotation déterministe basée sur le numéro de semaine ISO — aucune liste à
-  // maintenir à la main, la sélection s'étend d'elle-même aux nouvelles fiches).
-  eleventyConfig.addFilter("weeklyPick", (fiches, tag) => {
-    const pool = fiches
-      .filter((f) => f.data.tag === tag)
-      .sort((a, b) => a.data.slug.localeCompare(b.data.slug));
-    if (!pool.length) return null;
+  // "Les conseils de Coco" : une plage, une balade et un restaurant piochés
+  // chaque semaine (rotation déterministe basée sur le numéro de semaine ISO —
+  // aucune liste à maintenir à la main). Cohérence géographique : on choisit
+  // d'abord UN département qui a bien les trois catégories, puis une fiche de
+  // chaque catégorie dans ce même département — jamais une plage à Nice avec
+  // un restaurant à Marseille.
+  eleventyConfig.addFilter("weeklyConseils", (fiches, departements) => {
     const now = new Date();
     const d = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
     d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
     const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
     const weekNum = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
-    return pool[weekNum % pool.length].data.permalinkPath;
+
+    const tags = ["Plage", "Balade", "Restaurant"];
+    const hasTagInDept = (tag, deptId) =>
+      fiches.some((f) => f.data.tag === tag && (f.data.departement || []).includes(deptId));
+    const eligible = departements.filter((dep) => tags.every((tag) => hasTagInDept(tag, dep.id)));
+    if (!eligible.length) return [];
+
+    const dept = eligible[weekNum % eligible.length];
+    return tags.map((tag) => {
+      const pool = fiches
+        .filter((f) => f.data.tag === tag && (f.data.departement || []).includes(dept.id))
+        .sort((a, b) => a.data.slug.localeCompare(b.data.slug));
+      return pool[weekNum % pool.length].data.permalinkPath;
+    });
   });
 
   return {
