@@ -1,6 +1,14 @@
 # État d'avancement — Coco Explore
 
-_Dernière mise à jour : session du 19/09/2026 (soir). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404 et favicon ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+_Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon et Google Analytics ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
+
+## Google Analytics (GA4) + bannière cookies — FAIT (20/09/2026)
+
+- Propriété/flux GA4 créé côté utilisateur (ID de mesure `G-BG010Z1RGE`). Blocage mobile finalement contourné en passant Safari en "Affichage pour ordinateur" puis en tournant le téléphone en paysage pour faire apparaître le bouton "Créer le flux" caché par la mise en page desktop compressée sur petit écran.
+- Snippet gtag.js **jamais chargé par défaut** : ajouté dans `src/cookie-consent.js`, injecté dynamiquement uniquement après consentement explicite de l'utilisateur (bandeau en bas de toutes les pages via `src/_includes/base.njk`, bouton "Accepter"/"Refuser", aucune case pré-cochée). Choix mémorisé dans `localStorage` (`cocoCookieConsent`), rechargé automatiquement aux visites suivantes sans redemander. Lien "Gérer les cookies" dans le footer pour rouvrir le bandeau et changer d'avis à tout moment (conforme RGPD/CNIL : consentement préalable, refus aussi facile que l'acceptation, réversible).
+- `src/politique-confidentialite.njk` mis à jour : nouvelle section "Mesure d'audience (Google Analytics)" + ligne ajoutée au tableau récapitulatif des données (remplace l'ancienne mention "le Site n'utilise pas d'outil de mesure d'audience").
+- Testé en headless (Playwright) : bandeau visible à la première visite, clic "Refuser" → zéro requête vers `googletagmanager.com` même après rechargement, clic "Accepter" → script chargé + consentement persisté, visite ultérieure avec consentement déjà "granted" → chargement automatique sans réafficher le bandeau, lien "Gérer les cookies" → rouvre le bandeau même après un choix antérieur.
+- **Rien à refaire côté utilisateur dans Google Analytics.** Le tableau de bord GA4 mettra quelques jours à afficher du trafic une fois que le site aura de vraies visites.
 
 ## Améliorations du site — FAIT (session du 19/09/2026, soir)
 
@@ -20,10 +28,11 @@ Une série d'idées d'amélioration proposées par Claude et validées une par u
 
 Tout testé fonctionnellement en headless (Playwright) avant déploiement : recherche, menu mobile, bascule favori + persistance localStorage + apparition de la section sur l'accueil, page 404 sans résidu de syntaxe Nunjucks. Build propre, déployé, Netlify confirmé `state: "ready"`.
 
-**En attente pour la suite (explicitement reportée par l'utilisateur à "demain") :**
-- **Google Analytics (GA4)** : bloqué en cours de configuration par des soucis d'interface mobile côté Google (bouton "Créer le flux" introuvable sur téléphone après plusieurs tentatives). À reprendre soit en mode "Affichage bureau" sur le navigateur mobile, soit depuis un ordinateur. Une fois le flux créé : installer le snippet de suivi GA4 + une bannière de consentement cookies RGPD gratuite et maison (pas encore construite).
-- **Enrichir "À propos"** avec les vrais détails personnels que l'utilisateur va fournir.
-- Une fois ces deux points traités, l'utilisateur veut continuer à demander des idées d'amélioration jusqu'à épuisement, puis basculer vers la recherche de fiches supplémentaires (portée pas encore définie — la règle "PACA uniquement sauf demande contraire" reste en vigueur).
+**Fait depuis (session du 20/09/2026 matin) :**
+- **"À propos" enrichie** avec les vrais détails fournis par l'utilisateur (Coco a 6 ans, ses habitudes, l'idée du site mûrie plus d'un an et demi avant sa mise en ligne, née de balades entre amis). Ton volontairement resté sobre et simple à la demande explicite de l'utilisateur — pas de détails trop personnels.
+- **Google Analytics** : fait, voir section dédiée plus haut.
+
+**Reste à faire :** l'utilisateur veut continuer à demander des idées d'amélioration jusqu'à épuisement, puis basculer vers la recherche de fiches supplémentaires (portée pas encore définie — la règle "PACA uniquement sauf demande contraire" reste en vigueur).
 
 ## Liens "Site officiel" sur les fiches commerciales — FAIT (19/09/2026)
 
