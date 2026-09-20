@@ -2,6 +2,8 @@
 
 _Dernière mise à jour : session du 20/09/2026 (matin). PACA est COMPLET sur toutes les catégories applicables ; référencement gratuit en place ; liens "Site officiel" ajoutés sur les fiches commerciales ; recherche, favoris, 404, favicon, Google Analytics, fiches similaires, manifeste web, accessibilité clavier, mode sombre, flux RSS, partage du site et infos toilettes publiques ajoutés. Ce fichier sert de mémoire de reprise si une session Claude s'arrête (limite d'usage) — à lire en premier avant de continuer le travail._
 
+**Note technique (20/09/2026) :** le crédit d'hébergement Netlify de l'utilisateur a été épuisé (101 déploiements de production consommés), ce qui a bloqué le déploiement automatique pendant plusieurs commits. L'utilisateur a rechargé son crédit. Si une session future constate à nouveau que `currentDeploy` reste bloqué sur un vieil ID malgré des commits poussés, vérifier d'abord ce point (tableau de bord Netlify → Billing → Credit usage) avant de chercher un bug côté code.
+
 ## Toilettes publiques sur les fiches plages — FAIT (20/09/2026)
 
 Demande de l'utilisateur suite à une correction terrain (voir ci-dessous) : indiquer les toilettes publiques à proximité sur les fiches plages, uniquement quand une source fiable le confirme (jamais deviner).
