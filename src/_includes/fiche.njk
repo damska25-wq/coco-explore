@@ -35,7 +35,8 @@ extraScripts: |
 } %}
 <script type="application/ld+json">{{ jsonLdBreadcrumb | dump | safe }}</script>
 <section class="fiche-hero">
-  <img class="fiche-hero-img" src="{{ heroImage | safe }}" alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager"{% if heroImagePosition %} style="object-position: {{ heroImagePosition | safe }};"{% endif %}>
+  {%- set heroSrcset = heroImage | imgSrcset %}
+  <img class="fiche-hero-img" src="{{ heroImage | safe }}"{% if heroSrcset %} srcset="{{ heroSrcset | safe }}" sizes="100vw"{% endif %} alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager" fetchpriority="high"{% if heroImagePosition %} style="object-position: {{ heroImagePosition | safe }};"{% endif %}>
   <button type="button" class="fav-toggle" id="fav-toggle" data-slug="{{ permalinkPath }}" aria-pressed="false" aria-label="Ajouter aux favoris">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.6 6.1.6-4.6 4.2 1.3 6.1L12 17l-5.4 3 1.3-6.1-4.6-4.2 6.1-.6z"/></svg>
   </button>
@@ -142,7 +143,8 @@ extraScripts: |
     {%- set badge = f.data.infoItems | accessBadge if f.data.breadcrumbCatId == "plages" or f.data.breadcrumbCatId == "cote-azur" else null %}
     <a href="{{ f.data.permalinkPath }}" class="fiche-card">
       <div class="thumb">
-        <img src="{{ f.data.heroImage | safe }}" alt="{{ f.data.cardTitle | safe }} — {{ f.data.cardTag | safe }}" loading="lazy">
+        {%- set cardSrcset = f.data.heroImage | imgSrcset %}
+        <img src="{{ f.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ f.data.cardTitle | safe }} — {{ f.data.cardTag | safe }}" loading="lazy">
         {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
       </div>
       <div class="body">

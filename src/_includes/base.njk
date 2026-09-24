@@ -21,18 +21,27 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#BE5B3B">
+<meta name="theme-color" content="#BE5B3B" id="theme-color-meta">
+{%- set og = ogImage | ogImage %}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coco Explore">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="{{ title | safe }}">
 <meta property="og:description" content="{{ description | safe }}">
 <meta property="og:url" content="https://cocoexplore.com/{{ permalinkPath }}">
-<meta property="og:image" content="{{ (ogImage or 'https://cocoexplore.com/assets/coco-hero.jpg') | safe }}">
+<meta property="og:image" content="{{ og.url | safe }}">
+{%- if og.width %}
+<meta property="og:image:width" content="{{ og.width }}">
+<meta property="og:image:height" content="{{ og.height }}">
+{%- endif %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ title | safe }}">
 <meta name="twitter:description" content="{{ description | safe }}">
-<meta name="twitter:image" content="{{ (ogImage or 'https://cocoexplore.com/assets/coco-hero.jpg') | safe }}">
+<meta name="twitter:image" content="{{ og.url | safe }}">
+{%- if heroImage %}
+{%- set heroSrcset = heroImage | imgSrcset %}
+<link rel="preload" as="image" href="{{ heroImage | safe }}" fetchpriority="high"{% if heroSrcset %} imagesrcset="{{ heroSrcset | safe }}" imagesizes="100vw"{% endif %}>
+{%- endif %}
 <link rel="stylesheet" href="style.css">
 {% if extraHead %}{{ extraHead | safe }}{% endif %}
 </head>
@@ -209,6 +218,13 @@
 })();
 
 (function () {
+  var themeColorMeta = document.getElementById("theme-color-meta");
+  function syncThemeColor() {
+    if (!themeColorMeta) return;
+    var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    themeColorMeta.setAttribute("content", isDark ? "#232B24" : "#BE5B3B");
+  }
+  syncThemeColor();
   var themeToggle = document.getElementById("theme-toggle");
   if (!themeToggle) return;
   themeToggle.addEventListener("click", function () {
@@ -221,6 +237,7 @@
     try {
       localStorage.setItem("cocoTheme", isDark ? "light" : "dark");
     } catch (e) {}
+    syncThemeColor();
   });
 })();
 

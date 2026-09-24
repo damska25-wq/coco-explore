@@ -111,6 +111,57 @@ export default function (eleventyConfig) {
     return null;
   });
 
+  // srcset pour les photos hébergées sur Unsplash : l'API Unsplash accepte déjà
+  // un paramètre `w` dans l'URL, donc on peut demander plusieurs largeurs sans
+  // stocker de fichiers supplémentaires. Renvoie null pour les photos locales
+  // (assets/*.jpg), qui n'ont qu'une seule taille disponible.
+  eleventyConfig.addFilter("imgSrcset", (url) => {
+    if (!url || !url.includes("images.unsplash.com")) return null;
+    try {
+      return [400, 800, 1080]
+        .map((w) => {
+          const u = new URL(url);
+          u.searchParams.set("w", String(w));
+          return `${u.toString()} ${w}w`;
+        })
+        .join(", ");
+    } catch (e) {
+      return null;
+    }
+  });
+
+  // Image + dimensions pour og:image/twitter:image. Sur Unsplash, on force un
+  // recadrage 1200x630 (ratio standard des aperçus de partage) via l'API
+  // Unsplash elle-même, ce qui garantit que les dimensions annoncées sont
+  // exactes. Pour les photos locales, dimensions réelles du fichier (mesurées
+  // une fois, `file <chemin>`) — jamais de dimension devinée.
+  const LOCAL_IMAGE_DIMENSIONS = {
+    "assets/coco-hero.jpg": [1200, 1600],
+    "assets/bonporteau.jpg": [1600, 2133],
+    "assets/coco-sentier.jpg": [1200, 1600],
+  };
+  eleventyConfig.addFilter("ogImage", (url) => {
+    const src = url || "https://cocoexplore.com/assets/coco-hero.jpg";
+    if (src.includes("images.unsplash.com")) {
+      try {
+        const u = new URL(src);
+        u.searchParams.set("w", "1200");
+        u.searchParams.set("h", "630");
+        u.searchParams.set("fit", "crop");
+        u.searchParams.set("crop", "entropy");
+        return { url: u.toString(), width: 1200, height: 630 };
+      } catch (e) {
+        return { url: src, width: null, height: null };
+      }
+    }
+    const match = Object.keys(LOCAL_IMAGE_DIMENSIONS).find((k) => src.endsWith(k));
+    if (match) {
+      const [width, height] = LOCAL_IMAGE_DIMENSIONS[match];
+      return { url: src, width, height };
+    }
+    return { url: src, width: null, height: null };
+  });
+
   // Date de dernière modification réelle d'un fichier source (dernier commit git),
   // pour un sitemap.xml dont le <lastmod> reflète les vraies corrections de contenu.
   eleventyConfig.addFilter("lastmod", (inputPath) =>

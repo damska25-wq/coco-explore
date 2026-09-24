@@ -42,7 +42,8 @@ extraHead: |
     <div class="fiche-grid">
       {%- for fiche in collections.fiches | latest(3) %}
       <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
-        <div class="thumb"><img src="{{ fiche.data.heroImage | safe }}" alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy"></div>
+        {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
+        <div class="thumb"><img src="{{ fiche.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy"></div>
         <div class="body">
           <span class="tag">{{ fiche.data.cardTag | safe }}</span>
           <h3>{{ fiche.data.cardTitle | safe }}</h3>
