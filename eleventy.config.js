@@ -26,6 +26,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/cookie-consent.js");
   eleventyConfig.addPassthroughCopy("src/sw.js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/_headers");
   eleventyConfig.addPassthroughCopy("src/google42d095cf02301eb6.html");
 
   eleventyConfig.addCollection("fiches", (collectionApi) =>
@@ -160,6 +161,14 @@ export default function (eleventyConfig) {
       return { url: src, width, height };
     }
     return { url: src, width: null, height: null };
+  });
+
+  // URL absolue d'une image pour le sitemap (balises <image:image>, requiert des
+  // URLs absolues) : les photos Unsplash sont déjà en https://, les photos locales
+  // (src/assets/*.jpg) sont préfixées avec le domaine.
+  eleventyConfig.addFilter("absoluteImg", (url) => {
+    if (!url) return null;
+    return url.startsWith("http") ? url : "https://cocoexplore.com/" + url;
   });
 
   // Date de dernière modification réelle d'un fichier source (dernier commit git),

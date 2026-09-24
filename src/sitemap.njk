@@ -3,7 +3,7 @@ permalink: sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://cocoexplore.com/</loc>
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
@@ -14,6 +14,11 @@ eleventyExcludeFromCollections: true
     <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath }}</loc>
     <lastmod>{{ fiche.inputPath | lastmod }}</lastmod>
     <priority>0.6</priority>
+    {%- if fiche.data.heroImage %}
+    <image:image>
+      <image:loc>{{ fiche.data.heroImage | absoluteImg }}</image:loc>
+    </image:image>
+    {%- endif %}
   </url>
 {%- endfor %}
 {%- for dep in departements %}

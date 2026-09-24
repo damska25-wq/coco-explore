@@ -49,6 +49,7 @@
 
     var photoDataUrl = null;
     var ratings = [];
+    var reviews = [];
 
     function setSelectedStars(value) {
       stars.forEach(function (star) {
@@ -83,6 +84,7 @@
             "ratingValue": avg.toFixed(1),
             "reviewCount": ratings.length
           };
+          data.review = reviews.slice(-20);
           ldScript.textContent = JSON.stringify(data);
         } catch (e) { /* JSON-LD non conforme, on n'insiste pas */ }
       }
@@ -146,6 +148,18 @@
         starsEl.setAttribute("aria-label", entry.rating + " étoiles sur 5");
         body.appendChild(starsEl);
         ratings.push(Number(entry.rating));
+        reviews.push({
+          "@type": "Review",
+          "author": { "@type": "Person", "name": entry.name || "Anonyme" },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": String(entry.rating),
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": (entry.message || "").slice(0, 300),
+          "datePublished": entry.date || undefined
+        });
       }
 
       var msg = document.createElement("p");
