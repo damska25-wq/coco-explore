@@ -38,6 +38,7 @@ export default async (req) => {
     const name = typeof body.name === "string" ? body.name.trim() : "";
     const message = typeof body.message === "string" ? body.message.trim() : "";
     const photo = typeof body.photo === "string" ? body.photo : null;
+    const rating = Number.isInteger(body.rating) ? body.rating : null;
 
     if (!fiche || !name || !message) {
       return json({ error: "Merci de remplir ton prénom et un petit message." }, 400);
@@ -48,6 +49,9 @@ export default async (req) => {
     if (photo && (photo.length > MAX_PHOTO_CHARS || !photo.startsWith("data:image/"))) {
       return json({ error: "Cette photo est trop lourde, réessaie avec une photo plus légère." }, 400);
     }
+    if (body.rating != null && (rating === null || rating < 1 || rating > 5)) {
+      return json({ error: "La note doit être comprise entre 1 et 5 étoiles." }, 400);
+    }
 
     const entries = (await store.get(fiche, { type: "json" })) || [];
 
@@ -56,6 +60,7 @@ export default async (req) => {
       name: name.slice(0, MAX_NAME),
       message: message.slice(0, MAX_MESSAGE),
       photo: photo || null,
+      rating: rating,
       date: new Date().toISOString()
     };
 

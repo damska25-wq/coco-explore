@@ -63,6 +63,10 @@ extraScripts: |
       <svg class="icon"><use href="#i-pin"/></svg>
       <div><span class="label">S'y rendre</span><span class="value"><a href="https://www.google.com/maps/dir/?api=1&amp;destination={{ lat }},{{ lng }}" target="_blank" rel="noopener">Itinéraire ↗</a></span></div>
     </div>
+    <div class="info-item">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <div><span class="label">Adresse</span><span class="value"><button type="button" class="copy-address-btn" id="copy-address" data-address="{{ (h1 + ', ' + lieu) | escape }}">Copier l'adresse</button> <span id="copy-address-status" class="copy-address-status"></span></span></div>
+    </div>
     {%- endif %}
     {%- if siteWeb %}
     <div class="info-item">
@@ -89,9 +93,18 @@ extraScripts: |
     <div class="avis-head">
       <h2>Avis &amp; photos</h2>
       <p>Partage ton passage avec Coco : quelques mots, une photo si tu en as une.</p>
+      <span class="avis-rating-summary" id="avis-rating-summary" hidden></span>
     </div>
 
     <form class="avis-form" novalidate>
+      <div class="avis-stars" role="radiogroup" aria-label="Ta note">
+        <button type="button" class="avis-star" data-value="1" aria-label="1 étoile">★</button>
+        <button type="button" class="avis-star" data-value="2" aria-label="2 étoiles">★</button>
+        <button type="button" class="avis-star" data-value="3" aria-label="3 étoiles">★</button>
+        <button type="button" class="avis-star" data-value="4" aria-label="4 étoiles">★</button>
+        <button type="button" class="avis-star" data-value="5" aria-label="5 étoiles">★</button>
+        <input type="hidden" name="rating" value="">
+      </div>
       <div class="avis-form-row">
         <input type="text" name="name" placeholder="Ton prénom" maxlength="60" required>
         <label class="avis-photo-btn">
@@ -126,8 +139,12 @@ extraScripts: |
   </div>
   <div class="fiche-grid">
     {%- for f in relatedFiches %}
+    {%- set badge = f.data.infoItems | accessBadge if f.data.breadcrumbCatId == "plages" or f.data.breadcrumbCatId == "cote-azur" else null %}
     <a href="{{ f.data.permalinkPath }}" class="fiche-card">
-      <div class="thumb"><img src="{{ f.data.heroImage | safe }}" alt="{{ f.data.cardTitle | safe }} — {{ f.data.cardTag | safe }}" loading="lazy"></div>
+      <div class="thumb">
+        <img src="{{ f.data.heroImage | safe }}" alt="{{ f.data.cardTitle | safe }} — {{ f.data.cardTag | safe }}" loading="lazy">
+        {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
+      </div>
       <div class="body">
         <span class="tag">{{ f.data.cardTag | safe }}</span>
         <h3>{{ f.data.cardTitle | safe }}</h3>

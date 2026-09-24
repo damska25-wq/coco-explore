@@ -8,6 +8,25 @@
   var MAX_PHOTO_DATA_URL_CHARS = 380000; // marge sous la limite serveur (400 000)
 
   document.addEventListener("DOMContentLoaded", function () {
+    var copyBtn = document.getElementById("copy-address");
+    var copyStatus = document.getElementById("copy-address-status");
+    if (copyBtn && copyStatus) {
+      copyBtn.addEventListener("click", function () {
+        var text = copyBtn.getAttribute("data-address") || "";
+        function showCopied() {
+          copyStatus.textContent = "Copié !";
+          setTimeout(function () { copyStatus.textContent = ""; }, 2500);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(showCopied, function () {
+            copyStatus.textContent = text;
+          });
+        } else {
+          copyStatus.textContent = text;
+        }
+      });
+    }
+
     var section = document.querySelector(".avis[data-fiche]");
     if (!section) return;
 
@@ -24,8 +43,58 @@
     var previewRemove = preview ? preview.querySelector("button") : null;
     var status = section.querySelector(".avis-status");
     var submitBtn = section.querySelector(".avis-submit");
+    var stars = Array.prototype.slice.call(section.querySelectorAll(".avis-star"));
+    var ratingInput = section.querySelector('input[name="rating"]');
+    var ratingSummary = document.getElementById("avis-rating-summary");
 
     var photoDataUrl = null;
+    var ratings = [];
+
+    function setSelectedStars(value) {
+      stars.forEach(function (star) {
+        star.classList.toggle("filled", Number(star.getAttribute("data-value")) <= value);
+      });
+    }
+
+    stars.forEach(function (star) {
+      star.addEventListener("click", function () {
+        var value = Number(star.getAttribute("data-value"));
+        if (ratingInput) ratingInput.value = String(value);
+        setSelectedStars(value);
+      });
+    });
+
+    function updateRatingSummary() {
+      if (!ratingSummary || !ratings.length) return;
+      var avg = ratings.reduce(function (a, b) { return a + b; }, 0) / ratings.length;
+      ratingSummary.textContent =
+        "★ " + avg.toFixed(1) + " (" + ratings.length + (ratings.length > 1 ? " avis" : " avis") + ")";
+      ratingSummary.hidden = false;
+
+      // Ajoute la note moyenne aux données structurées de la fiche (premier
+      // bloc JSON-LD, celui du lieu) une fois qu'on a de vraies notes — les
+      // avis n'existent qu'en base de données, invisibles au moment du build.
+      var ldScript = document.querySelector('script[type="application/ld+json"]');
+      if (ldScript) {
+        try {
+          var data = JSON.parse(ldScript.textContent);
+          data.aggregateRating = {
+            "@type": "AggregateRating",
+            "ratingValue": avg.toFixed(1),
+            "reviewCount": ratings.length
+          };
+          ldScript.textContent = JSON.stringify(data);
+        } catch (e) { /* JSON-LD non conforme, on n'insiste pas */ }
+      }
+    }
+
+    function starsMarkup(value) {
+      value = Math.round(Number(value) || 0);
+      if (!value) return "";
+      var out = "";
+      for (var i = 1; i <= 5; i++) out += i <= value ? "★" : "☆";
+      return out;
+    }
 
     function setStatus(text, kind) {
       if (!status) return;
@@ -70,6 +139,15 @@
       when.textContent = formatDate(entry.date);
       body.appendChild(when);
 
+      if (entry.rating) {
+        var starsEl = document.createElement("span");
+        starsEl.className = "avis-item-stars";
+        starsEl.textContent = starsMarkup(entry.rating);
+        starsEl.setAttribute("aria-label", entry.rating + " étoiles sur 5");
+        body.appendChild(starsEl);
+        ratings.push(Number(entry.rating));
+      }
+
       var msg = document.createElement("p");
       msg.textContent = entry.message || "";
       body.appendChild(msg);
@@ -103,6 +181,7 @@
             .slice()
             .reverse()
             .forEach(function (entry) { renderComment(entry, false); });
+          updateRatingSummary();
         })
         .catch(function () { /* silencieux : la fiche reste utilisable sans avis */ });
     }
@@ -202,7 +281,8 @@
             fiche: fiche,
             name: name.slice(0, 60),
             message: message.slice(0, 500),
-            photo: photoDataUrl
+            photo: photoDataUrl,
+            rating: ratingInput && ratingInput.value ? Number(ratingInput.value) : null
           })
         })
           .then(function (r) {
@@ -218,7 +298,9 @@
           })
           .then(function (entry) {
             renderComment(entry, true);
+            updateRatingSummary();
             form.reset();
+            setSelectedStars(0);
             photoDataUrl = null;
             if (preview) preview.hidden = true;
             if (photoBtn) photoBtn.classList.remove("has-photo");

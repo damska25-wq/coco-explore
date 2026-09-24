@@ -1,0 +1,54 @@
+---
+layout: base.njk
+permalink: plan-du-site.html
+permalinkPath: plan-du-site.html
+title: "Plan du site — Coco Explore"
+description: "Toutes les fiches de Coco Explore, classées par catégorie : plages, balades, restaurants, hébergements et plus, dans toute la région PACA."
+extraHead: |
+  <style>
+    .sitemap-page { padding: 48px 0 60px; }
+    .sitemap-page h1 { margin-bottom: 8px; }
+    .sitemap-page > .wrap > p { color: rgba(var(--ink),0.7); max-width: 62ch; margin-bottom: 36px; }
+    .sitemap-section { margin-bottom: 32px; }
+    .sitemap-section h2 { font-size: 1.2rem; color: var(--heading); margin-bottom: 4px; }
+    .sitemap-section .count { font-size: 0.85rem; color: rgba(var(--ink),0.55); font-weight: 400; }
+    .sitemap-links { columns: 2; column-gap: 32px; margin-top: 12px; }
+    .sitemap-links a { display: block; break-inside: avoid; padding: 3px 0; font-size: 0.95rem; text-decoration: none; color: var(--encre); }
+    .sitemap-links a:hover { color: var(--terracotta); text-decoration: underline; }
+    @media (max-width: 640px) { .sitemap-links { columns: 1; } }
+  </style>
+---
+<section class="wrap sitemap-page">
+  <span class="tag">Navigation</span>
+  <h1>Plan du site</h1>
+  <p>Toutes les fiches de Coco Explore, classées par catégorie. Pratique si tu cherches une adresse précise ou si tu veux voir l'étendue du guide d'un coup d'œil.</p>
+
+  {%- for section in sections %}
+  {%- set ficheList = collections.fiches | byCategory(section.id) %}
+  {%- if ficheList.length %}
+  <div class="sitemap-section">
+    <h2>{{ section.catGrid.label if section.catGrid else section.eyebrow | safe }} <span class="count">({{ ficheList.length }})</span></h2>
+    <div class="sitemap-links">
+      {%- for fiche in ficheList %}
+      <a href="{{ fiche.data.permalinkPath }}">{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endif %}
+  {%- endfor %}
+
+  <div class="sitemap-section">
+    <h2>Pages du site</h2>
+    <div class="sitemap-links">
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="faq.html">FAQ</a>
+      {%- for dep in departements %}
+      <a href="departement-{{ dep.slug }}.html">Secteur {{ dep.nom }}</a>
+      {%- endfor %}
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="conditions-utilisation.html">Conditions d'utilisation</a>
+    </div>
+  </div>
+</section>

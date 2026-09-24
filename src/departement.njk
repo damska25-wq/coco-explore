@@ -47,8 +47,12 @@ description: "Toutes les fiches dog-friendly du {{ dep.nom }} sur Coco Explore :
   </div>
   <div class="fiche-grid">
     {%- for fiche in deptFiches %}
+    {%- set badge = fiche.data.infoItems | accessBadge if fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur" else null %}
     <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
-      <div class="thumb"><img src="{{ fiche.data.heroImage | safe }}" alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy"></div>
+      <div class="thumb">
+        <img src="{{ fiche.data.heroImage | safe }}" alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
+        {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
+      </div>
       <div class="body">
         <span class="tag">{{ fiche.data.cardTag | safe }}</span>
         <h3>{{ fiche.data.cardTitle | safe }}</h3>

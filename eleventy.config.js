@@ -92,6 +92,25 @@ export default function (eleventyConfig) {
   };
   eleventyConfig.addFilter("schemaType", (catId) => SCHEMA_TYPES[catId] || "LocalBusiness");
 
+  // Badge "Toute l'année" / "Saisonnier" sur les vignettes de plages, dérivé
+  // du texte déjà écrit dans les champs "Chiens"/"Horaires chiens" de la
+  // fiche — on ne réaffirme jamais une règle d'accès qui ne serait pas déjà
+  // écrite noir sur blanc ailleurs sur le site (pas de champ à part à tenir
+  // à jour ni de risque de contredire le corps de la fiche).
+  eleventyConfig.addFilter("accessBadge", (infoItems) => {
+    const find = (label) => (infoItems || []).find((i) => i.label === label);
+    const chiens = find("Chiens");
+    const horaires = find("Horaires chiens");
+    const text = ((chiens ? chiens.value : "") + " " + (horaires ? horaires.value : "")).toLowerCase();
+    if (text.includes("hors saison") || /été 20\d\d/.test(text)) {
+      return { label: "Saisonnier", cls: "badge-seasonal" };
+    }
+    if (text.includes("toute l'année") || text.includes("toute l’année") || text.includes("sans restriction")) {
+      return { label: "Toute l'année", cls: "badge-year-round" };
+    }
+    return null;
+  });
+
   // Date de dernière modification réelle d'un fichier source (dernier commit git),
   // pour un sitemap.xml dont le <lastmod> reflète les vraies corrections de contenu.
   eleventyConfig.addFilter("lastmod", (inputPath) =>
