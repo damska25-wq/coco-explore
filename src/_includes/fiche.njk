@@ -74,7 +74,7 @@ extraScripts: |
       <div><span class="label">Site officiel</span><span class="value"><a href="{{ siteWeb | safe }}" target="_blank" rel="noopener nofollow">Voir le site ↗</a></span></div>
     </div>
     {%- endif %}
-    {%- set shareText = "Regarde cette adresse dog-friendly trouvée sur Coco Explore : " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + permalinkPath %}
+    {%- set shareText = "Regarde cette adresse où aller avec son chien trouvée sur Coco Explore : " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + permalinkPath %}
     <div class="info-item">
       <svg class="icon"><use href="#i-whatsapp"/></svg>
       <div><span class="label">Partager</span><span class="value"><a href="https://wa.me/?text={{ shareText | urlencode }}" target="_blank" rel="noopener">Sur WhatsApp</a></span></div>

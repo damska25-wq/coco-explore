@@ -6,14 +6,15 @@ pagination:
 permalink: "departement-{{ dep.slug }}.html"
 permalinkPath: "departement-{{ dep.slug }}.html"
 layout: base.njk
-title: "{{ dep.nom }} ({{ dep.id }}) — Coco Explore"
-description: "Toutes les fiches dog-friendly du {{ dep.nom }} sur Coco Explore : {{ dep.intro }}"
+eleventyComputed:
+  title: "{{ dep.seoTitle }}"
+  description: "{{ dep.seoDescription }}"
 ---
 <section class="hero" style="padding-bottom: 2rem;">
   <div class="wrap">
     <div class="hero-text">
       <span class="kicker">Explorer par secteur</span>
-      <h1>{{ dep.nom }}</h1>
+      <h1>{{ dep.seoH1 }}</h1>
       <p>{{ dep.intro | safe }}</p>
       <p style="margin-top: 8px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">{{ collections.fiches | countByDept(dep.id) }} fiches dans ce département.</p>
     </div>
