@@ -48,7 +48,7 @@ eleventyComputed:
   </div>
   <div class="fiche-grid">
     {%- for fiche in deptFiches %}
-    {%- set badge = fiche.data.infoItems | accessBadge if fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur" else null %}
+    {%- set badge = (fiche.data.infoItems | accessBadge) if (fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur") else ((fiche.data.infoItems | vetBadge) if fiche.data.breadcrumbCatId == "veterinaires" else null) %}
     <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
       <div class="thumb">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}

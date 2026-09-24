@@ -385,6 +385,7 @@ p { max-width: 62ch; }
 }
 .access-badge.badge-year-round { background: var(--pin); }
 .access-badge.badge-seasonal { background: var(--ocre); color: var(--pin-deep); }
+.access-badge.badge-urgence { background: var(--terracotta-deep); }
 .fiche-card .body { padding: 18px 20px 22px; }
 .fiche-card .tag { display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--terracotta); margin-bottom: 8px; }
 .fiche-card h3 { font-size: 1.2rem; margin-bottom: 6px; }

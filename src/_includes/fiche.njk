@@ -140,7 +140,7 @@ extraScripts: |
   </div>
   <div class="fiche-grid">
     {%- for f in relatedFiches %}
-    {%- set badge = f.data.infoItems | accessBadge if f.data.breadcrumbCatId == "plages" or f.data.breadcrumbCatId == "cote-azur" else null %}
+    {%- set badge = (f.data.infoItems | accessBadge) if (f.data.breadcrumbCatId == "plages" or f.data.breadcrumbCatId == "cote-azur") else ((f.data.infoItems | vetBadge) if f.data.breadcrumbCatId == "veterinaires" else null) %}
     <a href="{{ f.data.permalinkPath }}" class="fiche-card">
       <div class="thumb">
         {%- set cardSrcset = f.data.heroImage | imgSrcset %}

@@ -121,7 +121,7 @@ extraScripts: |
   </div>
   <div class="fiche-grid">
     {%- for fiche in collections.fiches | latest(6) %}
-    {%- set badge = fiche.data.infoItems | accessBadge if fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur" else null %}
+    {%- set badge = (fiche.data.infoItems | accessBadge) if (fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur") else ((fiche.data.infoItems | vetBadge) if fiche.data.breadcrumbCatId == "veterinaires" else null) %}
     <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
       <div class="thumb">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
@@ -154,7 +154,7 @@ extraScripts: |
   </div>
   <div class="fiche-grid">
     {%- for fiche in collections.fiches | byCategory(section.id) %}
-    {%- set badge = fiche.data.infoItems | accessBadge if section.id == "plages" or section.id == "cote-azur" else null %}
+    {%- set badge = (fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null) %}
     <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
       <div class="thumb">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}

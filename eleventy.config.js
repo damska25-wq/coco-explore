@@ -171,6 +171,19 @@ export default function (eleventyConfig) {
     return url.startsWith("http") ? url : "https://cocoexplore.com/" + url;
   });
 
+  // Badge "Urgences 24h/24" sur les vignettes de vétérinaires, dérivé du champ
+  // "Urgences" des infoItems déjà présent sur la fiche — même principe que
+  // accessBadge : on ne réaffirme jamais une info qui ne serait pas déjà
+  // écrite noir sur blanc ailleurs sur la fiche.
+  eleventyConfig.addFilter("vetBadge", (infoItems) => {
+    const urgence = (infoItems || []).find((i) => i.label === "Urgences");
+    const text = (urgence ? urgence.value : "").toLowerCase();
+    if (/24h\s*\/\s*24|24\/24|7j\s*\/\s*7/.test(text)) {
+      return { label: "Urgences 24h/24", cls: "badge-urgence" };
+    }
+    return null;
+  });
+
   // Date de dernière modification réelle d'un fichier source (dernier commit git),
   // pour un sitemap.xml dont le <lastmod> reflète les vraies corrections de contenu.
   eleventyConfig.addFilter("lastmod", (inputPath) =>
