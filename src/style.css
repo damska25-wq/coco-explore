@@ -139,6 +139,7 @@ p { max-width: 62ch; }
 .site-nav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 0.95rem; font-weight: 600; }
 .site-nav a { text-decoration: none; color: var(--encre); border-bottom: 2px solid transparent; padding-bottom: 2px; }
 .site-nav a:hover { border-color: var(--ocre); }
+.nav-section-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ocre); }
 
 .nav-social { display: flex; align-items: center; color: var(--terracotta); flex-shrink: 0; }
 .nav-social:hover { color: var(--terracotta-deep); }
@@ -749,6 +750,7 @@ p { max-width: 62ch; }
   .site-nav.open { display: flex; }
   .site-nav a { padding: 12px 20px; border-bottom: 1px solid rgba(var(--ink),0.08); }
   .site-nav a:hover { border-color: rgba(var(--ink),0.08); background: rgba(190,91,59,0.06); }
+  .nav-section-label { padding: 14px 20px 6px; }
   .avis-form-row { flex-direction: column; }
   .avis-card { padding: 22px 18px 24px; }
   .conseils-layout { grid-template-columns: 1fr; }

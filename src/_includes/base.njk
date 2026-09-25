@@ -173,6 +173,12 @@
         {%- for item in nav %}
         <a href="index.html#{{ item.id }}">{{ item.label | safe }}</a>
         {%- endfor %}
+        {%- for region in regions %}
+        <span class="nav-section-label">{{ region.nom }}</span>
+        {%- for dep in region.departements %}
+        <a href="departement-{{ dep.slug }}.html">{{ dep.nom }}</a>
+        {%- endfor %}
+        {%- endfor %}
       </nav>
     </div>
   </div>
