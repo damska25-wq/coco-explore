@@ -1,5 +1,6 @@
 export default [
   { id: "plages", label: "Plages" },
+  { id: "lacs", label: "Lacs" },
   { id: "cote-azur", label: "Côte d'Azur" },
   { id: "balades", label: "Balades" },
   { id: "activites", label: "Activités" },
@@ -9,5 +10,4 @@ export default [
   { id: "dogwash", label: "Douche à chien" },
   { id: "veterinaires", label: "Vétérinaires" },
   { id: "dogsitters", label: "Garde de chien" },
-  { id: "lacs", label: "Lacs" },
 ];
