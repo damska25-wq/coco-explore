@@ -9,8 +9,8 @@
     "Urgences vétérinaires": "#8B1E1E",
     "Activité": "#3E8E7E",
     "Restaurant": "#D98E3E",
-    "Dog Wash": "#2A9D9D",
-    "Dog-sitter": "#7C6FAE"
+    "Douche à chien": "#2A9D9D",
+    "Garde de chien": "#7C6FAE"
   };
 
   var lieux = window.COCO_LIEUX || [];

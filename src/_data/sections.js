@@ -49,9 +49,9 @@ export default [
   },
   {
     id: "dogwash",
-    eyebrow: "Dog Wash",
+    eyebrow: "Douche à chien",
     heading: "Rincer son chien après la plage ou la balade",
-    catGrid: { icon: "i-drop", label: "Dog Wash", countIds: ["dogwash"] },
+    catGrid: { icon: "i-drop", label: "Douche à chien", countIds: ["dogwash"] },
   },
   {
     id: "veterinaires",
@@ -61,8 +61,8 @@ export default [
   },
   {
     id: "dogsitters",
-    eyebrow: "Dog-sitters",
+    eyebrow: "Garde de chien",
     heading: "Faire garder son chien en toute confiance",
-    catGrid: { icon: "i-paw", label: "Dog-sitters", countIds: ["dogsitters"] },
+    catGrid: { icon: "i-paw", label: "Garde de chien", countIds: ["dogsitters"] },
   },
 ];

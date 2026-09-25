@@ -6,8 +6,8 @@ export default [
   { id: "restaurants", label: "Restaurants" },
   { id: "hebergements", label: "Hébergements" },
   { id: "toiletteurs", label: "Toiletteurs" },
-  { id: "dogwash", label: "Dog Wash" },
+  { id: "dogwash", label: "Douche à chien" },
   { id: "veterinaires", label: "Vétérinaires" },
-  { id: "dogsitters", label: "Dog-sitters" },
+  { id: "dogsitters", label: "Garde de chien" },
   { id: "lacs", label: "Lacs" },
 ];
