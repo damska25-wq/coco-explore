@@ -21,13 +21,14 @@ eleventyComputed:
   </div>
 </section>
 
+{%- for region in regions %}
 <section class="categories wrap">
   <div class="section-head">
-    <span class="eyebrow">Autres secteurs</span>
-    <h2>Changer de département</h2>
+    <span class="eyebrow">{% if region.nom == dep.region %}Autres secteurs{% else %}Autre région{% endif %}</span>
+    <h2>{{ region.nom }}</h2>
   </div>
   <div class="cat-grid">
-    {%- for other in departements %}
+    {%- for other in region.departements %}
     <a href="departement-{{ other.slug }}.html" class="cat-card">
       <svg class="icon"><use href="#i-pin"/></svg>
       <h3>{{ other.nom }}</h3>
@@ -36,6 +37,7 @@ eleventyComputed:
     {%- endfor %}
   </div>
 </section>
+{%- endfor %}
 
 {% for section in sections %}
 {%- if section.catGrid %}

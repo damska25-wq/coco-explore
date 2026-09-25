@@ -98,13 +98,14 @@ extraScripts: |
   </div>
 </section>
 
+{%- for region in regions %}
 <section class="categories wrap">
   <div class="section-head">
-    <span class="eyebrow">Explorer par secteur</span>
-    <h2>Toute la région PACA, département par département</h2>
+    <span class="eyebrow">Explorer par région</span>
+    <h2>{{ region.nom }}, département par département</h2>
   </div>
   <div class="cat-grid">
-    {%- for dep in departements %}
+    {%- for dep in region.departements %}
     <a href="departement-{{ dep.slug }}.html" class="cat-card">
       <svg class="icon"><use href="#i-pin"/></svg>
       <h3>{{ dep.nom }}</h3>
@@ -113,6 +114,7 @@ extraScripts: |
     {%- endfor %}
   </div>
 </section>
+{%- endfor %}
 
 <section class="fiches wrap" id="nouveautes">
   <div class="section-head">

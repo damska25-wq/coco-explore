@@ -44,8 +44,10 @@ extraHead: |
       <a href="a-propos.html">À propos</a>
       <a href="faq.html">FAQ</a>
       <a href="aires-autoroute-chien.html">Aires d'autoroute avec son chien</a>
-      {%- for dep in departements %}
-      <a href="departement-{{ dep.slug }}.html">Secteur {{ dep.nom }}</a>
+      {%- for region in regions %}
+      {%- for dep in region.departements %}
+      <a href="departement-{{ dep.slug }}.html">{{ region.nom }} — {{ dep.nom }}</a>
+      {%- endfor %}
       {%- endfor %}
       <a href="mentions-legales.html">Mentions légales</a>
       <a href="politique-confidentialite.html">Politique de confidentialité</a>
