@@ -23,6 +23,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/map.js");
   eleventyConfig.addPassthroughCopy("src/search.js");
   eleventyConfig.addPassthroughCopy("src/favoris.js");
+  eleventyConfig.addPassthroughCopy("src/dept-filter.js");
   eleventyConfig.addPassthroughCopy("src/cookie-consent.js");
   eleventyConfig.addPassthroughCopy("src/sw.js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");

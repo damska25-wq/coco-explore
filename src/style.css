@@ -343,6 +343,35 @@ p { max-width: 62ch; }
 .cat-card h3 { font-size: 1.05rem; margin-bottom: 2px; }
 .cat-card span.count { font-size: 0.85rem; color: rgba(var(--ink),0.6); }
 
+/* ---------- Filtre par catégorie (page département) ---------- */
+
+.dept-filter-row { display: flex; flex-wrap: wrap; gap: 10px; padding: 24px 0 4px; }
+.dept-filter-btn {
+  font: inherit;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 12px 18px;
+  min-height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--ink),0.18);
+  background: var(--surface);
+  color: var(--encre);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.dept-filter-btn:hover { border-color: var(--ocre); }
+.dept-filter-btn.active { background: var(--ocre); border-color: var(--ocre); color: var(--pin-deep); }
+.dept-filter-empty {
+  margin: 14px 0 0;
+  padding: 18px 20px;
+  background: var(--surface-soft);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: rgba(var(--ink),0.75);
+}
+
 /* ---------- Fiche cards (homepage previews) ---------- */
 
 .fiches { padding: 40px 0 64px; }
@@ -761,4 +790,6 @@ p { max-width: 62ch; }
   .avis-card { padding: 22px 18px 24px; }
   .conseils-layout { grid-template-columns: 1fr; }
   #coco-map { height: 300px; }
+  .dept-filter-row { gap: 8px; padding: 18px 0 2px; }
+  .dept-filter-btn { padding: 12px 14px; font-size: 0.88rem; }
 }

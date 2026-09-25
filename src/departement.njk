@@ -21,6 +21,26 @@ eleventyComputed:
   </div>
 </section>
 
+{%- set deptFilters = [
+  { id: "tout", label: "Tout" },
+  { id: "plages", label: "Plages" },
+  { id: "hebergements", label: "Hébergements" },
+  { id: "lacs", label: "Lacs" },
+  { id: "balades", label: "Balades" },
+  { id: "restaurants", label: "Restaurants" },
+  { id: "veterinaires", label: "Vétérinaires" },
+  { id: "toiletteurs", label: "Toiletteurs" },
+  { id: "activites", label: "Parcs canins" }
+] %}
+<div class="wrap">
+  <div class="dept-filter-row" id="dept-filter-row" role="group" aria-label="Filtrer les fiches par catégorie">
+    {%- for f in deptFilters %}
+    <button type="button" class="dept-filter-btn{% if loop.first %} active{% endif %}" data-cat="{{ f.id }}" aria-pressed="{% if loop.first %}true{% else %}false{% endif %}">{{ f.label }}</button>
+    {%- endfor %}
+  </div>
+  <p class="dept-filter-empty" id="dept-filter-empty" hidden>Pas encore de fiche ici, on y travaille !</p>
+</div>
+
 {%- for region in regions %}
 <section class="categories wrap">
   <div class="section-head">
@@ -74,3 +94,5 @@ eleventyComputed:
 {%- endif %}
 {%- endif %}
 {% endfor %}
+
+<script src="dept-filter.js" defer></script>
