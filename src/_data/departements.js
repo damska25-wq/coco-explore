@@ -69,4 +69,14 @@ export default [
     seoDescription: "Où aller avec son chien dans l'Hérault : plages autorisées entre Sète et Cap d'Agde, balades en garrigue, bonnes adresses à Montpellier, avec Coco.",
     seoH1: "Où aller avec son chien dans l'Hérault",
   },
+  {
+    id: "30",
+    nom: "Gard",
+    slug: "gard",
+    region: "Occitanie",
+    intro: "Nîmes, le Pont du Gard, Uzès et les Cévennes — entre garrigue, gorges du Gardon et arrière-pays camarguais.",
+    seoTitle: "Où aller avec son chien dans le Gard : balades, sites",
+    seoDescription: "Où aller avec son chien dans le Gard : Pont du Gard, gorges du Gardon, Uzès, Nîmes et les Cévennes, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Gard",
+  },
 ];
