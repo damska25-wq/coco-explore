@@ -53,4 +53,13 @@ export default [
     seoDescription: "Où aller avec son chien dans les Hautes-Alpes : massif des Écrins, Queyras, Briançon et lac de Serre-Ponçon, balades et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans les Hautes-Alpes",
   },
+  {
+    id: "34",
+    nom: "Hérault",
+    slug: "herault",
+    intro: "Montpellier, Sète, Cap d'Agde et La Grande-Motte — le littoral languedocien entre étangs, garrigue et grandes plages.",
+    seoTitle: "Où aller avec son chien dans l'Hérault : plages, balades",
+    seoDescription: "Où aller avec son chien dans l'Hérault : plages autorisées entre Sète et Cap d'Agde, balades en garrigue, bonnes adresses à Montpellier, avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Hérault",
+  },
 ];
