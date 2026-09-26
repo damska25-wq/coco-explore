@@ -79,4 +79,14 @@ export default [
     seoDescription: "Où aller avec son chien dans le Gard : Pont du Gard, gorges du Gardon, Uzès, Nîmes et les Cévennes, balades et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans le Gard",
   },
+  {
+    id: "11",
+    nom: "Aude",
+    slug: "aude",
+    region: "Occitanie",
+    intro: "Carcassonne et sa Cité médiévale, Narbonne, Leucate et le vignoble des Corbières et du Minervois.",
+    seoTitle: "Où aller avec son chien dans l'Aude : Carcassonne, Leucate",
+    seoDescription: "Où aller avec son chien dans l'Aude : la Cité de Carcassonne, les plages de Leucate et Gruissan, les Corbières et le Minervois, avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Aude",
+  },
 ];
