@@ -89,4 +89,14 @@ export default [
     seoDescription: "Où aller avec son chien dans l'Aude : la Cité de Carcassonne, les plages de Leucate et Gruissan, les Corbières et le Minervois, avec Coco.",
     seoH1: "Où aller avec son chien dans l'Aude",
   },
+  {
+    id: "66",
+    nom: "Pyrénées-Orientales",
+    slug: "pyrenees-orientales",
+    region: "Occitanie",
+    intro: "Perpignan, Collioure et la Côte Vermeille, Céret, la Cerdagne et le massif du Canigó.",
+    seoTitle: "Où aller avec son chien dans les Pyrénées-Orientales",
+    seoDescription: "Où aller avec son chien dans les Pyrénées-Orientales : plages d'Argelès-sur-Mer et du Barcarès, Collioure, Céret, la Cerdagne et le Canigó, avec Coco.",
+    seoH1: "Où aller avec son chien dans les Pyrénées-Orientales",
+  },
 ];
