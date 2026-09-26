@@ -99,4 +99,14 @@ export default [
     seoDescription: "Où aller avec son chien dans les Pyrénées-Orientales : plages d'Argelès-sur-Mer et du Barcarès, Collioure, Céret, la Cerdagne et le Canigó, avec Coco.",
     seoH1: "Où aller avec son chien dans les Pyrénées-Orientales",
   },
+  {
+    id: "31",
+    nom: "Haute-Garonne",
+    slug: "haute-garonne",
+    region: "Occitanie",
+    intro: "Toulouse et son agglomération, le Comminges et le Luchonnais, entre Garonne et Pyrénées centrales.",
+    seoTitle: "Où aller avec son chien en Haute-Garonne : Toulouse",
+    seoDescription: "Où aller avec son chien en Haute-Garonne : Toulouse et ses caniparcs, le Lac de la Ramée, le Comminges et Bagnères-de-Luchon, avec Coco.",
+    seoH1: "Où aller avec son chien en Haute-Garonne",
+  },
 ];
