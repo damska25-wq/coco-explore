@@ -1,4 +1,5 @@
 import { execSync } from "node:child_process";
+import departements from "./src/_data/departements.js";
 
 const gitDateCache = new Map();
 function gitLastModified(filePath) {
@@ -93,6 +94,15 @@ export default function (eleventyConfig) {
     veterinaires: "VeterinaryCare",
   };
   eleventyConfig.addFilter("schemaType", (catId) => SCHEMA_TYPES[catId] || "LocalBusiness");
+
+  // Région administrative réelle d'une fiche, déduite de son département —
+  // remplace un ancien "Provence-Alpes-Côte d'Azur" figé dans les données
+  // structurées, faux depuis l'arrivée des départements d'Occitanie.
+  eleventyConfig.addFilter("regionFor", (deptIds) => {
+    const id = Array.isArray(deptIds) ? deptIds[0] : deptIds;
+    const dep = departements.find((d) => d.id === id);
+    return dep ? dep.region : "Provence-Alpes-Côte d'Azur";
+  });
 
   // Badge "Toute l'année" / "Saisonnier" sur les vignettes de plages, dérivé
   // du texte déjà écrit dans les champs "Chiens"/"Horaires chiens" de la
