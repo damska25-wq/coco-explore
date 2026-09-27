@@ -742,7 +742,7 @@ p { max-width: 62ch; }
   cursor: pointer; opacity: 0.55; transition: opacity 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
 .map-filter:hover { opacity: 0.85; }
-.map-filter.active { opacity: 1; background: var(--dot); color: var(--blanc); border-color: transparent; }
+.map-filter.active { opacity: 1; background: var(--dot-active, var(--dot)); color: var(--blanc); border-color: transparent; }
 .map-filter::before {
   content: ''; position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
   width: 9px; height: 9px; border-radius: 50%; background: var(--dot);

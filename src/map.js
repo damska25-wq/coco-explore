@@ -12,6 +12,22 @@
     "Douche à chien": "#2A9D9D",
     "Garde de chien": "#7C6FAE"
   };
+  // Variante assombrie de chaque couleur, utilisée uniquement comme fond du
+  // bouton de filtre actif (texte blanc dessus) — certaines couleurs de COLORS
+  // sont trop claires pour offrir un contraste AA suffisant avec du texte blanc.
+  var ACTIVE_BG = {
+    "Plage": "#ba593a",
+    "Balade": "#3C5943",
+    "Hébergement": "#956e2c",
+    "Lacs & points d'eau": "#3d79ad",
+    "Toiletteur": "#A65C8C",
+    "Vétérinaire": "#B0413E",
+    "Urgences vétérinaires": "#8B1E1E",
+    "Activité": "#388071",
+    "Restaurant": "#a56520",
+    "Douche à chien": "#228181",
+    "Garde de chien": "#796cac"
+  };
 
   var lieux = window.COCO_LIEUX || [];
   var conseilsSlugs = window.COCO_CONSEILS_SEMAINE || [];
@@ -145,6 +161,7 @@
       btn.type = "button";
       btn.className = "map-filter";
       btn.style.setProperty("--dot", COLORS[cat]);
+      btn.style.setProperty("--dot-active", ACTIVE_BG[cat] || COLORS[cat]);
       btn.textContent = cat;
       btn.setAttribute("aria-pressed", "false");
       btn.addEventListener("click", function () { setActiveCategorie(cat); });
