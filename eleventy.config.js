@@ -141,6 +141,7 @@ export default function (eleventyConfig) {
     "assets/coco-hero.jpg": [1200, 1600],
     "assets/bonporteau.jpg": [1600, 2133],
     "assets/coco-sentier.jpg": [1200, 1600],
+    "assets/grand-pin-port-grimaud.jpg": [1932, 2576],
   };
   eleventyConfig.addFilter("ogImage", (url) => {
     const src = url || "https://cocoexplore.com/assets/coco-hero.jpg";
