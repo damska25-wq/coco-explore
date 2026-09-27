@@ -19,12 +19,13 @@
 
   // Construit la liste des cartes "conseils de la semaine" à partir de COCO_CONSEILS_SEMAINE
   // (seule liste à modifier chaque semaine dans map-data.js).
+  var lieuBySlug = {};
+  lieux.forEach(function (l) { lieuBySlug[l.slug] = l; });
+
   var conseilsList = document.getElementById("coco-conseils-list");
   if (conseilsList) {
-    var bySlug = {};
-    lieux.forEach(function (l) { bySlug[l.slug] = l; });
     conseilsSlugs.forEach(function (slug) {
-      var lieu = bySlug[slug];
+      var lieu = lieuBySlug[slug];
       if (!lieu) return;
       var card = document.createElement("button");
       card.type = "button";
@@ -40,7 +41,7 @@
 
   if (!mapEl || !window.L) return;
 
-  var map = L.map(mapEl, { scrollWheelZoom: false }).setView([43.45, 6.3], 9);
+  var map = L.map(mapEl, { scrollWheelZoom: false }).setView([43.5, 4.2], 7);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
@@ -89,41 +90,81 @@
     layerByCategorie[lieu.categorie].addLayer(marker);
   });
 
-  Object.keys(layerByCategorie).forEach(function (cat) {
-    layerByCategorie[cat].addTo(map);
-  });
+  // Aucune catégorie affichée par défaut — l'utilisateur choisit, pour éviter
+  // une carte surchargée de tous les points en même temps.
+  var activeCategorie = null; // null = rien affiché, "TOUT" = toutes les catégories
+  var buttonsByCat = {};
+  var mapPrompt = document.getElementById("coco-map-prompt");
 
-  // Filtres par catégorie
+  function updatePrompt() {
+    if (mapPrompt) mapPrompt.hidden = !!activeCategorie;
+  }
+
+  function updateButtons() {
+    Object.keys(buttonsByCat).forEach(function (key) {
+      var isActive = activeCategorie === key;
+      buttonsByCat[key].classList.toggle("active", isActive);
+      buttonsByCat[key].setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  }
+
+  function setActiveCategorie(cat) {
+    activeCategorie = activeCategorie === cat ? null : cat;
+
+    Object.keys(layerByCategorie).forEach(function (key) {
+      if (map.hasLayer(layerByCategorie[key])) map.removeLayer(layerByCategorie[key]);
+    });
+
+    if (activeCategorie === "TOUT") {
+      Object.keys(layerByCategorie).forEach(function (key) {
+        layerByCategorie[key].addTo(map);
+      });
+    } else if (activeCategorie && layerByCategorie[activeCategorie]) {
+      layerByCategorie[activeCategorie].addTo(map);
+    }
+
+    updateButtons();
+    updatePrompt();
+  }
+
+  // Filtres par catégorie (sélection exclusive) + "Tout afficher"
   var filterBar = document.getElementById("coco-map-filters");
   if (filterBar) {
+    var toutBtn = document.createElement("button");
+    toutBtn.type = "button";
+    toutBtn.className = "map-filter map-filter-all";
+    toutBtn.textContent = "Tout afficher";
+    toutBtn.setAttribute("aria-pressed", "false");
+    toutBtn.addEventListener("click", function () { setActiveCategorie("TOUT"); });
+    filterBar.appendChild(toutBtn);
+    buttonsByCat.TOUT = toutBtn;
+
     Object.keys(COLORS).forEach(function (cat) {
       if (!layerByCategorie[cat]) return;
       var btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "map-filter active";
+      btn.className = "map-filter";
       btn.style.setProperty("--dot", COLORS[cat]);
       btn.textContent = cat;
-      btn.setAttribute("aria-pressed", "true");
-      btn.addEventListener("click", function () {
-        var active = btn.classList.toggle("active");
-        btn.setAttribute("aria-pressed", active ? "true" : "false");
-        if (active) {
-          layerByCategorie[cat].addTo(map);
-        } else {
-          map.removeLayer(layerByCategorie[cat]);
-        }
-      });
+      btn.setAttribute("aria-pressed", "false");
+      btn.addEventListener("click", function () { setActiveCategorie(cat); });
       filterBar.appendChild(btn);
+      buttonsByCat[cat] = btn;
     });
   }
 
-  // Clic sur une carte "conseil de la semaine" -> centre la carte et ouvre la bulle
+  // Clic sur une carte "conseil de la semaine" -> affiche sa catégorie,
+  // centre la carte et ouvre la bulle
   document.querySelectorAll("[data-conseil-slug]").forEach(function (card) {
     card.addEventListener("click", function (e) {
       e.preventDefault();
       var slug = card.getAttribute("data-conseil-slug");
       var marker = markersBySlug[slug];
-      if (!marker) return;
+      var lieu = lieuBySlug[slug];
+      if (!marker || !lieu) return;
+      if (activeCategorie !== "TOUT" && activeCategorie !== lieu.categorie) {
+        setActiveCategorie(lieu.categorie);
+      }
       mapEl.scrollIntoView({ behavior: "smooth", block: "center" });
       map.flyTo(marker.getLatLng(), 13, { duration: 0.6 });
       window.setTimeout(function () {
