@@ -170,6 +170,13 @@
     });
   }
 
+  // Catégorie affichée par défaut au chargement, pour que la carte ne soit
+  // pas vide au premier coup d'œil — l'utilisateur reste libre d'en choisir
+  // une autre ou de revenir à rien via le même bouton.
+  if (layerByCategorie["Plage"]) {
+    setActiveCategorie("Plage");
+  }
+
   // Clic sur une carte "conseil de la semaine" -> affiche sa catégorie,
   // centre la carte et ouvre la bulle
   document.querySelectorAll("[data-conseil-slug]").forEach(function (card) {
