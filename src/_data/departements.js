@@ -1,5 +1,15 @@
 export default [
   {
+    id: "87",
+    nom: "Haute-Vienne",
+    slug: "haute-vienne",
+    region: "Nouvelle-Aquitaine",
+    intro: "Limoges et ses parcs, la cité martyre d'Oradour-sur-Glane, le lac de Saint-Pardoux, Rochechouart et son château météorite, Saint-Yrieix-la-Perche et le Pays de Nexon — entre vallées de la Vienne, de la Briance et de la Glane.",
+    seoTitle: "Où aller avec son chien en Haute-Vienne : Limoges, Saint-Pardoux",
+    seoDescription: "Où aller avec son chien en Haute-Vienne : Limoges, lac de Saint-Pardoux, Rochechouart, Saint-Yrieix-la-Perche et Nexon, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Haute-Vienne",
+  },
+  {
     id: "86",
     nom: "Vienne",
     slug: "vienne",
