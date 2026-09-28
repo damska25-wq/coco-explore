@@ -1,5 +1,15 @@
 export default [
   {
+    id: "19",
+    nom: "Corrèze",
+    slug: "correze",
+    region: "Nouvelle-Aquitaine",
+    intro: "Brive-la-Gaillarde et Tulle, les villages classés de Collonges-la-Rouge et Curemonte, le château de Turenne, les cascades de Gimel et la vallée de la Dordogne — entre plateau de Millevaches et bassin de Brive.",
+    seoTitle: "Où aller avec son chien en Corrèze : Brive, Tulle, Collonges",
+    seoDescription: "Où aller avec son chien en Corrèze : Brive-la-Gaillarde, Tulle, Collonges-la-Rouge, vallée de la Dordogne et lacs corréziens, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Corrèze",
+  },
+  {
     id: "87",
     nom: "Haute-Vienne",
     slug: "haute-vienne",
