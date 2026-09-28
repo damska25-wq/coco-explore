@@ -10,6 +10,16 @@ export default [
     seoH1: "Où aller avec son chien en Gironde",
   },
   {
+    id: "40",
+    nom: "Landes",
+    slug: "landes",
+    region: "Nouvelle-Aquitaine",
+    intro: "Hossegor, Seignosse, Mimizan et Contis — de longues plages océanes, des lacs et étangs et la forêt des Landes de Gascogne, entre surf et grands espaces.",
+    seoTitle: "Où aller avec son chien dans les Landes : plages, lacs",
+    seoDescription: "Où aller avec son chien dans les Landes : plages d'Hossegor, de Seignosse et de Mimizan, lacs de Soustons et d'Hossegor, forêt des Landes de Gascogne, avec Coco.",
+    seoH1: "Où aller avec son chien dans les Landes",
+  },
+  {
     id: "83",
     nom: "Var",
     slug: "var",
