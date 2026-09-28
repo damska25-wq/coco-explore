@@ -1,5 +1,15 @@
 export default [
   {
+    id: "24",
+    nom: "Dordogne",
+    slug: "dordogne",
+    region: "Nouvelle-Aquitaine",
+    intro: "Le Périgord et sa vallée de la Dordogne, Sarlat, les châteaux de La Roque-Gageac et Beynac, Périgueux et Brantôme — baignades de rivière et grands espaces entre Vézère et Isle.",
+    seoTitle: "Où aller avec son chien en Dordogne : Sarlat, Périgueux",
+    seoDescription: "Où aller avec son chien en Dordogne : baignades le long de la Dordogne et de la Vézère, Sarlat, Périgueux, Brantôme et les bastides du Périgord, avec Coco.",
+    seoH1: "Où aller avec son chien en Dordogne",
+  },
+  {
     id: "33",
     nom: "Gironde",
     slug: "gironde",
