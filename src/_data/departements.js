@@ -1,5 +1,15 @@
 export default [
   {
+    id: "86",
+    nom: "Vienne",
+    slug: "vienne",
+    region: "Nouvelle-Aquitaine",
+    intro: "Poitiers et ses parcs, le Futuroscope, Chauvigny et ses châteaux, Angles-sur-l'Anglin classé parmi les Plus Beaux Villages de France, Montmorillon et Châtellerault — entre vallées du Clain, de la Vienne et de la Gartempe.",
+    seoTitle: "Où aller avec son chien en Vienne : Poitiers, Futuroscope",
+    seoDescription: "Où aller avec son chien en Vienne : Poitiers, secteur du Futuroscope, Chauvigny, Châtellerault et Montmorillon, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Vienne",
+  },
+  {
     id: "79",
     nom: "Deux-Sèvres",
     slug: "deux-sevres",
