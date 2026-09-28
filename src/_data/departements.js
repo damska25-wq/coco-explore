@@ -1,5 +1,15 @@
 export default [
   {
+    id: "33",
+    nom: "Gironde",
+    slug: "gironde",
+    region: "Nouvelle-Aquitaine",
+    intro: "Bordeaux, le bassin d'Arcachon, la Dune du Pilat, Lacanau et le vignoble de Saint-Émilion — entre océan Atlantique, lacs médocains et Garonne.",
+    seoTitle: "Où aller avec son chien en Gironde : Bordeaux, Arcachon",
+    seoDescription: "Où aller avec son chien en Gironde : bassin d'Arcachon, Dune du Pilat, Lacanau, Bordeaux et Saint-Émilion, plages et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Gironde",
+  },
+  {
     id: "83",
     nom: "Var",
     slug: "var",
