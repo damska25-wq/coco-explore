@@ -1,5 +1,15 @@
 export default [
   {
+    id: "17",
+    nom: "Charente-Maritime",
+    slug: "charente-maritime",
+    region: "Nouvelle-Aquitaine",
+    intro: "La Rochelle et ses tours, l'Île de Ré et l'Île d'Oléron, Royan et la Côte de Beauté, Rochefort et l'estuaire de la Charente — un long littoral atlantique entre plages, marais et villages ostréicoles.",
+    seoTitle: "Où aller avec son chien en Charente-Maritime",
+    seoDescription: "Où aller avec son chien en Charente-Maritime : La Rochelle, Île de Ré, Île d'Oléron, Royan et Rochefort, plages, restaurants et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Charente-Maritime",
+  },
+  {
     id: "47",
     nom: "Lot-et-Garonne",
     slug: "lot-et-garonne",
