@@ -1,5 +1,15 @@
 export default [
   {
+    id: "79",
+    nom: "Deux-Sèvres",
+    slug: "deux-sevres",
+    region: "Nouvelle-Aquitaine",
+    intro: "Niort et sa Sèvre Niortaise, le Marais Poitevin et sa Venise Verte entre Coulon, Arçais et Saint-Hilaire-la-Palud, Parthenay, Melle et Bressuire — canaux ombragés en barque, voies vertes et villages de la Gâtine.",
+    seoTitle: "Où aller avec son chien en Deux-Sèvres : Niort, Marais Poitevin",
+    seoDescription: "Où aller avec son chien en Deux-Sèvres : Niort, le Marais Poitevin (Coulon, Arçais), Parthenay, Melle et Bressuire, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Deux-Sèvres",
+  },
+  {
     id: "16",
     nom: "Charente",
     slug: "charente",
