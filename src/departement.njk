@@ -43,24 +43,6 @@ eleventyComputed:
   <p class="dept-filter-empty" id="dept-filter-empty" hidden>Pas encore de fiche ici, on y travaille !</p>
 </div>
 
-{%- for region in regions %}
-<section class="categories wrap">
-  <div class="section-head">
-    <span class="eyebrow">{% if region.nom == dep.region %}Autres secteurs{% else %}Autre région{% endif %}</span>
-    <h2>{{ region.nom }}</h2>
-  </div>
-  <div class="cat-grid">
-    {%- for other in region.departements %}
-    <a href="departement-{{ other.slug }}.html" class="cat-card">
-      <svg class="icon"><use href="#i-pin"/></svg>
-      <h3>{{ other.nom }}</h3>
-      <span class="count">{{ collections.fiches | countByDept(other.id) }} fiches</span>
-    </a>
-    {%- endfor %}
-  </div>
-</section>
-{%- endfor %}
-
 {% for section in sections %}
 {%- if section.catGrid %}
 {%- set deptFiches = collections.fiches | byCategoryAndDept(section.catGrid.countIds, dep.id) %}
@@ -97,4 +79,31 @@ eleventyComputed:
 {%- endif %}
 {% endfor %}
 
+<section class="categories wrap">
+  <div class="section-head">
+    <span class="eyebrow">Explorer plus loin</span>
+    <h2>D'autres départements</h2>
+  </div>
+  <div class="region-accordion" id="region-accordion">
+    {%- for region in regions %}
+    <div class="region-accordion-item">
+      <button type="button" class="region-accordion-toggle" aria-expanded="false">
+        <span>{{ region.nom }}</span>
+        <span class="region-accordion-meta">{{ region.departements.length }} départements <svg class="region-accordion-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></span>
+      </button>
+      <div class="cat-grid region-accordion-body" hidden>
+        {%- for other in region.departements %}
+        <a href="departement-{{ other.slug }}.html" class="cat-card">
+          <svg class="icon"><use href="#i-pin"/></svg>
+          <h3>{{ other.nom }}</h3>
+          <span class="count">{{ collections.fiches | countByDept(other.id) }} fiches</span>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
 <script src="dept-filter.js" defer></script>
+<script src="region-accordion.js" defer></script>
