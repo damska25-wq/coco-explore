@@ -1,5 +1,15 @@
 export default [
   {
+    id: "16",
+    nom: "Charente",
+    slug: "charente",
+    region: "Nouvelle-Aquitaine",
+    intro: "Angoulême et sa bande dessinée, le vignoble de Cognac, La Rochefoucauld et son château, Confolens aux portes du Limousin — entre vallée de la Charente, eaux calmes et villages de pierre blanche.",
+    seoTitle: "Où aller avec son chien en Charente : Angoulême, Cognac",
+    seoDescription: "Où aller avec son chien en Charente : Angoulême, Cognac, La Rochefoucauld et Confolens, balades le long de la Charente et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Charente",
+  },
+  {
     id: "17",
     nom: "Charente-Maritime",
     slug: "charente-maritime",
