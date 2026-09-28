@@ -1,5 +1,15 @@
 export default [
   {
+    id: "47",
+    nom: "Lot-et-Garonne",
+    slug: "lot-et-garonne",
+    region: "Nouvelle-Aquitaine",
+    intro: "Agen et sa ville natale de d'Artagnan, les bastides du Pays de Serres, Villeneuve-sur-Lot et Nérac — vergers, vignes et confluence de la Garonne et du Lot, entre bases de loisirs et villages de pierre blonde.",
+    seoTitle: "Où aller avec son chien en Lot-et-Garonne : Agen",
+    seoDescription: "Où aller avec son chien en Lot-et-Garonne : Agen, Villeneuve-sur-Lot, Nérac, Marmande et les bastides du Pays de Serres, bonnes adresses et bases de loisirs avec Coco.",
+    seoH1: "Où aller avec son chien en Lot-et-Garonne",
+  },
+  {
     id: "24",
     nom: "Dordogne",
     slug: "dordogne",
