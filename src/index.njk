@@ -27,6 +27,7 @@ extraScripts: |
   <script src="map.js"></script>
   <script src="search.js"></script>
   <script src="favoris.js" defer></script>
+  <script src="region-accordion.js" defer></script>
 ---
 <section class="hero">
   <div class="wrap">
@@ -105,23 +106,31 @@ extraScripts: |
   <div class="conseils-cards" id="coco-conseils-list"></div>
 </section>
 
-{%- for region in regions %}
 <section class="categories wrap">
   <div class="section-head">
     <span class="eyebrow">Explorer par région</span>
-    <h2>{{ region.nom }}, département par département</h2>
+    <h2>Département par département</h2>
   </div>
-  <div class="cat-grid">
-    {%- for dep in region.departements %}
-    <a href="departement-{{ dep.slug }}.html" class="cat-card">
-      <svg class="icon"><use href="#i-pin"/></svg>
-      <h3>{{ dep.nom }}</h3>
-      <span class="count">{{ collections.fiches | countByDept(dep.id) }} fiches</span>
-    </a>
+  <div class="region-accordion" id="region-accordion">
+    {%- for region in regions %}
+    <div class="region-accordion-item">
+      <button type="button" class="region-accordion-toggle" aria-expanded="false">
+        <span>{{ region.nom }}</span>
+        <span class="region-accordion-meta">{{ region.departements.length }} départements <svg class="region-accordion-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></span>
+      </button>
+      <div class="cat-grid region-accordion-body" hidden>
+        {%- for dep in region.departements %}
+        <a href="departement-{{ dep.slug }}.html" class="cat-card">
+          <svg class="icon"><use href="#i-pin"/></svg>
+          <h3>{{ dep.nom }}</h3>
+          <span class="count">{{ collections.fiches | countByDept(dep.id) }} fiches</span>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
     {%- endfor %}
   </div>
 </section>
-{%- endfor %}
 
 <section class="fiches wrap" id="nouveautes">
   <div class="section-head">
