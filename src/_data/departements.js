@@ -20,6 +20,16 @@ export default [
     seoH1: "Où aller avec son chien dans les Landes",
   },
   {
+    id: "64",
+    nom: "Pyrénées-Atlantiques",
+    slug: "pyrenees-atlantiques",
+    region: "Nouvelle-Aquitaine",
+    intro: "La Côte Basque de Biarritz à Hendaye, le Pays Basque intérieur, Pau et les lacs de montagne du Béarn et de la vallée d'Ossau, aux portes du Parc national des Pyrénées.",
+    seoTitle: "Où aller avec son chien dans les Pyrénées-Atlantiques",
+    seoDescription: "Où aller avec son chien dans les Pyrénées-Atlantiques : plages de la Côte Basque, lacs d'Ayous et d'Artouste, Parc national des Pyrénées, Pau et Oloron, avec Coco.",
+    seoH1: "Où aller avec son chien dans les Pyrénées-Atlantiques",
+  },
+  {
     id: "83",
     nom: "Var",
     slug: "var",
