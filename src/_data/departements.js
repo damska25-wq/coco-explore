@@ -1,5 +1,15 @@
 export default [
   {
+    id: "23",
+    nom: "Creuse",
+    slug: "creuse",
+    region: "Nouvelle-Aquitaine",
+    intro: "Guéret et Aubusson (cité de la tapisserie), le lac de Vassivière côté Creuse, l'étang des Landes, la vallée des Peintres autour de Crozant et Fresselines — un département rural et verdoyant entre Limousin et Berry.",
+    seoTitle: "Où aller avec son chien en Creuse : Guéret, Aubusson, Vassivière",
+    seoDescription: "Où aller avec son chien en Creuse : Guéret, Aubusson, lac de Vassivière, étang des Landes, vallée des Peintres autour de Crozant, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Creuse",
+  },
+  {
     id: "19",
     nom: "Corrèze",
     slug: "correze",
