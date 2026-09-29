@@ -1,5 +1,15 @@
 export default [
   {
+    id: "42",
+    nom: "Loire",
+    slug: "loire",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Saint-Étienne et ses friches industrielles reconverties, le Forez et ses monts, le Pilat et son parc naturel régional, Roanne et la plaine roannaise, les gorges de la Loire et le barrage de Grangent — un département méconnu entre moyenne montagne et vallée fluviale, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans la Loire : Saint-Étienne, Pilat, gorges de la Loire",
+    seoDescription: "Où aller avec son chien dans la Loire : Saint-Étienne, monts du Forez, parc du Pilat, gorges de la Loire, barrage de Grangent, Roanne — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans la Loire",
+  },
+  {
     id: "74",
     nom: "Haute-Savoie",
     slug: "haute-savoie",
