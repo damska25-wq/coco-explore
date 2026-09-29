@@ -1,5 +1,15 @@
 export default [
   {
+    id: "38",
+    nom: "Isère",
+    slug: "isere",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Grenoble et sa Bastille, le massif de la Chartreuse, le Vercors isérois, l'Oisans et ses glaciers (Alpe d'Huez, Les Deux Alpes), le lac de Paladru, les lacs de Laffrey et le lac de Monteynard-Avignonet et ses passerelles himalayennes — un département alpin d'une grande diversité, entre montagne, lacs et patrimoine, avec de nombreuses adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Isère : Grenoble, Vercors, Oisans",
+    seoDescription: "Où aller avec son chien en Isère : Grenoble et la Bastille, Chartreuse, Vercors isérois, Oisans, lac de Paladru, lac de Monteynard — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Isère",
+  },
+  {
     id: "26",
     nom: "Drôme",
     slug: "drome",
