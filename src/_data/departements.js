@@ -1,5 +1,15 @@
 export default [
   {
+    id: "63",
+    nom: "Puy-de-Dôme",
+    slug: "puy-de-dome",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Clermont-Ferrand et sa cathédrale de pierre noire, la chaîne des Puys classée à l'UNESCO et son volcan emblématique le puy de Dôme, le massif du Sancy et ses lacs de cratère (Pavin, Guéry, Servières, Chambon, Aydat), les gorges de la Sioule et d'Enval, le plateau de Gergovie, Riom et Issoire — un département volcanique au cœur de l'Auvergne, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Puy-de-Dôme : Clermont-Ferrand, Sancy",
+    seoDescription: "Où aller avec son chien en Puy-de-Dôme : Clermont-Ferrand, chaîne des Puys, massif du Sancy, lacs de cratère, gorges d'Enval — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Puy-de-Dôme",
+  },
+  {
     id: "43",
     nom: "Haute-Loire",
     slug: "haute-loire",
