@@ -1,5 +1,15 @@
 export default [
   {
+    id: "07",
+    nom: "Ardèche",
+    slug: "ardeche",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Les gorges de l'Ardèche et le Pont d'Arc, Vallon-Pont-d'Arc, les villages de caractère (Balazuc, Vogüé, Labeaume), le Mont Gerbier de Jonc et les Monts d'Ardèche, Privas et Aubenas, la vallée de l'Eyrieux — un grand département de rivières, de gorges et de villages en pierre pour les balades avec son chien.",
+    seoTitle: "Où aller avec son chien en Ardèche : gorges, Pont d'Arc, Balazuc",
+    seoDescription: "Où aller avec son chien en Ardèche : gorges de l'Ardèche, Pont d'Arc, Vallon-Pont-d'Arc, villages de caractère, Mont Gerbier de Jonc — balades, rivières et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Ardèche",
+  },
+  {
     id: "03",
     nom: "Allier",
     slug: "allier",
