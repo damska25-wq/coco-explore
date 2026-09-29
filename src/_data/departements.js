@@ -1,5 +1,15 @@
 export default [
   {
+    id: "43",
+    nom: "Haute-Loire",
+    slug: "haute-loire",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Le Puy-en-Velay et sa cathédrale perchée, le rocher Saint-Michel d'Aiguilhe, les volcans du Devès, les gorges de l'Allier et de la Loire, le plateau du Mézenc et son point culminant, le lac du Bouchet — un département volcanique et rural entre Velay et Margeride, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Haute-Loire : Le Puy-en-Velay, Mézenc",
+    seoDescription: "Où aller avec son chien en Haute-Loire : Le Puy-en-Velay, gorges de l'Allier, Mézenc, lac du Bouchet, Devès, Margeride — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Haute-Loire",
+  },
+  {
     id: "42",
     nom: "Loire",
     slug: "loire",
