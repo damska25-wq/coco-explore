@@ -1,5 +1,15 @@
 export default [
   {
+    id: "69",
+    nom: "Rhône",
+    slug: "rhone",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Lyon et ses grands parcs urbains (Tête d'Or, Gerland, Parilly), les Monts du Lyonnais, le vignoble du Beaujolais et ses villages viticoles (Fleurie, Villié-Morgon, Beaujeu), le Grand Parc de Miribel-Jonage et ses plages canines, les berges du Rhône et de la Saône — un département entre métropole animée et campagne beaujolaise, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Rhône : Lyon, Beaujolais",
+    seoDescription: "Où aller avec son chien dans le Rhône : Lyon, parcs urbains, Miribel-Jonage, Beaujolais, Monts du Lyonnais — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Rhône",
+  },
+  {
     id: "63",
     nom: "Puy-de-Dôme",
     slug: "puy-de-dome",
