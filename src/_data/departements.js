@@ -1,5 +1,15 @@
 export default [
   {
+    id: "74",
+    nom: "Haute-Savoie",
+    slug: "haute-savoie",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Annecy et son lac aux eaux turquoise, Chamonix-Mont-Blanc et le massif du Mont-Blanc, le lac Léman entre Évian et Thonon, les grandes stations des Aravis et du Chablais (La Clusaz, Le Grand-Bornand, Morzine, Avoriaz, Samoëns), les gorges du Fier et de la Diosaz — un département entre deux lacs et une haute montagne exigeante sur la réglementation chien (réserve des Aiguilles Rouges, Aiguille du Midi interdites), mais très riche en adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Haute-Savoie : Annecy, Chamonix, Léman",
+    seoDescription: "Où aller avec son chien en Haute-Savoie : lac d'Annecy, lac Léman, Chamonix-Mont-Blanc, Aravis, Chablais — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Haute-Savoie",
+  },
+  {
     id: "73",
     nom: "Savoie",
     slug: "savoie",
