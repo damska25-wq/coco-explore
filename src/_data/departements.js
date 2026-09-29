@@ -1,5 +1,15 @@
 export default [
   {
+    id: "15",
+    nom: "Cantal",
+    slug: "cantal",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Le Puy Mary et les volcans cantaliens, Salers et ses maisons de lave, le lac de Saint-Étienne-Cantalès, Aurillac et Saint-Flour, les gorges de la Jordanne et de la Truyère — un département de moyenne montagne volcanique, entre burons, estives et grands espaces pour les balades avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Cantal : Puy Mary, Salers, lacs",
+    seoDescription: "Où aller avec son chien dans le Cantal : Puy Mary, Salers, lac de Saint-Étienne-Cantalès, gorges de la Jordanne, Aurillac, Saint-Flour — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Cantal",
+  },
+  {
     id: "07",
     nom: "Ardèche",
     slug: "ardeche",
