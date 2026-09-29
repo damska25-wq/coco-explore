@@ -1,5 +1,15 @@
 export default [
   {
+    id: "01",
+    nom: "Ain",
+    slug: "ain",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Bourg-en-Bresse et la Bresse, le Bugey et ses lacs (Nantua, Genin), les gorges de l'Ain, la cité médiévale de Pérouges, les étangs de la Dombes et le Pays de Gex aux portes de Genève — un département aux visages très variés entre plaine, rivière et moyenne montagne.",
+    seoTitle: "Où aller avec son chien dans l'Ain : Bourg-en-Bresse, Bugey, Pérouges",
+    seoDescription: "Où aller avec son chien dans l'Ain : Bourg-en-Bresse, lac de Nantua, Bugey, Pérouges, Dombes, Pays de Gex — balades, plages et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Ain",
+  },
+  {
     id: "23",
     nom: "Creuse",
     slug: "creuse",
