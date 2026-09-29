@@ -1,5 +1,15 @@
 export default [
   {
+    id: "03",
+    nom: "Allier",
+    slug: "allier",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Moulins et Vichy, la forêt de Tronçais et ses étangs, les gorges de la Sioule, le château de Lapalisse, Montluçon et le canal de Berry — un département rural entre Bourbonnais et Sologne bourbonnaise, avec de grands espaces forestiers pour les balades.",
+    seoTitle: "Où aller avec son chien dans l'Allier : Vichy, Moulins, Tronçais",
+    seoDescription: "Où aller avec son chien dans l'Allier : Vichy, Moulins, forêt de Tronçais, gorges de la Sioule, Montluçon — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Allier",
+  },
+  {
     id: "01",
     nom: "Ain",
     slug: "ain",
