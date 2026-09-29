@@ -1,5 +1,15 @@
 export default [
   {
+    id: "26",
+    nom: "Drôme",
+    slug: "drome",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Valence et la vallée du Rhône, le Vercors drômois et ses gorges, la Drôme provençale entre Nyons et Grignan, les champs de lavande, Die et le Diois, Montélimar — un département aux visages très contrastés entre moyenne montagne et Provence, avec de nombreuses adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans la Drôme : Vercors, Nyons, Grignan",
+    seoDescription: "Où aller avec son chien dans la Drôme : Vercors drômois, Drôme provençale, Nyons, Grignan, Die, Valence, Montélimar — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans la Drôme",
+  },
+  {
     id: "15",
     nom: "Cantal",
     slug: "cantal",
