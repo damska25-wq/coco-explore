@@ -1,5 +1,15 @@
 export default [
   {
+    id: "73",
+    nom: "Savoie",
+    slug: "savoie",
+    region: "Auvergne-Rhône-Alpes",
+    intro: "Chambéry et ses Charmettes, le lac du Bourget et Aix-les-Bains, le lac d'Aiguebelette, la Tarentaise et ses grandes stations (Val d'Isère, Tignes, Les Arcs, La Plagne), la Maurienne, le massif des Bauges et le Parc national de la Vanoise — un département montagnard exigeant sur la réglementation chien (cœur du parc national interdit), mais riche en adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Savoie : Chambéry, lac du Bourget, Vanoise",
+    seoDescription: "Où aller avec son chien en Savoie : lac du Bourget, Aix-les-Bains, Tarentaise, Maurienne, Bauges, Parc national de la Vanoise — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Savoie",
+  },
+  {
     id: "38",
     nom: "Isère",
     slug: "isere",
