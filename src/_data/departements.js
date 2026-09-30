@@ -1,5 +1,15 @@
 export default [
   {
+    id: "71",
+    nom: "Saône-et-Loire",
+    slug: "saone-et-loire",
+    region: "Bourgogne-Franche-Comté",
+    intro: "La Roche de Solutré et son emblématique sentier de crête, l'abbaye de Cluny et son parc, le vignoble du Mâconnais (Solutré-Pouilly, Fuissé) et le Charolais-Brionnais, Autun et sa cascade de Brisecou, la Voie Bleue le long de la Saône, le Mont Beuvray et le site archéologique de Bibracte — un département entre vignes, Bresse et Morvan, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Saône-et-Loire : Cluny, Mâconnais",
+    seoDescription: "Où aller avec son chien en Saône-et-Loire : Roche de Solutré, Cluny, Mâconnais, Autun, Voie Bleue, Bibracte — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Saône-et-Loire",
+  },
+  {
     id: "69",
     nom: "Rhône",
     slug: "rhone",
