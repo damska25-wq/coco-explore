@@ -60,6 +60,32 @@ extraScripts: |
   </div>
 </section>
 
+<section class="categories wrap">
+  <div class="section-head">
+    <span class="eyebrow">Explorer par région</span>
+    <h2>Département par département</h2>
+  </div>
+  <div class="region-accordion" id="region-accordion">
+    {%- for region in regions %}
+    <div class="region-accordion-item">
+      <button type="button" class="region-accordion-toggle" aria-expanded="false">
+        <span>{{ region.nom }}</span>
+        <span class="region-accordion-meta">{{ region.departements.length }} départements <svg class="region-accordion-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></span>
+      </button>
+      <div class="cat-grid region-accordion-body" hidden>
+        {%- for dep in region.departements %}
+        <a href="departement-{{ dep.slug }}.html" class="cat-card">
+          <svg class="icon"><use href="#i-pin"/></svg>
+          <h3>{{ dep.nom }}</h3>
+          <span class="count">{{ collections.fiches | countByDept(dep.id) }} fiches</span>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
 <section class="wrap categories carte-section" id="carte">
   <div class="section-head">
     <span class="eyebrow">Explorer sur la carte</span>
@@ -117,31 +143,5 @@ extraScripts: |
     <h2>Tes fiches sauvegardées</h2>
   </div>
   <div class="fiche-grid" id="mes-favoris-grid"></div>
-</section>
-
-<section class="categories wrap">
-  <div class="section-head">
-    <span class="eyebrow">Explorer par région</span>
-    <h2>Département par département</h2>
-  </div>
-  <div class="region-accordion" id="region-accordion">
-    {%- for region in regions %}
-    <div class="region-accordion-item">
-      <button type="button" class="region-accordion-toggle" aria-expanded="false">
-        <span>{{ region.nom }}</span>
-        <span class="region-accordion-meta">{{ region.departements.length }} départements <svg class="region-accordion-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></span>
-      </button>
-      <div class="cat-grid region-accordion-body" hidden>
-        {%- for dep in region.departements %}
-        <a href="departement-{{ dep.slug }}.html" class="cat-card">
-          <svg class="icon"><use href="#i-pin"/></svg>
-          <h3>{{ dep.nom }}</h3>
-          <span class="count">{{ collections.fiches | countByDept(dep.id) }} fiches</span>
-        </a>
-        {%- endfor %}
-      </div>
-    </div>
-    {%- endfor %}
-  </div>
 </section>
 
