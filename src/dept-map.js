@@ -38,7 +38,9 @@
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
   }).addTo(map);
 
-  var bounds = [];
+  var allBounds = [];
+  var layerByCatId = {};
+
   lieux.forEach(function (lieu) {
     var color = CAT_COLORS[lieu.catId] || "#3C5943";
     var marker = L.marker([lieu.lat, lieu.lng], { icon: makeIcon(color) });
@@ -47,9 +49,51 @@
       '<span class="coco-popup-tag">' + lieu.categorie + " · " + lieu.lieu + "</span>" +
       '<div class="coco-popup-actions"><a href="' + lieu.slug + '">Voir la fiche</a></div></div>'
     );
-    marker.addTo(map);
-    bounds.push([lieu.lat, lieu.lng]);
+    if (!layerByCatId[lieu.catId]) layerByCatId[lieu.catId] = L.layerGroup();
+    layerByCatId[lieu.catId].addLayer(marker);
+    allBounds.push([lieu.lat, lieu.lng]);
   });
 
-  map.fitBounds(bounds, { padding: [24, 24], maxZoom: 13 });
+  var activeLayer = null;
+
+  function boundsForCat(cat) {
+    if (cat === "tout") return allBounds;
+    return lieux
+      .filter(function (l) { return l.catId === cat; })
+      .map(function (l) { return [l.lat, l.lng]; });
+  }
+
+  function showCat(cat) {
+    if (activeLayer) map.removeLayer(activeLayer);
+
+    if (cat === "tout") {
+      activeLayer = L.layerGroup(Object.keys(layerByCatId).map(function (id) { return layerByCatId[id]; }));
+    } else {
+      activeLayer = layerByCatId[cat] || L.layerGroup();
+    }
+    activeLayer.addTo(map);
+
+    var bounds = boundsForCat(cat);
+    if (bounds.length) {
+      map.fitBounds(bounds, { padding: [24, 24], maxZoom: 13 });
+    }
+  }
+
+  var initialCat = "tout";
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var fromUrl = params.get("cat");
+    if (fromUrl) initialCat = fromUrl;
+  } catch (e) {}
+
+  showCat(initialCat);
+
+  var filterRow = document.getElementById("dept-filter-row");
+  if (filterRow) {
+    filterRow.addEventListener("click", function (e) {
+      var btn = e.target.closest(".dept-filter-btn");
+      if (!btn) return;
+      showCat(btn.getAttribute("data-cat"));
+    });
+  }
 })();
