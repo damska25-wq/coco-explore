@@ -9,6 +9,8 @@ layout: base.njk
 eleventyComputed:
   title: "{{ dep.seoTitle }}"
   description: "{{ dep.seoDescription }}"
+  extraHead: |
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
 ---
 <section class="hero" style="padding-bottom: 2rem;">
   <div class="wrap">
@@ -20,6 +22,10 @@ eleventyComputed:
     </div>
   </div>
 </section>
+
+<div class="wrap coco-map-wrap">
+  <div id="coco-dept-map" data-dept="{{ dep.id }}"></div>
+</div>
 
 {%- set deptFilters = [
   { id: "tout", label: "Tout" },
@@ -105,5 +111,8 @@ eleventyComputed:
   </div>
 </section>
 
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="map-data.js"></script>
+<script src="dept-map.js"></script>
 <script src="dept-filter.js" defer></script>
 <script src="region-accordion.js" defer></script>

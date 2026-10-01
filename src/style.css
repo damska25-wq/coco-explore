@@ -768,6 +768,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .coco-map-fiches { padding: 32px 0 8px; }
 .coco-map-fiches:last-child { padding-bottom: 0; }
 #coco-map { height: 480px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(var(--ink),0.12); }
+#coco-dept-map { height: 360px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(var(--ink),0.12); margin-bottom: 8px; }
 .map-filter {
   font: inherit; font-size: 0.78rem; font-weight: 600; padding: 6px 12px 6px 26px; position: relative;
   border-radius: 20px; border: 1px solid rgba(var(--ink),0.18); background: var(--surface); color: var(--encre);
@@ -828,6 +829,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
   .avis-form-row { flex-direction: column; }
   .avis-card { padding: 22px 18px 24px; }
   #coco-map { height: 340px; }
+  #coco-dept-map { height: 280px; }
   .dept-filter-row { gap: 8px; padding: 18px 0 2px; }
   .dept-filter-btn { padding: 12px 14px; font-size: 0.88rem; }
 }

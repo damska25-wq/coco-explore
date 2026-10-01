@@ -11,6 +11,7 @@ window.COCO_LIEUX = [
     "lieu": {{ fiche.data.lieu | dump | safe }},
     "categorie": {{ fiche.data.tag | mapCategorie | dump | safe }},
     "catId": {{ fiche.data.breadcrumbCatId | dump | safe }},
+    "departement": {{ fiche.data.departement | dump | safe }},
     "img": {{ fiche.data.heroImage | dump | safe }},
     "lat": {{ fiche.data.lat }},
     "lng": {{ fiche.data.lng }}
