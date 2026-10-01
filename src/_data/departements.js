@@ -60,6 +60,16 @@ export default [
     seoH1: "Où aller avec son chien dans la Nièvre",
   },
   {
+    id: "70",
+    nom: "Haute-Saône",
+    slug: "haute-saone",
+    region: "Bourgogne-Franche-Comté",
+    intro: "Vesoul et son lac au pied de la colline de la Motte, Gray et ses bords de Saône, Luxeuil-les-Bains et ses thermes gallo-romains, le Plateau des Mille Étangs autour de Faucogney-et-la-Mer et Mélisey, la vallée de l'Ognon, le village classé de Pesmes, le château de Ray-sur-Saône, Villersexel et Lure — un département entre Saône, étangs et stations thermales, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Haute-Saône : Vesoul, Mille Étangs",
+    seoDescription: "Où aller avec son chien en Haute-Saône : Vesoul, Gray, Luxeuil-les-Bains, Plateau des Mille Étangs, vallée de l'Ognon — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Haute-Saône",
+  },
+  {
     id: "69",
     nom: "Rhône",
     slug: "rhone",
