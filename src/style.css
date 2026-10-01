@@ -766,6 +766,9 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .coco-map-locate { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
 .coco-map-locate #coco-locate-status, .conseils-locate #coco-locate-status { font-size: 0.85rem; color: rgba(var(--ink),0.65); }
 .coco-map-fiches { padding: 32px 0 8px; }
+.cat-see-more { margin-top: 18px; text-align: center; }
+.cat-see-more a { color: var(--terracotta); font-weight: 700; text-decoration: none; }
+.cat-see-more a:hover { text-decoration: underline; }
 .coco-map-fiches:last-child { padding-bottom: 0; }
 #coco-map { height: 480px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(var(--ink),0.12); }
 #coco-dept-map { height: 360px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(var(--ink),0.12); margin-bottom: 8px; }

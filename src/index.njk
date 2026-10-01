@@ -112,7 +112,7 @@ extraScripts: |
       {%- endif %}
     </div>
     <div class="fiche-grid">
-      {%- for fiche in collections.fiches | byCategory(section.id) %}
+      {%- for fiche in collections.fiches | latestByCategory(section.id, 18) %}
       {%- set badge = (fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null) %}
       <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
         <div class="thumb">
@@ -133,6 +133,7 @@ extraScripts: |
       </a>
       {%- endfor %}
     </div>
+    <p class="cat-see-more"><a href="#region-accordion">Voir plus : {{ section.eyebrow | safe }} par département →</a></p>
   </section>
   {% endfor %}
 </section>

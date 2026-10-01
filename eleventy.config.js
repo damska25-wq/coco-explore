@@ -88,6 +88,16 @@ export default function (eleventyConfig) {
     fiches.filter((f) => (f.data.departement || []).includes(deptId)).length
   );
 
+  // Aperçu borné d'une catégorie pour l'accueil : évite d'embarquer dans le
+  // HTML les fiches des 51 départements à la fois (la page atteignait 5,5 Mo
+  // avant ce plafond), tout en montrant les ajouts les plus récents.
+  eleventyConfig.addFilter("latestByCategory", (fiches, catId, n) =>
+    fiches
+      .filter((f) => f.data.breadcrumbCatId === catId)
+      .sort((a, b) => b.data.order - a.data.order)
+      .slice(0, n)
+  );
+
   // Les N fiches ajoutées le plus récemment (order croissant à chaque nouvelle fiche).
   eleventyConfig.addFilter("latest", (fiches, n) =>
     [...fiches].sort((a, b) => b.data.order - a.data.order).slice(0, n)
