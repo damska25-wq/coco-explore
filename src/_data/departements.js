@@ -50,6 +50,16 @@ export default [
     seoH1: "Où aller avec son chien en Saône-et-Loire",
   },
   {
+    id: "58",
+    nom: "Nièvre",
+    slug: "nievre",
+    region: "Bourgogne-Franche-Comté",
+    intro: "Nevers et sa cathédrale Saint-Cyr, le pont de la faïencerie et les ateliers de faïence, La Charité-sur-Loire et son prieuré classé à l'UNESCO, le Parc naturel régional du Morvan et le lac des Settons, le canal du Nivernais, les bords de Loire et de l'Allier, Pougues-les-Eaux, Decize au confluent de la Loire et du canal — un département entre Loire, Morvan et patrimoine roman, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans la Nièvre : Nevers, Morvan",
+    seoDescription: "Où aller avec son chien dans la Nièvre : Nevers, La Charité-sur-Loire, Morvan, lac des Settons, canal du Nivernais — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans la Nièvre",
+  },
+  {
     id: "69",
     nom: "Rhône",
     slug: "rhone",
