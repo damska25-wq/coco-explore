@@ -1,5 +1,15 @@
 export default [
   {
+    id: "21",
+    nom: "Côte-d'Or",
+    slug: "cote-dor",
+    region: "Bourgogne-Franche-Comté",
+    intro: "Dijon et ses parcs (Colombière, Arquebuse, lac Kir), la Côte viticole et ses Grands Crus (Gevrey-Chambertin, Nuits-Saint-Georges, Vougeot), l'abbaye de Fontenay classée à l'UNESCO, le site d'Alésia, le canal de Bourgogne, l'Auxois et ses châteaux (Châteauneuf, Commarin, Bussy-Rabutin), le Châtillonnais — un département entre vignoble prestigieux et campagne bourguignonne, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Côte-d'Or : Dijon, Beaune, Alésia",
+    seoDescription: "Où aller avec son chien en Côte-d'Or : Dijon, Côte viticole, Fontenay, Alésia, canal de Bourgogne, Auxois — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Côte-d'Or",
+  },
+  {
     id: "71",
     nom: "Saône-et-Loire",
     slug: "saone-et-loire",
