@@ -1,5 +1,15 @@
 export default [
   {
+    id: "56",
+    nom: "Morbihan",
+    slug: "morbihan",
+    region: "Bretagne",
+    intro: "Le golfe du Morbihan et ses îles (Île-aux-Moines, Île-d'Arz), Vannes et ses remparts, Carnac et ses alignements mégalithiques, la presqu'île de Quiberon et sa Côte Sauvage, Belle-Île-en-Mer et l'Île de Groix, Lorient et sa rade, Auray, Pontivy et Josselin — entre golfe, grèves et forêts intérieures, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Morbihan",
+    seoDescription: "Où aller avec son chien dans le Morbihan : golfe du Morbihan, Vannes, Carnac, Quiberon, Belle-Île, Lorient, Josselin — plages, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Morbihan",
+  },
+  {
     id: "22",
     nom: "Côtes-d'Armor",
     slug: "cotes-darmor",
