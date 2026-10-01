@@ -23,6 +23,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/avis.js");
   eleventyConfig.addPassthroughCopy("src/map.js");
+  eleventyConfig.addPassthroughCopy("src/geoloc.js");
+  eleventyConfig.addPassthroughCopy("src/conseils.js");
   eleventyConfig.addPassthroughCopy("src/search.js");
   eleventyConfig.addPassthroughCopy("src/favoris.js");
   eleventyConfig.addPassthroughCopy("src/dept-filter.js");
@@ -43,10 +45,6 @@ export default function (eleventyConfig) {
     fiches
       .filter((f) => f.data.breadcrumbCatId === catId)
       .sort((a, b) => a.data.order - b.data.order)
-  );
-
-  eleventyConfig.addFilter("countByCats", (fiches, catIds) =>
-    fiches.filter((f) => catIds.includes(f.data.breadcrumbCatId)).length
   );
 
   // Fiches d'une catégorie (par countIds, comme countByCats) restreintes à un département.
@@ -247,7 +245,16 @@ export default function (eleventyConfig) {
       const pool = fiches
         .filter((f) => f.data.tag === tag && (f.data.departement || []).includes(dept.id))
         .sort((a, b) => a.data.slug.localeCompare(b.data.slug));
-      return pool[weekNum % pool.length].data.permalinkPath;
+      const f = pool[weekNum % pool.length].data;
+      return {
+        tag: f.tag,
+        titre: f.h1,
+        lieu: f.lieu,
+        permalinkPath: f.permalinkPath,
+        heroImage: f.heroImage,
+        lat: f.lat,
+        lng: f.lng,
+      };
     });
   });
 

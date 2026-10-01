@@ -24,6 +24,7 @@ extraHead: |
 extraScripts: |
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="map-data.js"></script>
+  <script src="geoloc.js"></script>
   <script src="map.js"></script>
   <script src="search.js"></script>
   <script src="favoris.js" defer></script>
@@ -63,31 +64,51 @@ extraScripts: |
   <div class="section-head">
     <span class="eyebrow">Explorer sur la carte</span>
     <h2>Où emmener son chien</h2>
-    <p style="margin-top: 10px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">Choisis une catégorie ci-dessous pour n'afficher que les lieux correspondants sur la carte.</p>
+    <p style="margin-top: 10px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">Choisis une catégorie ci-dessous : les lieux s'affichent sur la carte, et les fiches correspondantes apparaissent juste en dessous.</p>
+  </div>
+  <div class="coco-map-locate">
+    <button type="button" id="coco-locate-btn" class="map-filter map-filter-all">Me localiser</button>
+    <span id="coco-locate-status" role="status"></span>
   </div>
   <div id="coco-map-filters"></div>
   <div class="coco-map-wrap">
     <div id="coco-map"></div>
     <p class="coco-map-prompt" id="coco-map-prompt">Choisis une catégorie ci-dessus pour afficher les lieux sur la carte.</p>
   </div>
-</section>
 
-<section class="categories wrap">
-  <div class="section-head">
-    <span class="eyebrow">Explorer par catégorie</span>
-    <h2>Où emmener son chien</h2>
-  </div>
-  <div class="cat-grid">
-    {%- for section in sections %}
-    {%- if section.catGrid %}
-    <a href="index.html#{{ section.id }}" class="cat-card">
-      <svg class="icon"><use href="#{{ section.catGrid.icon }}"/></svg>
-      <h3>{{ section.catGrid.label | safe }}</h3>
-      <span class="count">{{ collections.fiches | countByCats(section.catGrid.countIds) }} fiches</span>
-    </a>
-    {%- endif %}
-    {%- endfor %}
-  </div>
+  {% for section in sections %}
+  <section class="fiches coco-map-fiches" id="{{ section.id }}" hidden>
+    <div class="section-head">
+      <span class="eyebrow">{{ section.eyebrow | safe }}</span>
+      <h2>{{ section.heading | safe }}</h2>
+      {%- if section.intro %}
+      <p style="margin-top: 10px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">{{ section.intro | safe }}</p>
+      {%- endif %}
+    </div>
+    <div class="fiche-grid">
+      {%- for fiche in collections.fiches | byCategory(section.id) %}
+      {%- set badge = (fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null) %}
+      <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
+        <div class="thumb">
+          {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
+          <img src="{{ fiche.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
+          {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
+        </div>
+        <div class="body">
+          <span class="tag">{{ fiche.data.cardTag | safe }}</span>
+          <h3>{{ fiche.data.cardTitle | safe }}</h3>
+          <p>{{ fiche.data.cardTeaser | safe }}</p>
+          <div class="pictos-row">
+            {%- for picto in fiche.data.cardPictos %}
+            <span class="picto"><svg><use href="#{{ picto }}"/></svg></span>
+            {%- endfor %}
+          </div>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+  {% endfor %}
 </section>
 
 <section class="fiches wrap" id="mes-favoris" hidden>
@@ -96,14 +117,6 @@ extraScripts: |
     <h2>Tes fiches sauvegardées</h2>
   </div>
   <div class="fiche-grid" id="mes-favoris-grid"></div>
-</section>
-
-<section class="wrap conseils-semaine" id="conseils">
-  <div class="section-head">
-    <span class="eyebrow">Les conseils de Coco</span>
-    <h2>Cette semaine, Coco recommande…</h2>
-  </div>
-  <div class="conseils-cards" id="coco-conseils-list"></div>
 </section>
 
 <section class="categories wrap">
@@ -160,37 +173,3 @@ extraScripts: |
     {%- endfor %}
   </div>
 </section>
-
-{% for section in sections %}
-<section class="fiches wrap" id="{{ section.id }}">
-  <div class="section-head">
-    <span class="eyebrow">{{ section.eyebrow | safe }}</span>
-    <h2>{{ section.heading | safe }}</h2>
-    {%- if section.intro %}
-    <p style="margin-top: 10px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">{{ section.intro | safe }}</p>
-    {%- endif %}
-  </div>
-  <div class="fiche-grid">
-    {%- for fiche in collections.fiches | byCategory(section.id) %}
-    {%- set badge = (fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null) %}
-    <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
-      <div class="thumb">
-        {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
-        <img src="{{ fiche.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
-        {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
-      </div>
-      <div class="body">
-        <span class="tag">{{ fiche.data.cardTag | safe }}</span>
-        <h3>{{ fiche.data.cardTitle | safe }}</h3>
-        <p>{{ fiche.data.cardTeaser | safe }}</p>
-        <div class="pictos-row">
-          {%- for picto in fiche.data.cardPictos %}
-          <span class="picto"><svg><use href="#{{ picto }}"/></svg></span>
-          {%- endfor %}
-        </div>
-      </div>
-    </a>
-    {%- endfor %}
-  </div>
-</section>
-{% endfor %}

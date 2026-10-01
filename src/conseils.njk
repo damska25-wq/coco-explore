@@ -1,0 +1,42 @@
+---
+permalink: conseils-de-coco.html
+permalinkPath: conseils-de-coco.html
+layout: base.njk
+title: "Les conseils de Coco — recommandations de la semaine"
+description: "Chaque semaine, Coco recommande une plage, une balade et un restaurant où les chiens sont bienvenus — ou les lieux les plus proches de toi si tu actives ta position."
+extraHead: |
+  <style>
+    .conseils-page { padding: 48px 0 64px; }
+    .conseils-page .section-head { max-width: 72ch; }
+    .conseils-locate { display: flex; align-items: center; gap: 12px; margin: 20px 0 32px; flex-wrap: wrap; }
+    .conseils-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .conseils-cards .conseil-card { display: block; }
+    .conseil-card-distance { display: block; font-size: 0.82rem; color: var(--terracotta); font-weight: 700; margin-top: 4px; }
+  </style>
+extraScripts: |
+  <script src="map-data.js"></script>
+  <script src="geoloc.js"></script>
+  <script src="conseils.js"></script>
+---
+<section class="wrap conseils-page">
+  <div class="section-head">
+    <span class="eyebrow">Les conseils de Coco</span>
+    <h1>Cette semaine, Coco recommande…</h1>
+    <p style="margin-top: 10px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">Une plage, une balade et un restaurant où ton chien sera bienvenu. Par défaut, la sélection change chaque semaine — active ta position pour voir plutôt les lieux les plus proches de toi.</p>
+  </div>
+
+  <div class="conseils-locate">
+    <button type="button" id="coco-locate-btn" class="map-filter map-filter-all">Voir les lieux près de moi</button>
+    <span id="coco-locate-status" role="status" style="font-size: 0.85rem; color: rgba(34,48,58,0.7);"></span>
+  </div>
+
+  <div class="conseils-cards" id="coco-conseils-list">
+    {%- for conseil in collections.fiches | weeklyConseils(departements) %}
+    <a href="{{ conseil.permalinkPath }}" class="conseil-card">
+      <span class="conseil-tag">{{ conseil.tag }}</span>
+      <h3>{{ conseil.titre }}</h3>
+      <span class="conseil-lieu">{{ conseil.lieu }}</span>
+    </a>
+    {%- endfor %}
+  </div>
+</section>

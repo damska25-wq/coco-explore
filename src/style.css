@@ -143,36 +143,9 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .site-nav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 0.95rem; font-weight: 600; }
 .site-nav a { text-decoration: none; color: var(--encre); border-bottom: 2px solid transparent; padding-bottom: 2px; }
 .site-nav a:hover { border-color: var(--ocre); }
-.nav-section-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ocre); }
-/* Desktop : les deux colonnes ne cassent pas la barre inline existante. */
-.nav-col { display: contents; }
-.nav-col .nav-section-label:first-child { margin-left: 4px; }
 
 .nav-cat-link { display: inline-flex; align-items: center; gap: 7px; }
 .nav-icon { color: var(--terracotta); flex-shrink: 0; }
-
-/* Accordéon région -> départements, dans la colonne de droite du menu. */
-.nav-region-group { display: contents; }
-.nav-region-toggle {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: none;
-  border: none;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--ocre);
-  cursor: pointer;
-  padding: 0;
-  min-height: 28px;
-}
-.nav-chevron { flex-shrink: 0; transition: transform 0.15s ease; }
-.nav-region-toggle[aria-expanded="true"] .nav-chevron { transform: rotate(180deg); }
-.nav-region-depts { display: contents; }
-.nav-region-depts[hidden] { display: none; }
 
 .nav-social { display: flex; align-items: center; color: var(--terracotta); flex-shrink: 0; }
 .nav-social:hover { color: var(--terracotta-deep); }
@@ -774,9 +747,8 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .cookie-btn-ghost { background: transparent; color: var(--blanc); border-color: rgba(255,253,248,0.4); }
 .cookie-btn-ghost:hover { border-color: var(--blanc); }
 
-/* ---------- Conseils de Coco & carte ---------- */
+/* ---------- Conseils de Coco (page dédiée) & carte ---------- */
 
-.conseils-semaine { padding: 44px 0 8px; }
 .conseils-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 22px; }
 .conseil-card {
   display: flex; align-items: center; gap: 12px;
@@ -790,7 +762,11 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .conseil-card .conseil-lieu { font-size: 0.85rem; color: rgba(var(--ink),0.65); }
 
 .carte-section #coco-map-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
-.coco-map-wrap { position: relative; }
+.coco-map-wrap { position: relative; margin-bottom: 8px; }
+.coco-map-locate { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.coco-map-locate #coco-locate-status, .conseils-locate #coco-locate-status { font-size: 0.85rem; color: rgba(var(--ink),0.65); }
+.coco-map-fiches { padding: 32px 0 8px; }
+.coco-map-fiches:last-child { padding-bottom: 0; }
 #coco-map { height: 480px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(var(--ink),0.12); }
 .map-filter {
   font: inherit; font-size: 0.78rem; font-weight: 600; padding: 6px 12px 6px 26px; position: relative;
@@ -821,6 +797,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 }
 .coco-popup strong { display: block; font-family: var(--serif); font-size: 1rem; }
 .coco-popup-tag { display: block; font-size: 0.8rem; color: rgba(var(--ink),0.65); margin-top: 2px; }
+.coco-popup-distance { display: block; font-size: 0.78rem; font-weight: 700; color: var(--terracotta); margin-top: 4px; }
 .coco-popup-actions { display: flex; gap: 10px; margin-top: 8px; }
 .coco-popup-actions a { font-size: 0.82rem; font-weight: 700; color: var(--terracotta-deep); text-decoration: none; }
 .coco-popup-actions a:hover { text-decoration: underline; }
@@ -845,18 +822,9 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
     z-index: 30;
     max-height: calc(100vh - 80px);
   }
-  .site-nav.open { display: grid; grid-template-columns: 1fr 1fr; }
-  .nav-col { display: flex; flex-direction: column; overflow-y: auto; padding: 8px 0; }
-  .nav-region-group { display: flex; flex-direction: column; }
-  .nav-region-toggle { padding: 14px; min-height: 52px; font-size: 0.9rem; gap: 10px; border-bottom: 1px solid rgba(var(--ink),0.08); }
-  .nav-region-toggle .nav-chevron { width: 20px; height: 20px; }
-  .nav-region-depts { display: flex; flex-direction: column; }
-  .nav-region-depts a { padding-left: 24px; }
-  .nav-col-categories { border-right: 1px solid rgba(var(--ink),0.08); }
-  .site-nav a { padding: 12px 14px; border-bottom: 1px solid rgba(var(--ink),0.08); font-size: 0.9rem; }
+  .site-nav.open { display: flex; flex-direction: column; }
+  .site-nav a { padding: 14px; border-bottom: 1px solid rgba(var(--ink),0.08); font-size: 0.9rem; }
   .site-nav a:hover { border-color: rgba(var(--ink),0.08); background: rgba(190,91,59,0.06); }
-  .nav-section-label { padding: 14px 14px 6px; }
-  .nav-col > .nav-section-label:first-child { padding-top: 8px; }
   .avis-form-row { flex-direction: column; }
   .avis-card { padding: 22px 18px 24px; }
   #coco-map { height: 340px; }
