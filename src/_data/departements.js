@@ -1,5 +1,15 @@
 export default [
   {
+    id: "35",
+    nom: "Ille-et-Vilaine",
+    slug: "ille-et-vilaine",
+    region: "Bretagne",
+    intro: "Saint-Malo intra-muros et sa Côte d'Émeraude, Dinard et la promenade du Clair de Lune, Cancale et la Pointe du Grouin, Rennes et ses parcs, Fougères et sa forêt, Vitré et Combourg, la baie du Mont-Saint-Michel côté breton, Redon au confluent de la Vilaine — entre remparts, plages et campagne intérieure, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Ille-et-Vilaine",
+    seoDescription: "Où aller avec son chien en Ille-et-Vilaine : Saint-Malo, Dinard, Cancale, Rennes, Fougères, baie du Mont-Saint-Michel — plages, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Ille-et-Vilaine",
+  },
+  {
     id: "56",
     nom: "Morbihan",
     slug: "morbihan",
