@@ -1,5 +1,15 @@
 export default [
   {
+    id: "89",
+    nom: "Yonne",
+    slug: "yonne",
+    region: "Bourgogne-Franche-Comté",
+    intro: "Auxerre et ses bords de rivière, Vézelay et sa basilique perchée classée à l'UNESCO, le vignoble de Chablis, les châteaux de Saint-Fargeau et d'Ancy-le-Franc, le canal du Nivernais et le canal de Bourgogne, la vallée du Cousin près d'Avallon, le Morvan yonnais — un département entre vignes, rivières et patrimoine roman, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans l'Yonne : Auxerre, Vézelay, Chablis",
+    seoDescription: "Où aller avec son chien dans l'Yonne : Auxerre, Vézelay, Chablis, canal du Nivernais, vallée du Cousin — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Yonne",
+  },
+  {
     id: "21",
     nom: "Côte-d'Or",
     slug: "cote-dor",
