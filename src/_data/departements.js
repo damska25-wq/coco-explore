@@ -1,5 +1,15 @@
 export default [
   {
+    id: "22",
+    nom: "Côtes-d'Armor",
+    slug: "cotes-darmor",
+    region: "Bretagne",
+    intro: "La Côte de Granit Rose entre Perros-Guirec, Ploumanac'h et Trégastel, Paimpol et l'Île de Bréhat, la baie de Saint-Brieuc et sa réserve naturelle, Erquy, Pléneuf-Val-André et le Cap Fréhel, Dinan et la vallée de la Rance, le lac de Guerlédan et les forêts d'Avaugour et de la Hunaudaye — entre rochers roses, grèves et forêts intérieures, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans les Côtes-d'Armor",
+    seoDescription: "Où aller avec son chien dans les Côtes-d'Armor : Perros-Guirec, Paimpol, Dinan, Cap Fréhel, lac de Guerlédan — plages, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans les Côtes-d'Armor",
+  },
+  {
     id: "29",
     nom: "Finistère",
     slug: "finistere",
