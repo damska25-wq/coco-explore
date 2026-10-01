@@ -1,5 +1,15 @@
 export default [
   {
+    id: "25",
+    nom: "Doubs",
+    slug: "doubs",
+    region: "Bourgogne-Franche-Comté",
+    intro: "Besançon et sa citadelle Vauban classée à l'UNESCO, les gorges du Doubs et le saut du Doubs près de Villers-le-Lac, la source et la vallée de la Loue, le lac de Saint-Point et la réserve naturelle du lac de Remoray, le Mont d'Or et la station de Métabief, Pontarlier et le Haut-Doubs, le pays horloger autour de Morteau, Montbéliard — un département entre rivières, lacs de montagne et patrimoine horloger, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Doubs : Besançon, Saut du Doubs",
+    seoDescription: "Où aller avec son chien dans le Doubs : Besançon, saut du Doubs, vallée de la Loue, lac de Saint-Point, Métabief — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Doubs",
+  },
+  {
     id: "89",
     nom: "Yonne",
     slug: "yonne",
