@@ -1,5 +1,15 @@
 export default [
   {
+    id: "29",
+    nom: "Finistère",
+    slug: "finistere",
+    region: "Bretagne",
+    intro: "La presqu'île de Crozon et ses pointes sur le GR34, Camaret-sur-Mer, Douarnenez, Quimper et l'Odet, Concarneau, Pont-Aven, Brest et sa rade, Carantec, Roscoff, les Monts d'Arrée et leurs lacs, le Pays Bigouden, la Pointe du Raz, les îles de Batz, Ouessant, Molène, Sein et les Glénan — le bout du monde breton, entre plages, sentiers côtiers et bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Finistère",
+    seoDescription: "Où aller avec son chien dans le Finistère : Crozon, Douarnenez, Quimper, Brest, Pointe du Raz, Monts d'Arrée — plages, lacs, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Finistère",
+  },
+  {
     id: "90",
     nom: "Territoire de Belfort",
     slug: "territoire-de-belfort",
