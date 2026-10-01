@@ -3,18 +3,9 @@ permalink: map-data.js
 eleventyExcludeFromCollections: true
 ---
 // Généré à partir des fiches du site — position approximative au niveau de la commune.
-window.COCO_LIEUX = [
+// Minifié volontairement (pas d'indentation) : ce fichier liste les ~4650 fiches du site.
+window.COCO_LIEUX=[
 {%- for fiche in collections.fiches %}
-  {
-    "slug": {{ fiche.data.permalinkPath | dump | safe }},
-    "titre": {{ fiche.data.h1 | dump | safe }},
-    "lieu": {{ fiche.data.lieu | dump | safe }},
-    "categorie": {{ fiche.data.tag | mapCategorie | dump | safe }},
-    "catId": {{ fiche.data.breadcrumbCatId | dump | safe }},
-    "departement": {{ fiche.data.departement | dump | safe }},
-    "img": {{ fiche.data.heroImage | dump | safe }},
-    "lat": {{ fiche.data.lat }},
-    "lng": {{ fiche.data.lng }}
-  }{% if not loop.last %},{% endif %}
+{"slug":{{ fiche.data.permalinkPath | dump | safe }},"titre":{{ fiche.data.h1 | dump | safe }},"lieu":{{ fiche.data.lieu | dump | safe }},"categorie":{{ fiche.data.tag | mapCategorie | dump | safe }},"catId":{{ fiche.data.breadcrumbCatId | dump | safe }},"departement":{{ fiche.data.departement | dump | safe }},"img":{{ fiche.data.heroImage | dump | safe }},"lat":{{ fiche.data.lat }},"lng":{{ fiche.data.lng }}}{% if not loop.last %},{% endif %}
 {%- endfor %}
 ];
