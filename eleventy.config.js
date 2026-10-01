@@ -1,18 +1,35 @@
 import { execSync } from "node:child_process";
 import departements from "./src/_data/departements.js";
 
-const gitDateCache = new Map();
-function gitLastModified(filePath) {
-  if (gitDateCache.has(filePath)) return gitDateCache.get(filePath);
-  let date = null;
+// Une seule invocation `git log` pour tout l'historique plutôt qu'un
+// `git log -1 -- <fichier>` par fiche : avec plusieurs milliers de fiches,
+// un appel par fichier (process git synchrone à chaque fois) faisait dépasser
+// largement le temps de build (et donc le timeout de déploiement Netlify).
+function buildGitDateMap() {
+  const map = new Map();
   try {
-    const out = execSync(`git log -1 --format=%cI -- "${filePath}"`).toString().trim();
-    if (out) date = out.slice(0, 10);
+    const out = execSync('git log --name-only --format="COMMIT:%cI"', {
+      maxBuffer: 1024 * 1024 * 64,
+    }).toString();
+    let currentDate = null;
+    for (const line of out.split("\n")) {
+      if (line.startsWith("COMMIT:")) {
+        currentDate = line.slice(7, 17); // YYYY-MM-DD
+      } else if (line.trim() && currentDate && !map.has(line.trim())) {
+        // git log liste les commits du plus récent au plus ancien : la
+        // première occurrence d'un chemin correspond à sa dernière modif.
+        map.set(line.trim(), currentDate);
+      }
+    }
   } catch (e) {
-    /* pas un dépôt git, ou fichier non suivi — on retombera sur la date du jour */
+    /* pas un dépôt git — lastmod retombera sur la date du jour */
   }
-  gitDateCache.set(filePath, date);
-  return date;
+  return map;
+}
+
+const gitDateMap = buildGitDateMap();
+function gitLastModified(filePath) {
+  return gitDateMap.get(filePath.replace(/^\.\//, "")) || null;
 }
 
 export default function (eleventyConfig) {
