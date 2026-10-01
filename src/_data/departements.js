@@ -1,5 +1,15 @@
 export default [
   {
+    id: "90",
+    nom: "Territoire de Belfort",
+    slug: "territoire-de-belfort",
+    region: "Bourgogne-Franche-Comté",
+    intro: "Belfort et sa citadelle Vauban dominée par le Lion de Bartholdi, l'étang des Forges, la base de loisirs du Malsaucy, le massif du Ballon d'Alsace et ses sentiers entre Giromagny et Lepuix, la vallée de la Savoureuse, Delle et sa frontière suisse, Beaucourt — le plus petit département de France métropolitaine, entre citadelle, étangs et contreforts vosgiens, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Territoire de Belfort",
+    seoDescription: "Où aller avec son chien dans le Territoire de Belfort : Belfort et sa citadelle, étang des Forges, Malsaucy, Ballon d'Alsace — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Territoire de Belfort",
+  },
+  {
     id: "39",
     nom: "Jura",
     slug: "jura",
