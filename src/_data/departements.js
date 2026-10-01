@@ -1,5 +1,15 @@
 export default [
   {
+    id: "39",
+    nom: "Jura",
+    slug: "jura",
+    region: "Bourgogne-Franche-Comté",
+    intro: "Les cascades du Hérisson, le lac de Vouglans et le lac de Chalain, la cluse de Baume-les-Messieurs classée parmi les plus beaux villages de France, la reculée des Planches-près-Arbois et sa cascade des Tufs, Arbois et son vignoble de vin jaune, Château-Chalon, la station des Rousses et le Haut-Jura, Lons-le-Saunier, Dole et Saint-Claude — un département entre lacs, reculées et vignoble, avec de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Jura : Hérisson, Vouglans",
+    seoDescription: "Où aller avec son chien dans le Jura : cascades du Hérisson, lac de Vouglans, Baume-les-Messieurs, Arbois, Château-Chalon — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Jura",
+  },
+  {
     id: "25",
     nom: "Doubs",
     slug: "doubs",
