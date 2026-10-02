@@ -1,5 +1,15 @@
 export default [
   {
+    id: "61",
+    nom: "Orne",
+    slug: "orne",
+    region: "Normandie",
+    intro: "Alençon et sa dentelle, le haras national du Pin, la forêt d'Écouves et ses hêtraies, le massif des Andaines et la Roche d'Oëtre surplombant la vallée de la Rouvre, Bagnoles-de-l'Orne et son lac, Domfront perché sur son éperon rocheux, Sées et sa cathédrale, le parc naturel régional Normandie-Maine — entre bocage, forêts domaniales et étangs, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans l'Orne",
+    seoDescription: "Où aller avec son chien dans l'Orne : Alençon, Bagnoles-de-l'Orne, forêt d'Écouves, Roche d'Oëtre, Domfront — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Orne",
+  },
+  {
     id: "27",
     nom: "Eure",
     slug: "eure",
