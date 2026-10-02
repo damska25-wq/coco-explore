@@ -1,5 +1,15 @@
 export default [
   {
+    id: "37",
+    nom: "Indre-et-Loire",
+    slug: "indre-et-loire",
+    region: "Centre-Val de Loire",
+    intro: "Tours et sa vieille ville à colombages, les châteaux de la Loire — Villandry et ses jardins, Chenonceau enjambant le Cher, Amboise et son château royal, Langeais et son donjon médiéval —, Chinon et sa forteresse royale dominant la Vienne, Loches et sa cité royale, la vallée de la Loire classée au patrimoine mondial, les forêts domaniales de Chinon et d'Amboise — entre châteaux royaux, bords de Loire et villages de tuffeau, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Indre-et-Loire",
+    seoDescription: "Où aller avec son chien en Indre-et-Loire : Tours, châteaux de la Loire, Chenonceau, Amboise, Chinon, Loches — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Indre-et-Loire",
+  },
+  {
     id: "61",
     nom: "Orne",
     slug: "orne",
