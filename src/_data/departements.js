@@ -1,5 +1,15 @@
 export default [
   {
+    id: "36",
+    nom: "Indre",
+    slug: "indre",
+    region: "Centre-Val de Loire",
+    intro: "Châteauroux et la vallée de l'Indre, le parc naturel régional de la Brenne et ses mille étangs, Valençay et son château du prince de Talleyrand, Saint-Chartier et sa forêt, Argenton-sur-Creuse surnommée la « Venise du Berry », le Boischaut et ses bocages, Nohant-Vic et le domaine de George Sand, la Brenne terre de biodiversité entre étangs et landes — entre étangs sauvages, bocage berrichon et bords de rivières, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans l'Indre",
+    seoDescription: "Où aller avec son chien dans l'Indre : Châteauroux, Brenne, Valençay, Argenton-sur-Creuse, Nohant — balades, étangs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Indre",
+  },
+  {
     id: "28",
     nom: "Eure-et-Loir",
     slug: "eure-et-loir",
