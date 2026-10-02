@@ -1,5 +1,15 @@
 export default [
   {
+    id: "18",
+    nom: "Cher",
+    slug: "cher",
+    region: "Centre-Val de Loire",
+    intro: "Bourges et sa cathédrale Saint-Étienne classée UNESCO, le vignoble de Sancerre dominant la vallée de la Loire, Vierzon porte d'entrée de la Sologne, Saint-Amand-Montrond et le canal de Berry, les châteaux de Meillant, Culan et Ainay-le-Vieil, l'abbaye cistercienne de Noirlac — entre Berry rural, vignes et bords de rivières, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Cher",
+    seoDescription: "Où aller avec son chien dans le Cher : Bourges, Sancerre, Vierzon, Saint-Amand-Montrond — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Cher",
+  },
+  {
     id: "41",
     nom: "Loir-et-Cher",
     slug: "loir-et-cher",
