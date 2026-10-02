@@ -1,5 +1,15 @@
 export default [
   {
+    id: "14",
+    nom: "Calvados",
+    slug: "calvados",
+    region: "Normandie",
+    intro: "Deauville et Trouville face à face sur la Côte Fleurie, Honfleur et son Vieux Bassin, Cabourg et sa promenade Marcel-Proust, les plages du Débarquement et les falaises d'Arromanches, Caen et son château ducal, la Suisse Normande et ses gorges de l'Orne — entre grandes plages, bocage et villes historiques, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Calvados",
+    seoDescription: "Où aller avec son chien dans le Calvados : Deauville, Honfleur, Cabourg, Caen, plages du Débarquement, Suisse Normande — plages, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Calvados",
+  },
+  {
     id: "35",
     nom: "Ille-et-Vilaine",
     slug: "ille-et-vilaine",
