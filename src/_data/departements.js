@@ -1,5 +1,15 @@
 export default [
   {
+    id: "50",
+    nom: "Manche",
+    slug: "manche",
+    region: "Normandie",
+    intro: "Le Mont-Saint-Michel et sa baie, Cherbourg-en-Cotentin et sa rade, Granville et le cap Lihou, Barneville-Carteret et les îles Chausey, Avranches, Coutances et Saint-Lô, la Hague et ses landes sauvages — entre grandes marées, dunes et bocage normand, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans la Manche",
+    seoDescription: "Où aller avec son chien dans la Manche : Mont-Saint-Michel, Cherbourg, Granville, Barneville-Carteret, la Hague — plages, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans la Manche",
+  },
+  {
     id: "14",
     nom: "Calvados",
     slug: "calvados",
