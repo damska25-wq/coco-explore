@@ -1,5 +1,15 @@
 export default [
   {
+    id: "76",
+    nom: "Seine-Maritime",
+    slug: "seine-maritime",
+    region: "Normandie",
+    intro: "Rouen et sa vieille ville à colombages, les falaises d'Étretat et sa fameuse arche, Le Havre et son port reconstruit par Perret, Fécamp et le Palais Bénédictine, Dieppe et sa plage de galets, la Côte d'Albâtre entre Veules-les-Roses et Saint-Valery-en-Caux, la vallée de la Seine et ses boucles, le pays de Caux — entre falaises de craie, grandes plages et villes historiques, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Seine-Maritime",
+    seoDescription: "Où aller avec son chien en Seine-Maritime : Rouen, Étretat, Le Havre, Fécamp, Dieppe, Côte d'Albâtre — plages, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Seine-Maritime",
+  },
+  {
     id: "50",
     nom: "Manche",
     slug: "manche",
