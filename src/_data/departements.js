@@ -1,5 +1,15 @@
 export default [
   {
+    id: "41",
+    nom: "Loir-et-Cher",
+    slug: "loir-et-cher",
+    region: "Centre-Val de Loire",
+    intro: "Blois et son château royal, le domaine national de Chambord et son parc forestier de 5440 hectares, Cheverny et son chenil de chasse historique, Chaumont-sur-Loire et son festival international des jardins, Vendôme et la vallée du Loir, Romorantin-Lanthenay porte de la Sologne, le ZooParc de Beauval à Saint-Aignan, les forêts domaniales de Russy, de Boulogne et de Blois, les étangs de Sologne — entre châteaux royaux, forêts giboyeuses et bords de Loire, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Loir-et-Cher",
+    seoDescription: "Où aller avec son chien en Loir-et-Cher : Blois, Chambord, Cheverny, Chaumont-sur-Loire, Vendôme, Sologne — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Loir-et-Cher",
+  },
+  {
     id: "37",
     nom: "Indre-et-Loire",
     slug: "indre-et-loire",
