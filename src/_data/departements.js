@@ -1,5 +1,15 @@
 export default [
   {
+    id: "45",
+    nom: "Loiret",
+    slug: "loiret",
+    region: "Centre-Val de Loire",
+    intro: "Orléans et sa cathédrale Sainte-Croix, le Parc floral de la Source, la forêt domaniale d'Orléans (plus grande forêt domaniale de France), Sully-sur-Loire et son château médiéval, Gien et sa faïencerie, Montargis surnommée la « Venise du Gâtinais », Beaugency et son vieux pont sur la Loire, la Sologne et ses étangs côté Loiret, le canal d'Orléans — entre bords de Loire classés au patrimoine mondial, grande forêt et étangs de Sologne, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans le Loiret",
+    seoDescription: "Où aller avec son chien dans le Loiret : Orléans, Sully-sur-Loire, Gien, Montargis, Beaugency, Sologne — balades, étangs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Loiret",
+  },
+  {
     id: "36",
     nom: "Indre",
     slug: "indre",
