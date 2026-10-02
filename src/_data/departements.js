@@ -1,5 +1,15 @@
 export default [
   {
+    id: "27",
+    nom: "Eure",
+    slug: "eure",
+    region: "Normandie",
+    intro: "Giverny et le jardin de Claude Monet, Les Andelys et le Château Gaillard dominant la Seine, Évreux et sa cathédrale, Vernon et ses vieux moulins, la forêt de Lyons et ses hêtraies, le parc naturel régional des Boucles de la Seine Normande côté Eure, Louviers et Pont-Audemer, la vallée de l'Avre et celle de l'Iton — entre méandres de Seine, forêts domaniales et villages normands à colombages, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien dans l'Eure",
+    seoDescription: "Où aller avec son chien dans l'Eure : Giverny, Les Andelys, Évreux, Vernon, forêt de Lyons — plages, balades et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Eure",
+  },
+  {
     id: "76",
     nom: "Seine-Maritime",
     slug: "seine-maritime",
