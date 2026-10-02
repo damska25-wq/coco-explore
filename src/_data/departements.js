@@ -1,5 +1,15 @@
 export default [
   {
+    id: "28",
+    nom: "Eure-et-Loir",
+    slug: "eure-et-loir",
+    region: "Centre-Val de Loire",
+    intro: "Chartres et sa cathédrale Notre-Dame classée UNESCO, Dreux et sa forêt domaniale, le Perche autour de Nogent-le-Rotrou, Châteaudun et son château surplombant le Loir, le château d'Anet, Maintenon et ses jardins en bord d'Eure — entre Beauce agricole et forêts du Perche, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Eure-et-Loir",
+    seoDescription: "Où aller avec son chien en Eure-et-Loir : Chartres, Dreux, Châteaudun, Maintenon, le Perche — balades, lacs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Eure-et-Loir",
+  },
+  {
     id: "18",
     nom: "Cher",
     slug: "cher",
