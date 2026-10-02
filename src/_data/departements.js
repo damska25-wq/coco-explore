@@ -1,5 +1,25 @@
 export default [
   {
+    id: "2B",
+    nom: "Haute-Corse",
+    slug: "haute-corse",
+    region: "Corse",
+    intro: "Bastia et son vieux port génois, le Cap Corse et ses marines sauvages, Corte l'ancienne capitale nichée dans les montagnes, Calvi et sa citadelle dominant la plage, l'Île-Rousse et ses plages de sable fin, le désert des Agriates entre maquis et criques sauvages, la forêt de Vizzavona au cœur du GR20, la plaine orientale et ses étangs — entre mer Méditerranée, maquis corse et montagnes, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Haute-Corse",
+    seoDescription: "Où aller avec son chien en Haute-Corse : Bastia, Cap Corse, Corte, Calvi, Île-Rousse — plages, randonnées et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Haute-Corse",
+  },
+  {
+    id: "2A",
+    nom: "Corse-du-Sud",
+    slug: "corse-du-sud",
+    region: "Corse",
+    intro: "Ajaccio et sa citadelle face au golfe, les îles Sanguinaires et leur coucher de soleil, Bonifacio perchée sur ses falaises de calcaire blanc, le golfe de Porto classé au patrimoine mondial de l'UNESCO (calanches de Piana, réserve de Scandola), Propriano et son golfe du Valinco, Sartène « la plus corse des villes corses », le site préhistorique de Filitosa, la vallée de la Gravona — entre plages de rêve, maquis odorant et villages perchés, de bonnes adresses pour voyager avec son chien.",
+    seoTitle: "Où aller avec son chien en Corse-du-Sud",
+    seoDescription: "Où aller avec son chien en Corse-du-Sud : Ajaccio, Bonifacio, golfe de Porto, Propriano, Sartène — plages, randonnées et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Corse-du-Sud",
+  },
+  {
     id: "45",
     nom: "Loiret",
     slug: "loiret",
