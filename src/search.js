@@ -16,13 +16,14 @@
   function search(query) {
     var q = normalize(query).trim();
     if (!q) return [];
+    var words = q.split(/\s+/).filter(Boolean);
     return lieux
       .filter(function (l) {
-        return (
-          normalize(l.titre).indexOf(q) !== -1 ||
-          normalize(l.lieu).indexOf(q) !== -1 ||
-          normalize(l.categorie).indexOf(q) !== -1
-        );
+        var haystack =
+          normalize(l.titre) + " " + normalize(l.lieu) + " " + normalize(l.categorie);
+        return words.every(function (word) {
+          return haystack.indexOf(word) !== -1;
+        });
       })
       .slice(0, 8);
   }
