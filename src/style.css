@@ -448,6 +448,27 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .access-badge.badge-year-round { background: var(--pin); }
 .access-badge.badge-seasonal { background: var(--ocre); color: var(--pin-deep); }
 .access-badge.badge-urgence { background: var(--terracotta-deep); }
+.access-badge.badge-partenaire { background: var(--ocre); color: var(--pin-deep); }
+
+.fiche-card.is-partenaire {
+  border-top: 3px solid var(--ocre);
+  box-shadow: 0 0 0 1px rgba(201,154,74,0.35);
+}
+.fiche-card.is-partenaire:hover { box-shadow: 0 0 0 1px rgba(201,154,74,0.5), 0 10px 22px rgba(var(--ink),0.12); }
+
+.fiche-partenaire-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--pin-deep);
+  background: var(--ocre);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
 .fiche-card .body { padding: 18px 20px 22px; }
 .fiche-card .tag { display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--terracotta); margin-bottom: 8px; }
 .fiche-card h3 { font-size: 1.2rem; margin-bottom: 6px; }
