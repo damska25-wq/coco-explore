@@ -4,6 +4,12 @@ permalinkPath: devenir-partenaire.html
 title: "Devenir partenaire — Coco Explore"
 description: "Vous êtes un professionnel déjà référencé sur Coco Explore et souhaitez une mise en avant ? Découvrez le programme partenaire."
 layout: legal.njk
+extraHead: |
+  <style>
+    .partner-contact { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 4px; }
+    .partner-contact-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; }
+    .partner-contact-link svg { flex-shrink: 0; color: var(--heading-soft); }
+  </style>
 bodyHtml: |
   <section class="wrap legal-body">
     <span class="tag">Professionnels</span>
@@ -25,6 +31,13 @@ bodyHtml: |
     <p>Le programme est encore en phase de test : nous l'ouvrons progressivement à quelques professionnels, secteur par secteur, pour nous assurer que la formule a vraiment du sens avant de la généraliser.</p>
     <p>Si vous êtes intéressé, le plus simple est de nous écrire directement : nous reviendrons vers vous avec les modalités.</p>
 
-    <p><a href="mailto:contact@cocoexplore.com?subject=Devenir%20partenaire">Nous contacter pour en discuter</a></p>
+    <div class="partner-contact">
+      <a href="mailto:contact@cocoexplore.com?subject=Devenir%20partenaire" class="partner-contact-link">
+        <svg width="18" height="18"><use href="#i-mail"/></svg> contact@cocoexplore.com
+      </a>
+      <a href="https://www.instagram.com/danslesyeuxdecoco/" target="_blank" rel="noopener" class="partner-contact-link">
+        <svg width="18" height="18"><use href="#i-instagram"/></svg> @danslesyeuxdecoco
+      </a>
+    </div>
   </section>
 ---
