@@ -10,7 +10,7 @@ extraScripts: |
   "name": h1,
   "description": description,
   "image": heroImage,
-  "url": "https://cocoexplore.com/" + permalinkPath,
+  "url": "https://cocoexplore.com/" + (permalinkPath | cleanUrl),
   "address": {
     "@type": "PostalAddress",
     "addressLocality": lieu,
@@ -29,19 +29,19 @@ extraScripts: |
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Coco Explore", "item": "https://cocoexplore.com/" },
-    { "@type": "ListItem", "position": 2, "name": breadcrumbCatLabel, "item": "https://cocoexplore.com/index.html#" + breadcrumbCatId },
-    { "@type": "ListItem", "position": 3, "name": breadcrumbLast, "item": "https://cocoexplore.com/" + permalinkPath }
+    { "@type": "ListItem", "position": 2, "name": breadcrumbCatLabel, "item": "https://cocoexplore.com/#" + breadcrumbCatId },
+    { "@type": "ListItem", "position": 3, "name": breadcrumbLast, "item": "https://cocoexplore.com/" + (permalinkPath | cleanUrl) }
   ]
 } %}
 <script type="application/ld+json">{{ jsonLdBreadcrumb | dump | safe }}</script>
 <section class="fiche-hero">
   {%- set heroSrcset = heroImage | imgSrcset %}
   <img class="fiche-hero-img" src="{{ heroImage | safe }}"{% if heroSrcset %} srcset="{{ heroSrcset | safe }}" sizes="100vw"{% endif %} alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager" fetchpriority="high"{% if heroImagePosition %} style="object-position: {{ heroImagePosition | safe }};"{% endif %}>
-  <button type="button" class="fav-toggle" id="fav-toggle" data-slug="{{ permalinkPath }}" aria-pressed="false" aria-label="Ajouter aux favoris">
+  <button type="button" class="fav-toggle" id="fav-toggle" data-slug="{{ permalinkPath | cleanUrl }}" aria-pressed="false" aria-label="Ajouter aux favoris">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.6 6.1.6-4.6 4.2 1.3 6.1L12 17l-5.4 3 1.3-6.1-4.6-4.2 6.1-.6z"/></svg>
   </button>
   <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Coco Explore</a> / <a href="index.html#{{ breadcrumbCatId }}">{{ breadcrumbCatLabel | safe }}</a> / {{ breadcrumbLast | safe }}</div>
+    <div class="breadcrumb"><a href="/">Coco Explore</a> / <a href="/#{{ breadcrumbCatId }}">{{ breadcrumbCatLabel | safe }}</a> / {{ breadcrumbLast | safe }}</div>
     <span class="tag">{{ tag | safe }}</span>{% if partenaire %}<span class="fiche-partenaire-tag"><svg width="12" height="12"><use href="#i-star"/></svg> Partenaire Coco Explore</span>{% endif %}
     <h1>{{ h1 | safe }}</h1>
     <span class="lieu">{{ lieu | safe }}</span>
@@ -75,13 +75,13 @@ extraScripts: |
       <div><span class="label">Site officiel</span><span class="value"><a href="{{ siteWeb | safe }}" target="_blank" rel="noopener nofollow">Voir le site ↗</a></span></div>
     </div>
     {%- endif %}
-    {%- set shareText = "Regarde cette adresse où aller avec son chien trouvée sur Coco Explore : " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + permalinkPath %}
+    {%- set shareText = "Regarde cette adresse où aller avec son chien trouvée sur Coco Explore : " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + (permalinkPath | cleanUrl) %}
     <div class="info-item">
       <svg class="icon"><use href="#i-whatsapp"/></svg>
       <div><span class="label">Partager</span><span class="value"><a href="https://wa.me/?text={{ shareText | urlencode }}" target="_blank" rel="noopener">Sur WhatsApp</a></span></div>
     </div>
     {%- set reportSubject = "Signalement — " + h1 %}
-    {%- set reportBody = "Bonjour,\n\nJe souhaite signaler une information à corriger sur la fiche « " + h1 + " » :\nhttps://cocoexplore.com/" + permalinkPath + "\n\nCe qui ne correspond plus :\n[décris ici]\n\nMerci !" %}
+    {%- set reportBody = "Bonjour,\n\nJe souhaite signaler une information à corriger sur la fiche « " + h1 + " » :\nhttps://cocoexplore.com/" + (permalinkPath | cleanUrl) + "\n\nCe qui ne correspond plus :\n[décris ici]\n\nMerci !" %}
     <div class="info-item">
       <svg class="icon"><use href="#i-alert"/></svg>
       <div><span class="label">Une erreur ?</span><span class="value"><a href="mailto:contact@cocoexplore.com?subject={{ reportSubject | urlencode }}&amp;body={{ reportBody | urlencode }}">Nous la signaler</a></span></div>
@@ -141,7 +141,7 @@ extraScripts: |
   <div class="fiche-grid">
     {%- for f in relatedFiches %}
     {%- set badge = ({ label: "Partenaire", cls: "badge-partenaire" }) if f.data.partenaire else ((f.data.infoItems | accessBadge) if (f.data.breadcrumbCatId == "plages" or f.data.breadcrumbCatId == "cote-azur") else ((f.data.infoItems | vetBadge) if f.data.breadcrumbCatId == "veterinaires" else null)) %}
-    <a href="{{ f.data.permalinkPath }}" class="fiche-card{% if f.data.partenaire %} is-partenaire{% endif %}">
+    <a href="{{ f.data.permalinkPath | cleanUrl }}" class="fiche-card{% if f.data.partenaire %} is-partenaire{% endif %}">
       <div class="thumb">
         {%- set cardSrcset = f.data.heroImage | imgSrcset %}
         <img src="{{ f.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ f.data.cardTitle | safe }} — {{ f.data.cardTag | safe }}" loading="lazy">

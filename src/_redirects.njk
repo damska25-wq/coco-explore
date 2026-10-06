@@ -1,0 +1,21 @@
+---
+permalink: _redirects
+eleventyExcludeFromCollections: true
+---
+# Fichier généré automatiquement par Eleventy (src/_redirects.njk) — NE PAS ÉDITER À LA MAIN.
+#
+# Correction des doublons d'URL .html / sans .html détectés dans Google Search
+# Console : chaque page existe physiquement en .html (requis par Eleventy), mais
+# l'URL canonique du site est désormais la version SANS extension. Le "!" force
+# la redirection même quand un fichier statique correspond exactement à l'URL
+# demandée (sinon Netlify le servirait directement en 200, sans redirection).
+/index.html / 301!
+{%- for fiche in collections.fiches %}
+/{{ fiche.data.permalinkPath }} /{{ fiche.data.permalinkPath | cleanUrl }} 301!
+{%- endfor %}
+{%- for dep in departements %}
+/departement-{{ dep.slug }}.html /departement-{{ dep.slug }} 301!
+{%- endfor %}
+{%- for p in ["404.html", "a-propos.html", "faq.html", "plan-du-site.html", "aires-autoroute-chien.html", "conseils-de-coco.html", "nouveautes.html", "devenir-partenaire.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
+/{{ p }} /{{ p | cleanUrl }} 301!
+{%- endfor %}

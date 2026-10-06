@@ -74,7 +74,7 @@ extraScripts: |
       </button>
       <div class="cat-grid region-accordion-body" hidden>
         {%- for dep in region.departements %}
-        <a href="departement-{{ dep.slug }}.html" class="cat-card">
+        <a href="departement-{{ dep.slug }}" class="cat-card">
           <svg class="icon"><use href="#i-pin"/></svg>
           <h3>{{ dep.nom }}</h3>
           <span class="count">{{ collections.fiches | countByDept(dep.id) }} fiches</span>
@@ -114,7 +114,7 @@ extraScripts: |
     <div class="fiche-grid">
       {%- for fiche in collections.fiches | latestByCategory(section.id, 18) %}
       {%- set badge = ({ label: "Partenaire", cls: "badge-partenaire" }) if fiche.data.partenaire else ((fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null)) %}
-      <a href="{{ fiche.data.permalinkPath }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}">
+      <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}">
         <div class="thumb">
           {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
           <img src="{{ fiche.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">

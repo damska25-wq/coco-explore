@@ -35,13 +35,13 @@ extraHead: |
   </svg>
   <h1>Coco n'a pas trouvé cette page</h1>
   <p>Le lien est peut-être ancien, ou l'adresse comporte une erreur. Pas de panique, il reste plein d'autres adresses où aller avec son chien à découvrir.</p>
-  <a href="index.html" class="btn-home">Retour à l'accueil</a>
+  <a href="/" class="btn-home">Retour à l'accueil</a>
 
   <div class="error-suggestions">
     <h2>Quelques idées pour repartir</h2>
     <div class="fiche-grid">
       {%- for fiche in collections.fiches | latest(3) %}
-      <a href="{{ fiche.data.permalinkPath }}" class="fiche-card">
+      <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
         <div class="thumb"><img src="{{ fiche.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy"></div>
         <div class="body">

@@ -211,6 +211,12 @@ export default function (eleventyConfig) {
     return url.startsWith("http") ? url : "https://cocoexplore.com/" + url;
   });
 
+  // URL "propre" d'une fiche/page, sans l'extension .html : c'est la version
+  // canonique de chaque URL depuis la correction des doublons détectés par
+  // Google Search Console (les fichiers de sortie restent en .html sur disque,
+  // Netlify les sert aussi sans extension — voir _redirects.njk pour les 301).
+  eleventyConfig.addFilter("cleanUrl", (path) => (path || "").replace(/\.html$/, ""));
+
   // Badge "Urgences 24h/24" sur les vignettes de vétérinaires, dérivé du champ
   // "Urgences" des infoItems déjà présent sur la fiche — même principe que
   // accessBadge : on ne réaffirme jamais une info qui ne serait pas déjà

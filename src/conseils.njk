@@ -32,7 +32,7 @@ extraScripts: |
 
   <div class="conseils-cards" id="coco-conseils-list">
     {%- for conseil in collections.fiches | weeklyConseils(departements) %}
-    <a href="{{ conseil.permalinkPath }}" class="conseil-card">
+    <a href="{{ conseil.permalinkPath | cleanUrl }}" class="conseil-card">
       <span class="conseil-tag">{{ conseil.tag }}</span>
       <h3>{{ conseil.titre }}</h3>
       <span class="conseil-lieu">{{ conseil.lieu }}</span>

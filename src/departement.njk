@@ -61,7 +61,7 @@ eleventyComputed:
   <div class="fiche-grid">
     {%- for fiche in deptFiches %}
     {%- set badge = ({ label: "Partenaire", cls: "badge-partenaire" }) if fiche.data.partenaire else ((fiche.data.infoItems | accessBadge) if (fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur") else ((fiche.data.infoItems | vetBadge) if fiche.data.breadcrumbCatId == "veterinaires" else null)) %}
-    <a href="{{ fiche.data.permalinkPath }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}">
+    <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}">
       <div class="thumb">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
         <img src="{{ fiche.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
@@ -99,7 +99,7 @@ eleventyComputed:
       </button>
       <div class="cat-grid region-accordion-body" hidden>
         {%- for other in region.departements %}
-        <a href="departement-{{ other.slug }}.html" class="cat-card">
+        <a href="departement-{{ other.slug }}" class="cat-card">
           <svg class="icon"><use href="#i-pin"/></svg>
           <h3>{{ other.nom }}</h3>
           <span class="count">{{ collections.fiches | countByDept(other.id) }} fiches</span>

@@ -30,7 +30,7 @@ extraHead: |
     <h2>{{ section.catGrid.label if section.catGrid else section.eyebrow | safe }} <span class="count">({{ ficheList.length }})</span></h2>
     <div class="sitemap-links">
       {%- for fiche in ficheList %}
-      <a href="{{ fiche.data.permalinkPath }}">{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}</a>
+      <a href="{{ fiche.data.permalinkPath | cleanUrl }}">{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}</a>
       {%- endfor %}
     </div>
   </div>
@@ -40,20 +40,20 @@ extraHead: |
   <div class="sitemap-section">
     <h2>Pages du site</h2>
     <div class="sitemap-links">
-      <a href="index.html">Accueil</a>
-      <a href="conseils-de-coco.html">Les conseils de Coco</a>
-      <a href="a-propos.html">À propos</a>
-      <a href="faq.html">FAQ</a>
-      <a href="aires-autoroute-chien.html">Aires d'autoroute avec son chien</a>
-      <a href="devenir-partenaire.html">Devenir partenaire</a>
+      <a href="/">Accueil</a>
+      <a href="conseils-de-coco">Les conseils de Coco</a>
+      <a href="a-propos">À propos</a>
+      <a href="faq">FAQ</a>
+      <a href="aires-autoroute-chien">Aires d'autoroute avec son chien</a>
+      <a href="devenir-partenaire">Devenir partenaire</a>
       {%- for region in regions %}
       {%- for dep in region.departements %}
-      <a href="departement-{{ dep.slug }}.html">{{ region.nom }} — {{ dep.nom }}</a>
+      <a href="departement-{{ dep.slug }}">{{ region.nom }} — {{ dep.nom }}</a>
       {%- endfor %}
       {%- endfor %}
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="politique-confidentialite.html">Politique de confidentialité</a>
-      <a href="conditions-utilisation.html">Conditions d'utilisation</a>
+      <a href="mentions-legales">Mentions légales</a>
+      <a href="politique-confidentialite">Politique de confidentialité</a>
+      <a href="conditions-utilisation">Conditions d'utilisation</a>
     </div>
   </div>
 </section>

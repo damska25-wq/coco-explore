@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
   </url>
 {%- for fiche in collections.fiches %}
   <url>
-    <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath }}</loc>
+    <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</loc>
     <lastmod>{{ fiche.inputPath | lastmod }}</lastmod>
     <priority>0.6</priority>
     {%- if fiche.data.heroImage %}
@@ -23,12 +23,12 @@ eleventyExcludeFromCollections: true
 {%- endfor %}
 {%- for dep in departements %}
   <url>
-    <loc>https://cocoexplore.com/departement-{{ dep.slug }}.html</loc>
+    <loc>https://cocoexplore.com/departement-{{ dep.slug }}</loc>
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
     <priority>0.7</priority>
   </url>
 {%- endfor %}
-{%- for p in ["a-propos.html", "faq.html", "plan-du-site.html", "aires-autoroute-chien.html", "conseils-de-coco.html", "nouveautes.html", "devenir-partenaire.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
+{%- for p in ["a-propos", "faq", "plan-du-site", "aires-autoroute-chien", "conseils-de-coco", "nouveautes", "devenir-partenaire", "mentions-legales", "politique-confidentialite", "conditions-utilisation"] %}
   <url>
     <loc>https://cocoexplore.com/{{ p }}</loc>
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
