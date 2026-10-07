@@ -39,17 +39,14 @@ Coco Explore — cocoexplore.com
 
 Premier envoi test prévu : Clinique Vétérinaire du Dr Jackowski, Cavalaire-sur-Mer (`src/fiches/veterinaire-jackowski.njk`).
 
-## Chantier en attente — à faire "demain" (performance accueil)
+## Historique — audit performance accueil (octobre 2026, résolu)
 
-Audit PageSpeed Insights (mobile + desktop) mené début octobre 2026 sur `cocoexplore.com`. Déjà corrigé et poussé sur `claude/github-connexion-otichf` :
+Audit PageSpeed Insights (mobile + desktop) mené début octobre 2026 sur `cocoexplore.com`. Tout corrigé et poussé sur `claude/github-connexion-otichf` :
 - Polices Google chargées via `<link rel="stylesheet">` au lieu d'un `@import` dans `style.css` (bloquait le rendu).
 - Filtre Eleventy `optimizeImg` (dans `eleventy.config.js`) : retire le `fm=jpg` figé dans les URLs Unsplash des fiches et ajoute `auto=format,compress` pour servir du WebP/AVIF. Appliqué partout où une image Unsplash est affichée (`src=`, `imgSrcset`, préchargement LCP dans `base.njk`, `map-data.njk`). **Ne pas toucher** `og:image`/`twitter:image`/JSON-LD, volontairement laissés en JPG forcé (compatibilité réseaux sociaux/Google).
+- Accueil (`src/index.njk`) : les ~198 images des sections par catégorie cachées par défaut (`hidden`, une seule visible selon le filtre cliqué) n'ont plus de vraie `src=` au chargement — juste un espace réservé (SVG vide en data URI), avec l'URL réelle dans `data-src`/`data-srcset`. `map.js` (fonction `revealImages`, appelée dans `showCatIds`) ne déclenche leur téléchargement qu'au moment où la section devient réellement visible. Les autres pages (département, fiche, nouveautés, 404) n'ont pas ce problème — leurs images sont déjà toutes visibles au chargement, pas de changement là-bas.
 
-**Reste à faire** : le point "Améliorer l'affichage des images" de PageSpeed Insights n'a presque pas bougé après ce correctif (856 → 832 Kio sur desktop), alors qu'on attendait une grosse baisse. Hypothèse la plus probable (non confirmée par un test réseau direct — `cocoexplore.com` et `images.unsplash.com` sont tous deux bloqués par la politique réseau de l'environnement Claude Code) : la page d'accueil (`src/index.njk`) génère ~199 `<img>` dans le HTML, dont la plupart appartiennent à des sections par catégorie (plages, restaurants, vétérinaires...) qui sont cachées par défaut (`hidden`, une seule catégorie visible à la fois selon le filtre cliqué sur la carte). Lighthouse compterait ces images cachées comme "chargées en trop grand pour leur taille d'affichage" puisqu'elles ne s'affichent nulle part tant que l'utilisateur n'a pas cliqué le bon filtre.
-
-Chantier proposé (pas encore commencé, accepté par l'utilisateur mais reporté) : ne plus pré-générer dans le HTML les images des catégories non sélectionnées sur l'accueil — les charger en JS seulement à la demande (au clic sur le filtre), au lieu de les embarquer toutes dès le chargement initial. Changement d'architecture de la page d'accueil, pas une simple retouche — à valider avec l'utilisateur avant de s'y lancer (portée, risque de régression visuelle/JS à tester en local avant push).
-
-Avant de commencer : relire ce fichier + relancer un test PageSpeed Insights frais (desktop ET mobile) pour confirmer que le diagnostic tient toujours, puis demander à l'utilisateur confirmation du DevTools Network (`Content-Type` d'une image de vignette) s'il ne l'a pas encore fait — ça confirme que `optimizeImg` sert bien du WebP/AVIF et isole la part du problème qui reste purement structurelle.
+Si le point "Améliorer l'affichage des images" de PageSpeed Insights reste élevé après tout ça, retester en conditions réelles (le réseau de l'environnement Claude Code bloque `cocoexplore.com` et `images.unsplash.com`, donc aucune vérification réseau directe n'a pu être faite depuis cet environnement) plutôt que de supposer qu'il reste un problème.
 
 ## Conventions du projet (voir aussi contexte de session)
 
