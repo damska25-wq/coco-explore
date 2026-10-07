@@ -679,4 +679,14 @@ export default [
     seoDescription: "Où aller avec son chien en Tarn-et-Garonne : Montauban, Moissac, la vallée de l'Aveyron et la confluence Tarn-Garonne, avec Coco comme guide.",
     seoH1: "Où aller avec son chien en Tarn-et-Garonne",
   },
+  {
+    id: "75",
+    nom: "Paris",
+    slug: "paris",
+    region: "Île-de-France",
+    intro: "La capitale, ses bords de Seine, les bois de Boulogne et de Vincennes, le canal Saint-Martin et ses nombreux parcs intra-muros.",
+    seoTitle: "Où aller avec son chien à Paris (75)",
+    seoDescription: "Où aller avec son chien à Paris : bois de Boulogne et Vincennes, canal Saint-Martin, parcs, restaurants et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien à Paris",
+  },
 ];
