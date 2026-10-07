@@ -41,7 +41,7 @@
 <meta name="twitter:image" content="{{ og.url | safe }}">
 {%- if heroImage %}
 {%- set heroSrcset = heroImage | imgSrcset %}
-<link rel="preload" as="image" href="{{ heroImage | safe }}" fetchpriority="high"{% if heroSrcset %} imagesrcset="{{ heroSrcset | safe }}" imagesizes="100vw"{% endif %}>
+<link rel="preload" as="image" href="{{ heroImage | optimizeImg | safe }}" fetchpriority="high"{% if heroSrcset %} imagesrcset="{{ heroSrcset | safe }}" imagesizes="100vw"{% endif %}>
 {%- endif %}
 <link rel="stylesheet" href="style.css">
 {% if extraHead %}{{ extraHead | safe }}{% endif %}

@@ -155,12 +155,33 @@ export default function (eleventyConfig) {
   // un paramètre `w` dans l'URL, donc on peut demander plusieurs largeurs sans
   // stocker de fichiers supplémentaires. Renvoie null pour les photos locales
   // (assets/*.jpg), qui n'ont qu'une seule taille disponible.
+  // Les fiches stockent des URLs Unsplash avec `fm=jpg` figé en dur (choix fait
+  // à la rédaction de chaque fiche) : ça empêche le navigateur de recevoir du
+  // WebP/AVIF, nettement plus légers, même quand il les supporte. On retire ce
+  // `fm` explicite et on active la négociation de format d'Unsplash/Imgix
+  // (`auto=format`), qui sert automatiquement le format le plus léger supporté
+  // par le navigateur (via l'en-tête Accept), à qualité équivalente.
+  function unsplashAutoFormat(url) {
+    const u = new URL(url);
+    u.searchParams.delete("fm");
+    u.searchParams.set("auto", "format,compress");
+    return u;
+  }
+  eleventyConfig.addFilter("optimizeImg", (url) => {
+    if (!url || !url.includes("images.unsplash.com")) return url;
+    try {
+      return unsplashAutoFormat(url).toString();
+    } catch (e) {
+      return url;
+    }
+  });
+
   eleventyConfig.addFilter("imgSrcset", (url) => {
     if (!url || !url.includes("images.unsplash.com")) return null;
     try {
       return [400, 800, 1080]
         .map((w) => {
-          const u = new URL(url);
+          const u = unsplashAutoFormat(url);
           u.searchParams.set("w", String(w));
           return `${u.toString()} ${w}w`;
         })

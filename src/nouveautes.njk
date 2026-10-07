@@ -23,7 +23,7 @@ extraHead: |
     <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card">
       <div class="thumb">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
-        <img src="{{ fiche.data.heroImage | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
+        <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
         {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
       </div>
       <div class="body">
