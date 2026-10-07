@@ -107,10 +107,27 @@
     });
   }
 
+  // Les vignettes des sections masquées n'ont pas de vraie src tant qu'on ne
+  // les affiche pas (voir index.njk) : Lighthouse comptait ces images comme
+  // "chargées en trop grand pour leur taille d'affichage" puisqu'elles ne
+  // s'affichent nulle part tant que la catégorie n'est pas choisie. On ne
+  // déclenche leur téléchargement qu'au moment où la section devient visible.
+  function revealImages(sectionEl) {
+    sectionEl.querySelectorAll("img[data-src]").forEach(function (img) {
+      img.src = img.dataset.src;
+      if (img.dataset.srcset) img.srcset = img.dataset.srcset;
+      delete img.dataset.src;
+      delete img.dataset.srcset;
+    });
+  }
+
   function showCatIds(catIds) {
     catIds.forEach(function (catId) {
       if (layerByCatId[catId] && !map.hasLayer(layerByCatId[catId])) layerByCatId[catId].addTo(map);
-      if (ficheSections[catId]) ficheSections[catId].hidden = false;
+      if (ficheSections[catId]) {
+        ficheSections[catId].hidden = false;
+        revealImages(ficheSections[catId]);
+      }
     });
   }
 
