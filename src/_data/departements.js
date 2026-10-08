@@ -809,4 +809,14 @@ export default [
     seoDescription: "Où aller avec son chien en Meurthe-et-Moselle : Nancy, parc de la Pépinière, forêt de Haye, lac de Pierre-Percée et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Meurthe-et-Moselle",
   },
+  {
+    id: "55",
+    nom: "Meuse",
+    slug: "meuse",
+    region: "Grand Est",
+    intro: "Le champ de bataille et le Mémorial de Verdun, les Hauts de Meuse, le lac de Madine, la vieille ville de Bar-le-Duc, les bords de la Meuse à Saint-Mihiel et Commercy.",
+    seoTitle: "Où aller avec son chien dans la Meuse (55)",
+    seoDescription: "Où aller avec son chien dans la Meuse : Verdun, lac de Madine, Bar-le-Duc, Saint-Mihiel et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans la Meuse",
+  },
 ];
