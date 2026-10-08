@@ -749,4 +749,14 @@ export default [
     seoDescription: "Où aller avec son chien dans le Val-de-Marne : bords de Marne, Nogent-sur-Marne, Saint-Maur-des-Fossés et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans le Val-de-Marne",
   },
+  {
+    id: "95",
+    nom: "Val-d'Oise",
+    slug: "val-doise",
+    region: "Île-de-France",
+    intro: "La forêt de Montmorency et ses allées cavalières, la base de loisirs de Cergy-Pontoise, les bords de Seine à L'Isle-Adam, les coteaux du Vexin français.",
+    seoTitle: "Où aller avec son chien dans le Val-d'Oise (95)",
+    seoDescription: "Où aller avec son chien dans le Val-d'Oise : forêt de Montmorency, base de loisirs de Cergy-Pontoise, L'Isle-Adam et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Val-d'Oise",
+  },
 ];
