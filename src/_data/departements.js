@@ -789,4 +789,14 @@ export default [
     seoDescription: "Où aller avec son chien dans la Marne : vignobles de Champagne, lac du Der-Chantecoq, Reims, Épernay et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans la Marne",
   },
+  {
+    id: "52",
+    nom: "Haute-Marne",
+    slug: "haute-marne",
+    region: "Grand Est",
+    intro: "La ville fortifiée de Langres et ses remparts, le lac de la Liez, la rive sud du lac du Der-Chantecoq, la vallée de la Marne entre Chaumont et Saint-Dizier.",
+    seoTitle: "Où aller avec son chien en Haute-Marne (52)",
+    seoDescription: "Où aller avec son chien en Haute-Marne : Langres, lac de la Liez, lac du Der, Chaumont et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Haute-Marne",
+  },
 ];
