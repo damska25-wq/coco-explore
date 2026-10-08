@@ -799,4 +799,14 @@ export default [
     seoDescription: "Où aller avec son chien en Haute-Marne : Langres, lac de la Liez, lac du Der, Chaumont et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Haute-Marne",
   },
+  {
+    id: "54",
+    nom: "Meurthe-et-Moselle",
+    slug: "meurthe-et-moselle",
+    region: "Grand Est",
+    intro: "La place Stanislas et le parc de la Pépinière à Nancy, la forêt de Haye, le lac de Pierre-Percée, la vallée de la Moselle entre Pont-à-Mousson et Lunéville.",
+    seoTitle: "Où aller avec son chien en Meurthe-et-Moselle (54)",
+    seoDescription: "Où aller avec son chien en Meurthe-et-Moselle : Nancy, parc de la Pépinière, forêt de Haye, lac de Pierre-Percée et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Meurthe-et-Moselle",
+  },
 ];
