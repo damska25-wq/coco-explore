@@ -949,4 +949,14 @@ export default [
     seoDescription: "Où aller avec son chien dans la Sarthe : Le Mans, bords de Sarthe, forêt de Bercé et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans la Sarthe",
   },
+  {
+    id: "85",
+    nom: "Vendée",
+    slug: "vendee",
+    region: "Pays de la Loire",
+    intro: "Les Sables-d'Olonne et sa grande plage, l'île de Noirmoutier et l'île d'Yeu, le Marais poitevin et le Marais breton, Saint-Jean-de-Monts et sa forêt, la côte sauvage vendéenne.",
+    seoTitle: "Où aller avec son chien en Vendée (85)",
+    seoDescription: "Où aller avec son chien en Vendée : Les Sables-d'Olonne, Noirmoutier, Marais poitevin et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Vendée",
+  },
 ];
