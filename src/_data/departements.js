@@ -919,4 +919,14 @@ export default [
     seoDescription: "Où aller avec son chien en Loire-Atlantique : Nantes, La Baule, Guérande, Saint-Nazaire et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Loire-Atlantique",
   },
+  {
+    id: "49",
+    nom: "Maine-et-Loire",
+    slug: "maine-et-loire",
+    region: "Pays de la Loire",
+    intro: "Angers et son château, la vallée de la Loire et ses châteaux (Saumur, Brissac), le Lac de Maine, le vignoble angevin et les bords de Loire et de Maine.",
+    seoTitle: "Où aller avec son chien en Maine-et-Loire (49)",
+    seoDescription: "Où aller avec son chien en Maine-et-Loire : Angers, Saumur, Lac de Maine, vallée de la Loire et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Maine-et-Loire",
+  },
 ];
