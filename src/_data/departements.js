@@ -829,4 +829,14 @@ export default [
     seoDescription: "Où aller avec son chien en Moselle : Metz, lac de Mittersheim, Thionville, pays des étangs et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Moselle",
   },
+  {
+    id: "67",
+    nom: "Bas-Rhin",
+    slug: "bas-rhin",
+    region: "Grand Est",
+    intro: "Strasbourg et sa Petite France, le parc de l'Orangerie, les Vosges du Nord et le barrage de Gambsheim, la route des vins d'Alsace, les étangs et forêts entre Haguenau et Wissembourg.",
+    seoTitle: "Où aller avec son chien dans le Bas-Rhin (67)",
+    seoDescription: "Où aller avec son chien dans le Bas-Rhin : Strasbourg, parc de l'Orangerie, route des vins, Haguenau et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Bas-Rhin",
+  },
 ];
