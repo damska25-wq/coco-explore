@@ -929,4 +929,14 @@ export default [
     seoDescription: "Où aller avec son chien en Maine-et-Loire : Angers, Saumur, Lac de Maine, vallée de la Loire et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Maine-et-Loire",
   },
+  {
+    id: "53",
+    nom: "Mayenne",
+    slug: "mayenne",
+    region: "Pays de la Loire",
+    intro: "Laval et ses bords de Mayenne, le château de Laval, Château-Gontier, les collines du Maine et les chemins de halage le long de la rivière Mayenne.",
+    seoTitle: "Où aller avec son chien en Mayenne (53)",
+    seoDescription: "Où aller avec son chien en Mayenne : Laval, bords de Mayenne, Château-Gontier et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Mayenne",
+  },
 ];
