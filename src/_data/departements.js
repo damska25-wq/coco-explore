@@ -739,4 +739,14 @@ export default [
     seoDescription: "Où aller avec son chien en Seine-Saint-Denis : parc Georges-Valbon, canal de l'Ourcq, forêt de Bondy et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Seine-Saint-Denis",
   },
+  {
+    id: "94",
+    nom: "Val-de-Marne",
+    slug: "val-de-marne",
+    region: "Île-de-France",
+    intro: "Les bords de Marne à Nogent-sur-Marne et Saint-Maur-des-Fossés, le parc interdépartemental des sports de Choisy-le-Roi, les coteaux de Champigny, les guinguettes au fil de l'eau.",
+    seoTitle: "Où aller avec son chien dans le Val-de-Marne (94)",
+    seoDescription: "Où aller avec son chien dans le Val-de-Marne : bords de Marne, Nogent-sur-Marne, Saint-Maur-des-Fossés et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Val-de-Marne",
+  },
 ];
