@@ -719,4 +719,14 @@ export default [
     seoDescription: "Où aller avec son chien en Essonne : forêt de Sénart, vallée de la Juine, Gâtinais français, Étampes et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Essonne",
   },
+  {
+    id: "92",
+    nom: "Hauts-de-Seine",
+    slug: "hauts-de-seine",
+    region: "Île-de-France",
+    intro: "Le parc de Saint-Cloud et ses grandes perspectives sur Paris, les bords de Seine à Boulogne-Billancourt et Suresnes, le Mont Valérien, la Défense et son esplanade, le parc André-Citroën en lisière du 92.",
+    seoTitle: "Où aller avec son chien dans les Hauts-de-Seine (92)",
+    seoDescription: "Où aller avec son chien dans les Hauts-de-Seine : parc de Saint-Cloud, bords de Seine, Mont Valérien et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans les Hauts-de-Seine",
+  },
 ];
