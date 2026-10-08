@@ -899,4 +899,14 @@ export default [
     seoDescription: "Où aller avec son chien dans le Pas-de-Calais : Côte d'Opale, caps Blanc-Nez et Gris-Nez, Le Touquet, Arras et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans le Pas-de-Calais",
   },
+  {
+    id: "80",
+    nom: "Somme",
+    slug: "somme",
+    region: "Hauts-de-France",
+    intro: "La baie de Somme et ses phoques, Le Crotoy et Saint-Valery-sur-Somme, Amiens et ses hortillonnages, le parc du Marquenterre, Péronne et la Haute Somme.",
+    seoTitle: "Où aller avec son chien dans la Somme (80)",
+    seoDescription: "Où aller avec son chien dans la Somme : baie de Somme, Le Crotoy, Amiens, hortillonnages et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans la Somme",
+  },
 ];
