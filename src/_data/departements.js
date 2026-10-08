@@ -849,4 +849,14 @@ export default [
     seoDescription: "Où aller avec son chien dans le Haut-Rhin : Colmar, Mulhouse, route des vins, ballons des Vosges et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans le Haut-Rhin",
   },
+  {
+    id: "88",
+    nom: "Vosges",
+    slug: "vosges",
+    region: "Grand Est",
+    intro: "Épinal et son parc du Cours, Gérardmer et son lac, les lacs de Longemer et Retournemer, le massif vosgien et le Hohneck, les thermes de Plombières-les-Bains.",
+    seoTitle: "Où aller avec son chien dans les Vosges (88)",
+    seoDescription: "Où aller avec son chien dans les Vosges : Épinal, Gérardmer, lacs de Longemer et Retournemer, massif vosgien et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans les Vosges",
+  },
 ];
