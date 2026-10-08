@@ -699,4 +699,14 @@ export default [
     seoDescription: "Où aller avec son chien en Seine-et-Marne : forêt de Fontainebleau, bords de Marne, Provins, bases de loisirs et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Seine-et-Marne",
   },
+  {
+    id: "78",
+    nom: "Yvelines",
+    slug: "yvelines",
+    region: "Île-de-France",
+    intro: "Le château et les jardins de Versailles, la forêt domaniale de Rambouillet, les bords de Seine à Saint-Germain-en-Laye, la vallée de Chevreuse et ses villages, Marly-le-Roi.",
+    seoTitle: "Où aller avec son chien dans les Yvelines (78)",
+    seoDescription: "Où aller avec son chien dans les Yvelines : Versailles, forêt de Rambouillet, Saint-Germain-en-Laye, vallée de Chevreuse et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans les Yvelines",
+  },
 ];
