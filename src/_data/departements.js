@@ -709,4 +709,14 @@ export default [
     seoDescription: "Où aller avec son chien dans les Yvelines : Versailles, forêt de Rambouillet, Saint-Germain-en-Laye, vallée de Chevreuse et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans les Yvelines",
   },
+  {
+    id: "91",
+    nom: "Essonne",
+    slug: "essonne",
+    region: "Île-de-France",
+    intro: "La forêt de Sénart et ses allées cavalières, les bords de l'Essonne et de la Juine, le Parc naturel régional du Gâtinais français, Étampes et son patrimoine médiéval, les bases de loisirs du sud parisien.",
+    seoTitle: "Où aller avec son chien en Essonne (91)",
+    seoDescription: "Où aller avec son chien en Essonne : forêt de Sénart, vallée de la Juine, Gâtinais français, Étampes et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Essonne",
+  },
 ];
