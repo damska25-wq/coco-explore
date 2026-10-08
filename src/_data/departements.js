@@ -769,4 +769,14 @@ export default [
     seoDescription: "Où aller avec son chien dans les Ardennes : forêt des Ardennes, vallée de la Meuse, lac de Bairon et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans les Ardennes",
   },
+  {
+    id: "10",
+    nom: "Aube",
+    slug: "aube",
+    region: "Grand Est",
+    intro: "Les lacs de la forêt d'Orient et leurs plages aménagées, le vieux Troyes et ses maisons à pans de bois, la vallée de la Seine, le vignoble de la Côte des Bar.",
+    seoTitle: "Où aller avec son chien dans l'Aube (10)",
+    seoDescription: "Où aller avec son chien dans l'Aube : lacs de la forêt d'Orient, Troyes, vallée de la Seine et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Aube",
+  },
 ];
