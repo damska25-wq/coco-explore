@@ -969,4 +969,14 @@ export default [
     seoDescription: "Où aller avec son chien en Guadeloupe : Pointe-à-Pitre, Basse-Terre, plages et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Guadeloupe",
   },
+  {
+    id: "972",
+    nom: "Martinique",
+    slug: "martinique",
+    region: "Martinique",
+    intro: "Fort-de-France et sa baie, la Montagne Pelée et ses sentiers, les plages de sable blanc du sud (Sainte-Anne, Diamant) et de sable noir du nord, les Trois-Îlets et la route de la Trace.",
+    seoTitle: "Où aller avec son chien en Martinique (972)",
+    seoDescription: "Où aller avec son chien en Martinique : Fort-de-France, Sainte-Anne, Montagne Pelée et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Martinique",
+  },
 ];
