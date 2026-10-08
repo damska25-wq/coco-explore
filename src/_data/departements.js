@@ -819,4 +819,14 @@ export default [
     seoDescription: "Où aller avec son chien dans la Meuse : Verdun, lac de Madine, Bar-le-Duc, Saint-Mihiel et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans la Meuse",
   },
+  {
+    id: "57",
+    nom: "Moselle",
+    slug: "moselle",
+    region: "Grand Est",
+    intro: "Metz et sa cathédrale, le Jardin des Traces, les lacs de Madine et de Mittersheim, la vallée de la Sarre et le pays des étangs, Thionville et la frontière avec le Luxembourg.",
+    seoTitle: "Où aller avec son chien en Moselle (57)",
+    seoDescription: "Où aller avec son chien en Moselle : Metz, lac de Mittersheim, Thionville, pays des étangs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Moselle",
+  },
 ];
