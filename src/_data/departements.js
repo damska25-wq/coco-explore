@@ -939,4 +939,14 @@ export default [
     seoDescription: "Où aller avec son chien en Mayenne : Laval, bords de Mayenne, Château-Gontier et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Mayenne",
   },
+  {
+    id: "72",
+    nom: "Sarthe",
+    slug: "sarthe",
+    region: "Pays de la Loire",
+    intro: "Le Mans et ses 24 Heures, la cité Plantagenêt, les bords de Sarthe et de l'Huisne, la forêt de Bercé, Sillé-le-Guillaume et ses étangs.",
+    seoTitle: "Où aller avec son chien dans la Sarthe (72)",
+    seoDescription: "Où aller avec son chien dans la Sarthe : Le Mans, bords de Sarthe, forêt de Bercé et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans la Sarthe",
+  },
 ];
