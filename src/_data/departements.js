@@ -889,4 +889,14 @@ export default [
     seoDescription: "Où aller avec son chien dans l'Oise : forêt de Compiègne, château de Pierrefonds, Chantilly, Senlis et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans l'Oise",
   },
+  {
+    id: "62",
+    nom: "Pas-de-Calais",
+    slug: "pas-de-calais",
+    region: "Hauts-de-France",
+    intro: "La Côte d'Opale et ses dunes, les caps Blanc-Nez et Gris-Nez, Le Touquet et ses plages, Boulogne-sur-Mer, la citadelle Vauban d'Arras.",
+    seoTitle: "Où aller avec son chien dans le Pas-de-Calais (62)",
+    seoDescription: "Où aller avec son chien dans le Pas-de-Calais : Côte d'Opale, caps Blanc-Nez et Gris-Nez, Le Touquet, Arras et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Pas-de-Calais",
+  },
 ];
