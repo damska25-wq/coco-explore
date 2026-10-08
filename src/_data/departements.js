@@ -759,4 +759,14 @@ export default [
     seoDescription: "Où aller avec son chien dans le Val-d'Oise : forêt de Montmorency, base de loisirs de Cergy-Pontoise, L'Isle-Adam et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans le Val-d'Oise",
   },
+  {
+    id: "08",
+    nom: "Ardennes",
+    slug: "ardennes",
+    region: "Grand Est",
+    intro: "La forêt des Ardennes et ses allées forestières, la vallée de la Meuse entre Charleville-Mézières et Givet, le lac de Bairon, les boucles de la Semoy.",
+    seoTitle: "Où aller avec son chien dans les Ardennes (08)",
+    seoDescription: "Où aller avec son chien dans les Ardennes : forêt des Ardennes, vallée de la Meuse, lac de Bairon et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans les Ardennes",
+  },
 ];
