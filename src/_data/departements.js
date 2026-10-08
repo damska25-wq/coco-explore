@@ -859,4 +859,14 @@ export default [
     seoDescription: "Où aller avec son chien dans les Vosges : Épinal, Gérardmer, lacs de Longemer et Retournemer, massif vosgien et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans les Vosges",
   },
+  {
+    id: "02",
+    nom: "Aisne",
+    slug: "aisne",
+    region: "Hauts-de-France",
+    intro: "Laon et ses remparts, le chemin des Dames, la forêt de Saint-Gobain, le château de Pierrefonds, Soissons et la vallée de l'Oise, la forêt de Retz.",
+    seoTitle: "Où aller avec son chien dans l'Aisne (02)",
+    seoDescription: "Où aller avec son chien dans l'Aisne : Laon, forêt de Saint-Gobain, château de Pierrefonds, Soissons et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Aisne",
+  },
 ];
