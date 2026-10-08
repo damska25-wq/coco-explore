@@ -959,4 +959,14 @@ export default [
     seoDescription: "Où aller avec son chien en Vendée : Les Sables-d'Olonne, Noirmoutier, Marais poitevin et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Vendée",
   },
+  {
+    id: "971",
+    nom: "Guadeloupe",
+    slug: "guadeloupe",
+    region: "Guadeloupe",
+    intro: "Pointe-à-Pitre et la Grande-Terre, Basse-Terre et son volcan de la Soufrière, les plages de Saint-François et du Gosier, les îles des Saintes et Marie-Galante, la forêt tropicale du Parc national.",
+    seoTitle: "Où aller avec son chien en Guadeloupe (971)",
+    seoDescription: "Où aller avec son chien en Guadeloupe : Pointe-à-Pitre, Basse-Terre, plages et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Guadeloupe",
+  },
 ];
