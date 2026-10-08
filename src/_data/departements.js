@@ -689,4 +689,14 @@ export default [
     seoDescription: "Où aller avec son chien à Paris : bois de Boulogne et Vincennes, canal Saint-Martin, parcs, restaurants et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien à Paris",
   },
+  {
+    id: "77",
+    nom: "Seine-et-Marne",
+    slug: "seine-et-marne",
+    region: "Île-de-France",
+    intro: "La forêt de Fontainebleau et son grès d'escalade, les bords de Marne et de Seine, Disneyland Paris, Provins la cité médiévale classée UNESCO, les bases de loisirs et étangs de la Brie.",
+    seoTitle: "Où aller avec son chien en Seine-et-Marne (77)",
+    seoDescription: "Où aller avec son chien en Seine-et-Marne : forêt de Fontainebleau, bords de Marne, Provins, bases de loisirs et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Seine-et-Marne",
+  },
 ];
