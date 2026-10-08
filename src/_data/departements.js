@@ -909,4 +909,14 @@ export default [
     seoDescription: "Où aller avec son chien dans la Somme : baie de Somme, Le Crotoy, Amiens, hortillonnages et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans la Somme",
   },
+  {
+    id: "44",
+    nom: "Loire-Atlantique",
+    slug: "loire-atlantique",
+    region: "Pays de la Loire",
+    intro: "Nantes et ses bords de Loire, La Baule et Pornichet, la presqu'île guérandaise et ses marais salants, Saint-Nazaire, le Croisic et la côte sauvage.",
+    seoTitle: "Où aller avec son chien en Loire-Atlantique (44)",
+    seoDescription: "Où aller avec son chien en Loire-Atlantique : Nantes, La Baule, Guérande, Saint-Nazaire et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Loire-Atlantique",
+  },
 ];
