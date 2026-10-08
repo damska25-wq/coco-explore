@@ -779,4 +779,14 @@ export default [
     seoDescription: "Où aller avec son chien dans l'Aube : lacs de la forêt d'Orient, Troyes, vallée de la Seine et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans l'Aube",
   },
+  {
+    id: "51",
+    nom: "Marne",
+    slug: "marne",
+    region: "Grand Est",
+    intro: "Les vignobles de Champagne autour d'Épernay et de Reims, le lac du Der-Chantecoq et ses plages, les bords de Marne, la montagne de Reims.",
+    seoTitle: "Où aller avec son chien dans la Marne (51)",
+    seoDescription: "Où aller avec son chien dans la Marne : vignobles de Champagne, lac du Der-Chantecoq, Reims, Épernay et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans la Marne",
+  },
 ];
