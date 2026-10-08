@@ -999,4 +999,14 @@ export default [
     seoDescription: "Où aller avec son chien à La Réunion : Saint-Denis, Saint-Gilles, cirques et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien à La Réunion",
   },
+  {
+    id: "976",
+    nom: "Mayotte",
+    slug: "mayotte",
+    region: "Mayotte",
+    intro: "Mamoudzou et le marché de Mahabourou, Dzaoudzi et Petite-Terre, le lagon de Mayotte parmi les plus grands et les plus profonds du monde, ceinturé par une double barrière de corail.",
+    seoTitle: "Où aller avec son chien à Mayotte (976)",
+    seoDescription: "Où aller avec son chien à Mayotte : Mamoudzou, Dzaoudzi, le lagon et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien à Mayotte",
+  },
 ];
