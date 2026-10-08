@@ -879,4 +879,14 @@ export default [
     seoDescription: "Où aller avec son chien dans le Nord : Lille, plages de Dunkerque, parc du Héron, Avesnois et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans le Nord",
   },
+  {
+    id: "60",
+    nom: "Oise",
+    slug: "oise",
+    region: "Hauts-de-France",
+    intro: "La forêt de Compiègne, le château de Pierrefonds, Chantilly et sa forêt, Senlis et ses remparts médiévaux, les étangs de Commelles.",
+    seoTitle: "Où aller avec son chien dans l'Oise (60)",
+    seoDescription: "Où aller avec son chien dans l'Oise : forêt de Compiègne, château de Pierrefonds, Chantilly, Senlis et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans l'Oise",
+  },
 ];
