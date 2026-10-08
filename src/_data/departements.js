@@ -979,4 +979,14 @@ export default [
     seoDescription: "Où aller avec son chien en Martinique : Fort-de-France, Sainte-Anne, Montagne Pelée et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Martinique",
   },
+  {
+    id: "973",
+    nom: "Guyane",
+    slug: "guyane",
+    region: "Guyane",
+    intro: "Cayenne et son marché créole, Kourou et le Centre spatial, Rémire-Montjoly et ses plages, les Îles du Salut, et la forêt amazonienne qui couvre la quasi-totalité du territoire.",
+    seoTitle: "Où aller avec son chien en Guyane (973)",
+    seoDescription: "Où aller avec son chien en Guyane : Cayenne, Kourou, Rémire-Montjoly et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien en Guyane",
+  },
 ];
