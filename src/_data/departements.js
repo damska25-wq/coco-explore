@@ -989,4 +989,14 @@ export default [
     seoDescription: "Où aller avec son chien en Guyane : Cayenne, Kourou, Rémire-Montjoly et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien en Guyane",
   },
+  {
+    id: "974",
+    nom: "La Réunion",
+    slug: "la-reunion",
+    region: "La Réunion",
+    intro: "Saint-Denis et le front de mer, Saint-Paul et Saint-Gilles-les-Bains, le Piton de la Fournaise et ses coulées de lave, les cirques de Cilaos, Mafate et Salazie, le Parc national au cœur de l'île.",
+    seoTitle: "Où aller avec son chien à La Réunion (974)",
+    seoDescription: "Où aller avec son chien à La Réunion : Saint-Denis, Saint-Gilles, cirques et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien à La Réunion",
+  },
 ];
