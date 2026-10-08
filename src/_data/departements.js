@@ -839,4 +839,14 @@ export default [
     seoDescription: "Où aller avec son chien dans le Bas-Rhin : Strasbourg, parc de l'Orangerie, route des vins, Haguenau et bonnes adresses avec Coco.",
     seoH1: "Où aller avec son chien dans le Bas-Rhin",
   },
+  {
+    id: "68",
+    nom: "Haut-Rhin",
+    slug: "haut-rhin",
+    region: "Grand Est",
+    intro: "Colmar et sa Petite Venise, Mulhouse, la route des vins d'Alsace entre Eguisheim et Riquewihr, les ballons des Vosges et le lac de Kruth-Wildenstein, l'Écomusée d'Alsace.",
+    seoTitle: "Où aller avec son chien dans le Haut-Rhin (68)",
+    seoDescription: "Où aller avec son chien dans le Haut-Rhin : Colmar, Mulhouse, route des vins, ballons des Vosges et bonnes adresses avec Coco.",
+    seoH1: "Où aller avec son chien dans le Haut-Rhin",
+  },
 ];
