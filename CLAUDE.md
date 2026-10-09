@@ -1,6 +1,6 @@
 # Coco Explore
 
-Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurants, hébergements, balades, vétérinaires, toiletteurs, dogwash, dogsitters). Site statique Eleventy (11ty), 68 départements couverts, ~6800 fiches.
+Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurants, hébergements, balades, vétérinaires, toiletteurs, dogwash, dogsitters). Site statique Eleventy (11ty), 101 départements couverts (96 métropolitains + 5 DOM, couverture nationale complète), ~9300 fiches.
 
 ## Programme partenaire (démarrage commercial)
 
