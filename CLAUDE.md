@@ -37,7 +37,7 @@ Belle journée à vous,
 Coco Explore — cocoexplore.com
 ```
 
-Premier envoi test prévu : Clinique Vétérinaire du Dr Jackowski, Cavalaire-sur-Mer (`src/fiches/veterinaire-jackowski.njk`).
+Premier envoi test envisagé auprès de la Clinique Vétérinaire du Dr Jackowski (Cavalaire-sur-Mer) — **abandonné** : fiche supprimée début novembre 2026 après un faisceau d'indices de fermeture (avis client isolé évoquant une fermeture fin 2023, site officiel chezmonveto.com injoignable en DNS, aucun email public trouvé). L'utilisateur doit vérifier sur place et fournira de nouvelles infos pour recréer une fiche si l'établissement est toujours actif ; sinon, chercher un autre premier contact pour le test.
 
 ## Historique — audit performance accueil (octobre 2026, résolu)
 
