@@ -48,6 +48,14 @@ Audit PageSpeed Insights (mobile + desktop) mené début octobre 2026 sur `cocoe
 
 Si le point "Améliorer l'affichage des images" de PageSpeed Insights reste élevé après tout ça, retester en conditions réelles (le réseau de l'environnement Claude Code bloque `cocoexplore.com` et `images.unsplash.com`, donc aucune vérification réseau directe n'a pu être faite depuis cet environnement) plutôt que de supposer qu'il reste un problème.
 
+## Connecteur Parallel Search (novembre 2026) — contourne le blocage réseau des sources de recherche
+
+Le réseau de l'environnement Claude Code bloque l'accès direct (WebFetch) à plusieurs sites utilisés comme sources pour les fiches : `chien.com`, `emmenetonchien.com`, `pagesjaunes.fr`, `justacote.com`, `acceslibre.beta.gouv.fr`, et d'autres annuaires tiers. Jusqu'à présent, les agents de recherche devaient se contenter d'extraits WebSearch tronqués pour ces sites, d'où un grand nombre de fiches en confiance "faible/moyenne" avec la mention "source non consultée directement".
+
+Un connecteur MCP **Parallel Search** (gratuit, sans compte ni clé API — "Free token-efficient search using Parallel") a été connecté au compte et est maintenant disponible dans les sessions qui démarrent après sa connexion. Il expose `mcp__Parallel_Search__web_search` et `mcp__Parallel_Search__web_fetch`. Le fetch se fait depuis les serveurs de Parallel, pas depuis cet environnement — testé et confirmé : il contourne le blocage réseau (ex. `chien.com` entièrement lisible via ce connecteur alors qu'il est inaccessible en WebFetch direct).
+
+**À faire dans les prochains rounds de recherche** : donner aux agents de recherche la consigne explicite d'utiliser `mcp__Parallel_Search__web_fetch` (avec `objective` et éventuellement `search_queries` de l'appel `web_search` précédent) pour lire en entier les pages de ces sites précédemment bloqués, plutôt que de se limiter aux extraits WebSearch. Cela devrait réduire le nombre de fiches "source non consultée directement" et permettre de recouper plus fiablement tarifs/conditions chien/téléphones. Si l'outil n'apparaît pas dans une session (connecteur pas encore chargé), le signaler plutôt que de supposer qu'il est indisponible — les connecteurs ne sont chargés qu'au démarrage d'une session.
+
 ## Conventions du projet (voir aussi contexte de session)
 
 - Fiches : `src/fiches/*.njk`, frontmatter YAML + `bodyHtml`.
