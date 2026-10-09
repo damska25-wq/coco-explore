@@ -264,6 +264,22 @@ export default function (eleventyConfig) {
 
   // Autres fiches de la même catégorie à suggérer en bas d'une fiche
   // (priorité à celles du même département, puis complété par les autres).
+  // La fenêtre choisie tourne de façon déterministe selon la fiche consultée
+  // (hash de son propre permalink) plutôt que de toujours prendre les mêmes
+  // premières fiches par ordre alphabétique : sans ça, dans un groupe
+  // département+catégorie de plus de n fiches, les mêmes n fiches seraient
+  // suggérées partout et les autres ne recevraient jamais de lien "à
+  // proximité" (maillage interne très déséquilibré à l'échelle du site).
+  function rotatedSlice(arr, seed, n) {
+    if (arr.length <= n) return arr;
+    let hash = 0;
+    for (let i = 0; i < seed.length; i++) {
+      hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+    }
+    const offset = hash % arr.length;
+    return arr.slice(offset).concat(arr.slice(0, offset)).slice(0, n);
+  }
+
   eleventyConfig.addFilter("related", (fiches, catId, dept, excludePath, n) => {
     const pool = fiches.filter(
       (f) => f.data.breadcrumbCatId === catId && f.data.permalinkPath !== excludePath
@@ -273,7 +289,11 @@ export default function (eleventyConfig) {
       .filter((f) => (f.data.departement || []).some((d) => (dept || []).includes(d)))
       .sort(bySlug);
     const rest = pool.filter((f) => !sameDept.includes(f)).sort(bySlug);
-    return [...sameDept, ...rest].slice(0, n);
+    const chosen = rotatedSlice(sameDept, excludePath, n);
+    if (chosen.length < n) {
+      chosen.push(...rotatedSlice(rest, excludePath, n - chosen.length));
+    }
+    return chosen;
   });
 
   // "Les conseils de Coco" : une plage, une balade et un restaurant piochés
