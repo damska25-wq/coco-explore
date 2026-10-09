@@ -144,6 +144,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 
 .nav-cat-link { display: inline-flex; align-items: center; gap: 7px; }
 .nav-icon { color: var(--terracotta); flex-shrink: 0; }
+.nav-mobile-only { display: none; }
 
 .nav-social { display: flex; align-items: center; color: var(--terracotta); flex-shrink: 0; }
 .nav-social:hover { color: var(--terracotta-deep); }
@@ -831,6 +832,10 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
   .hero .wrap { grid-template-columns: 1fr; padding-top: 36px; }
   .hero-photo { max-width: 280px; margin: 0 auto; }
   .fiche-body { grid-template-columns: 1fr; }
+  .brand { font-size: 1.15rem; }
+  .header-actions { gap: 10px; }
+  .nav-social { display: none; }
+  .nav-mobile-only { display: inline-flex; }
   .nav-toggle { display: inline-flex; }
   .site-nav {
     display: none;
