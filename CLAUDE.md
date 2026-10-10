@@ -41,6 +41,44 @@ Premier envoi test envisagé auprès de la Clinique Vétérinaire du Dr Jackowsk
 
 **Changement de canal pour ce premier contact (10/10/2026)** : l'utilisateur a vérifié qu'aucune adresse email n'est trouvable (seul un numéro de téléphone figure sur les sources disponibles), donc le modèle d'email ci-dessus ne s'applique pas à ce cas précis. L'utilisateur a un rendez-vous à venir avec sa chienne Coco chez le Dr Jackowski et démarchera **de vive voix** à cette occasion, plutôt que par écrit. Pas d'action de notre côté à prévoir pour ce premier contact (pas d'email à rédiger/envoyer) — si l'utilisateur le demande, on peut préparer un support oral (quelques points clés à dire en rendez-vous, adaptés du modèle d'email) mais ce n'est pas encore demandé.
 
+## Affiliation (en cours d'inscription, novembre 2026)
+
+Piste explorée en complément (pas en remplacement) du Programme partenaire ci-dessus : l'utilisateur s'inscrit comme affilié chez **SantéVet** (assurance santé chien/chat), programme confirmé via le réseau **Awin** — 6€ par lead "intégré" (devis en ligne), cookie de 30 jours. Contact direct pour candidater : `affiliation@santevet.com`. Alternative notée mais non vérifiée en détail : Carrefour Assurance Animaux (via FlexOffers, ~48€/lead annoncé sur un annuaire tiers, conditions non confirmées sur source primaire). Bulle Bleue écarté : pas de programme d'affiliation public trouvé (marque distribuée par Animal Experts/SantéVet, pas de portail d'inscription).
+
+**Statut au 2026-11** : l'utilisateur a rempli le formulaire d'inscription publisher sur Awin, mais n'a pas encore de compte actif (Awin doit envoyer un dossier complémentaire par email). Le message ci-dessous est à envoyer à SantéVet **une fois le compte Awin effectivement créé** — pas avant.
+
+### Message à envoyer à SantéVet (affiliation@santevet.com) une fois le compte Awin créé
+
+```
+Objet : Candidature programme d'affiliation — Coco Explore (voyager avec son chien)
+
+Bonjour,
+
+Je gère Coco Explore (cocoexplore.com), un guide en ligne gratuit qui aide les
+propriétaires de chiens à trouver des lieux adaptés partout en France : plages,
+restaurants, hébergements, balades, vétérinaires, toiletteurs. Le site couvre
+l'ensemble du territoire (101 départements, métropole et outre-mer) avec
+plusieurs milliers de fiches.
+
+Je viens de créer un compte publisher sur Awin et je souhaite candidater à
+votre programme d'affiliation. L'assurance santé pour chien est un sujet très
+cohérent avec notre audience — des propriétaires qui voyagent avec leur animal
+et se posent naturellement la question de sa couverture en déplacement.
+
+Je prévoirais d'intégrer le lien de façon pertinente, par exemple dans nos
+fiches vétérinaires ou dans un article dédié aux conseils de préparation d'un
+voyage avec son chien, avec la mention de lien affilié requise.
+
+N'hésitez pas à me dire si vous avez besoin d'informations complémentaires sur
+le site pour étudier la demande.
+
+Belle journée à vous,
+[Prénom/nom]
+Coco Explore — cocoexplore.com
+```
+
+Pas d'action de notre côté en attendant : rien à placer sur le site avant d'avoir un lien tracké réel (un placeholder sans vrai lien n'aurait aucun intérêt). Quand l'utilisateur aura le lien, prévoir son insertion dans 1-2 fiches vétérinaires urgences et/ou un futur article "conseils de Coco" sur la préparation d'un voyage, avec la mention de lien affilié obligatoire (cadre légal français).
+
 ## Historique — audit performance accueil (octobre 2026, résolu)
 
 Audit PageSpeed Insights (mobile + desktop) mené début octobre 2026 sur `cocoexplore.com`. Tout corrigé et poussé sur `claude/github-connexion-otichf` :
