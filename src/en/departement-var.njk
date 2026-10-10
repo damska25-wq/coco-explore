@@ -1,0 +1,45 @@
+---
+permalink: "{{ permalinkPath }}"
+permalinkPath: en/departement-var.html
+altLangUrl: "departement-var"
+lang: "en"
+layout: base.njk
+title: "Travelling with your dog in the Var (83) | Coco Explore"
+description: "Beaches, walks, restaurants, accommodation and vets that welcome dogs in the Var department, French Riviera."
+---
+<section class="hero" style="padding-bottom: 2rem;">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="kicker">Explore by area</span>
+      <h1>Travelling with your dog in the Var</h1>
+      <p>A first English-language selection of dog-friendly spots in the Var department, on the French Riviera. We're translating this department one listing at a time — <a href="/departement-var">see the full French page</a> for the complete, up-to-date list (131+ listings).</p>
+    </div>
+  </div>
+</section>
+
+{%- set varFichesEn = collections.fichesEn | byCategoryAndDept(["cote-azur", "plages", "lacs", "hebergements", "balades", "restaurants", "veterinaires", "toiletteurs", "dogwash", "dogsitters", "activites"], "83") %}
+<section class="fiches wrap" id="var-en-listings">
+  <div class="section-head">
+    <span class="eyebrow">Translated so far</span>
+    <h2>{{ varFichesEn.length }} listing{{ "s" if varFichesEn.length != 1 else "" }} available in English</h2>
+  </div>
+  <div class="fiche-grid">
+    {%- for fiche in varFichesEn %}
+    <a href="/{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card">
+      <div class="thumb">
+        {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
+        <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
+      </div>
+      <div class="body">
+        <span class="tag">{{ fiche.data.cardTag | safe }}</span>
+        <h3>{{ fiche.data.cardTitle | safe }}</h3>
+        <p>{{ fiche.data.cardTeaser | safe }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap" style="padding: 1rem 0 3rem;">
+  <p style="color: rgba(34,48,58,0.7); font-size: 0.95rem;">Looking for the rest of France? For now, the rest of the site — <a href="/">all 101 departments, ~9,300 listings</a> — is in French only. Use your browser's translation feature, or come back soon as we add more English pages.</p>
+</section>

@@ -498,6 +498,7 @@ export default [
     seoTitle: "Où aller avec son chien dans le Var : plages, balades, lacs",
     seoDescription: "Le Var avec son chien : plages autorisées, balades, lacs et bonnes adresses de Cavalaire à Toulon, en Provence Verte et sur la presqu'île de Giens, avec Coco.",
     seoH1: "Où aller avec son chien dans le Var",
+    altLangUrl: "en/departement-var",
   },
   {
     id: "06",

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ lang or 'fr' }}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,20 @@
 <title>{{ title | safe }}</title>
 <meta name="description" content="{{ description | safe }}">
 <link rel="canonical" href="https://cocoexplore.com/{{ permalinkPath | cleanUrl }}">
-<link rel="alternate" type="application/rss+xml" title="Coco Explore — Nouvelles adresses" href="feed.xml">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
+{%- set altLangPath = ("/" if altLangUrl == "/" else ("/" + (altLangUrl | cleanUrl))) if altLangUrl else "" %}
+{%- if altLangUrl %}
+<link rel="alternate" hreflang="{{ 'fr' if lang == 'en' else 'en' }}" href="https://cocoexplore.com{{ altLangPath }}">
+<link rel="alternate" hreflang="{{ 'en' if lang == 'en' else 'fr' }}" href="https://cocoexplore.com/{{ permalinkPath | cleanUrl }}">
+{%- endif %}
+<link rel="alternate" type="application/rss+xml" title="Coco Explore — Nouvelles adresses" href="/feed.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#BE5B3B" id="theme-color-meta">
 {%- set og = ogImage | ogImage %}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coco Explore">
-<meta property="og:locale" content="fr_FR">
+<meta property="og:locale" content="{{ 'en_US' if lang == 'en' else 'fr_FR' }}">
 <meta property="og:title" content="{{ title | safe }}">
 <meta property="og:description" content="{{ description | safe }}">
 <meta property="og:url" content="https://cocoexplore.com/{{ permalinkPath | cleanUrl }}">
@@ -43,12 +48,12 @@
 {%- set heroSrcset = heroImage | imgSrcset %}
 <link rel="preload" as="image" href="{{ heroImage | optimizeImg | safe }}" fetchpriority="high"{% if heroSrcset %} imagesrcset="{{ heroSrcset | safe }}" imagesizes="100vw"{% endif %}>
 {%- endif %}
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 {% if extraHead %}{{ extraHead | safe }}{% endif %}
 </head>
 <body>
 
-<a href="#main-content" class="skip-link">Aller au contenu</a>
+<a href="#main-content" class="skip-link">{{ "Skip to content" if lang == "en" else "Aller au contenu" }}</a>
 
 <svg style="display:none">
   <defs>
@@ -222,27 +227,37 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a href="/" class="brand"><svg class="paw"><use href="#i-paw"/></svg> Coco Explore</a>
+    <a href="{{ '/en/' if lang == 'en' else '/' }}" class="brand"><svg class="paw"><use href="#i-paw"/></svg> Coco Explore</a>
     <div class="header-actions">
-      <a href="https://www.instagram.com/danslesyeuxdecoco/" class="nav-social" target="_blank" rel="noopener" aria-label="Coco Explore sur Instagram">
+      {%- set langSwitchUrl = altLangPath if altLangUrl else ("/" if lang == "en" else "/en/") %}
+      <a href="{{ langSwitchUrl }}" class="nav-social lang-switch" aria-label="{{ 'Switch to French' if lang == 'en' else 'Passer en anglais' }}">{{ "FR" if lang == "en" else "EN" }}</a>
+      <a href="https://www.instagram.com/danslesyeuxdecoco/" class="nav-social" target="_blank" rel="noopener" aria-label="{{ 'Coco Explore on Instagram' if lang == 'en' else 'Coco Explore sur Instagram' }}">
         <svg width="20" height="20"><use href="#i-instagram"/></svg>
       </a>
-      <a href="a-propos" class="nav-social" aria-label="À propos de Coco Explore">
+      <a href="/a-propos" class="nav-social" aria-label="{{ 'About Coco Explore' if lang == 'en' else 'À propos de Coco Explore' }}">
         <svg width="20" height="20"><use href="#i-info"/></svg>
       </a>
-      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Basculer le thème sombre">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="{{ 'Toggle dark mode' if lang == 'en' else 'Basculer le thème sombre' }}">
         <svg class="icon-sun" width="19" height="19"><use href="#i-sun"/></svg>
         <svg class="icon-moon" width="19" height="19"><use href="#i-moon"/></svg>
       </button>
-      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="{{ 'Open menu' if lang == 'en' else 'Ouvrir le menu' }}">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
       <nav class="site-nav" id="site-nav">
-        <a href="conseils-de-coco" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-paw"/></svg>Les conseils de Coco</a>
-        <a href="nouveautes" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-star"/></svg>Nouveautés</a>
-        <a href="devenir-partenaire" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-medal"/></svg>Devenir partenaire</a>
-        <a href="a-propos" class="nav-cat-link nav-mobile-only"><svg class="nav-icon" width="16" height="16"><use href="#i-info"/></svg>À propos</a>
+        {%- if lang == "en" %}
+        <a href="/conseils-de-coco" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-paw"/></svg>Coco's tips <span class="lang-hint">(FR)</span></a>
+        <a href="/nouveautes" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-star"/></svg>What's new <span class="lang-hint">(FR)</span></a>
+        <a href="/devenir-partenaire" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-medal"/></svg>Become a partner <span class="lang-hint">(FR)</span></a>
+        <a href="/a-propos" class="nav-cat-link nav-mobile-only"><svg class="nav-icon" width="16" height="16"><use href="#i-info"/></svg>About <span class="lang-hint">(FR)</span></a>
         <a href="https://www.instagram.com/danslesyeuxdecoco/" class="nav-cat-link nav-mobile-only" target="_blank" rel="noopener"><svg class="nav-icon" width="16" height="16"><use href="#i-instagram"/></svg>Instagram</a>
+        {%- else %}
+        <a href="/conseils-de-coco" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-paw"/></svg>Les conseils de Coco</a>
+        <a href="/nouveautes" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-star"/></svg>Nouveautés</a>
+        <a href="/devenir-partenaire" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-medal"/></svg>Devenir partenaire</a>
+        <a href="/a-propos" class="nav-cat-link nav-mobile-only"><svg class="nav-icon" width="16" height="16"><use href="#i-info"/></svg>À propos</a>
+        <a href="https://www.instagram.com/danslesyeuxdecoco/" class="nav-cat-link nav-mobile-only" target="_blank" rel="noopener"><svg class="nav-icon" width="16" height="16"><use href="#i-instagram"/></svg>Instagram</a>
+        {%- endif %}
       </nav>
     </div>
   </div>
@@ -252,17 +267,25 @@
 {{ content | safe }}
 </main>
 
-<button type="button" class="back-to-top" id="back-to-top" aria-label="Retour en haut de la page" hidden>
+<button type="button" class="back-to-top" id="back-to-top" aria-label="{{ 'Back to top' if lang == 'en' else 'Retour en haut de la page' }}" hidden>
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
-<div class="cookie-banner" id="cookie-banner" hidden role="dialog" aria-label="Consentement aux cookies">
+<div class="cookie-banner" id="cookie-banner" hidden role="dialog" aria-label="{{ 'Cookie consent' if lang == 'en' else 'Consentement aux cookies' }}">
   <div class="wrap cookie-banner-inner">
+    {%- if lang == "en" %}
+    <p>Coco Explore uses Google Analytics to anonymously measure visits. You can accept or decline this cookie — your choice won't change your browsing on the site.</p>
+    <div class="cookie-banner-actions">
+      <button type="button" id="cookie-decline" class="cookie-btn cookie-btn-ghost">Decline</button>
+      <button type="button" id="cookie-accept" class="cookie-btn cookie-btn-solid">Accept</button>
+    </div>
+    {%- else %}
     <p>Coco Explore utilise Google Analytics pour mesurer sa fréquentation de façon anonyme. Tu peux accepter ou refuser ce cookie — ton choix ne change rien à ta navigation sur le site.</p>
     <div class="cookie-banner-actions">
       <button type="button" id="cookie-decline" class="cookie-btn cookie-btn-ghost">Refuser</button>
       <button type="button" id="cookie-accept" class="cookie-btn cookie-btn-solid">Accepter</button>
     </div>
+    {%- endif %}
   </div>
 </div>
 
@@ -341,12 +364,17 @@ if ("serviceWorker" in navigator) {
 <footer class="site-footer">
   <div class="wrap">
     <span class="brand"><svg class="paw" width="20" height="20"><use href="#i-paw"/></svg> Coco Explore</span>
-    <span><a href="a-propos">À propos</a> · <a href="faq">FAQ</a> · <a href="plan-du-site">Plan du site</a> · <a href="aires-autoroute-chien">Aires d'autoroute</a> · <a href="feed.xml">RSS</a> · <a href="mentions-legales">Mentions légales</a> · <a href="politique-confidentialite">Confidentialité</a> · <a href="conditions-utilisation">CGU</a> · <a href="#" id="cookie-manage">Gérer les cookies</a></span>
+    {%- if lang == "en" %}
+    <span><a href="/a-propos">About</a> · <a href="/faq">FAQ</a> · <a href="/plan-du-site">Site map</a> · <a href="/aires-autoroute-chien">Highway rest stops</a> · <a href="/feed.xml">RSS</a> · <a href="/mentions-legales">Legal notice</a> · <a href="/politique-confidentialite">Privacy</a> · <a href="/conditions-utilisation">Terms</a> · <a href="#" id="cookie-manage">Manage cookies</a></span>
+    <span>The guide for going out with your dog, made with love 🐾 <span class="lang-hint">(these footer pages are in French)</span></span>
+    {%- else %}
+    <span><a href="/a-propos">À propos</a> · <a href="/faq">FAQ</a> · <a href="/plan-du-site">Plan du site</a> · <a href="/aires-autoroute-chien">Aires d'autoroute</a> · <a href="/feed.xml">RSS</a> · <a href="/mentions-legales">Mentions légales</a> · <a href="/politique-confidentialite">Confidentialité</a> · <a href="/conditions-utilisation">CGU</a> · <a href="#" id="cookie-manage">Gérer les cookies</a></span>
     <span>Le guide pour sortir avec son chien, avec amour 🐾</span>
+    {%- endif %}
   </div>
 </footer>
 
 {% if extraScripts %}{{ extraScripts | safe }}{% endif %}
-<script src="cookie-consent.js" defer></script>
+<script src="/cookie-consent.js" defer></script>
 </body>
 </html>

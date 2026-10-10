@@ -59,6 +59,15 @@ export default function (eleventyConfig) {
     )
   );
 
+  // Fiches traduites en anglais (pilote : accueil + menu + département du
+  // Var uniquement) — collection séparée pour ne jamais se mélanger aux
+  // fiches françaises affichées sur l'accueil, la carte ou la recherche.
+  eleventyConfig.addCollection("fichesEn", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/en/fiches/*.njk").sort((a, b) =>
+      a.data.slug.localeCompare(b.data.slug)
+    )
+  );
+
   eleventyConfig.addFilter("byCategory", (fiches, catId) =>
     fiches
       .filter((f) => f.data.breadcrumbCatId === catId)

@@ -41,7 +41,7 @@ extraScripts: |
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.6 6.1.6-4.6 4.2 1.3 6.1L12 17l-5.4 3 1.3-6.1-4.6-4.2 6.1-.6z"/></svg>
   </button>
   <div class="wrap">
-    <div class="breadcrumb"><a href="/">Coco Explore</a> / <a href="/#{{ breadcrumbCatId }}">{{ breadcrumbCatLabel | safe }}</a> / {{ breadcrumbLast | safe }}</div>
+    <div class="breadcrumb"><a href="{{ '/en/' if lang == 'en' else '/' }}">Coco Explore</a> / <a href="{{ '/en/departement-var' if lang == 'en' else '/#' + breadcrumbCatId }}">{{ breadcrumbCatLabel | safe }}</a> / {{ breadcrumbLast | safe }}</div>
     <span class="tag">{{ tag | safe }}</span>{% if partenaire %}<span class="fiche-partenaire-tag"><svg width="12" height="12"><use href="#i-star"/></svg> Partenaire Coco Explore</span>{% endif %}
     <h1>{{ h1 | safe }}</h1>
     <span class="lieu">{{ lieu | safe }}</span>
@@ -132,7 +132,7 @@ extraScripts: |
 {{ bodyHtml | safe }}
 
 {%- set relatedFiches = collections.fiches | related(breadcrumbCatId, departement, permalinkPath, 3) %}
-{%- if relatedFiches.length %}
+{%- if relatedFiches.length and lang != "en" %}
 <section class="fiches wrap" id="a-proximite">
   <div class="section-head">
     <span class="eyebrow">À proximité</span>
