@@ -245,10 +245,17 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("vetBadge", (infoItems) => {
     const urgence = (infoItems || []).find((i) => i.label === "Urgences");
     const text = (urgence ? urgence.value : "").toLowerCase();
-    if (/24h\s*\/\s*24|24\/24|7j\s*\/\s*7/.test(text)) {
-      return { label: "Urgences 24h/24", cls: "badge-urgence" };
-    }
-    return null;
+    if (!/24h\s*\/\s*24|24\/24|7j\s*\/\s*7/.test(text)) return null;
+    // La plupart des mentions de "24h/24" dans ce champ servent justement à
+    // expliquer qu'un service permanent n'est PAS confirmé (c'est la règle du
+    // site : jamais affirmer un 24h/24 non vérifié). Sans ce filtre de doute,
+    // le badge s'affiche quand même sur la seule présence du motif "24h/24"
+    // dans le texte, même quand la phrase le dément — contredisant la fiche
+    // qu'il résume. On n'affiche donc le badge que si rien n'indique un doute.
+    const hedge =
+      /\bpas\b|\baucun[e]?\b|non confirm|n'a pas|non recoup|non audit|non v[ée]rifi|non d('|’)une|ne confirme|n'affirme|n'est pas|rien ne confirme|[àa] distinguer|revendiqu|annonc[ée]e? par|auto-d[ée]clar|\bjamais\b|sans (audit|confirmation|revendication|source)|non ind[ée]pendant|contradiction|au contraire|source g[ée]n[ée]rique/;
+    if (hedge.test(text)) return null;
+    return { label: "Urgences 24h/24", cls: "badge-urgence" };
   });
 
   // Date de dernière modification réelle d'un fichier source (dernier commit git),
