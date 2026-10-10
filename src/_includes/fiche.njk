@@ -14,8 +14,8 @@ extraScripts: |
   "address": {
     "@type": "PostalAddress",
     "addressLocality": lieu,
-    "addressRegion": departement | regionFor,
-    "addressCountry": "FR"
+    "addressRegion": addressRegion or (departement | regionFor),
+    "addressCountry": addressCountry or "FR"
   },
   "geo": {
     "@type": "GeoCoordinates",
