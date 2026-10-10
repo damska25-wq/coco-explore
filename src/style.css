@@ -160,6 +160,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 }
 .lang-switch:hover { background: var(--terracotta); color: #fff; }
 .lang-hint { font-size: 0.8em; opacity: 0.6; font-weight: 400; }
+.lang-switch-inline { color: var(--terracotta); font-weight: 700; }
 
 .theme-toggle {
   display: flex;

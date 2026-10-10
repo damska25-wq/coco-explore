@@ -246,12 +246,14 @@
       </button>
       <nav class="site-nav" id="site-nav">
         {%- if lang == "en" %}
+        <a href="{{ altLangPath if altLangUrl else '/' }}" class="nav-cat-link nav-mobile-only lang-switch-inline"><svg class="nav-icon" width="16" height="16"><use href="#i-globe"/></svg>Switch to French</a>
         <a href="/conseils-de-coco" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-paw"/></svg>Coco's tips <span class="lang-hint">(FR)</span></a>
         <a href="/nouveautes" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-star"/></svg>What's new <span class="lang-hint">(FR)</span></a>
         <a href="/devenir-partenaire" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-medal"/></svg>Become a partner <span class="lang-hint">(FR)</span></a>
         <a href="/a-propos" class="nav-cat-link nav-mobile-only"><svg class="nav-icon" width="16" height="16"><use href="#i-info"/></svg>About <span class="lang-hint">(FR)</span></a>
         <a href="https://www.instagram.com/danslesyeuxdecoco/" class="nav-cat-link nav-mobile-only" target="_blank" rel="noopener"><svg class="nav-icon" width="16" height="16"><use href="#i-instagram"/></svg>Instagram</a>
         {%- else %}
+        <a href="{{ altLangPath if altLangUrl else '/en/' }}" class="nav-cat-link nav-mobile-only lang-switch-inline"><svg class="nav-icon" width="16" height="16"><use href="#i-globe"/></svg>Passer en anglais</a>
         <a href="/conseils-de-coco" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-paw"/></svg>Les conseils de Coco</a>
         <a href="/nouveautes" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-star"/></svg>Nouveautés</a>
         <a href="/devenir-partenaire" class="nav-cat-link"><svg class="nav-icon" width="16" height="16"><use href="#i-medal"/></svg>Devenir partenaire</a>
