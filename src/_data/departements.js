@@ -505,7 +505,7 @@ export default [
     nom: "Alpes-Maritimes",
     slug: "alpes-maritimes",
     region: "Provence-Alpes-Côte d'Azur",
-    intro: "De Cannes à Menton en passant par Nice, l'arrière-pays niçois et le Mercantour.",
+    intro: "De Cannes à Menton en passant par Nice, l'arrière-pays niçois et le Mercantour. Juste à côté, <a href=\"fiche-monaco\">la principauté de Monaco a aussi sa fiche</a> — ce n'est pas la France, mais c'est enclavé dans le département.",
     seoTitle: "Où aller avec son chien dans les Alpes-Maritimes : plages",
     seoDescription: "Où aller avec son chien dans les Alpes-Maritimes : plages autorisées de Cannes à Menton, balades dans l'arrière-pays niçois et le Mercantour, avec Coco.",
     seoH1: "Où aller avec son chien dans les Alpes-Maritimes",
