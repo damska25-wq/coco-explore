@@ -2,6 +2,15 @@
 
 Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurants, hébergements, balades, vétérinaires, toiletteurs, dogwash, dogsitters). Site statique Eleventy (11ty), 101 départements couverts (96 métropolitains + 5 DOM, couverture nationale complète), ~9300 fiches.
 
+## Historique — nettoyage meta description "Confiance X" (novembre 2026, en partie résolu)
+
+En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
+
+- **1831 fiches corrigées** par script automatisé (`git log`, commit "Retirer la mention interne confiance X..."), limité aux cas où la mention de confiance est isolable sans risquer de supprimer une info factuelle proche (téléphone, adresse, tarif).
+- **~302 fiches volontairement laissées de côté** car trop ambiguës pour une correction automatique fiable : mention de confiance répétée plusieurs fois dans la même description, ou collée immédiatement à une info à ne pas perdre. Pour régénérer la liste exacte : chercher `description:.*[Cc]onfiance (faible|moyenne|haute)` dans `src/fiches/*.njk` et `src/en/fiches/*.njk`, puis exclure celles déjà corrigées (identifiable par l'absence du mot "confiance" dans leur description actuelle).
+- **Ne pas toucher** aux mentions "confiance X" dans le corps (`bodyHtml`) ou les sidebars — c'est une information légitime pour le lecteur là où elle apparaît dans le texte visible normal de la fiche (pas dans un champ meta invisible à l'affichage).
+- **Prochaine étape suggérée** : traiter les ~302 fiches restantes une par une (ou par petits lots avec agents), puis étendre le principe au corps des fiches qui portent encore un doute non résolu ("non confirmé", "à vérifier", contradictions non tranchées) — tâche distincte, plus lente, orientée confiance du lecteur plutôt que CTR Google.
+
 ## Programme partenaire (démarrage commercial)
 
 Le site propose une mise en avant payante optionnelle aux professionnels déjà référencés gratuitement (vétérinaires, restaurants, hébergements...). Statut : en phase de test manuel, pas encore de vrai partenariat signé.
