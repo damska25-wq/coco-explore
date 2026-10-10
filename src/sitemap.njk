@@ -45,6 +45,11 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://cocoexplore.com/en/departement-alpes-maritimes</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
 {%- for fiche in collections.fichesEn %}
   <url>
     <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</loc>

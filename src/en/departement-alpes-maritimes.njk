@@ -1,0 +1,63 @@
+---
+permalink: "{{ permalinkPath }}"
+permalinkPath: en/departement-alpes-maritimes.html
+altLangUrl: "departement-alpes-maritimes"
+lang: "en"
+layout: base.njk
+title: "Travelling with your dog in the Alpes-Maritimes (06) | Coco Explore"
+description: "Beaches, walks, restaurants, accommodation, vets, groomers, dog wash and dog sitters that welcome dogs in the Alpes-Maritimes, from Cannes to Menton via Nice and the Mercantour."
+---
+<section class="hero" style="padding-bottom: 2rem;">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="kicker">Explore by area</span>
+      <h1>Travelling with your dog in the Alpes-Maritimes</h1>
+      <p>An English-language translation covering the Alpes-Maritimes, from Cannes to Menton via Nice, Antibes and the Mercantour backcountry. <a href="/departement-alpes-maritimes">See the French page</a> for the same listings in their original language.</p>
+      {%- set amCount = collections.fichesEn | countByDept("06") %}
+      <p style="margin-top: 8px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">{{ amCount }} listing{{ "s" if amCount != 1 else "" }} in this department.</p>
+    </div>
+  </div>
+</section>
+
+{%- set amSections = [
+  { ids: ["cote-azur"], label: "Beaches & the coast" },
+  { ids: ["lacs"], label: "Gorges & rivers" },
+  { ids: ["balades"], label: "Walks" },
+  { ids: ["restaurants"], label: "Restaurants" },
+  { ids: ["hebergements"], label: "Accommodation" },
+  { ids: ["activites"], label: "Activities" },
+  { ids: ["veterinaires"], label: "Vets" },
+  { ids: ["toiletteurs"], label: "Groomers" },
+  { ids: ["dogwash"], label: "Dog wash" },
+  { ids: ["dogsitters"], label: "Dog sitters" }
+] %}
+{%- for section in amSections %}
+{%- set sectionFiches = collections.fichesEn | byCategoryAndDept(section.ids, "06") %}
+{%- if sectionFiches.length > 0 %}
+<section class="fiches wrap" id="{{ section.ids[0] }}">
+  <div class="section-head">
+    <span class="eyebrow">{{ section.label }}</span>
+    <h2>{{ section.label }}</h2>
+  </div>
+  <div class="fiche-grid">
+    {%- for fiche in sectionFiches %}
+    <a href="/{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card">
+      <div class="thumb">
+        {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
+        <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
+      </div>
+      <div class="body">
+        <span class="tag">{{ fiche.data.cardTag | safe }}</span>
+        <h3>{{ fiche.data.cardTitle | safe }}</h3>
+        <p>{{ fiche.data.cardTeaser | safe }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+{%- endfor %}
+
+<section class="wrap" style="padding: 1rem 0 3rem;">
+  <p style="color: rgba(34,48,58,0.7); font-size: 0.95rem;">Looking for the rest of France? For now, the rest of the site — <a href="/">all 101 departments, ~9,300 listings</a> — is in French only. Use your browser's translation feature, or come back soon as we add more English pages.</p>
+</section>

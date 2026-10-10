@@ -141,6 +141,14 @@ export default function (eleventyConfig) {
     return dep ? dep.region : "Provence-Alpes-Côte d'Azur";
   });
 
+  // Slug du département (pour construire le lien "/en/departement-<slug>"
+  // depuis une fiche anglaise, sans jamais figer un seul département).
+  eleventyConfig.addFilter("deptSlug", (deptIds) => {
+    const id = Array.isArray(deptIds) ? deptIds[0] : deptIds;
+    const dep = departements.find((d) => d.id === id);
+    return dep ? dep.slug : "var";
+  });
+
   // Badge "Toute l'année" / "Saisonnier" sur les vignettes de plages, dérivé
   // du texte déjà écrit dans les champs "Chiens"/"Horaires chiens" de la
   // fiche — on ne réaffirme jamais une règle d'accès qui ne serait pas déjà

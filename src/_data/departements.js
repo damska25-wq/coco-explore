@@ -509,6 +509,7 @@ export default [
     seoTitle: "Où aller avec son chien dans les Alpes-Maritimes : plages",
     seoDescription: "Où aller avec son chien dans les Alpes-Maritimes : plages autorisées de Cannes à Menton, balades dans l'arrière-pays niçois et le Mercantour, avec Coco.",
     seoH1: "Où aller avec son chien dans les Alpes-Maritimes",
+    altLangUrl: "en/departement-alpes-maritimes",
   },
   {
     id: "13",
