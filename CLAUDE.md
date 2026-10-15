@@ -59,9 +59,9 @@ Premier envoi test envisagé auprès de la Clinique Vétérinaire du Dr Jackowsk
 
 Piste explorée en complément (pas en remplacement) du Programme partenaire ci-dessus : l'utilisateur s'inscrit comme affilié chez **SantéVet** (assurance santé chien/chat), programme confirmé via le réseau **Awin** — 6€ par lead "intégré" (devis en ligne), cookie de 30 jours. Contact direct pour candidater : `affiliation@santevet.com`. Alternative notée mais non vérifiée en détail : Carrefour Assurance Animaux (via FlexOffers, ~48€/lead annoncé sur un annuaire tiers, conditions non confirmées sur source primaire). Bulle Bleue écarté : pas de programme d'affiliation public trouvé (marque distribuée par Animal Experts/SantéVet, pas de portail d'inscription).
 
-**Statut au 2026-11** : l'utilisateur a soumis le formulaire de **candidature** publisher sur Awin (URL du site cocoexplore.com, nom/prénom, contact `contact@cocoexplore.com`, captcha) — c'est une demande d'inscription en cours d'examen par Awin, pas encore un compte actif (pas de mot de passe défini à ce stade, c'est normal). Awin doit répondre par email (délai de quelques jours). Une fois le compte réellement actif, il faudra en plus candidater spécifiquement au programme SantéVet depuis le tableau de bord Awin (étape séparée de la simple inscription Awin). Le message ci-dessous est à envoyer à SantéVet **seulement une fois cette candidature au programme acceptée** — pas avant.
+**Statut au 2026-10-15** : le compte publisher Awin est **actif** (Coco Explore, ID 3122486, immatriculé le 13/10/2026), profil complété (description + site ajouté dans "Espaces publicitaires", secteur Retail & Shopping > Animaux). En revanche, **SantéVet n'apparaît pas dans le répertoire des annonceurs Awin en inscription libre** (recherche testée avec et sans accent, filtres réinitialisés puis essai "Finance" — aucun résultat à chaque fois) : le programme est probablement accessible sur invitation uniquement, pas en self-service. Le message ci-dessous a donc été **envoyé directement** à affiliation@santevet.com le 15/10/2026 à 21:36 (depuis contact@cocoexplore.com), adapté pour mentionner l'ID du compte Awin et demander la marche à suivre. **En attente de la réponse de SantéVet** — elle dira si la candidature passe par une invitation Awin à obtenir d'eux, ou par un autre circuit.
 
-### Message à envoyer à SantéVet (affiliation@santevet.com) une fois le compte Awin créé
+### Message envoyé à SantéVet (affiliation@santevet.com) le 15/10/2026
 
 ```
 Objet : Candidature programme d'affiliation — Coco Explore (voyager avec son chien)
@@ -74,10 +74,15 @@ restaurants, hébergements, balades, vétérinaires, toiletteurs. Le site couvre
 l'ensemble du territoire (101 départements, métropole et outre-mer) avec
 plusieurs milliers de fiches.
 
-Je viens de créer un compte publisher sur Awin et je souhaite candidater à
-votre programme d'affiliation. L'assurance santé pour chien est un sujet très
-cohérent avec notre audience — des propriétaires qui voyagent avec leur animal
-et se posent naturellement la question de sa couverture en déplacement.
+J'ai créé un compte publisher sur Awin (ID 3122486, profil complété) et je
+souhaiterais candidater à votre programme d'affiliation. Je ne le trouve
+cependant pas en inscription libre dans le répertoire des annonceurs Awin —
+pourriez-vous me dire si votre programme est accessible sur invitation, ou
+m'indiquer la marche à suivre pour candidater ?
+
+L'assurance santé pour chien est un sujet très cohérent avec notre audience —
+des propriétaires qui voyagent avec leur animal et se posent naturellement la
+question de sa couverture en déplacement.
 
 Je prévoirais d'intégrer le lien de façon pertinente, par exemple dans nos
 fiches vétérinaires ou dans un article dédié aux conseils de préparation d'un
@@ -87,11 +92,11 @@ N'hésitez pas à me dire si vous avez besoin d'informations complémentaires su
 le site pour étudier la demande.
 
 Belle journée à vous,
-[Prénom/nom]
+Damien Fleurot
 Coco Explore — cocoexplore.com
 ```
 
-Pas d'action de notre côté en attendant : rien à placer sur le site avant d'avoir un lien tracké réel (un placeholder sans vrai lien n'aurait aucun intérêt). Quand l'utilisateur aura le lien, prévoir son insertion dans 1-2 fiches vétérinaires urgences et/ou un futur article "conseils de Coco" sur la préparation d'un voyage, avec la mention de lien affilié obligatoire (cadre légal français).
+Pas d'action de notre côté en attendant la réponse de SantéVet. Une fois la marche à suivre connue (et un lien tracké réel obtenu), prévoir son insertion dans 1-2 fiches vétérinaires urgences et/ou un futur article "conseils de Coco" sur la préparation d'un voyage, avec la mention de lien affilié obligatoire (cadre légal français).
 
 ## Historique — audit performance accueil (octobre 2026, résolu)
 
