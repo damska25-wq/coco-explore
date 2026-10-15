@@ -218,6 +218,7 @@ export default function (eleventyConfig) {
     "assets/bonporteau.jpg": [1600, 2133],
     "assets/coco-sentier.jpg": [1200, 1600],
     "assets/grand-pin-port-grimaud.jpg": [1500, 2000],
+    "assets/charlotte-garde-animaux-sainte-maxime.jpg": [1500, 1496],
   };
   eleventyConfig.addFilter("ogImage", (url) => {
     const src = url || "https://cocoexplore.com/assets/coco-hero.jpg";
