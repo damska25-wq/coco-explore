@@ -4,12 +4,12 @@ pagination:
   size: 1
   alias: dep
 permalink: "departement-{{ dep.slug }}.html"
-permalinkPath: "departement-{{ dep.slug }}.html"
 layout: base.njk
 eleventyComputed:
   title: "{{ dep.seoTitle }}"
   description: "{{ dep.seoDescription }}"
   altLangUrl: "{{ dep.altLangUrl }}"
+  permalinkPath: "departement-{{ dep.slug }}.html"
   extraHead: |
     <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
 ---
