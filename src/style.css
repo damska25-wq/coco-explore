@@ -873,3 +873,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
   .dept-filter-row { gap: 8px; padding: 18px 0 2px; }
   .dept-filter-btn { padding: 12px 14px; font-size: 0.88rem; }
 }
+
+.fiche-figure { margin: 1.25rem 0; }
+.fiche-figure img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.fiche-figure figcaption { font-size: 0.85rem; opacity: 0.75; margin-top: 0.4rem; }
