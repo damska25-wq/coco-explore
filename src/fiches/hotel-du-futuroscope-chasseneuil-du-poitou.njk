@@ -29,10 +29,22 @@ lng: 0.3667
 infoItems:
   - icon: "i-house"
     label: "Type"
-    value: "Hôtel, site du Futuroscope, Chasseneuil-du-Poitou (adresse précise non communiquée dans nos sources)"
+    value: "Hôtel, site du Futuroscope, Chasseneuil-du-Poitou"
+  - icon: "i-pin"
+    label: "Adresse"
+    value: "Boulevard Léonard de Vinci, 86130 Jaunay-Marigny"
+  - icon: "i-phone"
+    label: "Téléphone"
+    value: "05 49 49 37 37"
+  - icon: "i-mail"
+    label: "Email"
+    value: "hoteldufuturoscope@futuroscope.fr"
   - icon: "i-check"
     label: "Chiens"
-    value: "Chien accepté en chambre uniquement en présence du propriétaire ; chiens de 1ère et 2e catégorie refusés, carnet de vaccination à jour obligatoire (confiance moyenne)"
+    value: "Accepté — confirmé par la fiche officielle tourisme-vienne.com, mention « Animaux bienvenus » explicite, vérifiée par fetch direct (confiance haute). Les détails ci-dessous (présence du propriétaire obligatoire, catégories de chien refusées) restent à confiance moyenne, non confirmés par cette nouvelle source."
+  - icon: "i-alert"
+    label: "Détails non reconfirmés"
+    value: "Chien accepté en chambre uniquement en présence du propriétaire ; chiens de 1ère et 2e catégorie refusés, carnet de vaccination à jour obligatoire (confiance moyenne, source antérieure)"
   - icon: "i-alert"
     label: "Chenil"
     value: "Un chenil (géré par le Parc du Futuroscope, pas par l'hôtel) est disponible sur le parking près de l'entrée pendant la visite : box individuel et eau fournis, nourriture non fournie. Tarif le plus récent identifié : 10€ la journée + 4€ par animal supplémentaire (confiance moyenne — à reconfirmer directement)"
@@ -40,10 +52,10 @@ bodyHtml: |
   <section class="wrap fiche-body">
     <div>
       <h2>L'ambiance</h2>
-      <p>L'Hôtel du Futuroscope est installé directement sur le site du parc, à Chasseneuil-du-Poitou.</p>
+      <p>L'Hôtel du Futuroscope est installé directement sur le site du parc, boulevard Léonard de Vinci à Jaunay-Marigny.</p>
 
       <h2>Ce qu'il faut savoir avant d'y réserver</h2>
-      <p>Le chien est accepté en chambre, mais uniquement en présence de son propriétaire, et les chiens de 1ère et 2e catégorie sont refusés ; un carnet de vaccination à jour est obligatoire. Cette information est à confiance moyenne. Pendant la visite du parc, un chenil géré par le Futuroscope lui-même (et non par l'hôtel) est disponible sur le parking près de l'entrée : il propose un box individuel et de l'eau, mais pas de nourriture — pense donc à prévoir la gamelle de ton chien. Le tarif le plus récent que nous avons trouvé est de 10€ pour la journée, plus 4€ par animal supplémentaire ; un ancien tarif à 5€/jour circule encore sur certains sites mais semble dépassé — confirme le montant directement avant de venir.</p>
+      <p>La fiche officielle de l'office de tourisme tourisme-vienne.com confirme explicitement « Animaux bienvenus » pour cet hôtel, information vérifiée par fetch direct de la page (confiance haute) sur le principe général de l'acceptation du chien. Les détails plus précis identifiés par une recherche antérieure restent eux à confiance moyenne, cette nouvelle source ne les confirmant pas : le chien serait accepté en chambre uniquement en présence de son propriétaire, les chiens de 1ère et 2e catégorie seraient refusés, et un carnet de vaccination à jour serait obligatoire. Pendant la visite du parc, un chenil géré par le Futuroscope lui-même (et non par l'hôtel) est disponible sur le parking près de l'entrée : il propose un box individuel et de l'eau, mais pas de nourriture — pense donc à prévoir la gamelle de ton chien. Le tarif le plus récent que nous avons trouvé est de 10€ pour la journée, plus 4€ par animal supplémentaire ; un ancien tarif à 5€/jour circule encore sur certains sites mais semble dépassé — confirme le montant directement avant de venir.</p>
       <div class="callout">Le conseil de Coco : si tu comptes visiter le parc en laissant ton chien au chenil, prévois sa nourriture et confirme le tarif du chenil avant de venir.</div>
 
       <h2>Aux alentours</h2>
@@ -54,14 +66,15 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de réserver</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Chien accepté en chambre en présence du propriétaire, catégories 1 et 2 refusées, carnet de vaccination obligatoire — confiance moyenne.</li>
+          <li><svg><use href="#i-check"/></svg> Chien accepté — confirmé par la fiche officielle tourisme-vienne.com (« Animaux bienvenus »), vérifiée par fetch direct. Confiance haute.</li>
+          <li><svg><use href="#i-alert"/></svg> Détails non reconfirmés par cette source : présence du propriétaire obligatoire en chambre, catégories 1 et 2 refusées, carnet de vaccination obligatoire — confiance moyenne.</li>
           <li><svg><use href="#i-alert"/></svg> Chenil du Futuroscope sur le parking pendant la visite (box + eau, nourriture non fournie) — tarif le plus récent : 10€/jour + 4€/animal supplémentaire, à confirmer directement.</li>
         </ul>
       </div>
       <div class="sidebar-card">
         <h3>Localisation</h3>
         <ul>
-          <li><svg><use href="#i-pin"/></svg> Site du Futuroscope, Chasseneuil-du-Poitou</li>
+          <li><svg><use href="#i-pin"/></svg> Boulevard Léonard de Vinci, 86130 Jaunay-Marigny · Tél 05 49 49 37 37</li>
         </ul>
       </div>
     </aside>
