@@ -877,3 +877,4 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .fiche-figure { margin: 1.25rem 0; }
 .fiche-figure img { display: block; width: 100%; height: auto; border-radius: 12px; }
 .fiche-figure figcaption { font-size: 0.85rem; opacity: 0.75; margin-top: 0.4rem; }
+.fiche-collab { font-size: 0.8rem; opacity: 0.65; margin-top: 1.5rem; }
