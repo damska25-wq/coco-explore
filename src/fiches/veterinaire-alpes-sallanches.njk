@@ -42,11 +42,14 @@ infoItems:
     label: "Espèces prises en charge"
     value: "Chiens, chats, NAC, animaux de rente"
   - icon: "i-alert"
+    label: "Attention — adresse et horaires divergents selon la source"
+    value: "Deux sources indépendantes et concordantes entre elles (monrendezvousveto.fr, Mappy/PagesJaunes) donnent une adresse différente — « 14 rue Jeanne d'Arc, 74700 Sallanches » — avec des horaires différents (lun-ven 8h30-12h/14h-19h, sam 8h30-12h/14h-17h) et une équipe nommée (Drs Sylvain et Sylvie Faivre, Chloé Desmet, Quentin Langeois, Marine Vinci). Un annuaire liste même les deux adresses comme deux entrées voisines pour cette même clinique. Nous ne tranchons pas s'il s'agit d'un déménagement non reflété ici ou d'une entrée d'annuaire obsolète : à vérifier par téléphone avant de te déplacer."
+  - icon: "i-alert"
     label: "Urgences 24h/24"
     value: "Non mentionnées — aucune indication d'un service d'urgence propre à cet établissement"
-  - icon: "i-check"
+  - icon: "i-alert"
     label: "Confiance"
-    value: "Haute — informations issues du site officiel et recoupées par plusieurs sources concordantes"
+    value: "Moyenne-Haute — informations initialement issues du site officiel, mais divergence d'adresse et d'horaires avec deux sources indépendantes et concordantes (voir ci-dessus), non tranchée"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -54,7 +57,7 @@ bodyHtml: |
       <p>La Clinique Vétérinaire des Alpes est installée avenue de Saint-Martin, à Sallanches, sur l'axe qui mène vers Chamonix et le massif du Mont-Blanc. Elle prend en charge une large gamme d'animaux : chiens, chats, NAC (nouveaux animaux de compagnie) et animaux de rente.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Le cabinet est ouvert du lundi au samedi de 8h à 19h, et fermé le dimanche. Ces informations, issues du site officiel (clinvetdesalpes.fr), sont recoupées par plusieurs sources concordantes, ce qui nous permet de leur accorder une confiance haute. Aucune mention d'un service d'urgence 24h/24 propre à l'établissement n'a en revanche été trouvée.</p>
+      <p>Le cabinet est ouvert du lundi au samedi de 8h à 19h, et fermé le dimanche, selon le site officiel (clinvetdesalpes.fr). À signaler honnêtement : deux autres sources indépendantes et concordantes entre elles (monrendezvousveto.fr, Mappy/PagesJaunes) situent une clinique du même nom à une adresse différente (14 rue Jeanne d'Arc), avec des horaires et une équipe différents. Un annuaire liste même les deux adresses côte à côte pour cette clinique, ce qui pourrait indiquer un simple changement de local non répercuté partout — mais nous préférons te signaler cette divergence plutôt que trancher sans certitude. Aucune mention d'un service d'urgence 24h/24 propre à l'établissement n'a par ailleurs été trouvée.</p>
       <div class="callout">Le conseil de Coco : les horaires larges (jusqu'à 19h, y compris le samedi) couvrent une bonne partie des besoins courants, mais il n'y a pas d'urgence 24h/24 confirmée ici. En cas de besoin en dehors de ces plages, renseigne-toi au préalable sur la structure de garde la plus proche.</div>
 
       <h2>Aux alentours</h2>
@@ -65,7 +68,7 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Coordonnées et horaires : confiance haute (site officiel, sources concordantes).</li>
+          <li><svg><use href="#i-alert"/></svg> Adresse et horaires divergents selon la source (372 av. de Saint-Martin, site officiel, vs 14 rue Jeanne d'Arc, deux annuaires concordants) — vérifie par téléphone.</li>
           <li><svg><use href="#i-alert"/></svg> Aucune urgence 24h/24 confirmée pour cet établissement.</li>
         </ul>
       </div>

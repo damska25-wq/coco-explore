@@ -37,13 +37,16 @@ infoItems:
     value: "Non trouvés"
   - icon: "i-info"
     label: "Site web"
-    value: "Non trouvé"
+    value: "vetafforets.fr"
+  - icon: "i-alert"
+    label: "Attention — adresse divergente selon la source"
+    value: "Un annuaire (animauxadmis.fr, mise à jour 2026) donne une adresse différente pour cet établissement : « 221 avenue Charles de Gaulle, 74800 La Roche-sur-Foron ». Le site officiel confirme « 450 avenue de la Libération », que nous retenons comme plus fiable, mais sans trancher formellement entre les deux versions."
   - icon: "i-alert"
     label: "Urgences 24h/24"
     value: "Non mentionnées — aucune indication d'un service d'urgence propre à cet établissement"
-  - icon: "i-info"
+  - icon: "i-check"
     label: "Confiance"
-    value: "Moyenne — informations issues de PagesJaunes et veterinaires.org, pas de site officiel consulté"
+    value: "Haute pour l'adresse (désormais confirmée par un site officiel) et le téléphone ; une divergence d'adresse subsiste avec un annuaire tiers, voir ci-dessus"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -51,7 +54,7 @@ bodyHtml: |
       <p>La Clinique Vétérinaire des Afforêts, aussi connue sous le nom de VetAfforêts, est installée avenue de la Libération, à La Roche-sur-Foron, à quelques kilomètres de la Clinique du Foron.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Nous n'avons pas pu identifier de site officiel pour cet établissement ni confirmer ses horaires précis : les informations disponibles proviennent d'annuaires (PagesJaunes, veterinaires.org), ce qui nous conduit à retenir un niveau de confiance moyen pour l'adresse et le téléphone, et à indiquer « non trouvé » pour les horaires. Aucune mention d'un service d'urgence 24h/24 n'a par ailleurs été trouvée.</p>
+      <p>Un site officiel a désormais été identifié pour cet établissement (vetafforets.fr), qui confirme l'adresse 450 avenue de la Libération. À signaler honnêtement : un annuaire mis à jour en 2026 (animauxadmis.fr) donne une adresse différente pour ce même établissement, « 221 avenue Charles de Gaulle » — nous retenons l'adresse du site officiel comme la plus fiable, sans trancher formellement cette divergence. Les horaires précis restent non trouvés. Aucune mention d'un service d'urgence 24h/24 n'a par ailleurs été trouvée.</p>
       <div class="callout">Le conseil de Coco : appelle le 04 50 25 93 22 avant de te déplacer pour confirmer les horaires d'ouverture, faute de source officielle pour les vérifier à l'avance. Aucune urgence 24h/24 n'est confirmée pour cette clinique.</div>
 
       <h2>Aux alentours</h2>
@@ -62,7 +65,8 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-info"/></svg> Adresse et téléphone : confiance moyenne (annuaires, pas de site officiel consulté).</li>
+          <li><svg><use href="#i-check"/></svg> Adresse et téléphone : confiance haute (site officiel vetafforets.fr trouvé).</li>
+          <li><svg><use href="#i-alert"/></svg> Un annuaire tiers donne une adresse différente (221 avenue Charles de Gaulle) — non tranché.</li>
           <li><svg><use href="#i-alert"/></svg> Horaires non trouvés — appeler pour confirmer.</li>
           <li><svg><use href="#i-alert"/></svg> Aucune urgence 24h/24 confirmée pour cet établissement.</li>
         </ul>
