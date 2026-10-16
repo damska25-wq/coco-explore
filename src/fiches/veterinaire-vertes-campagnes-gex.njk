@@ -33,14 +33,20 @@ infoItems:
     label: "Téléphone"
     value: "04 50 42 31 54"
   - icon: "i-clock"
-    label: "Horaires"
-    value: "Lundi à samedi de 9h à 19h, fermé le dimanche"
+    label: "Horaires — divergence entre sources"
+    value: "Lun-ven 8h30-19h, sam 8h30-17h, dimanche fermé (site officiel du réseau Astragale, cohérent sur 3 pages). Le livret municipal de Gex (édition 2026) donne des horaires différents : lun/mar/jeu/ven 8h30-12h/14h30-19h, mer et sam 8h30-12h. À vérifier par téléphone si tu prévois de venir un mercredi ou un samedi après-midi."
+  - icon: "i-info"
+    label: "Équipe"
+    value: "Dr Vanessa Reymond, Dr Anais Pennuen, Dr Julie Saubadine, Dr Daphne Mazel, Dr Helena Triandafillu, Dr Sebastien Lacroix, Dr Margaux Rey (captainvet.com). Le livret municipal de Gex cite aussi un Dr Hugues Claude, absent de cette liste — divergence non tranchée."
   - icon: "i-info"
     label: "Réseau"
     value: "Membre du réseau Astragale"
+  - icon: "i-alert"
+    label: "Urgences hors horaires"
+    value: "Numéro dédié 08 99 19 99 84 (préfixe 0899 = numéro à tarification majorée, à savoir avant d'appeler). Confirmé par le site officiel Astragale ET par un site indépendant dédié aux urgences vétérinaires du Pays de Gex-Genève (veto-urgence-leman.com), qui décrit une garde tournante régionale mutualisée entre plusieurs cliniques (Astragale Gex & Divonne, OneVet Saint-Genis-Pouilly & Thoiry, AnimaVet Saint-Genis-Pouilly) : le soir de 19h à 23h, puis au-delà un service de régulation oriente vers une clinique ouverte 24h/24 si besoin ; le week-end du samedi 17h au lundi 8h."
   - icon: "i-check"
     label: "Confiance"
-    value: "Moyenne sur les coordonnées. Aucune mention d'un service d'urgence ou de garde n'a été trouvée pour cet établissement."
+    value: "Moyenne sur les coordonnées et les horaires (divergence non résolue). Le dispositif de garde régionale est confirmé par 2 sources indépendantes — niveau de confiance plus élevé que la moyenne pour ce type d'information, mais reste une garde mutualisée, pas un service d'urgence 24h/24 propre à cette clinique."
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -48,8 +54,9 @@ bodyHtml: |
       <p>La Clinique Vétérinaire des Vertes Campagnes, rue des Vertes Campagnes à Gex, fait partie du réseau Astragale. Elle dessert le Pays de Gex, ce territoire pris entre le Jura et l'agglomération genevoise.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Les horaires sont assez larges en semaine et le samedi : de 9h à 19h du lundi au samedi, avec une fermeture le dimanche. Aucune mention d'un service d'urgence ou de garde spécifique n'a été trouvée pour cet établissement lors de cette recherche — Coco s'en tient donc à ces horaires d'ouverture standards, sans te laisser penser à une prise en charge des urgences qui ne serait pas documentée.</p>
-      <div class="callout">Le conseil de Coco : pour une urgence en dehors de ces horaires, le 3115 (numéro national de garde vétérinaire, gratuit, disponible 24h/24) peut t'orienter vers l'établissement de garde le plus proche dans le Pays de Gex.</div>
+      <p>Selon le site officiel du réseau Astragale, cohérent sur plusieurs de ses pages, la clinique ouvre du lundi au vendredi de 8h30 à 19h et le samedi de 8h30 à 17h, fermée le dimanche. Le livret municipal de Gex (édition 2026) donne cependant des horaires différents — amplitude réduite le mercredi et le samedi (8h30-12h seulement) — une divergence que nous n'avons pas pu trancher : mieux vaut vérifier par téléphone avant de t'y rendre un mercredi ou un samedi après-midi. L'équipe compterait sept vétérinaires d'après un annuaire professionnel (Dr Reymond, Pennuen, Saubadine, Mazel, Triandafillu, Lacroix, Rey), mais le même livret municipal cite aussi un Dr Hugues Claude absent de cette liste.</p>
+      <p>Pour les urgences en dehors des horaires d'ouverture, le réseau indique un numéro dédié : 08 99 19 99 84 — attention, ce préfixe 0899 correspond à une ligne à tarification majorée. Un site indépendant consacré aux urgences vétérinaires du Pays de Gex-Genève confirme l'existence d'une garde tournante régionale mutualisée entre plusieurs cliniques du secteur (Astragale Gex et Divonne, OneVet Saint-Genis-Pouilly et Thoiry, AnimaVet Saint-Genis-Pouilly) : en soirée de 19h à 23h, puis au-delà un service de régulation oriente vers une clinique ouverte 24h/24 si besoin ; le week-end, la garde court du samedi 17h au lundi 8h. Ce n'est donc pas un service d'urgence propre à l'établissement de Gex, mais un dispositif partagé à l'échelle du secteur.</p>
+      <div class="callout">Le conseil de Coco : pour une urgence en dehors des horaires, le numéro dédié 08 99 19 99 84 t'oriente vers la garde régionale du Pays de Gex — sache simplement que c'est un numéro surtaxé.</div>
 
       <h2>Aux alentours</h2>
       <p>Gex, aux portes de Genève, offre un accès rapide au massif du Jura et à ses sentiers pour de belles balades avec ton chien, entre plaine et moyenne montagne.</p>
@@ -60,7 +67,8 @@ bodyHtml: |
         <h3>À vérifier avant de venir</h3>
         <ul>
           <li><svg><use href="#i-check"/></svg> Adresse et téléphone de confiance moyenne.</li>
-          <li><svg><use href="#i-info"/></svg> Fermé le dimanche — pas de mention d'un service d'urgence propre à cet établissement.</li>
+          <li><svg><use href="#i-alert"/></svg> Horaires divergents entre le site officiel et le livret municipal — vérifie par téléphone un mercredi ou un samedi après-midi.</li>
+          <li><svg><use href="#i-phone"/></svg> Urgences hors horaires : 08 99 19 99 84 (numéro surtaxé), garde régionale mutualisée Pays de Gex.</li>
         </ul>
       </div>
       <div class="sidebar-card">
