@@ -2,6 +2,15 @@
 
 Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurants, hébergements, balades, vétérinaires, toiletteurs, dogwash, dogsitters). Site statique Eleventy (11ty), 101 départements couverts (96 métropolitains + 5 DOM, couverture nationale complète), ~9300 fiches.
 
+## À faire après la campagne SIRENE — enrichissement hébergements + plages/balades (novembre 2026)
+
+Idées issues d'un brainstorm Gemini (partagé par l'utilisateur), validées pour un chantier futur une fois la campagne de vérification SIRENE (actuellement en cours, round PACA/Var) terminée sur l'ensemble des ~101 départements. Périmètre confirmé par l'utilisateur : les deux types de fiches ci-dessous, démarrage après la fin complète de la campagne SIRENE (pas en parallèle, pas de lot test préalable demandé — à lancer directement sur tout le site le moment venu).
+
+- **Fiches hébergements** — enrichir les conditions d'accueil précises là où elles manquent : supplément tarifaire par nuit/par animal, restrictions de taille/catégorie/nombre de chiens, chien autorisé à rester seul dans la chambre ou non. Ajouter aussi les "pet amenities" quand l'info existe chez la source (toutoubar/gamelle d'eau, espace de rinçage ou douchette retour de plage, friandises d'accueil, jardin clos).
+- **Fiches plages/balades** — préciser la réglementation saisonnière quand elle existe (arrêté municipal : dates/horaires d'accès autorisés, laisse obligatoire ou non) et des données de terrain utiles au chien (type de sol — sable, galets, rochers glissants, bitume chaud en été —, ombre disponible, points d'eau/rivières à proximité, niveau de difficulté du parcours, présence éventuelle de troupeaux/patous en montagne).
+
+Ne pas confondre avec le chantier SIRENE en cours (vérification factuelle adresse/téléphone/statut des vétérinaires) : celui-ci est un enrichissement de contenu, sur des catégories différentes de fiches, à traiter en méthode batch (recherche par lots puis rédaction) comme les rounds "gap-driven" déjà menés par département.
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
