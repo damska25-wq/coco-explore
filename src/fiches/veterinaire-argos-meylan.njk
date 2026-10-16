@@ -36,8 +36,11 @@ infoItems:
     label: "Info"
     value: "Cabinet du réseau Argos — aucun service de garde ou d'urgence propre n'a pu être confirmé"
   - icon: "i-alert"
+    label: "Attention — existence non reconfirmée"
+    value: "Un round de vérification ultérieur, malgré des recherches répétées et reformulées, n'a retrouvé aucune trace de ce cabinet à cette adresse ni dans la liste des cliniques actuelles du réseau Argos. Le seul cabinet vétérinaire trouvé à Meylan se situe à une autre adresse (avenue de la Plaine Fleurie) et n'est pas affilié Argos dans les sources consultées. Vérifie impérativement par téléphone avant de te déplacer."
+  - icon: "i-alert"
     label: "Confiance"
-    value: "Moyenne — informations basées sur le site du réseau Argos (argos-veterinaire.com)"
+    value: "Moyenne — informations basées sur le site du réseau Argos (argos-veterinaire.com) ; existence à cette adresse non reconfirmée lors d'un round de vérification ultérieur — voir ci-dessus"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -46,7 +49,8 @@ bodyHtml: |
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
       <p>Selon le site du réseau Argos, la clinique est ouverte du lundi au vendredi de 8h30 à 12h30 puis de 13h30 à 19h, et le samedi matin de 8h30 à 12h. Aucun service de garde ou d'urgence propre à cet établissement n'a pu être confirmé par une source indépendante.</p>
-      <div class="callout">Le conseil de Coco : si tu as besoin de soins pour ton chien en dehors de ces horaires, appelle la clinique pour savoir vers quel service elle t'oriente — je n'ai pas trouvé de garde confirmée pour cet établissement.</div>
+      <p>Un point important à signaler honnêtement : un round de vérification plus récent, malgré des recherches répétées avec plusieurs formulations, n'a retrouvé aucune trace de ce cabinet à cette adresse, ni dans la liste des cliniques actuelles du réseau Argos. Le seul cabinet vétérinaire identifié à Meylan se trouve à une autre adresse (avenue de la Plaine Fleurie) et ne semble pas affilié à ce réseau. Nous préférons te le dire clairement plutôt que de maintenir cette fiche sans réserve, mais nous ne supprimons pas la fiche : une absence de confirmation n'est pas une preuve de fermeture.</p>
+      <div class="callout">Le conseil de Coco : avant de te déplacer, appelle impérativement pour vérifier que ce cabinet existe toujours à cette adresse — nos recherches les plus récentes n'ont pas réussi à le reconfirmer.</div>
 
       <h2>Aux alentours</h2>
       <p>Meylan et son plateau offrent de belles balades avec vue sur la chaîne de Belledonne, idéales pour sortir ton chien avant ou après une visite chez le vétérinaire.</p>
@@ -56,7 +60,7 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-info"/></svg> Adresse et horaires : confiance moyenne (site du réseau Argos).</li>
+          <li><svg><use href="#i-alert"/></svg> Existence à cette adresse non reconfirmée lors d'un round de vérification ultérieur — appelle impérativement avant de te déplacer.</li>
           <li><svg><use href="#i-alert"/></svg> Aucune garde ou urgence confirmée pour cet établissement.</li>
         </ul>
       </div>

@@ -39,8 +39,11 @@ infoItems:
     label: "Info"
     value: "Aucun service de garde ou d'urgence propre à cet établissement n'a pu être confirmé"
   - icon: "i-alert"
+    label: "Attention — adresses divergentes selon les sources"
+    value: "Un round de vérification ultérieur a trouvé des adresses différentes selon la source : le site du réseau (cliniquecentrale.vet) et un registre gouvernemental d'accessibilité indiquent « 5 route de Vienne, Charvieu-Chavagneux » (commune voisine), tandis qu'un autre annuaire indique « rue des Aubépines, Pont-de-Chéruy » (même commune que cette fiche, mais rue différente). Aucune source retrouvée ne confirme ni « 15 rue Centrale » ni la galerie Carrefour mentionnées ici. Vérifie impérativement l'adresse exacte par téléphone avant de te déplacer."
+  - icon: "i-alert"
     label: "Confiance"
-    value: "Haute pour l'adresse, le site secondaire et le téléphone"
+    value: "Moyenne : l'existence de l'établissement est confirmée, mais l'adresse exacte fait désormais l'objet d'une divergence entre plusieurs sources — voir l'alerte ci-dessus"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -49,7 +52,8 @@ bodyHtml: |
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
       <p>Deux adresses existent donc pour cette clinique : le site principal rue Centrale, et un site secondaire au sein de la galerie commerciale Carrefour. Pense à bien vérifier vers lequel des deux on t'oriente avant de t'y rendre. Aucun service de garde ou d'urgence propre à cet établissement n'a pu être confirmé par une source indépendante.</p>
-      <div class="callout">Le conseil de Coco : avec deux adresses possibles pour cette même clinique, appelle avant de partir pour savoir où se trouve le vétérinaire ce jour-là — rue Centrale ou dans la galerie Carrefour.</div>
+      <p>Attention, un point supplémentaire à signaler : un round de vérification plus récent a trouvé des adresses différentes selon la source consultée. Le site officiel du réseau (cliniquecentrale.vet) ainsi qu'un registre gouvernemental d'accessibilité situent cet établissement au 5 route de Vienne, à Charvieu-Chavagneux, une commune voisine — tandis qu'un autre annuaire indépendant le situe rue des Aubépines, toujours à Pont-de-Chéruy mais sur une autre rue. Aucune des sources retrouvées ne confirme ni l'adresse « 15 rue Centrale » ni la galerie Carrefour indiquées plus haut. Nous préférons te signaler cette divergence plutôt que de choisir arbitrairement l'une des adresses.</p>
+      <div class="callout">Le conseil de Coco : avec plusieurs adresses possibles trouvées pour cette même clinique selon la source, appelle impérativement avant de partir pour confirmer où se trouve le vétérinaire ce jour-là.</div>
 
       <h2>Aux alentours</h2>
       <p>Pont-de-Chéruy et la plaine de l'Est lyonnais offrent plusieurs chemins ruraux pour promener ton chien avant ou après une consultation.</p>
@@ -59,7 +63,7 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse principale, site secondaire et téléphone : confiance haute.</li>
+          <li><svg><use href="#i-alert"/></svg> Attention, adresses divergentes selon les sources (Charvieu-Chavagneux ou rue des Aubépines à Pont-de-Chéruy) — vérifie impérativement par téléphone avant de te déplacer.</li>
           <li><svg><use href="#i-alert"/></svg> Aucune garde ou urgence confirmée pour cet établissement.</li>
         </ul>
       </div>

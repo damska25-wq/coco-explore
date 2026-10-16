@@ -36,8 +36,11 @@ infoItems:
     label: "Info"
     value: "Cabinet généraliste chien/chat — aucun service de garde ou d'urgence propre n'a pu être confirmé"
   - icon: "i-alert"
+    label: "Attention — existence non reconfirmée"
+    value: "Un round de vérification ultérieur n'a retrouvé aucune trace de ce cabinet place Carnot : les annuaires consultés n'affichent à cette adresse qu'un médecin généraliste humain. Vérifie impérativement par téléphone ou sur place avant de te déplacer."
+  - icon: "i-alert"
     label: "Confiance"
-    value: "Moyenne pour l'adresse et l'existence du cabinet (monrendezvousveto.fr) ; téléphone non trouvé"
+    value: "Moyenne pour l'adresse et l'existence du cabinet (monrendezvousveto.fr) ; téléphone non trouvé ; existence non reconfirmée lors d'un round de vérification ultérieur — voir ci-dessus"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -46,7 +49,8 @@ bodyHtml: |
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
       <p>L'adresse et l'existence de ce cabinet ont pu être confirmées via un annuaire de prise de rendez-vous vétérinaire, mais nous n'avons pas trouvé de numéro de téléphone fiable dans les sources consultées : mieux vaut te renseigner sur place ou via un annuaire local avant de t'y rendre. Aucun service de garde ou d'urgence propre à cet établissement n'a pu être confirmé.</p>
-      <div class="callout">Le conseil de Coco : je n'ai pas réussi à trouver de numéro de téléphone fiable pour ce cabinet — si tu en as besoin, un passage sur place ou une recherche complémentaire dans un annuaire local sera plus sûr que de se fier à un numéro non vérifié.</div>
+      <p>Un point à signaler honnêtement : un round de vérification plus récent n'a retrouvé aucune trace de ce cabinet place Carnot — les annuaires consultés n'affichent à cette adresse qu'un médecin généraliste humain. Nous ne supprimons pas la fiche pour autant : une absence de confirmation nouvelle n'est pas une preuve de fermeture, mais mieux vaut vérifier sur place ou par téléphone avant de t'y déplacer.</p>
+      <div class="callout">Le conseil de Coco : je n'ai pas réussi à trouver de numéro de téléphone fiable pour ce cabinet, et une recherche plus récente n'a pas réussi à le reconfirmer à cette adresse — un passage sur place ou une recherche complémentaire dans un annuaire local sera plus sûr avant de t'y rendre.</div>
 
       <h2>Aux alentours</h2>
       <p>La Tour-du-Pin, entre plaine et collines des Terres Froides, offre plusieurs espaces pour promener ton chien avant ou après un rendez-vous vétérinaire.</p>
@@ -57,6 +61,7 @@ bodyHtml: |
         <h3>À vérifier avant de venir</h3>
         <ul>
           <li><svg><use href="#i-alert"/></svg> Téléphone non trouvé dans les sources consultées.</li>
+          <li><svg><use href="#i-alert"/></svg> Existence non reconfirmée à cette adresse lors d'un round de vérification ultérieur — vérifie sur place ou par téléphone.</li>
           <li><svg><use href="#i-info"/></svg> Aucune garde ou urgence confirmée pour cet établissement.</li>
         </ul>
       </div>

@@ -39,8 +39,11 @@ infoItems:
     label: "Info"
     value: "Cabinet ouvert depuis 1968 — aucun service de garde ou d'urgence propre n'a pu être confirmé"
   - icon: "i-alert"
+    label: "Attention — divergence trouvée sur le nom"
+    value: "Un round de vérification ultérieur a trouvé, dans un annuaire, un cabinet nommé « Esculier-Moindrot » à cette exacte adresse (6 route de Lyon, Bourgoin-Jallieu). Cela pourrait indiquer un changement de nom ou de praticiens, une confusion d'annuaire, ou deux structures au même immeuble. À vérifier par téléphone avant de te déplacer."
+  - icon: "i-alert"
     label: "Confiance"
-    value: "Moyenne — informations basées sur le site de la clinique (veterinaire-maladiere-bourgoin.fr)"
+    value: "Moyenne — informations basées sur le site de la clinique (veterinaire-maladiere-bourgoin.fr) ; une divergence de nom trouvée à la même adresse reste à vérifier (voir ci-dessus)"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -49,7 +52,8 @@ bodyHtml: |
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
       <p>Selon le site de la clinique, elle est ouverte du lundi au vendredi de 8h à 12h puis de 14h à 19h. Aucun service de garde ou d'urgence propre à cet établissement n'a pu être confirmé par une source indépendante.</p>
-      <div class="callout">Le conseil de Coco : en dehors de ces horaires, appelle le 04 74 28 12 22 pour savoir vers quel service la clinique t'oriente en cas de besoin urgent pour ton chien.</div>
+      <p>Un point à signaler avec prudence : un round de vérification plus récent a trouvé, dans un annuaire indépendant, un cabinet nommé « Esculier-Moindrot » à cette même adresse exacte. Nous ne savons pas s'il s'agit d'un changement de nom ou d'équipe au sein du même établissement, d'une simple confusion d'annuaire, ou de deux structures distinctes partageant l'adresse — nous préférons te le signaler plutôt que de trancher.</p>
+      <div class="callout">Le conseil de Coco : en dehors de ces horaires, appelle le 04 74 28 12 22 pour savoir vers quel service la clinique t'oriente en cas de besoin urgent pour ton chien — et n'hésite pas à vérifier le nom exact du cabinet à cette adresse avant de t'y rendre, une source indépendante citant un autre nom à la même adresse.</div>
 
       <h2>Aux alentours</h2>
       <p>Bourgoin-Jallieu, entre les Terres Froides et la plaine de la Bourbre, propose plusieurs espaces pour promener ton chien avant ou après un rendez-vous vétérinaire.</p>
@@ -60,6 +64,7 @@ bodyHtml: |
         <h3>À vérifier avant de venir</h3>
         <ul>
           <li><svg><use href="#i-info"/></svg> Adresse et horaires : confiance moyenne (site de la clinique).</li>
+          <li><svg><use href="#i-alert"/></svg> Un nom différent ("Esculier-Moindrot") trouvé à la même adresse dans un annuaire — à vérifier par téléphone.</li>
           <li><svg><use href="#i-alert"/></svg> Aucune garde ou urgence confirmée pour cet établissement.</li>
         </ul>
       </div>
