@@ -32,12 +32,12 @@ infoItems:
   - icon: "i-phone"
     label: "Téléphone"
     value: "05 55 01 74 74"
-  - icon: "i-clock"
-    label: "Horaires"
-    value: "Lun-ven 8h-12h et 12h-19h, sam 8h-12h et 12h-17h"
+  - icon: "i-alert"
+    label: "Horaires — à reconfirmer"
+    value: "Lun-ven 8h-12h et 12h-19h, sam 8h-12h et 12h-17h (indication actuelle) ; une autre source (monrendezvousveto.fr, page auto-générée) donne plutôt 8h-10h/14h-19h — aucune des deux versions n'est pleinement fiable, à reconfirmer par téléphone"
   - icon: "i-info"
     label: "Urgence"
-    value: "Le groupe Argos indique sur son site que les urgences sont « assurées par les vétérinaires de la clinique après appel téléphonique ». Cette information vient du discours du groupe lui-même, sans confirmation indépendante — confiance faible sur ce point précis."
+    value: "Le groupe Argos indique sur son site que les urgences sont « assurées par les vétérinaires de la clinique après appel téléphonique ». Le site officiel de la clinique voisine Vanteaux (même secteur de Limoges) évoque par ailleurs une rotation de garde partagée entre Vanteaux, Argos Val de l'Aurence et Armand Dutreix (CVA Dutreix), avec une grille tarifaire propre à cette rotation — une information auto-déclarée par le groupe, sans confirmation indépendante, mais cohérente avec le fonctionnement classique de ce type de réseau."
   - icon: "i-alert"
     label: "Confiance"
     value: "Adresse et horaires : confiance moyenne. Service d'urgence revendiqué : confiance faible, non confirmé."
@@ -48,7 +48,7 @@ bodyHtml: |
       <p>La Clinique Vétérinaire Argos – Val de l'Aurence est installée rue Armand Dutreix, dans le quartier du Val de l'Aurence à Limoges. Elle fait partie du groupe Argos, un réseau de cliniques vétérinaires présent dans plusieurs villes françaises, qui communique sur ses propres standards de service.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Les horaires annoncés sont lundi à vendredi de 8h à 12h puis de 12h à 19h, et le samedi de 8h à 12h puis de 12h à 17h. Le numéro de téléphone de la clinique est le 05 55 01 74 74. Concernant les urgences, le groupe Argos indique que les urgences vétérinaires sont assurées par les praticiens de la clinique après un appel téléphonique. Cette affirmation provient uniquement du discours du groupe lui-même, sans source indépendante pour la confirmer : nous la présentons donc avec une confiance faible, et non comme un service d'urgence 24/7 confirmé.</p>
+      <p>Les horaires annoncés sont lundi à vendredi de 8h à 12h puis de 12h à 19h, et le samedi de 8h à 12h puis de 12h à 17h, mais une autre source (une page auto-générée de monrendezvousveto.fr) donne des créneaux assez différents (8h-10h puis 14h-19h) : les deux versions restent fragiles, mieux vaut reconfirmer par téléphone. Le numéro de téléphone de la clinique est le 05 55 01 74 74. Concernant les urgences, le groupe Argos indique que les urgences vétérinaires sont assurées par les praticiens de la clinique après un appel téléphonique ; le site officiel de la clinique Vanteaux, dans le même secteur de Limoges, évoque par ailleurs une rotation de garde partagée entre les cliniques Vanteaux, Argos Val de l'Aurence et Armand Dutreix. Ces deux affirmations proviennent du discours du groupe lui-même, sans source indépendante pour les confirmer : nous les présentons donc avec une confiance faible, et non comme un service d'urgence 24/7 confirmé.</p>
       <div class="callout">Le conseil de Coco : en cas d'urgence, pense au numéro de régulation vétérinaire régional (3115 ou 08 93 02 06 00), qui reste le moyen le plus fiable de trouver le vétérinaire de garde du secteur, indépendamment de ce que revendique chaque clinique.</div>
 
       <h2>Aux alentours</h2>
@@ -59,9 +59,10 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse et horaires : confiance moyenne.</li>
+          <li><svg><use href="#i-check"/></svg> Adresse : confiance moyenne.</li>
+          <li><svg><use href="#i-alert"/></svg> Horaires divergents selon les sources — à reconfirmer par téléphone.</li>
           <li><svg><use href="#i-phone"/></svg> Téléphone : 05 55 01 74 74.</li>
-          <li><svg><use href="#i-alert"/></svg> Urgences « assurées par les vétérinaires de la clinique » revendiquées par le groupe Argos, sans confirmation indépendante — confiance faible.</li>
+          <li><svg><use href="#i-alert"/></svg> Urgences assurées par rotation avec Vanteaux et Armand Dutreix (selon le groupe), sans confirmation indépendante — confiance faible.</li>
         </ul>
       </div>
       <div class="sidebar-card">

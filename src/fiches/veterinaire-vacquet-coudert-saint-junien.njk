@@ -38,9 +38,9 @@ infoItems:
   - icon: "i-info"
     label: "Urgence"
     value: "Un résultat de recherche affirme une disponibilité « 24/7 pour les urgences » au même numéro que le standard. Cette affirmation vient d'annuaires qui reprennent le discours du cabinet, pas d'une source indépendante — confiance faible sur ce point."
-  - icon: "i-info"
-    label: "Vétérinaires"
-    value: "Catherine Le Tellier et Cécile Coudert"
+  - icon: "i-alert"
+    label: "Vétérinaires — point de vigilance"
+    value: "Cécile Coudert est bien confirmée. En revanche, pour la seconde praticienne, la raison sociale officielle et plusieurs annuaires indépendants (PagesJaunes, Mappy, 118712) nomment l'établissement « VACQUET et COUDERT » et citent « Vacquet Catherine » — aucune source trouvée ne confirme le nom « Le Tellier » que nous avions retenu jusqu'ici. Probablement un nom d'usage (mariage) vs un nom de naissance, mais à vérifier."
   - icon: "i-alert"
     label: "Confiance"
     value: "Adresse, téléphone, horaires et vétérinaires : confiance haute. Disponibilité 24/7 : confiance faible."
@@ -48,7 +48,7 @@ bodyHtml: |
   <section class="wrap fiche-body">
     <div>
       <h2>L'ambiance</h2>
-      <p>La Clinique Vétérinaire Vacquet et Coudert est installée avenue Henri Barbusse, à Saint-Junien, tenue par les docteurs Catherine Le Tellier et Cécile Coudert. Il s'agit d'un établissement bien distinct de la Clinique de la Croix Blanche, une autre clinique du même secteur de Saint-Junien mais installée en zone industrielle avec une équipe de vétérinaires différente — les deux ont parfois été confondues dans certains annuaires généralistes.</p>
+      <p>La Clinique Vétérinaire Vacquet et Coudert est installée avenue Henri Barbusse, à Saint-Junien, tenue par la Dr Cécile Coudert. <strong>Point de vigilance :</strong> pour la seconde praticienne, la raison sociale officielle et plusieurs annuaires indépendants (PagesJaunes, Mappy, 118712) citent « Vacquet Catherine », pas « Le Tellier » comme nous l'indiquions jusqu'ici — probablement un nom d'usage, à confirmer directement. Il s'agit d'un établissement bien distinct de la Clinique de la Croix Blanche, une autre clinique du même secteur de Saint-Junien mais installée en zone industrielle avec une équipe de vétérinaires différente — les deux ont parfois été confondues dans certains annuaires généralistes.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
       <p>Les horaires sont lundi à vendredi de 9h à 12h puis de 13h30 à 19h, et le samedi de 9h à 15h. Un résultat de recherche affirme que la clinique est disponible « 24 heures sur 24 et 7 jours sur 7 pour les urgences », au même numéro que le standard. Mais cette affirmation provient d'annuaires qui reprennent le discours du cabinet, sans confirmation indépendante : nous la présentons donc avec une confiance faible, et non comme une urgence 24/7 vérifiée.</p>
@@ -62,7 +62,8 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse, téléphone, horaires et vétérinaires confirmés — confiance haute.</li>
+          <li><svg><use href="#i-check"/></svg> Adresse, téléphone et horaires confirmés — confiance haute.</li>
+          <li><svg><use href="#i-alert"/></svg> Nom de la seconde praticienne à vérifier : plusieurs sources citent « Vacquet Catherine », pas « Le Tellier ».</li>
           <li><svg><use href="#i-info"/></svg> Ne pas confondre avec la Clinique de la Croix Blanche, un établissement distinct du même secteur de Saint-Junien.</li>
           <li><svg><use href="#i-alert"/></svg> Disponibilité 24/7 revendiquée par des annuaires reprenant le discours du cabinet — confiance faible, non confirmée de façon indépendante.</li>
         </ul>
