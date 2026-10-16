@@ -26,9 +26,9 @@ order: 804
 lat: 44.4600
 lng: 1.4300
 infoItems:
-  - icon: "i-clock"
+  - icon: "i-alert"
     label: "Horaires"
-    value: "Lundi-vendredi 8h-12h30 / 13h30-18h30, samedi 8h-12h / 14h-17h"
+    value: "Lundi-vendredi 8h-12h30 / 13h30-18h30, samedi 8h-12h / 14h-17h — mais le widget de réservation en ligne du site officiel affiche des horaires continus (lun-ven 8h-18h30, sam 8h-17h), sans coupure méridienne ; possible simple plage de réservation plutôt que les horaires d'accueil réels, à confirmer par téléphone"
   - icon: "i-phone"
     label: "Téléphone"
     value: "05 65 35 04 78"
@@ -45,7 +45,7 @@ bodyHtml: |
   <section class="wrap fiche-body">
     <div>
       <h2>L'ambiance</h2>
-      <p>La Clinique Vétérinaire des Arches, 359 avenue de la Beyne à Cahors, ouvre du lundi au vendredi de 8h à 12h30 puis de 13h30 à 18h30, et le samedi de 8h à 12h puis de 14h à 17h. Ces horaires et le téléphone (05 65 35 04 78) sont confirmés par deux sources concordantes. La clinique développe des spécialités en dermatologie, ophtalmologie et médecine interne.</p>
+      <p>La Clinique Vétérinaire des Arches, 359 avenue de la Beyne à Cahors, ouvre du lundi au vendredi de 8h à 12h30 puis de 13h30 à 18h30, et le samedi de 8h à 12h puis de 14h à 17h — ce sont les horaires historiquement affichés par la fiche. Le téléphone (05 65 35 04 78) est confirmé par le site officiel. Point à signaler : le widget de réservation en ligne du même site officiel affiche, lui, des horaires continus (lundi-vendredi 8h-18h30, samedi 8h-17h, sans coupure méridienne), répétés sur deux pages du site — il pourrait s'agir simplement de la plage horaire de réservation en ligne plutôt que des horaires réels d'accueil au comptoir, mais le signal est net et mérite vérification par téléphone avant de s'y fier pleinement. La clinique développe des spécialités en dermatologie, ophtalmologie et médecine interne.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
       <p>En dehors des horaires d'ouverture, un message vocal oriente vers le vétérinaire de garde : les urgences sont assurées à tour de rôle par les cabinets vétérinaires de Cahors, et non par un service 24h/24 propre à cette clinique. C'est une réalité partagée par l'ensemble du Lot : le département ne dispose actuellement d'aucun service d'urgence vétérinaire structuré référencé dans le réseau national. En pratique, on appelle son vétérinaire habituel, qui redirige vers le cabinet de garde du moment, ou l'on peut tenter le 3115, un service commercial de mise en relation (pas un numéro d'urgence officiel).</p>
@@ -59,7 +59,8 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier sur place</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse, téléphone et horaires confirmés par deux sources concordantes.</li>
+          <li><svg><use href="#i-check"/></svg> Adresse et téléphone confirmés par le site officiel.</li>
+          <li><svg><use href="#i-alert"/></svg> Écart entre les horaires affichés ici (avec coupure méridienne) et le widget de réservation en ligne du site (horaires continus) — à confirmer par téléphone.</li>
           <li><svg><use href="#i-alert"/></svg> Urgences assurées à tour de rôle par les cabinets de Cahors, pas de service 24h/24 propre — vérifier par téléphone avant tout déplacement en urgence.</li>
         </ul>
       </div>
