@@ -38,9 +38,12 @@ infoItems:
   - icon: "i-alert"
     label: "Urgences"
     value: "« Services disponibles 24/7 pour urgences » mentionné par un agrégateur ; non confirmé indépendamment, probablement l'astreinte tournante légale entre vétérinaires du secteur."
+  - icon: "i-alert"
+    label: "À vérifier — aucune source indépendante retrouvée récemment"
+    value: "Un round de recherche supplémentaire, avec plusieurs requêtes ciblées (nom du cabinet, noms des trois praticiens, adresse précise), n'a retrouvé aucune source indépendante pour ce cabinet : les résultats pour « vétérinaire Château-Chinon » renvoient uniquement vers le Cabinet OMNIVET (autre adresse, autre fiche). Cela ne prouve ni une fermeture ni une inexistence — un petit cabinet rural peut avoir très peu de présence en ligne — mais nous recommandons de vérifier son existence actuelle par téléphone avant de s'y déplacer."
   - icon: "i-check"
     label: "Confiance"
-    value: "Moyenne-Haute pour l'adresse et le téléphone."
+    value: "Moyenne-Haute pour l'adresse et le téléphone (issus de sources antérieures) ; non re-confirmée lors du dernier round de recherche."
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -49,7 +52,8 @@ bodyHtml: |
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
       <p>L'adresse et le téléphone bénéficient d'une confiance moyenne-haute, les sources étant globalement concordantes. Un agrégateur mentionne des « services disponibles 24/7 pour les urgences », mais cette information n'est pas confirmée par une source indépendante attestant d'une présence physique nocturne réelle sur place. Nous la présentons donc comme non confirmée, probablement l'astreinte tournante légale organisée entre vétérinaires du secteur du Morvan.</p>
-      <div class="callout">Le conseil de Coco : en zone rurale comme le Morvan, les astreintes de nuit sont souvent partagées entre plusieurs cabinets du secteur — un appel permet de savoir qui est de garde ce jour-là plutôt que de supposer une présence continue sur place.</div>
+      <p>Un round de recherche supplémentaire, avec plusieurs requêtes ciblées sur le nom du cabinet, les noms des trois praticiens et l'adresse précise, n'a retrouvé aucune source indépendante pour cet établissement cette fois-ci : les résultats sur « vétérinaire Château-Chinon » pointent systématiquement vers le Cabinet OMNIVET, situé à une autre adresse de la même ville et faisant l'objet d'une fiche séparée. Cela ne constitue en rien une preuve de fermeture ou d'inexistence — un petit cabinet rural peut tout à fait avoir très peu de présence en ligne — mais c'est un angle mort de recherche notable : nous recommandons de vérifier directement par téléphone l'existence actuelle de ce cabinet à cette adresse avant de t'y déplacer.</p>
+      <div class="callout">Le conseil de Coco : en zone rurale comme le Morvan, les astreintes de nuit sont souvent partagées entre plusieurs cabinets du secteur — un appel permet de savoir qui est de garde ce jour-là plutôt que de supposer une présence continue sur place. Pour ce cabinet précis, un appel préalable permet aussi de confirmer qu'il est toujours en activité à cette adresse.</div>
 
       <h2>Aux alentours</h2>
       <p>Château-Chinon, perchée sur un promontoire du Morvan, offre de belles vues et des sentiers de randonnée à proximité pour prolonger la sortie avec son chien.</p>
@@ -59,7 +63,8 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse et téléphone — confiance moyenne-haute.</li>
+          <li><svg><use href="#i-alert"/></svg> Aucune source indépendante retrouvée lors du dernier round — vérifier l'existence actuelle par téléphone avant de s'y déplacer.</li>
+          <li><svg><use href="#i-check"/></svg> Adresse et téléphone — confiance moyenne-haute (issus de sources antérieures).</li>
           <li><svg><use href="#i-alert"/></svg> Services 24/7 mentionnés par un agrégateur, non confirmés indépendamment — probablement astreinte tournante du secteur.</li>
         </ul>
       </div>
