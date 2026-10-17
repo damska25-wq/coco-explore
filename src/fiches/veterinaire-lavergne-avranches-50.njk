@@ -36,9 +36,12 @@ infoItems:
   - icon: "i-clock"
     label: "Horaires"
     value: "Non trouvées — à demander directement au 02 33 48 19 92"
+  - icon: "i-alert"
+    label: "Alerte de vérification prioritaire"
+    value: "L'avis de situation SIRENE officiel de l'INSEE pour l'entreprise individuelle de Jean-Louis Lavergne, vétérinaire, à cette adresse, indique une cessation d'activité au 31/01/2022 — établissement potentiellement fermé depuis cette date. Conformément à notre politique, nous ne supprimons pas cette fiche sur cette seule base, mais un appel au 02 33 48 19 92 avant tout déplacement est fortement recommandé pour trancher"
   - icon: "i-check"
     label: "Confiance"
-    value: "Moyenne — adresse et téléphone retrouvés de façon cohérente sur plusieurs sources"
+    value: "Moyenne — adresse et téléphone retrouvés de façon cohérente sur plusieurs sources, mais statut d'activité remis en question par le registre SIRENE (voir alerte ci-dessus)"
 bodyHtml: |
   <section class="wrap fiche-body">
       <div>
@@ -46,7 +49,7 @@ bodyHtml: |
         <p>Le Dr Lavergne tient ce cabinet vétérinaire rue de Bouillant, dans le centre d'Avranches.</p>
 
         <h2>Ce qu'il faut savoir avant d'y aller</h2>
-        <p>Les horaires n'ont pas pu être confirmés lors de cette recherche. Le 02 33 48 19 92 reste le meilleur moyen de connaître les créneaux de consultation.</p>
+        <p>Les horaires n'ont pas pu être confirmés lors de cette recherche. Le 02 33 48 19 92 reste le meilleur moyen de connaître les créneaux de consultation. Un signal important est à prendre en compte : l'avis de situation SIRENE officiel de l'INSEE pour l'entreprise individuelle du Dr Jean-Louis Lavergne, à cette adresse précise, indique une cessation d'activité au 31/01/2022. Nous ne supprimons pas cette fiche sur cette seule base, mais un appel téléphonique avant tout déplacement est fortement recommandé pour vérifier si ce cabinet est toujours en exercice.</p>
         <div class="callout">Le conseil de Coco : j'appelle avant de m'y rendre, les horaires n'ayant pas été confirmés pour ce cabinet.</div>
 
         <h2>Aux alentours</h2>
@@ -58,6 +61,7 @@ bodyHtml: |
           <h3>À vérifier avant de venir</h3>
           <ul>
             <li><svg><use href="#i-alert"/></svg> Horaires non trouvés — à demander par téléphone.</li>
+            <li><svg><use href="#i-alert"/></svg> Le registre SIRENE indique une cessation d'activité au 31/01/2022 pour l'entreprise individuelle à cette adresse — à vérifier impérativement par téléphone avant de s'y déplacer.</li>
             <li><svg><use href="#i-check"/></svg> Confiance moyenne.</li>
           </ul>
         </div>
