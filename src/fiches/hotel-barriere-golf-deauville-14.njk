@@ -34,14 +34,14 @@ infoItems:
     label: "Téléphone"
     value: "Non trouvé — à vérifier avant de réserver"
   - icon: "i-leash"
-    label: "Chiens"
+    label: "Chiens (selon notre source initiale)"
     value: "Acceptés, max 10kg, 1 animal par chambre"
-  - icon: "i-euro"
-    label: "Supplément"
-    value: "20€/nuit"
+  - icon: "i-alert"
+    label: "Incohérence relevée entre sources"
+    value: "Expedia (reprenant la fiche officielle du groupe Accor/Barrière) indique un supplément de 35€ par animal et par nuit, sans mentionner de limite de poids — contredisant le tarif de 20€/nuit + limite 10kg de notre source initiale. Les deux versions ne sont pas recoupées"
   - icon: "i-check"
     label: "Confiance"
-    value: "Faible — source unique"
+    value: "Faible — deux sources non recoupées (20€+10kg vs 35€ sans limite de poids)"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -49,8 +49,8 @@ bodyHtml: |
       <p>Sur les hauteurs de Saint-Arnoult, aux portes de Deauville, L'Hôtel du Golf Barrière domine la Côte Fleurie depuis son parcours de golf, dans un cadre verdoyant et calme.</p>
 
       <h2>Ce qu'il faut savoir avant de réserver</h2>
-      <p>Le chien est accepté dans cet hôtel, avec un supplément de 20€ par nuit. Le gabarit est limité à 10kg maximum, et un seul animal est accepté par chambre.</p>
-      <div class="callout">Le conseil de Coco : cette information provient d'une source unique, non recoupée — confirme ces conditions (tarif, gabarit) directement auprès de l'hôtel avant de réserver.</div>
+      <p>Le chien est accepté dans cet hôtel. Notre source initiale, unique et non recoupée, indiquait un supplément de 20€ par nuit avec un gabarit limité à 10kg maximum et un seul animal par chambre. Une recherche complémentaire a fait apparaître une version différente sur Expedia (reprenant la fiche officielle du groupe Accor/Barrière) : un supplément de 35€ par animal et par nuit, sans aucune mention de limite de poids. Les deux versions ne sont pas recoupées entre elles.</p>
+      <div class="callout">Le conseil de Coco : deux versions circulent sur le tarif et une éventuelle limite de poids — confirme ces conditions directement auprès de l'hôtel avant de réserver.</div>
       <p>Aucun numéro de téléphone fiable n'a été retrouvé pour cet établissement.</p>
 
       <h2>Aux alentours</h2>
@@ -61,8 +61,7 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de réserver</h3>
         <ul>
-          <li><svg><use href="#i-leash"/></svg> Max 10kg, 1 animal par chambre, 20€/nuit.</li>
-          <li><svg><use href="#i-alert"/></svg> Source unique, non recoupée — à reconfirmer.</li>
+          <li><svg><use href="#i-alert"/></svg> 20€/nuit + max 10kg (source initiale) ou 35€/nuit sans limite de poids (Expedia) — non tranché.</li>
         </ul>
       </div>
       <div class="sidebar-card">
