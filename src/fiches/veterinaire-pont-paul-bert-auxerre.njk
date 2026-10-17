@@ -35,9 +35,12 @@ infoItems:
   - icon: "i-clock"
     label: "Horaires"
     value: "Lun-ven 8h30-12h / 14h-18h30 ; sam 8h30-12h / 14h-17h30 ; dim 11h-12h / 18h-19h"
+  - icon: "i-alert"
+    label: "Alerte SIRENE — structure juridique historique cessée"
+    value: "Le registre SIRENE de l'INSEE indique que la structure juridique historique (SCP, SIREN 379 068 703) est « entreprise cessée depuis le 01/12/2023 ». Des annuaires tiers (Custplace, Justacoté) continuent toutefois de lister une clinique active à cette même adresse, avec une équipe de 4 vétérinaires et 5 ASV, et une mention « IVC Evidensia » sur l'une des fiches — possible rachat/changement de structure juridique, non confirmé indépendamment. Nous ne supprimons pas cette fiche mais recommandons un appel préalable impératif, notamment pour le créneau du dimanche."
   - icon: "i-check"
     label: "Confiance"
-    value: "Moyenne — coordonnées et horaires recoupés sur plusieurs sources, sans confirmation directe auprès de l'établissement."
+    value: "Moyenne — coordonnées et horaires recoupés sur plusieurs sources, sans confirmation directe auprès de l'établissement. Un signal SIRENE (voir ci-dessus) justifie un appel préalable avant de s'y fier."
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -45,7 +48,7 @@ bodyHtml: |
       <p>La Clinique Vétérinaire du Pont Paul Bert est installée près du centre d'Auxerre, à deux pas de l'Yonne et du quartier qui porte le nom du pont. Son créneau du dimanche, même réduit, la distingue d'une partie des cabinets du secteur qui ferment complètement le week-end.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Les horaires relevés indiquent une ouverture en semaine le matin et l'après-midi, un samedi également coupé en deux créneaux, et un dimanche limité à deux courtes plages, en fin de matinée puis en soirée. Ces informations proviennent de sources concordantes mais n'ont pas été vérifiées directement auprès de la clinique : un appel avant de se déplacer, notamment le dimanche, reste la meilleure option.</p>
+      <p>Les horaires relevés indiquent une ouverture en semaine le matin et l'après-midi, un samedi également coupé en deux créneaux, et un dimanche limité à deux courtes plages, en fin de matinée puis en soirée. Ces informations proviennent de sources concordantes mais n'ont pas été vérifiées directement auprès de la clinique : un appel avant de se déplacer, notamment le dimanche, reste la meilleure option. Un signal mérite d'être pris au sérieux : le registre SIRENE de l'INSEE indique que la structure juridique historique de cet établissement (une SCP de vétérinaires) est enregistrée comme « entreprise cessée depuis le 01/12/2023 ». Des annuaires tiers continuent pourtant de lister une clinique active à cette même adresse, avec une équipe de 4 vétérinaires et 5 ASV, et l'un d'eux mentionne même le réseau « IVC Evidensia » — ce qui suggère un rachat ou un changement de structure juridique plutôt qu'une fermeture réelle du lieu, sans que nous ayons pu le confirmer de façon indépendante. Nous ne supprimons pas cette fiche pour autant, mais un appel avant de te déplacer est d'autant plus recommandé, en particulier pour le créneau du dimanche.</p>
       <div class="callout">Le conseil de Coco : si tu comptes sur le créneau du dimanche, appelle le 03 86 41 81 05 avant de partir pour confirmer que la clinique reçoit bien ce jour-là.</div>
 
       <h2>Aux alentours</h2>
@@ -56,6 +59,7 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
+          <li><svg><use href="#i-alert"/></svg> Structure juridique historique "cessée" selon le SIRENE (2023) ; activité apparente maintenue selon des annuaires tiers — vérifier impérativement par téléphone.</li>
           <li><svg><use href="#i-clock"/></svg> Horaires du dimanche limités à deux créneaux — à confirmer par téléphone.</li>
           <li><svg><use href="#i-check"/></svg> Coordonnées et horaires : confiance moyenne.</li>
         </ul>
