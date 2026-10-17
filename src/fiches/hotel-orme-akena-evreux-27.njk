@@ -1,8 +1,8 @@
 ---
 permalink: "{{ permalinkPath }}"
 permalinkPath: fiche-hotel-orme-akena-evreux-27.html
-title: "Hôtel de l'Orme (Akena), Évreux — chien toutes tailles, 10€/chambre/nuit"
-description: "Hôtel de l'Orme, hôtel Akena à Évreux (Eure) : animaux de toute taille acceptés, supplément de 10€ par chambre et par nuit."
+title: "Hôtel de l'Orme (Akena), Évreux — chien toutes tailles, contradiction sur le tarif (5€ ou 10€)"
+description: "Hôtel de l'Orme, hôtel Akena à Évreux (Eure) : animaux de toute taille acceptés. Contradiction à signaler sur le tarif : 5€ selon le site officiel hotel-de-lorme.fr, 10€ par chambre et par nuit selon Expedia et la fiche actuelle. Animaux d'assistance exemptés de frais."
 ogImage: "https://images.unsplash.com/photo-1661258378644-6702795bcfa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80"
 heroImage: "https://images.unsplash.com/photo-1661258378644-6702795bcfa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80"
 tag: "Hôtel"
@@ -19,7 +19,7 @@ slug: "hotel-orme-akena-evreux-27"
 layout: fiche.njk
 cardTag: "Évreux"
 cardTitle: "Hôtel de l'Orme (Akena)"
-cardTeaser: "Hôtel économique Akena à Évreux : animaux de toute taille acceptés, 10€ par chambre et par nuit."
+cardTeaser: "Hôtel économique Akena à Évreux : animaux de toute taille acceptés — contradiction sur le tarif (5€ selon le site officiel, 10€ selon Expedia)."
 cardPictos:
   - "i-paw"
   - "i-euro"
@@ -36,12 +36,15 @@ infoItems:
   - icon: "i-paw"
     label: "Animaux"
     value: "Acceptés, toutes tailles"
-  - icon: "i-euro"
-    label: "Supplément"
-    value: "10€ par chambre et par nuit"
+  - icon: "i-alert"
+    label: "Supplément — contradiction"
+    value: "Le site officiel hotel-de-lorme.fr indique \"Pets allowed (additional charge of €5)\", alors que la fiche actuelle et Expedia indiquent 10€ par chambre et par nuit — écart notable entre source officielle et source tierce, non tranché"
+  - icon: "i-paw"
+    label: "Animaux d'assistance"
+    value: "Exemptés de frais (reservationdesk.com/Expedia)"
   - icon: "i-check"
     label: "Confiance"
-    value: "Moyenne"
+    value: "Moyenne sur l'acceptation du chien, faible sur le montant exact (deux sources en désaccord)"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -49,8 +52,8 @@ bodyHtml: |
       <p>L'Hôtel de l'Orme fait partie du réseau Akena, une chaîne d'hôtels économiques et fonctionnels pensés pour les étapes courtes. Situé à Évreux, préfecture de l'Eure, il propose un hébergement sans superflu, pratique pour une nuit de passage ou un déplacement professionnel.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Les animaux de toute taille sont acceptés dans cet hôtel, ce qui le distingue de certains établissements limitant l'accueil aux petits chiens. Le supplément annoncé est de 10€, mais calculé par chambre et par nuit, et non par animal — un détail important si tu voyages avec plusieurs animaux, puisque le tarif ne devrait alors pas être multiplié. Cette information provient d'une source unique, ce qui nous conduit à retenir une confiance moyenne sur ce tarif.</p>
-      <div class="callout">Le conseil de Coco : le supplément de 10€ s'applique par chambre et non par animal selon notre source — un avantage si tu voyages avec plusieurs animaux, mais vérifie ce point lors de ta réservation car l'information n'a pas été recoupée avec une deuxième source.</div>
+      <p>Les animaux de toute taille sont acceptés dans cet hôtel, ce qui le distingue de certains établissements limitant l'accueil aux petits chiens. Une recherche plus approfondie révèle toutefois une contradiction sur le montant exact du supplément : le site officiel de l'hôtel, hotel-de-lorme.fr, indique « Pets allowed (additional charge of €5) », soit 5€ — alors qu'Expedia (et notre information précédente) indiquait 10€ par chambre et par nuit. Un écart notable entre une source officielle et une source tierce, que nous préférons te signaler sans trancher arbitrairement. Bonne nouvelle en revanche : les animaux d'assistance sont exemptés de ces frais, quel que soit le montant retenu.</p>
+      <div class="callout">Le conseil de Coco : le montant exact du supplément varie selon la source — 5€ sur le site officiel de l'hôtel, 10€ sur Expedia. Confirme le tarif réel directement à la réservation ou à l'arrivée, cette divergence n'étant pas tranchée à ce stade.</div>
 
       <h2>Aux alentours</h2>
       <p>Le centre d'Évreux et ses berges de l'Iton sont accessibles en voiture depuis l'hôtel pour une balade avec son animal après l'étape.</p>
@@ -61,7 +64,8 @@ bodyHtml: |
         <h3>À vérifier avant de réserver</h3>
         <ul>
           <li><svg><use href="#i-paw"/></svg> Animaux de toute taille acceptés.</li>
-          <li><svg><use href="#i-euro"/></svg> Supplément : 10€ par chambre et par nuit (et non par animal).</li>
+          <li><svg><use href="#i-alert"/></svg> Supplément : 5€ selon le site officiel, 10€ selon Expedia — contradiction non tranchée.</li>
+          <li><svg><use href="#i-paw"/></svg> Animaux d'assistance exemptés de frais.</li>
         </ul>
       </div>
       <div class="sidebar-card">
