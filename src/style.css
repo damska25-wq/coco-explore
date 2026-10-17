@@ -246,7 +246,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
   box-shadow: 0 20px 44px rgba(15,25,20,0.4);
 }
 
-.hero-photo img { aspect-ratio: 4/5; object-fit: cover; }
+.hero-photo img { width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; }
 
 .hero-photo figcaption {
   position: absolute;
