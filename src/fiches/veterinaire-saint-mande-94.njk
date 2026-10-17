@@ -38,9 +38,12 @@ infoItems:
   - icon: "i-clock"
     label: "Horaires"
     value: "Lundi-mercredi 9h-13h et 14h-19h, jeudi-vendredi 9h-13h et 14h-18h, fermé samedi et dimanche"
+  - icon: "i-alert"
+    label: "Divergence sur l'ouverture du samedi, non tranchée"
+    value: "Un agrégateur indépendant (wheree.com) confirme exactement les horaires ci-dessus, samedi fermé compris. Une autre source (openalfa.fr, données OpenStreetMap) indique au contraire une ouverture le samedi de 9h à 13h et de 14h à 18h. Signalé sans trancher — à confirmer par téléphone si tu comptes y aller un samedi"
   - icon: "i-check"
     label: "Confiance"
-    value: "Moyenne — adresse, téléphone et horaires trouvés sur les sources consultées"
+    value: "Haute sur les horaires en semaine, confirmés par un agrégateur indépendant (wheree.com) en plus des sources déjà citées ; une divergence subsiste sur l'ouverture du samedi, signalée sans être tranchée (voir ci-dessus)"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -49,7 +52,7 @@ bodyHtml: |
       <p>Le Val-de-Marne compte déjà plusieurs adresses de ce même réseau référencées sur Coco Explore : à Alfortville, au Château de Vincennes et rue de Paris à Charenton-le-Pont. La clinique de Saint-Mandé est une quatrième adresse du réseau Sevetys dans le département, mais il s'agit d'un établissement bien distinct des trois autres — commune, rue et numéro de téléphone différents.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Les horaires trouvés sont réguliers mais coupés à la mi-journée : du lundi au mercredi de 9h à 13h puis de 14h à 19h, et du jeudi au vendredi de 9h à 13h puis de 14h à 18h. La clinique est fermée le samedi et le dimanche.</p>
+      <p>Les horaires trouvés sont réguliers mais coupés à la mi-journée : du lundi au mercredi de 9h à 13h puis de 14h à 19h, et du jeudi au vendredi de 9h à 13h puis de 14h à 18h. La clinique est annoncée fermée le samedi et le dimanche par la plupart des sources, dont un agrégateur indépendant (wheree.com) qui confirme exactement ces horaires. Une autre source (openalfa.fr, données cartographiques OpenStreetMap) indique pourtant une ouverture le samedi de 9h à 13h puis de 14h à 18h — une divergence réelle entre deux sources tierces, signalée ici sans être tranchée : mieux vaut confirmer par téléphone si tu comptes y aller un samedi.</p>
       <div class="callout">Le conseil de Coco : les horaires changent légèrement entre le début et la fin de la semaine (fermeture à 19h ou à 18h selon le jour) — mieux vaut appeler le 01 43 28 76 86 avant de s'y rendre en fin de journée.</div>
 
       <h2>Aux alentours</h2>
@@ -60,7 +63,8 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse, téléphone et horaires trouvés — confiance moyenne.</li>
+          <li><svg><use href="#i-check"/></svg> Adresse, téléphone et horaires en semaine confirmés, dont un agrégateur indépendant.</li>
+          <li><svg><use href="#i-alert"/></svg> Samedi : la plupart des sources disent "fermé", une base cartographique dit "ouvert" — divergence non tranchée.</li>
           <li><svg><use href="#i-paw"/></svg> Réseau Sevetys — 4e adresse du réseau référencée dans le 94, établissement distinct des trois autres.</li>
           <li><svg><use href="#i-phone"/></svg> Appelle le 01 43 28 76 86 pour confirmer un créneau, les horaires changeant selon le jour.</li>
         </ul>
