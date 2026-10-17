@@ -13,8 +13,8 @@ eleventyExcludeFromCollections: true
 {%- for fiche in collections.fiches | latest(30) %}
   <item>
     <title>{{ fiche.data.cardTitle }} — {{ fiche.data.cardTag }}</title>
-    <link>https://cocoexplore.com/{{ fiche.data.permalinkPath }}</link>
-    <guid>https://cocoexplore.com/{{ fiche.data.permalinkPath }}</guid>
+    <link>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</link>
+    <guid>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</guid>
     <description>{{ fiche.data.cardTeaser }}</description>
     <pubDate>{{ fiche.inputPath | lastmod | rfc822 }}</pubDate>
   </item>
