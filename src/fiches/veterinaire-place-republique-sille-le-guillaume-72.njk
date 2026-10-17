@@ -35,9 +35,12 @@ infoItems:
   - icon: "i-info"
     label: "Nom de l'établissement"
     value: "Non confirmé dans nos sources — nous utilisons ici un intitulé générique fondé sur l'adresse, faute d'avoir pu identifier le nom exact du praticien ou de la structure"
+  - icon: "i-alert"
+    label: "Incohérence de source — non tranchée"
+    value: "Le même annuaire tiers (veterinby.com) qui liste un cabinet générique à cette adresse associe par ailleurs cette même adresse, de façon contradictoire, à la fiche « Péchabrier Claude » (praticien référencé à une autre adresse de la commune, rue de la Moitrie). Il pourrait s'agir d'une confusion de la source entre deux adresses de Sillé-le-Guillaume, ou d'un lien réel entre les deux établissements — rien ne permet de le confirmer avec certitude."
   - icon: "i-check"
     label: "Confiance"
-    value: "Faible — seule l'adresse a pu être trouvée de façon cohérente ; ni le nom exact de l'établissement, ni le praticien, ni un numéro de téléphone n'ont pu être confirmés lors de nos recherches"
+    value: "Faible — seule l'adresse a pu être trouvée de façon cohérente ; une incohérence relevée entre sources tierces (voir ci-dessus) n'a pas pu être résolue"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -45,8 +48,8 @@ bodyHtml: |
       <p>Un cabinet vétérinaire est signalé 15 place de la République, à Sillé-le-Guillaume, petite ville au nord de la Sarthe connue pour sa forêt domaniale. Important : nous n'avons pas pu identifier avec certitude le nom du praticien ou de la structure exploitant ce cabinet — l'intitulé utilisé ici est générique et fondé uniquement sur l'adresse, à prendre avec cette réserve.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Au-delà du nom non confirmé de l'établissement, le numéro de téléphone de ce cabinet n'a pas non plus pu être retrouvé lors de nos recherches, et aucune information fiable n'a été identifiée sur les horaires. Cette fiche ne présume donc rien sur ces points plutôt que d'avancer une information non vérifiée.</p>
-      <div class="callout">Le conseil de Coco : le nom de cet établissement n'étant pas confirmé, vérifie bien sur place ou par une recherche locale à jour à qui tu t'adresses avant de prendre rendez-vous.</div>
+      <p>Au-delà du nom non confirmé de l'établissement, une incohérence a été relevée dans l'un de nos annuaires tiers, qui associe par ailleurs cette adresse de façon contradictoire à un autre praticien référencé à une adresse différente de la commune (voir la fiche du Dr Pechabrier Claude) — possible confusion de la source, ou lien réel non confirmé. Le numéro de téléphone de ce cabinet n'a pas non plus pu être retrouvé.</p>
+      <div class="callout">Le conseil de Coco : le nom de cet établissement n'étant pas confirmé, et une incohérence de source ayant été relevée, vérifie bien sur place ou par téléphone à qui tu t'adresses avant de prendre rendez-vous.</div>
 
       <h2>Aux alentours</h2>
       <p>La forêt de Sillé et son étang du Défais, tout proches, offrent de nombreux sentiers ombragés pour une belle balade avec ton chien avant ou après la visite.</p>
@@ -57,7 +60,7 @@ bodyHtml: |
         <h3>À vérifier avant de venir</h3>
         <ul>
           <li><svg><use href="#i-info"/></svg> Nom de l'établissement non confirmé — intitulé générique fondé sur l'adresse.</li>
-          <li><svg><use href="#i-phone"/></svg> Téléphone non trouvé — à rechercher localement avant de s'y rendre.</li>
+          <li><svg><use href="#i-alert"/></svg> Incohérence relevée dans un annuaire tiers avec la fiche du Dr Pechabrier Claude — signalée sans trancher.</li>
         </ul>
       </div>
       <div class="sidebar-card">
