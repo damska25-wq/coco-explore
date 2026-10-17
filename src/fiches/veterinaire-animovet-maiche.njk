@@ -35,15 +35,18 @@ infoItems:
   - icon: "i-clock"
     label: "Horaires"
     value: "Lun-ven 8h30-12h / 14h-19h ; samedi 8h30-15h (journée continue)"
-  - icon: "i-alert"
-    label: "Contradiction de nom"
-    value: "Plusieurs annuaires listent ce cabinet sous 3 noms différents (Animovet / Dr Sandra Bourdet / Dr Charline Jobin) pour la même adresse et le même téléphone — probablement une succession de praticiens, non tranchée."
+  - icon: "i-info"
+    label: "Équipe"
+    value: "Cabinet du réseau Cliniques Vétérinaires Animovet (2 sites : Maîche et Le Russey) — équipe confirmée via animovet.fr : Brendan Bourdet, Sébastien Bineau, Camille Prugnard, Marie Allaert, Charline Jobin. La contradiction de nom précédemment signalée (Animovet / Dr Sandra Bourdet / Dr Charline Jobin) semble résolue : il s'agit bien d'un seul cabinet Animovet, pas de 3 structures concurrentes. Le site officiel ne connaît qu'un « Brendan Bourdet », pas de « Sandra Bourdet » — possible erreur de prénom dans une source tierce antérieure, signalé sans trancher totalement."
   - icon: "i-alert"
     label: "Urgences 24h/24"
-    value: "Une synthèse de recherche affirme que les appels sont disponibles 24h/24 et 7j/7 à ce numéro, mais cette affirmation ne provient pas clairement d'une déclaration officielle explicite ni d'avis clients corroborants : revendication non confirmée indépendamment, probablement l'astreinte tournante légale entre vétérinaires du secteur."
+    value: "Citation exacte retrouvée sur le site officiel animovet.fr : « En cas d'urgence, vous pouvez nous joindre 24h/24 et 7j/7 aux numéros habituels de nos cliniques. La garde est assurée directement par nos vétérinaires. » C'est une déclaration officielle explicite, mais qui reste une source unique (le site de l'établissement lui-même) : auto-déclarée, non confirmée indépendamment."
+  - icon: "i-info"
+    label: "Coquille possible"
+    value: "Le site officiel lui-même écrit « 25210 MAICHE » (code postal du Russey, juste en dessous sur la même page) au lieu du vrai code postal de Maîche, 25120 — probable coquille du site, signalée sans trancher."
   - icon: "i-check"
     label: "Confiance"
-    value: "Moyenne."
+    value: "Moyenne-Haute pour l'identité du cabinet (résolue via le site officiel) ; faible sur l'urgence 24h/24 au sens d'une confirmation indépendante."
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -51,9 +54,9 @@ bodyHtml: |
       <p>Le Cabinet Vétérinaire Animovet se trouve rue du Gymnase à Maîche, dans le Haut-Doubs, avec une journée continue le samedi, pratique pour les actifs.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p><strong>Contradiction de nom non tranchée :</strong> plusieurs annuaires référencent cette même adresse et ce même téléphone sous trois noms différents — "Animovet", "Dr Sandra Bourdet" et "Dr Charline Jobin". Il s'agit probablement d'une succession de praticiens au fil du temps, mais nous ne pouvons pas le confirmer avec certitude.</p>
-      <p><strong>Sur l'urgence 24h/24 :</strong> une synthèse de recherche affirme que ce numéro serait joignable 24h/24 et 7j/7, mais cette information ne s'appuie ni sur une déclaration officielle claire, ni sur des avis clients qui la corroboreraient. Nous la présentons donc comme une revendication non confirmée indépendamment, probablement liée à l'astreinte tournante légale organisée entre vétérinaires du secteur plutôt qu'à un service dédié de ce seul cabinet.</p>
-      <div class="callout">Le conseil de Coco : demande au téléphone qui te répond (Animovet, Dr Bourdet ou Dr Jobin) pour t'assurer que tu parles bien au bon praticien avant de prendre rendez-vous.</div>
+      <p><strong>Contradiction de nom résolue :</strong> la précédente mention de trois noms concurrents (Animovet / Dr Sandra Bourdet / Dr Charline Jobin) pour la même adresse semble en réalité désigner un seul cabinet, le réseau Cliniques Vétérinaires Animovet (deux sites : Maîche et Le Russey), confirmé via son site officiel animovet.fr. L'équipe actuelle y est listée : Brendan Bourdet, Sébastien Bineau, Camille Prugnard, Marie Allaert et Charline Jobin. Seule nuance : le site ne connaît qu'un « Brendan Bourdet », pas de « Sandra Bourdet » — possible erreur de prénom dans une source tierce antérieure, que nous signalons sans trancher totalement.</p>
+      <p><strong>Sur l'urgence 24h/24 :</strong> le site officiel affirme explicitement : « En cas d'urgence, vous pouvez nous joindre 24h/24 et 7j/7 aux numéros habituels de nos cliniques. La garde est assurée directement par nos vétérinaires. » C'est une déclaration officielle explicite, mais elle reste une source unique — le site de l'établissement lui-même — donc toujours présentée comme auto-déclarée, non confirmée indépendamment.</p>
+      <div class="callout">Le conseil de Coco : le cabinet fait partie du réseau Animovet, avec un second site au Russey — en cas de doute sur qui décroche, demande simplement confirmation du nom du cabinet.</div>
 
       <h2>Aux alentours</h2>
       <p>Maîche, sur le plateau du Haut-Doubs, est un bon point de départ pour des balades avec son chien dans la campagne environnante.</p>
@@ -63,8 +66,8 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-alert"/></svg> Trois noms différents pour la même adresse — identité du praticien actuel non tranchée.</li>
-          <li><svg><use href="#i-alert"/></svg> Urgence 24h/24 non confirmée indépendamment.</li>
+          <li><svg><use href="#i-info"/></svg> Contradiction de nom résolue : un seul cabinet du réseau Animovet. Équipe : Bourdet, Bineau, Prugnard, Allaert, Jobin.</li>
+          <li><svg><use href="#i-alert"/></svg> Urgence 24h/24 affirmée explicitement par le site officiel — auto-déclarée, non confirmée indépendamment.</li>
         </ul>
       </div>
       <div class="sidebar-card">
