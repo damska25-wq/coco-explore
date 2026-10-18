@@ -30,15 +30,12 @@ infoItems:
   - icon: "i-pin"
     label: "Localisation"
     value: "Parc des Perrières, 19100 Brive-la-Gaillarde"
-  - icon: "i-trail"
-    label: "Parcours"
-    value: "17 hectares, 3,3 km de sentiers de randonnée, parcours d'orientation à 41 balises"
-  - icon: "i-leash"
-    label: "Chien"
-    value: "Chien tenu en laisse"
-  - icon: "i-check"
-    label: "Confiance"
-    value: "Haute — confirmé par la page officielle brive-tourisme.com/fr/idees-sejours/avec-chien/activites-avec-son-chien (\"Activités à faire avec son chien\"), vérifié par fetch direct : \"Chiens tenus en laisse\" au Parc des Perrières, sans mention de tolérance en liberté"
+  - icon: "i-alert"
+    label: "Parcours — superficie contradictoire"
+    value: "Présenté ici comme 17 hectares (brive-tourisme.com), 3,3 km de sentiers de randonnée, parcours d'orientation à 41 balises. Une autre source (guide-tourisme-france.com) donne plutôt 13 hectares — écart mineur, présenté sans trancher"
+  - icon: "i-alert"
+    label: "Chien — laisse contestée"
+    value: "Présenté jusqu'ici comme laisse obligatoire sans aucune tolérance (confiance haute, brive-tourisme.com, vérifié par fetch direct). Mais emmenetonchien.com (avis visiteur daté du 16/02/2023) affirme l'inverse : « la tenue en laisse n'est pas obligatoire » dans ce parc. Deux sources se contredisent frontalement : nous les présentons sans trancher"
   - icon: "i-drop"
     label: "Équipements chien"
     value: "Points d'eau et distributeurs de sacs à déjections signalés dans le parc"
@@ -49,7 +46,7 @@ bodyHtml: |
       <p>Avec ses 17 hectares, le Parc des Perrières est le plus grand espace vert de Brive-la-Gaillarde, à deux pas du centre-ville. Entre grands espaces herbeux, aire de pique-nique, terrains de sport, parcours d'orientation et disc-golf, c'est un lieu de balade complet, aussi bien pour une sortie tranquille que pour une session de jogging.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Le parc dispose de points d'eau et de distributeurs de sacs à déjections destinés aux chiens, signe d'un site pensé pour eux. La règle à retenir est claire : la page officielle "Activités à faire avec son chien" de brive-tourisme.com, l'office de tourisme de Brive Agglomération, confirme que les chiens sont tenus en laisse au Parc des Perrières, sans mentionner la moindre tolérance pour une liberté même partielle sur les espaces dégagés. Cette information a été vérifiée par fetch direct de la page, ce qui donne une confiance haute. Le chien reste donc en laisse sur l'ensemble du parc, y compris sur les grands espaces herbeux.</p>
+      <p>Le parc dispose de points d'eau et de distributeurs de sacs à déjections destinés aux chiens, signe d'un site pensé pour eux. La page officielle "Activités à faire avec son chien" de brive-tourisme.com, l'office de tourisme de Brive Agglomération, affirme que les chiens sont tenus en laisse au Parc des Perrières, sans mentionner la moindre tolérance pour une liberté même partielle sur les espaces dégagés — une information vérifiée par fetch direct, confiance haute. Une recherche complémentaire a toutefois fait apparaître une contradiction directe : un avis visiteur sur emmenetonchien.com (daté du 16 février 2023) affirme au contraire que « la tenue en laisse n'est pas obligatoire » dans ce parc. Deux sources se contredisent frontalement sur ce point précis, et nous ne tranchons pas : par prudence, garde ton chien en laisse comme le recommande la source officielle, tout en sachant que cette règle est contestée par au moins un autre retour de terrain. Un écart mineur est aussi apparu sur la superficie du parc : 17 hectares selon brive-tourisme.com (repris ici), mais 13 hectares selon guide-tourisme-france.com.</p>
       <div class="callout">Le conseil de Coco : profite des 3,3 km de sentiers et du parcours d'orientation pour une balade complète, en laisse sur tout le parc — aucune zone n'autorise la liberté, même sur les grands espaces dégagés.</div>
 
       <h2>Aux alentours</h2>
@@ -61,7 +58,8 @@ bodyHtml: |
         <h3>À vérifier avant de venir</h3>
         <ul>
           <li><svg><use href="#i-drop"/></svg> Points d'eau et distributeurs de sacs à déjections dans le parc.</li>
-          <li><svg><use href="#i-leash"/></svg> Chien tenu en laisse sur tout le parc — confirmé par brive-tourisme.com (confiance haute), aucune tolérance en liberté.</li>
+          <li><svg><use href="#i-alert"/></svg> Contradiction : brive-tourisme.com dit laisse obligatoire sans tolérance, mais un avis emmenetonchien.com (2023) dit "la laisse n'est pas obligatoire" — non tranché, laisse recommandée par prudence.</li>
+          <li><svg><use href="#i-info"/></svg> Superficie : 17 ha (brive-tourisme.com) vs 13 ha (guide-tourisme-france.com).</li>
           <li><svg><use href="#i-trail"/></svg> 3,3 km de sentiers, parcours d'orientation à 41 balises.</li>
         </ul>
       </div>
