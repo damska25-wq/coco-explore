@@ -29,6 +29,10 @@ function buildGitDateMap() {
 }
 
 const gitDateMap = buildGitDateMap();
+
+// "en Gironde", "dans le Var", "dans l'Indre", "à Paris"... repris du H1 SEO
+// de chaque département (src/_data/departements.js).
+const deptEnNom = (dep) => dep.seoH1.replace(/^Où aller avec son chien /, "");
 function gitLastModified(filePath) {
   return gitDateMap.get(filePath.replace(/^\.\//, "")) || null;
 }
@@ -85,8 +89,7 @@ export default function (eleventyConfig) {
           ...dep,
           cat: cp.cat,
           cp,
-          // "en Gironde", "dans le Var", "dans l'Indre"... repris du H1 SEO.
-          enNom: dep.seoH1.replace(/^Où aller avec son chien /, ""),
+          enNom: deptEnNom(dep),
           fiches: fiches.filter((f) => (f.data.departement || []).includes(dep.id)),
         }))
         .filter((dep) => dep.fiches.length > 0)
@@ -203,12 +206,13 @@ export default function (eleventyConfig) {
     return dep ? dep.slug : "var";
   });
 
-  // Nom du département (pour le lien "Toutes les adresses du <nom>" sur
-  // chaque fiche, maillage interne fiche → page département).
-  eleventyConfig.addFilter("deptName", (deptIds) => {
+  // Département précédé de sa préposition ("en Gironde", "dans le Var",
+  // "dans l'Indre", "à Paris"...), reprise du H1 SEO : évite les "du
+  // Guadeloupe" d'un article ajouté à la main devant le nom.
+  eleventyConfig.addFilter("deptEnNom", (deptIds) => {
     const id = Array.isArray(deptIds) ? deptIds[0] : deptIds;
-    const dep = departements.find((d) => d.id === id);
-    return dep ? dep.nom : "Var";
+    const dep = departements.find((d) => d.id === id) || departements.find((d) => d.id === "83");
+    return deptEnNom(dep);
   });
 
   // Badge "Toute l'année" / "Saisonnier" sur les vignettes de plages, dérivé
