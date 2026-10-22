@@ -126,6 +126,15 @@ Un connecteur MCP **Parallel Search** (gratuit, sans compte ni clé API — "Fre
 
 **À faire dans les prochains rounds de recherche** : donner aux agents de recherche la consigne explicite d'utiliser `mcp__Parallel_Search__web_fetch` (avec `objective` et éventuellement `search_queries` de l'appel `web_search` précédent) pour lire en entier les pages de ces sites précédemment bloqués, plutôt que de se limiter aux extraits WebSearch. Cela devrait réduire le nombre de fiches "source non consultée directement" et permettre de recouper plus fiablement tarifs/conditions chien/téléphones. Si l'outil n'apparaît pas dans une session (connecteur pas encore chargé), le signaler plutôt que de supposer qu'il est indisponible — les connecteurs ne sont chargés qu'au démarrage d'une session.
 
+## Avis visiteurs — modération (octobre 2026)
+
+Les avis déposés sur les fiches (formulaire ouvert, photo possible) passent par `netlify/functions/avis.mjs` (stockage Netlify Blobs `avis-coco-explore`, une clé par `avisSlug`).
+
+- **Modération avant publication** depuis le 22/10/2026 : tout nouvel avis est `status: "pending"` et n'apparaît sur la fiche qu'après validation. Les avis antérieurs (sans `status`) restent publiés.
+- **Page d'admin** : `/admin-avis` (`src/admin-avis.njk`, noindex, hors sitemap) — onglets En attente / Publiés, boutons Valider / Supprimer. Protégée par la variable Netlify **`ADMIN_KEY`** (secret, choisi par l'utilisateur, jamais à écrire dans le dépôt ni dans une conversation).
+- **Notification** : à chaque nouvel avis, push envoyé sur ntfy.sh via la variable **`NTFY_TOPIC`** ; l'utilisateur est abonné au canal dans l'app ntfy sur son iPhone.
+- Une variable d'environnement modifiée sur Netlify n'est prise en compte qu'au déploiement suivant.
+
 ## Échanges de liens
 
 Les fiches créées en échange d'un lien (sans paiement) sont suivies dans `ECHANGES-LIENS.md` (racine, non publié). Pas de badge public : seule une ligne discrète `<p class="fiche-collab">Fiche réalisée en collaboration avec …</p>` en bas de fiche. Mettre à jour le tableau à chaque nouvelle collaboration ou lien reçu.
