@@ -10,7 +10,6 @@ eleventyExcludeFromCollections: true
     <priority>1.0</priority>
   </url>
 {%- for fiche in collections.fiches %}
-{%- if fiche.data.departement | indexable %}
   <url>
     <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</loc>
     <lastmod>{{ fiche.inputPath | lastmod }}</lastmod>
@@ -21,16 +20,13 @@ eleventyExcludeFromCollections: true
     </image:image>
     {%- endif %}
   </url>
-{%- endif %}
 {%- endfor %}
 {%- for dep in departements %}
-{%- if dep.id | indexable %}
   <url>
     <loc>https://cocoexplore.com/departement-{{ dep.slug }}</loc>
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
     <priority>0.7</priority>
   </url>
-{%- endif %}
 {%- endfor %}
 {%- for p in ["a-propos", "contact", "faq", "plan-du-site", "aires-autoroute-chien", "conseils-de-coco", "nouveautes", "devenir-partenaire", "region-provence-alpes-cote-dazur", "mentions-legales", "politique-confidentialite", "conditions-utilisation"] %}
   <url>
@@ -55,12 +51,10 @@ eleventyExcludeFromCollections: true
     <priority>0.6</priority>
   </url>
 {%- for fiche in collections.fichesEn %}
-{%- if fiche.data.departement | indexable %}
   <url>
     <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</loc>
     <lastmod>{{ fiche.inputPath | lastmod }}</lastmod>
     <priority>0.4</priority>
   </url>
-{%- endif %}
 {%- endfor %}
 </urlset>

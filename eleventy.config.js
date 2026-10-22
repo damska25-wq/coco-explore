@@ -264,20 +264,6 @@ export default function (eleventyConfig) {
   // Netlify les sert aussi sans extension — voir _redirects.njk pour les 301).
   eleventyConfig.addFilter("cleanUrl", (path) => (path || "").replace(/\.html$/, ""));
 
-  // Périmètre d'indexation (campagne Search Console, novembre 2026) : on
-  // concentre l'indexation Google sur le Var puis le reste de PACA plutôt que
-  // sur les 101 départements. "indexable" prend soit un tableau de codes
-  // départements (champ `departement` d'une fiche), soit un code unique
-  // (`dep.id` d'une page département) ; les pages sans aucun département
-  // (accueil, pages statiques) restent indexables par défaut.
-  const PACA_CODES = ["83", "06", "13", "84", "04", "05"];
-  eleventyConfig.addGlobalData("pacaCodes", PACA_CODES);
-  eleventyConfig.addFilter("indexable", (deps) => {
-    if (!deps) return true;
-    const arr = Array.isArray(deps) ? deps : [deps];
-    return arr.some((d) => PACA_CODES.includes(d));
-  });
-
   // Badge "Urgences 24h/24" sur les vignettes de vétérinaires, dérivé du champ
   // "Urgences" des infoItems déjà présent sur la fiche — même principe que
   // accessBadge : on ne réaffirme jamais une info qui ne serait pas déjà
