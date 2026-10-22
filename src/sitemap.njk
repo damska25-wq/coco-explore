@@ -28,14 +28,16 @@ eleventyExcludeFromCollections: true
     <priority>0.7</priority>
   </url>
 {%- endfor %}
+{%- for cp in categoryPages %}
   <url>
-    <loc>https://cocoexplore.com/dogwash-chien</loc>
+    <loc>https://cocoexplore.com/{{ cp.slug }}</loc>
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
     <priority>0.7</priority>
   </url>
-{%- for dep in collections.dogwashDepts %}
+{%- endfor %}
+{%- for dep in collections.categoryDeptPages %}
   <url>
-    <loc>https://cocoexplore.com/dogwash-chien-{{ dep.slug }}</loc>
+    <loc>https://cocoexplore.com/{{ dep.cp.slug }}-{{ dep.slug }}</loc>
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
     <priority>0.6</priority>
   </url>

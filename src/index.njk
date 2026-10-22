@@ -140,8 +140,8 @@ extraScripts: |
       </a>
       {%- endfor %}
     </div>
-    {%- if section.id == "dogwash" %}
-    <p class="cat-see-more"><a href="/dogwash-chien">Toutes les stations dogwash, département par département →</a></p>
+    {%- if section.id | categoryPage %}
+    <p class="cat-see-more"><a href="/{{ (section.id | categoryPage).slug }}">{{ (section.id | categoryPage).linkNat }}, département par département →</a></p>
     {%- else %}
     <p class="cat-see-more"><a href="#region-accordion">Voir plus : {{ section.eyebrow | safe }} par département →</a></p>
     {%- endif %}

@@ -1,0 +1,80 @@
+---
+pagination:
+  data: categoryPages
+  size: 1
+  alias: cp
+permalink: "{{ cp.slug }}.html"
+layout: base.njk
+eleventyComputed:
+  title: "{{ cp.titleNat }}"
+  description: "{{ cp.descNat }}"
+  permalinkPath: "{{ cp.slug }}.html"
+extraHead: |
+  <style>
+    .cat-page-intro { padding-top: 48px; padding-bottom: 12px; }
+    .cat-page-intro p { max-width: 72ch; }
+    .cat-page-intro h2 { font-size: 1.3rem; color: var(--heading); margin-top: 1.6em; }
+    .cat-page-jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; padding: 0; list-style: none; }
+    .cat-page-jump a { display: inline-block; padding: 6px 12px; border: 1px solid rgba(var(--ink),0.15); border-radius: 999px; font-size: 0.9rem; text-decoration: none; color: var(--encre); }
+    .cat-page-jump a:hover { border-color: var(--terracotta); color: var(--terracotta); }
+    .cat-page-region { padding-top: 24px; }
+    .cat-page-region > h2 { font-size: 1.5rem; color: var(--heading); margin-bottom: 4px; }
+    .cat-page-region .cat-grid { margin: 16px 0 8px; }
+    .cat-page-dept { margin: 24px 0 8px; scroll-margin-top: 80px; }
+    .cat-page-dept h3 { font-size: 1.15rem; color: var(--heading); }
+    .cat-page-dept h3 .count { font-weight: 400; font-size: 0.9rem; color: rgba(var(--ink),0.6); }
+  </style>
+---
+{%- set catDepts = collections.categoryDepts | whereEq("cat", cp.cat) %}
+{%- set total = collections.fiches | byCategory(cp.cat) | length %}
+<section class="wrap cat-page-intro">
+  <span class="tag">{{ cp.tag }}</span>
+  <h1>{{ cp.h1Nat }}</h1>
+  <p>{{ cp.introNat | fill({ total: total, nbDeps: catDepts.length }) | safe }}</p>
+
+  <h2>{{ cp.howTitle }}</h2>
+  <p>{{ cp.howHtml | safe }}</p>
+
+  <h2>Trouver par département</h2>
+  <ul class="cat-page-jump">
+    {%- for dep in catDepts | sort(false, false, "nom") %}
+    <li><a href="{% if dep.hasPage %}/{{ cp.slug }}-{{ dep.slug }}{% else %}#{{ cp.slug }}-{{ dep.slug }}{% endif %}">{{ dep.nom }} ({{ dep.fiches.length }})</a></li>
+    {%- endfor %}
+  </ul>
+</section>
+
+{%- for region in regions %}
+{%- set regionDepts = catDepts | whereEq("region", region.nom) %}
+{%- if regionDepts.length %}
+<section class="wrap cat-page-region">
+  <h2>{{ region.nom }}</h2>
+  {%- set withPage = regionDepts | whereEq("hasPage", true) %}
+  {%- if withPage.length %}
+  <div class="cat-grid">
+    {%- for dep in withPage %}
+    <a href="/{{ cp.slug }}-{{ dep.slug }}" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>{{ dep.nom }}</h3>
+      <span class="count">{{ dep.fiches.length }} {{ cp.unit[1] }}</span>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+  {%- for dep in regionDepts | whereEq("hasPage", false) %}
+  <div class="cat-page-dept" id="{{ cp.slug }}-{{ dep.slug }}">
+    <h3>{{ cp.label }} {{ dep.enNom }} <span class="count">({{ dep.fiches.length }} {{ cp.unit[1] if dep.fiches.length > 1 else cp.unit[0] }})</span></h3>
+    <div class="fiche-grid">
+      {%- for fiche in dep.fiches %}
+      {% include "fiche-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endfor %}
+</section>
+{%- endif %}
+{%- endfor %}
+
+<section class="wrap cat-page-intro">
+  <h2>Une adresse manque à l'appel ?</h2>
+  <p>Le guide s'enrichit en continu. Si tu connais une adresse qui n'est pas encore référencée, ou si une information a changé (tarif, horaires, fermeture), <a href="/contact">écris-nous</a> : on vérifie et on met la fiche à jour.</p>
+</section>

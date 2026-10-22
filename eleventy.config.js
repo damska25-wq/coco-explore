@@ -1,5 +1,6 @@
 import { execSync } from "node:child_process";
 import departements from "./src/_data/departements.js";
+import categoryPages from "./src/_data/categoryPages.js";
 
 // Une seule invocation `git log` pour tout l'historique plutôt qu'un
 // `git log -1 -- <fichier>` par fiche : avec plusieurs milliers de fiches,
@@ -68,30 +69,43 @@ export default function (eleventyConfig) {
     )
   );
 
-  // Stations dogwash regroupées par département, pour la page nationale
-  // (dogwash-chien.njk) et les pages département (dogwash-departement.njk).
-  // Une page département n'est générée qu'à partir de DOGWASH_MIN_STATIONS
-  // stations, pour éviter des pages trop maigres : les départements en
-  // dessous restent listés sur la page nationale.
-  const DOGWASH_MIN_STATIONS = 3;
-  const dogwashByDept = (collectionApi) => {
-    const fiches = collectionApi
-      .getFilteredByGlob("src/fiches/*.njk")
-      .filter((f) => f.data.breadcrumbCatId === "dogwash")
-      .sort((a, b) => (a.data.cardTag || "").localeCompare(b.data.cardTag || "", "fr"));
-    return departements
-      .map((dep) => ({
-        ...dep,
-        // "en Gironde", "dans le Var", "dans l'Indre"... repris du H1 SEO.
-        enNom: dep.seoH1.replace(/^Où aller avec son chien /, ""),
-        fiches: fiches.filter((f) => (f.data.departement || []).includes(dep.id)),
-      }))
-      .filter((dep) => dep.fiches.length > 0)
-      .map((dep) => ({ ...dep, hasPage: dep.fiches.length >= DOGWASH_MIN_STATIONS }));
+  // Pages catégorie (src/categorie.njk + src/categorie-departement.njk) :
+  // fiches de chaque catégorie de src/_data/categoryPages.js regroupées par
+  // département. Une entrée par couple catégorie × département ayant au moins
+  // une fiche ; `hasPage` indique si le département atteint le seuil
+  // `minFiches` de la catégorie (sinon il n'est listé que sur la page nationale).
+  const categoryDepts = (collectionApi) => {
+    const all = collectionApi.getFilteredByGlob("src/fiches/*.njk");
+    return categoryPages.flatMap((cp) => {
+      const fiches = all
+        .filter((f) => f.data.breadcrumbCatId === cp.cat)
+        .sort((a, b) => (a.data.cardTag || "").localeCompare(b.data.cardTag || "", "fr"));
+      return departements
+        .map((dep) => ({
+          ...dep,
+          cat: cp.cat,
+          cp,
+          // "en Gironde", "dans le Var", "dans l'Indre"... repris du H1 SEO.
+          enNom: dep.seoH1.replace(/^Où aller avec son chien /, ""),
+          fiches: fiches.filter((f) => (f.data.departement || []).includes(dep.id)),
+        }))
+        .filter((dep) => dep.fiches.length > 0)
+        .map((dep) => ({ ...dep, hasPage: dep.fiches.length >= cp.minFiches }));
+    });
   };
-  eleventyConfig.addCollection("dogwashAllDepts", dogwashByDept);
-  eleventyConfig.addCollection("dogwashDepts", (collectionApi) =>
-    dogwashByDept(collectionApi).filter((dep) => dep.hasPage)
+  eleventyConfig.addCollection("categoryDepts", categoryDepts);
+  eleventyConfig.addCollection("categoryDeptPages", (collectionApi) =>
+    categoryDepts(collectionApi).filter((dep) => dep.hasPage)
+  );
+
+  // Page catégorie associée à un breadcrumbCatId (undefined si aucune).
+  eleventyConfig.addFilter("categoryPage", (catId) =>
+    categoryPages.find((cp) => cp.cat === catId)
+  );
+
+  // Remplace les {cle} d'un gabarit de texte de categoryPages.js.
+  eleventyConfig.addFilter("fill", (str, vars) =>
+    (str || "").replace(/\{(\w+)\}/g, (m, k) => (vars && vars[k] !== undefined ? vars[k] : m))
   );
 
   // Éléments d'une liste dont la propriété `key` vaut `value` (Nunjucks n'a
@@ -101,7 +115,7 @@ export default function (eleventyConfig) {
   );
 
   // Liste des communes (cardTag) d'un lot de fiches, sans doublon, pour les
-  // intros/descriptions des pages dogwash par département.
+  // intros/descriptions des pages catégorie par département.
   eleventyConfig.addFilter("ficheVilles", (fiches, max) => {
     const villes = [...new Set((fiches || []).map((f) => f.data.cardTag).filter(Boolean))];
     if (!max || villes.length <= max) return villes.join(", ");
