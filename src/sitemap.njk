@@ -32,7 +32,7 @@ eleventyExcludeFromCollections: true
   </url>
 {%- endif %}
 {%- endfor %}
-{%- for p in ["a-propos", "faq", "plan-du-site", "aires-autoroute-chien", "conseils-de-coco", "nouveautes", "devenir-partenaire", "mentions-legales", "politique-confidentialite", "conditions-utilisation"] %}
+{%- for p in ["a-propos", "contact", "faq", "plan-du-site", "aires-autoroute-chien", "conseils-de-coco", "nouveautes", "devenir-partenaire", "region-provence-alpes-cote-dazur", "mentions-legales", "politique-confidentialite", "conditions-utilisation"] %}
   <url>
     <loc>https://cocoexplore.com/{{ p }}</loc>
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>

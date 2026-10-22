@@ -1,0 +1,62 @@
+---
+permalink: region-provence-alpes-cote-dazur.html
+permalinkPath: region-provence-alpes-cote-dazur.html
+title: "Voyager avec son chien en Provence-Alpes-Côte d'Azur — Coco Explore"
+description: "Où aller avec son chien en région Provence-Alpes-Côte d'Azur : plages, balades, hébergements, restaurants et plus, dans les 6 départements de PACA (Var, Alpes-Maritimes, Bouches-du-Rhône, Vaucluse, Alpes-de-Haute-Provence, Hautes-Alpes)."
+layout: base.njk
+extraHead: |
+  <style>
+    .region-body { padding: 48px 0 60px; max-width: 72ch; }
+    .region-body h2 { font-size: 1.3rem; color: var(--heading); margin-top: 1.8em; }
+    .region-body p { max-width: 72ch; }
+    .region-dept-grid { max-width: none; margin: 24px 0 36px; }
+    .region-updated { color: var(--pin-soft); font-size: 0.9rem; margin-top: -0.6em; }
+  </style>
+---
+<section class="wrap region-body">
+  <span class="tag">Région</span>
+  <h1>Voyager avec son chien en Provence-Alpes-Côte d'Azur</h1>
+  <p>La région Provence-Alpes-Côte d'Azur, c'est le berceau de Coco Explore : c'est ici, près de Cavalaire-sur-Mer dans le Var, que Coco a commencé à explorer les plages et les sentiers du littoral avant que le guide ne s'étende au reste de la France. PACA reste aujourd'hui la région la plus couverte du site, avec ses 6 départements entièrement documentés : du littoral azuréen aux sommets des Alpes du Sud, en passant par les Calanques et le Luberon.</p>
+
+  <p>Chaque département a sa propre page, avec toutes les fiches vérifiées (plages, balades, lacs, hébergements, restaurants, vétérinaires, toiletteurs, dogwash, dogsitters) classées et filtrables par catégorie.</p>
+
+  <div class="cat-grid region-dept-grid">
+    <a href="departement-var" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>Var</h3>
+      <span class="count">{{ collections.fiches | countByDept("83") }} fiches</span>
+    </a>
+    <a href="departement-alpes-maritimes" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>Alpes-Maritimes</h3>
+      <span class="count">{{ collections.fiches | countByDept("06") }} fiches</span>
+    </a>
+    <a href="departement-bouches-du-rhone" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>Bouches-du-Rhône</h3>
+      <span class="count">{{ collections.fiches | countByDept("13") }} fiches</span>
+    </a>
+    <a href="departement-vaucluse" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>Vaucluse</h3>
+      <span class="count">{{ collections.fiches | countByDept("84") }} fiches</span>
+    </a>
+    <a href="departement-alpes-de-haute-provence" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>Alpes-de-Haute-Provence</h3>
+      <span class="count">{{ collections.fiches | countByDept("04") }} fiches</span>
+    </a>
+    <a href="departement-hautes-alpes" class="cat-card">
+      <svg class="icon"><use href="#i-pin"/></svg>
+      <h3>Hautes-Alpes</h3>
+      <span class="count">{{ collections.fiches | countByDept("05") }} fiches</span>
+    </a>
+  </div>
+
+  <h2>Quoi faire avec son chien en PACA ?</h2>
+  <p>Sur le littoral (Var, Alpes-Maritimes, Bouches-du-Rhône), les plages autorisées aux chiens se concentrent surtout hors saison ou sur des zones dédiées à l'année — chaque fiche plage précise la réglementation locale (dates, horaires, laisse) quand une source officielle existe. Dans l'arrière-pays et les Alpes du Sud (Vaucluse, Alpes-de-Haute-Provence, Hautes-Alpes), les balades dominent : Luberon, Verdon, Écrins, Queyras — avec une attention particulière en estive à la présence de troupeaux gardés par des patous, signalée quand l'information est disponible.</p>
+
+  <p>Juste à côté du Var et des Alpes-Maritimes, la principauté de Monaco a aussi <a href="fiche-monaco">sa propre fiche</a> — elle n'est pas en France, mais elle est enclavée dans la région.</p>
+
+  <p class="region-updated">Une erreur sur une fiche de la région ? <a href="mailto:contact@cocoexplore.com">Écris-nous</a>, on vérifie et on corrige.</p>
+</section>

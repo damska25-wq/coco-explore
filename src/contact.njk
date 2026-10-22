@@ -1,0 +1,48 @@
+---
+permalink: contact.html
+permalinkPath: contact.html
+title: "Contact — Coco Explore"
+description: "Contacter Coco Explore : signaler une erreur sur une fiche, proposer un nouveau lieu, une question presse ou devenir partenaire."
+layout: legal.njk
+extraHead: |
+  <style>
+    .contact-reasons { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin: 20px 0 8px; }
+    .contact-reasons div { background: var(--surface); border: 1px solid rgba(var(--ink),0.1); border-radius: 10px; padding: 16px 18px; }
+    .contact-reasons h3 { margin-top: 0; font-size: 1rem; color: var(--terracotta-deep); }
+    .contact-reasons p { font-size: 0.92rem; margin: 6px 0 0; }
+    .contact-main-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 1.05rem; margin: 20px 0; }
+    .contact-main-link svg { flex-shrink: 0; color: var(--heading-soft); }
+  </style>
+bodyHtml: |
+  <section class="wrap legal-body">
+    <span class="tag">Contact</span>
+    <h1>Nous contacter</h1>
+    <p>Une question, une erreur à signaler, un lieu à proposer ? Écris-nous directement, on répond personnellement à chaque message.</p>
+
+    <a href="mailto:contact@cocoexplore.com" class="contact-main-link">
+      <svg width="20" height="20"><use href="#i-mail"/></svg> contact@cocoexplore.com
+    </a>
+
+    <h2>Selon ce que tu cherches à faire</h2>
+    <div class="contact-reasons">
+      <div>
+        <h3>Signaler une erreur</h3>
+        <p>Chaque fiche a un lien « Une erreur ? Nous la signaler » dans son bandeau d'informations, qui pré-remplit un e-mail avec le nom et le lien de la fiche concernée — c'est la façon la plus rapide de nous prévenir.</p>
+      </div>
+      <div>
+        <h3>Proposer un lieu</h3>
+        <p>Indique-nous le nom de l'établissement, la ville et si possible ce qui te fait dire que les chiens y sont acceptés (règle affichée, expérience vécue...). On vérifie et on l'ajoute si tout est confirmé.</p>
+      </div>
+      <div>
+        <h3>Devenir partenaire</h3>
+        <p>Vous êtes un professionnel déjà référencé et souhaitez une mise en avant dédiée ? Toutes les infos sont sur la page <a href="/devenir-partenaire">Devenir partenaire</a>.</p>
+      </div>
+      <div>
+        <h3>Presse, collaboration</h3>
+        <p>Pour toute demande presse ou proposition de collaboration, écris directement à l'adresse ci-dessus en précisant l'objet de ta demande.</p>
+      </div>
+    </div>
+
+    <p class="legal-updated">Tu peux aussi suivre les coulisses et les photos de terrain sur <a href="https://www.instagram.com/danslesyeuxdecoco/" target="_blank" rel="noopener">Instagram</a>.</p>
+  </section>
+---
