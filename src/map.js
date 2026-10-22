@@ -47,6 +47,40 @@
     });
   }
 
+  // Avec ~10 000 fiches, afficher un marqueur DOM par fiche d'un coup (en
+  // particulier via "Tout afficher") fait ramer le navigateur. Le marker
+  // clustering regroupe les points proches en un seul badge tant qu'on n'a
+  // pas zoomé, ce qui réduit drastiquement le nombre d'éléments DOM créés
+  // à chaque changement de filtre.
+  function makeClusterIconFactory(color) {
+    return function (cluster) {
+      var count = cluster.getChildCount();
+      var size = count < 10 ? 32 : count < 100 ? 40 : 48;
+      return L.divIcon({
+        className: "coco-cluster",
+        html:
+          '<span style="display:flex;align-items:center;justify-content:center;width:' + size + 'px;height:' + size + 'px;border-radius:50%;background:' + color + ';border:2px solid #FFFDF8;box-shadow:0 1px 4px rgba(0,0,0,0.35);color:#FFFDF8;font:600 ' + (size < 40 ? 12 : 13) + 'px/1 "Helvetica Neue",Arial,sans-serif;">' + count + '</span>',
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2]
+      });
+    };
+  }
+
+  function makeClusterGroup(color) {
+    if (window.L.markerClusterGroup) {
+      return L.markerClusterGroup({
+        iconCreateFunction: makeClusterIconFactory(color),
+        maxClusterRadius: 60,
+        spiderfyOnMaxZoom: true,
+        showCoverageOnHover: false,
+        chunkedLoading: true
+      });
+    }
+    // Repli si le plugin ne s'est pas chargé (réseau lent, erreur CDN) :
+    // garde l'ancien comportement plutôt que de casser la carte.
+    return L.layerGroup();
+  }
+
   // Position de l'utilisateur, une fois connue (voir bouton "Me localiser").
   var userPos = window.CocoGeoloc ? window.CocoGeoloc.getStored() : null;
   var userMarker = null;
@@ -73,12 +107,15 @@
 
   lieux.forEach(function (lieu) {
     var group = groupForCatId(lieu.catId);
-    var color = (group && group.color) || "#3C5943";
-    if (lieu.categorie === "Urgences vétérinaires") color = URGENCE_COLOR;
+    var baseColor = (group && group.color) || "#3C5943";
+    var color = lieu.categorie === "Urgences vétérinaires" ? URGENCE_COLOR : baseColor;
     var marker = L.marker([lieu.lat, lieu.lng], { icon: makeIcon(color, 14, "2px solid #FFFDF8") });
     marker.bindPopup(function () { return popupHtmlFor(lieu); });
 
-    if (!layerByCatId[lieu.catId]) layerByCatId[lieu.catId] = L.layerGroup();
+    // Le cluster représente toute la catégorie : toujours sa couleur de
+    // base, jamais celle (rouge urgence) d'un marqueur individuel qui s'y
+    // trouverait mélangé.
+    if (!layerByCatId[lieu.catId]) layerByCatId[lieu.catId] = makeClusterGroup(baseColor);
     layerByCatId[lieu.catId].addLayer(marker);
   });
 
