@@ -333,7 +333,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 
 /* ---------- Categories ---------- */
 
-.categories { padding: 56px 0 20px; }
+.categories { padding-top: 56px; padding-bottom: 20px; }
 .section-head { max-width: 60ch; margin-bottom: 32px; }
 .section-head .eyebrow { color: var(--terracotta); font-weight: 700; font-size: 0.95rem; }
 .section-head h2 { font-size: 2rem; color: var(--heading); }
@@ -415,7 +415,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 
 /* ---------- Fiche cards (homepage previews) ---------- */
 
-.fiches { padding: 40px 0 64px; }
+.fiches { padding-top: 40px; padding-bottom: 64px; }
 .fiche-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
 
 .fiche-card {
@@ -572,7 +572,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
   display: flex;
   flex-wrap: wrap;
   gap: 22px 34px;
-  padding: 22px 0;
+  padding-top: 22px; padding-bottom: 22px;
 }
 
 .info-item { display: flex; gap: 10px; align-items: center; }
@@ -584,7 +584,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .info-item .value a { color: var(--terracotta-deep); text-decoration: none; }
 .info-item .value a:hover { text-decoration: underline; }
 
-.fiche-body { padding: 40px 0 30px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; }
+.fiche-body { padding-top: 40px; padding-bottom: 30px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; }
 .fiche-body h2 { font-size: 1.5rem; color: var(--heading); margin-top: 1.4em; }
 .fiche-body h2:first-child { margin-top: 0; }
 
@@ -598,7 +598,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 
 /* ---------- Avis & photos (mis en avant, juste après les infos pratiques) ---------- */
 
-.avis { padding: 34px 0 40px; }
+.avis { padding-top: 34px; padding-bottom: 40px; }
 
 .avis-card {
   background: var(--surface);
@@ -762,7 +762,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 18px 0;
+  padding-top: 18px; padding-bottom: 18px;
 }
 .cookie-banner-inner p { margin: 0; max-width: 60ch; font-size: 0.92rem; }
 .cookie-banner-actions { display: flex; gap: 10px; flex-shrink: 0; }
