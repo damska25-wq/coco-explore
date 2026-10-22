@@ -161,6 +161,8 @@ Beaucoup d'impressions mais positions 20-48 et 0 clic : la fiche n'apporte proba
 
 ## E. Contenu à créer (ajouté le 22/10/2026, par ordre de priorité)
 
+**Consigne de l'utilisateur : enchaîner tous les chantiers E sans lui demander de validation** — E1, E2 et E4 en parallèle, puis E3 et E5. Respecter les « Règles à respecter » en haut de ce fichier (fetch + rebase avant chaque push, jamais de noindex, jamais de changement d'URL).
+
 Toujours la méthode habituelle : recherche par lot avec Parallel Search (`web_fetch` pour lire les sources en entier) → rédaction → build → commit par lot. Pas de photo Unsplash dupliquée, `order` unique.
 
 ### E1. Corriger les fiches rangées dans la mauvaise catégorie ⭐ (à faire en premier)
@@ -170,9 +172,9 @@ Le `breadcrumbCatId` d'une fiche décide des pages catégorie sur lesquelles ell
 - **Plages classées en « balades »** : la Vendée (85) a 0 fiche `plages` alors que ses plages existent en `balades` (ex. « Grande Plage, L'Aiguillon-sur-Mer »). Même chose probable sur d'autres départements côtiers (Loire-Atlantique, Nord, Pas-de-Calais, Alpes-Maritimes, Bouches-du-Rhône…).
 - **Balades classées en « lacs »** : le Rhône (69) et la Haute-Savoie (74) ont 0 fiche `balades` mais 19 et 33 fiches `lacs`, dont des balades urbaines, parcs et aires canines (ex. « Berges du Rhône à Lyon », « Aires canines de Villeurbanne »). Conséquence : pas de page `/balade-chien-rhone` ni `/balade-chien-haute-savoie`.
 
-Méthode : auditer `breadcrumbCatId` sur tout le site (commencer par 85, 69, 74), **présenter d'abord la liste des changements à l'utilisateur, sans rien modifier**, puis appliquer après accord. Ne changer que `breadcrumbCatId` et `breadcrumbCatLabel` (et `tag`/`cardPictos` si incohérents) — **jamais les URL** (`permalinkPath`), qui sont indexées.
+Méthode : auditer `breadcrumbCatId` sur tout le site (commencer par 85, 69, 74) et **appliquer directement** — l'utilisateur a demandé d'enchaîner les chantiers E sans validation intermédiaire. En contrepartie, lister chaque fiche reclassée (ancienne → nouvelle catégorie) dans le message de commit, et ne reclasser que les cas évidents (une plage est une plage, un parc urbain n'est pas un lac) ; en cas de doute, laisser la fiche telle quelle. Ne changer que `breadcrumbCatId` et `breadcrumbCatLabel` (et `tag`/`cardPictos` si incohérents) — **jamais les URL** (`permalinkPath`), qui sont indexées.
 
-Une fois ce tri fait : demander à l'utilisateur s'il veut une page catégorie « Plages où les chiens sont acceptés » (ajout de `plages` dans `src/_data/categoryPages.js`).
+Une fois ce tri fait : ne pas créer soi-même de page catégorie « Plages » — l'utilisateur la demandera à part (ajout de `plages` dans `src/_data/categoryPages.js`).
 
 ### E2. Compléter le dogwash
 
