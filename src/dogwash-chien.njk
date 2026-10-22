@@ -1,0 +1,65 @@
+---
+permalink: dogwash-chien.html
+permalinkPath: dogwash-chien.html
+title: "Dogwash : laver son chien en libre-service, partout en France"
+description: "Toutes les stations dogwash (lavage de chien en libre-service) référencées par Coco Explore, classées par région et département : adresses, horaires et tarifs quand ils sont connus."
+layout: base.njk
+extraHead: |
+  <style>
+    .dogwash-intro { padding-top: 48px; padding-bottom: 12px; }
+    .dogwash-intro p { max-width: 72ch; }
+    .dogwash-intro h2 { font-size: 1.3rem; color: var(--heading); margin-top: 1.6em; }
+    .dogwash-jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; padding: 0; list-style: none; }
+    .dogwash-jump a { display: inline-block; padding: 6px 12px; border: 1px solid rgba(var(--ink),0.15); border-radius: 999px; font-size: 0.9rem; text-decoration: none; color: var(--encre); }
+    .dogwash-jump a:hover { border-color: var(--terracotta); color: var(--terracotta); }
+    .dogwash-region { padding-top: 24px; }
+    .dogwash-region > h2 { font-size: 1.5rem; color: var(--heading); margin-bottom: 4px; }
+    .dogwash-dept { margin: 24px 0 8px; scroll-margin-top: 80px; }
+    .dogwash-dept h3 { font-size: 1.15rem; color: var(--heading); }
+    .dogwash-dept h3 .count { font-weight: 400; font-size: 0.9rem; color: rgba(var(--ink),0.6); }
+    .dogwash-dept .cat-see-more { text-align: left; margin: 6px 0 14px; }
+  </style>
+---
+{%- set totalStations = collections.fiches | byCategory("dogwash") | length %}
+<section class="wrap dogwash-intro">
+  <span class="tag">Douche à chien</span>
+  <h1>Dogwash : où laver son chien en libre-service en France</h1>
+  <p>Après une baignade dans la mer, une balade dans la boue ou une roulade dans quelque chose de douteux, une station dogwash évite de transformer la salle de bain en champ de bataille. Coco Explore référence <strong>{{ totalStations }} stations de lavage pour chien</strong> dans {{ collections.dogwashAllDepts.length }} départements, classées ci-dessous par région puis par département.</p>
+
+  <h2>Comment fonctionne un dogwash ?</h2>
+  <p>Un dogwash (on dit aussi « douche à chien », « self-wash » ou « toilettage en libre-service ») est un espace où l'on lave soi-même son chien, avec un bac surélevé, une douchette, du shampooing et souvent un séchoir. On en trouve en cabine autonome, sur certaines stations de lavage auto, dans des animaleries ou chez des toiletteurs qui ouvrent leur matériel au public. Le paiement, la durée des cycles et les horaires varient d'une station à l'autre : chaque fiche précise ce qu'on a pu vérifier, et indique clairement ce qui n'a pas été trouvé.</p>
+
+  <h2>Trouver une station par département</h2>
+  <ul class="dogwash-jump">
+    {%- for dep in collections.dogwashAllDepts | sort(false, false, "nom") %}
+    <li><a href="{% if dep.hasPage %}/dogwash-chien-{{ dep.slug }}{% else %}#dogwash-{{ dep.slug }}{% endif %}">{{ dep.nom }} ({{ dep.fiches.length }})</a></li>
+    {%- endfor %}
+  </ul>
+</section>
+
+{%- for region in regions %}
+{%- set regionDepts = collections.dogwashAllDepts | whereEq("region", region.nom) %}
+{%- if regionDepts.length %}
+<section class="wrap dogwash-region">
+  <h2>{{ region.nom }}</h2>
+  {%- for dep in regionDepts %}
+  <div class="dogwash-dept" id="dogwash-{{ dep.slug }}">
+    <h3>Dogwash {{ dep.enNom }} <span class="count">({{ dep.fiches.length }} station{% if dep.fiches.length > 1 %}s{% endif %})</span></h3>
+    {%- if dep.hasPage %}
+    <p class="cat-see-more"><a href="/dogwash-chien-{{ dep.slug }}">Toutes les stations dogwash {{ dep.enNom }} →</a></p>
+    {%- endif %}
+    <div class="fiche-grid">
+      {%- for fiche in dep.fiches %}
+      {% include "fiche-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endfor %}
+</section>
+{%- endif %}
+{%- endfor %}
+
+<section class="wrap dogwash-intro">
+  <h2>Une station manque à l'appel ?</h2>
+  <p>Le guide s'enrichit en continu. Si tu connais un dogwash qui n'est pas encore référencé, ou si une information a changé (tarif, horaires, station fermée), <a href="/contact">écris-nous</a> : on vérifie et on met la fiche à jour.</p>
+</section>

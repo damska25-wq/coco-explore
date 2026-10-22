@@ -1,0 +1,49 @@
+---
+pagination:
+  data: collections.dogwashDepts
+  size: 1
+  alias: dep
+permalink: "dogwash-chien-{{ dep.slug }}.html"
+layout: base.njk
+eleventyComputed:
+  title: "Dogwash {{ dep.enNom }} : {{ dep.fiches.length }} stations pour laver son chien"
+  description: "{{ dep.fiches.length }} stations dogwash {{ dep.enNom }} ({{ dep.fiches | ficheVilles(3) }}) : adresses, horaires et tarifs pour laver son chien en libre-service."
+  permalinkPath: "dogwash-chien-{{ dep.slug }}.html"
+extraHead: |
+  <style>
+    .dogwash-intro { padding-top: 48px; padding-bottom: 12px; }
+    .dogwash-intro p { max-width: 72ch; }
+    .dogwash-intro h2 { font-size: 1.3rem; color: var(--heading); margin-top: 1.6em; }
+    .dogwash-links { margin: 8px 0 0; padding-left: 1.2em; }
+    .dogwash-links li { margin: 4px 0; }
+    .dogwash-crumb { font-size: 0.85rem; color: rgba(var(--ink),0.6); margin-bottom: 12px; }
+    .dogwash-crumb a { color: inherit; }
+  </style>
+---
+<section class="wrap dogwash-intro">
+  <div class="dogwash-crumb"><a href="/">Coco Explore</a> / <a href="/dogwash-chien">Dogwash</a> / {{ dep.nom }}</div>
+  <span class="tag">Douche à chien</span>
+  <h1>Dogwash {{ dep.enNom }} : où laver son chien en libre-service</h1>
+  <p>Coco Explore référence <strong>{{ dep.fiches.length }} stations de lavage pour chien {{ dep.enNom }}</strong> : {{ dep.fiches | ficheVilles }}. Bac surélevé, douchette, shampooing et souvent séchoir : de quoi rincer son chien après la plage ou une balade boueuse sans passer par la baignoire. Chaque fiche détaille l'adresse, les horaires et le tarif quand on a pu les vérifier.</p>
+</section>
+
+<section class="fiches wrap">
+  <div class="fiche-grid">
+    {%- for fiche in dep.fiches %}
+    {% include "fiche-card.njk" %}
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap dogwash-intro">
+  <h2>Pour aller plus loin</h2>
+  <ul class="dogwash-links">
+    <li><a href="/departement-{{ dep.slug }}">Toutes les adresses pour voyager avec son chien {{ dep.enNom }}</a> (plages, balades, hébergements, vétérinaires…)</li>
+    {%- for other in collections.dogwashAllDepts | whereEq("region", dep.region) %}
+    {%- if other.id != dep.id %}
+    <li><a href="{% if other.hasPage %}/dogwash-chien-{{ other.slug }}{% else %}/dogwash-chien#dogwash-{{ other.slug }}{% endif %}">Dogwash {{ other.enNom }}</a> ({{ other.fiches.length }} station{% if other.fiches.length > 1 %}s{% endif %})</li>
+    {%- endif %}
+    {%- endfor %}
+    <li><a href="/dogwash-chien">Toutes les stations dogwash en France</a></li>
+  </ul>
+</section>

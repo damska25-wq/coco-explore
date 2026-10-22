@@ -1,0 +1,18 @@
+{#- Vignette de fiche (même rendu que sur l'accueil et les pages département). Attend une variable `fiche`. -#}
+<a href="/{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}">
+  <div class="thumb">
+    {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
+    <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
+    {%- if fiche.data.partenaire %}<span class="access-badge badge-partenaire">Partenaire</span>{%- endif %}
+  </div>
+  <div class="body">
+    <span class="tag">{{ fiche.data.cardTag | safe }}</span>
+    <h3>{{ fiche.data.cardTitle | safe }}</h3>
+    <p>{{ fiche.data.cardTeaser | safe }}</p>
+    <div class="pictos-row">
+      {%- for picto in fiche.data.cardPictos %}
+      <span class="picto"><svg><use href="#{{ picto }}"/></svg></span>
+      {%- endfor %}
+    </div>
+  </div>
+</a>

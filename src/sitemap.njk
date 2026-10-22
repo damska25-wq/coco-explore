@@ -28,6 +28,18 @@ eleventyExcludeFromCollections: true
     <priority>0.7</priority>
   </url>
 {%- endfor %}
+  <url>
+    <loc>https://cocoexplore.com/dogwash-chien</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+{%- for dep in collections.dogwashDepts %}
+  <url>
+    <loc>https://cocoexplore.com/dogwash-chien-{{ dep.slug }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+{%- endfor %}
 {%- for p in ["a-propos", "contact", "faq", "plan-du-site", "aires-autoroute-chien", "conseils-de-coco", "nouveautes", "devenir-partenaire", "region-provence-alpes-cote-dazur", "mentions-legales", "politique-confidentialite", "conditions-utilisation"] %}
   <url>
     <loc>https://cocoexplore.com/{{ p }}</loc>

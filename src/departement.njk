@@ -58,6 +58,10 @@ eleventyComputed:
   <div class="section-head">
     <span class="eyebrow">{{ section.catGrid.label | safe }}</span>
     <h2>{{ section.heading | safe }}</h2>
+    {%- if section.id == "dogwash" %}
+    {%- set dwDep = (collections.dogwashDepts | whereEq("id", dep.id))[0] %}
+    <p class="cat-see-more"><a href="{{ ('/dogwash-chien-' + dwDep.slug) if dwDep else '/dogwash-chien' }}">{{ ('Page dédiée : toutes les stations dogwash ' + dwDep.enNom) if dwDep else 'Toutes les stations dogwash en France' }} →</a></p>
+    {%- endif %}
   </div>
   <div class="fiche-grid">
     {%- for fiche in deptFiches %}

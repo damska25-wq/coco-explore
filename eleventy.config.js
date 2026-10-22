@@ -68,6 +68,46 @@ export default function (eleventyConfig) {
     )
   );
 
+  // Stations dogwash regroupées par département, pour la page nationale
+  // (dogwash-chien.njk) et les pages département (dogwash-departement.njk).
+  // Une page département n'est générée qu'à partir de DOGWASH_MIN_STATIONS
+  // stations, pour éviter des pages trop maigres : les départements en
+  // dessous restent listés sur la page nationale.
+  const DOGWASH_MIN_STATIONS = 3;
+  const dogwashByDept = (collectionApi) => {
+    const fiches = collectionApi
+      .getFilteredByGlob("src/fiches/*.njk")
+      .filter((f) => f.data.breadcrumbCatId === "dogwash")
+      .sort((a, b) => (a.data.cardTag || "").localeCompare(b.data.cardTag || "", "fr"));
+    return departements
+      .map((dep) => ({
+        ...dep,
+        // "en Gironde", "dans le Var", "dans l'Indre"... repris du H1 SEO.
+        enNom: dep.seoH1.replace(/^Où aller avec son chien /, ""),
+        fiches: fiches.filter((f) => (f.data.departement || []).includes(dep.id)),
+      }))
+      .filter((dep) => dep.fiches.length > 0)
+      .map((dep) => ({ ...dep, hasPage: dep.fiches.length >= DOGWASH_MIN_STATIONS }));
+  };
+  eleventyConfig.addCollection("dogwashAllDepts", dogwashByDept);
+  eleventyConfig.addCollection("dogwashDepts", (collectionApi) =>
+    dogwashByDept(collectionApi).filter((dep) => dep.hasPage)
+  );
+
+  // Éléments d'une liste dont la propriété `key` vaut `value` (Nunjucks n'a
+  // pas d'équivalent natif : selectattr ne teste que la véracité).
+  eleventyConfig.addFilter("whereEq", (list, key, value) =>
+    (list || []).filter((item) => item[key] === value)
+  );
+
+  // Liste des communes (cardTag) d'un lot de fiches, sans doublon, pour les
+  // intros/descriptions des pages dogwash par département.
+  eleventyConfig.addFilter("ficheVilles", (fiches, max) => {
+    const villes = [...new Set((fiches || []).map((f) => f.data.cardTag).filter(Boolean))];
+    if (!max || villes.length <= max) return villes.join(", ");
+    return villes.slice(0, max).join(", ") + "…";
+  });
+
   eleventyConfig.addFilter("byCategory", (fiches, catId) =>
     fiches
       .filter((f) => f.data.breadcrumbCatId === catId)
