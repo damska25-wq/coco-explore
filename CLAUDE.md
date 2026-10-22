@@ -2,14 +2,16 @@
 
 Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurants, hébergements, balades, vétérinaires, toiletteurs, dogwash, dogsitters). Site statique Eleventy (11ty), 101 départements couverts (96 métropolitains + 5 DOM, couverture nationale complète), ~9300 fiches.
 
-## À faire après la campagne SIRENE — enrichissement hébergements + plages/balades (novembre 2026)
+## Historique — campagnes SIRENE + enrichissement hébergements/plages-balades (octobre 2026, résolues)
 
-Idées issues d'un brainstorm Gemini (partagé par l'utilisateur), validées pour un chantier futur une fois la campagne de vérification SIRENE (actuellement en cours, round PACA/Var) terminée sur l'ensemble des ~101 départements. Périmètre confirmé par l'utilisateur : les deux types de fiches ci-dessous, démarrage après la fin complète de la campagne SIRENE (pas en parallèle, pas de lot test préalable demandé — à lancer directement sur tout le site le moment venu).
+Deux chantiers nationaux, menés l'un après l'autre comme prévu (pas en parallèle) :
 
-- **Fiches hébergements** — enrichir les conditions d'accueil précises là où elles manquent : supplément tarifaire par nuit/par animal, restrictions de taille/catégorie/nombre de chiens, chien autorisé à rester seul dans la chambre ou non. Ajouter aussi les "pet amenities" quand l'info existe chez la source (toutoubar/gamelle d'eau, espace de rinçage ou douchette retour de plage, friandises d'accueil, jardin clos).
-- **Fiches plages/balades** — préciser la réglementation saisonnière quand elle existe (arrêté municipal : dates/horaires d'accès autorisés, laisse obligatoire ou non) et des données de terrain utiles au chien (type de sol — sable, galets, rochers glissants, bitume chaud en été —, ombre disponible, points d'eau/rivières à proximité, niveau de difficulté du parcours, présence éventuelle de troupeaux/patous en montagne).
+- **Campagne SIRENE** (vérification factuelle adresse/téléphone/statut des fiches vétérinaires) : terminée sur les 101 départements (dernier round, Mayotte 976, le 17/10/2026).
+- **Enrichissement hébergements + plages/balades** (idée issue d'un brainstorm Gemini, démarrée juste après la fin de SIRENE le 17/10/2026, terminée le 22/10/2026) : traité en méthode batch par département (recherche par lots puis rédaction), couvrant la quasi-totalité des départements (01 à 59 + toute la Normandie en premier) ; le reste (60 à 95, 2A/2B, DOM) s'est avéré déjà enrichi avec les mêmes critères lors d'un round antérieur (constat fait fiche par fiche, pas de simple supposition).
+  - **Fiches hébergements** : conditions d'accueil précises quand elles existaient chez la source — supplément tarifaire par nuit/par animal, restrictions de taille/catégorie/nombre de chiens, chien seul en chambre ou non, "pet amenities" (toutoubar/gamelle d'eau, espace de rinçage retour de plage, friandises d'accueil, jardin clos).
+  - **Fiches plages/balades** : réglementation saisonnière quand elle existait (arrêté municipal : dates/horaires, laisse obligatoire ou non) et données de terrain utiles au chien (type de sol, ombre, points d'eau/rivières, difficulté du parcours, présence de troupeaux/patous en montagne).
 
-Ne pas confondre avec le chantier SIRENE en cours (vérification factuelle adresse/téléphone/statut des vétérinaires) : celui-ci est un enrichissement de contenu, sur des catégories différentes de fiches, à traiter en méthode batch (recherche par lots puis rédaction) comme les rounds "gap-driven" déjà menés par département.
+Si une lacune resurgit sur ces deux critères (ex. nouvelle fiche créée sans ces infos, ou département oublié), la retraiter à l'identique (recherche par lot → rédaction → build → commit), pas besoin de relancer tout le chantier.
 
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
