@@ -6,7 +6,7 @@ Fichier de travail non publié (racine du dépôt, hors `src/`). Généré le 22
 
 - **Ne jamais remettre de `noindex` ni filtrer le sitemap par région.** Le commit `21b28c2` (noindex sur les 9221 pages hors PACA) a été annulé par `b05606f` : les fiches hors PACA font **88 % des clics** (470 contre 62 pour PACA).
 - **Deux sessions poussent sur `claude/github-connexion-otichf`** (la branche de production Netlify) : `git fetch` + `git rebase` avant chaque push.
-- Pages dogwash (`src/dogwash-chien.njk`, `src/dogwash-departement.njk`) : une page département est générée automatiquement dès qu'un département atteint `DOGWASH_MIN_STATIONS` (3) stations — voir `eleventy.config.js`.
+- Pages catégorie (`src/categorie.njk`, `src/categorie-departement.njk`, configuration dans `src/_data/categoryPages.js`) : dogwash, toiletteurs, garde/pension, balades. Une page département est générée automatiquement dès qu'un département atteint 3 fiches de la catégorie (`minFiches`) — la catégorie d'une fiche (`breadcrumbCatId`) décide donc des pages sur lesquelles elle apparaît.
 - Titres de fiches : ne plus y mettre de mention de travail (« confiance X », « à vérifier »…) — le `title` est le lien bleu affiché par Google.
 
 ## Vue d'ensemble
@@ -31,6 +31,8 @@ Fichier de travail non publié (racine du dépôt, hors `src/`). Généré le 22
 Lecture : balades, dogsitters, dogwash et toiletteurs convertissent bien (> 3 %). Vétérinaires et hébergements ont beaucoup d'impressions mais ~0,4 % de CTR : requêtes de navigation vers l'établissement lui-même (« clinique vétérinaire de la marne », « camping les oyats »), l'internaute clique le site officiel ou Google Maps.
 
 ## A. Lever les doutes visibles dans le titre ou la description (par impressions)
+
+> ✅ **Fait** (lots 1 à 4, commits « SEO-PRIORITES §A », 22/10/2026). Liste conservée pour mémoire.
 
 Fiches dont le `title` ou la `description` (donc le résultat Google) affiche un doute. Les trancher avec des sources (Parallel Search) quand c'est possible ; sinon garder le doute dans le `bodyHtml` mais reformuler titre/description de façon neutre. Classées par impressions : traiter le haut de la liste d'abord.
 
@@ -156,6 +158,37 @@ Beaucoup d'impressions mais positions 20-48 et 0 clic : la fiche n'apporte proba
 | `camping-grande-metairie-carnac-56.njk` | 69 | 0 | 36.5 |
 | `camping-le-fayolan-clairvaux-les-lacs.njk` | 68 | 0 | 44.2 |
 | `camping-yelloh-serignan-plage.njk` | 58 | 0 | 37.3 |
+
+## E. Contenu à créer (ajouté le 22/10/2026, par ordre de priorité)
+
+Toujours la méthode habituelle : recherche par lot avec Parallel Search (`web_fetch` pour lire les sources en entier) → rédaction → build → commit par lot. Pas de photo Unsplash dupliquée, `order` unique.
+
+### E1. Corriger les fiches rangées dans la mauvaise catégorie ⭐ (à faire en premier)
+
+Le `breadcrumbCatId` d'une fiche décide des pages catégorie sur lesquelles elle apparaît ; plusieurs départements sont mal classés, ce qui prive le site de pages catégorie qui devraient exister :
+
+- **Plages classées en « balades »** : la Vendée (85) a 0 fiche `plages` alors que ses plages existent en `balades` (ex. « Grande Plage, L'Aiguillon-sur-Mer »). Même chose probable sur d'autres départements côtiers (Loire-Atlantique, Nord, Pas-de-Calais, Alpes-Maritimes, Bouches-du-Rhône…).
+- **Balades classées en « lacs »** : le Rhône (69) et la Haute-Savoie (74) ont 0 fiche `balades` mais 19 et 33 fiches `lacs`, dont des balades urbaines, parcs et aires canines (ex. « Berges du Rhône à Lyon », « Aires canines de Villeurbanne »). Conséquence : pas de page `/balade-chien-rhone` ni `/balade-chien-haute-savoie`.
+
+Méthode : auditer `breadcrumbCatId` sur tout le site (commencer par 85, 69, 74), **présenter d'abord la liste des changements à l'utilisateur, sans rien modifier**, puis appliquer après accord. Ne changer que `breadcrumbCatId` et `breadcrumbCatLabel` (et `tag`/`cardPictos` si incohérents) — **jamais les URL** (`permalinkPath`), qui sont indexées.
+
+Une fois ce tri fait : demander à l'utilisateur s'il veut une page catégorie « Plages où les chiens sont acceptés » (ajout de `plages` dans `src/_data/categoryPages.js`).
+
+### E2. Compléter le dogwash
+
+Voir section C. Ordre : Seine-Maritime (76) et Seine-et-Marne (77) d'abord (requêtes Search Console existantes), puis Paris et petite couronne (92, 93, 94), Rhône (69), Nord (59). Pour chaque station : adresse, horaires, tarif et mode de paiement quand ils existent.
+
+### E3. Balades dans les départements qui en manquent
+
+Moins de 3 fiches `balades` (après E1, recompter : certains départements seront peut-être déjà au-dessus) : Puy-de-Dôme (0), Haute-Loire (0), Loire (0), Drôme (0), Territoire de Belfort (0), Hérault (1), Gard (2), Finistère (2), Corse-du-Sud (2). Mêmes critères que l'enrichissement d'octobre : réglementation (laisse, arrêtés saisonniers, espaces protégés), ombre, points d'eau, type de sol, difficulté, troupeaux/patous en montagne.
+
+### E4. Contenu de saison : hiver avec son chien (à lancer maintenant)
+
+Les recherches d'hiver montent dès novembre et culminent en décembre-janvier ; Google met plusieurs semaines à indexer, donc à publier courant novembre. Fiches sur les stations de ski et sites de raquettes/ski de fond acceptant les chiens (Alpes, Pyrénées, Vosges, Jura, Massif central) : règles chien sur les pistes de fond/raquettes, sentiers piétons damés, hébergements de station acceptant les chiens. Tout vérifié par sources ; si une règle n'est pas trouvée, le dire dans la fiche.
+
+### E5. Garde de chien dans les départements qui en manquent
+
+Moins de 3 fiches `dogsitters` : Alpes-de-Haute-Provence (2), Vosges (2), Guadeloupe (2), Martinique (1), Guyane (2), Mayotte (2). Pensions, dogsitters, garderies : conditions d'accueil, vaccins exigés, tarifs.
 
 ## Ce qui n'est pas prioritaire
 
