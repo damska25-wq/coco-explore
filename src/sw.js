@@ -23,6 +23,8 @@ self.addEventListener("activate", function (event) {
 self.addEventListener("fetch", function (event) {
   var request = event.request;
   if (request.method !== "GET" || new URL(request.url).origin !== self.location.origin) return;
+  // Jamais de cache pour l'API (avis, modération) : toujours la donnée fraîche.
+  if (new URL(request.url).pathname.indexOf("/api/") === 0) return;
 
   event.respondWith(
     fetch(request)

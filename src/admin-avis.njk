@@ -1,0 +1,165 @@
+---
+permalink: admin-avis.html
+permalinkPath: admin-avis.html
+title: "Modération des avis — Coco Explore"
+description: "Page privée de modération des avis."
+layout: base.njk
+noindex: true
+eleventyExcludeFromCollections: true
+extraHead: |
+  <style>
+    .admin-avis { padding-top: 40px; padding-bottom: 60px; }
+    .admin-avis form { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 24px; }
+    .admin-avis input[type="password"] { flex: 1 1 200px; padding: 10px 12px; border: 1px solid rgba(var(--ink),0.2); border-radius: 8px; font: inherit; }
+    .admin-avis button { padding: 10px 16px; border-radius: 8px; border: 1px solid rgba(var(--ink),0.2); background: var(--surface); font: inherit; font-weight: 700; cursor: pointer; }
+    .admin-avis button.approve { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
+    .admin-avis button.delete { color: #b42318; }
+    .admin-avis .tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+    .admin-avis .tabs button[aria-pressed="true"] { background: var(--encre); color: #fff; }
+    .admin-avis-item { border: 1px solid rgba(var(--ink),0.12); border-radius: 10px; padding: 16px; margin-bottom: 14px; background: var(--surface); }
+    .admin-avis-item.pending { border-left: 4px solid var(--terracotta); }
+    .admin-avis-item .meta { font-size: 0.85rem; color: rgba(var(--ink),0.65); margin-bottom: 6px; overflow-wrap: anywhere; }
+    .admin-avis-item p { margin: 6px 0 10px; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .admin-avis-item img { max-width: 100%; max-height: 320px; border-radius: 8px; display: block; margin-bottom: 10px; }
+    .admin-avis-item .actions { display: flex; gap: 8px; }
+    .admin-avis .status { min-height: 1.4em; color: rgba(var(--ink),0.75); }
+  </style>
+---
+<section class="wrap admin-avis">
+  <h1>Modération des avis</h1>
+  <p>Les nouveaux avis n'apparaissent sur les fiches qu'après validation ici.</p>
+  <form id="admin-login">
+    <input type="password" id="admin-key" placeholder="Mot de passe" autocomplete="current-password" required>
+    <button type="submit">Afficher les avis</button>
+  </form>
+  <p class="status" id="admin-status" role="status"></p>
+  <div class="tabs" id="admin-tabs" hidden>
+    <button type="button" data-filter="pending" aria-pressed="true">En attente</button>
+    <button type="button" data-filter="approved" aria-pressed="false">Publiés</button>
+  </div>
+  <div id="admin-list"></div>
+</section>
+
+<script>
+(function () {
+  var API = "/api/avis?admin=1";
+  var form = document.getElementById("admin-login");
+  var keyInput = document.getElementById("admin-key");
+  var status = document.getElementById("admin-status");
+  var tabs = document.getElementById("admin-tabs");
+  var list = document.getElementById("admin-list");
+  var entries = [];
+  var filter = "pending";
+
+  // Mot de passe gardé le temps de l'onglet seulement (jamais en localStorage).
+  try { keyInput.value = sessionStorage.getItem("cocoAdminKey") || ""; } catch (e) {}
+
+  function call(method, body) {
+    return fetch(API, {
+      method: method,
+      headers: { "x-admin-key": keyInput.value, "Content-Type": "application/json" },
+      body: body ? JSON.stringify(body) : undefined
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (data) {
+        if (!r.ok) throw new Error(data.error || "Erreur " + r.status);
+        return data;
+      });
+    });
+  }
+
+  function el(tag, cls, text) {
+    var node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text != null) node.textContent = text;
+    return node;
+  }
+
+  function render() {
+    list.textContent = "";
+    var shown = entries.filter(function (e) { return e.status === filter; });
+    var pending = entries.filter(function (e) { return e.status === "pending"; }).length;
+    tabs.querySelector('[data-filter="pending"]').textContent = "En attente (" + pending + ")";
+    tabs.querySelector('[data-filter="approved"]').textContent = "Publiés (" + (entries.length - pending) + ")";
+    if (!shown.length) {
+      list.appendChild(el("p", null, filter === "pending" ? "Aucun avis en attente." : "Aucun avis publié."));
+      return;
+    }
+    shown.forEach(function (entry) {
+      var item = el("div", "admin-avis-item " + entry.status);
+      var date = entry.date ? new Date(entry.date).toLocaleString("fr-FR") : "";
+      var meta = el("div", "meta");
+      meta.appendChild(document.createTextNode(date + " · "));
+      if (entry.page) {
+        var link = el("a", null, entry.page);
+        link.href = entry.page;
+        link.target = "_blank";
+        link.rel = "noopener";
+        meta.appendChild(link);
+      } else {
+        meta.appendChild(document.createTextNode(entry.fiche));
+      }
+      item.appendChild(meta);
+      item.appendChild(el("strong", null, (entry.name || "Anonyme") + (entry.rating ? " — " + "★".repeat(entry.rating) : "")));
+      item.appendChild(el("p", null, entry.message || ""));
+      if (typeof entry.photo === "string" && entry.photo.indexOf("data:image/") === 0) {
+        var img = document.createElement("img");
+        img.src = entry.photo;
+        img.alt = "Photo envoyée avec l'avis";
+        item.appendChild(img);
+      }
+      var actions = el("div", "actions");
+      if (entry.status === "pending") {
+        var ok = el("button", "approve", "Valider");
+        ok.type = "button";
+        ok.addEventListener("click", function () { act("approve", entry); });
+        actions.appendChild(ok);
+      }
+      var del = el("button", "delete", "Supprimer");
+      del.type = "button";
+      del.addEventListener("click", function () {
+        if (confirm("Supprimer définitivement cet avis ?")) act("delete", entry);
+      });
+      actions.appendChild(del);
+      item.appendChild(actions);
+      list.appendChild(item);
+    });
+  }
+
+  function act(action, entry) {
+    status.textContent = "…";
+    call("POST", { action: action, fiche: entry.fiche, id: entry.id })
+      .then(function () {
+        if (action === "delete") entries = entries.filter(function (e) { return e !== entry; });
+        else entry.status = "approved";
+        status.textContent = action === "delete" ? "Avis supprimé." : "Avis publié sur la fiche.";
+        render();
+      })
+      .catch(function (err) { status.textContent = err.message; });
+  }
+
+  function load() {
+    status.textContent = "Chargement…";
+    call("GET")
+      .then(function (data) {
+        try { sessionStorage.setItem("cocoAdminKey", keyInput.value); } catch (e) {}
+        entries = data;
+        status.textContent = "";
+        tabs.hidden = false;
+        render();
+      })
+      .catch(function (err) { status.textContent = err.message; });
+  }
+
+  form.addEventListener("submit", function (e) { e.preventDefault(); load(); });
+  tabs.addEventListener("click", function (e) {
+    var btn = e.target.closest("button[data-filter]");
+    if (!btn) return;
+    filter = btn.getAttribute("data-filter");
+    Array.prototype.forEach.call(tabs.querySelectorAll("button"), function (b) {
+      b.setAttribute("aria-pressed", String(b === btn));
+    });
+    render();
+  });
+  if (keyInput.value) load();
+})();
+</script>

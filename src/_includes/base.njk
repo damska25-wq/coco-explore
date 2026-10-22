@@ -18,6 +18,9 @@
 <title>{{ title | safe }}</title>
 <meta name="description" content="{{ description | safe }}">
 <link rel="canonical" href="https://cocoexplore.com/{{ permalinkPath | cleanUrl }}">
+{%- if noindex %}
+<meta name="robots" content="noindex, nofollow">
+{%- endif %}
 {%- set altLangPath = ("/" if altLangUrl == "/" else ("/" + (altLangUrl | cleanUrl))) if altLangUrl else "" %}
 {%- if altLangUrl %}
 <link rel="alternate" hreflang="{{ 'fr' if lang == 'en' else 'en' }}" href="https://cocoexplore.com{{ altLangPath }}">

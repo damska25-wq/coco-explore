@@ -296,7 +296,8 @@
             name: name.slice(0, 60),
             message: message.slice(0, 500),
             photo: photoDataUrl,
-            rating: ratingInput && ratingInput.value ? Number(ratingInput.value) : null
+            rating: ratingInput && ratingInput.value ? Number(ratingInput.value) : null,
+            page: location.pathname
           })
         })
           .then(function (r) {
@@ -310,16 +311,16 @@
               throw err;
             });
           })
-          .then(function (entry) {
-            renderComment(entry, true);
-            updateRatingSummary();
+          .then(function () {
+            // Les avis sont relus avant publication (voir netlify/functions/avis.mjs) :
+            // on n'affiche donc pas le nouvel avis tout de suite sur la fiche.
             form.reset();
             setSelectedStars(0);
             photoDataUrl = null;
             if (preview) preview.hidden = true;
             if (photoBtn) photoBtn.classList.remove("has-photo");
             if (photoBtnLabel) photoBtnLabel.textContent = "Photo";
-            setStatus("Merci, ton avis a été publié !", "ok");
+            setStatus("Merci ! Ton avis sera publié après une rapide relecture.", "ok");
           })
           .catch(function (err) {
             setStatus(
