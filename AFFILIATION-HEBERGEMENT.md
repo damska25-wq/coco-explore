@@ -232,3 +232,36 @@ La page `src/a-propos.njk` promet que « le contenu et les informations de chaqu
 9. **Champ d'application de la loi n° 2023-451** à un site-guide affilié : non tranché dans les textes lus. La mention « Lien sponsorisé » est appliquée par prudence.
 10. **ARPP** : recommandations « Communication publicitaire numérique » et « Mentions et renvois » non lues en entier.
 11. **Trafic réel des fiches hébergement** : inconnu. C'est la donnée qui détermine tout le reste de l'estimation.
+
+---
+
+## 6. Lot test retenu (23/10/2026)
+
+**Décision de l'utilisateur : on s'arrête à 10 hôtels pour l'instant, pas d'élargissement tant que la candidature Expedia Group n'est pas acceptée.** Recherche faite via Parallel Search (web_search + web_fetch), aucune fiche du site modifiée, aucun compte créé, aucun lien généré.
+
+Point de départ : les ~40 fiches hébergements les plus vues dans Search Console (déjà enrichies, voir section D de `SEO-PRIORITES.md`). Sur un premier sous-ensemble de 32 fiches vérifiées une à une sur Expedia/Hotels.com/Abritel, seuls 10 hôtels sont confirmés — les 19 campings du lot et 2 autres hôtels (Hostellerie de Levernois, ibis budget Orly Rungis, présents sur Booking mais pas trouvés sur Expedia/Hotels.com) ont été écartés. Aucun résultat sur Abritel pour l'ensemble du lot (cohérent : Abritel cible les locations privées, pas les hôtels ni les campings classiques).
+
+### Les 10 hôtels confirmés
+
+| Fiche | Établissement | Trouvé sur | Politique chien confirmée sur la plateforme |
+|---|---|---|---|
+| `chateau-grand-barrail-saint-emilion.njk` | Château Hôtel Spa Grand Barrail (Saint-Émilion) | Expedia | 20 €/animal/jour, chambres spécifiques — cohérent avec la fiche |
+| `domaine-riberach-belesta.njk` | Domaine Riberach (Bélesta) | Expedia | 15 €/animal/nuit — cohérent |
+| `hotel-bourgogne-cluny.njk` | Hôtel de Bourgogne (Cluny) | Hotels.com | 15 €/animal/séjour — cohérent (légère différence de formulation nuit/séjour avec la fiche, pas de contradiction de fond) |
+| `hotel-cote-saint-jacques-joigny.njk` | La Côte Saint-Jacques & Spa (Joigny) | Expedia | Gratuit (« pets stay free ») — cohérent |
+| `hotel-dauphin-laigle-61.njk` | Hôtel du Dauphin / Brit Hotel (L'Aigle) | Expedia | 10 €/animal/nuit, chiens uniquement — cohérent |
+| `hotel-duc-de-padoue-corte-2b.njk` | Hôtel Duc de Padoue (Corte) | Expedia | 7,50 €/animal/nuit — cohérent |
+| `hotel-bb-albi.njk` | B&B Hôtel Albi | Expedia (+ Hotels.com via Google Hotels) | 6 €/nuit — cohérent |
+| `hotel-ithurria-ainhoa.njk` | Hôtel Ithurria (Ainhoa) | Expedia | 12 €/animal/jour, chiens uniquement — cohérent |
+| `hotel-splendid-dax.njk` | Hôtel & Spa Le Splendid (Dax) | Expedia + Hotels.com | 14-15 €/nuit, 1 animal max 8 kg — cohérent (léger écart de tarif selon plateforme) |
+| `relais-bernard-loiseau-saulieu.njk` | Relais Bernard Loiseau (Saulieu) | Expedia | 25 €/animal/nuit — cohérent |
+
+**1 cas laissé de côté par prudence** (ni validé ni écarté) : `hotel-bb-montauban.njk` (B&B Hôtel Montauban) — référencé sur Expedia (visible via un avis client dans un guide tiers), mais l'URL de fiche propre et le texte exact de la politique chien n'ont pas pu être confirmés directement. À revérifier si on l'ajoute au lot un jour.
+
+### Prochaine étape (seulement une fois la candidature Expedia acceptée)
+
+1. Se connecter à l'espace affilié Expedia Group (Creator Toolbox / Partnerize) et vérifier, pour chacun des 10 hôtels ci-dessus, que l'établissement est bien disponible dans l'outil de génération de liens.
+2. Générer le lien de suivi (deep link) vers la page exacte de chaque établissement.
+3. Revérifier à ce moment-là que la politique chien affichée sur la page liée n'a pas changé depuis cette recherche (23/10/2026).
+4. Seulement à ce stade : intégrer les 10 boutons sur le site, selon le format décrit en section 4 (bouton « Voir les disponibilités sur Expedia », mention « Lien sponsorisé », `rel="sponsored noopener"`, un seul push conformément à la règle des crédits Netlify).
+5. Ne pas élargir le lot au-delà de ces 10 avant d'avoir mesuré les premiers résultats (clics/réservations dans le tableau de bord Expedia).
