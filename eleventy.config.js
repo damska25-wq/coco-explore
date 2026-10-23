@@ -81,8 +81,9 @@ export default function (eleventyConfig) {
   const categoryDepts = (collectionApi) => {
     const all = collectionApi.getFilteredByGlob("src/fiches/*.njk");
     return categoryPages.flatMap((cp) => {
+      const cats = cp.cats || [cp.cat];
       const fiches = all
-        .filter((f) => f.data.breadcrumbCatId === cp.cat)
+        .filter((f) => cats.includes(f.data.breadcrumbCatId))
         .sort((a, b) => (a.data.cardTag || "").localeCompare(b.data.cardTag || "", "fr"));
       return departements
         .map((dep) => ({
@@ -103,7 +104,12 @@ export default function (eleventyConfig) {
 
   // Page catégorie associée à un breadcrumbCatId (undefined si aucune).
   eleventyConfig.addFilter("categoryPage", (catId) =>
-    categoryPages.find((cp) => cp.cat === catId)
+    categoryPages.find((cp) => (cp.cats || [cp.cat]).includes(catId))
+  );
+
+  // Nombre de fiches d'une page catégorie (toutes ses catégories confondues).
+  eleventyConfig.addFilter("countCategoryPage", (fiches, cp) =>
+    fiches.filter((f) => (cp.cats || [cp.cat]).includes(f.data.breadcrumbCatId)).length
   );
 
   // Remplace les {cle} d'un gabarit de texte de categoryPages.js.

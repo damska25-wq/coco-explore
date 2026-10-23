@@ -26,7 +26,7 @@ extraHead: |
   </style>
 ---
 {%- set catDepts = collections.categoryDepts | whereEq("cat", cp.cat) %}
-{%- set total = collections.fiches | byCategory(cp.cat) | length %}
+{%- set total = collections.fiches | countCategoryPage(cp) %}
 <section class="wrap cat-page-intro">
   <span class="tag">{{ cp.tag }}</span>
   <h1>{{ cp.h1Nat }}</h1>

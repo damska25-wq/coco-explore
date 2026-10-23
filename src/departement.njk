@@ -60,7 +60,7 @@ eleventyComputed:
     <h2>{{ section.heading | safe }}</h2>
     {%- set catPage = section.id | categoryPage %}
     {%- if catPage %}
-    {%- set catDep = (collections.categoryDeptPages | whereEq("cat", section.id) | whereEq("id", dep.id))[0] %}
+    {%- set catDep = (collections.categoryDeptPages | whereEq("cat", catPage.cat) | whereEq("id", dep.id))[0] %}
     <p class="cat-see-more"><a href="/{{ catPage.slug }}{% if catDep %}-{{ catDep.slug }}{% endif %}">{{ (catPage.linkDep | fill({ enNom: catDep.enNom })) if catDep else catPage.linkNat }} →</a></p>
     {%- endif %}
   </div>

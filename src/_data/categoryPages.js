@@ -3,10 +3,34 @@
 // n'est créée qu'à partir de `minFiches` fiches (pages trop maigres sinon) ;
 // les départements en dessous restent listés sur la page nationale.
 //
+// `cats` (optionnel) : plusieurs breadcrumbCatId regroupés sur la même page
+// (ex. "plages" + "cote-azur") ; sinon seule `cat` est prise en compte.
+//
 // Dans les textes, {enNom} = "en Gironde" / "dans le Var"..., {n} = nombre de
 // fiches du département, {villes} = communes couvertes, {total} et {nbDeps} =
 // totaux nationaux. Remplacés par le filtre `fill` (eleventy.config.js).
 export default [
+  {
+    cat: "plages",
+    cats: ["plages", "cote-azur"],
+    slug: "plage-chien",
+    label: "Plages",
+    tag: "Plages",
+    minFiches: 3,
+    unit: ["plage", "plages"],
+    titleNat: "Plages où les chiens sont acceptés : toute la France",
+    descNat: "Les plages où emmener son chien, classées par région et département : périodes et horaires autorisés, laisse, plages ouvertes toute l'année.",
+    h1Nat: "Plages où les chiens sont acceptés en France",
+    introNat: "Sur beaucoup de plages françaises, les chiens sont interdits pendant la saison estivale par arrêté municipal, parfois seulement à certaines heures. D'autres plages les acceptent toute l'année ou leur réservent une zone. Coco Explore référence <strong>{total} plages</strong> dans {nbDeps} départements, avec pour chacune la règle à connaître, classées ci-dessous par région puis par département.",
+    howTitle: "Ce qu'on vérifie pour chaque plage",
+    howHtml: "Les règles changent d'une commune à l'autre, et parfois d'une plage à l'autre dans la même commune : dates d'interdiction, horaires autorisés, laisse obligatoire ou non, zones réservées aux chiens. Chaque fiche reprend l'arrêté municipal ou la source officielle quand on l'a trouvé, et dit clairement quand une règle n'a pas pu être confirmée. Le badge « Toute l'année » ou « Saisonnier » sur les vignettes résume la règle quand elle est connue.",
+    titleDep: "Plages où les chiens sont acceptés {enNom} : {n} plages",
+    descDep: "{n} plages où emmener son chien {enNom} ({villes}) : périodes autorisées, horaires et laisse.",
+    h1Dep: "Plages où les chiens sont acceptés {enNom}",
+    introDep: "Coco Explore référence <strong>{n} plages {enNom}</strong> avec, pour chacune, la règle pour les chiens : toute l'année ou hors saison seulement, horaires, laisse, zones réservées, ou interdiction quand c'est le cas. Communes : {villes}. Pense à vérifier sur place, les arrêtés peuvent changer d'une saison à l'autre.",
+    linkDep: "Toutes les plages pour chiens {enNom}",
+    linkNat: "Toutes les plages où les chiens sont acceptés",
+  },
   {
     cat: "dogwash",
     slug: "dogwash-chien",

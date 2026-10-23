@@ -6,7 +6,7 @@ Fichier de travail non publié (racine du dépôt, hors `src/`). Généré le 22
 
 - **Ne jamais remettre de `noindex` ni filtrer le sitemap par région.** Le commit `21b28c2` (noindex sur les 9221 pages hors PACA) a été annulé par `b05606f` : les fiches hors PACA font **88 % des clics** (470 contre 62 pour PACA).
 - **Deux sessions poussent sur `claude/github-connexion-otichf`** (la branche de production Netlify) : `git fetch` + `git rebase` avant chaque push.
-- Pages catégorie (`src/categorie.njk`, `src/categorie-departement.njk`, configuration dans `src/_data/categoryPages.js`) : dogwash, toiletteurs, garde/pension, balades. Une page département est générée automatiquement dès qu'un département atteint 3 fiches de la catégorie (`minFiches`) — la catégorie d'une fiche (`breadcrumbCatId`) décide donc des pages sur lesquelles elle apparaît.
+- Pages catégorie (`src/categorie.njk`, `src/categorie-departement.njk`, configuration dans `src/_data/categoryPages.js`) : plages (+ côte d'azur), dogwash, toiletteurs, garde/pension, balades. Une page département est générée automatiquement dès qu'un département atteint 3 fiches de la catégorie (`minFiches`) — la catégorie d'une fiche (`breadcrumbCatId`) décide donc des pages sur lesquelles elle apparaît.
 - Titres de fiches : ne plus y mettre de mention de travail (« confiance X », « à vérifier »…) — le `title` est le lien bleu affiché par Google.
 
 ## Vue d'ensemble
@@ -174,7 +174,7 @@ Le `breadcrumbCatId` d'une fiche décide des pages catégorie sur lesquelles ell
 
 Méthode : auditer `breadcrumbCatId` sur tout le site (commencer par 85, 69, 74) et **appliquer directement** — l'utilisateur a demandé d'enchaîner les chantiers E sans validation intermédiaire. En contrepartie, lister chaque fiche reclassée (ancienne → nouvelle catégorie) dans le message de commit, et ne reclasser que les cas évidents (une plage est une plage, un parc urbain n'est pas un lac) ; en cas de doute, laisser la fiche telle quelle. Ne changer que `breadcrumbCatId` et `breadcrumbCatLabel` (et `tag`/`cardPictos` si incohérents) — **jamais les URL** (`permalinkPath`), qui sont indexées.
 
-Une fois ce tri fait : ne pas créer soi-même de page catégorie « Plages » — l'utilisateur la demandera à part (ajout de `plages` dans `src/_data/categoryPages.js`).
+La page catégorie « Plages où les chiens sont acceptés » existe depuis le 23/10/2026 (`/plage-chien` + une page par département à partir de 3 plages, catégories `plages` et `cote-azur`) : chaque plage reclassée dans `plages` y apparaît automatiquement, et la page du département (ex. `/plage-chien-vendee`) se crée dès 3 plages. **E1 reste donc prioritaire** : la Vendée, la Loire-Atlantique, le Nord, le Pas-de-Calais et la Somme n'ont aujourd'hui aucune plage classée `plages`.
 
 ### E2. Compléter le dogwash
 
