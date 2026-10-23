@@ -10,6 +10,9 @@ eleventyExcludeFromCollections: true
 # la redirection même quand un fichier statique correspond exactement à l'URL
 # demandée (sinon Netlify le servirait directement en 200, sans redirection).
 /index.html / 301!
+# Ancien badge gratuit, retiré le 23/10/2026 (seul le badge Partenaire payant existe).
+/badge-coco-explore /devenir-partenaire 301!
+/badge-coco-explore.html /devenir-partenaire 301!
 {%- for fiche in collections.fiches %}
 /{{ fiche.data.permalinkPath }} /{{ fiche.data.permalinkPath | cleanUrl }} 301!
 {%- endfor %}
@@ -29,7 +32,7 @@ eleventyExcludeFromCollections: true
 {%- for dep in collections.categoryDeptPages %}
 /{{ dep.cp.slug }}-{{ dep.slug }}.html /{{ dep.cp.slug }}-{{ dep.slug }} 301!
 {%- endfor %}
-{%- for p in ["404.html", "a-propos.html", "faq.html", "plan-du-site.html", "aires-autoroute-chien.html", "conseils-de-coco.html", "nouveautes.html", "devenir-partenaire.html", "badge-coco-explore.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
+{%- for p in ["404.html", "a-propos.html", "faq.html", "plan-du-site.html", "aires-autoroute-chien.html", "conseils-de-coco.html", "nouveautes.html", "devenir-partenaire.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
 /{{ p }} /{{ p | cleanUrl }} 301!
 {%- endfor %}
 

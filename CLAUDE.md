@@ -33,6 +33,7 @@ Le site propose une mise en avant payante optionnelle aux professionnels déjà 
 
 - **Page publique** : `src/devenir-partenaire.njk` (accessible depuis le menu hamburger) — volontairement sans tarif affiché, juste les explications et un contact mailto.
 - **Mécanisme technique** : ajouter `partenaire: true` au frontmatter d'une fiche déclenche un badge doré "Partenaire" sur ses cartes (accueil, page département, "à proximité") et un tag dans son hero. CSS : classes `.fiche-card.is-partenaire`, `.access-badge.badge-partenaire`, `.fiche-partenaire-tag` dans `src/style.css`.
+- **Un seul badge : « Partenaire », payant.** Décision de l'utilisateur (23/10/2026) : pas de badge gratuit « Référencé sur Coco Explore » à afficher par les professionnels (créé puis retiré le même jour, URL redirigée vers `/devenir-partenaire`). Ne rien proposer qui puisse se confondre avec le badge payant ; un échange de lien se fait sans badge.
 - **Tarif cible convenu avec l'utilisateur** : 19 à 29 €/mois, sans engagement, 1er mois offert. Pas de facturation à la performance (pas de données de trafic pour le justifier pour l'instant).
 - **Cohérence éditoriale** : la page "À propos" (`src/a-propos.njk`) a été mise à jour pour rester honnête vis-à-vis de ce programme (le classement/contenu reste neutre, seule la mise en avant visuelle est payante).
 
