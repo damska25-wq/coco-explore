@@ -1,0 +1,52 @@
+---
+layout: base.njk
+---
+{#- Guide pratique (src/guides/*.njk). Frontmatter : title, description, h1,
+    kicker, updated (YYYY-MM-DD), readingTime, sources [{label, url}],
+    related [slugs de categoryPages], bodyHtml. -#}
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": h1,
+  "description": description,
+  "dateModified": updated,
+  "inLanguage": "fr",
+  "author": { "@type": "Organization", "name": "Coco Explore", "url": "https://cocoexplore.com/" },
+  "publisher": { "@type": "Organization", "name": "Coco Explore", "url": "https://cocoexplore.com/" },
+  "mainEntityOfPage": "https://cocoexplore.com/" + (permalinkPath | cleanUrl)
+} | dump | safe }}
+</script>
+<article class="wrap guide-page">
+  <div class="cat-page-crumb"><a href="/">Coco Explore</a> / <a href="/guides">Guides</a> / {{ h1 | safe }}</div>
+  <span class="tag">{{ kicker | safe }}</span>
+  <h1>{{ h1 | safe }}</h1>
+  <p class="guide-meta">Mis à jour le {{ updated | dateLong }}{% if readingTime %} · {{ readingTime }} min de lecture{% endif %}</p>
+  <div class="guide-body">
+    {{ bodyHtml | safe }}
+  </div>
+  {%- if sources and sources.length %}
+  <section class="guide-sources">
+    <h2>Sources</h2>
+    <p>Informations vérifiées sur les sources ci-dessous à la date de mise à jour. Les règles et les tarifs évoluent : vérifie toujours auprès de l'organisme concerné avant de partir.</p>
+    <ul>
+      {%- for s in sources %}
+      <li><a href="{{ s.url }}" target="_blank" rel="noopener nofollow">{{ s.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+  <section class="guide-more">
+    <h2>Pour aller plus loin</h2>
+    <ul>
+      {%- for slug in related or [] %}
+      {%- set cp = (categoryPages | whereEq("slug", slug))[0] %}
+      {%- if cp %}<li><a href="/{{ cp.slug }}">{{ cp.linkNat }}</a></li>{% endif %}
+      {%- endfor %}
+      {%- for g in collections.guides %}
+      {%- if g.data.permalinkPath != permalinkPath %}<li><a href="/{{ g.data.permalinkPath | cleanUrl }}">{{ g.data.h1 | safe }}</a></li>{% endif %}
+      {%- endfor %}
+      <li><a href="/guides">Tous les guides pratiques</a></li>
+    </ul>
+  </section>
+</article>

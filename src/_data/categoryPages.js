@@ -6,6 +6,12 @@
 // `cats` (optionnel) : plusieurs breadcrumbCatId regroupés sur la même page
 // (ex. "plages" + "cote-azur") ; sinon seule `cat` est prise en compte.
 //
+// `match` (optionnel) : motif (expression régulière, insensible à la casse)
+// que doit contenir le titre, le tag ou le cardTitle de la fiche — pour une
+// page transversale comme les parcs canins ; `exclude` écarte les faux positifs. `secondary: true` : page qui ne
+// devient pas la page « catégorie » des fiches (fil d'Ariane, liens « Tous
+// les … ») de ses catégories, déjà portée par une autre entrée.
+//
 // `urgentFirst` (optionnel, vétérinaires) : fiches à garde 24h/24 vérifiée
 // (badge vetBadge) affichées en premier.
 //
@@ -175,5 +181,29 @@ export default [
     introDep: "Coco Explore référence <strong>{n} balades à faire avec son chien {enNom}</strong> : {villes}. Chaque fiche précise les règles (laisse, périodes d'interdiction, troupeaux) et les infos de terrain utiles au chien : ombre, points d'eau, type de sol, difficulté.",
     linkDep: "Toutes les balades avec son chien {enNom}",
     linkNat: "Toutes les balades avec son chien en France",
+  },
+  {
+    cat: "activites",
+    cats: ["activites", "balades", "lacs"],
+    match: "cani-?parc|parcs? canins?|aires? canines?|espaces? canins?|caniland|aire de libert|zones? de libert|espaces? de libert|dog ?park|parcs? (à|pour) chiens?|cani-?site|enclos canin|caniespace",
+    exclude: "futur caniparc",
+    secondary: true,
+    slug: "parc-canin",
+    label: "Parcs canins",
+    tag: "Parcs canins",
+    minFiches: 3,
+    unit: ["parc canin", "parcs canins"],
+    titleNat: "Parcs canins et aires de liberté pour chiens en France",
+    descNat: "Caniparcs, aires canines clôturées et zones de liberté où lâcher son chien, classés par région et département : accès, équipements et règles.",
+    h1Nat: "Parcs canins et aires de liberté pour chiens en France",
+    introNat: "En ville, la laisse est obligatoire presque partout : les parcs canins, caniparcs et zones de liberté sont souvent les seuls endroits où ton chien peut courir librement. Coco Explore référence <strong>{total} parcs canins et zones de liberté</strong> dans {nbDeps} départements, classés ci-dessous par région puis par département.",
+    howTitle: "Ce qu'on précise pour chaque parc",
+    howHtml: "Espace clôturé ou non, double portillon, point d'eau, ombre, séparation petits et grands chiens, horaires, chiens catégorisés admis ou non : chaque fiche reprend ce que nous avons pu vérifier, le plus souvent auprès de la commune. Pense au rappel avant d'entrer et au ramassage des déjections, obligatoire même en zone de liberté.",
+    titleDep: "Parcs canins et aires de liberté {enNom} : {n} adresses",
+    descDep: "{n} parcs canins et zones de liberté {enNom} ({villes}) : clôture, point d'eau, horaires et règles.",
+    h1Dep: "Parcs canins et aires de liberté {enNom}",
+    introDep: "Coco Explore référence <strong>{n} parcs canins et zones de liberté {enNom}</strong> : {villes}. Chaque fiche précise si l'espace est clôturé, s'il y a de l'eau et de l'ombre, et les règles d'accès que nous avons pu vérifier.",
+    linkDep: "Tous les parcs canins {enNom}",
+    linkNat: "Tous les parcs canins et aires de liberté en France",
   },
 ];

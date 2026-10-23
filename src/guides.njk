@@ -1,0 +1,21 @@
+---
+permalink: guides.html
+permalinkPath: guides.html
+title: "Guides pratiques pour voyager avec son chien"
+description: "Train, avion, ferry, voyage à l'étranger, règles des plages, dangers de saison : les guides pratiques de Coco Explore pour partir avec son chien, vérifiés sur les sources officielles."
+layout: base.njk
+---
+<section class="wrap guide-page">
+  <span class="tag">Guides</span>
+  <h1>Guides pratiques pour voyager avec son chien</h1>
+  <p class="guide-lead">Les fiches de Coco Explore disent <em>où</em> aller avec son chien. Ces guides répondent au <em>comment</em> : transports, papiers, règles et dangers de saison. Chaque guide s'appuie sur les sources officielles, citées en bas de page, et indique sa date de mise à jour.</p>
+  <div class="guide-list">
+    {%- for g in collections.guides %}
+    <a href="/{{ g.data.permalinkPath | cleanUrl }}" class="guide-card">
+      <span class="tag">{{ g.data.kicker | safe }}</span>
+      <h2>{{ g.data.h1 | safe }}</h2>
+      <p>{{ g.data.description | safe }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+</section>

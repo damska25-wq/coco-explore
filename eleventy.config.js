@@ -47,6 +47,18 @@ function vetBadge(infoItems) {
   return { label: "Urgences 24h/24", cls: "badge-urgence" };
 }
 
+// Une fiche appartient-elle à une page catégorie de src/_data/categoryPages.js ?
+// Catégorie dans `cats` (ou `cat`), et, si `match` est défini, titre / tag /
+// cardTitle correspondant à ce motif (ex. parcs canins, répartis entre
+// plusieurs catégories), sauf s'il correspond aussi à `exclude`.
+function inCategoryPage(f, cp) {
+  if (!(cp.cats || [cp.cat]).includes(f.data.breadcrumbCatId)) return false;
+  if (!cp.match) return true;
+  const text = [f.data.title, f.data.tag, f.data.cardTitle].join(" ");
+  if (cp.exclude && new RegExp(cp.exclude, "i").test(text)) return false;
+  return new RegExp(cp.match, "i").test(text);
+}
+
 // "en Gironde", "dans le Var", "dans l'Indre", "à Paris"... repris du H1 SEO
 // de chaque département (src/_data/departements.js).
 const deptEnNom = (dep) => dep.seoH1.replace(/^Où aller avec son chien /, "");
@@ -81,6 +93,11 @@ export default function (eleventyConfig) {
     )
   );
 
+  // Guides pratiques (src/guides/*.njk), dans l'ordre du champ `order`.
+  eleventyConfig.addCollection("guides", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/guides/*.njk").sort((a, b) => (a.data.order || 0) - (b.data.order || 0))
+  );
+
   // Fiches traduites en anglais (pilote : accueil + menu + département du
   // Var uniquement) — collection séparée pour ne jamais se mélanger aux
   // fiches françaises affichées sur l'accueil, la carte ou la recherche.
@@ -98,9 +115,8 @@ export default function (eleventyConfig) {
   const categoryDepts = (collectionApi) => {
     const all = collectionApi.getFilteredByGlob("src/fiches/*.njk");
     return categoryPages.flatMap((cp) => {
-      const cats = cp.cats || [cp.cat];
       const fiches = all
-        .filter((f) => cats.includes(f.data.breadcrumbCatId))
+        .filter((f) => inCategoryPage(f, cp))
         .sort((a, b) => (a.data.cardTag || "").localeCompare(b.data.cardTag || "", "fr"));
       // Vétérinaires : ceux dont la garde 24h/24 est vérifiée en premier.
       if (cp.urgentFirst) {
@@ -173,12 +189,12 @@ export default function (eleventyConfig) {
 
   // Page catégorie associée à un breadcrumbCatId (undefined si aucune).
   eleventyConfig.addFilter("categoryPage", (catId) =>
-    categoryPages.find((cp) => (cp.cats || [cp.cat]).includes(catId))
+    categoryPages.find((cp) => !cp.secondary && (cp.cats || [cp.cat]).includes(catId))
   );
 
   // Nombre de fiches d'une page catégorie (toutes ses catégories confondues).
   eleventyConfig.addFilter("countCategoryPage", (fiches, cp) =>
-    fiches.filter((f) => (cp.cats || [cp.cat]).includes(f.data.breadcrumbCatId)).length
+    fiches.filter((f) => inCategoryPage(f, cp)).length
   );
 
   // Remplace les {cle} d'un gabarit de texte de categoryPages.js.

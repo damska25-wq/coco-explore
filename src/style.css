@@ -881,3 +881,23 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .fiche-figure img { display: block; width: 100%; height: auto; border-radius: 12px; }
 .fiche-figure figcaption { font-size: 0.85rem; opacity: 0.75; margin-top: 0.4rem; }
 .fiche-collab { font-size: 0.8rem; opacity: 0.65; margin-top: 1.5rem; }
+
+/* Guides pratiques (src/guides/, src/_includes/guide.njk, src/guides.njk). */
+.guide-page { padding-top: 40px; padding-bottom: 60px; max-width: 760px; }
+.guide-page .cat-page-crumb { font-size: 0.85rem; color: rgba(var(--ink),0.6); margin-bottom: 12px; }
+.guide-page .cat-page-crumb a { color: inherit; }
+.guide-meta { color: rgba(var(--ink),0.6); font-size: 0.9rem; margin-top: -0.4em; }
+.guide-lead { font-size: 1.05rem; max-width: 68ch; }
+.guide-body h2, .guide-sources h2, .guide-more h2 { font-size: 1.35rem; color: var(--heading); margin-top: 1.6em; }
+.guide-body h3 { font-size: 1.1rem; color: var(--heading); margin-top: 1.2em; }
+.guide-body p, .guide-body li { max-width: 68ch; }
+.guide-body table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.95rem; }
+.guide-body th, .guide-body td { border: 1px solid rgba(var(--ink),0.15); padding: 8px 10px; text-align: left; vertical-align: top; }
+.guide-body .callout { margin: 1.2em 0; }
+.guide-sources { margin-top: 2em; font-size: 0.92rem; }
+.guide-sources li, .guide-more li { margin: 4px 0; overflow-wrap: anywhere; }
+.guide-list { display: grid; gap: 16px; margin-top: 24px; }
+.guide-card { display: block; padding: 18px 20px; border: 1px solid rgba(var(--ink),0.12); border-radius: 10px; background: var(--surface); text-decoration: none; color: var(--encre); }
+.guide-card:hover { border-color: var(--terracotta); }
+.guide-card h2 { font-size: 1.2rem; color: var(--heading); margin: 6px 0; }
+.guide-card p { margin: 0; color: rgba(var(--ink),0.75); font-size: 0.95rem; }

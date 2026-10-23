@@ -28,6 +28,18 @@ eleventyExcludeFromCollections: true
     <priority>0.7</priority>
   </url>
 {%- endfor %}
+  <url>
+    <loc>https://cocoexplore.com/guides</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+{%- for g in collections.guides %}
+  <url>
+    <loc>https://cocoexplore.com/{{ g.data.permalinkPath | cleanUrl }}</loc>
+    <lastmod>{{ g.inputPath | lastmod }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+{%- endfor %}
 {%- for cp in categoryPages %}
   <url>
     <loc>https://cocoexplore.com/{{ cp.slug }}</loc>

@@ -16,6 +16,10 @@ eleventyExcludeFromCollections: true
 {%- for dep in departements %}
 /departement-{{ dep.slug }}.html /departement-{{ dep.slug }} 301!
 {%- endfor %}
+/guides.html /guides 301!
+{%- for g in collections.guides %}
+/{{ g.data.permalinkPath }} /{{ g.data.permalinkPath | cleanUrl }} 301!
+{%- endfor %}
 {%- for cp in categoryPages %}
 /{{ cp.slug }}.html /{{ cp.slug }} 301!
 {%- endfor %}

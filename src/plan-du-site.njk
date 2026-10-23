@@ -46,6 +46,10 @@ extraHead: |
       <a href="contact">Contact</a>
       <a href="faq">FAQ</a>
       <a href="aires-autoroute-chien">Aires d'autoroute avec son chien</a>
+      <a href="guides">Guides pratiques pour voyager avec son chien</a>
+      {%- for g in collections.guides %}
+      <a href="{{ g.data.permalinkPath | cleanUrl }}">{{ g.data.h1 | safe }}</a>
+      {%- endfor %}
       {%- for cp in categoryPages %}
       <a href="{{ cp.slug }}">{{ cp.titleNat }}</a>
       {%- endfor %}
