@@ -42,7 +42,7 @@ extraScripts: |
   </button>
   <div class="wrap">
     <div class="breadcrumb"><a href="{{ '/en/' if lang == 'en' else '/' }}">Coco Explore</a> / <a href="{{ ('/en/departement-' + (departement | deptSlug)) if lang == 'en' else (('/' + (breadcrumbCatId | categoryPage).slug) if (breadcrumbCatId | categoryPage) else '/#' + breadcrumbCatId) }}">{{ breadcrumbCatLabel | safe }}</a> / {{ breadcrumbLast | safe }}</div>
-    <span class="tag">{{ tag | safe }}</span>{% if partenaire %}<span class="fiche-partenaire-tag"><svg width="12" height="12"><use href="#i-star"/></svg> Partenaire Coco Explore</span>{% endif %}
+    <span class="tag">{{ tag | safe }}</span>{% if partenaire %}<span class="fiche-partenaire-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-medal"/></svg>Partenaire Coco Explore</span>{% endif %}
     <h1>{{ h1 | safe }}</h1>
     <span class="lieu">{{ lieu | safe }}</span>
     <span class="fiche-updated">{{ "Updated" if lang == "en" else "Fiche mise à jour le" }} {{ page.inputPath | lastmod | dateLong(lang) }}</span>
@@ -152,12 +152,13 @@ extraScripts: |
   </div>
   <div class="fiche-grid">
     {%- for f in relatedFiches %}
-    {%- set badge = ({ label: "Partenaire", cls: "badge-partenaire" }) if f.data.partenaire else ((f.data.infoItems | accessBadge) if (f.data.breadcrumbCatId == "plages" or f.data.breadcrumbCatId == "cote-azur") else ((f.data.infoItems | vetBadge) if f.data.breadcrumbCatId == "veterinaires" else null)) %}
+    {%- set badge = ((f.data.infoItems | accessBadge) if (f.data.breadcrumbCatId == "plages" or f.data.breadcrumbCatId == "cote-azur") else ((f.data.infoItems | vetBadge) if f.data.breadcrumbCatId == "veterinaires" else null)) %}
     <a href="{{ f.data.permalinkPath | cleanUrl }}" class="fiche-card{% if f.data.partenaire %} is-partenaire{% endif %}">
       <div class="thumb">
         {%- set cardSrcset = f.data.heroImage | imgSrcset %}
         <img src="{{ f.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ f.data.cardTitle | safe }} — {{ f.data.cardTag | safe }}" loading="lazy">
         {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
+{%- if f.data.partenaire %}<span class="partner-badge"><svg width="13" height="13" aria-hidden="true"><use href="#i-medal"/></svg>Partenaire</span>{%- endif %}
       </div>
       <div class="body">
         <span class="tag">{{ f.data.cardTag | safe }}</span>

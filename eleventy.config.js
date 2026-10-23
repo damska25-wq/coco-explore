@@ -59,6 +59,12 @@ function inCategoryPage(f, cp) {
   return new RegExp(cp.match, "i").test(text);
 }
 
+// Programme partenaire (voir CLAUDE.md) : la page /devenir-partenaire promet
+// une « priorité d'affichage dans les listes de votre secteur » et dans les
+// suggestions « à proximité ». Tri stable : l'ordre existant est conservé à
+// l'intérieur des partenaires et des autres fiches.
+const partnersFirst = (fiches) => fiches.sort((a, b) => !!b.data.partenaire - !!a.data.partenaire);
+
 // "en Gironde", "dans le Var", "dans l'Indre", "à Paris"... repris du H1 SEO
 // de chaque département (src/_data/departements.js).
 const deptEnNom = (dep) => dep.seoH1.replace(/^Où aller avec son chien /, "");
@@ -119,6 +125,9 @@ export default function (eleventyConfig) {
         .filter((f) => inCategoryPage(f, cp))
         .sort((a, b) => (a.data.cardTag || "").localeCompare(b.data.cardTag || "", "fr"));
       // Vétérinaires : ceux dont la garde 24h/24 est vérifiée en premier.
+      partnersFirst(fiches);
+      // Vétérinaires : ceux dont la garde 24h/24 est vérifiée passent quand même
+      // avant les partenaires (sécurité de quelqu'un qui cherche une urgence).
       if (cp.urgentFirst) {
         fiches.sort((a, b) => !!vetBadge(b.data.infoItems) - !!vetBadge(a.data.infoItems));
       }
@@ -176,7 +185,7 @@ export default function (eleventyConfig) {
           aVille: aVille(ville),
           slug: slugify(ville) + "-avec-son-chien",
           dep: departements.find((d) => d.id === deptId),
-          fiches: fiches.sort((a, b) => a.data.order - b.data.order),
+          fiches: partnersFirst(fiches.sort((a, b) => a.data.order - b.data.order)),
         };
       })
       .sort((a, b) => a.ville.localeCompare(b.ville, "fr"));
@@ -275,6 +284,7 @@ export default function (eleventyConfig) {
           (f.data.departement || []).includes(deptId)
       )
       .sort((a, b) => a.data.order - b.data.order)
+      .sort((a, b) => !!b.data.partenaire - !!a.data.partenaire)
   );
 
   eleventyConfig.addFilter("countByCatsAndDept", (fiches, catIds, deptId) =>
@@ -542,7 +552,12 @@ export default function (eleventyConfig) {
     const sameDept = pool.filter((f) => (f.data.departement || []).some((d) => (dept || []).includes(d)));
     const sameDeptSet = new Set(sameDept);
     const rest = pool.filter((f) => !sameDeptSet.has(f));
-    const chosen = rotatedSlice(sameDept, excludePath, n);
+    // Les partenaires du même département sont toujours proposés en premier.
+    const sameDeptPartners = sameDept.filter((f) => f.data.partenaire).slice(0, n);
+    const chosen = [
+      ...sameDeptPartners,
+      ...rotatedSlice(sameDept.filter((f) => !f.data.partenaire), excludePath, n - sameDeptPartners.length),
+    ];
     if (chosen.length < n) {
       chosen.push(...rotatedSlice(rest, excludePath, n - chosen.length));
     }

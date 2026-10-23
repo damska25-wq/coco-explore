@@ -120,12 +120,13 @@ extraScripts: |
     </div>
     <div class="fiche-grid">
       {%- for fiche in collections.fiches | latestByCategory(section.id, 18) %}
-      {%- set badge = ({ label: "Partenaire", cls: "badge-partenaire" }) if fiche.data.partenaire else ((fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null)) %}
+      {%- set badge = ((fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null)) %}
       <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}">
         <div class="thumb">
           {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" data-src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} data-srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}">
           {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
+{%- if fiche.data.partenaire %}<span class="partner-badge"><svg width="13" height="13" aria-hidden="true"><use href="#i-medal"/></svg>Partenaire</span>{%- endif %}
         </div>
         <div class="body">
           <span class="tag">{{ fiche.data.cardTag | safe }}</span>

@@ -70,12 +70,13 @@ eleventyComputed:
   </div>
   <div class="fiche-grid">
     {%- for fiche in deptFiches %}
-    {%- set badge = ({ label: "Partenaire", cls: "badge-partenaire" }) if fiche.data.partenaire else ((fiche.data.infoItems | accessBadge) if (fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur") else ((fiche.data.infoItems | vetBadge) if fiche.data.breadcrumbCatId == "veterinaires" else null)) %}
+    {%- set badge = ((fiche.data.infoItems | accessBadge) if (fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur") else ((fiche.data.infoItems | vetBadge) if fiche.data.breadcrumbCatId == "veterinaires" else null)) %}
     <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}">
       <div class="thumb">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
         <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
         {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
+{%- if fiche.data.partenaire %}<span class="partner-badge"><svg width="13" height="13" aria-hidden="true"><use href="#i-medal"/></svg>Partenaire</span>{%- endif %}
       </div>
       <div class="body">
         <span class="tag">{{ fiche.data.cardTag | safe }}</span>
