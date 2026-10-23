@@ -275,6 +275,8 @@ Proposer une petite phrase d'invitation sur les fiches, par exemple « Tu y es a
 
 Brouillon dans la rubrique Guides, mêmes règles que les autres guides (sources officielles lues, date `updated`, aucun tarif ni règle sans source). Sujets : chaleur et coup de chaleur, plages et arrêtés municipaux, voiture, eau, hébergement. Garder le brouillon hors build (fichier de travail non publié, pas dans `src/`) : publication prévue en mars-avril 2027.
 
+> ✅ **Brouillon rédigé et sourcé le 23/10/2026**, dans `GUIDE-ETE-BROUILLON.md` (racine, hors `src/`, non publié) : coup de chaleur (signes, gestes, sources ANSES/vétérinaires), voiture (code de la route, code pénal, amendes), renvoi vers le guide plages existant, eau/hydratation/cyanobactéries, hébergement adapté à l'été. Frontmatter final et liste de points à revérifier notés en tête du fichier. Prêt à être copié dans `src/guides/ete-chien.njk` en mars-avril 2027.
+
 ## Ce qui n'est pas prioritaire
 
 - Traduction anglaise : 4 clics en 3 mois.
