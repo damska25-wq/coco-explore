@@ -133,6 +133,7 @@ Les avis déposés sur les fiches (formulaire ouvert, photo possible) passent pa
 - **Modération avant publication** depuis le 22/10/2026 : tout nouvel avis est `status: "pending"` et n'apparaît sur la fiche qu'après validation. Les avis antérieurs (sans `status`) restent publiés.
 - **Page d'admin** : `/admin-avis` (`src/admin-avis.njk`, noindex, hors sitemap) — onglets En attente / Publiés, boutons Valider / Supprimer. Protégée par la variable Netlify **`ADMIN_KEY`** (secret, choisi par l'utilisateur, jamais à écrire dans le dépôt ni dans une conversation).
 - **Notification** : à chaque nouvel avis, push envoyé sur ntfy.sh via la variable **`NTFY_TOPIC`** ; l'utilisateur est abonné au canal dans l'app ntfy sur son iPhone.
+- **Anti-spam** : champ piège invisible `website` dans le formulaire (rempli = robot, ignoré sans erreur), 5 avis max par visiteur et par heure, admin bloquée 15 min après 5 mauvais mots de passe. Compteurs dans le store Blobs `avis-limites`, IP hachées (jamais en clair).
 - Une variable d'environnement modifiée sur Netlify n'est prise en compte qu'au déploiement suivant.
 
 ## Échanges de liens
@@ -145,4 +146,4 @@ Les fiches créées en échange d'un lien (sans paiement) sont suivies dans `ECH
 - Jamais de photo Unsplash dupliquée entre fiches (vérification regex sur `photo-XXXX` avant chaque commit de contenu).
 - Jamais le label `"Urgences"` avec un pattern 24h/24 sauf si réellement vérifié (déclenche un badge automatique `vetBadge`).
 - `order` unique par fiche, nouvelles plages allouées par lot d'écriture.
-- Build de vérification avant tout commit : `npx @11ty/eleventy` (doit tourner sans erreur).
+- Build de vérification avant tout commit : `npx @11ty/eleventy && node scripts/check-site.mjs` (les deux doivent passer). Sur Netlify, `npm run build` enchaîne les deux : **si `scripts/check-site.mjs` échoue, le déploiement échoue et la version précédente reste en ligne**. Il bloque : plus de 20 pages en noindex, sitemap qui perd des fiches, « confiance X » dans `title`/`description`/`cardTeaser`, photo Unsplash (`heroImage`) partagée par deux fiches françaises, gabarit `{…}` non remplacé sur les pages catégorie. Ne jamais contourner ce contrôle : corriger la cause.

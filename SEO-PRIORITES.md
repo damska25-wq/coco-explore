@@ -192,6 +192,30 @@ Les recherches d'hiver montent dès novembre et culminent en décembre-janvier ;
 
 Moins de 3 fiches `dogsitters` : Alpes-de-Haute-Provence (2), Vosges (2), Guadeloupe (2), Martinique (1), Guyane (2), Mayotte (2). Pensions, dogsitters, garderies : conditions d'accueil, vaccins exigés, tarifs.
 
+## F. Audit qualité du contenu (ajouté le 23/10/2026)
+
+À enchaîner après les chantiers E, même consigne (sans validation intermédiaire, garde-fous ci-dessous).
+
+### F1. Établissements fermés encore en ligne ⭐
+
+Au moins 23 fiches annoncent une fermeture dans leur titre ou leur texte (`grep -l "définitivement fermé\|fermé définitivement\|fermeture définitive\|probablement fermé" src/fiches/*.njk`), ex. « Tom&Co Blois — FERMÉ définitivement depuis décembre 2025 », « La Meute And Co, Beauvais : fermé définitivement le 25 mai 2026 », « Toutous et Matous, Rouen — très probablement fermé ».
+
+- **Fermeture confirmée par une source fiable** (site officiel, fiche Google « Fermé définitivement », annuaire SIRENE radié) : supprimer la fiche **et** ajouter une redirection 301 de son URL vers la page catégorie × département correspondante (ex. `/dogwash-chien-loir-et-cher`) ou, à défaut, la page département — dans `src/_redirects.njk`, section dédiée commentée. Ne jamais laisser une URL indexée finir en 404.
+- **« Probablement fermé » / statut incertain** : revérifier avec Parallel Search, puis trancher (fiche maintenue et titre neutre, ou suppression + 301 comme ci-dessus).
+- Lister chaque fiche supprimée et sa redirection dans le message de commit.
+
+### F2. Doublons
+
+Une dizaine de lieux ont deux fiches (même nom, même commune), ex. îles de Lérins (`activite-iles-lerins-cannes` en « activités » et `iles-lerins` en « cote-azur »), Animalis Gennevilliers, L'Esplanade (Domme), La Couleuvrine (Sarlat). Si c'est le même lieu vu sous le même angle : fusionner dans la fiche la plus complète et rediriger l'autre URL en 301 vers elle. Si les deux angles sont réellement différents (ex. restaurant et hébergement du même établissement) : garder les deux mais rendre titres et descriptions clairement distincts.
+
+### F3. Fiches très courtes
+
+51 fiches ont moins de 900 caractères de texte dans `bodyHtml`. Les enrichir (mêmes critères que l'enrichissement d'octobre) ou, si rien de plus n'est trouvable, les fusionner avec une fiche voisine.
+
+### F4. Revérification tournante
+
+Chaque mois, revérifier les fiches les plus anciennes (date de dernier commit, la même que « Fiche mise à jour le … » affichée en haut de chaque fiche) en commençant par celles qui ont le plus d'impressions dans Search Console (sections A et B ci-dessus) : horaires, tarifs, conditions d'accueil du chien, téléphone, statut d'activité.
+
 ## Ce qui n'est pas prioritaire
 
 - Traduction anglaise : 4 clics en 3 mois.
