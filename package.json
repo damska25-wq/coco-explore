@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy && node scripts/check-site.mjs",
+    "check": "node scripts/check-site.mjs",
     "start": "eleventy --serve"
   },
   "dependencies": {
