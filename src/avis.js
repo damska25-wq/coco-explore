@@ -35,6 +35,7 @@
     var list = section.querySelector(".avis-list");
     var nameInput = section.querySelector('input[name="name"]');
     var messageInput = section.querySelector('textarea[name="message"]');
+    var trapInput = section.querySelector('input[name="website"]');
     var photoInput = section.querySelector('input[name="photo"]');
     var photoBtn = section.querySelector(".avis-photo-btn");
     var photoBtnLabel = photoBtn ? photoBtn.querySelector("span") : null;
@@ -297,7 +298,8 @@
             message: message.slice(0, 500),
             photo: photoDataUrl,
             rating: ratingInput && ratingInput.value ? Number(ratingInput.value) : null,
-            page: location.pathname
+            page: location.pathname,
+            website: trapInput ? trapInput.value : ""
           })
         })
           .then(function (r) {

@@ -1,11 +1,19 @@
 import { getStore } from "@netlify/blobs";
-import { timingSafeEqual } from "node:crypto";
+import { createHash, timingSafeEqual } from "node:crypto";
 
 const MAX_NAME = 60;
 const MAX_MESSAGE = 500;
 const MAX_PHOTO_CHARS = 400000; // ~300 Ko en base64, après redimensionnement côté client
 const MAX_ENTRIES_PER_FICHE = 300;
 const MAX_PAGE = 200;
+
+// Anti-spam : au plus MAX_POSTS avis par visiteur (IP hachée) sur POST_WINDOW,
+// et blocage de l'admin pendant ADMIN_LOCK après ADMIN_MAX_FAILS mauvais mots
+// de passe. Compteurs dans un store Blobs séparé, sans IP en clair.
+const MAX_POSTS = 5;
+const POST_WINDOW = 60 * 60 * 1000;
+const ADMIN_MAX_FAILS = 5;
+const ADMIN_LOCK = 15 * 60 * 1000;
 
 // Modération : chaque nouvel avis est enregistré "pending" et n'apparaît sur
 // la fiche qu'une fois validé depuis /admin-avis. Les avis déposés avant la
@@ -34,6 +42,15 @@ function isAdmin(req) {
   const given = req.headers.get("x-admin-key") || "";
   if (!expected || given.length !== expected.length) return false;
   return timingSafeEqual(Buffer.from(given), Buffer.from(expected));
+}
+
+const visitorKey = (prefix, ip) =>
+  prefix + ":" + createHash("sha256").update("coco-explore:" + (ip || "inconnu")).digest("hex").slice(0, 32);
+
+// Horodatages récents (dans `window`) enregistrés sous `key`.
+async function recentHits(limits, key, window) {
+  const now = Date.now();
+  return ((await limits.get(key, { type: "json" })) || []).filter((t) => now - t < window);
 }
 
 async function notify(entry, fiche) {
@@ -79,13 +96,23 @@ async function adminUpdate(store, fiche, id, action) {
   return true;
 }
 
-export default async (req) => {
+export default async (req, context) => {
   const store = getStore("avis-coco-explore");
+  const limits = getStore("avis-limites");
   const url = new URL(req.url);
+  const ip = context && context.ip;
 
   if (url.searchParams.has("admin")) {
     if (!process.env.ADMIN_KEY) return json({ error: "ADMIN_KEY non configurée sur Netlify." }, 503);
-    if (!isAdmin(req)) return json({ error: "Mot de passe incorrect." }, 401);
+    const failKey = visitorKey("admin", ip);
+    const fails = await recentHits(limits, failKey, ADMIN_LOCK);
+    if (fails.length >= ADMIN_MAX_FAILS) {
+      return json({ error: "Trop de tentatives : réessaie dans un quart d'heure." }, 429);
+    }
+    if (!isAdmin(req)) {
+      await limits.setJSON(failKey, [...fails, Date.now()]);
+      return json({ error: "Mot de passe incorrect." }, 401);
+    }
 
     if (req.method === "GET") return json(await adminList(store));
 
@@ -128,6 +155,16 @@ export default async (req) => {
     const rating = Number.isInteger(body.rating) ? body.rating : null;
     const page = typeof body.page === "string" && body.page.startsWith("/") ? body.page.slice(0, MAX_PAGE) : null;
 
+    // Champ piège rempli = robot : on fait comme si tout allait bien, sans rien
+    // enregistrer ni notifier.
+    if (typeof body.website === "string" && body.website.trim()) return json({ pending: true }, 201);
+
+    const postKey = visitorKey("post", ip);
+    const posts = await recentHits(limits, postKey, POST_WINDOW);
+    if (posts.length >= MAX_POSTS) {
+      return json({ error: "Tu as déjà envoyé plusieurs avis récemment : réessaie un peu plus tard." }, 429);
+    }
+
     if (!fiche || !name || !message) {
       return json({ error: "Merci de remplir ton prénom et un petit message." }, 400);
     }
@@ -160,6 +197,7 @@ export default async (req) => {
     }
 
     await store.setJSON(fiche, entries);
+    await limits.setJSON(postKey, [...posts, Date.now()]);
     await notify(entry, fiche);
     return json({ pending: true }, 201);
   }
