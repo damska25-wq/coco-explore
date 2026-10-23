@@ -112,6 +112,10 @@ Coco Explore — cocoexplore.com
 
 Pas d'action de notre côté en attendant la réponse de SantéVet. Une fois la marche à suivre connue (et un lien tracké réel obtenu), prévoir son insertion dans 1-2 fiches vétérinaires urgences et/ou un futur article "conseils de Coco" sur la préparation d'un voyage, avec la mention de lien affilié obligatoire (cadre légal français).
 
+### Affiliation hébergements (23/10/2026)
+
+Étude complète dans `AFFILIATION-HEBERGEMENT.md` (non publié). **Décision de l'utilisateur : candidater d'abord au programme Expedia Group** (affiliates.expediagroup.com, géré via Partnerize : 4 % hôtels, 2 % Abritel/Vrbo, cookie 7 jours même appareil, seuil de paiement 30 €). Candidature faite par l'utilisateur lui-même. Booking (via CJ) seulement après avoir clarifié la clause qui interdit de démarcher les hébergeurs présents sur Booking (conflit possible avec le Programme partenaire). **Aucun lien affilié sur le site tant que l'utilisateur n'a pas validé** : intégration prévue = bouton « Voir les disponibilités sur … » sous les infos pratiques, après le site officiel, mention « Lien sponsorisé » + `rel="sponsored"`, uniquement vers la page exacte d'un établissement qui accepte aussi les chiens sur la plateforme, test sur 20 à 50 fiches, phrase à ajouter dans « À propos ».
+
 ## Historique — audit performance accueil (octobre 2026, résolu)
 
 Audit PageSpeed Insights (mobile + desktop) mené début octobre 2026 sur `cocoexplore.com`. Tout corrigé et poussé sur `claude/github-connexion-otichf` :
