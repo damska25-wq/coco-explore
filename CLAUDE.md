@@ -151,6 +151,14 @@ Rubrique `/guides` (`src/guides.njk`) : articles « comment voyager avec son chi
 
 Les fiches créées en échange d'un lien (sans paiement) sont suivies dans `ECHANGES-LIENS.md` (racine, non publié). Pas de badge public : seule une ligne discrète `<p class="fiche-collab">Fiche réalisée en collaboration avec …</p>` en bas de fiche. Mettre à jour le tableau à chaque nouvelle collaboration ou lien reçu.
 
+## Demandes de retrait (ne jamais recréer ces fiches)
+
+Quand un professionnel demande à ne plus être référencé : supprimer sa ou ses fiches, ajouter une redirection 301 vers la page catégorie×département (ou la page département) dans `src/_redirects.njk`, et l'inscrire ici pour qu'aucun round de recherche ne le recrée.
+
+| Établissement | Ville | Date | Fiches supprimées |
+|---|---|---|---|
+| Bande de Truffes (dog wash, pet-sitting, concept store) | Chambéry (73) | 23/10/2026 | `dogwash-bande-de-truffes-chambery`, `dogsitter-bande-de-truffes-chambery` |
+
 ## Conventions du projet (voir aussi contexte de session)
 
 - Fiches : `src/fiches/*.njk`, frontmatter YAML + `bodyHtml`.
