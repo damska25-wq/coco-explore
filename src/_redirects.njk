@@ -32,3 +32,27 @@ eleventyExcludeFromCollections: true
 {%- for p in ["404.html", "a-propos.html", "faq.html", "plan-du-site.html", "aires-autoroute-chien.html", "conseils-de-coco.html", "nouveautes.html", "devenir-partenaire.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
 /{{ p }} /{{ p | cleanUrl }} 301!
 {%- endfor %}
+
+# Fiches supprimées (établissement fermé définitivement, audit F1 novembre 2026) —
+# redirection 301 vers la catégorie/département correspondant (page catégorie×département
+# quand le seuil de 3 fiches est atteint, sinon la page département seule).
+/fiche-dogwash-meute-and-co-beauvais-60.html /departement-oise 301!
+/fiche-dogwash-meute-and-co-beauvais-60 /departement-oise 301!
+/fiche-dogwash-tom-and-co-villebarou-41.html /departement-loir-et-cher 301!
+/fiche-dogwash-tom-and-co-villebarou-41 /departement-loir-et-cher 301!
+/fiche-dogwash-toutous-et-matous-rouen-76.html /dogwash-chien-seine-maritime 301!
+/fiche-dogwash-toutous-et-matous-rouen-76 /dogwash-chien-seine-maritime 301!
+/fiche-hebergement-coq-hardi-verdun-55.html /hebergement-chien-meuse 301!
+/fiche-hebergement-coq-hardi-verdun-55 /hebergement-chien-meuse 301!
+/fiche-camping-antipolis-antibes.html /hebergement-chien-alpes-maritimes 301!
+/fiche-camping-antipolis-antibes /hebergement-chien-alpes-maritimes 301!
+/fiche-veterinaire-sartene-bassacciu-2a.html /veterinaire-chien-corse-du-sud 301!
+/fiche-veterinaire-sartene-bassacciu-2a /veterinaire-chien-corse-du-sud 301!
+/fiche-veterinaire-lac-bourges-18.html /veterinaire-chien-cher 301!
+/fiche-veterinaire-lac-bourges-18 /veterinaire-chien-cher 301!
+/fiche-veterinaire-dumay-tremblay-93.html /veterinaire-chien-seine-saint-denis 301!
+/fiche-veterinaire-dumay-tremblay-93 /veterinaire-chien-seine-saint-denis 301!
+/fiche-veterinaire-monveto-noisy-sec-93.html /veterinaire-chien-seine-saint-denis 301!
+/fiche-veterinaire-monveto-noisy-sec-93 /veterinaire-chien-seine-saint-denis 301!
+/fiche-toiletteur-look-toutou-vierzon-18.html /toiletteur-chien-cher 301!
+/fiche-toiletteur-look-toutou-vierzon-18 /toiletteur-chien-cher 301!
