@@ -6,7 +6,7 @@ Fichier de travail non publié (racine du dépôt, hors `src/`). Généré le 22
 
 - **Ne jamais remettre de `noindex` ni filtrer le sitemap par région.** Le commit `21b28c2` (noindex sur les 9221 pages hors PACA) a été annulé par `b05606f` : les fiches hors PACA font **88 % des clics** (470 contre 62 pour PACA).
 - **Deux sessions poussent sur `claude/github-connexion-otichf`** (la branche de production Netlify) : `git fetch` + `git rebase` avant chaque push.
-- Pages catégorie (`src/categorie.njk`, `src/categorie-departement.njk`, configuration dans `src/_data/categoryPages.js`) : plages (+ côte d'azur), hébergements (+ campings), restaurants, dogwash, toiletteurs, garde/pension, balades. Une page département est générée automatiquement dès qu'un département atteint 3 fiches de la catégorie (`minFiches`) — la catégorie d'une fiche (`breadcrumbCatId`) décide donc des pages sur lesquelles elle apparaît.
+- Pages catégorie (`src/categorie.njk`, `src/categorie-departement.njk`, configuration dans `src/_data/categoryPages.js`) : plages (+ côte d'azur), hébergements (+ campings), restaurants, vétérinaires (gardes 24h/24 vérifiées en premier), dogwash, toiletteurs, garde/pension, balades. Pages ville (`src/ville.njk`, collection `cityPages`) : « <Ville> avec son chien » pour chaque commune (champ `cardTag`) d'au moins 15 fiches — garder un `cardTag` = nom exact de la commune, sinon la fiche n'apparaît pas sur la page de sa ville. Une page département est générée automatiquement dès qu'un département atteint 3 fiches de la catégorie (`minFiches`) — la catégorie d'une fiche (`breadcrumbCatId`) décide donc des pages sur lesquelles elle apparaît.
 - Titres de fiches : ne plus y mettre de mention de travail (« confiance X », « à vérifier »…) — le `title` est le lien bleu affiché par Google.
 
 ## Vue d'ensemble
@@ -233,6 +233,22 @@ Le plus gros potentiel : beaucoup d'impressions (5 280 sur 3 mois) mais des fich
 ### G3. Nouvelle catégorie « Éducation canine et clubs »
 
 La catégorie `activites` contient ~66 clubs canins et éducateurs (tags « Club d'éducation canine », « Club canin », « Éducation canine », « Éducation canine à domicile »), noyés au milieu des châteaux et musées — alors que des requêtes du type « club canin bergeracois » ramènent déjà des clics. Les passer dans une nouvelle catégorie `education` (`breadcrumbCatLabel: "Éducation canine"`), puis **demander à l'utilisateur** d'ajouter la section correspondante sur le site (entrée dans `src/_data/sections.js`, icône, page catégorie dans `src/_data/categoryPages.js`) : ce câblage touche la navigation et les pages catégorie, il est fait côté session « configuration ». Ensuite, compléter la couverture (au moins 3 par département là où c'est possible).
+
+## H. Nouveaux contenus (ajouté le 23/10/2026, après G)
+
+### H1. Guides pratiques « comment voyager avec son chien »
+
+Le site répond à « où aller » ; il manque « comment ». Articles de fond, sourcés sur les sites officiels (SNCF, compagnies aériennes et maritimes, service-public.fr, ministère de l'Agriculture, ANSES…), un article par sujet :
+- prendre le train avec son chien (règles et tarifs SNCF/TER), l'avion (cabine/soute, compagnies), les ferries vers la Corse et les îles ;
+- voyager à l'étranger : passeport européen, identification, vaccin antirabique, règles par pays fréquents (Espagne, Italie, Royaume-Uni, Suisse) ;
+- dangers de saison : chenilles processionnaires (publier en janvier, pic février-avril), tiques, épillets, coup de chaleur, baignade en mer ;
+- comprendre les règles des plages : lire un arrêté municipal, saisons, horaires, zones réservées.
+
+**Avant de rédiger, demander à l'utilisateur de faire créer la rubrique « Guides »** (gabarit, URL, menu, sitemap) par la session « configuration » : ne pas inventer de structure de page soi-même. C'est aussi là qu'ira le lien affilié SantéVet quand il sera obtenu (voir CLAUDE.md, mention « lien affilié » obligatoire).
+
+### H2. Parcs canins et aires de liberté en ville
+
+« Parc à chien près de moi » est une recherche fréquente ; ces lieux sont aujourd'hui dispersés entre `activites` et `lacs`. Après G2, les regrouper (catégorie dédiée, ex. `parcs-canins`) et compléter la couverture des grandes villes (pages ville : section H). Puis demander à l'utilisateur de faire créer la page catégorie correspondante.
 
 ## Ce qui n'est pas prioritaire
 

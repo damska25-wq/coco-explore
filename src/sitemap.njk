@@ -35,6 +35,13 @@ eleventyExcludeFromCollections: true
     <priority>0.7</priority>
   </url>
 {%- endfor %}
+{%- for city in collections.cityPages %}
+  <url>
+    <loc>https://cocoexplore.com/{{ city.slug }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+{%- endfor %}
 {%- for dep in collections.categoryDeptPages %}
   <url>
     <loc>https://cocoexplore.com/{{ dep.cp.slug }}-{{ dep.slug }}</loc>

@@ -30,6 +30,23 @@ function buildGitDateMap() {
 
 const gitDateMap = buildGitDateMap();
 
+// Badge "Urgences 24h/24" d'une fiche vétérinaire (voir le filtre vetBadge).
+function vetBadge(infoItems) {
+  const urgence = (infoItems || []).find((i) => i.label === "Urgences");
+  const text = (urgence ? urgence.value : "").toLowerCase();
+  if (!/24h\s*\/\s*24|24\/24|7j\s*\/\s*7/.test(text)) return null;
+  // La plupart des mentions de "24h/24" dans ce champ servent justement à
+  // expliquer qu'un service permanent n'est PAS confirmé (c'est la règle du
+  // site : jamais affirmer un 24h/24 non vérifié). Sans ce filtre de doute,
+  // le badge s'affiche quand même sur la seule présence du motif "24h/24"
+  // dans le texte, même quand la phrase le dément — contredisant la fiche
+  // qu'il résume. On n'affiche donc le badge que si rien n'indique un doute.
+  const hedge =
+    /\bpas\b|\baucun[e]?\b|non confirm|n'a pas|non recoup|non audit|non v[ée]rifi|non d('|’)une|ne confirme|n'affirme|n'est pas|rien ne confirme|[àa] distinguer|revendiqu|annonc[ée]e? par|auto-d[ée]clar|\bjamais\b|sans (audit|confirmation|revendication|source)|non ind[ée]pendant|contradiction|au contraire|source g[ée]n[ée]rique/;
+  if (hedge.test(text)) return null;
+  return { label: "Urgences 24h/24", cls: "badge-urgence" };
+}
+
 // "en Gironde", "dans le Var", "dans l'Indre", "à Paris"... repris du H1 SEO
 // de chaque département (src/_data/departements.js).
 const deptEnNom = (dep) => dep.seoH1.replace(/^Où aller avec son chien /, "");
@@ -85,6 +102,10 @@ export default function (eleventyConfig) {
       const fiches = all
         .filter((f) => cats.includes(f.data.breadcrumbCatId))
         .sort((a, b) => (a.data.cardTag || "").localeCompare(b.data.cardTag || "", "fr"));
+      // Vétérinaires : ceux dont la garde 24h/24 est vérifiée en premier.
+      if (cp.urgentFirst) {
+        fiches.sort((a, b) => !!vetBadge(b.data.infoItems) - !!vetBadge(a.data.infoItems));
+      }
       return departements
         .map((dep) => ({
           ...dep,
@@ -100,6 +121,54 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("categoryDepts", categoryDepts);
   eleventyConfig.addCollection("categoryDeptPages", (collectionApi) =>
     categoryDepts(collectionApi).filter((dep) => dep.hasPage)
+  );
+
+  // Pages ville (src/ville.njk) : une page "<Ville> avec son chien" pour
+  // chaque commune comptant au moins CITY_MIN_FICHES fiches (champ cardTag),
+  // toutes catégories confondues. Le département retenu est celui de la
+  // majorité de ses fiches.
+  const CITY_MIN_FICHES = 15;
+  const slugify = (str) =>
+    str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/['’]/g, "-")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  // "à Nantes", "au Havre", "aux Sables-d'Olonne", "à La Rochelle".
+  const aVille = (ville) =>
+    ville.startsWith("Le ") ? "au " + ville.slice(3) : ville.startsWith("Les ") ? "aux " + ville.slice(4) : "à " + ville;
+  eleventyConfig.addCollection("cityPages", (collectionApi) => {
+    const byCity = new Map();
+    for (const f of collectionApi.getFilteredByGlob("src/fiches/*.njk")) {
+      const ville = f.data.cardTag;
+      if (!ville || /[0-9+/()]/.test(ville)) continue;
+      if (!byCity.has(ville)) byCity.set(ville, []);
+      byCity.get(ville).push(f);
+    }
+    return [...byCity]
+      .filter(([, fiches]) => fiches.length >= CITY_MIN_FICHES)
+      .map(([ville, fiches]) => {
+        const deptCounts = new Map();
+        for (const f of fiches) {
+          for (const d of f.data.departement || []) deptCounts.set(d, (deptCounts.get(d) || 0) + 1);
+        }
+        const deptId = [...deptCounts].sort((a, b) => b[1] - a[1])[0][0];
+        return {
+          ville,
+          aVille: aVille(ville),
+          slug: slugify(ville) + "-avec-son-chien",
+          dep: departements.find((d) => d.id === deptId),
+          fiches: fiches.sort((a, b) => a.data.order - b.data.order),
+        };
+      })
+      .sort((a, b) => a.ville.localeCompare(b.ville, "fr"));
+  });
+
+  // Fiches d'un lot appartenant à l'une des catégories données.
+  eleventyConfig.addFilter("inCategories", (fiches, catIds) =>
+    (fiches || []).filter((f) => (catIds || []).includes(f.data.breadcrumbCatId))
   );
 
   // Page catégorie associée à un breadcrumbCatId (undefined si aucune).
@@ -345,21 +414,7 @@ export default function (eleventyConfig) {
   // "Urgences" des infoItems déjà présent sur la fiche — même principe que
   // accessBadge : on ne réaffirme jamais une info qui ne serait pas déjà
   // écrite noir sur blanc ailleurs sur la fiche.
-  eleventyConfig.addFilter("vetBadge", (infoItems) => {
-    const urgence = (infoItems || []).find((i) => i.label === "Urgences");
-    const text = (urgence ? urgence.value : "").toLowerCase();
-    if (!/24h\s*\/\s*24|24\/24|7j\s*\/\s*7/.test(text)) return null;
-    // La plupart des mentions de "24h/24" dans ce champ servent justement à
-    // expliquer qu'un service permanent n'est PAS confirmé (c'est la règle du
-    // site : jamais affirmer un 24h/24 non vérifié). Sans ce filtre de doute,
-    // le badge s'affiche quand même sur la seule présence du motif "24h/24"
-    // dans le texte, même quand la phrase le dément — contredisant la fiche
-    // qu'il résume. On n'affiche donc le badge que si rien n'indique un doute.
-    const hedge =
-      /\bpas\b|\baucun[e]?\b|non confirm|n'a pas|non recoup|non audit|non v[ée]rifi|non d('|’)une|ne confirme|n'affirme|n'est pas|rien ne confirme|[àa] distinguer|revendiqu|annonc[ée]e? par|auto-d[ée]clar|\bjamais\b|sans (audit|confirmation|revendication|source)|non ind[ée]pendant|contradiction|au contraire|source g[ée]n[ée]rique/;
-    if (hedge.test(text)) return null;
-    return { label: "Urgences 24h/24", cls: "badge-urgence" };
-  });
+  eleventyConfig.addFilter("vetBadge", vetBadge);
 
   // Date de dernière modification réelle d'un fichier source (dernier commit git),
   // pour un sitemap.xml dont le <lastmod> reflète les vraies corrections de contenu.

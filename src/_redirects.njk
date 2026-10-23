@@ -19,6 +19,9 @@ eleventyExcludeFromCollections: true
 {%- for cp in categoryPages %}
 /{{ cp.slug }}.html /{{ cp.slug }} 301!
 {%- endfor %}
+{%- for city in collections.cityPages %}
+/{{ city.slug }}.html /{{ city.slug }} 301!
+{%- endfor %}
 {%- for dep in collections.categoryDeptPages %}
 /{{ dep.cp.slug }}-{{ dep.slug }}.html /{{ dep.cp.slug }}-{{ dep.slug }} 301!
 {%- endfor %}

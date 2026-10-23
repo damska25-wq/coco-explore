@@ -20,6 +20,10 @@ eleventyComputed:
       <h1>{{ dep.seoH1 }}</h1>
       <p>{{ dep.intro | safe }}</p>
       <p style="margin-top: 8px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">{{ collections.fiches | countByDept(dep.id) }} fiches dans ce département.</p>
+      {%- set depCities = collections.cityPages | whereEq("dep", dep) %}
+      {%- if depCities.length %}
+      <p style="margin-top: 8px; font-size: 0.95rem;">Par ville :{% for c in depCities %} <a href="/{{ c.slug }}">{{ c.ville }}</a>{% if not loop.last %} ·{% endif %}{% endfor %}</p>
+      {%- endif %}
     </div>
   </div>
 </section>

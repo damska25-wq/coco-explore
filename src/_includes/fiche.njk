@@ -140,6 +140,10 @@ extraScripts: |
     <span class="eyebrow">À proximité</span>
     <h2>Autres idées pour continuer l'exploration</h2>
     <p class="cat-see-more"><a href="/departement-{{ departement | deptSlug }}">Toutes les adresses {{ departement | deptEnNom }} →</a></p>
+    {%- set cityPage = (collections.cityPages | whereEq("ville", cardTag))[0] %}
+    {%- if cityPage %}
+    <p class="cat-see-more"><a href="/{{ cityPage.slug }}">{{ cityPage.ville }} avec son chien : toutes les adresses →</a></p>
+    {%- endif %}
     {%- set catPage = breadcrumbCatId | categoryPage %}
     {%- if catPage %}
     {%- set catDep = (collections.categoryDeptPages | whereEq("cat", catPage.cat) | whereEq("id", departement[0]))[0] %}

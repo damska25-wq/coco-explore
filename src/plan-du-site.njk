@@ -49,6 +49,9 @@ extraHead: |
       {%- for cp in categoryPages %}
       <a href="{{ cp.slug }}">{{ cp.titleNat }}</a>
       {%- endfor %}
+      {%- for city in collections.cityPages %}
+      <a href="{{ city.slug }}">{{ city.ville }} avec son chien</a>
+      {%- endfor %}
       <a href="fiche-monaco">Monaco avec son chien</a>
       <a href="devenir-partenaire">Devenir partenaire</a>
       <a href="region-provence-alpes-cote-dazur">Région Provence-Alpes-Côte d'Azur</a>

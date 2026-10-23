@@ -6,6 +6,9 @@
 // `cats` (optionnel) : plusieurs breadcrumbCatId regroupés sur la même page
 // (ex. "plages" + "cote-azur") ; sinon seule `cat` est prise en compte.
 //
+// `urgentFirst` (optionnel, vétérinaires) : fiches à garde 24h/24 vérifiée
+// (badge vetBadge) affichées en premier.
+//
 // Dans les textes, {enNom} = "en Gironde" / "dans le Var"..., {n} = nombre de
 // fiches du département, {villes} = communes couvertes, {total} et {nbDeps} =
 // totaux nationaux. Remplacés par le filtre `fill` (eleventy.config.js).
@@ -71,6 +74,27 @@ export default [
     introDep: "Coco Explore référence <strong>{n} restaurants où aller avec son chien {enNom}</strong> : {villes}. Chaque fiche précise où le chien est accepté (salle ou terrasse), les petites attentions comme la gamelle d'eau, et ce qui reste à confirmer. Mieux vaut appeler avant de venir, surtout avec un grand chien.",
     linkDep: "Tous les restaurants qui acceptent les chiens {enNom}",
     linkNat: "Tous les restaurants qui acceptent les chiens en France",
+  },
+  {
+    cat: "veterinaires",
+    slug: "veterinaire-chien",
+    label: "Vétérinaires",
+    tag: "Vétérinaires",
+    minFiches: 3,
+    urgentFirst: true,
+    unit: ["vétérinaire", "vétérinaires"],
+    titleNat: "Vétérinaires et urgences vétérinaires : partout en France",
+    descNat: "Cliniques et cabinets vétérinaires classés par région et département, gardes 24h/24 vérifiées en premier : adresses, téléphones, horaires et urgences.",
+    h1Nat: "Vétérinaires et urgences vétérinaires en France",
+    introNat: "Une patte coupée sur un rocher, une piqûre, un coup de chaleur : en vacances, on ne connaît pas le vétérinaire du coin. Coco Explore référence <strong>{total} cliniques et cabinets vétérinaires</strong> dans {nbDeps} départements, classés ci-dessous par région puis par département. Sur chaque page département, les établissements dont la garde 24h/24 a été vérifiée apparaissent en premier, avec le badge « Urgences 24h/24 ».",
+    howTitle: "En cas d'urgence, la nuit ou le week-end",
+    howHtml: "Appelle d'abord un vétérinaire du secteur : en dehors des heures d'ouverture, le répondeur indique le plus souvent le vétérinaire de garde. Le 3115 (appel gratuit, service privé du réseau Emergence) oriente aussi vers un vétérinaire de garde, mais seulement dans les zones qu'il couvre. Chaque fiche précise ce que nous savons des urgences de l'établissement, et dit clairement quand un service 24h/24 n'a pas pu être confirmé : nous n'affichons le badge « Urgences 24h/24 » que lorsqu'il est vérifié.",
+    titleDep: "Vétérinaires et urgences {enNom} : {n} cliniques et cabinets",
+    descDep: "{n} vétérinaires {enNom} ({villes}) : adresses, téléphones, horaires, et gardes 24h/24 vérifiées en premier.",
+    h1Dep: "Vétérinaires et urgences vétérinaires {enNom}",
+    introDep: "Coco Explore référence <strong>{n} cliniques et cabinets vétérinaires {enNom}</strong> : {villes}. Ceux dont la garde 24h/24 a été vérifiée apparaissent en premier, avec le badge « Urgences 24h/24 ». La nuit ou le week-end, appelle un vétérinaire du secteur : son répondeur indique le plus souvent le vétérinaire de garde.",
+    linkDep: "Tous les vétérinaires {enNom}",
+    linkNat: "Tous les vétérinaires et urgences en France",
   },
   {
     cat: "dogwash",
