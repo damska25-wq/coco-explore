@@ -182,6 +182,50 @@ export default function (eleventyConfig) {
       .sort((a, b) => a.ville.localeCompare(b.ville, "fr"));
   });
 
+  // Données structurées des pages de liste (catégorie, catégorie × département,
+  // ville) : fil d'Ariane (BreadcrumbList) + liste des lieux (ItemList).
+  // `crumbs` et `items` : [{ name, path }] avec un chemin relatif au site.
+  const SITE = "https://cocoexplore.com/";
+  eleventyConfig.addFilter("listJsonLd", (items, crumbs, listName) =>
+    JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: crumbs.map((c, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: c.name,
+          item: SITE + c.path,
+        })),
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: listName,
+        numberOfItems: items.length,
+        itemListElement: items.map((it, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: it.name,
+          url: SITE + it.path,
+        })),
+      },
+    ]).replace(/</g, "\\u003c")
+  );
+  // Fiches → éléments { name, path } pour listJsonLd.
+  eleventyConfig.addFilter("ficheItems", (fiches) =>
+    (fiches || []).map((f) => ({
+      name: f.data.cardTitle || f.data.breadcrumbLast || f.data.slug,
+      path: (f.data.permalinkPath || "").replace(/\.html$/, ""),
+    }))
+  );
+  // Pages département d'une catégorie → éléments { name, path } pour listJsonLd.
+  eleventyConfig.addFilter("catDeptItems", (catDepts, cp) =>
+    (catDepts || [])
+      .filter((d) => d.hasPage)
+      .map((d) => ({ name: cp.label + " " + d.enNom, path: cp.slug + "-" + d.slug }))
+  );
+
   // Fiches d'un lot appartenant à l'une des catégories données.
   eleventyConfig.addFilter("inCategories", (fiches, catIds) =>
     (fiches || []).filter((f) => (catIds || []).includes(f.data.breadcrumbCatId))

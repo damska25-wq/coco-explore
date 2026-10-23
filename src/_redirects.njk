@@ -29,7 +29,7 @@ eleventyExcludeFromCollections: true
 {%- for dep in collections.categoryDeptPages %}
 /{{ dep.cp.slug }}-{{ dep.slug }}.html /{{ dep.cp.slug }}-{{ dep.slug }} 301!
 {%- endfor %}
-{%- for p in ["404.html", "a-propos.html", "faq.html", "plan-du-site.html", "aires-autoroute-chien.html", "conseils-de-coco.html", "nouveautes.html", "devenir-partenaire.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
+{%- for p in ["404.html", "a-propos.html", "faq.html", "plan-du-site.html", "aires-autoroute-chien.html", "conseils-de-coco.html", "nouveautes.html", "devenir-partenaire.html", "badge-coco-explore.html", "mentions-legales.html", "politique-confidentialite.html", "conditions-utilisation.html"] %}
 /{{ p }} /{{ p | cleanUrl }} 301!
 {%- endfor %}
 

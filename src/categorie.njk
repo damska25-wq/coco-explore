@@ -27,6 +27,7 @@ extraHead: |
 ---
 {%- set catDepts = collections.categoryDepts | whereEq("cat", cp.cat) %}
 {%- set total = collections.fiches | countCategoryPage(cp) %}
+<script type="application/ld+json">{{ catDepts | catDeptItems(cp) | listJsonLd([{ name: "Coco Explore", path: "" }, { name: cp.label, path: cp.slug }], cp.h1Nat) | safe }}</script>
 <section class="wrap cat-page-intro">
   <span class="tag">{{ cp.tag }}</span>
   <h1>{{ cp.h1Nat }}</h1>
