@@ -135,7 +135,7 @@ Le dogwash est l'une des catégories qui convertit le mieux, et des requêtes lo
 
 ## D. Auditer les campings
 
-> **En cours dans l'autre session (23/10/2026)** : les 40 hébergements (campings, hôtels, gîtes) qui ont le plus d'impressions sont enrichis avec les conditions chien (supplément, nombre, taille, catégories, chien seul, équipements). **Ne pas reprendre cette section D** : elle sera marquée terminée ici une fois publiée.
+> **Terminé (23/10/2026, autre session)** : les 40 hébergements (campings, hôtels, gîtes) les plus vus dans Google ont été enrichis avec les conditions chien d'après les sites officiels (supplément, nombre, taille/catégories, chien seul, zones interdites, équipements), contradictions entre sources signalées dans les fiches. Titres corrigés quand le tarif affiché était périmé. Points restés ouverts : montant du supplément non publié chez Maguide, Atlantic Club, Grande Métairie, Hautes Prairies, Jobel, Yelloh Sérignan, Huttopia Serre-Ponçon ; accueil des chiens non confirmé au Gîte du Pont Eiffel (Monistrol-d'Allier) ; contradiction Courant d'Huchet entre les fiches `etang-leon` (balade suggérée) et `balade-courant-huchet` (chiens interdits). **Ne pas refaire cette section D.**
 
 Beaucoup d'impressions mais positions 20-48 et 0 clic : la fiche n'apporte probablement pas assez face au site officiel du camping. Avant de modifier en masse : comparer 3 fiches aux 3 premiers résultats Google de la même requête, puis proposer un plan (infos chien exclusives : supplément exact, nombre de chiens, catégories, accès plage chien, douche à chien, zones interdites).
 
