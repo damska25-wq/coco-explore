@@ -20,6 +20,7 @@ extraHead: |
     .ville-links li { margin: 4px 0; }
   </style>
 ---
+<script type="application/ld+json">{{ city.fiches | ficheItems | listJsonLd([{ name: "Coco Explore", path: "" }, { name: city.dep.nom, path: "departement-" + city.dep.slug }, { name: city.ville, path: city.slug }], city.ville + " avec son chien") | safe }}</script>
 <section class="wrap cat-page-intro">
   <div class="cat-page-crumb"><a href="/">Coco Explore</a> / <a href="/departement-{{ city.dep.slug }}">{{ city.dep.nom }}</a> / {{ city.ville }}</div>
   <span class="tag">Ville</span>

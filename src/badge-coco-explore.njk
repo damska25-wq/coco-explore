@@ -1,0 +1,101 @@
+---
+permalink: badge-coco-explore.html
+permalinkPath: badge-coco-explore.html
+title: "Badge « Référencé sur Coco Explore » pour les professionnels"
+description: "Votre établissement est référencé sur Coco Explore ? Affichez le badge sur votre site : il rassure vos clients qui voyagent avec leur chien. Code gratuit à copier."
+layout: base.njk
+extraHead: |
+  <style>
+    .badge-page { padding-top: 48px; padding-bottom: 60px; max-width: 72ch; }
+    .badge-page h2 { font-size: 1.3rem; color: var(--heading); margin-top: 1.8em; }
+    .badge-previews { display: flex; flex-wrap: wrap; gap: 16px; margin: 16px 0 8px; }
+    .badge-previews figure { margin: 0; padding: 16px; border: 1px solid rgba(var(--ink),0.12); border-radius: 10px; background: #fff; }
+    .badge-previews figure.sombre { background: #223A2E; }
+    .badge-previews figcaption { font-size: 0.85rem; color: rgba(var(--ink),0.6); margin-top: 8px; }
+    .badge-previews figure.sombre figcaption { color: rgba(255,253,248,0.75); }
+    .badge-form label { display: block; font-weight: 700; margin: 16px 0 6px; }
+    .badge-form input[type="url"], .badge-form textarea { width: 100%; padding: 10px 12px; border: 1px solid rgba(var(--ink),0.2); border-radius: 8px; font: inherit; color: var(--encre); background: var(--surface); }
+    .badge-form textarea { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.85rem; min-height: 120px; }
+    .badge-form .choix { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 6px; }
+    .badge-form button { margin-top: 10px; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--terracotta); background: var(--terracotta); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+    .badge-status { min-height: 1.4em; color: rgba(var(--ink),0.7); }
+  </style>
+---
+<section class="wrap badge-page">
+  <span class="tag">Professionnels</span>
+  <h1>Le badge « Référencé sur Coco Explore »</h1>
+
+  <p>Votre établissement (hébergement, restaurant, vétérinaire, toiletteur, plage, activité…) figure gratuitement sur Coco Explore, le guide pour voyager avec son chien partout en France ? Vous pouvez afficher ce badge sur votre site internet. Il indique à vos visiteurs que vous accueillez les chiens, et leur permet de retrouver votre fiche et les adresses utiles autour de chez vous.</p>
+
+  <p>Le badge est <strong>gratuit</strong>, sans engagement ni contrepartie. Il ne remplace pas le programme <a href="/devenir-partenaire">Partenaire</a>, qui est une mise en avant sur le site.</p>
+
+  <h2>Les deux versions</h2>
+  <div class="badge-previews">
+    <figure><img src="/assets/badge-coco-explore-clair.svg" width="200" height="64" alt="Référencé sur Coco Explore"><figcaption>Version claire (fond clair)</figcaption></figure>
+    <figure class="sombre"><img src="/assets/badge-coco-explore.svg" width="200" height="64" alt="Référencé sur Coco Explore"><figcaption>Version sombre (fond foncé)</figcaption></figure>
+  </div>
+
+  <h2>Obtenir le code</h2>
+  <form class="badge-form" id="badge-form">
+    <label for="badge-url">Adresse de votre fiche sur Coco Explore</label>
+    <input type="url" id="badge-url" placeholder="https://cocoexplore.com/fiche-…" autocomplete="off">
+    <p style="font-size:0.9rem; color: rgba(var(--ink),0.65); margin-top: 6px;">Ouvrez votre fiche sur cocoexplore.com et copiez l'adresse de la page. Si vous la laissez vide, le badge pointera vers l'accueil du site.</p>
+    <span style="display:block; font-weight:700; margin: 16px 0 6px;">Version</span>
+    <div class="choix">
+      <label style="font-weight:400; margin:0"><input type="radio" name="badge-version" value="clair" checked> Claire</label>
+      <label style="font-weight:400; margin:0"><input type="radio" name="badge-version" value="sombre"> Sombre</label>
+    </div>
+    <label for="badge-code">Code à coller dans votre site (HTML)</label>
+    <textarea id="badge-code" readonly></textarea>
+    <button type="button" id="badge-copy">Copier le code</button>
+    <p class="badge-status" id="badge-status" role="status"></p>
+  </form>
+
+  <h2>Où le placer ?</h2>
+  <p>En bas de page, sur votre page « accès » ou « nos amis les animaux », ou à côté de vos conditions d'accueil des chiens. Sur la plupart des créateurs de site (WordPress, Wix, Squarespace…), il suffit d'ajouter un bloc « HTML » ou « code intégré » et d'y coller le code.</p>
+
+  <h2>Une information à corriger sur votre fiche ?</h2>
+  <p>Écrivez-nous à <a href="mailto:contact@cocoexplore.com?subject=Ma%20fiche%20Coco%20Explore">contact@cocoexplore.com</a> : horaires, tarifs, conditions d'accueil des chiens, photos… nous mettons la fiche à jour.</p>
+</section>
+
+<script>
+(function () {
+  var form = document.getElementById("badge-form");
+  if (!form) return;
+  var url = document.getElementById("badge-url");
+  var code = document.getElementById("badge-code");
+  var status = document.getElementById("badge-status");
+  var SITE = "https://cocoexplore.com/";
+
+  function target() {
+    var value = (url.value || "").trim();
+    // Seules les pages de cocoexplore.com sont acceptées comme destination.
+    if (/^https:\/\/(www\.)?cocoexplore\.com\/[^\s"<>]*$/.test(value)) return value.replace("://www.", "://");
+    return SITE;
+  }
+
+  function render() {
+    var version = form.querySelector('input[name="badge-version"]:checked').value;
+    var img = version === "sombre" ? "badge-coco-explore.svg" : "badge-coco-explore-clair.svg";
+    code.value =
+      '<a href="' + target() + '" title="Coco Explore, le guide pour voyager avec son chien">' +
+      '<img src="' + SITE + 'assets/' + img + '" width="200" height="64" ' +
+      'alt="Référencé sur Coco Explore, le guide pour voyager avec son chien" loading="lazy"></a>';
+    status.textContent = url.value.trim() && target() === SITE ? "Adresse non reconnue : le badge pointera vers l'accueil du site." : "";
+  }
+
+  form.addEventListener("input", render);
+  form.addEventListener("change", render);
+  document.getElementById("badge-copy").addEventListener("click", function () {
+    code.select();
+    var done = function () { status.textContent = "Code copié !"; };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code.value).then(done, function () { document.execCommand("copy"); done(); });
+    } else {
+      document.execCommand("copy");
+      done();
+    }
+  });
+  render();
+})();
+</script>

@@ -21,6 +21,7 @@ extraHead: |
   </style>
 ---
 {%- set cp = dep.cp %}
+<script type="application/ld+json">{{ dep.fiches | ficheItems | listJsonLd([{ name: "Coco Explore", path: "" }, { name: cp.label, path: cp.slug }, { name: dep.nom, path: cp.slug + "-" + dep.slug }], cp.h1Dep | fill({ enNom: dep.enNom })) | safe }}</script>
 <section class="wrap cat-page-intro">
   <div class="cat-page-crumb"><a href="/">Coco Explore</a> / <a href="/{{ cp.slug }}">{{ cp.label }}</a> / {{ dep.nom }}</div>
   <span class="tag">{{ cp.tag }}</span>
