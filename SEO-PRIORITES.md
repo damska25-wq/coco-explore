@@ -259,6 +259,22 @@ Le site répond à « où aller » ; il manque « comment ». Articles de fond, 
 
 « Parc à chien près de moi » est une recherche fréquente ; ces lieux sont aujourd'hui dispersés entre `activites` et `lacs`. Après G2, les regrouper (catégorie dédiée, ex. `parcs-canins`) et compléter la couverture des grandes villes (pages ville : section H). Puis demander à l'utilisateur de faire créer la page catégorie correspondante.
 
+## I. Améliorations (ajouté le 23/10/2026)
+
+À traiter **après** les chantiers E, F, G et H2bis déjà en cours, sans les interrompre.
+
+### I1. Liste d'offices de tourisme à démarcher (priorité 1)
+
+Choisir les 10 offices de tourisme des communes ou zones où le site a le plus de fiches **et** le plus d'impressions Search Console. Pour chacun : trouver l'adresse e-mail de contact publique (site officiel, lu avec Parallel Search `web_fetch`) et lister 3 à 5 de nos fiches de leur zone (URL complètes). Adapter le modèle d'e-mail de `DEMARCHAGE.md` à chacun (nom de l'office, fiches citées). **N'envoyer aucun e-mail** — l'utilisateur les envoie lui-même. Résultat dans `DEMARCHAGE.md`, avec un tableau de suivi (office, e-mail, date d'envoi, réponse, lien obtenu). Commit avec `[skip netlify]`.
+
+### I2. Inviter les visiteurs à laisser un avis
+
+Proposer une petite phrase d'invitation sur les fiches, par exemple « Tu y es allé avec ton chien ? Raconte-nous ton passage », qui mène au formulaire d'avis existant. **Ne rien publier** : fournir un aperçu (capture mobile d'une fiche) et attendre la validation de l'utilisateur avant tout commit qui change le site.
+
+### I3. Guide « vacances d'été avec son chien » (à préparer, pas à publier)
+
+Brouillon dans la rubrique Guides, mêmes règles que les autres guides (sources officielles lues, date `updated`, aucun tarif ni règle sans source). Sujets : chaleur et coup de chaleur, plages et arrêtés municipaux, voiture, eau, hébergement. Garder le brouillon hors build (fichier de travail non publié, pas dans `src/`) : publication prévue en mars-avril 2027.
+
 ## Ce qui n'est pas prioritaire
 
 - Traduction anglaise : 4 clics en 3 mois.
