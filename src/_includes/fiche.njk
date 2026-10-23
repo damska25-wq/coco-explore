@@ -45,6 +45,7 @@ extraScripts: |
     <span class="tag">{{ tag | safe }}</span>{% if partenaire %}<span class="fiche-partenaire-tag"><svg width="12" height="12"><use href="#i-star"/></svg> Partenaire Coco Explore</span>{% endif %}
     <h1>{{ h1 | safe }}</h1>
     <span class="lieu">{{ lieu | safe }}</span>
+    <span class="fiche-updated">{{ "Updated" if lang == "en" else "Fiche mise à jour le" }} {{ page.inputPath | lastmod | dateLong(lang) }}</span>
   </div>
   {%- if photoUsername %}
   <span class="fiche-photo-credit">Photo : <a href="https://unsplash.com/@{{ photoUsername | safe }}?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">{{ photoName | safe }}</a> / <a href="https://unsplash.com/?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>
@@ -115,6 +116,7 @@ extraScripts: |
         </label>
       </div>
       <textarea name="message" rows="2" maxlength="500" placeholder="Comment ça s'est passé avec ton chien ?" required></textarea>
+      <input type="text" name="website" class="avis-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="avis-preview" hidden>
         <img alt="Aperçu de la photo">
         <button type="button" aria-label="Retirer la photo">×</button>

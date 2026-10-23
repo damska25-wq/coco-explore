@@ -150,9 +150,22 @@ export default function (eleventyConfig) {
     ).length
   );
 
-  eleventyConfig.addFilter("countByDept", (fiches, deptId) =>
-    fiches.filter((f) => (f.data.departement || []).includes(deptId)).length
-  );
+  // Compteurs par département calculés une seule fois par collection : le
+  // filtre est appelé ~10 000 fois par build (chaque page département liste
+  // les 101 départements), et reparcourir les ~10 000 fiches à chaque appel
+  // pesait à lui seul un tiers du temps de build.
+  const deptCountCache = new WeakMap();
+  eleventyConfig.addFilter("countByDept", (fiches, deptId) => {
+    let counts = deptCountCache.get(fiches);
+    if (!counts) {
+      counts = new Map();
+      for (const f of fiches) {
+        for (const d of f.data.departement || []) counts.set(d, (counts.get(d) || 0) + 1);
+      }
+      deptCountCache.set(fiches, counts);
+    }
+    return counts.get(deptId) || 0;
+  });
 
   // Aperçu borné d'une catégorie pour l'accueil : évite d'embarquer dans le
   // HTML les fiches des 51 départements à la fois (la page atteignait 5,5 Mo
@@ -348,6 +361,17 @@ export default function (eleventyConfig) {
     gitLastModified(inputPath) || new Date().toISOString().slice(0, 10)
   );
 
+  // "22 octobre 2026" (ou "22 October 2026" pour les fiches anglaises), à
+  // partir d'une date YYYY-MM-DD (ex. sortie du filtre lastmod).
+  eleventyConfig.addFilter("dateLong", (isoDate, lang) =>
+    new Date(isoDate + "T12:00:00Z").toLocaleDateString(lang === "en" ? "en-GB" : "fr-FR", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC",
+    })
+  );
+
   // Date au format RFC 822, requis par la spec RSS pour <pubDate>.
   eleventyConfig.addFilter("rfc822", (isoDate) =>
     new Date(isoDate + "T12:00:00Z").toUTCString()
@@ -371,15 +395,32 @@ export default function (eleventyConfig) {
     return arr.slice(offset).concat(arr.slice(0, offset)).slice(0, n);
   }
 
+  // Fiches de chaque catégorie, triées par slug, calculées une seule fois par
+  // collection (le filtre "related" est appelé une fois par fiche : refiltrer
+  // et retrier les ~10 000 fiches à chaque appel pesait 40 % du build).
+  const relatedPoolCache = new WeakMap();
+  function fichesByCategory(fiches) {
+    let byCat = relatedPoolCache.get(fiches);
+    if (!byCat) {
+      byCat = new Map();
+      const sorted = [...fiches].sort((a, b) => a.data.slug.localeCompare(b.data.slug));
+      for (const f of sorted) {
+        const cat = f.data.breadcrumbCatId;
+        if (!byCat.has(cat)) byCat.set(cat, []);
+        byCat.get(cat).push(f);
+      }
+      relatedPoolCache.set(fiches, byCat);
+    }
+    return byCat;
+  }
+
   eleventyConfig.addFilter("related", (fiches, catId, dept, excludePath, n) => {
-    const pool = fiches.filter(
-      (f) => f.data.breadcrumbCatId === catId && f.data.permalinkPath !== excludePath
+    const pool = (fichesByCategory(fiches).get(catId) || []).filter(
+      (f) => f.data.permalinkPath !== excludePath
     );
-    const bySlug = (a, b) => a.data.slug.localeCompare(b.data.slug);
-    const sameDept = pool
-      .filter((f) => (f.data.departement || []).some((d) => (dept || []).includes(d)))
-      .sort(bySlug);
-    const rest = pool.filter((f) => !sameDept.includes(f)).sort(bySlug);
+    const sameDept = pool.filter((f) => (f.data.departement || []).some((d) => (dept || []).includes(d)));
+    const sameDeptSet = new Set(sameDept);
+    const rest = pool.filter((f) => !sameDeptSet.has(f));
     const chosen = rotatedSlice(sameDept, excludePath, n);
     if (chosen.length < n) {
       chosen.push(...rotatedSlice(rest, excludePath, n - chosen.length));

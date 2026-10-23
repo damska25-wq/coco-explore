@@ -1,3 +1,12 @@
+# En-têtes de sécurité appliqués à tout le site (Netlify les combine avec
+# les règles de cache ci-dessous). Pas de Content-Security-Policy stricte :
+# le site charge des scripts inline, Google Fonts et Google Analytics.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), payment=(), usb=(), geolocation=(self)
+
 /style.css
   Cache-Control: public, max-age=3600, must-revalidate
 
