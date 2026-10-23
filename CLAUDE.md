@@ -136,6 +136,10 @@ Les avis déposés sur les fiches (formulaire ouvert, photo possible) passent pa
 - **Anti-spam** : champ piège invisible `website` dans le formulaire (rempli = robot, ignoré sans erreur), 5 avis max par visiteur et par heure, admin bloquée 15 min après 5 mauvais mots de passe. Compteurs dans le store Blobs `avis-limites`, IP hachées (jamais en clair).
 - Une variable d'environnement modifiée sur Netlify n'est prise en compte qu'au déploiement suivant.
 
+## Guides pratiques (octobre 2026)
+
+Rubrique `/guides` (`src/guides.njk`) : articles « comment voyager avec son chien » dans `src/guides/*.njk` (gabarit `src/_includes/guide.njk`, collection `guides` triée par `order`, URL `/guide-<sujet>`). Chaque guide liste ses `sources` (pages officielles lues en entier) et sa date `updated`, affichée en tête d'article : la mettre à jour à chaque révision. Règle : aucun tarif, délai ou règle sans source lue ; en cas de contradiction entre sources, le dire dans le texte. Les tarifs (SNCF, compagnies aériennes, ferries) changent souvent : à revérifier au moins une fois par an. C'est aussi là qu'ira le lien affilié SantéVet le moment venu (avec la mention « lien affilié »).
+
 ## Échanges de liens
 
 Les fiches créées en échange d'un lien (sans paiement) sont suivies dans `ECHANGES-LIENS.md` (racine, non publié). Pas de badge public : seule une ligne discrète `<p class="fiche-collab">Fiche réalisée en collaboration avec …</p>` en bas de fiche. Mettre à jour le tableau à chaque nouvelle collaboration ou lien reçu.

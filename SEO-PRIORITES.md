@@ -239,6 +239,8 @@ La catégorie `activites` contient ~66 clubs canins et éducateurs (tags « Club
 
 ### H1. Guides pratiques « comment voyager avec son chien »
 
+> ✅ **Rubrique créée le 23/10/2026** (`/guides`, gabarit `src/_includes/guide.njk`, fichiers `src/guides/*.njk`, lien dans le menu) avec 6 guides : train, avion, ferry (Corse et îles), voyage à l'étranger, chenilles processionnaires, règles des plages. Pour en ajouter un : copier le frontmatter d'un guide existant (champs `order`, `updated`, `sources`, `related`), sources officielles lues en entier, puis mettre à jour `updated` à chaque révision. Idées suivantes : coup de chaleur, tiques, épillets, voiture et aires d'autoroute, randonnée en montagne (patous).
+
 Le site répond à « où aller » ; il manque « comment ». Articles de fond, sourcés sur les sites officiels (SNCF, compagnies aériennes et maritimes, service-public.fr, ministère de l'Agriculture, ANSES…), un article par sujet :
 - prendre le train avec son chien (règles et tarifs SNCF/TER), l'avion (cabine/soute, compagnies), les ferries vers la Corse et les îles ;
 - voyager à l'étranger : passeport européen, identification, vaccin antirabique, règles par pays fréquents (Espagne, Italie, Royaume-Uni, Suisse) ;
@@ -248,6 +250,8 @@ Le site répond à « où aller » ; il manque « comment ». Articles de fond, 
 **Avant de rédiger, demander à l'utilisateur de faire créer la rubrique « Guides »** (gabarit, URL, menu, sitemap) par la session « configuration » : ne pas inventer de structure de page soi-même. C'est aussi là qu'ira le lien affilié SantéVet quand il sera obtenu (voir CLAUDE.md, mention « lien affilié » obligatoire).
 
 ### H2. Parcs canins et aires de liberté en ville
+
+> ✅ **Page créée le 23/10/2026** (`/parc-canin`, entrée `match` dans `src/_data/categoryPages.js`, sans changer la catégorie des fiches) : 87 lieux, 40 départements. Reste à faire : compléter la couverture des grandes villes ; tout nouveau caniparc/aire canine/zone de liberté dont le titre contient ces mots y apparaît automatiquement.
 
 « Parc à chien près de moi » est une recherche fréquente ; ces lieux sont aujourd'hui dispersés entre `activites` et `lacs`. Après G2, les regrouper (catégorie dédiée, ex. `parcs-canins`) et compléter la couverture des grandes villes (pages ville : section H). Puis demander à l'utilisateur de faire créer la page catégorie correspondante.
 
