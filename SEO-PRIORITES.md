@@ -6,7 +6,7 @@ Fichier de travail non publié (racine du dépôt, hors `src/`). Généré le 22
 
 - **Ne jamais remettre de `noindex` ni filtrer le sitemap par région.** Le commit `21b28c2` (noindex sur les 9221 pages hors PACA) a été annulé par `b05606f` : les fiches hors PACA font **88 % des clics** (470 contre 62 pour PACA).
 - **Deux sessions poussent sur `claude/github-connexion-otichf`** (la branche de production Netlify) : `git fetch` + `git rebase` avant chaque push.
-- Pages catégorie (`src/categorie.njk`, `src/categorie-departement.njk`, configuration dans `src/_data/categoryPages.js`) : plages (+ côte d'azur), dogwash, toiletteurs, garde/pension, balades. Une page département est générée automatiquement dès qu'un département atteint 3 fiches de la catégorie (`minFiches`) — la catégorie d'une fiche (`breadcrumbCatId`) décide donc des pages sur lesquelles elle apparaît.
+- Pages catégorie (`src/categorie.njk`, `src/categorie-departement.njk`, configuration dans `src/_data/categoryPages.js`) : plages (+ côte d'azur), hébergements (+ campings), restaurants, dogwash, toiletteurs, garde/pension, balades. Une page département est générée automatiquement dès qu'un département atteint 3 fiches de la catégorie (`minFiches`) — la catégorie d'une fiche (`breadcrumbCatId`) décide donc des pages sur lesquelles elle apparaît.
 - Titres de fiches : ne plus y mettre de mention de travail (« confiance X », « à vérifier »…) — le `title` est le lien bleu affiché par Google.
 
 ## Vue d'ensemble
@@ -215,6 +215,24 @@ Une dizaine de lieux ont deux fiches (même nom, même commune), ex. îles de L�
 ### F4. Revérification tournante
 
 Chaque mois, revérifier les fiches les plus anciennes (date de dernier commit, la même que « Fiche mise à jour le … » affichée en haut de chaque fiche) en commençant par celles qui ont le plus d'impressions dans Search Console (sections A et B ci-dessus) : horaires, tarifs, conditions d'accueil du chien, téléphone, statut d'activité.
+
+## G. Retravailler les catégories (ajouté le 23/10/2026)
+
+Bilan par catégorie (fiches, texte médian, part de fiches < 1 500 caractères, CTR Search Console sur 3 mois) : balades 986 / 2 081 / 11 % / 3,8 % (la meilleure, ne pas toucher sauf E1) ; restaurants 1 453 / 1 321 / **76 %** / 1,0 % ; hébergements 2 151 / 1 468 / **53 %** / 0,4 % ; toiletteurs 1 191 / 1 312 / 78 % / 3,1 % ; lacs 416 / 2 249 / 5 % / 2,1 % ; activités 868 / 1 729 / 25 % / 3,3 %. Les pages catégorie Restaurants (`/restaurant-chien`) et Hébergements (`/hebergement-chien`) existent depuis le 23/10/2026. Même consigne que E et F : enchaîner sans validation intermédiaire.
+
+### G1. Enrichir les restaurants ⭐
+
+Le plus gros potentiel : beaucoup d'impressions (5 280 sur 3 mois) mais des fiches courtes. Ce que le site du restaurant ne dit pas et qui fait la valeur de la fiche : **chien accepté en salle ou seulement en terrasse**, gamelle d'eau, taille des chiens acceptée, accueil réellement rapporté par des clients (avis récents), et le reste utile (type de cuisine, fourchette de prix, horaires, téléphone). Ordre : d'abord les restaurants ayant des impressions dans Search Console (tableaux A et B), puis par département en commençant par les plus touristiques (83, 06, 33, 64, 17, 85, 29, 56, 14, 2A/2B). Si l'accueil du chien n'est plus confirmé (refus rapporté, fermeture), traiter comme en F1.
+
+### G2. Ranger les catégories « fourre-tout »
+
+- **`lacs`** : ne garder que les lacs, étangs et points d'eau. Parcs urbains, aires canines, berges et balades → `balades` ; plages de lac/rivière dont la règle chien est l'intérêt principal → `plages`. (Recoupe E1.)
+- **`campings`** (24 fiches isolées) → `hebergements` (avec `breadcrumbCatLabel: "Hébergements"`), comme les autres campings du site.
+- Jamais de changement d'URL, uniquement `breadcrumbCatId` / `breadcrumbCatLabel` (et `tag`/`cardPictos` si incohérents). Lister les fiches reclassées dans le message de commit.
+
+### G3. Nouvelle catégorie « Éducation canine et clubs »
+
+La catégorie `activites` contient ~66 clubs canins et éducateurs (tags « Club d'éducation canine », « Club canin », « Éducation canine », « Éducation canine à domicile »), noyés au milieu des châteaux et musées — alors que des requêtes du type « club canin bergeracois » ramènent déjà des clics. Les passer dans une nouvelle catégorie `education` (`breadcrumbCatLabel: "Éducation canine"`), puis **demander à l'utilisateur** d'ajouter la section correspondante sur le site (entrée dans `src/_data/sections.js`, icône, page catégorie dans `src/_data/categoryPages.js`) : ce câblage touche la navigation et les pages catégorie, il est fait côté session « configuration ». Ensuite, compléter la couverture (au moins 3 par département là où c'est possible).
 
 ## Ce qui n'est pas prioritaire
 
