@@ -13,6 +13,29 @@ Deux chantiers nationaux, menés l'un après l'autre comme prévu (pas en parall
 
 Si une lacune resurgit sur ces deux critères (ex. nouvelle fiche créée sans ces infos, ou département oublié), la retraiter à l'identique (recherche par lot → rédaction → build → commit), pas besoin de relancer tout le chantier.
 
+## Historique — campagne SIRENE toiletteurs (octobre 2026, résolue)
+
+Après les campagnes garde de chien/dogwash (chantier J, menées par une autre session), vérification factuelle de la catégorie **toiletteurs** sur les 100 départements qui en comptent (1189 fiches) selon la même méthode SIRENE que pour les vétérinaires : recherche directe sur le site officiel, la page Facebook ou le compte Instagram de chaque salon (via le connecteur Parallel Search, qui contourne le blocage réseau de l'environnement), plutôt que de se limiter aux extraits WebSearch ou aux annuaires tiers. Traité en 20 lots de ~5 départements, par agents en parallèle, avec build + `check-site.mjs` avant chaque commit et consolidation régulière (push ~toutes les 4-5 lots).
+
+**Résultat** : plusieurs centaines de fiches corrigées (adresses, téléphones, horaires, sites officiels ajoutés) ou confirmées inchangées. Quelques renommages d'enseigne appliqués uniquement quand une source datée confirmait la reprise (ex. Atout Poils → Crea'Dogs à Roquebrune-Cap-Martin, Styl' Canin → Au Bonheur Canin à Audincourt, Esprit Canin → La Truffe Poudrée à Albertville) ; ancien nom toujours conservé en mention "(ex-...)".
+
+**Cas à trancher humainement (fiches conservées, aucune suppression automatique)** — fermetures/anomalies fortes signalées dans le `bodyHtml` mais non résolues par les agents :
+- **Peluche** (Cayenne, 973) : société en liquidation judiciaire depuis le 7/05/2026 (Bodacc).
+- **À poils et à pattes** (Orléans, 45) : fermeture définitive annoncée pour novembre 2026 (le salon cherche un repreneur).
+- **Idefix Toilettage** (Orléans, 45) : SIREN radié le 23/09/2024, mais encore référencé par des annuaires tiers.
+- **Pil Poil** (Saint-Claude, 39) : entité radiée du registre depuis 2016.
+- **Hair Dog Toilettage** (Chamalières, 63) : SIRENE indique fermé/radié (2023), mais des annuaires tiers le listent encore actif — contradiction non tranchée.
+- **Atelier Canin** (Strasbourg, 67) : un autre salon ("Pood'els") occupe l'adresse depuis plus de 3 ans.
+- **Au Bonheur du Chien** (Fontainebleau, 77) : un autre salon occupe l'adresse sans lien de reprise confirmé.
+- **Patt Club Toilettage** (Pontoise, 95) : remplacé apparemment par "Le Salon de Martine" à la même adresse, sans preuve datée de reprise.
+- **Cani Salon** (Delle, 90) : l'adresse réelle du salon est en fait dans le Doubs (25), pas dans le Territoire de Belfort — fiche laissée dans son département actuel, classement géographique à revoir si besoin.
+
+**Catégorisation à vérifier (pas des toiletteurs, ou mixte)** :
+- **Michette** (Paris 10e) et **Le SPA Petsochic** (Paris 6e) : toilettage réservé aux chats / n'acceptent pas certains chiens — signalé dans la fiche pour un lecteur qui voyage avec un chien.
+- **M2JF Confiez-Nous Marie** (Sainte-Maure-de-Touraine, 37) et **Au'tour du chien** (Bernay, 27) : probables confusions avec une agence de services à la personne / une éducatrice canine plutôt qu'un vrai toiletteur.
+
+Si une nouvelle fiche toiletteur est créée sans vérification directe source officielle, la retraiter à l'identique (pas besoin de relancer tout le chantier).
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
