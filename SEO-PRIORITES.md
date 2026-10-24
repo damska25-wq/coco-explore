@@ -277,6 +277,14 @@ Brouillon dans la rubrique Guides, mêmes règles que les autres guides (sources
 
 > ✅ **Brouillon rédigé et sourcé le 23/10/2026**, dans `GUIDE-ETE-BROUILLON.md` (racine, hors `src/`, non publié) : coup de chaleur (signes, gestes, sources ANSES/vétérinaires), voiture (code de la route, code pénal, amendes), renvoi vers le guide plages existant, eau/hydratation/cyanobactéries, hébergement adapté à l'été. Frontmatter final et liste de points à revérifier notés en tête du fichier. Prêt à être copié dans `src/guides/ete-chien.njk` en mars-avril 2027.
 
+## J. Vérification sur les sites officiels — dogwash et gardes de chien (TERMINÉ, 24/10/2026)
+
+Les 189 fiches `dogwash` et les 870 fiches `dogsitters` ont été vérifiées une à une sur le site officiel de chaque établissement (ou son Facebook/Instagram, ou le profil Rover/Pawshake/Animaute/Aladom du particulier quand l'identité était certaine) : tarifs, horaires, adresses, téléphones, services ; « tarifs/téléphone non trouvés » remplacés quand l'info était publiée ; mentions de travail (« Confiance », « recoupé », « round »…) retirées.
+- Fiches supprimées (avec 301) : fermées/radiées, déménagées dans un autre département, pensions pour chats uniquement, établissements inexistants, doublons. Liste dans les messages de commit « chantier J ».
+- Environ 90 fiches « garde » qui ne font que de l'éducation sont passées en `breadcrumbCatId: "education"` (URL inchangée).
+- Règle de l'utilisateur : un établissement **fermé** (preuve fiable) = fiche supprimée + 301 ; un site web en panne ne suffit pas.
+- Auberge canine de Champeaux (61), Haras du Crieu (09) et Pension des P'tits Anges (71) supprimées le 24/10/2026 à la demande de l'utilisateur (garde de chiens non confirmée).
+
 ## Ce qui n'est pas prioritaire
 
 - Traduction anglaise : 4 clics en 3 mois.

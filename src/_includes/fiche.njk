@@ -131,6 +131,12 @@ extraScripts: |
   </div>
 </section>
 
+{%- if lang != "en" %}
+<section class="wrap avis-invite callout">
+  <p>Tu y es allé avec ton chien ? <a href="#avis">Raconte-nous ton passage →</a></p>
+</section>
+{%- endif %}
+
 {{ bodyHtml | safe }}
 
 {%- set relatedFiches = collections.fiches | related(breadcrumbCatId, departement, permalinkPath, 3) %}
