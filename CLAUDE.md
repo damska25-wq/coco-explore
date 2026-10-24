@@ -159,6 +159,8 @@ Quand un professionnel demande à ne plus être référencé : supprimer sa ou s
 |---|---|---|---|
 | Bande de Truffes (dog wash, pet-sitting, concept store) | Chambéry (73) | 23/10/2026 | `dogwash-bande-de-truffes-chambery`, `dogsitter-bande-de-truffes-chambery` |
 
+**Bande de Truffes — remise en ligne proposée (24/10/2026)** : Sophie Carpentier, la gérante, a répondu en demandant qu'on corrige les tarifs et qu'on présente ses trois activités. 3 fiches ont été rédigées d'après bandedetruffes.fr (pet-sitting, dog wash + concept store, toilettage + balnéo), prêtes dans `propositions/bande-de-truffes/` (hors site publié). Un mail lui a été envoyé avec l'aperçu en PDF ; on y explique que la mention « confiance » était une note interne retirée partout, on propose d'afficher sa note Google avec un lien, et on lui demande un lien vers Coco Explore sur son site (demande, pas une condition). **En attente de sa réponse.** Si elle valide : copier les 3 fichiers dans `src/fiches/`, retirer les 4 redirections `bande-de-truffes` de `src/_redirects.njk`, retirer sa ligne de ce tableau ; si elle met le lien, ajouter la ligne `fiche-collab` et l'inscrire dans `ECHANGES-LIENS.md`. Si elle refuse : ne rien publier, supprimer le dossier de proposition.
+
 ## Conventions du projet (voir aussi contexte de session)
 
 - Fiches : `src/fiches/*.njk`, frontmatter YAML + `bodyHtml`.
