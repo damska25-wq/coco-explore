@@ -283,7 +283,7 @@ Les 189 fiches `dogwash` et les 870 fiches `dogsitters` ont été vérifiées un
 - Fiches supprimées (avec 301) : fermées/radiées, déménagées dans un autre département, pensions pour chats uniquement, établissements inexistants, doublons. Liste dans les messages de commit « chantier J ».
 - Environ 90 fiches « garde » qui ne font que de l'éducation sont passées en `breadcrumbCatId: "education"` (URL inchangée).
 - Règle de l'utilisateur : un établissement **fermé** (preuve fiable) = fiche supprimée + 301 ; un site web en panne ne suffit pas.
-- Restent à trancher par l'utilisateur : Auberge canine de Champeaux (61), Haras du Crieu (09) et Pension des P'tits Anges (71) — existence de la garde non confirmée.
+- Auberge canine de Champeaux (61), Haras du Crieu (09) et Pension des P'tits Anges (71) supprimées le 24/10/2026 à la demande de l'utilisateur (garde de chiens non confirmée).
 
 ## Ce qui n'est pas prioritaire
 
