@@ -19,11 +19,9 @@ Après les campagnes garde de chien/dogwash (chantier J, menées par une autre s
 
 **Résultat** : plusieurs centaines de fiches corrigées (adresses, téléphones, horaires, sites officiels ajoutés) ou confirmées inchangées. Quelques renommages d'enseigne appliqués uniquement quand une source datée confirmait la reprise (ex. Atout Poils → Crea'Dogs à Roquebrune-Cap-Martin, Styl' Canin → Au Bonheur Canin à Audincourt, Esprit Canin → La Truffe Poudrée à Albertville) ; ancien nom toujours conservé en mention "(ex-...)".
 
-**Cas à trancher humainement (fiches conservées, aucune suppression automatique)** — fermetures/anomalies fortes signalées dans le `bodyHtml` mais non résolues par les agents :
-- **Peluche** (Cayenne, 973) : société en liquidation judiciaire depuis le 7/05/2026 (Bodacc).
-- **À poils et à pattes** (Orléans, 45) : fermeture définitive annoncée pour novembre 2026 (le salon cherche un repreneur).
-- **Idefix Toilettage** (Orléans, 45) : SIREN radié le 23/09/2024, mais encore référencé par des annuaires tiers.
-- **Pil Poil** (Saint-Claude, 39) : entité radiée du registre depuis 2016.
+**Fermetures quasi-certaines (résolu, 24/10/2026)** : 4 fiches supprimées sur décision de l'utilisateur — **Peluche** (Cayenne, 973 — liquidation judiciaire depuis le 7/05/2026, Bodacc), **À poils et à pattes** (Orléans, 45 — fermeture définitive annoncée pour novembre 2026, le salon cherchait un repreneur), **Idefix Toilettage** (Orléans, 45 — SIREN radié le 23/09/2024), **Pil Poil** (Saint-Claude, 39 — entité radiée du registre depuis 2016). Redirection 301 ajoutée pour chacune vers la page département de la catégorie toiletteurs (`src/_redirects.njk`).
+
+**Cas à trancher humainement (fiches conservées, aucune suppression automatique)** — anomalies signalées dans le `bodyHtml` mais moins tranchées qu'une fermeture confirmée (contradiction de source, ou remplacement par un autre établissement sans preuve de reprise) :
 - **Hair Dog Toilettage** (Chamalières, 63) : SIRENE indique fermé/radié (2023), mais des annuaires tiers le listent encore actif — contradiction non tranchée.
 - **Atelier Canin** (Strasbourg, 67) : un autre salon ("Pood'els") occupe l'adresse depuis plus de 3 ans.
 - **Au Bonheur du Chien** (Fontainebleau, 77) : un autre salon occupe l'adresse sans lien de reprise confirmé.
