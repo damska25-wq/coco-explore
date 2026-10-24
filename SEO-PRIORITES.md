@@ -277,9 +277,13 @@ Brouillon dans la rubrique Guides, mêmes règles que les autres guides (sources
 
 > ✅ **Brouillon rédigé et sourcé le 23/10/2026**, dans `GUIDE-ETE-BROUILLON.md` (racine, hors `src/`, non publié) : coup de chaleur (signes, gestes, sources ANSES/vétérinaires), voiture (code de la route, code pénal, amendes), renvoi vers le guide plages existant, eau/hydratation/cyanobactéries, hébergement adapté à l'été. Frontmatter final et liste de points à revérifier notés en tête du fichier. Prêt à être copié dans `src/guides/ete-chien.njk` en mars-avril 2027.
 
-## J. Vérification sur les sites officiels — dogwash et gardes de chien (EN COURS dans l'autre session, 24/10/2026)
+## J. Vérification sur les sites officiels — dogwash et gardes de chien (TERMINÉ, 24/10/2026)
 
-Après une demande de retrait (Bande de Truffes, tarifs affichés comme « non indiqués » alors qu'ils l'étaient), l'autre session vérifie une à une les 189 fiches `dogwash` puis les 870 fiches `dogsitters` sur le site officiel de chaque établissement (tarifs, horaires, adresse, téléphone, services) et retire les mentions de travail restantes. **Ne pas modifier les fiches `dogwash` et `dogsitters` pendant ce chantier** (risque de conflit) : il sera marqué terminé ici.
+Les 189 fiches `dogwash` et les 870 fiches `dogsitters` ont été vérifiées une à une sur le site officiel de chaque établissement (ou son Facebook/Instagram, ou le profil Rover/Pawshake/Animaute/Aladom du particulier quand l'identité était certaine) : tarifs, horaires, adresses, téléphones, services ; « tarifs/téléphone non trouvés » remplacés quand l'info était publiée ; mentions de travail (« Confiance », « recoupé », « round »…) retirées.
+- Fiches supprimées (avec 301) : fermées/radiées, déménagées dans un autre département, pensions pour chats uniquement, établissements inexistants, doublons. Liste dans les messages de commit « chantier J ».
+- Environ 90 fiches « garde » qui ne font que de l'éducation sont passées en `breadcrumbCatId: "education"` (URL inchangée).
+- Règle de l'utilisateur : un établissement **fermé** (preuve fiable) = fiche supprimée + 301 ; un site web en panne ne suffit pas.
+- Restent à trancher par l'utilisateur : Auberge canine de Champeaux (61), Haras du Crieu (09) et Pension des P'tits Anges (71) — existence de la garde non confirmée.
 
 ## Ce qui n'est pas prioritaire
 
