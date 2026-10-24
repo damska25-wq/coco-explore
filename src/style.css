@@ -621,6 +621,9 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .fiche-body h2:first-child { margin-top: 0; }
 
 .callout { background: var(--surface-soft); border-left: 3px solid var(--ocre); padding: 16px 18px; border-radius: 2px; font-size: 0.95rem; }
+.avis-invite { margin: 28px auto; }
+.avis-invite p { margin: 0; }
+.avis-invite a { font-weight: 600; }
 
 .sidebar-card { background: var(--surface); border: 1px solid rgba(var(--ink),0.1); border-radius: 6px; padding: 22px; margin-bottom: 20px; }
 .sidebar-card h3 { font-size: 1.05rem; color: var(--heading); margin-bottom: 12px; }
