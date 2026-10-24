@@ -277,6 +277,10 @@ Brouillon dans la rubrique Guides, mêmes règles que les autres guides (sources
 
 > ✅ **Brouillon rédigé et sourcé le 23/10/2026**, dans `GUIDE-ETE-BROUILLON.md` (racine, hors `src/`, non publié) : coup de chaleur (signes, gestes, sources ANSES/vétérinaires), voiture (code de la route, code pénal, amendes), renvoi vers le guide plages existant, eau/hydratation/cyanobactéries, hébergement adapté à l'été. Frontmatter final et liste de points à revérifier notés en tête du fichier. Prêt à être copié dans `src/guides/ete-chien.njk` en mars-avril 2027.
 
+## J. Vérification sur les sites officiels — dogwash et gardes de chien (EN COURS dans l'autre session, 24/10/2026)
+
+Après une demande de retrait (Bande de Truffes, tarifs affichés comme « non indiqués » alors qu'ils l'étaient), l'autre session vérifie une à une les 189 fiches `dogwash` puis les 870 fiches `dogsitters` sur le site officiel de chaque établissement (tarifs, horaires, adresse, téléphone, services) et retire les mentions de travail restantes. **Ne pas modifier les fiches `dogwash` et `dogsitters` pendant ce chantier** (risque de conflit) : il sera marqué terminé ici.
+
 ## Ce qui n'est pas prioritaire
 
 - Traduction anglaise : 4 clics en 3 mois.
