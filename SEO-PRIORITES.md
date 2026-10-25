@@ -292,7 +292,7 @@ Export du 25/10/2026 (fichiers Pages.csv / Requêtes.csv, 1000 lignes chacun) : 
 - **Pourquoi le CTR est bas** : la majorité des impressions viennent de recherches sur le **nom d'un établissement** (« clinique vétérinaire de la marne », « vet in the moun », « camping les oyats »…). Le site officiel et Google Maps passent devant : clics faibles, c'est structurel, ne pas s'y acharner. Campings : positions 30-50 sur leur nom, idem (catégorie hôtels/campings ≈ 0 clic).
 - **Catégories qui cliquent le mieux** (CTR) : activités 4,1 %, garde 4,0 %, balades 3,8 %, dogwash 3,5 %, toiletteurs 3,3 %. Vétérinaires : beaucoup d'impressions (11 000) mais CTR 0,4 %.
 
-### K1. « vétérinaire de garde + ville » ⭐ (priorité 1)
+### K1. « vétérinaire de garde + ville » ⭐ (FAIT le 25/10/2026 : guide /guide-urgence-veterinaire-chien + titres « Vétérinaire de garde … » sur les pages vétérinaires ; à remesurer dans Search Console vers mi-novembre)
 Plus de 20 villes recherchées (Biarritz, Dax, Agen, Mont-de-Marsan, Bayonne, Strasbourg, Montauban, Cannes, Chambéry, Vannes, Abbeville, Albertville, Pamiers…), positions 36 à 86. Pistes : formuler les pages vétérinaires par département autour de « vétérinaire de garde et urgences » (sans promesse fausse : badge 24h/24 réservé aux gardes vérifiées) + guide « urgence vétérinaire en vacances » sourcé (3115, répondeur du cabinet).
 
 ### K2. « dogwash / lavage chien libre service autour de moi » (priorité 2)
