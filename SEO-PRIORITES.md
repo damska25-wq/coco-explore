@@ -298,7 +298,7 @@ Plus de 20 villes recherchées (Biarritz, Dax, Agen, Mont-de-Marsan, Bayonne, St
 ### K2. « dogwash / lavage chien libre service autour de moi » (FAIT le 25/10/2026 : titre « Dogwash autour de moi » + bloc « stations les plus proches de toi » sur /dogwash-chien, option nearby: true réutilisable pour d'autres catégories)
 Positions 5 à 8, déjà bas de page 1. Retravailler la page dogwash nationale pour ces requêtes (géolocalisation « stations les plus proches », déjà disponible sur le site).
 
-### K3. Page anglaise des parcs canins (petit gain)
+### K3. Page anglaise des parcs canins (FAIT le 25/10/2026 : titre « Fenced dog parks in Nice: 14 off-leash areas » ; bloc « les plus proches de toi » ajouté aussi sur toiletteurs, garde de chien et éducation canine)
 « dog parks near me with fence » : 213 impressions, position 5,6, 0 clic → ajouter « fenced » au titre/description de `en/fiche-activite-parcs-canins-nice`.
 
 ## Ce qui n'est pas prioritaire
