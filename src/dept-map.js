@@ -44,11 +44,12 @@
   lieux.forEach(function (lieu) {
     var color = CAT_COLORS[lieu.catId] || "#3C5943";
     var marker = L.marker([lieu.lat, lieu.lng], { icon: makeIcon(color) });
-    marker.bindPopup(
-      '<div class="coco-popup"><strong>' + lieu.titre + "</strong>" +
-      '<span class="coco-popup-tag">' + lieu.categorie + " · " + lieu.lieu + "</span>" +
-      '<div class="coco-popup-actions"><a href="' + lieu.slug + '">Voir la fiche</a></div></div>'
-    );
+    marker.bindPopup(function () {
+      return '<div class="coco-popup"><strong>' + lieu.titre + "</strong>" +
+        '<span class="coco-popup-tag">' + lieu.categorie + " · " + lieu.lieu + "</span>" +
+        (window.CocoNotes ? window.CocoNotes.popupLine(lieu) : "") +
+        '<div class="coco-popup-actions"><a href="' + lieu.slug + '">Voir la fiche</a></div></div>';
+    });
     if (!layerByCatId[lieu.catId]) layerByCatId[lieu.catId] = L.layerGroup();
     layerByCatId[lieu.catId].addLayer(marker);
     allBounds.push([lieu.lat, lieu.lng]);
