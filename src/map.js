@@ -12,7 +12,8 @@
     { catIds: ["toiletteurs"], label: "Toiletteurs", color: "#A65C8C", activeBg: "#A65C8C" },
     { catIds: ["dogwash"], label: "Douche à chien", color: "#2A9D9D", activeBg: "#228181" },
     { catIds: ["veterinaires"], label: "Vétérinaires", color: "#B0413E", activeBg: "#B0413E" },
-    { catIds: ["dogsitters"], label: "Garde de chien", color: "#7C6FAE", activeBg: "#796cac" }
+    { catIds: ["dogsitters"], label: "Garde de chien", color: "#7C6FAE", activeBg: "#796cac" },
+    { catIds: ["education"], label: "Éducation canine", color: "#4F6D7A", activeBg: "#4F6D7A" }
   ];
   var URGENCE_COLOR = "#8B1E1E"; // nuance de marqueur pour les urgences vétérinaires, dans le même groupe/filtre que les vétérinaires
 
