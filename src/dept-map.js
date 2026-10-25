@@ -19,7 +19,8 @@
     toiletteurs: "#A65C8C",
     dogwash: "#2A9D9D",
     veterinaires: "#B0413E",
-    dogsitters: "#7C6FAE"
+    dogsitters: "#7C6FAE",
+    education: "#4F6D7A"
   };
 
   function makeIcon(color) {

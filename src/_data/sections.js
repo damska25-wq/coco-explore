@@ -65,4 +65,10 @@ export default [
     heading: "Faire garder son chien en toute confiance",
     catGrid: { icon: "i-paw", label: "Garde de chien", countIds: ["dogsitters"] },
   },
+  {
+    id: "education",
+    eyebrow: "Éducation canine",
+    heading: "Clubs canins et éducateurs pour bien vivre avec son chien",
+    catGrid: { icon: "i-dog", label: "Éducation canine", countIds: ["education"] },
+  },
 ];
