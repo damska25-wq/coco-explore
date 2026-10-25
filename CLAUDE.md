@@ -53,6 +53,31 @@ Même méthode que toiletteurs/vétérinaires, appliquée aux **2173 fiches héb
 
 Si une nouvelle fiche hébergement est créée sans vérification directe source officielle, la retraiter à l'identique (pas besoin de relancer tout le chantier).
 
+## Historique — campagne SIRENE restaurants (octobre 2026, résolue)
+
+Même méthode que toiletteurs/hébergements/vétérinaires, appliquée aux **~1453 fiches restaurants** sur les 99 départements qui en comptent (aucune fiche à 972 Martinique, 973 Guyane, 976 Mayotte). Traité en 20 lots de ~5 départements, par 2 agents en parallèle par vague, avec build + `check-site.mjs` avant chaque commit et consolidation (push + sync `seo-audit-indexation`) après chaque vague de 2 lots.
+
+**Résultat** : plusieurs centaines de fiches corrigées (adresses, téléphones, horaires, sites officiels ajoutés, statuts d'accueil chien recoupés via offices de tourisme officiels) ou confirmées inchangées. Renommages d'enseigne appliqués uniquement avec preuve datée, ancien nom conservé en "(ex-...)" — notamment Café de la Fontaine → Grand Café la Fontaine (Maussane-les-Alpilles, 13), Les 3 Causses → Umami (Millau, 12), Roch Et Co → Le Roy Théodore (Sartène, 2A), Cigale et Fourmi → Café de la Tour (Lectoure, 32), Hasle Lecoq → Moma (Vitré, 35), Les Chiens du Guet → La Cantine du Guet (Saint-Malo, 35), Le Mange Grenouille → Le Relais des Braconniers (Saint-Aignan, 41), Le Coq en Paille → Le Coq en Pou(l)pe (Roanne, 42), B-W Au Petit Chez Soi → Black-White (Thionville, 57), Brasserie de la Paix → Bouillon de la Paix (Lille, 59), La Parisienne → La Brasserie Parisienne (Compiègne, 60), La Table d'HautPoul → La Taverne d'Hautpoul (Mazamet, 81), La Mangoune (n'avait en réalité jamais existé à cette adresse) → Au Paysan Gourmand (Limoges, 87), Les Jacobins → Le Clos des Jacobins (Sens, 89), Le Chalet Des Pins → Le Chalet, désormais casher (Le Raincy, 93).
+
+**Cas à trancher humainement (fiches conservées, aucune suppression automatique)** — signaux de fermeture les plus crédibles (presse datée, liquidation/radiation SIRENE) :
+- **Mon Bar** (Arles, 13) : article de presse daté (05/08/2026) évoquant une fermeture et une liquidation judiciaire du gérant, non totalement confirmé (encore listé actif sur des annuaires tiers).
+- **Le Grand Bleu** (Beaune, 21) : article de presse daté (21/12/2025) confirmant une fermeture fin 2025 et une reconversion en bar à vin "L'Épinette", société radiée sur Pappers.
+- **L'Esprit du Sud-Ouest** (Blagnac, 31) : fermeture définitive annoncée par le gérant (actu.fr, 31/08/2026) après 17 ans d'activité.
+- **Le Petit Jardin** (Grenoble, 38) : société en liquidation judiciaire (societe.com), adresse désormais exploitée sous le nom "Le Pompon".
+- **Le Django** (Parentis-en-Born, 40) : société radiée le 02/12/2024 après liquidation judiciaire (Societe.com/Bodacc).
+- **Courtepaille Beauvais** (60) et **Courtepaille Dreux** (28) : fermetures définitives datées (articles de presse 2023) lors de la vague de fermetures nationales du réseau Courtepaille — à vérifier au cas par cas, certaines adresses Courtepaille restent actives.
+- **Crêperie Le Râtelier** (Coutances, 50) : remplacée depuis le 16/10/2026 par le restaurant "La Source" à la même adresse (La Manche Libre, 19/10/2026).
+- **La Boucherie** (Douai, 59) : l'office de tourisme officiel du Douaisis référence désormais "Le Bouillon Douaisien" à cette adresse.
+- **Le Chanois** (Scey-sur-Saône, 70) : fermeture confirmée par la presse locale (01/10/2025), établissement en vente sans repreneur.
+- **La Bonne Maison** (Albi, 81) : SIREN radiée le 27/07/2023, adresse occupée depuis 2022 par un autre établissement ("Opulence Albi").
+- **Brasserie K** (Mulhouse, 68) : fermeture pour rénovation confirmée par Visit Alsace, sans date de réouverture annoncée.
+- **Chez Lucien** (Lyon, Croix-Rousse, 69) : le site officiel lui-même annonce un déménagement vers "Le P'tit Lucien" (même chef, même mascotte canine), après "8 ans et demi à la Croix-Rousse" selon un post Facebook de l'établissement.
+- **L'Escale** (L'Île-Rousse, 2B) : contrairement à l'ancienne fiche, le portail officiel du tourisme de Balagne confirme explicitement et à plusieurs reprises que les chiens n'y sont pas acceptés — question de cohérence éditoriale (garder/retirer la fiche d'un guide "voyager avec son chien") plutôt qu'une fermeture.
+
+D'autres contradictions plus mineures (statut d'ouverture ou accueil chien non tranchable entre deux sources officielles) ont été laissées visibles dans le `bodyHtml` fiche par fiche plutôt que consolidées ici — à retrouver au besoin par une recherche ciblée sur les fiches concernées.
+
+Si une nouvelle fiche restaurant est créée sans vérification directe source officielle, la retraiter à l'identique (pas besoin de relancer tout le chantier).
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
