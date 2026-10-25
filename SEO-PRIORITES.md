@@ -295,7 +295,7 @@ Export du 25/10/2026 (fichiers Pages.csv / Requêtes.csv, 1000 lignes chacun) : 
 ### K1. « vétérinaire de garde + ville » ⭐ (FAIT le 25/10/2026 : guide /guide-urgence-veterinaire-chien + titres « Vétérinaire de garde … » sur les pages vétérinaires ; à remesurer dans Search Console vers mi-novembre)
 Plus de 20 villes recherchées (Biarritz, Dax, Agen, Mont-de-Marsan, Bayonne, Strasbourg, Montauban, Cannes, Chambéry, Vannes, Abbeville, Albertville, Pamiers…), positions 36 à 86. Pistes : formuler les pages vétérinaires par département autour de « vétérinaire de garde et urgences » (sans promesse fausse : badge 24h/24 réservé aux gardes vérifiées) + guide « urgence vétérinaire en vacances » sourcé (3115, répondeur du cabinet).
 
-### K2. « dogwash / lavage chien libre service autour de moi » (priorité 2)
+### K2. « dogwash / lavage chien libre service autour de moi » (FAIT le 25/10/2026 : titre « Dogwash autour de moi » + bloc « stations les plus proches de toi » sur /dogwash-chien, option nearby: true réutilisable pour d'autres catégories)
 Positions 5 à 8, déjà bas de page 1. Retravailler la page dogwash nationale pour ces requêtes (géolocalisation « stations les plus proches », déjà disponible sur le site).
 
 ### K3. Page anglaise des parcs canins (petit gain)
