@@ -61,7 +61,7 @@ window.CocoGeoloc = (function () {
 
   function formatDistance(km) {
     if (km < 1) return Math.round(km * 1000) + " m";
-    return (km < 10 ? km.toFixed(1) : Math.round(km)) + " km";
+    return (km < 10 ? km.toFixed(1).replace(".", ",") : Math.round(km)) + " km";
   }
 
   return { getStored: getStored, request: request, distanceKm: distanceKm, formatDistance: formatDistance };
