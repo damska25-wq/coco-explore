@@ -33,6 +33,21 @@ extraHead: |
   <h1>{{ cp.h1Nat }}</h1>
   <p>{{ cp.introNat | fill({ total: total, nbDeps: catDepts.length }) | safe }}</p>
 
+  {%- if cp.nearby %}
+  <div class="nearby-box" id="nearby-box">
+    <h2>Les {{ cp.unit[1] }} les plus proches de toi</h2>
+    <p>Autorise la localisation : on t'affiche les {{ cp.unit[1] }} les plus proches, avec la distance à vol d'oiseau. Ta position reste sur ton téléphone, elle n'est envoyée nulle part.</p>
+    <button type="button" class="map-filter map-filter-all" id="nearby-btn">Me localiser</button>
+    <p class="nearby-status" id="nearby-status" role="status"></p>
+    <ol class="nearby-list" id="nearby-list" hidden></ol>
+  </div>
+  <script>window.COCO_NEARBY=[
+  {%- for fiche in collections.fiches %}{% if fiche.data.breadcrumbCatId == cp.cat %}{"u":{{ ("/" + (fiche.data.permalinkPath | cleanUrl)) | dump | safe }},"t":{{ fiche.data.h1 | dump | safe }},"l":{{ fiche.data.lieu | dump | safe }},"a":{{ fiche.data.lat }},"o":{{ fiche.data.lng }}},{% endif %}{% endfor -%}
+  ];</script>
+  <script src="/geoloc.js" defer></script>
+  <script src="/nearby.js" defer></script>
+  {%- endif %}
+
   <h2>{{ cp.howTitle }}</h2>
   <p>{{ cp.howHtml | safe }}</p>
 

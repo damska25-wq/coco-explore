@@ -956,3 +956,12 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .guide-card:hover { border-color: var(--terracotta); }
 .guide-card h2 { font-size: 1.2rem; color: var(--heading); margin: 6px 0; }
 .guide-card p { margin: 0; color: rgba(var(--ink),0.75); font-size: 0.95rem; }
+
+/* « Les plus proches de toi » (pages catégorie avec nearby: true) */
+.nearby-box { margin: 24px 0 8px; padding: 18px 20px; border: 1px solid rgba(var(--ink),0.12); border-radius: 16px; background: var(--surface); }
+.nearby-box h2 { margin-top: 0 !important; }
+.nearby-status { font-size: 0.85rem; color: rgba(var(--ink),0.65); margin-top: 8px; }
+.nearby-list { margin: 10px 0 0; padding-left: 1.4em; }
+.nearby-list li { margin: 8px 0; }
+.nearby-list a { font-weight: 700; }
+.nearby-meta { display: block; font-size: 0.85rem; color: rgba(var(--ink),0.65); }
