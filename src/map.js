@@ -96,6 +96,7 @@
       "<strong>" + lieu.titre + "</strong>" +
       '<span class="coco-popup-tag">' + lieu.categorie + " · " + lieu.lieu + "</span>" +
       distanceLine +
+      (window.CocoNotes ? window.CocoNotes.popupLine(lieu) : "") +
       '<div class="coco-popup-actions">' +
       '<a href="' + lieu.slug + '">Voir la fiche</a>' +
       '<a href="' + directionsUrl(lieu.lat, lieu.lng) + '" target="_blank" rel="noopener">Itinéraire</a>' +

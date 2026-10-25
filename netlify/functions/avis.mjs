@@ -96,6 +96,30 @@ async function adminUpdate(store, fiche, id, action) {
   return true;
 }
 
+// Note moyenne de chaque fiche, calculée sur les avis publiés qui ont une
+// note. Sert à afficher « ★ 4,6 (12) » sur la carte et les vignettes ; les
+// fiches sans note n'apparaissent pas. Mis en cache 5 minutes par le CDN de
+// Netlify : un avis validé apparaît dans les notes au plus 5 minutes après.
+async function notesSummary(store) {
+  const { blobs } = await store.list();
+  const notes = {};
+  for (const { key } of blobs) {
+    const ratings = ((await store.get(key, { type: "json" })) || [])
+      .filter((entry) => isPublished(entry) && Number.isInteger(entry.rating))
+      .map((entry) => entry.rating);
+    if (!ratings.length) continue;
+    const avg = ratings.reduce((sum, r) => sum + r, 0) / ratings.length;
+    notes[key] = [Math.round(avg * 10) / 10, ratings.length];
+  }
+  return new Response(JSON.stringify(notes), {
+    headers: {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "netlify-cdn-cache-control": "public, durable, s-maxage=300, stale-while-revalidate=600"
+    }
+  });
+}
+
 export default async (req, context) => {
   const store = getStore("avis-coco-explore");
   const limits = getStore("avis-limites");
@@ -132,6 +156,8 @@ export default async (req, context) => {
 
     return json({ error: "méthode non autorisée" }, 405);
   }
+
+  if (req.method === "GET" && url.searchParams.has("notes")) return notesSummary(store);
 
   if (req.method === "GET") {
     const fiche = url.searchParams.get("fiche");

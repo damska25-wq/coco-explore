@@ -121,7 +121,7 @@ extraScripts: |
     <div class="fiche-grid">
       {%- for fiche in collections.fiches | latestByCategory(section.id, 18) %}
       {%- set badge = ((fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null)) %}
-      <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}">
+      <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}" data-avis="{{ fiche.data.avisSlug }}">
         <div class="thumb">
           {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
           <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" data-src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} data-srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}">

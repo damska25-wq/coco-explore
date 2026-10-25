@@ -514,6 +514,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
    pour ne jamais se confondre avec le badge Partenaire payant. */
 .fiche-card .body { padding: 18px 20px 22px; }
 .fiche-card .tag { display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--terracotta); margin-bottom: 8px; }
+.fiche-card .card-note { display: block; font-size: 0.85rem; font-weight: 700; color: var(--ocre); margin: -2px 0 6px; }
 .fiche-card h3 { font-size: 1.2rem; margin-bottom: 6px; }
 .fiche-card p { font-size: 0.95rem; color: rgba(var(--ink),0.75); margin: 0; }
 
@@ -872,6 +873,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .coco-popup strong { display: block; font-family: var(--serif); font-size: 1rem; }
 .coco-popup-tag { display: block; font-size: 0.8rem; color: rgba(var(--ink),0.65); margin-top: 2px; }
 .coco-popup-distance { display: block; font-size: 0.78rem; font-weight: 700; color: var(--terracotta); margin-top: 4px; }
+.coco-popup-note { display: block; font-size: 0.8rem; font-weight: 700; color: var(--ocre); margin-top: 4px; }
 .coco-popup-actions { display: flex; gap: 10px; margin-top: 8px; }
 .coco-popup-actions a { font-size: 0.82rem; font-weight: 700; color: var(--terracotta-deep); text-decoration: none; }
 .coco-popup-actions a:hover { text-decoration: underline; }
