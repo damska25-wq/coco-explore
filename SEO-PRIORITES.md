@@ -233,7 +233,7 @@ Le plus gros potentiel : beaucoup d'impressions (5 280 sur 3 mois) mais des fich
 - **`campings`** (24 fiches isolées) → `hebergements` (avec `breadcrumbCatLabel: "Hébergements"`), comme les autres campings du site.
 - Jamais de changement d'URL, uniquement `breadcrumbCatId` / `breadcrumbCatLabel` (et `tag`/`cardPictos` si incohérents). Lister les fiches reclassées dans le message de commit.
 
-### G3. Nouvelle catégorie « Éducation canine et clubs »
+### G3. Nouvelle catégorie « Éducation canine et clubs » (FAIT : fiches reclassées le 23/10, catégorie branchée sur le site le 25/10/2026)
 
 La catégorie `activites` contient ~66 clubs canins et éducateurs (tags « Club d'éducation canine », « Club canin », « Éducation canine », « Éducation canine à domicile »), noyés au milieu des châteaux et musées — alors que des requêtes du type « club canin bergeracois » ramènent déjà des clics. Les passer dans une nouvelle catégorie `education` (`breadcrumbCatLabel: "Éducation canine"`), puis **demander à l'utilisateur** d'ajouter la section correspondante sur le site (entrée dans `src/_data/sections.js`, icône, page catégorie dans `src/_data/categoryPages.js`) : ce câblage touche la navigation et les pages catégorie, il est fait côté session « configuration ». Ensuite, compléter la couverture (au moins 3 par département là où c'est possible).
 
@@ -284,6 +284,22 @@ Les 189 fiches `dogwash` et les 870 fiches `dogsitters` ont été vérifiées un
 - Environ 90 fiches « garde » qui ne font que de l'éducation sont passées en `breadcrumbCatId: "education"` (URL inchangée).
 - Règle de l'utilisateur : un établissement **fermé** (preuve fiable) = fiche supprimée + 301 ; un site web en panne ne suffit pas.
 - Auberge canine de Champeaux (61), Haras du Crieu (09) et Pension des P'tits Anges (71) supprimées le 24/10/2026 à la demande de l'utilisateur (garde de chiens non confirmée).
+
+## K. Analyse de l'export Search Console 3 mois (25/10/2026)
+
+Export du 25/10/2026 (fichiers Pages.csv / Requêtes.csv, 1000 lignes chacun) : ~816 clics sur 3 mois, CTR 0,9 %, position moyenne 17,9 (mobile 10,7, ordinateur 27,4).
+
+- **Pourquoi le CTR est bas** : la majorité des impressions viennent de recherches sur le **nom d'un établissement** (« clinique vétérinaire de la marne », « vet in the moun », « camping les oyats »…). Le site officiel et Google Maps passent devant : clics faibles, c'est structurel, ne pas s'y acharner. Campings : positions 30-50 sur leur nom, idem (catégorie hôtels/campings ≈ 0 clic).
+- **Catégories qui cliquent le mieux** (CTR) : activités 4,1 %, garde 4,0 %, balades 3,8 %, dogwash 3,5 %, toiletteurs 3,3 %. Vétérinaires : beaucoup d'impressions (11 000) mais CTR 0,4 %.
+
+### K1. « vétérinaire de garde + ville » ⭐ (priorité 1)
+Plus de 20 villes recherchées (Biarritz, Dax, Agen, Mont-de-Marsan, Bayonne, Strasbourg, Montauban, Cannes, Chambéry, Vannes, Abbeville, Albertville, Pamiers…), positions 36 à 86. Pistes : formuler les pages vétérinaires par département autour de « vétérinaire de garde et urgences » (sans promesse fausse : badge 24h/24 réservé aux gardes vérifiées) + guide « urgence vétérinaire en vacances » sourcé (3115, répondeur du cabinet).
+
+### K2. « dogwash / lavage chien libre service autour de moi » (priorité 2)
+Positions 5 à 8, déjà bas de page 1. Retravailler la page dogwash nationale pour ces requêtes (géolocalisation « stations les plus proches », déjà disponible sur le site).
+
+### K3. Page anglaise des parcs canins (petit gain)
+« dog parks near me with fence » : 213 impressions, position 5,6, 0 clic → ajouter « fenced » au titre/description de `en/fiche-activite-parcs-canins-nice`.
 
 ## Ce qui n'est pas prioritaire
 
