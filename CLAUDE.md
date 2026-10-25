@@ -34,6 +34,25 @@ Après les campagnes garde de chien/dogwash (chantier J, menées par une autre s
 
 Si une nouvelle fiche toiletteur est créée sans vérification directe source officielle, la retraiter à l'identique (pas besoin de relancer tout le chantier).
 
+## Historique — campagne SIRENE hébergements (octobre 2026, résolue)
+
+Même méthode que toiletteurs/vétérinaires, appliquée aux **2173 fiches hébergements** sur les 101 départements (y compris Mayotte). Traité en 26 lots (3-4 départements chacun, un peu plus gros que les lots toiletteurs car la catégorie est plus dense), par agents en parallèle, avec build + `check-site.mjs` avant chaque commit et consolidation régulière. Consigne spécifique à cette catégorie : ne pas retoucher les conditions d'accueil chien déjà enrichies (supplément/jour, restrictions catégorie/taille, pet amenities) sauf contradiction avérée avec le site officiel lui-même.
+
+**Incident technique en cours de route** : deux lots (dépts 88-91 et 92-95) ont été interrompus par une panne transitoire du classificateur de sécurité côté serveur (pas un problème de contenu). Le travail déjà fait a été récupéré et commité, puis les deux lots ont été rejoués en entier pour garantir une couverture complète (le re-passage sur une fiche déjà corrigée ne fait que la confirmer, sans la retoucher).
+
+**Résultat** : plusieurs centaines de fiches corrigées (adresses, téléphones, sites officiels ajoutés, contradictions de tarif/accueil résolues via la source officielle) ou confirmées inchangées. Plusieurs renommages d'enseigne appliqués avec preuve datée, ancien nom conservé en "(ex-...)" — notamment Château de Gilly → Les Sources de Vougeot (21), Hôtel Le Forum → Alfred Hotels Monaco (Beausoleil, 06), Hôtel Jules Verne quittant Best Western (Biarritz, 64), Hôtel Le Cervolan → Hôtel Miura (73), Hôtel Salvator → Best Western Mulhouse Salvator Centre (68), Hôtel du Choiseul → Relais d'Amboise (37), Hôtel Kyriad Bourgoin-Jallieu → Best Western (38), Hôtel Auréna → B&B Hôtel Aurillac-Le Lioran (15), Hôtel Brit Belfort Bessoncourt → Kyriad ECO Belfort Bessoncourt (90), Camping La Perroche Plage → Camping Les Flots-Atlantique (17), Le Manoir du Sphinx → Les Bassans (Perros-Guirec, 22). Aussi retrouvé et corrigé au passage une variante du bug "confiance X" en champ public ("Confiance élevée", non couverte par le grep du chantier de nettoyage de novembre) sur quelques fiches.
+
+**Cas à trancher humainement (fiches conservées, aucune suppression automatique)** — signaux de fermeture ou contradictions fortes signalés dans le `bodyHtml` :
+- **Hôtel Beau Rivage / restaurant La Rosita** (Nogent-sur-Seine, 10) : société exploitante en liquidation judiciaire depuis le 28/10/2025, site officiel pourtant toujours en ligne.
+- **Le Relais de Montignac** (24) : le site officiel lui-même annonce ne pas réouvrir cette saison.
+- **Hôtel-Restaurant du Causse** (Saint-Cirq-Lapopie, 46) : avis client (2024) affirmant une fermeture définitive, aucune présence en ligne active trouvée pour confirmer ou infirmer.
+- **Hôtel Terminus** (Laroche-Migennes, 89) : société historique radiée le 03/11/2021, mais l'hôtel reste commercialisé activement (réservations jusqu'en 2027) — probable reprise non confirmée.
+- **Camping Le Cosson** (La Ferté-Saint-Aubin, 45) : SIREN radié fin 2023, et l'office de tourisme ne présente plus l'adresse que comme une aire de services camping-car.
+- **Adonis Paris Sud** (Chevilly-Larue, 94) : société exploitante en redressement judiciaire, mais site officiel actif avec réservations en ligne.
+- **Camping Montaigu Plage** (82) : renommé "Base de Loisirs du Plan d'eau des Chênes" par l'office de tourisme en 2026, conditions à reconfirmer après la publication des nouvelles modalités de gestion.
+
+Si une nouvelle fiche hébergement est créée sans vérification directe source officielle, la retraiter à l'identique (pas besoin de relancer tout le chantier).
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
