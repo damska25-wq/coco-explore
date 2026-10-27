@@ -949,6 +949,10 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .guide-body table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.95rem; }
 .guide-body th, .guide-body td { border: 1px solid rgba(var(--ink),0.15); padding: 8px 10px; text-align: left; vertical-align: top; }
 .guide-body .callout { margin: 1.2em 0; }
+.guide-hero { margin: 18px 0 8px; }
+.guide-hero img { width: 100%; height: auto; border-radius: 14px; display: block; }
+.guide-hero figcaption { font-size: 0.85rem; color: rgba(var(--ink),0.6); margin-top: 6px; }
+.guide-partner { font-size: 0.9rem; color: rgba(var(--ink),0.7); font-style: italic; }
 .guide-sources { margin-top: 2em; font-size: 0.92rem; }
 .guide-sources li, .guide-more li { margin: 4px 0; overflow-wrap: anywhere; }
 .guide-list { display: grid; gap: 16px; margin-top: 24px; }

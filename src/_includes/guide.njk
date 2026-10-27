@@ -22,6 +22,12 @@ layout: base.njk
   <span class="tag">{{ kicker | safe }}</span>
   <h1>{{ h1 | safe }}</h1>
   <p class="guide-meta">Mis à jour le {{ updated | dateLong }}{% if readingTime %} · {{ readingTime }} min de lecture{% endif %}</p>
+  {%- if heroImg %}
+  <figure class="guide-hero">
+    <img src="{{ heroImg }}" alt="{{ heroAlt }}" width="1200" height="675" fetchpriority="high">
+    {%- if heroCaption %}<figcaption>{{ heroCaption | safe }}</figcaption>{% endif %}
+  </figure>
+  {%- endif %}
   <div class="guide-body">
     {{ bodyHtml | safe }}
   </div>
