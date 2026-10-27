@@ -78,6 +78,20 @@ D'autres contradictions plus mineures (statut d'ouverture ou accueil chien non t
 
 Si une nouvelle fiche restaurant est créée sans vérification directe source officielle, la retraiter à l'identique (pas besoin de relancer tout le chantier).
 
+## Historique — campagne SIRENE éducation canine (octobre 2026, résolue)
+
+Même méthode que les autres catégories, appliquée aux **167 fiches « Éducation canine »** (catégorie créée le 23/10, branchée sur le site le 25/10/2026) : 5 lots en parallèle (brief `brief-verif.md`, section « éducation canine »), terminés le 27/10/2026 après une interruption (limite d'utilisation), build + `check-site.mjs` OK. Bilan : ~117 fiches corrigées (tarifs, adresses, téléphones, horaires, disciplines, faux « non trouvé » remplacés, titres « garde de chien » erronés corrigés), ~40 sans source officielle (seules les mentions de travail retirées), aucune fermeture confirmée.
+
+**Cas à trancher humainement (fiches non supprimées)** :
+- **Club de Dressage du Nord-Est Parisien** (`activite-club-dressage-nord-est-parisien-aulnay-93`) : a déménagé à Garges-lès-Gonesse (95) selon cddnep.net ; fiche laissée intacte (garde encore une ligne « Confiance » et « à vérifier »).
+- **Cohérence Canine** (fiche en 71) : le site officiel la situe à Saint-André-de-Bâgé (01).
+- **L'Essentiel Canin** (Torcy-et-Pouligny) : plus de séances en présentiel (visio/téléphone/formation seulement). **Sacrée Patte** (Égletons) : « ne prend plus de séance ».
+- **CaniConfort Les Nouillers** : doublon de `activite-caniconfort-saint-jean-dangely` (même SIRET).
+- **Canispirit Orthez** : téléphone/adresse de la fiche = ceux d'Animalsup (Gaas, 40) ; aucune trace d'« À l'Éducation Canine d'Orthez ». **Sym Dog Lozère** : identité douteuse.
+- **Peace and Dog** : site figé depuis 2018, deux adresses. **Crocs Dynamiques** (973) et **Les Cabots d'Oléron** : pas d'activité en ligne récente (pas une preuve de fermeture).
+- **Catégorie mixte** : Domaine Canin (971, surtout formation pro/fourrière), Techni Croc (animalerie), Couralet (pension/élevage), La Grande Vallée Blanche (élevage).
+- **Coordonnées lat/lng à recaler** (champs protégés, non touchés) : Otso Harana (Massignac → Roullet-Saint-Estèphe), Dog's Learning (Caen → Bellengreville), CECAM (Achères → Andrésy), Janzé, Figeacanisport.
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
