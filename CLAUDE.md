@@ -92,9 +92,11 @@ Même méthode que les autres catégories, appliquée aux **167 fiches « Éduca
 - **Catégorie mixte** : Domaine Canin (971, surtout formation pro/fourrière), Techni Croc (animalerie), Couralet (pension/élevage), La Grande Vallée Blanche (élevage).
 - **Coordonnées lat/lng à recaler** (champs protégés, non touchés) : Otso Harana (Massignac → Roullet-Saint-Estèphe), Dog's Learning (Caen → Bellengreville), CECAM (Achères → Andrésy), Janzé, Figeacanisport.
 
-## En pause — campagne SIRENE lacs (28/10/2026)
+## Campagne SIRENE lacs — partielle (28/10/2026)
 
-Vérification des 262 fiches « Lacs » lancée le 27/10 (6 lots, consignes : section « lacs et plans d'eau » du brief de vérification), **mise en pause sur demande de l'utilisateur le 28/10** après plusieurs coupures par limite d'utilisation. Travail partiel (~216 fiches modifiées, non validé, pas de build) sauvegardé sur la branche **`wip-lacs-sirene`** (commit `[skip netlify]`, jamais déployée). Le site publié n'a pas changé. **Ne reprendre que lorsque l'utilisateur le demande** : alors fusionner la branche, terminer les fiches manquantes, build + `check-site.mjs`, bilan (interdictions chiens confirmées à trancher) avant publication.
+Vérification des 262 fiches « Lacs » (section « lacs et plans d'eau » du brief). Interrompue plusieurs fois par les limites d'utilisation ; pour économiser le crédit de l'utilisateur, **220 fiches vérifiées ont été publiées le 28/10/2026** (build + `check-site.mjs` OK, champs protégés intacts). **46 fiches restent à traiter** (liste : fiches lacs non modifiées par le commit « Lacs SIRENE : 216 fiches… ») — **ne reprendre que sur demande de l'utilisateur**, avec 2 agents maximum (sobriété).
+
+**Interdictions totales découvertes, fiches gardées sur décision de l'utilisateur** (info utile aux visiteurs, interdiction affichée dans le titre) : Lac de Carcès (83), Lac du Devès à Lapalud (84, + cyanobactéries août 2026), Étang de Bellebouche (36), Étang de la Touche à Lingé (36, réserve de Chérine), Grand Lac de Laffrey (38, espace chiens au lac de Pierre-Châtel voisin). Nouvelles interdictions saisonnières : Lauzon (15/06-15/09), Parisot (juillet-août), base de loisirs du Laouzas.
 
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
