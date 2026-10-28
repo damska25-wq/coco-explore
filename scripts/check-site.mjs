@@ -10,7 +10,7 @@ import { join } from "node:path";
 const SITE = "_site";
 const MAX_NOINDEX = 20; // pages volontairement en noindex (ex. /admin-avis)
 const MIN_SITEMAP_RATIO = 0.95; // part minimale des fiches présentes dans le sitemap
-const CONFIANCE = /[Cc]onfiance (faible|moyenne|haute)/;
+const CONFIANCE = /[Cc]onfiance (?:très |assez )?(faible|moyenne|haute|élevée|bonne|basse|forte)|(bonne|haute|basse|faible) confiance/;
 const PLACEHOLDER = /\{(enNom|villes|total|nbDeps|n)\}/;
 
 const errors = [];
