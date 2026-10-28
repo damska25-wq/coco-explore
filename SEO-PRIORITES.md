@@ -301,6 +301,12 @@ Positions 5 à 8, déjà bas de page 1. Retravailler la page dogwash nationale p
 ### K3. Page anglaise des parcs canins (FAIT le 25/10/2026 : titre « Fenced dog parks in Nice: 14 off-leash areas » ; bloc « les plus proches de toi » ajouté aussi sur toiletteurs, garde de chien et éducation canine)
 « dog parks near me with fence » : 213 impressions, position 5,6, 0 clic → ajouter « fenced » au titre/description de `en/fiche-activite-parcs-canins-nice`.
 
+### K4. Mots-clés (FAIT le 28/10/2026, à remesurer mi-novembre)
+- Pages hébergements par département : titre « Camping, hôtel et gîte chien accepté {dép} : N adresses » (requêtes « camping chien admis Landes », « camping Savoie chien accepté », position 25-43).
+- Balades : « Où promener son chien autour de moi » ; parcs canins : « Où promener son chien sans laisse … » ; encadré « les plus proches de toi » ajouté sur ces deux pages (filtre `inCategoryPage`).
+- 50 fiches vétérinaires les plus vues (0-1 clic pour 200-740 impressions) : titre « Nom, Ville : horaires, téléphone[, urgences/garde] » + description avec tél./horaires, jargon interne retiré. Si le CTR monte, étendre aux autres fiches vétérinaires.
+- Constat : la majorité des impressions sont des recherches de nom d'établissement (site officiel en 1er) ; les campings nommés (position 30-40) ne valent pas l'effort.
+
 ## Ce qui n'est pas prioritaire
 
 - Traduction anglaise : 4 clics en 3 mois.
