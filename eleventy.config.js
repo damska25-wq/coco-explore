@@ -252,6 +252,11 @@ export default function (eleventyConfig) {
     fiches.filter((f) => inCategoryPage(f, cp)).length
   );
 
+  // Fiches d'une page catégorie (encadré « les plus proches de toi »).
+  eleventyConfig.addFilter("inCategoryPage", (fiches, cp) =>
+    fiches.filter((f) => inCategoryPage(f, cp))
+  );
+
   // Remplace les {cle} d'un gabarit de texte de categoryPages.js.
   eleventyConfig.addFilter("fill", (str, vars) =>
     (str || "").replace(/\{(\w+)\}/g, (m, k) => (vars && vars[k] !== undefined ? vars[k] : m))

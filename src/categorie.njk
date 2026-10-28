@@ -42,7 +42,7 @@ extraHead: |
     <ol class="nearby-list" id="nearby-list" hidden></ol>
   </div>
   <script>window.COCO_NEARBY=[
-  {%- for fiche in collections.fiches %}{% if fiche.data.breadcrumbCatId == cp.cat %}{"u":{{ ("/" + (fiche.data.permalinkPath | cleanUrl)) | dump | safe }},"t":{{ fiche.data.h1 | dump | safe }},"l":{{ fiche.data.lieu | dump | safe }},"a":{{ fiche.data.lat }},"o":{{ fiche.data.lng }}},{% endif %}{% endfor -%}
+  {%- for fiche in collections.fiches | inCategoryPage(cp) %}{"u":{{ ("/" + (fiche.data.permalinkPath | cleanUrl)) | dump | safe }},"t":{{ fiche.data.h1 | dump | safe }},"l":{{ fiche.data.lieu | dump | safe }},"a":{{ fiche.data.lat }},"o":{{ fiche.data.lng }}},{% endfor -%}
   ];</script>
   <script src="/geoloc.js" defer></script>
   <script src="/nearby.js" defer></script>
