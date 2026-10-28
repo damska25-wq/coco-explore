@@ -92,6 +92,10 @@ Même méthode que les autres catégories, appliquée aux **167 fiches « Éduca
 - **Catégorie mixte** : Domaine Canin (971, surtout formation pro/fourrière), Techni Croc (animalerie), Couralet (pension/élevage), La Grande Vallée Blanche (élevage).
 - **Coordonnées lat/lng à recaler** (champs protégés, non touchés) : Otso Harana (Massignac → Roullet-Saint-Estèphe), Dog's Learning (Caen → Bellengreville), CECAM (Achères → Andrésy), Janzé, Figeacanisport.
 
+## En pause — campagne SIRENE lacs (28/10/2026)
+
+Vérification des 262 fiches « Lacs » lancée le 27/10 (6 lots, consignes : section « lacs et plans d'eau » du brief de vérification), **mise en pause sur demande de l'utilisateur le 28/10** après plusieurs coupures par limite d'utilisation. Travail partiel (~216 fiches modifiées, non validé, pas de build) sauvegardé sur la branche **`wip-lacs-sirene`** (commit `[skip netlify]`, jamais déployée). Le site publié n'a pas changé. **Ne reprendre que lorsque l'utilisateur le demande** : alors fusionner la branche, terminer les fiches manquantes, build + `check-site.mjs`, bilan (interdictions chiens confirmées à trancher) avant publication.
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
