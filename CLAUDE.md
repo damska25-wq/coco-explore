@@ -110,6 +110,15 @@ Le champ **`cardTeaser`** (texte affiché publiquement sur les cartes du site �
 
 **Bilan complet du chantier "confiance X" publique** : `description` (2133 fiches), `cardTeaser` (887 fiches) et `title` (96 fiches, découvert le 22/10/2026 en analysant l'export Search Console — le champ le plus visible, lien bleu Google + og:title) sont désormais propres sur tout le site. `bodyHtml`/sidebars volontairement non touchés (légitimes pour le lecteur). Si un nouveau champ public affichant cette mention est découvert plus tard, même méthode : grep `[Cc]onfiance (faible|moyenne|haute)` sur le champ concerné, script automatisé pour les cas simples (lead/tail safety checks, attention à ne pas supprimer un point qui sert de séparateur de phrases), agents pour les cas ambigus restants.
 
+## Mots-clés SEO — à remesurer mi-novembre 2026 (chantier K4, 28/10/2026)
+
+Mis en ligne le 28/10/2026 après analyse des requêtes Search Console (détail dans `SEO-PRIORITES.md`, section K4) :
+- **Hébergements par département** : titre « Camping, hôtel et gîte chien accepté {dép} : N adresses » (cible « camping chien admis/accepté + département », alors en position 25-43).
+- **Balades** (« Où promener son chien autour de moi ») et **parcs canins** (« Où promener son chien sans laisse ») : nouveaux titres + encadré « les plus proches de toi » (`nearby: true`, filtre `inCategoryPage`).
+- **50 fiches vétérinaires les plus vues** (200-740 impressions, 0-1 clic) : titre « Nom, Ville : horaires, téléphone[, urgences/garde] » et description avec téléphone/horaires vérifiés, jargon interne retiré.
+
+**Vers mi-novembre** : comparer dans Search Console les clics/CTR de ces 50 fiches et la position des requêtes « camping chien accepté + département ». Si le CTR des vétérinaires monte, appliquer le même modèle aux autres fiches vétérinaires (infos vérifiées seulement). Inutile de viser les noms de campings précis (site officiel toujours devant).
+
 ## Programme partenaire (démarrage commercial)
 
 Le site propose une mise en avant payante optionnelle aux professionnels déjà référencés gratuitement (vétérinaires, restaurants, hébergements...). Statut : en phase de test manuel, pas encore de vrai partenariat signé.
