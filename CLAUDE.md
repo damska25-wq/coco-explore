@@ -122,6 +122,10 @@ Le site propose une mise en avant payante optionnelle aux professionnels déjà 
 - **Tarif cible convenu avec l'utilisateur** : 19 à 29 €/mois, sans engagement, 1er mois offert. Pas de facturation à la performance (pas de données de trafic pour le justifier pour l'instant).
 - **Cohérence éditoriale** : la page "À propos" (`src/a-propos.njk`) a été mise à jour pour rester honnête vis-à-vis de ce programme (le classement/contenu reste neutre, seule la mise en avant visuelle est payante).
 
+### Premier partenaire potentiel : Les Petits Loots (Angers, 28/10/2026)
+
+Nicolas Barbeau et Lidia (pet-sitters, balades en forêt, taxi animalier, Loire-Authion/Angers, lespetitsloots@gmail.com) ont contacté Coco Explore d'eux-mêmes le 27/10/2026 pour devenir partenaires. Offre envoyée par l'utilisateur le 28/10 : démarrage direct en Partenaire, **1er mois offert puis 19 €/mois sans engagement** (fiche gratuite conservée sans badge s'ils arrêtent), lien « Retrouvez-nous sur Coco Explore » proposé (pas imposé). **Une seule fiche** (décision de l'utilisateur, pas de catégorie taxi animalier) : prête dans `propositions/les-petits-loots/` avec `partenaire: true`, non publiée. **En attente de leur réponse** ; relance avec l'aperçu PDF prévue vers le 02/11 sans nouvelles. À l'accord : copier la fiche dans `src/fiches/`, noter la date de début (fin du mois offert), facturation seulement une fois la micro-entreprise de l'utilisateur immatriculée (SIRET).
+
 ### Modèle d'email de démarchage (sans prix — à adapter par fiche/pro)
 
 ```
