@@ -102,6 +102,14 @@ Vérification des 262 fiches « Lacs » (section « lacs et plans d'eau » du br
 
 **Restes à traiter si besoin** : baignades interdites « jusqu'à nouvel ordre » pour cyanobactéries (Bariousses, Coiroux) et fermetures post-incendie (Bassiès, 09) à revérifier en 2027 ; coordonnées lat/lng à recaler (champs protégés) : lac Mort (≈45.028/5.787), lac de Feyt (≈45.144/2.034).
 
+## Historique — campagne SIRENE plages (28-29/10/2026, résolue)
+
+Les **371 fiches plages** vérifiées sur sources officielles (arrêtés municipaux de police des plages, mairies, offices de tourisme, décrets de réserves), en 12 lots (agents Sonnet, consigne d'économie : une lecture par commune, ne corriger que le faux/daté/manquant). Rapports ligne par ligne : `scratchpad/plages-rapport-XX.txt` (non versionnés).
+
+**Interdictions totales (fiches gardées, interdiction affichée dans le titre, même règle que les lacs)** : Capo di Feno et Ricanto (Ajaccio), Andernos-les-Bains, la Redoute (Port-Camargue), Balaruc-les-Bains, Lège-Cap-Ferret (Horizon, Grand Crohot), Hendaye, Saint-Jean-de-Luz (dont Lafitenia), Socoa (Ciboure), Plage Autet (70), Île de la Métairie (37), Miradou/Pétichet (38), plage du Lignon (43), Parc-Plage de Montrichard (41), Saint-Jorioz (74), Fécamp (plage principale), Veules-les-Roses, Mers-les-Bains, Sainte-Anne (971), Le Carbet (972, communiqué 2016), L'Aiguillon-sur-Mer (85). **Fiche supprimée** : Focaghia (Pietrosella, 2A — lieu introuvable), 301 vers `/plage-chien-corse-du-sud`.
+
+**Doutes laissés visibles dans les fiches** (sources officielles contradictoires ou absentes) : Colleville-Montgomery, Ver-sur-Mer, Cavalaire (horaires), Étretat, Pourville, Sainte-Adresse, Dunkerque/Leffrinckoucke, Bray-Dunes, Biarritz/Anglet (dates), Oye-Plage, Peyrefite (Cerbère), Pornic, Damgan, Locmariaquer, Montalivet, L'Île-Rousse (Pietra), plusieurs plages corses et ultramarines sans règle publiée.
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
