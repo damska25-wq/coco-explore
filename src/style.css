@@ -237,6 +237,31 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .hero-text h1 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); color: var(--blanc); }
 .hero-text p { font-size: 1.1rem; color: rgba(255,253,248,0.85); margin-top: 18px; }
 
+/* Signature « Le guide vu dans les yeux de Coco » sous le titre (accueil, À propos) */
+.coco-signature {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 14px;
+  padding: 7px 16px 7px 12px;
+  border: 1px solid rgba(255,253,248,0.28);
+  border-radius: 999px;
+  background: rgba(255,253,248,0.08);
+  font-family: var(--serif, "Fraunces", Georgia, serif);
+  font-size: clamp(0.98rem, 1.6vw, 1.12rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ocre);
+}
+.coco-signature svg { flex: none; }
+.coco-signature-light {
+  border-color: rgba(190,91,59,0.3);
+  background: rgba(190,91,59,0.07);
+  color: var(--terracotta-deep, var(--terracotta));
+  margin: 4px 0 18px;
+}
+:root[data-theme="dark"] .coco-signature-light { color: #E7B79A; border-color: rgba(231,183,154,0.35); background: rgba(231,183,154,0.08); }
+
 .hero-photo {
   position: relative;
   border-radius: 10px 10px 4px 10px;
