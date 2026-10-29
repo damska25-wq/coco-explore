@@ -142,6 +142,16 @@ Décisions de l'utilisateur appliquées et mises en ligne :
 - **Restent à trancher** : Domitille Henry (site contradictoire : Bezange-la-Petite 57 ou Aigrefeuille 17), Club d'éducation canine Lozérien (terrain à Rimeize selon le seul Petit Futé). Coordonnées approximatives (centre de commune) : CEC Cergy-Vexin, Breizh Légende, Cyno'Pro 973, Otso Harana, Dog's Learning, Vologne, Rives de l'Adour.
 - **Bimo** : a demandé (29/10) de passer ses liens en dofollow dans les 2 guides ; refusé sur conseil (risque d'échange de liens aux yeux de Google), liens laissés en `rel="sponsored"`. Leur lien retour (page Partenaires de bimo.dog, dofollow) est reçu.
 
+## Historique — plages, 2e passage « rigueur maximale » (29/10/2026, résolu)
+
+Les 369 fiches plages repassées une à une (12 lots, agents Sonnet, section « plages, 2e passage » de `brief-verif.md`) : arrêtés lus eux-mêmes quand ils sont en ligne, chaque affirmation (règle chien, accès, parking, sol, services, distances) contrôlée, tout ce qui n'est pas sourcé retiré ou formulé prudemment. Rapports : `scratchpad/plages2-rapport-XX.txt`. 25 fiches EN resynchronisées. Mis en ligne le 29/10.
+
+- **Nouvelles interdictions totales (titre explicite)** : Trégunc (8 plages toute l'année), Île d'Aix, Bodri (Corbara), Arromanches (plage, probable), Grolejac (plage), Ardus (82, GPS recalé), Corzent (Thonon, « animaux non acceptés »). Reconfirmées : Ajaccio, Andernos, La Redoute, Balaruc, Lège-Cap-Ferret, Hendaye, Saint-Jean-de-Luz, Socoa, Autet, Saint-Jorioz, Veules, Étretat, Mers, Miradou, Montrichard, Lignon, Cerdon, Sainte-Anne, Le Carbet, Moya/Papani (976), L'Aiguillon-sur-Mer, Trébas.
+- **Plus en interdiction totale** : Île de la Métairie (37, chiens en laisse admis, baignade interdite), Fécamp (zone canine depuis le 30/11/2024), Sainte-Marguerite-sur-Mer (juillet-août entre les épis seulement).
+- **Doublon supprimé** : Ondres-Océan (= Plage d'Ondres), 301 vers `/fiche-ondres-plages`. **Reclassée** : Beau-Rivage (Sanguinet) 33→40.
+- **Doutes laissés visibles** (sources officielles contradictoires ou arrêté illisible) : La Croix-Valmer (7 plages), Barcaggio, Pietra, Nonza, Peyrefite, Oye-Plage, Capbreton, Hossegor, Gujan-Mestras, Colleville, Courseulles, Barneville-Carteret, Damgan, Quiberon, plages martiniquaises « interdites » d'après un seul site de location, etc.
+- **À trancher** : La Saule (Carennac, parc aquatique payant qui refuse les animaux, aucune baignade publique confirmée) — garder ou retirer.
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
