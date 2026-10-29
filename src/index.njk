@@ -100,11 +100,11 @@ extraScripts: |
   </div>
   {%- set cityGroups = [
     { nom: "Grandes villes", villes: ["Angers", "Caen", "Dijon", "Grenoble", "Le Havre", "Limoges", "Lyon", "Marseille", "Metz", "Nantes", "Nice", "Nîmes", "Orléans", "Reims", "Rennes", "Rouen", "Strasbourg", "Toulon", "Toulouse", "Tours"], paris: true },
-    { nom: "Stations et villes de vacances", villes: ["Ajaccio", "Biarritz", "Briançon", "Cannes", "Cavalaire-sur-Mer", "Deauville", "Grimaud", "Hyères", "La Rochelle", "Les Sables-d'Olonne", "Perros-Guirec", "Saint-Malo", "Saint-Tropez"] }
+    { nom: "Stations et villes de vacances", stations: true }
   ] %}
   <div class="region-accordion city-accordion" id="city-accordion">
     {%- for group in cityGroups %}
-    {%- set groupCities = collections.cityPages | pickCities(group.villes) %}
+    {%- set groupCities = (collections.cityPages | whereEq("station", true)) if group.stations else (collections.cityPages | pickCities(group.villes)) %}
     <div class="region-accordion-item">
       <button type="button" class="region-accordion-toggle" aria-expanded="false">
         <span>{{ group.nom }}</span>

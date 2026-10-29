@@ -155,6 +155,15 @@ export default function (eleventyConfig) {
   // toutes catégories confondues. Le département retenu est celui de la
   // majorité de ses fiches.
   const CITY_MIN_FICHES = 15;
+  // Stations et villes de vacances : page dès 10 adresses, et volet « Stations » de l'accueil.
+  const STATION_MIN_FICHES = 10;
+  const STATION_VILLES = [
+    "Ajaccio", "Aix-les-Bains", "Anglet", "Annecy", "Argelès-sur-Mer", "Biarritz", "Bonifacio", "Briançon",
+    "Cannes", "Carnac", "Cavalaire-sur-Mer", "Crozon", "Deauville", "Dinard", "Fécamp", "Fréjus", "Gérardmer",
+    "Granville", "Grimaud", "Hyères", "La Croix-Valmer", "La Rochelle", "Le Touquet-Paris-Plage",
+    "Les Sables-d'Olonne", "Paimpol", "Perros-Guirec", "Porto-Vecchio", "Ramatuelle", "Saint-Malo",
+    "Saint-Raphaël", "Saint-Tropez", "Saint-Valery-sur-Somme", "Sainte-Maxime",
+  ];
   const slugify = (str) =>
     str
       .normalize("NFD")
@@ -175,7 +184,7 @@ export default function (eleventyConfig) {
       byCity.get(ville).push(f);
     }
     return [...byCity]
-      .filter(([, fiches]) => fiches.length >= CITY_MIN_FICHES)
+      .filter(([ville, fiches]) => fiches.length >= (STATION_VILLES.includes(ville) ? STATION_MIN_FICHES : CITY_MIN_FICHES))
       .map(([ville, fiches]) => {
         const deptCounts = new Map();
         for (const f of fiches) {
@@ -185,6 +194,7 @@ export default function (eleventyConfig) {
         return {
           ville,
           aVille: aVille(ville),
+          station: STATION_VILLES.includes(ville),
           slug: slugify(ville) + "-avec-son-chien",
           dep: departements.find((d) => d.id === deptId),
           fiches: partnersFirst(fiches.sort((a, b) => a.data.order - b.data.order)),
