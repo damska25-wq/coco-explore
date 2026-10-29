@@ -120,6 +120,16 @@ Les **1 063 fiches balades** vérifiées sur sources officielles (communes, offi
 
 **À trancher / recaler plus tard** (liste complète : `scratchpad/a-trancher.txt`) : forêt du Neuhof (Ville « chiens non acceptés » vs décret « laisse sur itinéraires »), sentier des Tannes, phare de Chassiron, clues d'Aiglun/Saint-Auban (canyoning), Causse de Sauveterre (confusion avec GRP Lozère), GR36 Suisse normande (14/61) ; lat/lng à recaler : lac de Saint-Amans, Anse du Sud (Préfailles), méandre de Queuille, Chemin du Partage (Bauzon).
 
+## Historique — campagne SIRENE activités + Côte d'Azur/Monaco (29-30/10/2026, résolue)
+
+Les **780 fiches activités** (25 lots) et les **34 fiches Côte d'Azur/Monaco** vérifiées sur sources officielles (site de l'établissement, office de tourisme, commune, arrêtés), consigne « rigueur maximale ». **Toutes les catégories du site sont désormais passées en mode SIRENE.** Rapports : `scratchpad/activites-rapport-XX.txt`, `azur-rapport-00.txt` (non versionnés). Contrôle `check-site.mjs` étendu aux variantes « confiance élevée/bonne/basse ».
+
+**Supprimées** : fermetures confirmées (La Meute And Co, Beauvais — presse + gérante ; refuge Gueules d'Amour, Dembéni — fermé depuis 2021) ; introuvables (Coach4Dogs Île de Ré, Personne & Bête et Educ Detec 46, Les Trévires Sainte-Maxime FR+EN, Cyno Sporting Club de Draveil). 301 vers la page du département. **Reclassées** : fromagerie Duroux (15→19), Canoë-Kayak Redonnais (35→44), musée La Belle Échappée, golf d'Arçonnay et Préférence Plein Air (61→72), tourbière de la Comtesse (90→88).
+
+**Nombreux lieux où les chiens sont interdits** (musées, châteaux, monuments, remontées, plages de Carro/Martigues…) : fiches gardées avec l'interdiction dans le titre, en attendant la décision de l'utilisateur (garder comme info utile ou retirer du guide).
+
+**Décisions en attente de l'utilisateur** (liste complète : `scratchpad/a-trancher.txt`) : fermetures probables (Cynophile Doux — retraite annoncée ; château de Meillant — fermé au public, mobilier vendu ; The Dogry Paris — une source presse) ; cani-randos avec les chiens du musher et non le sien (Vallée Amarok, Artik Basterds, Terre Inukshuk, Leila'Venture, Meutmatah, Tracés Sauvages, Appel Sauvage, Val d'Azun) ; pensions/éducation rangées en activités ; Le Cormenier (CGV « non admis » vs office « bienvenus ») ; Nice Carras (probable doublon de La Lanterne) ; **versions anglaises non resynchronisées** (≈35 fiches `src/en/fiches/` gardent les anciennes infos) ; lat/lng à recaler (Tours de Merle, Jardin Shamrock, CEC Cergy-Vexin, Breizh Légende, club Ham-sous-Varsberg, Cani-School88, Vologne, caniparc de Colombes…).
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
