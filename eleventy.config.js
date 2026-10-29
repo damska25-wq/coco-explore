@@ -158,11 +158,11 @@ export default function (eleventyConfig) {
   // Stations et villes de vacances : page dès 10 adresses, et volet « Stations » de l'accueil.
   const STATION_MIN_FICHES = 10;
   const STATION_VILLES = [
-    "Ajaccio", "Aix-les-Bains", "Anglet", "Annecy", "Argelès-sur-Mer", "Biarritz", "Bonifacio", "Briançon",
+    "Ajaccio", "Aix-les-Bains", "Anglet", "Annecy", "Arcachon", "Argelès-sur-Mer", "Biarritz", "Bonifacio", "Briançon",
     "Cannes", "Carnac", "Cavalaire-sur-Mer", "Crozon", "Deauville", "Dinard", "Fécamp", "Fréjus", "Gérardmer",
-    "Granville", "Grimaud", "Hyères", "La Croix-Valmer", "La Rochelle", "Le Touquet-Paris-Plage",
+    "Granville", "Grimaud", "Hyères", "La Baule-Escoublac", "La Croix-Valmer", "La Rochelle", "Le Touquet-Paris-Plage",
     "Les Sables-d'Olonne", "Paimpol", "Perros-Guirec", "Porto-Vecchio", "Ramatuelle", "Saint-Malo",
-    "Saint-Raphaël", "Saint-Tropez", "Saint-Valery-sur-Somme", "Sainte-Maxime",
+    "Saint-Raphaël", "Saint-Tropez", "Saint-Valery-sur-Somme", "Sainte-Maxime", "Soorts-Hossegor",
   ];
   const slugify = (str) =>
     str
