@@ -276,6 +276,47 @@ export default function (eleventyConfig) {
     return villes.slice(0, max).join(", ") + "…";
   });
 
+  // Résumé d'une fiche pour les pages catégorie × département : 2 infos clés tirées
+  // de ses infoItems (déjà vérifiées), dans l'ordre de préférence de sa catégorie.
+  const BRIEF_LABELS = {
+    plages: ["Chiens", "Statut chien", "Chien", "Hors saison", "Accès", "Terrain"],
+    "cote-azur": ["Chiens", "Laisse", "Nature", "Accès"],
+    lacs: ["Chiens", "Chien", "Baignade", "Accès"],
+    balades: ["Chiens", "Statut chien", "Chien", "Parcours", "Accès", "Départ"],
+    activites: ["Chiens", "Tarifs", "Tarif", "Horaires"],
+    restaurants: ["Chiens", "Cuisine", "Terrasse", "Type"],
+    hebergements: ["Type", "Chiens", "Supplément", "Tarif", "Tarifs"],
+    veterinaires: ["Horaires", "Urgences", "Téléphone", "Services"],
+    toiletteurs: ["Services", "Tarifs", "Horaires", "Téléphone"],
+    dogwash: ["Tarif", "Tarifs", "Horaires", "Type"],
+    dogsitters: ["Service", "Services", "Tarifs", "Tarif", "Conditions"],
+    education: ["Activités", "Services", "Tarifs", "Téléphone"],
+  };
+  const briefText = (v, max) => {
+    const t = String(v || "")
+      .replace(/<[^>]+>/g, "")
+      .replace(/\s*\([^()]*confiance[^()]*\)/gi, "")
+      .replace(/\s*[—–;,-]\s*confiance (faible|moyenne|haute|élevée|bonne|basse)\b[^.;]*/gi, "")
+      .replace(/\s+/g, " ")
+      .trim()
+      // Garde la 1re proposition : ce qui suit un tiret est souvent un commentaire sur la source.
+      .replace(/^(.{12,}?) [—–] .*$/, "$1");
+    if (t.length <= max) return t;
+    const cut = t.slice(0, max);
+    return cut.slice(0, Math.max(cut.lastIndexOf(" "), max - 20)).replace(/[\s,;:(—-]+$/, "") + "…";
+  };
+  eleventyConfig.addFilter("ficheBrief", (fiche, n = 2) => {
+    const items = (fiche.data.infoItems || []).filter((it) => it && it.label && it.value);
+    const out = [];
+    for (const label of BRIEF_LABELS[fiche.data.breadcrumbCatId] || ["Chiens", "Adresse"]) {
+      const it = items.find((i) => i.label === label);
+      const value = it && briefText(it.value, 150);
+      if (value && !/confiance|^non trouvé|lors de cette recherche/i.test(value)) out.push({ label, value });
+      if (out.length >= n) break;
+    }
+    return out;
+  });
+
   eleventyConfig.addFilter("byCategory", (fiches, catId) =>
     fiches
       .filter((f) => f.data.breadcrumbCatId === catId)

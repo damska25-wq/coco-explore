@@ -18,6 +18,8 @@ extraHead: |
     .cat-page-links li { margin: 4px 0; }
     .cat-page-crumb { font-size: 0.85rem; color: rgba(var(--ink),0.6); margin-bottom: 12px; }
     .cat-page-crumb a { color: inherit; }
+    .cat-page-brief ul { padding-left: 1.2em; max-width: 80ch; }
+    .cat-page-brief li { margin: 8px 0; line-height: 1.5; }
   </style>
 ---
 {%- set cp = dep.cp %}
@@ -35,6 +37,16 @@ extraHead: |
     {% include "fiche-card.njk" %}
     {%- endfor %}
   </div>
+</section>
+
+<section class="wrap cat-page-intro cat-page-brief">
+  <h2>{{ cp.label }} {{ dep.enNom }} : l'essentiel de chaque adresse</h2>
+  <ul>
+    {%- for fiche in dep.fiches %}
+    {%- set brief = fiche | ficheBrief %}
+    <li><a href="/{{ fiche.data.permalinkPath | cleanUrl }}">{{ fiche.data.cardTitle | safe }}</a>{% if fiche.data.cardTag and not (fiche.data.cardTitle | lower).includes(fiche.data.cardTag | lower) %} ({{ fiche.data.cardTag | safe }}){% endif %}{% for b in brief %}{{ " — " if loop.first else " · " }}<strong>{{ b.label }}</strong> : {{ b.value }}{% endfor %}</li>
+    {%- endfor %}
+  </ul>
 </section>
 
 <section class="wrap cat-page-intro">
