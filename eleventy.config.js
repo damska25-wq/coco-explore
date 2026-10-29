@@ -158,11 +158,14 @@ export default function (eleventyConfig) {
   // Stations et villes de vacances : page dès 10 adresses, et volet « Stations » de l'accueil.
   const STATION_MIN_FICHES = 10;
   const STATION_VILLES = [
-    "Ajaccio", "Aix-les-Bains", "Anglet", "Annecy", "Arcachon", "Argelès-sur-Mer", "Biarritz", "Bonifacio", "Briançon",
-    "Cannes", "Carnac", "Cavalaire-sur-Mer", "Crozon", "Deauville", "Dinard", "Fécamp", "Fréjus", "Gérardmer",
-    "Granville", "Grimaud", "Hyères", "La Baule-Escoublac", "La Croix-Valmer", "La Rochelle", "Le Touquet-Paris-Plage",
-    "Les Sables-d'Olonne", "Paimpol", "Perros-Guirec", "Porto-Vecchio", "Ramatuelle", "Saint-Malo",
-    "Saint-Raphaël", "Saint-Tropez", "Saint-Valery-sur-Somme", "Sainte-Maxime", "Soorts-Hossegor",
+    "Aix-les-Bains", "Ajaccio", "Anglet", "Annecy", "Antibes", "Arcachon", "Argelès-sur-Mer", "Biarritz",
+    "Bonifacio", "Briançon", "Calvi", "Cannes", "Capbreton", "Carnac", "Cavalaire-sur-Mer",
+    "Chamonix-Mont-Blanc", "Collioure", "Crozon", "Deauville", "Dinard", "Étretat", "Fécamp", "Fréjus",
+    "Gérardmer", "Granville", "Grimaud", "Honfleur", "Hyères", "La Baule-Escoublac", "La Croix-Valmer",
+    "La Rochelle", "Le Grau-du-Roi", "Le Lavandou", "Le Touquet-Paris-Plage", "Les Sables-d'Olonne", "Menton",
+    "Paimpol", "Perros-Guirec", "Porto-Vecchio", "Quiberon", "Ramatuelle", "Royan", "Saint-Jean-de-Luz",
+    "Saint-Malo", "Saint-Raphaël", "Saint-Tropez", "Saint-Valery-sur-Somme", "Sainte-Maxime", "Sète",
+    "Soorts-Hossegor",
   ];
   const slugify = (str) =>
     str
