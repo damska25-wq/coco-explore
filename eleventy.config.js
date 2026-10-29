@@ -158,14 +158,19 @@ export default function (eleventyConfig) {
   // Stations et villes de vacances : page dès 10 adresses, et volet « Stations » de l'accueil.
   const STATION_MIN_FICHES = 10;
   const STATION_VILLES = [
-    "Aix-les-Bains", "Ajaccio", "Anglet", "Annecy", "Antibes", "Arcachon", "Argelès-sur-Mer", "Biarritz",
-    "Bonifacio", "Briançon", "Calvi", "Cannes", "Capbreton", "Carnac", "Cavalaire-sur-Mer",
-    "Chamonix-Mont-Blanc", "Collioure", "Crozon", "Deauville", "Dinard", "Erquy", "Étretat", "Fécamp", "Fréjus",
-    "Gérardmer", "Granville", "Grimaud", "Honfleur", "Hyères", "La Baule-Escoublac", "La Croix-Valmer",
-    "La Rochelle", "Le Grau-du-Roi", "Le Lavandou", "Le Touquet-Paris-Plage", "Les Sables-d'Olonne", "Menton", "Noirmoutier-en-l'Île",
-    "Paimpol", "Perros-Guirec", "Porto-Vecchio", "Quiberon", "Ramatuelle", "Royan", "Saint-Jean-de-Luz",
-    "Saint-Malo", "Saint-Raphaël", "Saint-Tropez", "Saint-Valery-sur-Somme", "Sainte-Maxime", "Sète",
-    "Soorts-Hossegor",
+    "Agde", "Aix-les-Bains", "Ajaccio", "Anglet", "Annecy", "Antibes", "Arcachon", "Argelès-sur-Mer",
+    "Bagnères-de-Luchon", "Bandol", "Barcelonnette", "Biarritz", "Biscarrosse", "Bonifacio", "Briançon",
+    "Cabourg", "Calvi", "Cancale", "Canet-en-Roussillon", "Cannes", "Capbreton", "Carnac", "Cassis",
+    "Cauterets", "Cavalaire-sur-Mer", "Chamonix-Mont-Blanc", "Collioure", "Concarneau", "Courchevel",
+    "Crozon", "Deauville", "Dinard", "Erquy", "Étretat", "Fécamp", "Fréjus", "Gérardmer", "Granville",
+    "Grimaud", "Gruissan", "Honfleur", "Hyères", "L'Île-Rousse", "L'Isle-sur-la-Sorgue", "La Baule-Escoublac",
+    "La Ciotat", "La Clusaz", "La Croix-Valmer", "La Rochelle", "Lacanau", "Le Grau-du-Roi", "Le Lavandou",
+    "Le Touquet-Paris-Plage", "Les Deux Alpes", "Les Sables-d'Olonne", "Lourdes", "Megève", "Menton",
+    "Noirmoutier-en-l'Île", "Ouistreham", "Paimpol", "Perros-Guirec", "Pornic", "Porto-Vecchio", "Propriano",
+    "Quiberon", "Ramatuelle", "Rocamadour", "Roscoff", "Royan", "Saint-Gilles-Croix-de-Vie",
+    "Saint-Jean-de-Luz", "Saint-Lary-Soulan", "Saint-Malo", "Saint-Raphaël", "Saint-Tropez",
+    "Saint-Valery-sur-Somme", "Sainte-Maxime", "Sanary-sur-Mer", "Sarlat-la-Canéda", "Sète",
+    "Six-Fours-les-Plages", "Soorts-Hossegor", "Tignes", "Trouville-sur-Mer", "Vallon-Pont-d'Arc",
   ];
   const slugify = (str) =>
     str
