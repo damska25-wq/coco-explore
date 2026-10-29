@@ -160,9 +160,9 @@ export default function (eleventyConfig) {
   const STATION_VILLES = [
     "Aix-les-Bains", "Ajaccio", "Anglet", "Annecy", "Antibes", "Arcachon", "Argelès-sur-Mer", "Biarritz",
     "Bonifacio", "Briançon", "Calvi", "Cannes", "Capbreton", "Carnac", "Cavalaire-sur-Mer",
-    "Chamonix-Mont-Blanc", "Collioure", "Crozon", "Deauville", "Dinard", "Étretat", "Fécamp", "Fréjus",
+    "Chamonix-Mont-Blanc", "Collioure", "Crozon", "Deauville", "Dinard", "Erquy", "Étretat", "Fécamp", "Fréjus",
     "Gérardmer", "Granville", "Grimaud", "Honfleur", "Hyères", "La Baule-Escoublac", "La Croix-Valmer",
-    "La Rochelle", "Le Grau-du-Roi", "Le Lavandou", "Le Touquet-Paris-Plage", "Les Sables-d'Olonne", "Menton",
+    "La Rochelle", "Le Grau-du-Roi", "Le Lavandou", "Le Touquet-Paris-Plage", "Les Sables-d'Olonne", "Menton", "Noirmoutier-en-l'Île",
     "Paimpol", "Perros-Guirec", "Porto-Vecchio", "Quiberon", "Ramatuelle", "Royan", "Saint-Jean-de-Luz",
     "Saint-Malo", "Saint-Raphaël", "Saint-Tropez", "Saint-Valery-sur-Somme", "Sainte-Maxime", "Sète",
     "Soorts-Hossegor",
