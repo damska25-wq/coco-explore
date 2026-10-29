@@ -1,0 +1,52 @@
+---
+pagination:
+  data: groups
+  size: 1
+  alias: group
+permalink: "sitemap-fiches-{{ group.slug }}.xml"
+eleventyExcludeFromCollections: true
+knownCats: ["plages", "cote-azur", "monaco", "lacs", "balades", "activites", "veterinaires", "toiletteurs", "dogwash", "dogsitters", "education", "restaurants", "hebergements"]
+groups:
+  - slug: plages
+    cats: ["plages", "cote-azur", "monaco"]
+  - slug: lacs
+    cats: ["lacs"]
+  - slug: balades
+    cats: ["balades"]
+  - slug: activites
+    cats: ["activites"]
+  - slug: veterinaires
+    cats: ["veterinaires"]
+  - slug: toiletteurs
+    cats: ["toiletteurs"]
+  - slug: dogwash
+    cats: ["dogwash"]
+  - slug: dogsitters
+    cats: ["dogsitters"]
+  - slug: education
+    cats: ["education"]
+  - slug: restaurants
+    cats: ["restaurants"]
+  - slug: hebergements
+    cats: ["hebergements"]
+  - slug: autres
+    cats: []
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+{%- for fiche in collections.fiches %}
+{%- set cat = fiche.data.breadcrumbCatId %}
+{%- if (cat in group.cats) or (group.slug == "autres" and not (cat in knownCats)) %}
+  <url>
+    <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</loc>
+    <lastmod>{{ fiche.inputPath | lastmod }}</lastmod>
+    <priority>0.6</priority>
+    {%- if fiche.data.heroImage %}
+    <image:image>
+      <image:loc>{{ fiche.data.heroImage | absoluteImg }}</image:loc>
+    </image:image>
+    {%- endif %}
+  </url>
+{%- endif %}
+{%- endfor %}
+</urlset>

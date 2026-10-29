@@ -1,0 +1,29 @@
+---
+permalink: sitemap-en.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://cocoexplore.com/en/</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cocoexplore.com/en/departement-var</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cocoexplore.com/en/departement-alpes-maritimes</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+{%- for fiche in collections.fichesEn %}
+  <url>
+    <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</loc>
+    <lastmod>{{ fiche.inputPath | lastmod }}</lastmod>
+    <priority>0.4</priority>
+  </url>
+{%- endfor %}
+</urlset>

@@ -4,7 +4,7 @@
 // 22/10/2026 (noindex posé par erreur sur 9221 pages, passé en production).
 //
 // Pour lancer à la main après un build : node scripts/check-site.mjs
-import { readFileSync, readdirSync, openSync, readSync, closeSync } from "node:fs";
+import { readFileSync, readdirSync, openSync, readSync, closeSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
 const SITE = "_site";
@@ -52,7 +52,17 @@ if (noindex.length > MAX_NOINDEX) {
 
 // 2. Sitemap : il doit contenir (presque) toutes les fiches.
 const sources = ficheSources();
-const sitemapUrls = (readFileSync(join(SITE, "sitemap.xml"), "utf8").match(/<loc>/g) || []).length;
+// sitemap.xml est un index qui pointe vers un sitemap par catégorie : on additionne les URL de chacun.
+const sitemapIndex = readFileSync(join(SITE, "sitemap.xml"), "utf8");
+const childSitemaps = [...sitemapIndex.matchAll(/<loc>https:\/\/cocoexplore\.com\/([^<]+)<\/loc>/g)].map((m) => m[1]);
+let sitemapUrls = 0;
+for (const child of childSitemaps) {
+  if (!existsSync(join(SITE, child))) {
+    errors.push(`sitemap.xml pointe vers ${child}, qui n'existe pas.`);
+    continue;
+  }
+  sitemapUrls += (readFileSync(join(SITE, child), "utf8").match(/<loc>/g) || []).length;
+}
 if (sitemapUrls < sources.length * MIN_SITEMAP_RATIO) {
   errors.push(`sitemap.xml ne contient que ${sitemapUrls} URL pour ${sources.length} fiches.`);
 }
@@ -87,5 +97,5 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(
-  `✔ Contrôle du site OK : ${html.length} pages, ${noindex.length} en noindex, ${sitemapUrls} URL dans le sitemap, ${photos.size} photos uniques.`
+  `✔ Contrôle du site OK : ${html.length} pages, ${noindex.length} en noindex, ${sitemapUrls} URL dans les ${childSitemaps.length} sitemaps, ${photos.size} photos uniques.`
 );

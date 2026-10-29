@@ -1,0 +1,59 @@
+---
+permalink: sitemap-pages.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://cocoexplore.com/</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>1.0</priority>
+  </url>
+{%- for dep in departements %}
+  <url>
+    <loc>https://cocoexplore.com/departement-{{ dep.slug }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+{%- endfor %}
+  <url>
+    <loc>https://cocoexplore.com/guides</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+{%- for g in collections.guides %}
+  <url>
+    <loc>https://cocoexplore.com/{{ g.data.permalinkPath | cleanUrl }}</loc>
+    <lastmod>{{ g.inputPath | lastmod }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+{%- endfor %}
+{%- for cp in categoryPages %}
+  <url>
+    <loc>https://cocoexplore.com/{{ cp.slug }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.7</priority>
+  </url>
+{%- endfor %}
+{%- for city in collections.cityPages %}
+  <url>
+    <loc>https://cocoexplore.com/{{ city.slug }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+{%- endfor %}
+{%- for dep in collections.categoryDeptPages %}
+  <url>
+    <loc>https://cocoexplore.com/{{ dep.cp.slug }}-{{ dep.slug }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.6</priority>
+  </url>
+{%- endfor %}
+{%- for p in ["a-propos", "contact", "faq", "plan-du-site", "aires-autoroute-chien", "conseils-de-coco", "nouveautes", "devenir-partenaire", "region-provence-alpes-cote-dazur", "mentions-legales", "politique-confidentialite", "conditions-utilisation"] %}
+  <url>
+    <loc>https://cocoexplore.com/{{ p }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.2</priority>
+  </url>
+{%- endfor %}
+</urlset>
