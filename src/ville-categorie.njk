@@ -1,0 +1,68 @@
+---
+pagination:
+  data: collections.cityCategoryPages
+  size: 1
+  alias: vc
+permalink: "{{ vc.slug }}.html"
+layout: base.njk
+eleventyComputed:
+  title: "{{ vc.cp.titleDep | fill({ enNom: vc.enNom, n: vc.fiches.length }) }}"
+  description: "{{ vc.cp.descDep | fill({ enNom: vc.enNom, n: vc.fiches.length, villes: (vc.fiches | ficheVilles(4)) }) | dropVille(vc.city.ville) }}"
+  permalinkPath: "{{ vc.slug }}.html"
+extraHead: |
+  <style>
+    .cat-page-intro { padding-top: 48px; padding-bottom: 12px; }
+    .cat-page-intro p { max-width: 72ch; }
+    .cat-page-intro h2 { font-size: 1.3rem; color: var(--heading); margin-top: 1.6em; }
+    .cat-page-links { margin: 8px 0 0; padding-left: 1.2em; }
+    .cat-page-links li { margin: 4px 0; }
+    .cat-page-crumb { font-size: 0.85rem; color: rgba(var(--ink),0.6); margin-bottom: 12px; }
+    .cat-page-crumb a { color: inherit; }
+    .cat-page-brief ul { padding-left: 1.2em; max-width: 80ch; }
+    .cat-page-brief li { margin: 8px 0; line-height: 1.5; }
+  </style>
+---
+{%- set cp = vc.cp %}
+{%- set city = vc.city %}
+<script type="application/ld+json">{{ vc.fiches | ficheItems | listJsonLd([{ name: "Coco Explore", path: "" }, { name: city.ville, path: city.slug }, { name: cp.label, path: vc.slug }], cp.h1Dep | fill({ enNom: vc.enNom })) | safe }}</script>
+<section class="wrap cat-page-intro">
+  <div class="cat-page-crumb"><a href="/">Coco Explore</a> / <a href="/{{ city.slug }}">{{ city.ville }}</a> / {{ cp.label }}</div>
+  <span class="tag">{{ cp.tag }}</span>
+  <h1>{{ cp.h1Dep | fill({ enNom: vc.enNom }) }}</h1>
+  <p>{{ cp.introDep | fill({ enNom: vc.enNom, n: vc.fiches.length, villes: (vc.fiches | ficheVilles(10)) }) | dropVille(city.ville) | safe }}</p>
+</section>
+
+<section class="fiches wrap">
+  <div class="fiche-grid">
+    {%- for fiche in vc.fiches %}
+    {% include "fiche-card.njk" %}
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap cat-page-intro cat-page-brief">
+  <h2>{{ cp.label }} {{ vc.enNom }} : l'essentiel de chaque adresse</h2>
+  <ul>
+    {%- for fiche in vc.fiches %}
+    {%- set brief = fiche | ficheBrief %}
+    <li><a href="/{{ fiche.data.permalinkPath | cleanUrl }}">{{ fiche.data.cardTitle | safe }}</a>{% if fiche.data.cardTag and not (fiche.data.cardTitle | lower).includes(fiche.data.cardTag | lower) %} ({{ fiche.data.cardTag | safe }}){% endif %}{% for b in brief %}{{ " — " if loop.first else " · " }}<strong>{{ b.label }}</strong> : {{ b.value }}{% endfor %}</li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="wrap cat-page-intro">
+  <h2>Pour aller plus loin</h2>
+  <ul class="cat-page-links">
+    <li><a href="/{{ city.slug }}">{{ city.ville }} avec son chien : toutes les adresses</a> ({{ city.fiches.length }})</li>
+    {%- for other in collections.cityCategoryPages %}
+    {%- if other.city.slug == city.slug and other.slug != vc.slug %}
+    <li><a href="/{{ other.slug }}">{{ other.cp.label }} {{ vc.enNom }}</a> ({{ other.fiches.length }})</li>
+    {%- endif %}
+    {%- endfor %}
+    {%- set catDep = (collections.categoryDeptPages | whereEq("cat", cp.cat) | whereEq("id", city.dep.id))[0] %}
+    {%- if catDep %}
+    <li><a href="/{{ cp.slug }}-{{ catDep.slug }}">{{ cp.linkDep | fill({ enNom: catDep.enNom }) }}</a> ({{ catDep.fiches.length }})</li>
+    {%- endif %}
+    <li><a href="/{{ cp.slug }}">{{ cp.linkNat }}</a></li>
+  </ul>
+</section>

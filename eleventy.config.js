@@ -183,10 +183,25 @@ export default function (eleventyConfig) {
   // "à Nantes", "au Havre", "aux Sables-d'Olonne", "à La Rochelle".
   const aVille = (ville) =>
     ville.startsWith("Le ") ? "au " + ville.slice(3) : ville.startsWith("Les ") ? "aux " + ville.slice(4) : "à " + ville;
-  eleventyConfig.addCollection("cityPages", (collectionApi) => {
+  // Commune d'un cardTag : les variantes d'une même commune comptent pour sa page
+  // ville (« Lyon 5e », « Reims (Murigny) », « Besançon, Doubs », « Cannes La
+  // Bocca »…). Le cardTag affiché sur les cartes ne change pas. Les cardTag
+  // multi-communes (« Rennes / Betton ») ne sont rattachés à aucune.
+  const CITY_ALIASES = { "Annecy-le-Vieux": "Annecy", "Cannes La Bocca": "Cannes" };
+  const cityOf = (tag) => {
+    if (!tag) return tag;
+    if (CITY_ALIASES[tag]) return CITY_ALIASES[tag];
+    if (/\/|\+| et (alentours|région)|→/.test(tag)) return tag;
+    return tag
+      .replace(/\s+\d+(er|e)(\/\d+e)?$/, "")
+      .replace(/\s*\([^)]*\)$/, "")
+      .replace(/,\s.*$/, "")
+      .trim();
+  };
+  const computeCityPages = (collectionApi) => {
     const byCity = new Map();
     for (const f of collectionApi.getFilteredByGlob("src/fiches/*.njk")) {
-      const ville = f.data.cardTag;
+      const ville = cityOf(f.data.cardTag);
       if (!ville || /[0-9+/()]/.test(ville)) continue;
       if (!byCity.has(ville)) byCity.set(ville, []);
       byCity.get(ville).push(f);
@@ -209,12 +224,43 @@ export default function (eleventyConfig) {
         };
       })
       .sort((a, b) => a.ville.localeCompare(b.ville, "fr"));
-  });
+  };
+  eleventyConfig.addCollection("cityPages", computeCityPages);
 
   // Pages ville choisies pour le bloc de l'accueil, dans l'ordre donné (villes sans page ignorées).
   eleventyConfig.addFilter("pickCities", (cities, villes) =>
     villes.map((v) => (cities || []).find((c) => c.ville === v)).filter(Boolean)
   );
+
+  // Pages ville × catégorie : retire la liste des communes quand elle se réduit à la ville elle-même.
+  eleventyConfig.addFilter("dropVille", (str, ville) =>
+    String(str || "")
+      .split(` (${ville})`).join("")
+      .split(`</strong> : ${ville}.`).join("</strong>.")
+      .split(`Communes : ${ville}. `).join("")
+  );
+
+  // Pages ville × catégorie (src/ville-categorie.njk) : « Hébergements à
+  // Biarritz avec son chien »… dès CITY_CAT_MIN_FICHES fiches de la catégorie
+  // dans la ville. Reprend les textes des pages catégorie × département avec
+  // {enNom} = « à Biarritz ».
+  const CITY_CAT_MIN_FICHES = 3;
+  eleventyConfig.addCollection("cityCategoryPages", (collectionApi) => {
+    const cities = computeCityPages(collectionApi);
+    return categoryPages
+      .filter((cp) => !cp.secondary)
+      .flatMap((cp) =>
+        cities.map((city) => ({ cp, city, fiches: city.fiches.filter((f) => inCategoryPage(f, cp)) }))
+      )
+      .filter((p) => p.fiches.length >= CITY_CAT_MIN_FICHES)
+      // Ville homonyme d'un département (Paris) : la page catégorie × département suffit.
+      .filter((p) => !departements.some((d) => `${d.slug}-avec-son-chien` === p.city.slug))
+      .map((p) => ({
+        ...p,
+        slug: `${p.cp.slug}-${p.city.slug.replace(/-avec-son-chien$/, "")}`,
+        enNom: p.city.aVille,
+      }));
+  });
 
   // Données structurées des pages de liste (catégorie, catégorie × département,
   // ville) : fil d'Ariane (BreadcrumbList) + liste des lieux (ItemList).

@@ -40,6 +40,10 @@ extraHead: |
     <span class="eyebrow">{{ section.catGrid.label | safe }}</span>
     <h2>{{ section.heading | safe }}</h2>
     {%- set catPage = section.id | categoryPage %}
+    {%- set cityCat = (collections.cityCategoryPages | whereEq("slug", (catPage.slug if catPage else "") + "-" + city.slug | replace("-avec-son-chien", "")))[0] if catPage else null %}
+    {%- if cityCat %}
+    <p class="cat-see-more"><a href="/{{ cityCat.slug }}">{{ catPage.label }} {{ city.aVille }} : la page dédiée →</a></p>
+    {%- endif %}
     {%- if catPage %}
     {%- set catDep = (collections.categoryDeptPages | whereEq("cat", catPage.cat) | whereEq("id", city.dep.id))[0] %}
     {%- if catDep %}
