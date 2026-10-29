@@ -45,7 +45,12 @@ extraScripts: |
     <span class="tag">{{ tag | safe }}</span>{% if partenaire %}<span class="fiche-partenaire-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-medal"/></svg>Partenaire Coco Explore</span>{% endif %}
     <h1>{{ h1 | safe }}</h1>
     <span class="lieu">{{ lieu | safe }}</span>
-    <span class="fiche-updated">{{ "Updated" if lang == "en" else "Fiche mise à jour le" }} {{ page.inputPath | lastmod | dateLong(lang) }}</span>
+    {#- Toutes les catégories ont été vérifiées sur sources officielles en
+        octobre 2026 (campagnes SIRENE) : une fiche non modifiée depuis garde
+        la mention du mois de vérification plutôt qu'une date de mise à jour
+        antérieure. #}
+    {%- set ficheLastmod = page.inputPath | lastmod %}
+    <span class="fiche-updated"><svg class="fiche-verified-icon" width="13" height="13" aria-hidden="true"><use href="#i-check"/></svg>{{ "Checked against official sources" if lang == "en" else "Infos vérifiées sur sources officielles" }} · {% if ficheLastmod >= "2026-10-01" %}{{ "updated" if lang == "en" else "mise à jour le" }} {{ ficheLastmod | dateLong(lang) }}{% else %}{{ "October 2026" if lang == "en" else "octobre 2026" }}{% endif %}</span>
   </div>
   {%- if photoUsername %}
   <span class="fiche-photo-credit">Photo : <a href="https://unsplash.com/@{{ photoUsername | safe }}?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">{{ photoName | safe }}</a> / <a href="https://unsplash.com/?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>

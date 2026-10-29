@@ -597,6 +597,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .fiche-hero h1 { color: var(--blanc); font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
 .fiche-hero .lieu { color: var(--ocre); font-weight: 600; margin-top: 6px; display: block; }
 .fiche-hero .fiche-updated { display: block; margin-top: 6px; font-size: 0.85rem; color: rgba(255,253,248,0.7); }
+.fiche-hero .fiche-verified-icon { display: inline-block; vertical-align: -1px; margin-right: 5px; stroke-width: 2.4; }
 
 /* Bandeau d'infos pratiques : liste discrète, pictos fins alignés à gauche du texte */
 .info-strip { background: var(--surface); border-bottom: 1px solid rgba(var(--ink),0.08); }
