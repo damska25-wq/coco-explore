@@ -273,7 +273,9 @@
         function (pos) {
           placeUserMarker(pos, true);
           locateBtn.disabled = false;
-          if (locateStatus) locateStatus.textContent = "Position affichée — les distances apparaissent dans les bulles des lieux.";
+          if (locateStatus) locateStatus.textContent = "C'est fait ! Choisis une catégorie sur la carte pour voir les lieux autour de toi.";
+          var carte = document.getElementById("carte");
+          if (carte && carte.scrollIntoView) carte.scrollIntoView({ behavior: "smooth", block: "start" });
         },
         function (message) {
           locateBtn.disabled = false;

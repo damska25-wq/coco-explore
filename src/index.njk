@@ -49,14 +49,9 @@ extraScripts: |
         </form>
         <div class="search-results" id="site-search-results" hidden></div>
       </div>
-      <div class="share-site">
-        <a href="https://wa.me/?text={{ 'Coco Explore : un guide gratuit pour trouver des plages, balades et adresses où aller avec son chien partout en France — https://cocoexplore.com/' | urlencode }}" target="_blank" rel="noopener" class="share-site-btn">
-          <svg width="16" height="16"><use href="#i-whatsapp"/></svg> Partager Coco Explore
-        </a>
-        <button type="button" id="copy-link-btn" class="share-site-btn share-site-btn-ghost">
-          <svg width="16" height="16"><use href="#i-link"/></svg> Copier le lien
-        </button>
-        <span id="copy-link-status" class="copy-link-status" role="status"></span>
+      <div class="hero-locate">
+        <button type="button" id="coco-locate-btn" class="hero-locate-btn"><svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg>Me localiser</button>
+        <span class="hero-locate-hint" id="coco-locate-status" role="status">Pour voir les lieux autour de toi sur la carte</span>
       </div>
     </div>
     <figure class="hero-photo">
@@ -131,10 +126,6 @@ extraScripts: |
     <h2>Où emmener son chien</h2>
     <p style="margin-top: 10px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">Choisis une catégorie ci-dessous : les lieux s'affichent sur la carte, et les fiches correspondantes apparaissent juste en dessous.</p>
   </div>
-  <div class="coco-map-locate">
-    <button type="button" id="coco-locate-btn" class="map-filter map-filter-all">Me localiser</button>
-    <span id="coco-locate-status" role="status"></span>
-  </div>
   <div id="coco-map-filters"></div>
   <div class="coco-map-wrap">
     <div id="coco-map"></div>
@@ -191,3 +182,20 @@ extraScripts: |
   <div class="fiche-grid" id="mes-favoris-grid"></div>
 </section>
 
+<section class="wrap share-section">
+  <div class="share-box">
+    <div>
+      <h2>Coco Explore t'a été utile ?</h2>
+      <p>Partage le guide avec d'autres propriétaires de chiens : c'est gratuit, et ça aide Coco à continuer d'explorer.</p>
+    </div>
+    <div class="share-site">
+      <a href="https://wa.me/?text={{ 'Coco Explore : un guide gratuit pour trouver des plages, balades et adresses où aller avec son chien partout en France — https://cocoexplore.com/' | urlencode }}" target="_blank" rel="noopener" class="share-site-btn">
+        <svg width="16" height="16"><use href="#i-whatsapp"/></svg> Partager Coco Explore
+      </a>
+      <button type="button" id="copy-link-btn" class="share-site-btn share-site-btn-ghost">
+        <svg width="16" height="16"><use href="#i-link"/></svg> Copier le lien
+      </button>
+      <span id="copy-link-status" class="copy-link-status" role="status"></span>
+    </div>
+  </div>
+</section>
