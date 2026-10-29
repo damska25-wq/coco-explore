@@ -332,6 +332,7 @@ Quand un professionnel demande à ne plus être référencé : supprimer sa ou s
 
 ## Conventions du projet (voir aussi contexte de session)
 
+- **Toute nouvelle fiche est créée en mode SIRENE, rigueur maximale, sans exception** (règle de l'utilisateur, 29/10/2026) : chaque information lue sur une source officielle (site de l'établissement, mairie, arrêté, office de tourisme, gestionnaire), rien d'inventé, doutes visibles si les sources divergent, pas de doublon avec une fiche existante. Méthode : `scratchpad/brief-verif.md` + brief de création du chantier en cours.
 - Fiches : `src/fiches/*.njk`, frontmatter YAML + `bodyHtml`.
 - Jamais de photo Unsplash dupliquée entre fiches (vérification regex sur `photo-XXXX` avant chaque commit de contenu).
 - Jamais le label `"Urgences"` avec un pattern 24h/24 sauf si réellement vérifié (déclenche un badge automatique `vetBadge`).
