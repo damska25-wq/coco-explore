@@ -110,6 +110,16 @@ Les **371 fiches plages** vérifiées sur sources officielles (arrêtés municip
 
 **Doutes laissés visibles dans les fiches** (sources officielles contradictoires ou absentes) : Colleville-Montgomery, Ver-sur-Mer, Cavalaire (horaires), Étretat, Pourville, Sainte-Adresse, Dunkerque/Leffrinckoucke, Bray-Dunes, Biarritz/Anglet (dates), Oye-Plage, Peyrefite (Cerbère), Pornic, Damgan, Locmariaquer, Montalivet, L'Île-Rousse (Pietra), plusieurs plages corses et ultramarines sans règle publiée.
 
+## Historique — campagne SIRENE balades (29/10/2026, résolue)
+
+Les **1 063 fiches balades** vérifiées sur sources officielles (communes, offices de tourisme, ONF, parcs nationaux/régionaux, décrets de réserves, Départements/ENS), 34 lots d'agents Sonnet, consigne « rigueur maximale » (chaque fiche relue en ligne, aucune affirmation sans source, « laisse conseillée » quand rien n'est publié). Rapports : `scratchpad/balades-rapport-XX.txt` (non versionnés). Au passage : 85 champs publics nettoyés de variantes « confiance élevée/bonne/basse » (contrôle `check-site.mjs` étendu), 57+ fiches à icônes inexistantes (`i-tree`/`i-park`/`i-shield`) corrigées, mails/portables de particuliers retirés.
+
+**Interdictions totales (fiches gardées, titre explicite)** : réserves des Hauts de Chartreuse, Hauts-Plateaux du Vercors, Courant d'Huchet, Chérine, Massé-Foucault, Biguglia, Sixt-Fer-à-Cheval, Grand-Voyeux, Amana et Kaw-Roura (973), Caravelle (972), îlot Mbouzi (976), cœur du Parc national de la Guadeloupe, Madone de Fenestre (Mercantour), tourbière du Longeyroux, gorges du Fier et du Pont du Diable (74), sentier littoral de Giens, jardin japonais de Nantes, parc des Gayeulles (hors espaces chiens), parcs Boussard (Lardy), Frédéric-Pic (Vanves), île Cointre (Alfortville), Tremblay (Champigny), plaine des Bordes, parc de Conflans (Charenton), circuit du lac du Cébron, plage du Saucil.
+
+**Supprimées (lieu introuvable)** : Étangs de la Souche (02), Lac de Saint-Apollinaire (21), Parc de la Colombière à Chalon (71), 301 vers la page balades du département. **Reclassées** : Roche d'Oëtre (14→61), Gorges du Guiers Vif (73→38), Lac de la Raviège (81→34). Page `/parc-canin-ille-et-vilaine` disparue (moins de 3 parcs) → 301 vers `/parc-canin`.
+
+**À trancher / recaler plus tard** (liste complète : `scratchpad/a-trancher.txt`) : forêt du Neuhof (Ville « chiens non acceptés » vs décret « laisse sur itinéraires »), sentier des Tannes, phare de Chassiron, clues d'Aiglun/Saint-Auban (canyoning), Causse de Sauveterre (confusion avec GRP Lozère), GR36 Suisse normande (14/61) ; lat/lng à recaler : lac de Saint-Amans, Anse du Sud (Préfailles), méandre de Queuille, Chemin du Partage (Bauzon).
+
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
 En creusant un CTR anormalement bas sur plusieurs fiches bien classées dans Search Console, découverte que ~2133 fiches (sur ~9300, environ un quart du site) avaient la mention interne **"Confiance faible/moyenne/haute"** littéralement dans le champ `description` du frontmatter — donc visible dans le snippet Google, jamais censée être publique (c'est une annotation de travail issue des rounds de recherche/vérification).
