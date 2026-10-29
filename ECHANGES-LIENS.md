@@ -16,6 +16,8 @@ Statuts du lien reçu : `à demander` · `promis` · `reçu` · `à vérifier` (
 
 Articles Bimo publiés le 27/10/2026 : `/guide-repas-route-chien` et `/guide-collations-randonnee-chien` (sources revérifiées une à une, corrections listées dans les commits). Page « Partenaires » de bimo.dog en ligne avec Coco Explore (description, image, lien dofollow vers cocoexplore.com), confirmé par Bimo le 29/10/2026 : statut `reçu`.
 
+**29/10/2026** : Bimo accepte que les liens restent en `rel="sponsored"` (« c'est la règle de Google pour les articles invités, on la respecte complètement »). Ils prennent les 3 sujets proposés, mêmes conditions (sources vérifiées, mention « Article proposé par Bimo », relecture libre de notre côté) : 1. alimentation du chien en camping ou en location (conservation, chaleur) — attendu « d'ici quelques jours » ; 2. adapter les rations d'un chien sportif (canicross, longues randonnées) ; 3. aliments du terroir à éviter en voyage (fromages, charcuterie, raisin…). À la réception : même relecture que pour les deux premiers (chaque conseil santé vérifié sur source vétérinaire/officielle, pas de discours commercial appuyé, liens bimo.dog en `rel="sponsored noopener"`).
+
 ## Affichage sur la fiche
 
 Uniquement `<p class="fiche-collab">Fiche réalisée en collaboration avec …</p>` à la fin du `bodyHtml` : petite ligne grise précédée d'une icône de lien et d'un trait de séparation (style dans `src/style.css`). Rien sur les vignettes ni dans l'en-tête : ne jamais utiliser de badge, de couleur ou de pastille, pour ne pas se confondre avec le badge Partenaire payant. Le nom peut être un lien vers le site ou la page de la personne (`<a href="…" rel="noopener">`), si c'est la contrepartie convenue.
