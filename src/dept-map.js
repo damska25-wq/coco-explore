@@ -42,6 +42,11 @@
   var allBounds = [];
   var layerByCatId = {};
 
+  // Les plages de la Côte d'Azur ont leur propre catId mais relèvent du
+  // filtre « Plages » de la page département.
+  var FILTER_OF = { "cote-azur": "plages" };
+  function filterOf(catId) { return FILTER_OF[catId] || catId; }
+
   lieux.forEach(function (lieu) {
     var color = CAT_COLORS[lieu.catId] || "#3C5943";
     var marker = L.marker([lieu.lat, lieu.lng], { icon: makeIcon(color) });
@@ -51,8 +56,9 @@
         (window.CocoNotes ? window.CocoNotes.popupLine(lieu) : "") +
         '<div class="coco-popup-actions"><a href="' + lieu.slug + '">Voir la fiche</a></div></div>';
     });
-    if (!layerByCatId[lieu.catId]) layerByCatId[lieu.catId] = L.layerGroup();
-    layerByCatId[lieu.catId].addLayer(marker);
+    var key = filterOf(lieu.catId);
+    if (!layerByCatId[key]) layerByCatId[key] = L.layerGroup();
+    layerByCatId[key].addLayer(marker);
     allBounds.push([lieu.lat, lieu.lng]);
   });
 
@@ -61,7 +67,7 @@
   function boundsForCat(cat) {
     if (cat === "tout") return allBounds;
     return lieux
-      .filter(function (l) { return l.catId === cat; })
+      .filter(function (l) { return filterOf(l.catId) === cat; })
       .map(function (l) { return [l.lat, l.lng]; });
   }
 
