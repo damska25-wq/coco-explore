@@ -998,6 +998,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 
 /* Accueil : bloc « Les grandes villes avec son chien » */
 .city-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.city-accordion .city-chips:not([hidden]) { padding: 14px 4px 18px; }
 .city-chip {
   display: inline-flex; align-items: center; gap: 7px;
   padding: 9px 14px; border-radius: 999px;

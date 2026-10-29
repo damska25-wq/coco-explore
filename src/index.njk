@@ -96,13 +96,30 @@ extraScripts: |
 <section class="categories wrap city-section">
   <div class="section-head">
     <span class="eyebrow">Explorer par ville</span>
-    <h2>Les grandes villes avec son chien</h2>
+    <h2>Villes et stations avec son chien</h2>
   </div>
-  <div class="city-chips">
-    <a href="/departement-paris" class="city-chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-pin"/></svg>Paris</a>
-    {%- set homeCities = ["Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Strasbourg", "Rennes", "Reims", "Le Havre", "Toulon", "Grenoble", "Dijon", "Angers", "Nîmes", "Tours", "Rouen", "Caen", "Metz", "Limoges", "Orléans", "La Rochelle", "Biarritz", "Saint-Malo", "Cannes", "Ajaccio"] %}
-    {%- for city in collections.cityPages | pickCities(homeCities) %}
-    <a href="/{{ city.slug }}" class="city-chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-pin"/></svg>{{ city.ville }}<span class="city-chip-count">{{ city.fiches.length }}</span></a>
+  {%- set cityGroups = [
+    { nom: "Grandes villes", villes: ["Angers", "Caen", "Dijon", "Grenoble", "Le Havre", "Limoges", "Lyon", "Marseille", "Metz", "Nantes", "Nice", "Nîmes", "Orléans", "Reims", "Rennes", "Rouen", "Strasbourg", "Toulon", "Toulouse", "Tours"], paris: true },
+    { nom: "Stations et villes de vacances", villes: ["Ajaccio", "Biarritz", "Briançon", "Cannes", "Cavalaire-sur-Mer", "Deauville", "Grimaud", "Hyères", "La Rochelle", "Les Sables-d'Olonne", "Perros-Guirec", "Saint-Malo", "Saint-Tropez"] }
+  ] %}
+  <div class="region-accordion city-accordion" id="city-accordion">
+    {%- for group in cityGroups %}
+    {%- set groupCities = collections.cityPages | pickCities(group.villes) %}
+    <div class="region-accordion-item">
+      <button type="button" class="region-accordion-toggle" aria-expanded="false">
+        <span>{{ group.nom }}</span>
+        <span class="region-accordion-meta">{{ groupCities.length + (1 if group.paris else 0) }} villes <svg class="region-accordion-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></span>
+      </button>
+      <div class="city-chips region-accordion-body" hidden>
+        {%- set parisShown = not group.paris %}
+        {%- for city in groupCities %}
+        {%- if not parisShown and city.ville > "Paris" %}{% set parisShown = true %}
+        <a href="/departement-paris" class="city-chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-pin"/></svg>Paris</a>
+        {%- endif %}
+        <a href="/{{ city.slug }}" class="city-chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-pin"/></svg>{{ city.ville }}<span class="city-chip-count">{{ city.fiches.length }}</span></a>
+        {%- endfor %}
+      </div>
+    </div>
     {%- endfor %}
   </div>
   <p class="cat-see-more"><a href="/plan-du-site">Toutes les villes ({{ collections.cityPages.length }}) →</a></p>
