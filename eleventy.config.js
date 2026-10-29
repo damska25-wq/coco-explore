@@ -193,6 +193,11 @@ export default function (eleventyConfig) {
       .sort((a, b) => a.ville.localeCompare(b.ville, "fr"));
   });
 
+  // Pages ville choisies pour le bloc de l'accueil, dans l'ordre donné (villes sans page ignorées).
+  eleventyConfig.addFilter("pickCities", (cities, villes) =>
+    villes.map((v) => (cities || []).find((c) => c.ville === v)).filter(Boolean)
+  );
+
   // Données structurées des pages de liste (catégorie, catégorie × département,
   // ville) : fil d'Ariane (BreadcrumbList) + liste des lieux (ItemList).
   // `crumbs` et `items` : [{ name, path }] avec un chemin relatif au site.

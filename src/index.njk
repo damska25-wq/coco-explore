@@ -93,6 +93,21 @@ extraScripts: |
   </div>
 </section>
 
+<section class="categories wrap city-section">
+  <div class="section-head">
+    <span class="eyebrow">Explorer par ville</span>
+    <h2>Les grandes villes avec son chien</h2>
+  </div>
+  <div class="city-chips">
+    <a href="/departement-paris" class="city-chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-pin"/></svg>Paris</a>
+    {%- set homeCities = ["Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Strasbourg", "Rennes", "Reims", "Le Havre", "Toulon", "Grenoble", "Dijon", "Angers", "Nîmes", "Tours", "Rouen", "Caen", "Metz", "Limoges", "Orléans", "La Rochelle", "Biarritz", "Saint-Malo", "Cannes", "Ajaccio"] %}
+    {%- for city in collections.cityPages | pickCities(homeCities) %}
+    <a href="/{{ city.slug }}" class="city-chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-pin"/></svg>{{ city.ville }}<span class="city-chip-count">{{ city.fiches.length }}</span></a>
+    {%- endfor %}
+  </div>
+  <p class="cat-see-more"><a href="/plan-du-site">Toutes les villes ({{ collections.cityPages.length }}) →</a></p>
+</section>
+
 <section class="wrap categories carte-section" id="carte">
   <div class="section-head">
     <span class="eyebrow">Explorer sur la carte</span>
