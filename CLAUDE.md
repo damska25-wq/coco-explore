@@ -150,7 +150,7 @@ Les 369 fiches plages repassées une à une (12 lots, agents Sonnet, section « 
 - **Plus en interdiction totale** : Île de la Métairie (37, chiens en laisse admis, baignade interdite), Fécamp (zone canine depuis le 30/11/2024), Sainte-Marguerite-sur-Mer (juillet-août entre les épis seulement).
 - **Doublon supprimé** : Ondres-Océan (= Plage d'Ondres), 301 vers `/fiche-ondres-plages`. **Reclassée** : Beau-Rivage (Sanguinet) 33→40.
 - **Doutes laissés visibles** (sources officielles contradictoires ou arrêté illisible) : La Croix-Valmer (7 plages), Barcaggio, Pietra, Nonza, Peyrefite, Oye-Plage, Capbreton, Hossegor, Gujan-Mestras, Colleville, Courseulles, Barneville-Carteret, Damgan, Quiberon, plages martiniquaises « interdites » d'après un seul site de location, etc.
-- **À trancher** : La Saule (Carennac, parc aquatique payant qui refuse les animaux, aucune baignade publique confirmée) — garder ou retirer.
+- **La Saule** (Carennac) supprimée sur décision de l'utilisateur (parc aquatique payant qui refuse les animaux), 301 vers `/departement-lot`.
 
 ## Historique — nettoyage "Confiance X" en public (novembre 2026, résolu)
 
