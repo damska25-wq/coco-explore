@@ -270,7 +270,7 @@ export default function (eleventyConfig) {
   // plages, lacs et balades (après la baignade ou la boue).
   // FAQ des pages catégorie → entrées schema.org FAQPage.
   eleventyConfig.addFilter("faqEntities", (faq) =>
-    (faq || []).map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: i.a } }))
+    (faq || []).map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: String(i.a).replace(/<[^>]+>/g, "") } }))
   );
   eleventyConfig.addCollection("dogwashFiches", (collectionApi) =>
     collectionApi

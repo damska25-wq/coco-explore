@@ -150,6 +150,12 @@ export default [
     introDep: "Coco Explore référence <strong>{n} toiletteurs pour chien {enNom}</strong> : {villes}. Chaque fiche détaille l'adresse, le téléphone, les horaires et les prestations quand on a pu les vérifier. La plupart des salons travaillent sur rendez-vous : mieux vaut appeler avant de passer.",
     linkDep: "Tous les toiletteurs {enNom}",
     linkNat: "Tous les toiletteurs pour chien en France",
+    faq: [
+      { q: "Faut-il prendre rendez-vous chez le toiletteur ?", a: "Oui, presque toujours : la grande majorité des salons travaillent uniquement sur rendez-vous, par téléphone ou en ligne. Appelle avant de passer, surtout en période de vacances où les créneaux partent vite." },
+      { q: "Combien coûte un toilettage ?", a: "Le prix dépend de la taille du chien, de son type de poil et de la prestation (bain et séchage, coupe, tonte, épilation). Peu de salons publient leurs tarifs en ligne : quand c'est le cas, la fiche les indique ; sinon, demande un devis au téléphone en précisant la race et l'état du pelage." },
+      { q: "Existe-t-il des toiletteurs à domicile ?", a: "Oui, certains toiletteurs se déplacent chez toi, souvent avec un camion ou une remorque aménagés. La fiche le précise quand c'est le cas ; pour leur vie privée, on renvoie alors vers leur site plutôt que vers un numéro personnel." },
+      { q: "Je veux juste laver mon chien moi-même : où aller ?", a: "Un dogwash (station de lavage en libre-service) suffit souvent pour un simple bain après la plage ou une balade boueuse, sans rendez-vous. Retrouve-les sur notre page <a href=\"/dogwash-chien\">dogwash autour de moi</a>." },
+    ],
   },
   {
     cat: "dogsitters",

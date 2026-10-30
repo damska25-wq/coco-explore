@@ -71,7 +71,7 @@ extraHead: |
   <h2>Questions fréquentes</h2>
   {%- for item in cp.faq %}
   <h3>{{ item.q }}</h3>
-  <p>{{ item.a }}</p>
+  <p>{{ item.a | safe }}</p>
   {%- endfor %}
 </section>
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": cp.faq | faqEntities} | dump | safe }}</script>
