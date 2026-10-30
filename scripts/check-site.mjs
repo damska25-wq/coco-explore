@@ -75,6 +75,8 @@ for (const file of sources) {
   for (const field of ["title", "description", "cardTeaser"]) {
     const m = text.match(new RegExp(`^${field}: (.*)$`, "m"));
     if (m && CONFIANCE.test(m[1])) errors.push(`${file} : « confiance X » dans le champ ${field}.`);
+    // Un guillemet droit (\") coupe la balise <meta> ou <title> qui reprend ce champ.
+    if (m && m[1].includes('\\"')) errors.push(`${file} : guillemet droit dans le champ ${field} (utiliser « »).`);
   }
   if (file.startsWith("src/fiches")) {
     const hero = text.match(/^heroImage: .*?(photo-[0-9a-f-]+)/m);
