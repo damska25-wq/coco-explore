@@ -157,6 +157,9 @@ export default function (eleventyConfig) {
   const CITY_MIN_FICHES = 15;
   // Stations et villes de vacances : page dès 10 adresses, et volet « Stations » de l'accueil.
   const STATION_MIN_FICHES = 10;
+  // Section « Autour de <ville> » des pages ville : rayon et nombre maximum de fiches.
+  const NEARBY_KM = 12;
+  const NEARBY_MAX = 12;
   const STATION_VILLES = [
     "Agde", "Aix-les-Bains", "Ajaccio", "Anglet", "Annecy", "Antibes", "Arcachon", "Argelès-sur-Mer",
     "Bagnères-de-Luchon", "Bandol", "Barcelonnette", "Berck-sur-Mer", "Biarritz", "Biscarrosse", "Bonifacio",
@@ -185,6 +188,12 @@ export default function (eleventyConfig) {
   // "à Nantes", "au Havre", "aux Sables-d'Olonne", "à La Rochelle".
   const aVille = (ville) =>
     ville.startsWith("Le ") ? "au " + ville.slice(3) : ville.startsWith("Les ") ? "aux " + ville.slice(4) : "à " + ville;
+  // "de Nantes", "du Havre", "des Sables-d'Olonne", "d'Angers", "de La Rochelle".
+  const deVille = (ville) =>
+    ville.startsWith("Le ") ? "du " + ville.slice(3)
+      : ville.startsWith("Les ") ? "des " + ville.slice(4)
+      : /^[AEIOUYÉÈÊÎÔ]/i.test(ville) ? "d'" + ville
+      : "de " + ville;
   // Commune d'un cardTag : les variantes d'une même commune comptent pour sa page
   // ville (« Lyon 5e », « Reims (Murigny) », « Besançon, Doubs », « Cannes La
   // Bocca »…). Le cardTag affiché sur les cartes ne change pas. Les cardTag
@@ -203,7 +212,8 @@ export default function (eleventyConfig) {
   const computeCityPages = (collectionApi) => {
     // Communes homonymes (Saint-Denis 93 / 974) : regroupées par nom ET département.
     const byCity = new Map();
-    for (const f of collectionApi.getFilteredByGlob("src/fiches/*.njk")) {
+    const all = collectionApi.getFilteredByGlob("src/fiches/*.njk");
+    for (const f of all) {
       const ville = cityOf(f.data.cardTag);
       if (!ville || /[0-9+/()]/.test(ville)) continue;
       const key = `${ville}|${(f.data.departement || [])[0]}`;
@@ -219,14 +229,37 @@ export default function (eleventyConfig) {
         const dep = departements.find((d) => d.id === deptId);
         // Deux homonymes ayant chacun leur page : le département départage les URL.
         const homonyme = kept.filter((c) => c.ville === ville).length > 1;
+        // « Autour de la ville » : fiches d'autres communes à moins de NEARBY_KM
+        // du centre (médiane des coordonnées des fiches de la ville).
+        const med = (xs) => { const v = xs.filter(Number.isFinite).sort((a, b) => a - b); return v[Math.floor(v.length / 2)]; };
+        const lat0 = med(fiches.map((f) => Number(f.data.lat)));
+        const lng0 = med(fiches.map((f) => Number(f.data.lng)));
+        const own = new Set(fiches);
+        const nearby = Number.isFinite(lat0) && Number.isFinite(lng0)
+          ? all
+              .filter((f) => !own.has(f) && Number.isFinite(Number(f.data.lat)) && Number.isFinite(Number(f.data.lng)))
+              .map((f) => ({ f, km: Math.hypot((Number(f.data.lat) - lat0) * 111, (Number(f.data.lng) - lng0) * 111 * Math.cos((lat0 * Math.PI) / 180)) }))
+              .filter((x) => x.km <= NEARBY_KM)
+              .sort((a, b) => a.km - b.km)
+              // 3 fiches au plus par catégorie, pour varier la sélection.
+              .filter(((perCat) => (x) => {
+                const cat = x.f.data.breadcrumbCatId;
+                perCat.set(cat, (perCat.get(cat) || 0) + 1);
+                return perCat.get(cat) <= 3;
+              })(new Map()))
+              .slice(0, NEARBY_MAX)
+              .map((x) => x.f)
+          : [];
         return {
           ville,
           aVille: aVille(ville),
+          deVille: deVille(ville),
           station: STATION_VILLES.includes(ville),
           slug: slugify(ville) + (homonyme ? "-" + dep.slug : "") + "-avec-son-chien",
           dep,
           depId: deptId,
           fiches: partnersFirst(fiches.sort((a, b) => a.data.order - b.data.order)),
+          nearby,
         };
       })
       .sort((a, b) => a.ville.localeCompare(b.ville, "fr"));

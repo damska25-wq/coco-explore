@@ -18,6 +18,7 @@ extraHead: |
     .ville-section .section-head .cat-see-more { text-align: left; }
     .ville-links { margin: 8px 0 0; padding-left: 1.2em; }
     .ville-links li { margin: 4px 0; }
+    .ville-sources { font-size: 0.85rem; color: rgba(var(--ink),0.6); }
   </style>
 ---
 <script type="application/ld+json">{{ city.fiches | ficheItems | listJsonLd([{ name: "Coco Explore", path: "" }, { name: city.dep.nom, path: "departement-" + city.dep.slug }, { name: city.ville, path: city.slug }], city.ville + " avec son chien") | safe }}</script>
@@ -29,6 +30,12 @@ extraHead: |
   <p>Coco Explore référence <strong>{{ city.fiches.length }} adresses {{ city.aVille }}</strong> pour sortir avec son chien :
   {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}{{ comma() or " " }}{{ section.catGrid.label | lower | safe }} ({{ n }}){% endif %}{% endif %}{% endfor %}.
   Chaque fiche précise les règles et les conditions d'accueil du chien que nous avons pu vérifier.</p>
+  {%- set essentiel = villesEssentiel[city.slug] %}
+  {%- if essentiel %}
+  <h2>L'essentiel avec son chien {{ city.aVille }}</h2>
+  {{ essentiel.html | safe }}
+  <p class="ville-sources">Sources : {% for s in essentiel.sources %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  {%- endif %}
 </section>
 
 {%- for section in sections %}
@@ -60,6 +67,21 @@ extraHead: |
 {%- endif %}
 {%- endif %}
 {%- endfor %}
+
+{%- if city.nearby.length %}
+<section class="fiches wrap ville-section" id="autour">
+  <div class="section-head">
+    <span class="eyebrow">À proximité</span>
+    <h2>Autour {{ city.deVille }}</h2>
+    <p>Adresses des communes voisines, à moins de 12 km du centre {{ city.deVille }}, les plus proches d'abord.</p>
+  </div>
+  <div class="fiche-grid">
+    {%- for fiche in city.nearby %}
+    {% include "fiche-card.njk" %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
 
 <section class="wrap cat-page-intro">
   <h2>Pour aller plus loin</h2>
