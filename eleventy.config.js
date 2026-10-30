@@ -416,6 +416,30 @@ export default function (eleventyConfig) {
     const cut = t.slice(0, max);
     return cut.slice(0, Math.max(cut.lastIndexOf(" "), max - 20)).replace(/[\s,;:(—-]+$/, "") + "…";
   };
+  // Bandeau d'infos des fiches : la ligne de travail « Confiance » (niveau de
+  // vérification noté pendant les recherches) et les « (confiance moyenne) »
+  // glissés dans une valeur ne sont pas affichés. Les fichiers ne changent pas.
+  const CONF_LEVEL = "(?:faible|moyenne|haute|élevée|elevee|bonne|basse|limitée|moyenne-haute|moyenne à haute|high|medium|low)";
+  const cleanInfoValue = (v) =>
+    String(v || "")
+      .replace(/\s*\([^()]*\b(?:confiance|confidence)\b[^()]*\)/gi, "")
+      .replace(new RegExp(`(⚠️?)\\s*(?:confiance|confidence)\\s*${CONF_LEVEL}\\s*,?`, "gi"), "$1 ")
+      .replace(new RegExp(`\\s*[—–;,-]\\s*(?:niveau de )?(?:confiance|confidence)\\s*:?\\s*${CONF_LEVEL}\\b[^.;]*`, "gi"), "")
+      .replace(new RegExp(`(^|[.;]\\s+)[^.;]*\\b(?:confiance|confidence)\\s*:?\\s*${CONF_LEVEL}\\b[^.;]*[.;]?`, "gi"), "$1")
+      // Tournures libres (« confiance relevée à haute », « niveau de confiance élevé »…) :
+      // le bout de phrase qui contient le mot, jusqu'au séparateur suivant.
+      .replace(/(?:\s*[—–:,]\s*|^|(?<=[.;!]\s))[^—–:,;.()]*\b(?:confiance|confidence)\b[^—–;.]*(?:\([^()]*\))?[^—–;.()]*[.;]?/gi, "")
+      .replace(/\(\s*\)/g, "")
+      .replace(/\s+([.,;])/g, "$1")
+      .replace(/^[\s.,;—–-]+|[\s,;—–-]+$/g, "")
+      .trim();
+  eleventyConfig.addFilter("publicInfoItems", (items) =>
+    (items || [])
+      .filter((it) => it && !/^\s*(?:niveau de\s+)?(?:confiance|confidence)/i.test(String(it.label || "")))
+      .map((it) => ({ ...it, label: String(it.label || "").replace(/\s*\([^()]*\b(?:confiance|confidence)\b[^()]*\)/gi, "").replace(/\s*[—–-]+\s*(?:confiance|confidence)\b.*$/gi, ""), value: cleanInfoValue(it.value) }))
+      .filter((it) => it.value)
+  );
+
   eleventyConfig.addFilter("ficheBrief", (fiche, n = 2) => {
     const items = (fiche.data.infoItems || []).filter((it) => it && it.label && it.value);
     const out = [];

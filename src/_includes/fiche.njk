@@ -59,7 +59,7 @@ extraScripts: |
 
 <section class="info-strip">
   <div class="wrap info-grid">
-    {%- for item in infoItems %}
+    {%- for item in infoItems | publicInfoItems %}
     <div class="info-item">
       <svg class="icon"><use href="#{{ item.icon }}"/></svg>
       <div><span class="label">{{ item.label | safe }}</span><span class="value">{{ item.value | safe }}</span></div>

@@ -90,6 +90,15 @@ for (const file of html.filter((f) => /-chien(-[a-z0-9-]+)?\.html$/.test(f))) {
   if (PLACEHOLDER.test(readFileSync(file, "utf8"))) errors.push(`${file} : gabarit {…} non remplacé.`);
 }
 
+// 6. Mot de travail « confiance » dans le bandeau d'infos des fiches (filtre
+// publicInfoItems) : il ne doit jamais être affiché.
+for (const file of html.filter((f) => /\/fiche-[^/]*\.html$/.test(f))) {
+  const strip = readFileSync(file, "utf8").match(/<section class="info-strip">[\s\S]*?<\/section>/);
+  if (strip && /confiance|confidence/i.test(strip[0].replace(/<[^>]+>/g, " "))) {
+    errors.push(`${file} : « confiance » affiché dans le bandeau d'infos.`);
+  }
+}
+
 if (errors.length) {
   console.error(`\n✖ Contrôle du site : ${errors.length} problème(s), mise en ligne bloquée.\n`);
   for (const e of errors.slice(0, 50)) console.error("  - " + e);
