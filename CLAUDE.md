@@ -15,7 +15,8 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - Vitré à 15 fiches pile (page ville sans marge) : 1-2 fiches de plus.
 
 **Chantiers moyens**
-- Toiletteurs : traitement titres + FAQ proposé. Lacs : `pas-des-ondes-remuzat` (commune Rémuzat ou Cornillon-sur-l'Oule ?), `lac-guerledan-22` (interdiction estivale Beau Rivage sur annuaire seul), `base-de-loisirs-saint-nicolas-de-la-grave` (« en laisse » vs « animaux non acceptés »).
+- Toiletteurs mal classés (dogwash Loki Wash/Equi Dog/Lav'Toutou, garderie Gramat, pension Fresnes) : changer de catégorie ? (voir « Historique — encadrés »).
+- Lacs : `pas-des-ondes-remuzat` (commune Rémuzat ou Cornillon-sur-l'Oule ?), `lac-guerledan-22` (interdiction estivale Beau Rivage sur annuaire seul), `base-de-loisirs-saint-nicolas-de-la-grave` (« en laisse » vs « animaux non acceptés »).
 - Dogwash : pistes Tom&Co/Animalis restantes (voir « Historique — dogwash »).
 - ~35 villes à 10-11 fiches (vague 4 de pages ville : Saumur et Dinan faites ; restent Issoudun, Saint-Dizier, Soissons, Le Cheylard, Montargis, Nuits-Saint-Georges, Montluçon, Avallon, Bourgoin-Jallieu, Mende, Lons-le-Saunier, Argentan, Flers, Saint-Pierre, Montreuil, Chaumont, Nogent-le-Rotrou, Bressuire, Nanterre, Gien, Charleville-Mézières, Redon, Thionville, Vernon, Valençay, Alençon, Verdun…).
 - Nouvelles stations candidates (5-6 fiches aujourd'hui) : Mandelieu, Arzon, Belle-Île, Seignosse, Saint-Cyprien, Moustiers-Sainte-Marie, Mimizan, Douarnenez, Bidart, La Grande-Motte, Bourg-Saint-Maurice ; quasi absentes : Val d'Isère, Morzine, Font-Romeu, Le Crotoy, Wimereux, Houlgate.
@@ -39,7 +40,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - **FAQ garde de chien** (coût d'après nos fiches, documents, pension/famille/pet-sitter, quand réserver) sur `/garde-pension-chien` et ses pages départementales (`faq` de `categoryPages.js`).
 - **Titres harmonisés des 768 fiches garde** : « Pension canine / Garde de chien / Pet-sitter <commune> : <nom> » (+ tarif seulement si la fiche l'affirme, « à confirmer » sinon). 9 fiches classées en garde sont en réalité de l'éducation ou des clubs canins (ACEC Concarneau, Agility Betton, Anne Guittard, Club Canin Pontissalien, Cyno-Sport des Grands Monts, Dog Yours, Le Langage du Chien, Les Pattes d'Ours ; Eduque ton humain = pension + éducation) : titres corrigés et **basculées en `education`** (décision de l'utilisateur, slugs inchangés ; nouvelles pages `/education-canine-haute-vienne` et `/education-canine-ille-et-vilaine`).
 - **Lacs (31/10)** : nouvelle page catégorie `/lac-chien` (+ pages départements dès 3 lacs, + ville × catégorie) avec FAQ (baignade, laisse, interdictions, cyanobactéries) ; 263 titres réécrits « <Lac> (<commune>) avec chien : <règle> » depuis le contenu des fiches, interdictions gardées explicites, suffixes « — Coco Explore » retirés.
-- **Proposé, pas encore lancé** : même traitement pour les toiletteurs (titres + FAQ).
+- **Toiletteurs (31/10)** : FAQ sur `/toiletteur-chien` et pages départements (rendez-vous, prix, à domicile, dogwash) ; 1 229 titres « Toiletteur <commune> : <nom> » (965 par script depuis `cardTitle`/`cardTag`, 264 par agents : réserves, « (ex-…) », chats uniquement, à domicile gardés). Rangées en toiletteurs mais qui n'en sont pas vraiment (titres adaptés, catégorie inchangée) : dogwash Loki Wash, Equi Dog, Lav'Toutou ; animaleries Maxi Zoo (Chantepie, Marzy, Niort, Poitiers, Pusey), Jardi Leclerc Royan, Terranimo ; Espace Canin Gramat (garderie), Esthéti'chien Fresnes (pension). Rapports `scratchpad/toil-titres-rapport-00X.txt`.
 
 ## Historique — dogwash (31/10/2026, mis en ligne)
 
