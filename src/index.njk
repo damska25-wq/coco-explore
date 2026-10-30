@@ -95,11 +95,14 @@ extraScripts: |
   </div>
   {%- set cityGroups = [
     { nom: "Grandes villes", villes: ["Angers", "Bordeaux", "Caen", "Chambéry", "Clermont-Ferrand", "Dijon", "Grenoble", "Le Havre", "Lille", "Limoges", "Lorient", "Lyon", "Marseille", "Metz", "Montpellier", "Nancy", "Nantes", "Nice", "Nîmes", "Orléans", "Pau", "Perpignan", "Reims", "Rennes", "Rouen", "Saint-Étienne", "Strasbourg", "Toulon", "Toulouse", "Tours", "Troyes"], paris: true },
+    { nom: "Autres villes", others: true },
     { nom: "Stations et villes de vacances", stations: true }
   ] %}
   <div class="region-accordion city-accordion" id="city-accordion">
     {%- for group in cityGroups %}
-    {%- set groupCities = (collections.cityPages | whereEq("station", true)) if group.stations else (collections.cityPages | pickCities(group.villes)) %}
+    {%- if group.stations %}{% set groupCities = collections.cityPages | whereEq("station", true) %}
+    {%- elif group.others %}{% set groupCities = collections.cityPages | whereEq("station", false) | omitCities(cityGroups[0].villes.concat(["Paris"])) %}
+    {%- else %}{% set groupCities = collections.cityPages | pickCities(group.villes) %}{% endif %}
     <div class="region-accordion-item">
       <button type="button" class="region-accordion-toggle" aria-expanded="false">
         <span>{{ group.nom }}</span>

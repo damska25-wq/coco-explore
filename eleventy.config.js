@@ -159,18 +159,20 @@ export default function (eleventyConfig) {
   const STATION_MIN_FICHES = 10;
   const STATION_VILLES = [
     "Agde", "Aix-les-Bains", "Ajaccio", "Anglet", "Annecy", "Antibes", "Arcachon", "Argelès-sur-Mer",
-    "Bagnères-de-Luchon", "Bandol", "Barcelonnette", "Biarritz", "Biscarrosse", "Bonifacio", "Briançon",
-    "Cabourg", "Calvi", "Cancale", "Canet-en-Roussillon", "Cannes", "Capbreton", "Carnac", "Cassis",
-    "Cauterets", "Cavalaire-sur-Mer", "Chamonix-Mont-Blanc", "Collioure", "Concarneau", "Courchevel",
-    "Crozon", "Deauville", "Dinard", "Erquy", "Étretat", "Fécamp", "Fréjus", "Gérardmer", "Granville",
-    "Grimaud", "Gruissan", "Honfleur", "Hyères", "L'Île-Rousse", "L'Isle-sur-la-Sorgue", "La Baule-Escoublac",
-    "La Ciotat", "La Clusaz", "La Croix-Valmer", "La Rochelle", "Lacanau", "Le Grau-du-Roi", "Le Lavandou",
-    "Le Touquet-Paris-Plage", "Les Deux Alpes", "Les Sables-d'Olonne", "Lourdes", "Megève", "Menton",
-    "Noirmoutier-en-l'Île", "Ouistreham", "Paimpol", "Perros-Guirec", "Pornic", "Porto-Vecchio", "Propriano",
-    "Quiberon", "Ramatuelle", "Rocamadour", "Roscoff", "Royan", "Saint-Gilles-Croix-de-Vie",
-    "Saint-Jean-de-Luz", "Saint-Lary-Soulan", "Saint-Malo", "Saint-Raphaël", "Saint-Tropez",
-    "Saint-Valery-sur-Somme", "Sainte-Maxime", "Sanary-sur-Mer", "Sarlat-la-Canéda", "Sète",
+    "Bagnères-de-Luchon", "Bandol", "Barcelonnette", "Berck-sur-Mer", "Biarritz", "Biscarrosse", "Bonifacio",
+    "Bormes-les-Mimosas", "Briançon", "Cabourg", "Calvi", "Cancale", "Canet-en-Roussillon", "Cannes",
+    "Capbreton", "Carnac", "Cassis", "Cauterets", "Cavalaire-sur-Mer", "Chamonix-Mont-Blanc", "Collioure",
+    "Concarneau", "Courchevel", "Crozon", "Deauville", "Dinard", "Embrun", "Erquy", "Étretat", "Fécamp",
+    "Fréjus", "Gérardmer", "Granville", "Grimaud", "Gruissan", "Hendaye", "Honfleur", "Hyères",
+    "L'Île-Rousse", "L'Isle-sur-la-Sorgue", "La Baule-Escoublac", "La Ciotat", "La Clusaz", "La Croix-Valmer",
+    "La Rochelle", "Lacanau", "Le Grau-du-Roi", "Le Lavandou", "Le Touquet-Paris-Plage", "Les Deux Alpes",
+    "Les Sables-d'Olonne", "Lourdes", "Megève", "Menton", "Noirmoutier-en-l'Île", "Ouistreham", "Paimpol",
+    "Perros-Guirec", "Pornic", "Porto-Vecchio", "Propriano", "Quiberon", "Ramatuelle", "Rocamadour",
+    "Roscoff", "Royan", "Saint-Gilles-Croix-de-Vie", "Saint-Jean-de-Luz", "Saint-Jean-de-Monts",
+    "Saint-Lary-Soulan", "Saint-Malo", "Saint-Martin-de-Ré", "Saint-Raphaël", "Saint-Tropez",
+    "Saint-Valery-sur-Somme", "Sainte-Maxime", "Sanary-sur-Mer", "Sarlat-la-Canéda", "Sarzeau", "Sète",
     "Six-Fours-les-Plages", "Soorts-Hossegor", "Tignes", "Trouville-sur-Mer", "Vallon-Pont-d'Arc",
+    "Villefranche-sur-Mer",
   ];
   const slugify = (str) =>
     str
@@ -199,27 +201,31 @@ export default function (eleventyConfig) {
       .trim();
   };
   const computeCityPages = (collectionApi) => {
+    // Communes homonymes (Saint-Denis 93 / 974) : regroupées par nom ET département.
     const byCity = new Map();
     for (const f of collectionApi.getFilteredByGlob("src/fiches/*.njk")) {
       const ville = cityOf(f.data.cardTag);
       if (!ville || /[0-9+/()]/.test(ville)) continue;
-      if (!byCity.has(ville)) byCity.set(ville, []);
-      byCity.get(ville).push(f);
+      const key = `${ville}|${(f.data.departement || [])[0]}`;
+      if (!byCity.has(key)) byCity.set(key, { ville, fiches: [] });
+      byCity.get(key).fiches.push(f);
     }
-    return [...byCity]
-      .filter(([ville, fiches]) => fiches.length >= (STATION_VILLES.includes(ville) ? STATION_MIN_FICHES : CITY_MIN_FICHES))
-      .map(([ville, fiches]) => {
-        const deptCounts = new Map();
-        for (const f of fiches) {
-          for (const d of f.data.departement || []) deptCounts.set(d, (deptCounts.get(d) || 0) + 1);
-        }
-        const deptId = [...deptCounts].sort((a, b) => b[1] - a[1])[0][0];
+    const kept = [...byCity.values()].filter(
+      ({ ville, fiches }) => fiches.length >= (STATION_VILLES.includes(ville) ? STATION_MIN_FICHES : CITY_MIN_FICHES)
+    );
+    return kept
+      .map(({ ville, fiches }) => {
+        const deptId = (fiches[0].data.departement || [])[0];
+        const dep = departements.find((d) => d.id === deptId);
+        // Deux homonymes ayant chacun leur page : le département départage les URL.
+        const homonyme = kept.filter((c) => c.ville === ville).length > 1;
         return {
           ville,
           aVille: aVille(ville),
           station: STATION_VILLES.includes(ville),
-          slug: slugify(ville) + "-avec-son-chien",
-          dep: departements.find((d) => d.id === deptId),
+          slug: slugify(ville) + (homonyme ? "-" + dep.slug : "") + "-avec-son-chien",
+          dep,
+          depId: deptId,
           fiches: partnersFirst(fiches.sort((a, b) => a.data.order - b.data.order)),
         };
       })
@@ -231,6 +237,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("pickCities", (cities, villes) =>
     villes.map((v) => (cities || []).find((c) => c.ville === v)).filter(Boolean)
   );
+
+  // Pages ville absentes d'une liste (volet « Autres villes » de l'accueil).
+  eleventyConfig.addFilter("omitCities", (cities, villes) => (cities || []).filter((c) => !villes.includes(c.ville)));
 
   // Pages ville × catégorie : retire la liste des communes quand elle se réduit à la ville elle-même.
   eleventyConfig.addFilter("dropVille", (str, ville) =>
