@@ -2,6 +2,35 @@
 
 Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurants, hébergements, balades, vétérinaires, toiletteurs, dogwash, dogsitters). Site statique Eleventy (11ty), 101 départements couverts (96 métropolitains + 5 DOM, couverture nationale complète), ~9300 fiches.
 
+## À reprendre (liste tenue à jour — dernière mise à jour 31/10/2026)
+
+Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand ils sont faits.
+
+**Lectures ciblées (Parallel Search nécessaire, quelques requêtes chacune)**
+- `veterinaire-veto-familiale-compiegne-60` : ajouter la garde Vet'Team (03 44 20 36 61) annoncée par le site de la clinique.
+- Relire les 10 blocs « L'essentiel » des Alpes (`src/_data/villesEssentiel.json` : Chamonix, Megève, Courchevel, Tignes, La Clusaz, Les Deux Alpes, Briançon, Embrun, Barcelonnette, Annecy), rédigés sur extraits ; lire les arrêtés Embrun AM 2021-179 et Barcelonnette 201/2020.
+- Le Club des Poilus (dogwash, Le Havre, 92 rue du Président-Wilson) : créer la fiche dès que l'ouverture est annoncée (Instagram/site).
+- Hôtel Saint-Marc (Ploërmel) : domaine officiel devenu spam, chercher un nouveau site ou une page officielle.
+- Écarts déjà signalés, encore ouverts : La Croix-Valmer (horaires office contradictoires), Bormes (plage du Gouron), Le Grau-du-Roi (zones chiens expérimentales), Crozon Morgat (arrêté 2026 introuvable), Capbreton et Sète (sources contradictoires), parc Sant Vicens (Perpignan), tarif chien à l'hôtel Le Lys (Cauterets, non publié).
+- Vitré à 15 fiches pile (page ville sans marge) : 1-2 fiches de plus.
+
+**Chantiers moyens**
+- ~35 villes à 10-11 fiches (vague 4 de pages ville : Saumur et Dinan faites ; restent Issoudun, Saint-Dizier, Soissons, Le Cheylard, Montargis, Nuits-Saint-Georges, Montluçon, Avallon, Bourgoin-Jallieu, Mende, Lons-le-Saunier, Argentan, Flers, Saint-Pierre, Montreuil, Chaumont, Nogent-le-Rotrou, Bressuire, Nanterre, Gien, Charleville-Mézières, Redon, Thionville, Vernon, Valençay, Alençon, Verdun…).
+- Nouvelles stations candidates (5-6 fiches aujourd'hui) : Mandelieu, Arzon, Belle-Île, Seignosse, Saint-Cyprien, Moustiers-Sainte-Marie, Mimizan, Douarnenez, Bidart, La Grande-Motte, Bourg-Saint-Maurice ; quasi absentes : Val d'Isère, Morzine, Font-Romeu, Le Crotoy, Wimereux, Houlgate.
+- Propriano : pas de bloc « L'essentiel » (aucune source officielle trouvée).
+
+**Après la mesure Search Console de mi-novembre**
+- K4 (50 vétérinaires, titres hébergements) : comparer CTR/positions ; si positif, étendre le modèle aux autres vétérinaires.
+- ~1 700 titres > 70 caractères et ~1 700 descriptions de 161-200 caractères : ne les reprendre que si la mesure montre un effet sur le CTR.
+- ~1 400 vétérinaires sans mention 24h/24 à repasser en rigueur maximale.
+
+**Suivis partenaires (l'utilisateur relance lui-même, pas de rappel programmé)**
+- Les Petits Loots (Angers) : réponse à l'offre partenaire attendue (fiche prête dans `propositions/les-petits-loots/`).
+- Bande de Truffes (Chambéry) : réponse attendue (3 fiches prêtes dans `propositions/bande-de-truffes/`).
+- CECS Mérignac : demande de lien envoyée par l'utilisateur ; s'il est ajouté, l'inscrire dans `ECHANGES-LIENS.md`.
+- Bimo : 2 articles encore attendus (rations du chien sportif, aliments du terroir à éviter).
+- SantéVet (affiliation) et Expedia Group : réponses attendues.
+
 ## Historique — campagnes SIRENE + enrichissement hébergements/plages-balades (octobre 2026, résolues)
 
 Deux chantiers nationaux, menés l'un après l'autre comme prévu (pas en parallèle) :
