@@ -4,6 +4,7 @@
     GPS_CACHE=cache.json python3 scripts/recaler-gps-2.py          # simulation
     GPS_CACHE=cache.json python3 scripts/recaler-gps-2.py --apply  # écrit lat/lng
     GPS_PLAN=plan.jsonl : écrit chaque décision (pour relecture)
+    GPS_MIN_ORDER=100116 : ne traite que les fiches dont l'order est au moins celui-ci
 
 Adresse prise dans « Adresse »/« Localisation », sinon dans le premier autre champ
 qui contient un numéro, un type de voie et un code postal. Balades, plages, lacs
@@ -64,6 +65,9 @@ def address(fm):
 def fiches():
     for f in sorted(glob.glob("src/fiches/*.njk")):
         fm = open(f).read().split("bodyHtml:", 1)[0]
+        o = re.search(r"^order:\s*(\d+)", fm, re.M)
+        if o and int(o.group(1)) < int(os.environ.get("GPS_MIN_ORDER", 0)):
+            continue
         lat = re.search(r"^lat:\s*([-\d.]+)$", fm, re.M)
         lng = re.search(r"^lng:\s*([-\d.]+)$", fm, re.M)
         cat = re.search(r'breadcrumbCatId: "([^"]+)"', fm)

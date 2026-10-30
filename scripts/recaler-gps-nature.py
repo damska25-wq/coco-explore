@@ -15,6 +15,9 @@ from concurrent.futures import ThreadPoolExecutor
 rows = []
 for f in sorted(glob.glob("src/fiches/*.njk")):
     fm = open(f).read().split("bodyHtml:", 1)[0]
+    o = re.search(r"^order:\s*(\d+)", fm, re.M)
+    if o and int(o.group(1)) < int(os.environ.get("GPS_MIN_ORDER", 0)):
+        continue
     cat = re.search(r'breadcrumbCatId: "([^"]+)"', fm)
     lat = re.search(r"^lat:\s*([-\d.]+)$", fm, re.M)
     lng = re.search(r"^lng:\s*([-\d.]+)$", fm, re.M)
