@@ -122,6 +122,13 @@ export default [
     introDep: "Coco Explore référence <strong>{n} stations de lavage pour chien {enNom}</strong> : {villes}. Bac surélevé, douchette, shampooing et souvent séchoir : de quoi rincer son chien après la plage ou une balade boueuse sans passer par la baignoire. Chaque fiche détaille l'adresse, les horaires et le tarif quand on a pu les vérifier.",
     linkDep: "Toutes les stations dogwash {enNom}",
     linkNat: "Toutes les stations dogwash en France",
+    // Questions fréquentes (pages nationale et départementales), d'après les fiches du site.
+    faq: [
+      { q: "Combien coûte un dogwash ?", a: "Les tarifs publiés relevés sur nos fiches vont d'environ 2 € le jeton à une quinzaine d'euros la séance ; beaucoup de stations facturent quelques euros par tranche de 5 à 10 minutes. Chaque fiche indique le tarif quand la station le publie." },
+      { q: "Faut-il réserver ?", a: "La plupart des cabines et des espaces de lavage en animalerie s'utilisent sans réservation, aux horaires d'ouverture ; quelques-uns fonctionnent sur rendez-vous. Quand la station l'annonce, la fiche le précise." },
+      { q: "Que faut-il apporter ?", a: "Le shampooing et le séchoir sont souvent fournis. Pense à une serviette, une laisse courte pour garder ton chien dans le bac, et de la monnaie ou une carte selon le moyen de paiement indiqué sur la fiche." },
+      { q: "Existe-t-il des dogwash ouverts 24h/24 ?", a: "Oui, certaines cabines autonomes et stations installées sur des aires de lavage auto sont accessibles jour et nuit ; les dogwash en animalerie suivent les horaires du magasin. La fiche de chaque station donne ses horaires." },
+    ],
   },
   {
     cat: "toiletteurs",

@@ -266,6 +266,29 @@ export default function (eleventyConfig) {
   };
   eleventyConfig.addCollection("cityPages", computeCityPages);
 
+  // Fiches dogwash, pour proposer la station la plus proche sur les fiches
+  // plages, lacs et balades (après la baignade ou la boue).
+  // FAQ des pages catégorie → entrées schema.org FAQPage.
+  eleventyConfig.addFilter("faqEntities", (faq) =>
+    (faq || []).map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: i.a } }))
+  );
+  eleventyConfig.addCollection("dogwashFiches", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob("src/fiches/*.njk")
+      .filter((f) => f.data.breadcrumbCatId === "dogwash" && Number.isFinite(Number(f.data.lat)) && Number.isFinite(Number(f.data.lng)))
+  );
+  // { fiche, km } de la fiche la plus proche d'un point, à moins de maxKm, ou null.
+  eleventyConfig.addFilter("nearestFiche", (fiches, lat, lng, maxKm = 30) => {
+    const la = Number(lat), ln = Number(lng);
+    if (!Number.isFinite(la) || !Number.isFinite(ln)) return null;
+    let best = null;
+    for (const f of fiches || []) {
+      const km = Math.hypot((Number(f.data.lat) - la) * 111, (Number(f.data.lng) - ln) * 111 * Math.cos((la * Math.PI) / 180));
+      if (km <= maxKm && (!best || km < best.km)) best = { fiche: f, km };
+    }
+    return best;
+  });
+
   // Pages ville choisies pour le bloc de l'accueil, dans l'ordre donné (villes sans page ignorées).
   eleventyConfig.addFilter("pickCities", (cities, villes) =>
     villes.map((v) => (cities || []).find((c) => c.ville === v)).filter(Boolean)

@@ -75,6 +75,15 @@ extraScripts: |
       <div><span class="label">Adresse</span><span class="value"><button type="button" class="copy-address-btn" id="copy-address" data-address="{{ (h1 + ', ' + lieu) | escape }}">Copier l'adresse</button> <span id="copy-address-status" class="copy-address-status"></span></span></div>
     </div>
     {%- endif %}
+    {%- if lang != "en" and breadcrumbCatId in ["plages", "lacs", "balades", "cote-azur"] %}
+    {%- set dw = collections.dogwashFiches | nearestFiche(lat, lng, 30) %}
+    {%- if dw %}
+    <div class="info-item">
+      <svg class="icon"><use href="#i-drop"/></svg>
+      <div><span class="label">Dogwash le plus proche</span><span class="value"><a href="/{{ dw.fiche.data.permalinkPath | cleanUrl }}">{{ dw.fiche.data.cardTitle or dw.fiche.data.h1 }}</a> {%- set dwName = dw.fiche.data.cardTitle or dw.fiche.data.h1 %} ({% if dw.fiche.data.cardTag not in dwName %}{{ dw.fiche.data.cardTag }}, {% endif %}{{ "moins de 1" if dw.km < 1 else (dw.km | round) }} km)</span></div>
+    </div>
+    {%- endif %}
+    {%- endif %}
     {%- if siteWeb %}
     <div class="info-item">
       <svg class="icon"><use href="#i-link"/></svg>

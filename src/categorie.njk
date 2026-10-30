@@ -58,6 +58,17 @@ extraHead: |
     {%- endfor %}
   </ul>
 </section>
+{%- if cp.faq %}
+<section class="wrap cat-page-intro">
+  <h2>Questions fréquentes</h2>
+  {%- for item in cp.faq %}
+  <h3>{{ item.q }}</h3>
+  <p>{{ item.a }}</p>
+  {%- endfor %}
+</section>
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": cp.faq | faqEntities} | dump | safe }}</script>
+{%- endif %}
+
 
 {%- for region in regions %}
 {%- set regionDepts = catDepts | whereEq("region", region.nom) %}
