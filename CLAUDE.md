@@ -15,7 +15,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - Vitré à 15 fiches pile (page ville sans marge) : 1-2 fiches de plus.
 
 **Chantiers moyens**
-- Dogwash : supprimer/reclasser Maxi Zoo Anglet et Toutounet (décision utilisateur) ; pistes Tom&Co/Animalis restantes (voir « Historique — dogwash »).
+- Dogwash : pistes Tom&Co/Animalis restantes (voir « Historique — dogwash »).
 - ~35 villes à 10-11 fiches (vague 4 de pages ville : Saumur et Dinan faites ; restent Issoudun, Saint-Dizier, Soissons, Le Cheylard, Montargis, Nuits-Saint-Georges, Montluçon, Avallon, Bourgoin-Jallieu, Mende, Lons-le-Saunier, Argentan, Flers, Saint-Pierre, Montreuil, Chaumont, Nogent-le-Rotrou, Bressuire, Nanterre, Gien, Charleville-Mézières, Redon, Thionville, Vernon, Valençay, Alençon, Verdun…).
 - Nouvelles stations candidates (5-6 fiches aujourd'hui) : Mandelieu, Arzon, Belle-Île, Seignosse, Saint-Cyprien, Moustiers-Sainte-Marie, Mimizan, Douarnenez, Bidart, La Grande-Motte, Bourg-Saint-Maurice ; quasi absentes : Val d'Isère, Morzine, Font-Romeu, Le Crotoy, Wimereux, Houlgate.
 - Propriano : pas de bloc « L'essentiel » (aucune source officielle trouvée).
@@ -39,7 +39,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - **Titres harmonisés** des 185 fiches existantes : « Dogwash <commune> : <enseigne>, lavage chien libre-service » (+ « 24h/24 » ou tarif seulement si la fiche l'affirme ; « à confirmer » ou « lavage sur rendez-vous » sinon). Modèle à garder pour les nouvelles fiches (section « Ajout — fiches dogwash » de `scratchpad/brief-villes-2.md`).
 - **12 fiches incertaines** : 9 confirmées et réécrites, 2 doutes gardés (Venarey-les-Laumes, Lavaur).
 - **39 nouvelles stations** (orders 102600-102718) : Tom&Co (19, liste officielle tomandco.com/fr-fr/dogwash), Jardiland (3), Zoomalia (17 ; Marmande et Idron écartées, libre-service non écrit). Départements nouvellement couverts : 08, 12, 94 notamment. Rapports `scratchpad/dogwash-N1/N2/N3-rapport.txt`.
-- **À trancher par l'utilisateur** : `dogwash-maxi-zoo-anglet` (la fiche dit que la page officielle ne liste aucun dogwash) et `dogwash-toutounet-bourg-saint-andeol` (salon de toilettage classique, libre-service non prouvé) — supprimer avec 301 ou reclasser en toiletteur ?
+- **Décision de l'utilisateur (31/10)** : fiches sans dogwash prouvé reclassées en toiletteur si la fiche est fournie, sinon supprimées. Toutounet (Bourg-Saint-Andéol) → `toiletteur-toutounet-bourg-saint-andeol` (avisSlug conservé, 301 depuis l'ancienne URL) ; Maxi Zoo Anglet (animalerie sans toilettage) supprimée, 301 vers `/dogwash-chien-pyrenees-atlantiques`.
 - **Restent sans dogwash** : 36, 61, 25, 71, 58, 70, 15, 03, 84, 05, 46, 52, 55, 88, 02 et les DOM. Pistes non faites : Tom&Co Hazebrouck, Denain, Flers-en-Escrebieux, Sin-le-Noble, Neuville-en-Ferrain, Coignières, Les Clayes-sous-Bois, Buchelay, Thouars, Plouzané, Challans, Puilboreau, Saint-Nicolas-de-Port ; Animalis Annemasse, Seclin, Creil-Saint-Maximin (libre-service vu dans des extraits) ; Zoomalia Villefranche-de-Lauragais (GPS). Cartes des réseaux de cabines (dogwash.fr, toutoumatique.fr) illisibles depuis l'environnement (JavaScript).
 
 ## Historique — campagnes SIRENE + enrichissement hébergements/plages-balades (octobre 2026, résolues)
