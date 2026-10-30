@@ -8,6 +8,19 @@
       }
     ]
   },
+  "aix-les-bains-avec-son-chien": {
+    "html": "<p>À Aix-les-Bains, Grand Lac indique que les chiens ne sont pas admis, même en laisse, pendant la saison estivale sur les plages de <strong>Mémard</strong> (Grand Port) et du <strong>Rowing</strong>, ni sur les autres plages surveillées du lac du Bourget ; la surveillance court du 27 juin au 30 août 2026. Hors de ces plages, le site de Grand Lac ne publie pas de zone canine : renseigne-toi auprès de la mairie ou de l'office de tourisme avant de poser ta serviette.</p><p>En ville, la mairie fournit gratuitement des sacs à déjections dans 40 distributeurs, et rappelle que ne pas ramasser peut valoir une amende. Pour dégourdir ses pattes sans baignade, pense au <a href=\"/fiche-balade-bois-vidal-aix-les-bains\">bois Vidal</a>, où l'office de tourisme dit les chiens bienvenus.</p>",
+    "sources": [
+      {
+        "label": "Grand Lac : les plages du lac du Bourget (animaux non autorisés en saison estivale)",
+        "url": "https://grand-lac.fr/au-quotidien/services-a-la-population/plages"
+      },
+      {
+        "label": "Mairie d'Aix-les-Bains : déchets et propreté (propreté canine)",
+        "url": "https://www.aixlesbains.fr/mon-quotidien/cadre-de-vie-et-environnement/dechets-et-proprete"
+      }
+    ]
+  },
   "ajaccio-avec-son-chien": {
     "html": "<p>À Ajaccio, la mairie rappelle que, par arrêté du maire, l'accès des plages est strictement interdit aux chiens (page publiée le 7 juin 2024 ; voir <a href=\"/fiche-plage-ricanto-ajaccio-2a\">le Ricanto</a> et <a href=\"/fiche-plage-capo-di-feno-ajaccio-2a\">Capo di Feno</a>). La mairie signale aussi des déjections canines sur les plages urbaines et rappelle que ramasser est obligatoire sur la voie publique et dans les jardins ; elle annonce 35 € d'amende.</p><p>Deux sites protégés de la commune, Vignola et Suartello, sont interdits à la divagation animale, y compris canine (arrêtés préfectoraux de juin et juillet 2024). À la <a href=\"/fiche-balade-pointe-parata-sanguinaires-ajaccio-2a\">Pointe de la Parata</a> (Grand Site de France), la charte du promeneur demande de tenir son chien en laisse.</p>",
     "sources": [
@@ -43,6 +56,31 @@
       {
         "label": "Ville d'Anglet : une plage autorisée aux chiens",
         "url": "https://www.anglet.fr/ma-ville/environnement/fiche-pratique/actualites/une-plage-autorisee-aux-chiens/"
+      }
+    ]
+  },
+  "annecy-avec-son-chien": {
+    "html": "<p>À Annecy, les plages publiques du lac (Albigny, Impérial, Marquisats) sont interdites aux chiens, même en laisse, selon la ville ; cette interdiction ne s'applique pas au Pâquier ni aux promenades du bord du lac, où la laisse reste de rigueur (<a href=\"/fiche-balade-rives-lac-paquier-annecy\">voir la fiche des rives</a>). L'office de tourisme ajoute que la réserve naturelle du Bout du Lac est strictement interdite aux chiens.</p><p>En ville, la laisse est obligatoire, 225 distributeurs de sacs sont installés et le caniparc de 1 700 m² du parc du Colovry permet de lâcher son chien (<a href=\"/fiche-activite-caniparc-colovry-annecy\">voir la fiche</a>). Le parc du Haras, lui, interdit les animaux même tenus en laisse (arrêté de mars 2026).</p>",
+    "sources": [
+      {
+        "label": "Ville d'Annecy : plages",
+        "url": "https://www.annecy.fr/plages"
+      },
+      {
+        "label": "Ville d'Annecy : vivre en ville avec les animaux",
+        "url": "https://www.annecy.fr/quotidien/environnement/vivre-en-ville-avec-les-animaux"
+      },
+      {
+        "label": "Office de tourisme du lac d'Annecy : que faire avec un chien",
+        "url": "https://www.lac-annecy.com/idees-de-sejour/que-faire-au-lac-d-annecy-avec-un-chien"
+      },
+      {
+        "label": "Ville d'Annecy : arrêté municipal sur les rives du lac (2024)",
+        "url": "https://www.annecy.fr/fileadmin/mediatheque_annecy/Mon_quotidien/Tranquilit%C3%A9_et_s%C3%A9curit%C3%A9/Arr%C3%AAt%C3%A9_municipal_rives_du_lac.pdf"
+      },
+      {
+        "label": "Ville d'Annecy : arrêté sur le parc du Haras (mars 2026)",
+        "url": "https://www.annecy.fr/api/fileadmin/mediatheque_annecy/Ma_ville/Grands_projets/CN_2026_564.pdf"
       }
     ]
   },
@@ -85,6 +123,27 @@
       }
     ]
   },
+  "bagneres-de-luchon-avec-son-chien": {
+    "html": "<p>À Luchon, l'office de tourisme des Pyrénées Haut-Garonnaises indique « animaux acceptés » à la station de Superbagnères, accessible par la <a href=\"/fiche-activite-telecabine-cremaillere-express-luchon\">télécabine Crémaillère Express</a> (ouverte en été de juin à début septembre en 2026). L'ascension à pied par la <a href=\"/fiche-balade-superbagneres-par-la-cremaillere-luchon\">Crémaillère</a> est classée très difficile (13 km, 1 200 m de dénivelé).</p><p>De juin à octobre, les troupeaux sont en estive dans les vallées d'Oueil, du Larboust et du Lys, avec des patous : l'office impose la laisse en zone d'estive, de contourner les troupeaux et de rester calme si un patou s'approche. Certains itinéraires, comme le port de Vénasque au départ de l'Hospice de France, signalent officiellement la présence de patous.</p>",
+    "sources": [
+      {
+        "label": "Pyrénées 31 : le patou veille, apprenons à respecter son rôle",
+        "url": "https://www.pyrenees31.com/le-patou-veille-apprenons-a-respecter-son-role"
+      },
+      {
+        "label": "Pyrénées 31 : fiche itinéraire 23, port de Vénasque (présence de patou)",
+        "url": "https://www.pyrenees31.com/api/itineraires/ITIMID031V50PPXX/pdf"
+      },
+      {
+        "label": "Haute-Garonne Tourisme : station de Luchon-Superbagnères (animaux acceptés)",
+        "url": "https://www.hautegaronnetourisme.com/activites/station-de-luchon-superbagneres"
+      },
+      {
+        "label": "Haute-Garonne Tourisme : télécabine Crémaillère Express (été 2026)",
+        "url": "https://www.hautegaronnetourisme.com/activites/telecabine-cremaillere-express"
+      }
+    ]
+  },
   "bandol-avec-son-chien": {
     "html": "<p>À Bandol, l'office de tourisme et la ville indiquent que les chiens sont interdits sur les plages, sauf sur la Dog Beach, une plage de galets réservée à ton compagnon, en contrebas du stade Deferrari ; voir la <a href=\"/fiche-bandol\">fiche de la Dog Beach</a>. Ces pages ne donnent ni règle de laisse ni dates.</p>",
     "sources": [
@@ -95,6 +154,27 @@
       {
         "label": "Ville de Bandol : les plages",
         "url": "https://www.bandol.fr/mairie/la-ville/les-plages"
+      }
+    ]
+  },
+  "barcelonnette-avec-son-chien": {
+    "html": "<p>À Barcelonnette, la mairie publie un arrêté (201/2020) qui interdit la divagation des animaux et les déjections canines sur la voie publique ; l'office de tourisme de l'Ubaye rappelle de tenir son chien en laisse et de ramasser ses déjections. Dans le cœur du Parc national du Mercantour, les chiens sont interdits même en laisse ou portés ; en zone d'adhésion il n'y a pas de règle particulière, mais la laisse reste demandée.</p><p>En été, les chiens sont acceptés sur les remontées de Pra Loup et du Sauze (gratuitement dans les cabines à Pra Loup), en laisse près des alpages où veillent des chiens de protection.</p>",
+    "sources": [
+      {
+        "label": "Mairie de Barcelonnette : arrêtés municipaux (animaux sur la voie publique)",
+        "url": "https://www.ville-barcelonnette.fr/les-arretes-municipaux.html"
+      },
+      {
+        "label": "Ubaye Tourisme : venir avec mon chien dans la vallée",
+        "url": "https://www.ubaye.com/votre-sejour/sejour-sur-mesure/je-viens-avec-mon-chien"
+      },
+      {
+        "label": "Pra Loup : questions fréquentes (chiens, remontées, Mercantour)",
+        "url": "https://www.praloup.com/sorganiser/questions-frequentes/"
+      },
+      {
+        "label": "Parc national du Mercantour : chiens interdits",
+        "url": "https://www.mercantour-parcnational.fr/fr/des-decouvertes/ou-sinformer/la-reglementation-cest-pas-si-complique/chiens-interdits"
       }
     ]
   },
@@ -160,6 +240,31 @@
       {
         "label": "Office de tourisme de Bormes : FAQ",
         "url": "https://www.bormeslesmimosas.com/bormes-pratique/foire-aux-questions/"
+      }
+    ]
+  },
+  "briancon-avec-son-chien": {
+    "html": "<p>À Briançon, les chiens sont interdits dans le cœur du Parc national des Écrins, même en laisse ou portés dans un sac ; en dehors du cœur, on peut généralement randonner avec son chien, en le tenant en laisse près des troupeaux et des chiens de protection (le Parc conseille de contourner le troupeau). L'office de tourisme cite la Croix de Toulouse et les forts de Briançon parmi les balades possibles (<a href=\"/fiche-balade-croix-de-toulouse-briancon\">Croix de Toulouse</a>, <a href=\"/fiche-balade-fort-des-salettes-briancon\">fort des Salettes</a>).</p><p>Serre Chevalier accepte les chiens en laisse dans les télécabines Prorel et Ratier et dans le téléphérique Serre Chevalier ; l'hiver, ils ne montent qu'en télécabine, pour rejoindre les restaurants d'altitude. Le parc de la Schappe est signalé « chiens interdits » par l'office de tourisme.</p>",
+    "sources": [
+      {
+        "label": "Parc national des Écrins : animaux domestiques",
+        "url": "https://www.ecrins-parcnational.fr/animaux-domestiques"
+      },
+      {
+        "label": "Parc national des Écrins : les chiens de compagnie en alpage",
+        "url": "https://www.ecrins-parcnational.fr/actualite/chiens-compagnie-alpage"
+      },
+      {
+        "label": "Office de tourisme des Hautes Vallées : randonner avec mon chien",
+        "url": "https://www.hautesvallees.com/randonner-avec-mon-chien-dans-les-hautes-vallees/"
+      },
+      {
+        "label": "Serre Chevalier : foire aux questions (chiens, remontées)",
+        "url": "https://www.serre-chevalier.com/fr/foire-aux-questions"
+      },
+      {
+        "label": "Provence-Alpes-Côte d'Azur Tourisme : base de loisirs du parc de la Schappe",
+        "url": "https://provence-alpes-cotedazur.com/que-faire/detente-et-loisirs/toutes-les-activites-detente-et-loisirs/base-de-loisirs-du-parc-de-la-schappe-briancon-fr-3025896/"
       }
     ]
   },
@@ -271,6 +376,23 @@
       }
     ]
   },
+  "cauterets-avec-son-chien": {
+    "html": "<p>À Cauterets, attention au Parc national des Pyrénées : dans son cœur, les chiens sont interdits même tenus en laisse, sauf quelques routes et sentiers listés par le Parc. Au Pont d'Espagne, l'office de tourisme les autorise en laisse du 1er mai au 31 octobre jusqu'au plateau du Clot et jusqu'au <a href=\"/fiche-pont-despagne-lac-de-gaube\">lac de Gaube</a> en passant par la télécabine et le télésiège ; le GR10 entre le Pont d'Espagne et le lac reste interdit aux chiens. Du 1er novembre au 30 avril, ils sont interdits sur tout le secteur, y compris sur la neige, les pistes nordiques et les itinéraires raquettes.</p><p>Hors Parc, en estive, l'office demande de garder ton chien en laisse et de contourner les troupeaux et les patous, comme au <a href=\"/fiche-balade-cambasque-pont-de-sahucs-cauterets\">plateau du Cambasque</a>.</p>",
+    "sources": [
+      {
+        "label": "Parc national des Pyrénées : animaux domestiques (chiens interdits en cœur de parc)",
+        "url": "https://www.pyrenees-parcnational.fr/fr/le-parc-national-des-pyrenees/la-reglementation/animaux-domestiques"
+      },
+      {
+        "label": "Office de tourisme de Cauterets : le Pont d'Espagne",
+        "url": "https://www.cauterets.com/nos-tops/le-pont-despagne"
+      },
+      {
+        "label": "Office de tourisme de Cauterets : Pont d'Espagne, été 2026",
+        "url": "https://www.cauterets.com/app/uploads/2026/04/pont-espagne-ete-2026-webpdf.pdf"
+      }
+    ]
+  },
   "cavalaire-sur-mer-avec-son-chien": {
     "html": "<p>À Cavalaire-sur-Mer, la brochure officielle 2026-2027 de la ville indique que les animaux sont interdits sur les plages de 6h à 21h, même tenus en laisse. Les horaires et les périodes diffèrent selon les documents (la <a href=\"/fiche-grande-plage-cavalaire\">fiche de la plage du Centre-Ville</a> reprend d'autres horaires) : fie-toi aux panneaux d'entrée. Dans la navette estivale gratuite, seuls les petits chiens de moins de 10 kg sont acceptés, en laisse sur les genoux ou dans un panier.</p>",
     "sources": [
@@ -281,6 +403,31 @@
       {
         "label": "Ville de Cavalaire-sur-Mer : navettes estivales 2026",
         "url": "https://www.cavalaire.fr/sites/default/files/atoms/files/depliantmobiliteete2026-cavalaire-web.pdf"
+      }
+    ]
+  },
+  "chamonix-mont-blanc-avec-son-chien": {
+    "html": "<p>À Chamonix, l'arrêté du maire sur la tenue en laisse interdit la divagation sur tout le territoire et impose la laisse en centre-ville, à Argentière et dans le secteur des Bois et Orthaz ; ramasser les déjections est obligatoire partout, avec des distributeurs de sacs répartis sur la commune. Les chiens sont interdits, même en laisse, dans les réserves naturelles voisines, dont celle des Aiguilles Rouges (voir <a href=\"/fiche-reserve-aiguilles-rouges-lac-blanc-chien\">la fiche Lac Blanc</a>), et la mairie signale des zones pastorales avec chiens de protection : laisse et détour du troupeau.</p><p>Côté remontées, la Compagnie du Mont-Blanc accepte les chiens en laisse au Brévent, à Planpraz, à la Flégère, à Charamillon et au train du Montenvers, mais pas à l'Aiguille du Midi (<a href=\"/fiche-activite-aiguille-du-midi-chamonix\">voir la fiche</a>) ni au télésiège de l'Index.</p>",
+    "sources": [
+      {
+        "label": "Mairie de Chamonix : arrêté sur la tenue en laisse des chiens",
+        "url": "https://www.chamonix.fr/wp-content/uploads/2025/05/arrete_chiens.pdf"
+      },
+      {
+        "label": "Mairie de Chamonix : rappel des règles pour les chiens (22 mai 2025)",
+        "url": "https://www.chamonix.fr/actualites/chiens-a-chamonix-mont-blanc-rappel-des-regles-pour-mieux-vivre-ensemble"
+      },
+      {
+        "label": "Office de tourisme de Chamonix : randonner avec son chien",
+        "url": "https://www.chamonix.com/infos-et-services/espace-presse/idees-de-randonees-avec-son-chien"
+      },
+      {
+        "label": "La Chamoniarde : randonner avec son chien (réserves, remontées)",
+        "url": "https://www.chamoniarde.com/vos-activites/rando-pedestre"
+      },
+      {
+        "label": "Légifrance : décret de classement de la réserve des Aiguilles rouges (2010)",
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021755667"
       }
     ]
   },
@@ -299,6 +446,27 @@
       {
         "label": "Ville de Concarneau : plages (animaux sur la plage)",
         "url": "https://www.concarneau.fr/mon-cadre-de-vie/environnement/plages/"
+      }
+    ]
+  },
+  "courchevel-avec-son-chien": {
+    "html": "<p>Courchevel touche le Parc national de la Vanoise, où les chiens sont interdits dans le cœur du parc, même en laisse ou portés (amende de 135 €) ; ils sont admis en laisse sur les sentiers qui longent la limite du cœur. Sur ce point, le site de la station écrit que les chiens doivent rester tenus en laisse dans le parc, ce qui contredit le Parc : c'est la règle du Parc qui s'applique.</p><p>Pour les remontées, la station précise que les chiens sont acceptés dans certaines télécabines, à l'appréciation du personnel. Pour une balade facile hors du cœur du parc, voir <a href=\"/fiche-lac-de-la-rosiere-courchevel\">le lac de la Rosière</a> ou <a href=\"/fiche-balade-boucle-de-mateigena-courchevel\">la boucle de Mateigena</a>.</p>",
+    "sources": [
+      {
+        "label": "Parc national de la Vanoise : venir avec mon chien",
+        "url": "https://www.vanoise-parcnational.fr/fr/des-decouvertes/sejourner-dans-le-parc/venir-avec-mon-chien"
+      },
+      {
+        "label": "Parc national de la Vanoise : FAQ sur l'introduction de chien (amende)",
+        "url": "https://votreparc.vanoise.com/cms_viewFile.php?idtf=201806&path=FAQ-chien.pdf"
+      },
+      {
+        "label": "Courchevel Tourisme : Parc national de la Vanoise depuis Courchevel",
+        "url": "https://courchevel.com/fr/courchevel-porte-d-entree-du-parc-national-de-la-vanoise"
+      },
+      {
+        "label": "Courchevel Tourisme : domaine skiable vallée de Méribel (chiens acceptés)",
+        "url": "https://courchevel.com/en/a/alpine-ski-area-meribel-valley-77773/"
       }
     ]
   },
@@ -334,6 +502,27 @@
       {
         "label": "Dinard Émeraude Tourisme : plages autorisées aux chiens sur la Côte d'Émeraude",
         "url": "https://www.dinardemeraudetourisme.com/experiences/en-amoureux/plages-autorisees-aux-chiens-sur-la-cote-demeraude"
+      }
+    ]
+  },
+  "embrun-avec-son-chien": {
+    "html": "<p>Au plan d'eau d'Embrun, le panneau officiel de la ville (2026) indique que les chiens sont interdits sur les plages et admis en laisse ailleurs ; un espace de liberté canine est aménagé autour du plan d'eau (<a href=\"/fiche-espace-liberte-canine-embrun\">voir la fiche</a>). La ville cite un arrêté permanent (2021-179) sur la présence des chiens en centre-ville et au plan d'eau, et rappelle que les chiens sont interdits dans les jardins publics.</p><p>Plus haut, le cœur du Parc national des Écrins est interdit aux chiens, même en laisse ou portés ; à Serre-Ponçon, le livret de l'office de tourisme place les portes du Parc dans le vallon du Rabioux et celui de Chargès, et signale des alpages fermés aux chiens.</p>",
+    "sources": [
+      {
+        "label": "Ville d'Embrun : réglementation du plan d'eau 2026",
+        "url": "https://www.ville-embrun.fr/sites/default/files/domaine/ville_embrun_fr/documents/2026-reglementation-plan-deau-dembrun__1772608.pdf"
+      },
+      {
+        "label": "Ville d'Embrun : compte rendu de visite de proximité, Chaussière (3 novembre 2025)",
+        "url": "https://www.ville-embrun.fr/sites/default/files/domaine/ville_embrun_fr/documents/20251103_cr_chaussiere__1479129.pdf"
+      },
+      {
+        "label": "Office de tourisme de Serre-Ponçon : livret Serre-Ponçon avec votre chien (2025)",
+        "url": "https://www.serreponcon.com/wp-content/uploads/2025/08/serre-poncon-avec-votre-chien-2025-compr.pdf"
+      },
+      {
+        "label": "Parc national des Écrins : animaux domestiques",
+        "url": "https://www.ecrins-parcnational.fr/animaux-domestiques"
       }
     ]
   },
@@ -398,6 +587,23 @@
       {
         "label": "Office de tourisme de Fréjus — parc canin Woof & Wow",
         "url": "https://www.frejus.fr/woof-wow-le-parc-canin-ouvre-ses-portes-a-frejus/"
+      }
+    ]
+  },
+  "gerardmer-avec-son-chien": {
+    "html": "<p>À Gérardmer, l'arrêté municipal du 6 août 1998 n'autorise la baignade que sur les plages aménagées, et l'office de tourisme précise que la baignade des chiens n'est tolérée qu'en dehors des zones de baignade. Le <a href=\"/fiche-balade-lac-gerardmer-88\">sentier balisé autour du lac</a> (5,5 à 6 km) accueille les chiens, avec la laisse conseillée. Attention : le plan du lac affiché par la mairie distingue des espaces naturels de baignade tolérés jusqu'à 25 mètres de la rive, une réserve naturelle (Kattendick) et une zone protégée interdite d'accès ; respecte les panneaux.</p><p>L'hiver, les animaux sont interdits sur les pistes de ski de fond du domaine nordique, comme le détaille la <a href=\"/fiche-activite-ski-raquette-chien-gerardmer-xonrupt-88\">fiche dédiée</a>. Des sacs à déjections sont disponibles à l'office de tourisme et à la mairie.</p>",
+    "sources": [
+      {
+        "label": "Mairie de Gérardmer : lac, navigation et baignade (arrêté du 6 août 1998)",
+        "url": "https://www.mairie-gerardmer.fr/tourisme/navigation-baignade"
+      },
+      {
+        "label": "Massif des Vosges / office de tourisme : le lac de Gérardmer",
+        "url": "https://www.massif-des-vosges.fr/sit/777000649-lac-de-gerardmer"
+      },
+      {
+        "label": "Office de tourisme de Gérardmer : guide printemps-été 2026 (sacs à déjections)",
+        "url": "https://gerardmer.net/telechargements/brochures/guide-activites-et-services-2026.pdf"
       }
     ]
   },
@@ -496,6 +702,23 @@
       }
     ]
   },
+  "l-isle-sur-la-sorgue-avec-son-chien": {
+    "html": "<p>À L'Isle-sur-la-Sorgue, la baignade est interdite toute l'année dans tous les bras de la Sorgue de la commune (arrêté municipal n° 2007-342 du 10 octobre 2007), ce qui vaut aussi pour ton chien : le plus sûr est de ne pas le laisser entrer dans l'eau. La mairie rappelle aussi que la Sorgue longe en grande partie des propriétés privées, où l'accès à la berge est interdit sans accord du propriétaire.</p><p>Pour une promenade au bord de l'eau, le <a href=\"/fiche-balade-partage-des-eaux-isle-sur-la-sorgue\">sentier du Partage des Eaux</a> (1,5 km depuis le centre-ville) est détaillé dans la fiche. Aucune règle de laisse n'est publiée par la commune pour le centre-ville ni pour le marché du dimanche : une laisse courte reste de bon sens.</p>",
+    "sources": [
+      {
+        "label": "Mairie de L'Isle-sur-la-Sorgue : la Sorgue, un joyau à préserver (arrêté 2007-342)",
+        "url": "https://www.islesurlasorgue.fr/rayonner/une-ville-plus-verte/la-sorgue-un-joyau-a-preserver"
+      },
+      {
+        "label": "Mairie de L'Isle-sur-la-Sorgue : la Sorgue (baignade interdite sur tous les bras)",
+        "url": "https://www.islesurlasorgue.fr/au-quotidien/cadre-de-vie/la-sorgue"
+      },
+      {
+        "label": "Luberon : Partage des Eaux de L'Isle-sur-la-Sorgue",
+        "url": "https://luberon.fr/page/partage-des-eaux-de-l-isle-sur-la-sorgue+184004.html"
+      }
+    ]
+  },
   "la-baule-escoublac-avec-son-chien": {
     "html": "<p>À La Baule, la présence des chiens (sauf chiens d'assistance) est interdite sur la plage du 15 juin au 15 septembre, d'après le bulletin municipal de l'été 2026 ; le reste de l'année, l'arrêté permanent impose seulement de ramasser les déjections et de tenir en laisse un chien qui ne revient pas au rappel (voir la <a href=\"/fiche-balade-grande-plage-baule-44\">fiche de la Grande Plage</a>). La ville a installé 76 distributeurs de sacs canins et demande de ramasser les déjections partout, y compris sur la plage et dans les parcs.</p><p>Quand la plage est fermée, le <a href=\"/fiche-balade-parc-des-dryades-la-baule-44\">parc des Dryades</a> se visite avec ton chien en laisse.</p>",
     "sources": [
@@ -531,6 +754,23 @@
       {
         "label": "Office de tourisme de La Ciotat : parc du Mugel",
         "url": "https://www.destinationlaciotat.com/explorer/le-parc-national-des-calanques/le-parc-du-mugel"
+      }
+    ]
+  },
+  "la-clusaz-avec-son-chien": {
+    "html": "<p>À La Clusaz, les chiens sont les bienvenus, tenus en laisse et sans comportement agressif, sur les quatre remontées ouvertes l'été (télécabines de Beauregard et de la Patinoire, télésièges du Crêt du Merle et du Crêt du Loup) ; voir <a href=\"/fiche-activite-remontees-laclusaz\">la fiche remontées</a>. L'office de tourisme ajoute qu'en hiver certaines remontées (télécabine de Beauregard, Transval) les acceptent aussi, ainsi que de nombreux itinéraires piétons et raquettes.</p><p>En alpage, garde ton chien en laisse dès qu'il y a un troupeau ; si un chien de protection (patou) s'approche, lâche la laisse plutôt que de tirer dessus, et ne prends pas un petit chien dans les bras (conseil de la station). Voir <a href=\"/fiche-lac-des-confins-la-clusaz-chien\">le lac des Confins</a>.</p>",
+    "sources": [
+      {
+        "label": "La Clusaz : autorisations d'accès aux remontées (chiens)",
+        "url": "https://forfait.laclusaz.com/fr/autorisations-acces"
+      },
+      {
+        "label": "La Clusaz : FAQ été (remontées, patous, randonnée avec chien)",
+        "url": "https://forfait.laclusaz.com/fr/faq-ete"
+      },
+      {
+        "label": "Office de tourisme de La Clusaz : cani-randonnée en hiver",
+        "url": "https://www.visiter-laclusaz.com/activite/74-cani-randonnees-cani-balade"
       }
     ]
   },
@@ -624,6 +864,27 @@
       }
     ]
   },
+  "les-deux-alpes-avec-son-chien": {
+    "html": "<p>Aux Deux Alpes, seul le cœur du Parc national des Écrins est interdit aux chiens, même tenus en laisse ou portés ; autour de la station, les randonnées hors du cœur sont possibles, et le Parc rappelle de tenir son chien en laisse près des troupeaux, car les chiens de protection y sont nombreux. L'office de tourisme cite Venosc et Mont-de-Lans pour se promener avec son chien.</p><p>Les chiens sont acceptés dans les remontées à cabines (Jandri, télémixtes du Diable, de Belle Étoile et de la Vallée Blanche, télécabine de Venosc), en laisse, avec parfois une muselière ; les pistes de ski leur sont interdites. Voir <a href=\"/fiche-activite-telecabines-deux-alpes\">la fiche remontées</a>.</p>",
+    "sources": [
+      {
+        "label": "Office de tourisme des 2 Alpes : vacances d'hiver avec son chien",
+        "url": "https://www.les2alpes.com/hiver/les-2-alpes-blog/vacances-dhiver-aux-2-alpes-avec-son-chien-une-destination-ideale"
+      },
+      {
+        "label": "Les 2 Alpes : des vacances avec votre animal",
+        "url": "https://reservation.les2alpes.com/des-vacances-avec-votre-animal.html"
+      },
+      {
+        "label": "Parc national des Écrins : animaux domestiques",
+        "url": "https://www.ecrins-parcnational.fr/animaux-domestiques"
+      },
+      {
+        "label": "Parc national des Écrins : les chiens de compagnie en alpage",
+        "url": "https://www.ecrins-parcnational.fr/actualite/chiens-compagnie-alpage"
+      }
+    ]
+  },
   "les-sables-d-olonne-avec-son-chien": {
     "html": "<p>Aux Sables-d'Olonne, l'arrêté municipal de 2025 interdit les chiens, même en laisse, sur la Grande Plage, les Présidents, Tanchet et le Bassin Dombret du 1er avril au 30 septembre (l'office de tourisme écrit parfois \"d'avril à octobre\" : en octobre, vérifie l'affichage). Les plages des Granges et de Sauveterre sont données par l'office comme accessibles en laisse toute l'année : <a href=\"/fiche-balade-grande-plage-sables-olonne-85\">Grande Plage</a> et <a href=\"/fiche-balade-plages-granges-sauveterre-sables-olonne-85\">Granges et Sauveterre</a>. L'office rappelle une contravention de 35 € pour une plage non respectée et 135 € pour des déjections non ramassées.</p><p>En ville, les chiens sont admis en laisse dans les parcs, jardins et squares cités par l'office (Aire des Vallées, parc de la Jarrie, square du Havre d'Olonne), mais pas au Parc des Roses, où ils sont interdits même en laisse.</p>",
     "sources": [
@@ -638,6 +899,44 @@
       {
         "label": "Office de tourisme : Parc des Roses",
         "url": "https://www.lessablesdolonne.fr/plages/parc-des-roses-pcupdl085v512yes"
+      }
+    ]
+  },
+  "lourdes-avec-son-chien": {
+    "html": "<p>À Lourdes, les animaux ne sont pas autorisés dans l'enceinte du Sanctuaire Notre-Dame, sauf les chiens d'assistance (rappel figurant dans le livret officiel de septembre 2026). Les chiens tenus en laisse sont en revanche acceptés au funiculaire du <a href=\"/fiche-balade-pic-du-jer-lourdes\">Pic du Jer</a> et sur la <a href=\"/fiche-balade-voie-verte-des-gaves-lourdes\">voie verte des Gaves</a>, selon l'office de tourisme, qui précise qu'ils sont admis en laisse sur les chemins de randonnée hors Parc national et réserves naturelles.</p><p>Au <a href=\"/fiche-lac-de-lourdes\">lac de Lourdes</a>, le tour du lac est ouvert aux chiens, mais pas la zone de l'embarcadère, même en laisse, et la laisse est obligatoire pendant l'éco-pâturage. Plus haut dans les Pyrénées, le cœur du Parc national interdit les chiens, même en laisse.</p>",
+    "sources": [
+      {
+        "label": "Sanctuaire Notre-Dame de Lourdes : livret de la visite du pape (animaux non autorisés)",
+        "url": "https://www.lourdes-infotourisme.com/app/uploads/lourdes/2026/09/LIVRET-Visite-du-Pape-Leon-XIV-au-Sanctuaire-Notre-Dame-de-Lourdes-26-et-27-septembre-2026.pdf"
+      },
+      {
+        "label": "Office de tourisme de Lourdes : funiculaire du Pic du Jer (chiens tenus en laisse)",
+        "url": "https://www.lourdes-infotourisme.com/offres/funiculaire-du-pic-du-jer-lourdes-fr-3152483"
+      },
+      {
+        "label": "Office de tourisme de Lourdes : où se promener avec son chien",
+        "url": "https://www.lourdes-infotourisme.com/sejourner/idees-sejours/decouvrir-lourdes-et-les-pyrenees-avec-son-chien/ou-se-promener-avec-son-chien-a-lourdes-et-dans-les-pyrenees/"
+      }
+    ]
+  },
+  "megeve-avec-son-chien": {
+    "html": "<p>À Megève, l'office de tourisme et les remontées du domaine acceptent les animaux : en été, la télécabine du Jaillet embarque les chiens gratuitement, à condition de les tenir en laisse sur les itinéraires piétons (<a href=\"/fiche-activite-remontees-megeve-chien\">voir la fiche</a>). Megève n'a pas de réserve naturelle propre, mais celles du Pays du Mont-Blanc voisin sont interdites aux chiens, même en laisse.</p><p>L'hiver, le guide du Pays du Mont-Blanc indique que les chiens sont interdits sur les pistes de ski, tolérés sur le côté en laisse, admis sur les itinéraires de raquettes dédiés et près des pistes de ski de fond en laisse (en ramassant les déjections), et que les remontées ouvertes aux chiens sont celles ouvertes aux piétons.</p>",
+    "sources": [
+      {
+        "label": "Les Portes du Mont-Blanc : télécabine du Jaillet, transport de chiens",
+        "url": "https://www.lesportesdumontblanc.fr/ete/telecabine-ete-megeve-jaillet"
+      },
+      {
+        "label": "Megève Tourisme : télécabine du Jaillet (animaux acceptés)",
+        "url": "https://www.megeve-tourisme.fr/equipements/telecabine-du-jaillet"
+      },
+      {
+        "label": "Pays du Mont-Blanc : sites accessibles aux chiens (2026)",
+        "url": "https://static.apidae-tourisme.com/filestore/objets-touristiques/documents/154/191/42778522/Sites+accessibles+chiens_web.pdf"
+      },
+      {
+        "label": "Pays du Mont-Blanc : brochure chiens (hiver, réserves)",
+        "url": "https://www.sallanchesmontblanc.com/sites/default/files/Brochure%20Chien_web.pdf"
       }
     ]
   },
@@ -758,6 +1057,23 @@
       }
     ]
   },
+  "rocamadour-avec-son-chien": {
+    "html": "<p>À Rocamadour, l'ascenseur incliné qui mène du parking du château aux sanctuaires accepte gratuitement les animaux, selon son site officiel : il épargne à ton chien les 216 marches du grand escalier. Il est annoncé fermé du 16 novembre 2026 au 7 février 2027 (travaux de grande inspection) ; vérifie sa réouverture avant de venir hors saison. Les détails sont dans la <a href=\"/fiche-activite-ascenseur-incline-rocamadour\">fiche de l'ascenseur</a>.</p><p>Le bureau d'accueil de l'office de tourisme de Rocamadour accueille lui-même les chiens (label Qualidog). Pour marcher, les <a href=\"/fiche-rocamadour-remparts-chien\">remparts</a> et le <a href=\"/fiche-circuit-ouysse-alzou-gouffre-cabouy\">circuit Ouysse-Alzou</a> sont déjà dans le guide. Aucune règle de laisse n'est publiée pour la cité : garde la tienne en main dans la rue piétonne.</p>",
+    "sources": [
+      {
+        "label": "Ascenseur incliné de Rocamadour : animaux acceptés gratuitement",
+        "url": "https://ascenseurincline-rocamadour.com/"
+      },
+      {
+        "label": "Sanctuaire de Rocamadour : infos pratiques (fermeture de l'ascenseur incliné)",
+        "url": "https://www.sanctuairerocamadour.com/venir/infos-pratiques"
+      },
+      {
+        "label": "PNR des Causses du Quercy : bureau d'accueil de Rocamadour (chiens accueillis)",
+        "url": "https://www.parc-causses-du-quercy.fr/fiche-tourisme/office-de-tourisme-vallee-de-la-dordogne-bureau-daccueil-de-rocamadour/"
+      }
+    ]
+  },
   "roscoff-avec-son-chien": {
     "html": "<p>À Roscoff comme sur tout le Finistère, les chiens sont autorisés sur les plages du 1er octobre au 31 mai ; du 1er juin au 30 septembre, un arrêté préfectoral les interdit, même en laisse. L'office de tourisme se contredit sur un point : sa page en français ne prévoit aucune exception, alors que sa page en anglais cite la <a href=\"/fiche-plage-aber-laber-roscoff-29\">plage de l'Aber (Laber)</a> comme seule plage ouverte aux chiens en été. Regarde les panneaux sur place avant de t'installer.</p><p>En randonnée, l'office recommande de maîtriser son chien ; du 15 avril au 30 juin, il doit être tenu en laisse dans les espaces boisés et forestiers, en dehors des allées.</p>",
     "sources": [
@@ -832,6 +1148,23 @@
       {
         "label": "Office de tourisme du Pays de Saint-Jean-de-Monts — Plages chiens autorisés 2026",
         "url": "https://paysdesaintjeandemonts.fr/app/uploads/2026/03/2026-fr-plages-chiens-autorises-compressed.pdf"
+      }
+    ]
+  },
+  "saint-lary-soulan-avec-son-chien": {
+    "html": "<p>À Saint-Lary-Soulan, la réserve naturelle nationale du Néouvielle interdit d'introduire des chiens (décret du 4 mars 1994, seuls les chiens de police, de sauvetage et de berger font exception) ; l'accès par Orédon est signalé « pas de chiens » par les gestionnaires. Si tu randonnes dans la vallée, vise donc des sentiers hors réserve, comme les <a href=\"/fiche-balade-granges-de-lias-soulan-saint-lary-soulan\">granges de Lias</a> ou l'<a href=\"/fiche-balade-hospice-du-rioumajou-saint-lary-soulan\">hospice du Rioumajou</a>.</p><p>Le téléphérique qui relie le village au Pla d'Adet admet les chiens, un par cabine et munis d'un harnais (été 2026, du 4 juillet au 30 août).</p>",
+    "sources": [
+      {
+        "label": "Légifrance : décret du 4 mars 1994 créant la réserve naturelle du Néouvielle",
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000730298"
+      },
+      {
+        "label": "Vallées d'Aure et du Louron : réglementation de la réserve du Néouvielle à Orédon",
+        "url": "https://www.pyrenees2vallees.com/sites/default/files/2025-04/Reglementation-Reserve-Neouvielle%20%281%29.pdf"
+      },
+      {
+        "label": "Altiservice : Pla d'Adet, téléphérique, chiens admis (été 2026)",
+        "url": "https://www.altiservice.com/saint-lary/activites/decouverte-et-activites-du-pla-dadet"
       }
     ]
   },
@@ -922,6 +1255,15 @@
       }
     ]
   },
+  "sarlat-la-caneda-avec-son-chien": {
+    "html": "<p>À Sarlat-la-Canéda, ni la mairie ni l'office de tourisme ne publient de règle de laisse pour le centre historique . L'office de tourisme classe parmi les balades accessibles aux chiens tenus en laisse la voie verte de la vallée de la Dordogne entre Sarlat et Cazoulès, détaillée dans la <a href=\"/fiche-voie-verte-sarlat-cazoules\">fiche voie verte</a>.</p><p>Pour se rafraîchir, l'office cite les accès à la Dordogne (notamment autour de Vitrac et de La Roque-Gageac) et le plan d'eau de Groléjac, hors baignade surveillée. Plusieurs jardins et châteaux voisins admettent les chiens en laisse dans leurs espaces extérieurs : vérifie les conditions de chacun avant de venir.</p>",
+    "sources": [
+      {
+        "label": "Office de tourisme de Sarlat : que faire avec son chien en Périgord Noir",
+        "url": "https://www.sarlat-tourisme.com/je-decouvre-sarlat-et-le-perigord/que-faire-avec-son-chien-en-perigord-noir"
+      }
+    ]
+  },
   "sarzeau-avec-son-chien": {
     "html": "<p>À Sarzeau, la mairie indique que du 15 juin au 15 septembre l'accès des animaux domestiques, et notamment des chiens, est interdit sur l'ensemble des plages de la commune. En dehors de cette période, ils sont admis à condition d'être tenus en laisse, et leurs excréments doivent impérativement être ramassés (<a href=\"/fiche-plages-sarzeau-56\">notre fiche</a>).</p><p>La commune explique cette règle par la nidification d'espèces vulnérables sur le sable au printemps : reste sur les sentiers et accès balisés et ne laisse pas ton chien courir en haut de plage ou dans les dunes.</p>",
     "sources": [
@@ -970,6 +1312,27 @@
       }
     ]
   },
+  "tignes-avec-son-chien": {
+    "html": "<p>À Tignes, la laisse est obligatoire au cœur de la station (village, tour du lac) ; en pleine nature, hors zones protégées, elle n'est pas obligatoire mais fortement conseillée à cause des troupeaux. Les chiens sont interdits dans le Parc national de la Vanoise et dans la réserve de Tignes-Champagny, même en laisse ou portés ; ils sont admis en laisse dans la réserve de la Grande Sassière. Voir aussi <a href=\"/fiche-lac-de-tignes\">le lac de Tignes</a>.</p><p>Les sources de la station divergent sur les remontées d'été : le magazine dit la télécabine de la Tovière autorisée en laisse (fermée tout l'été 2026) et le funiculaire plus ouvert aux chiens, la brochure 2026 l'autorise en laisse jusqu'à la terrasse d'arrivée, et la page des remontées écrit que les animaux ne sont admis sur aucune. Voir <a href=\"/fiche-activite-telecabine-toviere-funiculaire-tignes\">la fiche remontées</a>.</p>",
+    "sources": [
+      {
+        "label": "Tignes.net : FAQ tout sur les toutous",
+        "url": "https://www.tignes.net/magazine/faq-tout-sur-les-toutous"
+      },
+      {
+        "label": "Tignes.net : remontées mécaniques",
+        "url": "https://www.tignes.net/ski/domaine-skiable/les-remontees-mecaniques"
+      },
+      {
+        "label": "Tignes : brochure balades et randonnées été 2026",
+        "url": "https://public.tignes.net/TIGNES.NET/BROCHURES/RANDONNEE_AUX_SOMMETS.pdf"
+      },
+      {
+        "label": "Parc national de la Vanoise : venir avec mon chien (réserves)",
+        "url": "https://www.vanoise-parcnational.fr/fr/des-decouvertes/sejourner-dans-le-parc/venir-avec-mon-chien"
+      }
+    ]
+  },
   "trouville-sur-mer-avec-son-chien": {
     "html": "<p>À Trouville-sur-Mer, la <a href=\"/fiche-plages-trouville-sur-mer-14\">plage</a> est autorisée aux chiens toute l'année, avant 10h et après 19h : dans ces horaires, un chien lâché doit rester sous le contrôle de son maître. En laisse, ils peuvent aussi arpenter la promenade Savignac (les Planches) à toute heure, mais il est interdit de les laisser souiller les aires de jeux et les bacs à sable des enfants.</p><p>L'arrêté municipal n° 2018-59 rend le ramassage des déjections obligatoire sur la voie publique, dans les jardins, les espaces canins aménagés et sur la plage lorsqu'elle est autorisée. L'office de tourisme propose en plus une gamelle d'eau aux visiteurs à quatre pattes (le « toutou bar »).</p>",
     "sources": [
@@ -984,6 +1347,23 @@
       {
         "label": "Ville de Trouville-sur-Mer : arrêté n° 2018-59 sur la circulation des chiens",
         "url": "https://canitourismenormandie.com/wp-content/uploads/2024/05/Arrete-plage-Trouville.pdf"
+      }
+    ]
+  },
+  "vallon-pont-d-arc-avec-son-chien": {
+    "html": "<p>À Vallon-Pont-d'Arc, les chiens sont interdits sur les plages amont et aval du <a href=\"/fiche-plage-pont-arc-vallon\">Pont d'Arc</a> du 15 juin au 15 septembre, de 9h à 20h ; l'office de tourisme conseille de te baigner avec ton chien à l'écart des plages surveillées. Dans la réserve naturelle des gorges de l'Ardèche, ils sont admis uniquement tenus en laisse (y compris sur le sentier balisé Châmes-Sauze) et ne sont pas admis dans les canoës, comme le détaille la <a href=\"/fiche-activite-gorges-ardeche-reserve\">fiche de la réserve</a>.</p><p>Hors réserve, l'office indique que le canoë avec un chien est possible entre Vogüé et Balazuc, entre Vallon et Châmes et entre Sampzon et Châmes. La navette gratuite vers le Pont d'Arc tolère les chiens tenus en laisse.</p>",
+    "sources": [
+      {
+        "label": "Office de tourisme Gorges de l'Ardèche Pont d'Arc : foire aux questions (plages, canoë)",
+        "url": "https://www.gorges-ardeche-pontdarc.fr/foire-aux-questions"
+      },
+      {
+        "label": "Syndicat de gestion des gorges de l'Ardèche : réglementation dans la réserve",
+        "url": "https://www.gorgesdelardeche.fr/pratique/reglementation-dans-les-gorges/"
+      },
+      {
+        "label": "Communauté de communes des Gorges de l'Ardèche : navette du Pont d'Arc (chiens tenus en laisse)",
+        "url": "https://www.cc-gorgesardeche.fr/navette-parkings-pont-darc"
       }
     ]
   },
