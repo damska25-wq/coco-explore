@@ -34,15 +34,26 @@ def clean(q):
     return " ".join(q.split())
 
 
+# Cache des réponses (hors dépôt) : relancer le script reprend sans refaire les requêtes.
+CACHE_PATH = os.environ.get("GPS_CACHE", "/tmp/recaler-gps-cache.json")
+CACHE = json.load(open(CACHE_PATH)) if os.path.exists(CACHE_PATH) else {}
+
+
 def geocode(q):
+    if q in CACHE:
+        return CACHE[q]
     url = "https://api-adresse.data.gouv.fr/search/?" + urllib.parse.urlencode({"q": q, "limit": 1})
-    for attempt in range(4):
+    # La connexion depuis l'environnement cloud est parfois coupée : on relance.
+    for attempt in range(12):
         try:
             with urllib.request.urlopen(url, timeout=20) as r:
                 feats = json.load(r)["features"]
-                return feats[0] if feats else None
+                CACHE[q] = feats[0] if feats else None
+                if len(CACHE) % 50 == 0:
+                    json.dump(CACHE, open(CACHE_PATH, "w"))
+                return CACHE[q]
         except Exception:
-            time.sleep(2 ** attempt)
+            time.sleep(min(0.5 * (attempt + 1), 3))
     return None
 
 
@@ -85,4 +96,5 @@ for f in sorted(glob.glob("src/fiches/*.njk")):
                 t = re.sub(r"^lng:\s*[-\d.]+$", f"lng: {round(nlng, 5)}", t, count=1, flags=re.M)
                 open(path, "w").write(t)
 
+json.dump(CACHE, open(CACHE_PATH, "w"))
 print(("Appliqué : " if APPLY else "Simulation : ") + ", ".join(f"{k} {v}" for k, v in stats.items()))
