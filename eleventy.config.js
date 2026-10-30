@@ -277,6 +277,22 @@ export default function (eleventyConfig) {
       .getFilteredByGlob("src/fiches/*.njk")
       .filter((f) => f.data.breadcrumbCatId === "dogwash" && Number.isFinite(Number(f.data.lat)) && Number.isFinite(Number(f.data.lng)))
   );
+  // Vétérinaires et gardes, pour les encadrés « le plus proche » des fiches lieux.
+  eleventyConfig.addCollection("vetFiches", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob("src/fiches/*.njk")
+      .filter((f) => f.data.breadcrumbCatId === "veterinaires" && Number.isFinite(Number(f.data.lat)) && Number.isFinite(Number(f.data.lng)))
+  );
+  eleventyConfig.addCollection("vet24Fiches", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob("src/fiches/*.njk")
+      .filter((f) => f.data.breadcrumbCatId === "veterinaires" && vetBadge(f.data.infoItems) && Number.isFinite(Number(f.data.lat)) && Number.isFinite(Number(f.data.lng)))
+  );
+  eleventyConfig.addCollection("gardeFiches", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob("src/fiches/*.njk")
+      .filter((f) => f.data.breadcrumbCatId === "dogsitters" && Number.isFinite(Number(f.data.lat)) && Number.isFinite(Number(f.data.lng)))
+  );
   // { fiche, km } de la fiche la plus proche d'un point, à moins de maxKm, ou null.
   eleventyConfig.addFilter("nearestFiche", (fiches, lat, lng, maxKm = 30) => {
     const la = Number(lat), ln = Number(lng);

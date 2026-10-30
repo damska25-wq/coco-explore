@@ -165,6 +165,12 @@ export default [
     introNat: "Un week-end sans lui, une hospitalisation, un voyage où il ne peut pas suivre : il faut parfois confier son chien. Coco Explore référence <strong>{total} adresses de garde</strong> dans {nbDeps} départements (pensions canines, dogsitters, garderies de jour), classées ci-dessous par région puis par département.",
     howTitle: "Avant de confier son chien",
     howHtml: "Vaccins à jour, identification, conditions pour les chiens catégorisés, visite des installations, sorties et promenades : les règles changent d'une pension à l'autre. Chaque fiche précise ce que nous avons pu vérifier, et signale ce qui n'a pas été trouvé. Pense à réserver tôt pour les vacances scolaires.",
+    faq: [
+      { q: "Combien coûte une garde ou une pension pour chien ?", a: "Sur les tarifs publiés relevés sur nos fiches, la moitié se situe sous 18 € par jour ou par nuit, et 9 sur 10 sous 32 € ; les écarts dépendent de la taille du chien, de la formule (pension, garde à domicile, visites) et de la saison. Chaque fiche indique le tarif quand il est publié." },
+      { q: "Quels documents faut-il prévoir ?", a: "La plupart des pensions demandent un carnet de vaccination à jour et un chien identifié (puce ou tatouage) ; certaines exigent aussi le vaccin contre la toux du chenil ou refusent les chiens de 1re et 2e catégorie. Les conditions publiées par chaque établissement sont reprises sur sa fiche." },
+      { q: "Pension, famille d'accueil ou garde à domicile : que choisir ?", a: "La pension accueille ton chien dans ses installations ; la garde en famille d'accueil se fait chez le gardien ; le pet-sitter vient chez toi pour des visites ou des promenades. Le type de garde est précisé en tête de chaque fiche." },
+      { q: "Quand réserver ?", a: "Les places partent vite pendant les vacances scolaires et les ponts : réserve le plus tôt possible, et prévois si besoin une visite des lieux ou une première journée d'essai quand l'établissement la propose." },
+    ],
     titleDep: "Garde et pension pour chien {enNom} : {n} adresses",
     descDep: "{n} adresses pour faire garder son chien {enNom} ({villes}) : pensions canines, dogsitters et garderies.",
     h1Dep: "Garde de chien et pension canine {enNom}",

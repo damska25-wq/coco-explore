@@ -75,6 +75,36 @@ extraScripts: |
       <div><span class="label">Adresse</span><span class="value"><button type="button" class="copy-address-btn" id="copy-address" data-address="{{ (h1 + ', ' + lieu) | escape }}">Copier l'adresse</button> <span id="copy-address-status" class="copy-address-status"></span></span></div>
     </div>
     {%- endif %}
+    {%- if lang != "en" and breadcrumbCatId in ["plages", "lacs", "balades", "cote-azur", "hebergements", "activites"] %}
+    {%- set vt = collections.vetFiches | nearestFiche(lat, lng, 30) %}
+    {%- if vt %}
+    {%- set vtName = vt.fiche.data.cardTitle or vt.fiche.data.h1 %}
+    <div class="info-item">
+      <svg class="icon"><use href="#i-vet"/></svg>
+      <div><span class="label">Vétérinaire le plus proche</span><span class="value"><a href="/{{ vt.fiche.data.permalinkPath | cleanUrl }}">{{ vtName }}</a> ({% if vt.fiche.data.cardTag not in vtName %}{{ vt.fiche.data.cardTag }}, {% endif %}{{ "moins de 1" if vt.km < 1 else (vt.km | round) }} km)</span></div>
+    </div>
+    {%- if not (vt.fiche.data.infoItems | vetBadge) %}
+    {%- set v24 = collections.vet24Fiches | nearestFiche(lat, lng, 60) %}
+    {%- if v24 %}
+    {%- set v24Name = v24.fiche.data.cardTitle or v24.fiche.data.h1 %}
+    <div class="info-item">
+      <svg class="icon"><use href="#i-alert"/></svg>
+      <div><span class="label">Urgences 24h/24 les plus proches</span><span class="value"><a href="/{{ v24.fiche.data.permalinkPath | cleanUrl }}">{{ v24Name }}</a> ({% if v24.fiche.data.cardTag not in v24Name %}{{ v24.fiche.data.cardTag }}, {% endif %}{{ v24.km | round }} km)</span></div>
+    </div>
+    {%- endif %}
+    {%- endif %}
+    {%- endif %}
+    {%- endif %}
+    {%- if lang != "en" and breadcrumbCatId == "hebergements" %}
+    {%- set gd = collections.gardeFiches | nearestFiche(lat, lng, 25) %}
+    {%- if gd %}
+    {%- set gdName = gd.fiche.data.cardTitle or gd.fiche.data.h1 %}
+    <div class="info-item">
+      <svg class="icon"><use href="#i-house"/></svg>
+      <div><span class="label">Garde de chien la plus proche</span><span class="value"><a href="/{{ gd.fiche.data.permalinkPath | cleanUrl }}">{{ gdName }}</a> ({% if gd.fiche.data.cardTag not in gdName %}{{ gd.fiche.data.cardTag }}, {% endif %}{{ "moins de 1" if gd.km < 1 else (gd.km | round) }} km)</span></div>
+    </div>
+    {%- endif %}
+    {%- endif %}
     {%- if lang != "en" and breadcrumbCatId in ["plages", "lacs", "balades", "cote-azur"] %}
     {%- set dw = collections.dogwashFiches | nearestFiche(lat, lng, 30) %}
     {%- if dw %}
