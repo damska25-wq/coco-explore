@@ -7,9 +7,8 @@ Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurant
 Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand ils sont faits.
 
 **Lectures ciblées (Parallel Search nécessaire, quelques requêtes chacune)**
-- `veterinaire-veto-familiale-compiegne-60` : ajouter la garde Vet'Team (03 44 20 36 61) annoncée par le site de la clinique.
 - Relire les 10 blocs « L'essentiel » des Alpes (`src/_data/villesEssentiel.json` : Chamonix, Megève, Courchevel, Tignes, La Clusaz, Les Deux Alpes, Briançon, Embrun, Barcelonnette, Annecy), rédigés sur extraits ; lire les arrêtés Embrun AM 2021-179 et Barcelonnette 201/2020.
-- Le Club des Poilus (dogwash, Le Havre, 92 rue du Président-Wilson) : créer la fiche dès que l'ouverture est annoncée (Instagram/site).
+- Le Club des Poilus (dogwash, Le Havre) : ouverture non annoncée au 31/10 ; adresse à confirmer (92 rue du Président-Wilson ou 14 rue Georges-Braque selon un revendeur).
 - Hôtel Saint-Marc (Ploërmel) : domaine officiel devenu spam, chercher un nouveau site ou une page officielle.
 - Écarts déjà signalés, encore ouverts : La Croix-Valmer (horaires office contradictoires), Bormes (plage du Gouron), Le Grau-du-Roi (zones chiens expérimentales), Crozon Morgat (arrêté 2026 introuvable), Capbreton et Sète (sources contradictoires), parc Sant Vicens (Perpignan), tarif chien à l'hôtel Le Lys (Cauterets, non publié).
 - Vitré à 15 fiches pile (page ville sans marge) : 1-2 fiches de plus.
@@ -44,6 +43,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - **Maillage guides et fiches anglaises (31/10)** : encadré « À lire aussi » en bas des fiches FR et bloc « Guides utiles » sur les pages catégorie (nationales et départementales), d'après `src/_data/guidesByCat.js` (catégorie → guides) ; encadrés « le plus proche » (vétérinaire, urgences 24h/24, garde, dogwash) aussi sur les fiches EN, libellés anglais, liens vers les fiches FR ; suffixe « — Coco Explore » retiré de 76 titres EN (titres courts de lieux complétés par « with your dog »).
 - **31/10 (fin de journée)** : page `/guides` organisée par thèmes (Transports et formalités, Règles et sécurité, Alimentation en voyage = série Bimo) ; libellés du bandeau traduits sur les fiches EN (Getting there, Address, Share, Spotted a mistake?, Official website…) ; JSON-LD BreadcrumbList sur les guides et ItemList sur `/guides` ; encadré « En cas de besoin » sur les 198 pages ville (urgences 24h/24 ≤ 60 km, vétérinaire ≤ 30 km, dogwash ≤ 30 km depuis le centre de la ville, champs `lat0`/`lng0` de `computeCityPages`).
 - **Recherche et visibilité des guides (31/10)** : la recherche de l'accueil (`search.js`) inclut les 198 pages ville et les guides (`window.COCO_PAGES` dans `map-data.njk`, 3 résultats max en tête) ; bloc « Les derniers guides » (3 plus récents par `updated`) sur l'accueil et en tête de `/nouveautes`.
+- **Derniers petits chantiers (31/10)** : encadré « En cas d'urgence vétérinaire » en tête des 101 pages département (gardes 24h/24 vérifiées du département, sinon la plus proche ≤ 150 km du centre, filtres `whereDept`/`deptCenter`) ; page 404 avec la recherche du site (pages ville + guides) et liens vers guides, catégories et 8 plus grandes villes (liens de recherche désormais absolus) ; `veterinaire-veto-familiale-compiegne-60` complétée (garde partagée Vet'Team, site officiel). **Le Club des Poilus (Le Havre)** : toujours aucune annonce d'ouverture ; un revendeur (tadazhi.com) le situe 14 rue Georges-Braque, pas 92 rue du Président-Wilson : adresse à confirmer avant de créer la fiche.
 
 ## Historique — dogwash (31/10/2026, mis en ligne)
 
