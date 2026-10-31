@@ -27,7 +27,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - ~1 400 vétérinaires sans mention 24h/24 à repasser en rigueur maximale.
 
 **Suivis partenaires (l'utilisateur relance lui-même, pas de rappel programmé)**
-- Les Petits Loots (Angers) : réponse à l'offre partenaire attendue (fiche prête dans `propositions/les-petits-loots/`).
+- Les Petits Loots (Angers) : relance envoyée par l'utilisateur le 31/10 (avantages partenaire mis en avant, fiche gratuite en repli). Sans réponse vers le 7/11 : revérifier la fiche prête (`propositions/les-petits-loots/`) sur leurs sources et la publier gratuitement, sans badge.
 - Bande de Truffes (Chambéry) : réponse attendue (3 fiches prêtes dans `propositions/bande-de-truffes/`).
 - CECS Mérignac : demande de lien envoyée par l'utilisateur ; s'il est ajouté, l'inscrire dans `ECHANGES-LIENS.md`.
 - Bimo : série de 3 articles terminée (camping, terroir, chien sportif publiés) ; rien d'attendu.
