@@ -58,6 +58,12 @@ extraHead: |
     {%- endfor %}
   </ul>
 </section>
+{%- if guidesByCat[cp.cat] %}
+<section class="wrap fiche-guides callout">
+  <p><strong>Guides utiles :</strong>
+  {%- for g in guidesByCat[cp.cat] %} <a href="/{{ g[0] }}">{{ g[1] }}</a>{{ " ·" if not loop.last }}{% endfor %}</p>
+</section>
+{%- endif %}
 {%- if cp.faq %}
 <section class="wrap cat-page-intro">
   <h2>Questions fréquentes</h2>

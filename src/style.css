@@ -651,6 +651,8 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .avis-invite { margin: 28px auto; }
 .avis-invite p { margin: 0; }
 .avis-invite a { font-weight: 600; }
+.fiche-guides { margin: 28px auto; }
+.fiche-guides p { margin: 0; }
 
 .sidebar-card { background: var(--surface); border: 1px solid rgba(var(--ink),0.1); border-radius: 6px; padding: 22px; margin-bottom: 20px; }
 .sidebar-card h3 { font-size: 1.05rem; color: var(--heading); margin-bottom: 12px; }
