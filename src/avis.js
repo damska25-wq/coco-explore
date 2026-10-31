@@ -14,7 +14,7 @@
       copyBtn.addEventListener("click", function () {
         var text = copyBtn.getAttribute("data-address") || "";
         function showCopied() {
-          copyStatus.textContent = "Copié !";
+          copyStatus.textContent = copyBtn.getAttribute("data-copied") || "Copié !";
           setTimeout(function () { copyStatus.textContent = ""; }, 2500);
         }
         if (navigator.clipboard && navigator.clipboard.writeText) {

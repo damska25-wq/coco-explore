@@ -5,6 +5,9 @@ title: "Guides pratiques pour voyager avec son chien"
 description: "Train, avion, ferry, voyage à l'étranger, règles des plages, dangers de saison : les guides pratiques de Coco Explore pour partir avec son chien, vérifiés sur les sources officielles."
 layout: base.njk
 ---
+{%- set guideItems = [] %}
+{%- for g in collections.guides %}{% set guideItems = (guideItems.push({ "@type": "ListItem", "position": loop.index, "name": g.data.h1, "url": "https://cocoexplore.com/" + (g.data.permalinkPath | cleanUrl) }), guideItems) %}{% endfor %}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@type": "ItemList", "name": "Guides pratiques pour voyager avec son chien", "itemListElement": guideItems } | dump | safe }}</script>
 <section class="wrap guide-page">
   <span class="tag">Guides</span>
   <h1>Guides pratiques pour voyager avec son chien</h1>

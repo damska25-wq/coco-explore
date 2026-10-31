@@ -260,6 +260,8 @@ export default function (eleventyConfig) {
           depId: deptId,
           fiches: partnersFirst(fiches.sort((a, b) => a.data.order - b.data.order)),
           nearby,
+          lat0,
+          lng0,
         };
       })
       .sort((a, b) => a.ville.localeCompare(b.ville, "fr"));

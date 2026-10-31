@@ -17,6 +17,17 @@ layout: base.njk
   "mainEntityOfPage": "https://cocoexplore.com/" + (permalinkPath | cleanUrl)
 } | dump | safe }}
 </script>
+<script type="application/ld+json">
+{{ {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Coco Explore", "item": "https://cocoexplore.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://cocoexplore.com/guides" },
+    { "@type": "ListItem", "position": 3, "name": h1, "item": "https://cocoexplore.com/" + (permalinkPath | cleanUrl) }
+  ]
+} | dump | safe }}
+</script>
 <article class="wrap guide-page">
   <div class="cat-page-crumb"><a href="/">Coco Explore</a> / <a href="/guides">Guides</a> / {{ h1 | safe }}</div>
   <span class="tag">{{ kicker | safe }}</span>

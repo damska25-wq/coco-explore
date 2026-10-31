@@ -36,6 +36,18 @@ extraHead: |
   {{ essentiel.html | safe }}
   <p class="ville-sources">Sources : {% for s in essentiel.sources %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
   {%- endif %}
+  {%- set v24 = collections.vet24Fiches | nearestFiche(city.lat0, city.lng0, 60) %}
+  {%- set vt = collections.vetFiches | nearestFiche(city.lat0, city.lng0, 30) %}
+  {%- set dw = collections.dogwashFiches | nearestFiche(city.lat0, city.lng0, 30) %}
+  {%- if v24 or vt or dw %}
+  <h2>En cas de besoin {{ city.aVille }}</h2>
+  <ul class="ville-besoin">
+    {%- if v24 %}{% set n = v24.fiche.data.cardTitle or v24.fiche.data.h1 %}<li><strong>Urgences vétérinaires 24h/24 :</strong> <a href="/{{ v24.fiche.data.permalinkPath | cleanUrl }}">{{ n }}</a> ({% if v24.fiche.data.cardTag not in n %}{{ v24.fiche.data.cardTag }}, {% endif %}{{ "moins de 1" if v24.km < 1 else (v24.km | round) }} km du centre)</li>{% endif %}
+    {%- if vt and (not v24 or vt.fiche.url != v24.fiche.url) %}{% set n = vt.fiche.data.cardTitle or vt.fiche.data.h1 %}<li><strong>Vétérinaire le plus proche :</strong> <a href="/{{ vt.fiche.data.permalinkPath | cleanUrl }}">{{ n }}</a> ({% if vt.fiche.data.cardTag not in n %}{{ vt.fiche.data.cardTag }}, {% endif %}{{ "moins de 1" if vt.km < 1 else (vt.km | round) }} km du centre)</li>{% endif %}
+    {%- if dw %}{% set n = dw.fiche.data.cardTitle or dw.fiche.data.h1 %}<li><strong>Dogwash le plus proche :</strong> <a href="/{{ dw.fiche.data.permalinkPath | cleanUrl }}">{{ n }}</a> ({% if dw.fiche.data.cardTag not in n %}{{ dw.fiche.data.cardTag }}, {% endif %}{{ "moins de 1" if dw.km < 1 else (dw.km | round) }} km du centre)</li>{% endif %}
+  </ul>
+  <p class="ville-sources">La nuit ou le week-end, appelle d'abord la clinique la plus proche : son répondeur indique le vétérinaire de garde. Plus de conseils dans notre <a href="/guide-urgence-veterinaire-chien">guide urgence vétérinaire</a>.</p>
+  {%- endif %}
 </section>
 
 {%- for section in sections %}

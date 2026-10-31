@@ -37,7 +37,7 @@ extraScripts: |
 <section class="fiche-hero">
   {%- set heroSrcset = heroImage | imgSrcset %}
   <img class="fiche-hero-img" src="{{ heroImage | optimizeImg | safe }}"{% if heroSrcset %} srcset="{{ heroSrcset | safe }}" sizes="100vw"{% endif %} alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager" fetchpriority="high"{% if heroImagePosition %} style="object-position: {{ heroImagePosition | safe }};"{% endif %}>
-  <button type="button" class="fav-toggle" id="fav-toggle" data-slug="{{ permalinkPath | cleanUrl }}" aria-pressed="false" aria-label="Ajouter aux favoris">
+  <button type="button" class="fav-toggle" id="fav-toggle" data-slug="{{ permalinkPath | cleanUrl }}" aria-pressed="false" aria-label="{{ "Add to favourites" if lang == "en" else "Ajouter aux favoris" }}">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.6 6.1.6-4.6 4.2 1.3 6.1L12 17l-5.4 3 1.3-6.1-4.6-4.2 6.1-.6z"/></svg>
   </button>
   <div class="wrap">
@@ -68,11 +68,11 @@ extraScripts: |
     {%- if lat and lng %}
     <div class="info-item">
       <svg class="icon"><use href="#i-pin"/></svg>
-      <div><span class="label">S'y rendre</span><span class="value"><a href="https://www.google.com/maps/dir/?api=1&amp;destination={{ lat }},{{ lng }}" target="_blank" rel="noopener">Itinéraire ↗</a></span></div>
+      <div><span class="label">{{ "Getting there" if lang == "en" else "S'y rendre" }}</span><span class="value"><a href="https://www.google.com/maps/dir/?api=1&amp;destination={{ lat }},{{ lng }}" target="_blank" rel="noopener">{{ "Directions ↗" if lang == "en" else "Itinéraire ↗" }}</a></span></div>
     </div>
     <div class="info-item">
       <svg class="icon"><use href="#i-pin"/></svg>
-      <div><span class="label">Adresse</span><span class="value"><button type="button" class="copy-address-btn" id="copy-address" data-address="{{ (h1 + ', ' + lieu) | escape }}">Copier l'adresse</button> <span id="copy-address-status" class="copy-address-status"></span></span></div>
+      <div><span class="label">{{ "Address" if lang == "en" else "Adresse" }}</span><span class="value"><button type="button" class="copy-address-btn" id="copy-address" data-copied="{{ "Copied!" if lang == "en" else "Copié !" }}" data-address="{{ (h1 + ', ' + lieu) | escape }}">{{ "Copy address" if lang == "en" else "Copier l'adresse" }}</button> <span id="copy-address-status" class="copy-address-status"></span></span></div>
     </div>
     {%- endif %}
     {%- if breadcrumbCatId in ["plages", "lacs", "balades", "cote-azur", "hebergements", "activites"] %}
@@ -117,19 +117,19 @@ extraScripts: |
     {%- if siteWeb %}
     <div class="info-item">
       <svg class="icon"><use href="#i-link"/></svg>
-      <div><span class="label">Site officiel</span><span class="value"><a href="{{ siteWeb | safe }}" target="_blank" rel="noopener {{ 'sponsored' if partenaire else 'nofollow' }}">Voir le site ↗</a></span></div>
+      <div><span class="label">{{ "Official website" if lang == "en" else "Site officiel" }}</span><span class="value"><a href="{{ siteWeb | safe }}" target="_blank" rel="noopener {{ 'sponsored' if partenaire else 'nofollow' }}">{{ "Visit website ↗" if lang == "en" else "Voir le site ↗" }}</a></span></div>
     </div>
     {%- endif %}
-    {%- set shareText = "Regarde cette adresse où aller avec son chien trouvée sur Coco Explore : " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + (permalinkPath | cleanUrl) %}
+    {%- set shareText = ("Look at this dog-friendly place I found on Coco Explore: " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + (permalinkPath | cleanUrl)) if lang == "en" else "Regarde cette adresse où aller avec son chien trouvée sur Coco Explore : " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + (permalinkPath | cleanUrl) %}
     <div class="info-item">
       <svg class="icon"><use href="#i-whatsapp"/></svg>
-      <div><span class="label">Partager</span><span class="value"><a href="https://wa.me/?text={{ shareText | urlencode }}" target="_blank" rel="noopener">Sur WhatsApp</a></span></div>
+      <div><span class="label">{{ "Share" if lang == "en" else "Partager" }}</span><span class="value"><a href="https://wa.me/?text={{ shareText | urlencode }}" target="_blank" rel="noopener">{{ "On WhatsApp" if lang == "en" else "Sur WhatsApp" }}</a></span></div>
     </div>
     {%- set reportSubject = "Signalement — " + h1 %}
     {%- set reportBody = "Bonjour,\n\nJe souhaite signaler une information à corriger sur la fiche « " + h1 + " » :\nhttps://cocoexplore.com/" + (permalinkPath | cleanUrl) + "\n\nCe qui ne correspond plus :\n[décris ici]\n\nMerci !" %}
     <div class="info-item">
       <svg class="icon"><use href="#i-alert"/></svg>
-      <div><span class="label">Une erreur ?</span><span class="value"><a href="mailto:contact@cocoexplore.com?subject={{ reportSubject | urlencode }}&amp;body={{ reportBody | urlencode }}">Nous la signaler</a></span></div>
+      <div><span class="label">{{ "Spotted a mistake?" if lang == "en" else "Une erreur ?" }}</span><span class="value"><a href="mailto:contact@cocoexplore.com?subject={{ reportSubject | urlencode }}&amp;body={{ reportBody | urlencode }}">{{ "Let us know" if lang == "en" else "Nous la signaler" }}</a></span></div>
     </div>
   </div>
 </section>
