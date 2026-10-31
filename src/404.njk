@@ -22,6 +22,8 @@ extraHead: |
     }
     .error-page .btn-home:hover { background: var(--terracotta-deep); }
     .error-suggestions { margin-top: 48px; text-align: left; }
+    .error-search { max-width: 520px; margin: 26px auto 0; text-align: left; position: relative; }
+    .error-links { font-size: 0.95rem; }
     .error-suggestions h2 { text-align: center; font-size: 1.2rem; color: var(--heading); }
   </style>
 ---
@@ -35,13 +37,22 @@ extraHead: |
   </svg>
   <h1>Coco n'a pas trouvé cette page</h1>
   <p>Le lien est peut-être ancien, ou l'adresse comporte une erreur. Pas de panique, il reste plein d'autres adresses où aller avec son chien à découvrir.</p>
+  <div class="search-wrap error-search">
+    <form class="search-bar" id="site-search-form" autocomplete="off">
+      <input type="text" id="site-search-input" placeholder="Une ville, une plage, un guide…">
+      <button type="submit" aria-label="Rechercher"><svg width="16" height="16"><use href="#i-search"/></svg></button>
+    </form>
+    <div class="search-results" id="site-search-results" hidden></div>
+  </div>
   <a href="/" class="btn-home">Retour à l'accueil</a>
+  <p class="error-links">Ou va directement aux <a href="/guides">guides pratiques</a>, aux <a href="/plage-chien">plages</a>, aux <a href="/hebergement-chien">hébergements</a>, aux <a href="/veterinaire-chien">vétérinaires et urgences</a>, ou à une grande ville :
+  {%- for c in collections.cityPages | sort(true, false, "fiches.length") %}{% if loop.index <= 8 %} <a href="/{{ c.slug }}">{{ c.ville }}</a>{{ " ·" if loop.index < 8 }}{% endif %}{% endfor %}.</p>
 
   <div class="error-suggestions">
     <h2>Quelques idées pour repartir</h2>
     <div class="fiche-grid">
       {%- for fiche in collections.fiches | latest(3) %}
-      <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card" data-avis="{{ fiche.data.avisSlug }}">
+      <a href="/{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card" data-avis="{{ fiche.data.avisSlug }}">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
         <div class="thumb"><img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy"></div>
         <div class="body">
@@ -54,3 +65,5 @@ extraHead: |
     </div>
   </div>
 </section>
+<script src="/map-data.js" defer></script>
+<script src="/search.js" defer></script>

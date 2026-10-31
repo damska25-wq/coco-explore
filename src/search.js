@@ -46,7 +46,7 @@
     }
     matches.forEach(function (l) {
       var a = document.createElement("a");
-      a.href = l.slug;
+      a.href = "/" + l.slug;
       var title = document.createElement("span");
       title.className = "sr-title";
       title.textContent = l.titre;

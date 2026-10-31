@@ -274,6 +274,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("faqEntities", (faq) =>
     (faq || []).map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: String(i.a).replace(/<[^>]+>/g, "") } }))
   );
+  // Centre approximatif d'un département (médiane des coordonnées de ses fiches).
+  eleventyConfig.addFilter("deptCenter", (fiches, depId) => {
+    const inDep = (fiches || []).filter((f) => (f.data.departement || []).includes(depId));
+    const med = (xs) => { const v = xs.filter(Number.isFinite).sort((a, b) => a - b); return v[Math.floor(v.length / 2)]; };
+    return { lat: med(inDep.map((f) => Number(f.data.lat))), lng: med(inDep.map((f) => Number(f.data.lng))) };
+  });
   eleventyConfig.addCollection("dogwashFiches", (collectionApi) =>
     collectionApi
       .getFilteredByGlob("src/fiches/*.njk")
@@ -416,6 +422,9 @@ export default function (eleventyConfig) {
 
   // Éléments d'une liste dont la propriété `key` vaut `value` (Nunjucks n'a
   // pas d'équivalent natif : selectattr ne teste que la véracité).
+  eleventyConfig.addFilter("whereDept", (fiches, depId) =>
+    (fiches || []).filter((f) => (f.data.departement || []).includes(depId))
+  );
   eleventyConfig.addFilter("whereEq", (list, key, value) =>
     (list || []).filter((item) => item[key] === value)
   );

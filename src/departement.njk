@@ -24,6 +24,18 @@ eleventyComputed:
       {%- if depCities.length %}
       <p style="margin-top: 8px; font-size: 0.95rem;">Par ville :{% for c in depCities %} <a href="/{{ c.slug }}">{{ c.ville }}</a>{% if not loop.last %} ·{% endif %}{% endfor %}</p>
       {%- endif %}
+      {%- set depV24 = collections.vet24Fiches | whereDept(dep.id) %}
+      <div class="dept-urgence callout">
+        <strong>En cas d'urgence vétérinaire :</strong>
+        {%- if depV24.length %}
+        {%- for v in depV24 %} <a href="/{{ v.data.permalinkPath | cleanUrl }}">{{ v.data.cardTitle or v.data.h1 }}</a>{% if v.data.cardTag not in (v.data.cardTitle or v.data.h1) %} ({{ v.data.cardTag }}){% endif %}{{ " ·" if not loop.last }}{% endfor %} : garde 24h/24 vérifiée sur le site de la clinique.
+        {%- else %}
+        {%- set c = collections.fiches | deptCenter(dep.id) %}
+        {%- set nv = collections.vet24Fiches | nearestFiche(c.lat, c.lng, 150) %}
+        {%- if nv %} aucune garde 24h/24 vérifiée dans le département ; la plus proche est <a href="/{{ nv.fiche.data.permalinkPath | cleanUrl }}">{{ nv.fiche.data.cardTitle or nv.fiche.data.h1 }}</a> ({{ nv.fiche.data.cardTag }}, environ {{ nv.km | round }} km du centre du département).{% else %} aucune garde 24h/24 vérifiée à proximité ; appelle la clinique la plus proche, son répondeur indique le vétérinaire de garde.{% endif %}
+        {%- endif %}
+        <a href="/guide-urgence-veterinaire-chien">Que faire la nuit ou le week-end</a>
+      </div>
     </div>
   </div>
 </section>

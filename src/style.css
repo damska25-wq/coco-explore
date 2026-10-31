@@ -1044,3 +1044,6 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .share-box h2 { color: var(--blanc); font-size: 1.35rem; margin: 0 0 6px; }
 .share-box p { color: rgba(255,253,248,0.82); margin: 0; max-width: 52ch; }
 .share-box .share-site { margin-top: 0; }
+
+.dept-urgence { margin-top: 14px; font-size: 0.95rem; }
+.dept-urgence a:last-child { display: inline-block; margin-left: 4px; font-weight: 600; }
