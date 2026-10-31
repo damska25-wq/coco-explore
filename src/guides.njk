@@ -9,13 +9,29 @@ layout: base.njk
   <span class="tag">Guides</span>
   <h1>Guides pratiques pour voyager avec son chien</h1>
   <p class="guide-lead">Les fiches de Coco Explore disent <em>où</em> aller avec son chien. Ces guides répondent au <em>comment</em> : transports, papiers, règles et dangers de saison. Chaque guide s'appuie sur les sources officielles, citées en bas de page, et indique sa date de mise à jour.</p>
-  <div class="guide-list">
-    {%- for g in collections.guides %}
-    <a href="/{{ g.data.permalinkPath | cleanUrl }}" class="guide-card">
-      <span class="tag">{{ g.data.kicker | safe }}</span>
-      <h2>{{ g.data.h1 | safe }}</h2>
-      <p>{{ g.data.description | safe }}</p>
-    </a>
-    {%- endfor %}
-  </div>
+  {%- set themes = [
+    { id: "transports", titre: "Transports et formalités", kickers: ["Transport", "Formalités"], intro: "Train, avion, ferry et voyage à l'étranger : les règles et les papiers pour partir avec son chien." },
+    { id: "regles", titre: "Règles et sécurité", kickers: ["Plages", "Balades", "Santé", "Bien-être", "Saison"], intro: "Plages, randonnée, urgences vétérinaires et dangers de saison : ce qu'il faut savoir sur place." },
+    { id: "alimentation", titre: "Alimentation en voyage", kickers: ["Alimentation"], intro: "Une série proposée par <a href=\"https://bimo.dog\" target=\"_blank\" rel=\"sponsored noopener\">Bimo</a>, application de recettes maison pour chiens, relue par Coco Explore sur les sources vétérinaires et officielles citées dans chaque article." }
+  ] %}
+  <nav class="guide-themes-nav">
+    {%- for t in themes %}<a href="#{{ t.id }}">{{ t.titre }}</a>{% endfor %}
+  </nav>
+  {%- for t in themes %}
+  <section class="guide-theme" id="{{ t.id }}">
+    <h2>{{ t.titre }}</h2>
+    <p class="guide-theme-intro">{{ t.intro | safe }}</p>
+    <div class="guide-list">
+      {%- for g in collections.guides %}
+      {%- if (g.data.kicker | string).split(" ·")[0] in t.kickers %}
+      <a href="/{{ g.data.permalinkPath | cleanUrl }}" class="guide-card">
+        <span class="tag">{{ g.data.kicker | safe }}</span>
+        <h3>{{ g.data.h1 | safe }}</h3>
+        <p>{{ g.data.description | safe }}</p>
+      </a>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endfor %}
 </section>
