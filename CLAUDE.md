@@ -30,7 +30,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - Les Petits Loots (Angers) : relance envoyée par l'utilisateur le 31/10 (avantages partenaire mis en avant, fiche gratuite en repli). Sans réponse vers le 7/11 : revérifier la fiche prête (`propositions/les-petits-loots/`) sur leurs sources et la publier gratuitement, sans badge.
 - Bande de Truffes (Chambéry) : relance envoyée par l'utilisateur le 31/10 (rien publié sans son accord ; 3 fiches prêtes dans `propositions/bande-de-truffes/`).
 - CECS Mérignac : demande de lien envoyée par l'utilisateur ; s'il est ajouté, l'inscrire dans `ECHANGES-LIENS.md`.
-- Bimo : série de 3 articles terminée (camping, terroir, chien sportif publiés) ; rien d'attendu.
+- Bimo : série continuée à **1 article par mois** (voir `ECHANGES-LIENS.md`) ; prochain attendu vers le 15-20/11 (fêtes de fin d'année). Les articles Bimo vont dans la section « Alimentation en voyage » de `/guides` (kicker « Alimentation · Article proposé par Bimo »).
 - SantéVet (affiliation) et Expedia Group : réponses attendues.
 
 ## Historique — encadrés « le plus proche » et garde de chien (31/10/2026, mis en ligne)
