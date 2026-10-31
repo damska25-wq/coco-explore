@@ -105,7 +105,7 @@ extraScripts: |
     </div>
     {%- endif %}
     {%- endif %}
-    {%- if lang != "en" and breadcrumbCatId in ["plages", "lacs", "balades", "cote-azur"] %}
+    {%- if lang != "en" and breadcrumbCatId in ["plages", "lacs", "balades", "cote-azur", "hebergements"] %}
     {%- set dw = collections.dogwashFiches | nearestFiche(lat, lng, 30) %}
     {%- if dw %}
     <div class="info-item">

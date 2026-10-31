@@ -39,6 +39,12 @@ export default [
     introDep: "Coco Explore référence <strong>{n} plages {enNom}</strong> avec, pour chacune, la règle pour les chiens : toute l'année ou hors saison seulement, horaires, laisse, zones réservées, ou interdiction quand c'est le cas. Communes : {villes}. Pense à vérifier sur place, les arrêtés peuvent changer d'une saison à l'autre.",
     linkDep: "Toutes les plages pour chiens {enNom}",
     linkNat: "Toutes les plages où les chiens sont acceptés",
+    faq: [
+      { q: "Qui fixe les règles pour les chiens sur la plage ?", a: "Le maire, par arrêté municipal. Les règles changent donc d'une commune à l'autre, et parfois d'une plage à sa voisine : interdiction l'été seulement, créneaux tôt le matin et le soir, zone réservée aux chiens, laisse obligatoire, ou plus rarement interdiction toute l'année. Chaque fiche reprend l'arrêté ou la source officielle quand on l'a trouvé." },
+      { q: "Quand les chiens sont-ils interdits sur les plages ?", a: "Le plus souvent pendant la saison estivale, avec des dates qui varient selon les communes (par exemple du 1er juillet au 31 août à Larmor-Plage en 2026, du 15 avril au 15 septembre à Arzon). Les dates peuvent changer d'une année à l'autre : fie-toi au panneau à l'entrée de la plage." },
+      { q: "Que risque-t-on si on ne respecte pas l'arrêté ?", a: "Ne pas respecter un arrêté de police est une contravention de 2e classe, dont l'amende peut aller jusqu'à 150 € (articles R610-5 et 131-13 du Code pénal). Les déjections laissées sur place sont souvent sanctionnées à part. Tous les détails sont dans notre <a href=\"/guide-regles-plages-chien\">guide des règles des plages</a>." },
+      { q: "Mon chien peut-il être sans laisse sur une plage autorisée ?", a: "Seulement si l'arrêté ne l'interdit pas. Même sans laisse, ton chien ne doit pas divaguer : il est considéré en divagation hors de portée de voix ou à plus de 100 mètres de toi (article L211-23 du Code rural). Garde-le près de toi et sous ton contrôle." },
+    ],
   },
   {
     cat: "hebergements",
@@ -60,6 +66,12 @@ export default [
     introDep: "Coco Explore référence <strong>{n} hébergements qui acceptent les chiens {enNom}</strong> : {villes}. Chaque fiche précise les conditions d'accueil quand elles sont connues : supplément, nombre et taille des chiens, chien seul en chambre ou non. Confirme toujours au moment de réserver, les conditions peuvent évoluer.",
     linkDep: "Tous les hébergements qui acceptent les chiens {enNom}",
     linkNat: "Tous les hébergements qui acceptent les chiens en France",
+    faq: [
+      { q: "Combien coûte le supplément pour un chien ?", a: "Sur nos fiches où l'hébergement publie un tarif par nuit, la moitié demande 8 € ou moins, et 9 sur 10 au plus 20 € ; plus de 150 établissements annoncent même accueillir les chiens sans supplément. Chaque fiche indique le tarif quand il est publié, sinon demande-le en réservant." },
+      { q: "Les chiens de catégorie sont-ils acceptés ?", a: "Pas partout : une partie des hébergements refusent les chiens de 1re catégorie, parfois aussi ceux de 2e catégorie, ou limitent la taille et le nombre de chiens. Quand l'établissement l'écrit, la fiche le précise ; sinon, pose la question avant de réserver." },
+      { q: "Puis-je laisser mon chien seul dans la chambre ?", a: "La règle dépend de chaque établissement : certains l'interdisent, d'autres l'acceptent sous conditions. Nos fiches reprennent la règle quand l'hébergement la publie ; dans le doute, demande à la réception." },
+      { q: "Faut-il prévenir de la venue de son chien ?", a: "Oui, toujours : signale ton chien au moment de réserver, même quand l'hébergement est indiqué comme acceptant les animaux. Certains n'ont que quelques chambres ou emplacements ouverts aux chiens." },
+    ],
   },
   {
     cat: "restaurants",
@@ -80,6 +92,11 @@ export default [
     introDep: "Coco Explore référence <strong>{n} restaurants où aller avec son chien {enNom}</strong> : {villes}. Chaque fiche précise où le chien est accepté (salle ou terrasse), les petites attentions comme la gamelle d'eau, et ce qui reste à confirmer. Mieux vaut appeler avant de venir, surtout avec un grand chien.",
     linkDep: "Tous les restaurants qui acceptent les chiens {enNom}",
     linkNat: "Tous les restaurants qui acceptent les chiens en France",
+    faq: [
+      { q: "Les chiens sont-ils acceptés en salle ou seulement en terrasse ?", a: "Chaque restaurant fixe sa propre règle : certains accueillent les chiens en salle, d'autres seulement en terrasse. Quand l'établissement le précise, la fiche le dit ; sinon, demande en arrivant ou en réservant." },
+      { q: "Faut-il prévenir le restaurant ?", a: "C'est préférable, surtout avec un grand chien ou aux heures d'affluence : le restaurant pourra te placer à une table où ton chien sera à l'aise sans gêner le passage." },
+      { q: "Le restaurant donne-t-il de l'eau aux chiens ?", a: "Beaucoup d'établissements qui accueillent les chiens proposent une gamelle d'eau ; quand la fiche le mentionne, c'est que le restaurant l'annonce. Prévois quand même une gamelle pliable si tu n'en es pas sûr." },
+    ],
   },
   {
     cat: "veterinaires",
@@ -101,6 +118,11 @@ export default [
     introDep: "Coco Explore référence <strong>{n} cliniques et cabinets vétérinaires {enNom}</strong> : {villes}. Ceux dont la garde 24h/24 a été vérifiée apparaissent en premier, avec le badge « Urgences 24h/24 ». La nuit ou le week-end, appelle un vétérinaire du secteur : son répondeur indique le plus souvent le vétérinaire de garde. Tous les bons réflexes sont dans notre guide <a href=\"/guide-urgence-veterinaire-chien\">urgence vétérinaire : trouver un vétérinaire de garde</a>.",
     linkDep: "Tous les vétérinaires {enNom}",
     linkNat: "Tous les vétérinaires et urgences en France",
+    faq: [
+      { q: "Comment trouver un vétérinaire de garde la nuit ou le week-end ?", a: "Appelle le cabinet vétérinaire le plus proche, même fermé : son répondeur indique le plus souvent le vétérinaire de garde du secteur. Les vétérinaires sont tenus d'organiser une permanence des soins (article R242-61 du Code rural). Sur nos pages, les cliniques dont la garde 24h/24 a été vérifiée apparaissent en premier, avec le badge « Urgences 24h/24 »." },
+      { q: "Le 3115 fonctionne-t-il partout ?", a: "Non. Le 3115 est un numéro gratuit et joignable 24h/24, mais c'est un service privé (réseau Emergence) dont la couverture reste partielle : certains départements ne sont couverts par aucun de ses services. Si c'est le cas, reviens au répondeur du vétérinaire le plus proche." },
+      { q: "Une consultation de garde coûte-t-elle plus cher ?", a: "Oui : la nuit, le dimanche et les jours fériés, la consultation est majorée, et les examens ou soins s'ajoutent. À titre d'exemple, un service de garde lyonnais affiche 120 € avant minuit et 140 € après. Demande le tarif au téléphone si tu le peux. Plus de conseils dans notre <a href=\"/guide-urgence-veterinaire-chien\">guide urgence vétérinaire</a>." },
+    ],
   },
   {
     cat: "dogwash",
@@ -204,6 +226,11 @@ export default [
     introDep: "Coco Explore référence <strong>{n} clubs canins et éducateurs {enNom}</strong> : {villes}. Chaque fiche détaille l'adresse, les cours proposés et les coordonnées quand on a pu les vérifier.",
     linkDep: "Tous les clubs et éducateurs canins {enNom}",
     linkNat: "Tous les clubs et éducateurs canins en France",
+    faq: [
+      { q: "Club canin ou éducateur indépendant : quelle différence ?", a: "Les clubs canins sont le plus souvent des associations qui proposent des séances collectives, souvent le week-end, avec une adhésion annuelle. Les éducateurs et comportementalistes indépendants proposent plutôt des séances individuelles, parfois à domicile. Chaque fiche précise la formule et le tarif quand ils sont publiés." },
+      { q: "Quels documents prévoir pour la première séance ?", a: "Certains clubs et éducateurs demandent le carnet de vaccination à jour ou l'identification du chien ; quand c'est écrit, la fiche le précise. Dans le doute, emporte le carnet de santé de ton chien." },
+      { q: "Peut-on prendre quelques séances pendant ses vacances ?", a: "Les éducateurs indépendants proposent souvent des séances à l'unité, plus faciles à caler pendant un séjour. Les clubs fonctionnent plutôt à l'année ; certains acceptent une séance découverte. Contacte-les avant de te déplacer." },
+    ],
   },
   {
     cat: "balades",
@@ -225,6 +252,11 @@ export default [
     introDep: "Coco Explore référence <strong>{n} balades à faire avec son chien {enNom}</strong> : {villes}. Chaque fiche précise les règles (laisse, périodes d'interdiction, troupeaux) et les infos de terrain utiles au chien : ombre, points d'eau, type de sol, difficulté.",
     linkDep: "Toutes les balades avec son chien {enNom}",
     linkNat: "Toutes les balades avec son chien en France",
+    faq: [
+      { q: "La laisse est-elle obligatoire en forêt ?", a: "Du 15 avril au 30 juin, période de reproduction de la faune, ton chien doit être tenu en laisse en dehors des allées forestières, sous peine d'une amende forfaitaire de 135 € (Service-Public.fr, ONF). Le reste de l'année, aucune laisse n'est imposée par cette règle nationale, mais ton chien ne doit pas divaguer, et les panneaux sur place peuvent être plus stricts." },
+      { q: "Les chiens sont-ils admis dans les parcs nationaux ?", a: "Pas dans le cœur des parcs nationaux de montagne comme le Mercantour ou la Vanoise, où ils sont interdits même tenus en laisse ou portés. D'autres parcs les admettent en laisse, comme le cœur du Parc national des Cévennes. Les réserves naturelles ont chacune leur règlement : quand un site est interdit aux chiens, nous l'écrivons dans le titre de la fiche." },
+      { q: "Que faire en croisant un troupeau gardé par des patous ?", a: "Tiens ton chien en laisse, contourne largement le troupeau et ne prends pas ton chien dans tes bras à l'approche d'un chien de protection. Tous les détails, avec les massifs fermés l'été pour risque d'incendie, sont dans notre <a href=\"/guide-randonnee-regles-chien\">guide des règles de randonnée</a>." },
+    ],
   },
   {
     cat: "lacs",
@@ -276,5 +308,10 @@ export default [
     introDep: "Coco Explore référence <strong>{n} parcs canins et zones de liberté {enNom}</strong> : {villes}. Chaque fiche précise si l'espace est clôturé, s'il y a de l'eau et de l'ombre, et les règles d'accès que nous avons pu vérifier.",
     linkDep: "Tous les parcs canins {enNom}",
     linkNat: "Tous les parcs canins et aires de liberté en France",
+    faq: [
+      { q: "Mon chien peut-il être sans laisse dans un parc canin ?", a: "Oui, c'est le principe d'un parc canin ou d'une zone de liberté. Il doit toutefois rester sous ton contrôle et revenir au rappel ; travaille le rappel avant d'entrer, surtout si d'autres chiens sont déjà là." },
+      { q: "Faut-il ramasser les déjections ?", a: "Oui, le ramassage reste obligatoire même en zone de liberté. Beaucoup de parcs disposent de sacs ou de poubelles, mais prévois toujours les tiens." },
+      { q: "Les parcs canins sont-ils clôturés ?", a: "Pas tous : certains sont entièrement clôturés avec double portillon, d'autres sont de simples zones de liberté ouvertes. Chaque fiche précise la clôture, la présence d'eau et d'ombre, et les horaires quand la commune les publie." },
+    ],
   },
 ];
