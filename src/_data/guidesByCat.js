@@ -10,5 +10,5 @@ export default {
   veterinaires: [["guide-urgence-veterinaire-chien", "Urgence vétérinaire en vacances : trouver un vétérinaire de garde"]],
   hebergements: [["guide-camping-location-repas-chien", "Camping ou location : garder les repas de son chien au frais"], ["guide-repas-route-chien", "Gérer les repas de son chien sur la route"]],
   restaurants: [["guide-aliments-terroir-chien", "Spécialités du terroir : les aliments à éviter pour son chien"]],
-  activites: [rando],
+  activites: [rando, ["guide-chien-sportif-rations", "Canicross et longues randonnées : adapter les rations de son chien"]],
 };
