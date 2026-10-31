@@ -30,7 +30,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - Les Petits Loots (Angers) : réponse à l'offre partenaire attendue (fiche prête dans `propositions/les-petits-loots/`).
 - Bande de Truffes (Chambéry) : réponse attendue (3 fiches prêtes dans `propositions/bande-de-truffes/`).
 - CECS Mérignac : demande de lien envoyée par l'utilisateur ; s'il est ajouté, l'inscrire dans `ECHANGES-LIENS.md`.
-- Bimo : 1 article encore attendu (rations du chien sportif) ; aliments du terroir publié le 31/10 (`/guide-aliments-terroir-chien`).
+- Bimo : série de 3 articles terminée (camping, terroir, chien sportif publiés) ; rien d'attendu.
 - SantéVet (affiliation) et Expedia Group : réponses attendues.
 
 ## Historique — encadrés « le plus proche » et garde de chien (31/10/2026, mis en ligne)
