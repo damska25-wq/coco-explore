@@ -17,6 +17,18 @@ extraHead: |
     <p style="margin-top: 10px; color: rgba(34,48,58,0.7); font-size: 0.95rem;">Coco explore la France département par département — voici les adresses les plus récemment ajoutées au guide.</p>
   </div>
 
+  <h2 style="margin-top: 28px;">Les derniers guides</h2>
+  <div class="guide-list guide-list-cols">
+    {%- for g in (collections.guides | sort(true, false, "data.updated")).slice(0, 3) %}
+    <a href="/{{ g.data.permalinkPath | cleanUrl }}" class="guide-card">
+      <span class="tag">{{ g.data.kicker | safe }}</span>
+      <h3>{{ g.data.h1 | safe }}</h3>
+      <p>{{ g.data.description | safe }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+  <p class="cat-see-more"><a href="/guides">Tous les guides →</a></p>
+  <h2 style="margin-top: 28px;">Les dernières fiches</h2>
   <div class="fiche-grid">
     {%- for fiche in collections.fiches | latest(24) %}
     {%- set badge = (fiche.data.infoItems | accessBadge) if (fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur") else ((fiche.data.infoItems | vetBadge) if fiche.data.breadcrumbCatId == "veterinaires" else null) %}

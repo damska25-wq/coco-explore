@@ -994,6 +994,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .guide-theme h2 { margin-bottom: 4px; }
 .guide-theme-intro { margin: 0; color: rgba(var(--ink),0.75); }
 .guide-theme .guide-list { margin-top: 16px; }
+@media (min-width: 800px) { .guide-list-cols { grid-template-columns: repeat(3, 1fr); } }
 .guide-card p { margin: 0; color: rgba(var(--ink),0.75); font-size: 0.95rem; }
 
 /* « Les plus proches de toi » (pages catégorie avec nearby: true) */

@@ -1,5 +1,6 @@
 (function () {
   var lieux = window.COCO_LIEUX || [];
+  var pages = window.COCO_PAGES || [];
   var form = document.getElementById("site-search-form");
   var input = document.getElementById("site-search-input");
   var results = document.getElementById("site-search-results");
@@ -17,15 +18,16 @@
     var q = normalize(query).trim();
     if (!q) return [];
     var words = q.split(/\s+/).filter(Boolean);
-    return lieux
-      .filter(function (l) {
-        var haystack =
-          normalize(l.titre) + " " + normalize(l.lieu) + " " + normalize(l.categorie);
-        return words.every(function (word) {
-          return haystack.indexOf(word) !== -1;
-        });
-      })
-      .slice(0, 8);
+    function matches(l) {
+      var haystack =
+        normalize(l.titre) + " " + normalize(l.lieu) + " " + normalize(l.categorie);
+      return words.every(function (word) {
+        return haystack.indexOf(word) !== -1;
+      });
+    }
+    // Pages ville et guides d'abord (3 au plus), puis les fiches.
+    var top = pages.filter(matches).slice(0, 3);
+    return top.concat(lieux.filter(matches).slice(0, 8 - top.length));
   }
 
   function render(matches, query) {

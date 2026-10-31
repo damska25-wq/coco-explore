@@ -123,6 +123,23 @@ extraScripts: |
   <p class="cat-see-more"><a href="/plan-du-site">Toutes les villes ({{ collections.cityPages.length }}) →</a></p>
 </section>
 
+<section class="categories wrap guides-home">
+  <div class="section-head">
+    <span class="eyebrow">Guides pratiques</span>
+    <h2>Les derniers guides pour voyager avec son chien</h2>
+  </div>
+  <div class="guide-list guide-list-cols">
+    {%- for g in (collections.guides | sort(true, false, "data.updated")).slice(0, 3) %}
+    <a href="/{{ g.data.permalinkPath | cleanUrl }}" class="guide-card">
+      <span class="tag">{{ g.data.kicker | safe }}</span>
+      <h3>{{ g.data.h1 | safe }}</h3>
+      <p>{{ g.data.description | safe }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+  <p class="cat-see-more"><a href="/guides">Tous les guides ({{ collections.guides.length }}) →</a></p>
+</section>
+
 <section class="wrap categories carte-section" id="carte">
   <div class="section-head">
     <span class="eyebrow">Explorer sur la carte</span>
