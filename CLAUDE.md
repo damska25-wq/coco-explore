@@ -282,6 +282,8 @@ Mis en ligne le 28/10/2026 après analyse des requêtes Search Console (détail 
 - **Balades** (« Où promener son chien autour de moi ») et **parcs canins** (« Où promener son chien sans laisse ») : nouveaux titres + encadré « les plus proches de toi » (`nearby: true`, filtre `inCategoryPage`).
 - **50 fiches vétérinaires les plus vues** (200-740 impressions, 0-1 clic) : titre « Nom, Ville : horaires, téléphone[, urgences/garde] » et description avec téléphone/horaires vérifiés, jargon interne retiré.
 
+**Point de départ (export Search Console du 01/11/2026, 3 mois, données jusqu'au 29/10)** : 1 113 clics, 126 000 impressions, CTR 0,88 %, position moyenne ~17 ; de ~15-25 clics/jour début octobre à 50-70 clics/jour fin octobre (impressions 1 300 → 6 500/jour). Mobile : position 10,6, CTR 1,22 % ; ordinateur : position 26,7, CTR 0,44 %. Par type (pages du top 1000) : fiches vétérinaires 13 500 impressions mais CTR 0,52 % (le plus bas : cible de K4), restaurants 1,6 %, hébergements 1,5 %, plages 1,6 %, balades/activités/garde 4,3-4,5 %, dogwash/toiletteurs ~3,5 %. Campings de requête « nom du camping » en position 25-45 (site officiel devant, normal). Analytics (7 jours au 01/11) : 96 visiteurs, Google 81 sessions, ChatGPT 19 (en forte hausse), bimo.dog 4.
+
 **Vers mi-novembre** : comparer dans Search Console les clics/CTR de ces 50 fiches et la position des requêtes « camping chien accepté + département ». Si le CTR des vétérinaires monte, appliquer le même modèle aux autres fiches vétérinaires (infos vérifiées seulement). Inutile de viser les noms de campings précis (site officiel toujours devant).
 
 ## Programme partenaire (démarrage commercial)
