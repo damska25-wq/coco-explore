@@ -6,6 +6,8 @@ Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurant
 
 Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand ils sont faits.
 
+**⚠️ PRIORITÉ — à lancer dès le renouvellement du quota Parallel Search (5/11/2026), demandé expressément par l'utilisateur (« il faut vraiment qu'on le fasse »)** : **vague « Savoie et stations de ski »**, ~40-60 fiches SIRENE rigueur maximale (hébergements chiens acceptés, balades d'hiver autorisées, règles pistes/remontées, vétérinaires en station) pour la Savoie (133 fiches seulement : Val d'Isère, Les Arcs, La Plagne, Méribel, Aix-les-Bains…) et les stations quasi absentes (Morzine, Font-Romeu). Ensuite, si le quota le permet : Alsace/Vosges (Noël), La Réunion, Ariège/Haute-Garonne. Attendu le 5/11 pour économiser les crédits (décision de l'utilisateur, 01/11).
+
 **Lectures ciblées (Parallel Search nécessaire, quelques requêtes chacune)**
 - Le Club des Poilus (dogwash, Le Havre) : ouverture non annoncée au 31/10 ; adresse à confirmer (92 rue du Président-Wilson ou 14 rue Georges-Braque selon un revendeur).
 - Hôtel Saint-Marc (Ploërmel) : domaine officiel devenu spam, chercher un nouveau site ou une page officielle.
