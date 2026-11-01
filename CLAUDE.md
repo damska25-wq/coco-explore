@@ -48,6 +48,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 ## Historique — performance des pages département (01/11/2026, mis en ligne)
 
 - Les 101 pages département chargeaient `map-data.js` (toutes les fiches, 3,9 Mo, ~720 Ko compressé) pour leur seule carte. Elles chargent désormais `map-data-<slug>.js` (`src/map-data-departement.njk`, filtre `whereDept`), de 4 à 140 Ko non compressé selon le département. Carte et filtres vérifiés dans le navigateur (Var 417 marqueurs, Allier 54, Mayotte 18). L'accueil, la 404 et « Conseils de Coco » gardent `map-data.js` (recherche, favoris).
+- **JSON-LD des établissements enrichi** (vétérinaires, restaurants, hébergements, toiletteurs, dogwash, éducation, activités ; FR et EN) : `telephone` (format +33) et adresse postale complète (`streetAddress`, `postalCode`, `addressLocality`) tirés des lignes « Téléphone »/« Adresse » des `infoItems` par le filtre `ldContact`, seulement quand la valeur est nette (un seul numéro, « rue, CP Ville ») et sans réserve (mots de doute exclus). Résultat : 4 954 fiches avec téléphone, 5 361 avec adresse complète. Gardes de chien exclues (vie privée).
 
 ## Historique — dogwash (31/10/2026, mis en ligne)
 
