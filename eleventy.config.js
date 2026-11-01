@@ -486,6 +486,16 @@ export default function (eleventyConfig) {
   // Téléphone et adresse postale pour le JSON-LD des établissements, seulement quand
   // la valeur affichée est nette (un seul numéro, adresse « rue, CP Ville ») et sans réserve.
   const LD_DOUBT = /confirm|annuaire|v[ée]rifier|divergen|contradict|ancien|non trouv|non publi|doute|incertain|approximati|selon|ex-|ferm/i;
+  // Numéros de téléphone français cliquables (tel:) dans le bandeau des fiches,
+  // seulement sur les lignes de contact et si la valeur ne contient pas déjà un lien.
+  eleventyConfig.addFilter("telLinks", (value, label) => {
+    const v = String(value == null ? "" : value);
+    if (!/t[ée]l[ée]phone|phone|urgence|emergenc|contact|garde/i.test(String(label || "")) || /<a\b/i.test(v)) return v;
+    return v.replace(/(^|[^\d+])((?:\+33\s?|0)[1-9](?:[\s.]?\d\d){4})(?!\d)/g, (m, pre, num) => {
+      const digits = num.replace(/[\s.]/g, "").replace(/^\+33/, "0");
+      return pre + '<a href="tel:+33' + digits.slice(1) + '" data-track="telephone">' + num + "</a>";
+    });
+  });
   eleventyConfig.addFilter("ldMerge", (obj, extra) => Object.assign({}, obj, extra));
   eleventyConfig.addFilter("ldContact", (items) => {
     const out = {};

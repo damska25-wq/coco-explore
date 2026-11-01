@@ -67,13 +67,13 @@ extraScripts: |
     {%- for item in infoItems | publicInfoItems %}
     <div class="info-item">
       <svg class="icon"><use href="#{{ item.icon }}"/></svg>
-      <div><span class="label">{{ item.label | safe }}</span><span class="value">{{ item.value | safe }}</span></div>
+      <div><span class="label">{{ item.label | safe }}</span><span class="value">{{ item.value | telLinks(item.label) | safe }}</span></div>
     </div>
     {%- endfor %}
     {%- if lat and lng %}
     <div class="info-item">
       <svg class="icon"><use href="#i-pin"/></svg>
-      <div><span class="label">{{ "Getting there" if lang == "en" else "S'y rendre" }}</span><span class="value"><a href="https://www.google.com/maps/dir/?api=1&amp;destination={{ lat }},{{ lng }}" target="_blank" rel="noopener">{{ "Directions ↗" if lang == "en" else "Itinéraire ↗" }}</a></span></div>
+      <div><span class="label">{{ "Getting there" if lang == "en" else "S'y rendre" }}</span><span class="value"><a href="https://www.google.com/maps/dir/?api=1&amp;destination={{ lat }},{{ lng }}" target="_blank" rel="noopener" data-track="itineraire">{{ "Directions ↗" if lang == "en" else "Itinéraire ↗" }}</a></span></div>
     </div>
     <div class="info-item">
       <svg class="icon"><use href="#i-pin"/></svg>
@@ -122,7 +122,7 @@ extraScripts: |
     {%- if siteWeb %}
     <div class="info-item">
       <svg class="icon"><use href="#i-link"/></svg>
-      <div><span class="label">{{ "Official website" if lang == "en" else "Site officiel" }}</span><span class="value"><a href="{{ siteWeb | safe }}" target="_blank" rel="noopener {{ 'sponsored' if partenaire else 'nofollow' }}">{{ "Visit website ↗" if lang == "en" else "Voir le site ↗" }}</a></span></div>
+      <div><span class="label">{{ "Official website" if lang == "en" else "Site officiel" }}</span><span class="value"><a href="{{ siteWeb | safe }}" target="_blank" rel="noopener {{ 'sponsored' if partenaire else 'nofollow' }}" data-track="site_officiel">{{ "Visit website ↗" if lang == "en" else "Voir le site ↗" }}</a></span></div>
     </div>
     {%- endif %}
     {%- set shareText = ("Look at this dog-friendly place I found on Coco Explore: " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + (permalinkPath | cleanUrl)) if lang == "en" else "Regarde cette adresse où aller avec son chien trouvée sur Coco Explore : " + h1 + " (" + lieu + ") — https://cocoexplore.com/" + (permalinkPath | cleanUrl) %}

@@ -33,6 +33,18 @@
     window.gtag("config", GA_ID);
   }
 
+  // Clics utiles sur les fiches (téléphone, site officiel, itinéraire), envoyés à
+  // Google Analytics seulement si le visiteur a accepté les cookies (gtag chargé).
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("a[data-track]") : null;
+    if (!a || typeof window.gtag !== "function") return;
+    window.gtag("event", "clic_" + a.getAttribute("data-track"), {
+      fiche: location.pathname,
+      link_url: a.href,
+      transport_type: "beacon"
+    });
+  });
+
   var banner = document.getElementById("cookie-banner");
   var acceptBtn = document.getElementById("cookie-accept");
   var declineBtn = document.getElementById("cookie-decline");
