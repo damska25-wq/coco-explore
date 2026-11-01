@@ -45,6 +45,10 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - **Recherche et visibilité des guides (31/10)** : la recherche de l'accueil (`search.js`) inclut les 198 pages ville et les guides (`window.COCO_PAGES` dans `map-data.njk`, 3 résultats max en tête) ; bloc « Les derniers guides » (3 plus récents par `updated`) sur l'accueil et en tête de `/nouveautes`.
 - **Derniers petits chantiers (31/10)** : encadré « En cas d'urgence vétérinaire » en tête des 101 pages département (gardes 24h/24 vérifiées du département, sinon la plus proche ≤ 150 km du centre, filtres `whereDept`/`deptCenter`) ; page 404 avec la recherche du site (pages ville + guides) et liens vers guides, catégories et 8 plus grandes villes (liens de recherche désormais absolus) ; `veterinaire-veto-familiale-compiegne-60` complétée (garde partagée Vet'Team, site officiel). **Le Club des Poilus (Le Havre)** : toujours aucune annonce d'ouverture ; un revendeur (tadazhi.com) le situe 14 rue Georges-Braque, pas 92 rue du Président-Wilson : adresse à confirmer avant de créer la fiche.
 
+## Historique — performance des pages département (01/11/2026, mis en ligne)
+
+- Les 101 pages département chargeaient `map-data.js` (toutes les fiches, 3,9 Mo, ~720 Ko compressé) pour leur seule carte. Elles chargent désormais `map-data-<slug>.js` (`src/map-data-departement.njk`, filtre `whereDept`), de 4 à 140 Ko non compressé selon le département. Carte et filtres vérifiés dans le navigateur (Var 417 marqueurs, Allier 54, Mayotte 18). L'accueil, la 404 et « Conseils de Coco » gardent `map-data.js` (recherche, favoris).
+
 ## Historique — dogwash (31/10/2026, mis en ligne)
 
 - **Encadré « Dogwash le plus proche »** (≤ 30 km) dans le bandeau des fiches plages, lacs, balades et Côte d'Azur (FR) : collection `dogwashFiches` + filtre `nearestFiche` (`eleventy.config.js`), bloc dans `fiche.njk`. ~1 230 fiches concernées.
