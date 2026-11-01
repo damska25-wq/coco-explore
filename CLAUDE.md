@@ -379,6 +379,10 @@ Coco Explore — cocoexplore.com
 
 Pas d'action de notre côté en attendant la réponse de SantéVet. Une fois la marche à suivre connue (et un lien tracké réel obtenu), prévoir son insertion dans 1-2 fiches vétérinaires urgences et/ou un futur article "conseils de Coco" sur la préparation d'un voyage, avec la mention de lien affilié obligatoire (cadre légal français).
 
+### Google AdSense : écarté pour l'instant (décision de l'utilisateur, 01/11/2026)
+
+Pas de publicité AdSense : au trafic actuel (~1 000 pages vues/mois) le revenu serait de quelques euros par mois, pour un coût réel (vitesse des pages, image de guide vérifié, pubs non choisies pouvant concurrencer les partenaires et les liens affiliés, bannière de consentement certifiée obligatoire en Europe). Priorité au programme partenaire, à l'affiliation ciblée et aux articles sponsorisés. À ne reconsidérer qu'au-delà de ~30 000-50 000 pages vues/mois, avec parcimonie (guides plutôt que fiches).
+
 ### Affiliation hébergements (23/10/2026)
 
 Étude complète dans `AFFILIATION-HEBERGEMENT.md` (non publié). **Décision de l'utilisateur : candidater d'abord au programme Expedia Group** (affiliates.expediagroup.com, géré via Partnerize : 4 % hôtels, 2 % Abritel/Vrbo, cookie 7 jours même appareil, seuil de paiement 30 €). Candidature faite par l'utilisateur lui-même. Booking (via CJ) seulement après avoir clarifié la clause qui interdit de démarcher les hébergeurs présents sur Booking (conflit possible avec le Programme partenaire). **Aucun lien affilié sur le site tant que l'utilisateur n'a pas validé** : intégration prévue = bouton « Voir les disponibilités sur … » sous les infos pratiques, après le site officiel, mention « Lien sponsorisé » + `rel="sponsored"`, uniquement vers la page exacte d'un établissement qui accepte aussi les chiens sur la plateforme, test sur 20 à 50 fiches, phrase à ajouter dans « À propos ».
