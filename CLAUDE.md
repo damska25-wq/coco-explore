@@ -32,7 +32,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - Bande de Truffes (Chambéry) : relance envoyée par l'utilisateur le 31/10 (rien publié sans son accord ; 3 fiches prêtes dans `propositions/bande-de-truffes/`).
 - CECS Mérignac : demande de lien envoyée par l'utilisateur ; s'il est ajouté, l'inscrire dans `ECHANGES-LIENS.md`.
 - Bimo : série continuée à **1 article par mois** (voir `ECHANGES-LIENS.md`) ; prochain attendu vers le 15-20/11 (fêtes de fin d'année). Les articles Bimo vont dans la section « Alimentation en voyage » de `/guides` (kicker « Alimentation · Article proposé par Bimo »).
-- SantéVet (affiliation, relance envoyée par l'utilisateur le 01/11), Expedia Group et Maxi Zoo (Awin, candidature du 01/11) : réponses attendues.
+- SantéVet (affiliation, relance envoyée par l'utilisateur le 01/11) et Maxi Zoo (Awin, candidature du 01/11) : réponses attendues. Expedia Group : candidature probablement jamais envoyée, à faire par l'utilisateur.
 
 ## Historique — encadrés « le plus proche » et garde de chien (31/10/2026, mis en ligne)
 
@@ -389,7 +389,7 @@ Pas de publicité AdSense : au trafic actuel (~1 000 pages vues/mois) le revenu 
 
 ### Affiliation hébergements (23/10/2026)
 
-Étude complète dans `AFFILIATION-HEBERGEMENT.md` (non publié). **Décision de l'utilisateur : candidater d'abord au programme Expedia Group** (affiliates.expediagroup.com, géré via Partnerize : 4 % hôtels, 2 % Abritel/Vrbo, cookie 7 jours même appareil, seuil de paiement 30 €). Candidature faite par l'utilisateur lui-même. Booking (via CJ) seulement après avoir clarifié la clause qui interdit de démarcher les hébergeurs présents sur Booking (conflit possible avec le Programme partenaire). **Aucun lien affilié sur le site tant que l'utilisateur n'a pas validé** : intégration prévue = bouton « Voir les disponibilités sur … » sous les infos pratiques, après le site officiel, mention « Lien sponsorisé » + `rel="sponsored"`, uniquement vers la page exacte d'un établissement qui accepte aussi les chiens sur la plateforme, test sur 20 à 50 fiches, phrase à ajouter dans « À propos ».
+Étude complète dans `AFFILIATION-HEBERGEMENT.md` (non publié). **Décision de l'utilisateur : candidater d'abord au programme Expedia Group** (affiliates.expediagroup.com, géré via Partnerize : 4 % hôtels, 2 % Abritel/Vrbo, cookie 7 jours même appareil, seuil de paiement 30 €). Candidature notée comme faite le 23/10, mais l'utilisateur pense finalement ne pas l'avoir envoyée (01/11) : à faire. Booking (via CJ) seulement après avoir clarifié la clause qui interdit de démarcher les hébergeurs présents sur Booking (conflit possible avec le Programme partenaire). **Aucun lien affilié sur le site tant que l'utilisateur n'a pas validé** : intégration prévue = bouton « Voir les disponibilités sur … » sous les infos pratiques, après le site officiel, mention « Lien sponsorisé » + `rel="sponsored"`, uniquement vers la page exacte d'un établissement qui accepte aussi les chiens sur la plateforme, test sur 20 à 50 fiches, phrase à ajouter dans « À propos ».
 
 ## Historique — audit performance accueil (octobre 2026, résolu)
 
