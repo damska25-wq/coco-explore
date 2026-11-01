@@ -23,6 +23,11 @@ extraScripts: |
     "longitude": lng
   }
 } %}
+{%- if breadcrumbCatId in ["veterinaires", "restaurants", "hebergements", "toiletteurs", "dogwash", "education", "activites"] %}
+{%- set ldc = infoItems | ldContact %}
+{%- if ldc.telephone %}{% set jsonLdPlace = jsonLdPlace | ldMerge({ "telephone": ldc.telephone }) %}{% endif %}
+{%- if ldc.postalCode %}{% set jsonLdPlace = jsonLdPlace | ldMerge({ "address": { "@type": "PostalAddress", "streetAddress": ldc.streetAddress, "postalCode": ldc.postalCode, "addressLocality": ldc.addressLocality, "addressRegion": addressRegion or (departement | regionFor), "addressCountry": addressCountry or "FR" } }) %}{% endif %}
+{%- endif %}
 <script type="application/ld+json">{{ jsonLdPlace | dump | safe }}</script>
 {%- set jsonLdBreadcrumb = {
   "@context": "https://schema.org",

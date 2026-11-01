@@ -483,6 +483,31 @@ export default function (eleventyConfig) {
       .replace(/\s+([.,;])/g, "$1")
       .replace(/^[\s.,;—–-]+|[\s,;—–-]+$/g, "")
       .trim();
+  // Téléphone et adresse postale pour le JSON-LD des établissements, seulement quand
+  // la valeur affichée est nette (un seul numéro, adresse « rue, CP Ville ») et sans réserve.
+  const LD_DOUBT = /confirm|annuaire|v[ée]rifier|divergen|contradict|ancien|non trouv|non publi|doute|incertain|approximati|selon|ex-|ferm/i;
+  eleventyConfig.addFilter("ldMerge", (obj, extra) => Object.assign({}, obj, extra));
+  eleventyConfig.addFilter("ldContact", (items) => {
+    const out = {};
+    for (const it of items || []) {
+      const label = String(it.label || "").trim().toLowerCase();
+      let v = String(it.value || "").replace(/<[^>]+>/g, "").trim();
+      if (!v || LD_DOUBT.test(v)) continue;
+      v = v.replace(/\s*\((?:site officiel|source officielle)[^)]*\)\s*$/i, "").trim();
+      if ((label === "téléphone" || label === "phone") && !out.telephone) {
+        const m = v.match(/^(?:\+33\s?|0)([1-9])((?:[\s.]?\d\d){4})$/);
+        if (m) out.telephone = "+33 " + m[1] + " " + m[2].replace(/[\s.]/g, "").match(/\d\d/g).join(" ");
+      } else if ((label === "adresse" || label === "address") && !out.postalCode) {
+        const m = v.match(/^([^;()]+?),\s*(\d{5})\s+([^,;()]+)$/);
+        if (m && /\d|rue|avenue|av\.|boulevard|bd|place|chemin|route|allée|impasse|quai|cours|lieu-dit|zone|zac|za /i.test(m[1])) {
+          out.streetAddress = m[1].trim();
+          out.postalCode = m[2];
+          out.addressLocality = m[3].trim();
+        }
+      }
+    }
+    return out;
+  });
   eleventyConfig.addFilter("publicInfoItems", (items) =>
     (items || [])
       .filter((it) => it && !/^\s*(?:niveau de\s+)?(?:confiance|confidence)/i.test(String(it.label || "")))
