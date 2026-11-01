@@ -60,7 +60,7 @@
     ]
   },
   "annecy-avec-son-chien": {
-    "html": "<p>À Annecy, les plages publiques du lac (Albigny, Impérial, Marquisats) sont interdites aux chiens, même en laisse, selon la ville ; cette interdiction ne s'applique pas au Pâquier ni aux promenades du bord du lac, où la laisse reste de rigueur (<a href=\"/fiche-balade-rives-lac-paquier-annecy\">voir la fiche des rives</a>). L'office de tourisme ajoute que la réserve naturelle du Bout du Lac est strictement interdite aux chiens.</p><p>En ville, la laisse est obligatoire, 225 distributeurs de sacs sont installés et le caniparc de 1 700 m² du parc du Colovry permet de lâcher son chien (<a href=\"/fiche-activite-caniparc-colovry-annecy\">voir la fiche</a>). Le parc du Haras, lui, interdit les animaux même tenus en laisse (arrêté de mars 2026).</p>",
+    "html": "<p>À Annecy, les animaux sont interdits dans l'enceinte des plages publiques (Albigny, Impérial, Marquisats), même tenus en laisse, selon la ville ; l'office de tourisme confirme que les plages du lac n'autorisent pas les chiens. L'arrêté municipal sur les rives du lac (2024) impose la laisse en permanence, interdit la baignade des animaux et leur présence, même en laisse, dans les espaces biodiversité, les aires de jeux et les espaces verts fleuris et végétalisés des rives ; l'île aux Cygnes et la roselière d'Albigny sont fermées à tout accès (<a href=\"/fiche-balade-rives-lac-paquier-annecy\">voir la fiche des rives</a>). L'office ajoute que la réserve naturelle du Bout du Lac est strictement interdite aux chiens, même en laisse.</p><p>En ville, la laisse est obligatoire, 225 distributeurs de sacs sont installés et le caniparc de 1 700 m² du parc du Colovry permet de lâcher son chien (<a href=\"/fiche-activite-caniparc-colovry-annecy\">voir la fiche</a>). Le parc du Haras, lui, interdit les animaux même tenus en laisse (arrêté du 3 mars 2026), sauf chiens guides.</p>",
     "sources": [
       {
         "label": "Ville d'Annecy : plages",
@@ -158,8 +158,12 @@
     ]
   },
   "barcelonnette-avec-son-chien": {
-    "html": "<p>À Barcelonnette, la mairie publie un arrêté (201/2020) qui interdit la divagation des animaux et les déjections canines sur la voie publique ; l'office de tourisme de l'Ubaye rappelle de tenir son chien en laisse et de ramasser ses déjections. Dans le cœur du Parc national du Mercantour, les chiens sont interdits même en laisse ou portés ; en zone d'adhésion il n'y a pas de règle particulière, mais la laisse reste demandée.</p><p>En été, les chiens sont acceptés sur les remontées de Pra Loup et du Sauze (gratuitement dans les cabines à Pra Loup), en laisse près des alpages où veillent des chiens de protection.</p>",
+    "html": "<p>À Barcelonnette, l'arrêté municipal 201/2020 du 20 juillet 2020 impose la laisse à tous les chiens, sans exception, sur les voies publiques et les voies privées ouvertes au public, et considère comme divagation tout chien qui n'est plus tenu en laisse. Il interdit l'accès, même en laisse, aux bâtiments et équipements publics, aires de jeux, parterres de fleurs, bassins et fontaines, jardins communaux et squares ouverts, et impose de ramasser les déjections. L'office de tourisme de l'Ubaye demande aussi la laisse en randonnée. Dans le cœur du Parc national du Mercantour, les chiens sont interdits même en laisse ou portés ; selon l'office, aucune règle particulière en zone d'adhésion, mais la laisse reste demandée.</p><p>En été, les chiens sont acceptés sur les remontées de Pra Loup et du Sauze. À Pra Loup, l'office précise que les chiens sont acceptés gratuitement dans les cabines (saison 2026 : télémix de la Clappe du 4 juillet au 30 août) et demande la laisse, surtout en zone de pâturage où l'on peut croiser des chiens de protection.</p>",
     "sources": [
+      {
+        "label": "Mairie de Barcelonnette : arrêté municipal 201/2020 du 20 juillet 2020 (divagation, déjections)",
+        "url": "https://www.ville-barcelonnette.fr/csx/scripts/downloader2.php?filename=T013/fichiert/51/e7/cvj5uk0oivat&mime=application%2Fpdf&originalname=Arr_t_municipal.pdf"
+      },
       {
         "label": "Mairie de Barcelonnette : arrêtés municipaux (animaux sur la voie publique)",
         "url": "https://www.ville-barcelonnette.fr/les-arretes-municipaux.html"
@@ -244,7 +248,7 @@
     ]
   },
   "briancon-avec-son-chien": {
-    "html": "<p>À Briançon, les chiens sont interdits dans le cœur du Parc national des Écrins, même en laisse ou portés dans un sac ; en dehors du cœur, on peut généralement randonner avec son chien, en le tenant en laisse près des troupeaux et des chiens de protection (le Parc conseille de contourner le troupeau). L'office de tourisme cite la Croix de Toulouse et les forts de Briançon parmi les balades possibles (<a href=\"/fiche-balade-croix-de-toulouse-briancon\">Croix de Toulouse</a>, <a href=\"/fiche-balade-fort-des-salettes-briancon\">fort des Salettes</a>).</p><p>Serre Chevalier accepte les chiens en laisse dans les télécabines Prorel et Ratier et dans le téléphérique Serre Chevalier ; l'hiver, ils ne montent qu'en télécabine, pour rejoindre les restaurants d'altitude. Le parc de la Schappe est signalé « chiens interdits » par l'office de tourisme.</p>",
+    "html": "<p>À Briançon, les chiens sont interdits dans le cœur du Parc national des Écrins, même en laisse ou portés ; en dehors du cœur, on peut généralement randonner avec son chien. Le Parc demande de le tenir en laisse près des troupeaux et des chiens de protection (et de contourner largement le troupeau) ; l'office de tourisme des Hautes Vallées demande la laisse tout au long de la balade (Clarée, Izoard). Il cite la Croix de Toulouse et les forts de Briançon parmi les randonnées avec chien (<a href=\"/fiche-balade-croix-de-toulouse-briancon\">Croix de Toulouse</a>, et, pour un fort, <a href=\"/fiche-balade-fort-des-salettes-briancon\">fort des Salettes</a>).</p><p>Serre Chevalier demande de garder le chien en laisse sur le domaine. L'hiver, les chiens ne sont admis que dans les télécabines (Prorel à Briançon, Ratier à Chantemerle, Pontillas et Aravet à Villeneuve), uniquement pour rejoindre les restaurants d'altitude ; les télésièges leur sont interdits. La foire aux questions cite aussi le téléphérique Serre Chevalier. Le parc de la Schappe est signalé « chiens interdits » par Provence-Alpes-Côte d'Azur Tourisme.</p>",
     "sources": [
       {
         "label": "Parc national des Écrins : animaux domestiques",
@@ -407,7 +411,7 @@
     ]
   },
   "chamonix-mont-blanc-avec-son-chien": {
-    "html": "<p>À Chamonix, l'arrêté du maire sur la tenue en laisse interdit la divagation sur tout le territoire et impose la laisse en centre-ville, à Argentière et dans le secteur des Bois et Orthaz ; ramasser les déjections est obligatoire partout, avec des distributeurs de sacs répartis sur la commune. Les chiens sont interdits, même en laisse, dans les réserves naturelles voisines, dont celle des Aiguilles Rouges (voir <a href=\"/fiche-reserve-aiguilles-rouges-lac-blanc-chien\">la fiche Lac Blanc</a>), et la mairie signale des zones pastorales avec chiens de protection : laisse et détour du troupeau.</p><p>Côté remontées, la Compagnie du Mont-Blanc accepte les chiens en laisse au Brévent, à Planpraz, à la Flégère, à Charamillon et au train du Montenvers, mais pas à l'Aiguille du Midi (<a href=\"/fiche-activite-aiguille-du-midi-chamonix\">voir la fiche</a>) ni au télésiège de l'Index.</p>",
+    "html": "<p>À Chamonix, l'arrêté du maire du 28 mars 2024 sur la tenue en laisse interdit la divagation sur tout le territoire et impose la laisse dans le centre-ville, à Argentière et dans le secteur des Bois et Orthaz ; ramasser les déjections est obligatoire, avec des distributeurs de sacs répartis sur la commune. La mairie cite parmi les sites sensibles les zones pastorales avec chiens de protection. Selon La Chamoniarde, les chiens ne sont pas admis dans les réserves naturelles voisines des Aiguilles Rouges (voir <a href=\"/fiche-reserve-aiguilles-rouges-lac-blanc-chien\">la fiche Lac Blanc</a>), de Carlaveyron, de Passy et de Sixt-Fer-à-Cheval, ni au-delà du refuge dans le vallon de Bérard ; ils sont tolérés en laisse dans la réserve des Contamines.</p><p>Côté remontées, La Chamoniarde indique que les chiens tenus en laisse sont acceptés à Planpraz, au Brévent, à la Flégère (depuis Les Praz), à Charamillon et au train du Montenvers, mais pas à l'Aiguille du Midi (<a href=\"/fiche-activite-aiguille-du-midi-chamonix\">voir la fiche</a>), au Plan de l'Aiguille ni au télésiège Flégère-Index. Elle rappelle aussi de tenir ses animaux en laisse en randonnée et de surveiller la présence de patous sur les alpages.</p>",
     "sources": [
       {
         "label": "Mairie de Chamonix : arrêté sur la tenue en laisse des chiens",
@@ -450,7 +454,7 @@
     ]
   },
   "courchevel-avec-son-chien": {
-    "html": "<p>Courchevel touche le Parc national de la Vanoise, où les chiens sont interdits dans le cœur du parc, même en laisse ou portés (amende de 135 €) ; ils sont admis en laisse sur les sentiers qui longent la limite du cœur. Sur ce point, le site de la station écrit que les chiens doivent rester tenus en laisse dans le parc, ce qui contredit le Parc : c'est la règle du Parc qui s'applique.</p><p>Pour les remontées, la station précise que les chiens sont acceptés dans certaines télécabines, à l'appréciation du personnel. Pour une balade facile hors du cœur du parc, voir <a href=\"/fiche-lac-de-la-rosiere-courchevel\">le lac de la Rosière</a> ou <a href=\"/fiche-balade-boucle-de-mateigena-courchevel\">la boucle de Mateigena</a>.</p>",
+    "html": "<p>Courchevel touche le Parc national de la Vanoise, où les chiens sont interdits dans le cœur du parc, même en laisse ou portés dans un sac (amende de 135 €, sauf chien d'assistance indispensable à une personne en situation de handicap) ; ils sont admis en laisse sur les sentiers qui longent la limite du cœur. Sur ce point, le site de la station écrit que les chiens doivent rester tenus en laisse dans le parc, ce qui contredit le Parc : c'est la règle du Parc qui s'applique.</p><p>Pour les remontées, la fiche du domaine de la vallée de Méribel sur le site de la station (hiver 2026-27) précise que les chiens sont acceptés dans certaines télécabines, à l'appréciation du personnel des remontées. Pour une balade facile hors du cœur du parc, voir <a href=\"/fiche-lac-de-la-rosiere-courchevel\">le lac de la Rosière</a> ou <a href=\"/fiche-balade-boucle-de-mateigena-courchevel\">la boucle de Mateigena</a>.</p>",
     "sources": [
       {
         "label": "Parc national de la Vanoise : venir avec mon chien",
@@ -506,7 +510,7 @@
     ]
   },
   "embrun-avec-son-chien": {
-    "html": "<p>Au plan d'eau d'Embrun, le panneau officiel de la ville (2026) indique que les chiens sont interdits sur les plages et admis en laisse ailleurs ; un espace de liberté canine est aménagé autour du plan d'eau (<a href=\"/fiche-espace-liberte-canine-embrun\">voir la fiche</a>). La ville cite un arrêté permanent (2021-179) sur la présence des chiens en centre-ville et au plan d'eau, et rappelle que les chiens sont interdits dans les jardins publics.</p><p>Plus haut, le cœur du Parc national des Écrins est interdit aux chiens, même en laisse ou portés ; à Serre-Ponçon, le livret de l'office de tourisme place les portes du Parc dans le vallon du Rabioux et celui de Chargès, et signale des alpages fermés aux chiens.</p>",
+    "html": "<p>Au plan d'eau d'Embrun, le panneau de réglementation 2026 de la ville indique, dans sa légende, des chiens interdits sur les plages et tenus en laisse ailleurs ; l'office de tourisme de Serre-Ponçon confirme que les animaux ne sont pas autorisés sur les plages publiques. Un espace de liberté canine est aménagé entre la digue, le lac et la Durance, où les chiens peuvent courir sans laisse sous la responsabilité de leur maître (<a href=\"/fiche-espace-liberte-canine-embrun\">voir la fiche</a>). La ville cite un arrêté permanent (AM 2021-179) sur la présence des chiens en centre-ville et au plan d'eau ; son texte n'est pas en ligne, ses règles précises ne sont donc pas reprises ici. La mairie rappelle que les chiens sont interdits dans les jardins publics ; un jardin récemment rouvert en centre-ville les refuse même en laisse.</p><p>Plus haut, le cœur du Parc national des Écrins est interdit aux chiens, même en laisse ou portés ; à Serre-Ponçon, le livret de l'office place les portes du Parc dans la vallée du Rabioux (après la cascade de la Pisse) et le vallon de Chargès (après la chapelle Saint-Marcellin). Selon ce livret (2025), la quasi-totalité des randonnées se fait avec le chien en laisse, sauf les alpages du Cirque et du Pic de Morgon (15 juin-15 juillet et 15 août-15 septembre) et de Réallon (15 juin-15 septembre), interdits aux chiens même en laisse ; à revérifier avant de partir.</p>",
     "sources": [
       {
         "label": "Ville d'Embrun : réglementation du plan d'eau 2026",
@@ -517,8 +521,16 @@
         "url": "https://www.ville-embrun.fr/sites/default/files/domaine/ville_embrun_fr/documents/20251103_cr_chaussiere__1479129.pdf"
       },
       {
+        "label": "Ville d'Embrun : Le Mag (octobre 2026), jardin du centre-ville",
+        "url": "https://www.ville-embrun.fr/sites/default/files/domaine/ville_embrun_fr/documents/ace-71_2026-web__1852663.pdf"
+      },
+      {
         "label": "Office de tourisme de Serre-Ponçon : livret Serre-Ponçon avec votre chien (2025)",
         "url": "https://www.serreponcon.com/wp-content/uploads/2025/08/serre-poncon-avec-votre-chien-2025-compr.pdf"
+      },
+      {
+        "label": "Office de tourisme de Serre-Ponçon : les plages de Serre-Ponçon",
+        "url": "https://www.serreponcon.com/lac-de-serre-poncon/les-plages-de-serre-poncon"
       },
       {
         "label": "Parc national des Écrins : animaux domestiques",
@@ -758,7 +770,7 @@
     ]
   },
   "la-clusaz-avec-son-chien": {
-    "html": "<p>À La Clusaz, les chiens sont les bienvenus, tenus en laisse et sans comportement agressif, sur les quatre remontées ouvertes l'été (télécabines de Beauregard et de la Patinoire, télésièges du Crêt du Merle et du Crêt du Loup) ; voir <a href=\"/fiche-activite-remontees-laclusaz\">la fiche remontées</a>. L'office de tourisme ajoute qu'en hiver certaines remontées (télécabine de Beauregard, Transval) les acceptent aussi, ainsi que de nombreux itinéraires piétons et raquettes.</p><p>En alpage, garde ton chien en laisse dès qu'il y a un troupeau ; si un chien de protection (patou) s'approche, lâche la laisse plutôt que de tirer dessus, et ne prends pas un petit chien dans les bras (conseil de la station). Voir <a href=\"/fiche-lac-des-confins-la-clusaz-chien\">le lac des Confins</a>.</p>",
+    "html": "<p>À La Clusaz, les chiens sont les bienvenus, tenus en laisse et sans comportement agressif, sur les quatre remontées ouvertes l'été (télécabines de Beauregard et de la Patinoire, télésièges du Crêt du Merle et du Crêt du Loup), selon l'exploitant ; voir <a href=\"/fiche-activite-remontees-laclusaz\">la fiche remontées</a>. L'hiver, la FAQ de l'exploitant précise qu'en théorie les chiens peuvent monter dans les télécabines et télésièges débrayables, mais que le personnel d'embarquement décide selon la taille du chien et la fréquentation de l'appareil.</p><p>En alpage, garde ton chien en laisse dès qu'il y a un troupeau ; si un chien de protection (patou) s'approche, lâche la laisse plutôt que de tirer dessus, et ne prends pas un petit chien dans les bras (conseil de la station, qui recommande aussi d'éviter les zones de pâturage). Voir <a href=\"/fiche-lac-des-confins-la-clusaz-chien\">le lac des Confins</a>.</p>",
     "sources": [
       {
         "label": "La Clusaz : autorisations d'accès aux remontées (chiens)",
@@ -769,8 +781,8 @@
         "url": "https://forfait.laclusaz.com/fr/faq-ete"
       },
       {
-        "label": "Office de tourisme de La Clusaz : cani-randonnée en hiver",
-        "url": "https://www.visiter-laclusaz.com/activite/74-cani-randonnees-cani-balade"
+        "label": "La Clusaz : FAQ hiver (chiens sur les remontées)",
+        "url": "https://forfait.laclusaz.com/fr/foire-aux-questions"
       }
     ]
   },
@@ -865,7 +877,7 @@
     ]
   },
   "les-deux-alpes-avec-son-chien": {
-    "html": "<p>Aux Deux Alpes, seul le cœur du Parc national des Écrins est interdit aux chiens, même tenus en laisse ou portés ; autour de la station, les randonnées hors du cœur sont possibles, et le Parc rappelle de tenir son chien en laisse près des troupeaux, car les chiens de protection y sont nombreux. L'office de tourisme cite Venosc et Mont-de-Lans pour se promener avec son chien.</p><p>Les chiens sont acceptés dans les remontées à cabines (Jandri, télémixtes du Diable, de Belle Étoile et de la Vallée Blanche, télécabine de Venosc), en laisse, avec parfois une muselière ; les pistes de ski leur sont interdites. Voir <a href=\"/fiche-activite-telecabines-deux-alpes\">la fiche remontées</a>.</p>",
+    "html": "<p>Aux Deux Alpes, seul le cœur du Parc national des Écrins est interdit aux chiens, même tenus en laisse ou portés ; autour de la station, les randonnées hors du cœur sont possibles, et le Parc conseille de tenir son chien en laisse à l'approche d'un troupeau (chiens de protection, ou patous). L'office de tourisme cite des balades à Venosc et à Mont-de-Lans, et précise que, dans le Parc des Écrins, les chiens ne sont pas autorisés.</p><p>Selon l'office de tourisme (article du 15 septembre 2026), les chiens sont acceptés dans plusieurs remontées : le Jandri, les télémixtes du Diable, de Belle Étoile et de la Vallée Blanche, les télécabines de Venosc et de Super Venosc, l'ascenseur incliné et le funiculaire. Le chien doit être tenu en laisse, avec parfois une muselière ; les pistes de ski lui sont interdites. Voir <a href=\"/fiche-activite-telecabines-deux-alpes\">la fiche remontées</a>.</p>",
     "sources": [
       {
         "label": "Office de tourisme des 2 Alpes : vacances d'hiver avec son chien",
@@ -920,15 +932,11 @@
     ]
   },
   "megeve-avec-son-chien": {
-    "html": "<p>À Megève, l'office de tourisme et les remontées du domaine acceptent les animaux : en été, la télécabine du Jaillet embarque les chiens gratuitement, à condition de les tenir en laisse sur les itinéraires piétons (<a href=\"/fiche-activite-remontees-megeve-chien\">voir la fiche</a>). Megève n'a pas de réserve naturelle propre, mais celles du Pays du Mont-Blanc voisin sont interdites aux chiens, même en laisse.</p><p>L'hiver, le guide du Pays du Mont-Blanc indique que les chiens sont interdits sur les pistes de ski, tolérés sur le côté en laisse, admis sur les itinéraires de raquettes dédiés et près des pistes de ski de fond en laisse (en ramassant les déjections), et que les remontées ouvertes aux chiens sont celles ouvertes aux piétons.</p>",
+    "html": "<p>À Megève, en été, la télécabine du Jaillet embarque les chiens gratuitement, à condition de les tenir en laisse sur les itinéraires piétons, selon les Portes du Mont-Blanc (<a href=\"/fiche-activite-remontees-megeve-chien\">voir la fiche</a>). Le guide du Pays du Mont-Blanc précise que les chiens sont interdits dans les réserves naturelles de Passy, de Sixt-Fer-à-Cheval et des Aiguilles Rouges, même en laisse, et seulement tolérés en laisse dans celle des Contamines-Montjoie.</p><p>L'hiver, ce même guide indique que les chiens sont interdits sur les pistes de ski, tolérés sur le côté en laisse, admis sur les itinéraires de raquettes dédiés (hors réserves) et à proximité des pistes de ski de fond en laisse (en ramassant les déjections), et que les remontées ouvertes aux chiens sont celles ouvertes aux piétons, hors les deux tronçons de l'Aiguille du Midi. À Combloux, le guide signale que la présence des chiens est proscrite d'environ mi-juin à mi-septembre dans l'alpage de Croisse Baulet, d'après l'arrêté municipal.</p>",
     "sources": [
       {
         "label": "Les Portes du Mont-Blanc : télécabine du Jaillet, transport de chiens",
         "url": "https://www.lesportesdumontblanc.fr/ete/telecabine-ete-megeve-jaillet"
-      },
-      {
-        "label": "Megève Tourisme : télécabine du Jaillet (animaux acceptés)",
-        "url": "https://www.megeve-tourisme.fr/equipements/telecabine-du-jaillet"
       },
       {
         "label": "Pays du Mont-Blanc : sites accessibles aux chiens (2026)",
@@ -1313,7 +1321,7 @@
     ]
   },
   "tignes-avec-son-chien": {
-    "html": "<p>À Tignes, la laisse est obligatoire au cœur de la station (village, tour du lac) ; en pleine nature, hors zones protégées, elle n'est pas obligatoire mais fortement conseillée à cause des troupeaux. Les chiens sont interdits dans le Parc national de la Vanoise et dans la réserve de Tignes-Champagny, même en laisse ou portés ; ils sont admis en laisse dans la réserve de la Grande Sassière. Voir aussi <a href=\"/fiche-lac-de-tignes\">le lac de Tignes</a>.</p><p>Les sources de la station divergent sur les remontées d'été : le magazine dit la télécabine de la Tovière autorisée en laisse (fermée tout l'été 2026) et le funiculaire plus ouvert aux chiens, la brochure 2026 l'autorise en laisse jusqu'à la terrasse d'arrivée, et la page des remontées écrit que les animaux ne sont admis sur aucune. Voir <a href=\"/fiche-activite-telecabine-toviere-funiculaire-tignes\">la fiche remontées</a>.</p>",
+    "html": "<p>À Tignes, la laisse est obligatoire au cœur de la station (village, tour du lac) ; en pleine nature, hors zones protégées, elle n'est pas obligatoire mais fortement conseillée à cause des troupeaux et de la faune. Les chiens sont interdits dans le Parc national de la Vanoise et dans la réserve de Tignes-Champagny, même en laisse ou portés ; ils sont admis en laisse en permanence dans la réserve de la Grande Sassière. En dehors des espaces protégés, ils peuvent se baigner dans les lacs. Voir aussi <a href=\"/fiche-lac-de-tignes\">le lac de Tignes</a>.</p><p>Les sources de la station divergent sur les remontées d'été. Le magazine dit la télécabine de la Tovière autorisée aux chiens en laisse (elle est fermée tout l'été 2026) et le funiculaire Perce-Neige « plus autorisé aux chiens ». La brochure été 2026 (juin) écrit au contraire que les chiens en laisse sont admis dans le funiculaire, sans pouvoir aller au-delà de la terrasse du restaurant d'arrivée, et qu'ils sont interdits sur les télésièges Palafour, Fresse et Tufs. La page des remontées écrit que les animaux, même en laisse, ne sont acceptés sur aucune remontée mécanique. Voir <a href=\"/fiche-activite-telecabine-toviere-funiculaire-tignes\">la fiche remontées</a>.</p>",
     "sources": [
       {
         "label": "Tignes.net : FAQ tout sur les toutous",
