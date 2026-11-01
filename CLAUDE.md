@@ -379,6 +379,10 @@ Coco Explore — cocoexplore.com
 
 Pas d'action de notre côté en attendant la réponse de SantéVet. Une fois la marche à suivre connue (et un lien tracké réel obtenu), prévoir son insertion dans 1-2 fiches vétérinaires urgences et/ou un futur article "conseils de Coco" sur la préparation d'un voyage, avec la mention de lien affilié obligatoire (cadre légal français).
 
+### Awin — tri des annonceurs (01/11/2026)
+
+Compte Awin parcouru avec l'utilisateur (filtre France) : la recherche par mot-clé ne filtre pas par thème (« chien » renvoie les 411 annonceurs ouverts en France). **Dogfy Diet FR écarté (décision de l'utilisateur)** : repas frais pour chiens par abonnement, concurrent direct de Bimo (partenaire d'articles), ne pas le proposer de nouveau. Écartés aussi : annonceurs sans lien avec le chien (Upway, Stikets, Aosom, Juskys, SFR, etc.), Nordic Oil (CBD, sujet santé délicat). Pistes à vérifier par recherche de nom de marque dans l'annuaire : Just Russel (alimentation chien ? à confirmer, validation 43 %), SantéVet, assureurs animaux, animaleries en ligne — en évitant les concurrents de Bimo (alimentation maison/fraîche).
+
 ### Google AdSense : écarté pour l'instant (décision de l'utilisateur, 01/11/2026)
 
 Pas de publicité AdSense : au trafic actuel (~1 000 pages vues/mois) le revenu serait de quelques euros par mois, pour un coût réel (vitesse des pages, image de guide vérifié, pubs non choisies pouvant concurrencer les partenaires et les liens affiliés, bannière de consentement certifiée obligatoire en Europe). Priorité au programme partenaire, à l'affiliation ciblée et aux articles sponsorisés. À ne reconsidérer qu'au-delà de ~30 000-50 000 pages vues/mois, avec parcimonie (guides plutôt que fiches).
