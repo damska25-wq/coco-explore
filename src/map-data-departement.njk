@@ -1,0 +1,14 @@
+---
+pagination:
+  data: departements
+  size: 1
+  alias: dep
+permalink: "map-data-{{ dep.slug }}.js"
+eleventyExcludeFromCollections: true
+---
+// Fiches du département seulement (la carte de la page département n'a pas besoin des ~9 300 fiches du site).
+window.COCO_LIEUX=[
+{%- for fiche in collections.fiches | whereDept(dep.id) %}
+{"slug":{{ fiche.data.permalinkPath | cleanUrl | dump | safe }},"titre":{{ fiche.data.h1 | dump | safe }},"lieu":{{ fiche.data.lieu | dump | safe }},"categorie":{{ fiche.data.tag | mapCategorie | dump | safe }},"catId":{{ fiche.data.breadcrumbCatId | dump | safe }},"departement":{{ fiche.data.departement | dump | safe }},"img":{{ fiche.data.heroImage | optimizeImg | dump | safe }},"lat":{{ fiche.data.lat }},"lng":{{ fiche.data.lng }}}{% if not loop.last %},{% endif %}
+{%- endfor %}
+];
