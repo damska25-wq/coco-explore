@@ -1,0 +1,12 @@
+---
+pagination:
+  data: categoryPages
+  size: 1
+  alias: cp
+permalink: "nearby-{{ cp.slug }}.js"
+eleventyExcludeFromCollections: true
+---
+// Lieux de la catégorie pour l'encadré « les plus proches de toi » (chargé à la demande par nearby.js).
+window.COCO_NEARBY=[
+{%- for fiche in collections.fiches | inCategoryPage(cp) %}{"u":{{ ("/" + (fiche.data.permalinkPath | cleanUrl)) | dump | safe }},"t":{{ fiche.data.h1 | dump | safe }},"l":{{ fiche.data.lieu | dump | safe }},"a":{{ fiche.data.lat }},"o":{{ fiche.data.lng }}}{% if not loop.last %},{% endif %}{% endfor -%}
+];

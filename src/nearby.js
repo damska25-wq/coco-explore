@@ -32,15 +32,33 @@
     status.textContent = "Distances à vol d'oiseau, calculées depuis le centre de chaque commune.";
   }
 
+  // Les lieux sont chargés à la demande (fichier /nearby-<catégorie>.js), pour ne pas
+  // alourdir la page de milliers de lignes quand le visiteur ne se localise pas.
+  function withData(cb) {
+    if (window.COCO_NEARBY || !window.COCO_NEARBY_SRC) return cb();
+    var s = document.createElement("script");
+    s.src = window.COCO_NEARBY_SRC;
+    s.onload = cb;
+    document.head.appendChild(s);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.getElementById("nearby-btn");
     var status = document.getElementById("nearby-status");
     if (!btn || !window.CocoGeoloc) return;
-    var stored = window.CocoGeoloc.getStored();
-    if (stored) render(stored);
-    btn.addEventListener("click", function () {
+    function locate() {
       status.textContent = "Localisation en cours…";
-      window.CocoGeoloc.request(render, function (msg) { status.textContent = msg; });
-    });
+      window.CocoGeoloc.request(function (pos) { withData(function () { render(pos); }); },
+        function (msg) { status.textContent = msg; });
+    }
+    var stored = window.CocoGeoloc.getStored();
+    if (stored) withData(function () { render(stored); });
+    btn.addEventListener("click", locate);
+    // Arrivée depuis un raccourci « … autour de moi » de l'accueil (?autour=1).
+    if (/[?&]autour=1/.test(location.search)) {
+      var box = document.getElementById("nearby-box");
+      if (box) box.scrollIntoView({ block: "start" });
+      if (!stored) locate();
+    }
   });
 })();

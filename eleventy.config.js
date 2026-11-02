@@ -646,6 +646,14 @@ export default function (eleventyConfig) {
   // fiche — on ne réaffirme jamais une règle d'accès qui ne serait pas déjà
   // écrite noir sur blanc ailleurs sur le site (pas de champ à part à tenir
   // à jour ni de risque de contredire le corps de la fiche).
+  // Badge « Restrictions » : la fiche annonce une interdiction (totale ou partielle :
+  // « chiens interdits », « non admis à l'intérieur », « plages interdites en été »…)
+  // dans son titre. Volontairement nuancé : le détail est dans la fiche.
+  eleventyConfig.addFilter("restrictBadge", (title) =>
+    /interdit|non admis|non acceptés?|pas acceptés?|refusés?/i.test(String(title || ""))
+      ? { label: "Restrictions", cls: "badge-restrict" }
+      : null
+  );
   eleventyConfig.addFilter("accessBadge", (infoItems) => {
     const find = (label) => (infoItems || []).find((i) => i.label === label);
     const chiens = find("Chiens");

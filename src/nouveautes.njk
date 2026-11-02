@@ -32,6 +32,7 @@ extraHead: |
   <div class="fiche-grid">
     {%- for fiche in collections.fiches | latest(24) %}
     {%- set badge = (fiche.data.infoItems | accessBadge) if (fiche.data.breadcrumbCatId == "plages" or fiche.data.breadcrumbCatId == "cote-azur") else ((fiche.data.infoItems | vetBadge) if fiche.data.breadcrumbCatId == "veterinaires" else null) %}
+    {%- if not badge %}{% set badge = fiche.data.title | restrictBadge %}{% endif %}
     <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card" data-avis="{{ fiche.data.avisSlug }}">
       <div class="thumb">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}

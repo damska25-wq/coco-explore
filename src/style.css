@@ -484,6 +484,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 }
 .access-badge.badge-year-round { background: var(--pin); }
 .access-badge.badge-seasonal { background: var(--ocre); color: var(--pin-deep); }
+.access-badge.badge-restrict { background: #B4532A; color: #fff; }
 .access-badge.badge-urgence { background: var(--terracotta-deep); }
 /* Badge « Partenaire » (programme payant, voir CLAUDE.md) : vert profond et
    or, en haut à droite de la vignette — distinct des badges d'accès (en haut
@@ -1034,6 +1035,10 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .hero-locate-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0,0,0,0.24); }
 .hero-locate-btn:disabled { opacity: 0.7; cursor: wait; }
 .hero-locate-hint { font-size: 0.9rem; color: rgba(255,253,248,0.8); max-width: 34ch; }
+.hero-near { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; }
+.hero-near-label { font-size: 0.9rem; color: rgba(255,253,248,0.85); margin-right: 2px; }
+.hero-near a { display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(255,253,248,0.14); border: 1px solid rgba(255,253,248,0.35); color: #FFFDF8; font-size: 0.88rem; text-decoration: none; }
+.hero-near a:hover { background: rgba(255,253,248,0.26); }
 
 /* Accueil : bloc « Partager Coco Explore » en bas de page */
 .share-section { padding-top: 24px; padding-bottom: 56px; }
