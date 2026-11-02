@@ -101,6 +101,30 @@ for (const file of html.filter((f) => /\/fiche-[^/]*\.html$/.test(f))) {
   }
 }
 
+// 7. Avertissement (non bloquant) : dates « jusqu'au … » déjà passées, présentées
+// comme actuelles (fins de saison, fermetures pour travaux…). À reformuler sur la
+// source (« saison terminée le … ; dates suivantes à confirmer »).
+const MOIS = { janvier: 1, février: 2, fevrier: 2, mars: 3, avril: 4, mai: 5, juin: 6, juillet: 7, août: 8, aout: 8, septembre: 9, octobre: 10, novembre: 11, décembre: 12 };
+const DATE_RE = /jusqu['’]au\s+(\d{1,2})(?:er)?\s+(janvier|février|fevrier|mars|avril|mai|juin|juillet|août|aout|septembre|octobre|novembre|décembre)\s+(20\d\d)|jusqu['’]au\s+(\d{1,2})\/(\d{1,2})\/(20\d\d)/gi;
+const DEJA_DATE = /pass[ée]e|termin[ée]e|dépass[ée]e|annonçait|affichait|a été|n'a été|était|saison 20\d\d|à confirmer|à vérifier|à reconfirmer|daté|derniers horaires|ensuite|reconduction|dernier|dernière|valables? jusqu|signalait/i;
+const today = new Date();
+const expired = [];
+for (const file of sources) {
+  const text = readFileSync(file, "utf8");
+  for (const m of text.matchAll(DATE_RE)) {
+    const d = m[1] ? new Date(+m[3], MOIS[m[2].toLowerCase()] - 1, +m[1]) : new Date(+m[6], +m[5] - 1, +m[4]);
+    if (!(d < today)) continue;
+    const around = text.slice(Math.max(0, m.index - 120), m.index + m[0].length + 80);
+    if (DEJA_DATE.test(around)) continue;
+    expired.push(`${file} : « ${m[0]} »`);
+  }
+}
+if (expired.length) {
+  console.warn(`\n⚠ ${expired.length} date(s) « jusqu'au … » déjà passée(s), à reformuler (non bloquant) :`);
+  for (const e of expired.slice(0, 20)) console.warn("  - " + e);
+  if (expired.length > 20) console.warn(`  … et ${expired.length - 20} autres.`);
+}
+
 if (errors.length) {
   console.error(`\n✖ Contrôle du site : ${errors.length} problème(s), mise en ligne bloquée.\n`);
   for (const e of errors.slice(0, 50)) console.error("  - " + e);
