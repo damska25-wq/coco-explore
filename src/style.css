@@ -1057,5 +1057,8 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .gear-box { border: 1px solid rgba(var(--ink), 0.15); border-radius: 6px; padding: 14px 18px; margin: 1.4em 0; font-size: 0.92rem; }
 .gear-box p { margin: 0 0 6px; }
 .gear-box-title { font-weight: 600; margin: 0 0 6px; color: var(--heading); }
-.gear-box ul { margin: 8px 0; padding-left: 1.2em; }
+.gear-box ul { list-style: none; margin: 10px 0 8px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.gear-box li a { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px; border: 1px solid var(--heading-soft); border-radius: 8px; color: var(--heading); text-decoration: none; font-weight: 600; line-height: 1.3; }
+.gear-box li a::after { content: "→"; flex: none; }
+.gear-box li a:hover, .gear-box li a:focus-visible { background: var(--surface-soft); }
 .gear-box-note { color: rgba(var(--ink), 0.6); font-size: 0.8rem; margin: 8px 0 0; }
