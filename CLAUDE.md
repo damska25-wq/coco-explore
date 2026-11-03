@@ -32,6 +32,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 - Bande de Truffes (Chambéry) : relance envoyée par l'utilisateur le 31/10 (rien publié sans son accord ; 3 fiches prêtes dans `propositions/bande-de-truffes/`).
 - CECS Mérignac : demande de lien envoyée par l'utilisateur ; s'il est ajouté, l'inscrire dans `ECHANGES-LIENS.md`.
 - Bimo : série continuée à **1 article par mois** (voir `ECHANGES-LIENS.md`) ; prochain attendu vers le 15-20/11 (fêtes de fin d'année). Les articles Bimo vont dans la section « Alimentation en voyage » de `/guides` (kicker « Alimentation · Article proposé par Bimo »).
+- La Vie de Château (chambres d'hôtes, Grignan) : fiche corrigée le 03/11 à la demande du propriétaire, Bruno Ernould (animaux au cas par cas sur accord préalable, 10 €/nuit, pas de dépôt de garantie). Dans la réponse, échange de liens proposé (page partenaires sur leur site ?). S'il accepte : ligne `fiche-collab` + `ECHANGES-LIENS.md`.
 - SantéVet (affiliation, relance envoyée par l'utilisateur le 01/11) et Maxi Zoo (Awin, candidature du 01/11) : réponses attendues. Expedia Group : candidature probablement jamais envoyée, à faire par l'utilisateur.
 
 ## Historique — encadrés « le plus proche » et garde de chien (31/10/2026, mis en ligne)
