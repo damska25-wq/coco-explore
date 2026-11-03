@@ -1052,3 +1052,10 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 
 .dept-urgence { margin-top: 14px; font-size: 0.95rem; }
 .dept-urgence a:last-child { display: inline-block; margin-left: 4px; font-weight: 600; }
+
+/* Encadré « Le matériel utile » (liens affiliés discrets dans les guides) */
+.gear-box { border: 1px solid rgba(var(--ink), 0.15); border-radius: 6px; padding: 14px 18px; margin: 1.4em 0; font-size: 0.92rem; }
+.gear-box p { margin: 0 0 6px; }
+.gear-box-title { font-weight: 600; margin: 0 0 6px; color: var(--heading); }
+.gear-box ul { margin: 8px 0; padding-left: 1.2em; }
+.gear-box-note { color: rgba(var(--ink), 0.6); font-size: 0.8rem; margin: 8px 0 0; }
