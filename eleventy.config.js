@@ -177,7 +177,7 @@ export default function (eleventyConfig) {
     "Saint-Lary-Soulan", "Saint-Malo", "Saint-Martin-de-Ré", "Saint-Raphaël", "Saint-Tropez",
     "Saint-Valery-sur-Somme", "Sainte-Maxime", "Sanary-sur-Mer", "Sarlat-la-Canéda", "Sarzeau", "Sète",
     "Six-Fours-les-Plages", "Soorts-Hossegor", "Tignes", "Trouville-sur-Mer", "Vallon-Pont-d'Arc",
-    "Villefranche-sur-Mer",
+    "Villefranche-sur-Mer", "Val-d'Isère", "Les Arcs", "La Plagne", "Méribel", "Val Thorens", "Les Menuires", "Morzine", "Font-Romeu",
   ];
   const slugify = (str) =>
     str
