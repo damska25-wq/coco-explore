@@ -1083,3 +1083,9 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .hiver-stations { padding-left: 1.2em; }
 .hiver-stations li { margin: 6px 0; }
 .hiver-dep { color: rgba(var(--ink),0.6); font-size: 0.9em; }
+
+/* Invitation à installer le site sur l'écran d'accueil (accueil) */
+.install-app { display: flex; align-items: center; gap: 8px; margin: 14px 0 0; font-size: 0.92rem; color: rgba(var(--ink),0.8); }
+.install-app[hidden] { display: none; }
+.install-app .icon { width: 18px; height: 18px; flex: none; }
+.install-app-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; border: 1px solid var(--heading-soft); background: var(--surface); color: var(--heading); font: inherit; font-weight: 600; cursor: pointer; }

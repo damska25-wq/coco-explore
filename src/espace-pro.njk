@@ -1,0 +1,76 @@
+---
+permalink: espace-pro.html
+permalinkPath: espace-pro.html
+title: "Espace pro : ajoutez ou corrigez votre fiche gratuitement"
+description: "Vous accueillez les chiens ou proposez un service pour chiens ? Ajoutez votre établissement à Coco Explore ou corrigez votre fiche, gratuitement."
+layout: legal.njk
+extraHead: |
+  <style>
+    .pro-form { display: grid; gap: 14px; max-width: 560px; margin-top: 18px; }
+    .pro-form label { display: grid; gap: 6px; font-weight: 600; font-size: 0.95rem; }
+    .pro-form input, .pro-form select, .pro-form textarea { font: inherit; padding: 10px 12px; border: 1px solid rgba(var(--ink),0.2); border-radius: 6px; background: var(--surface); color: var(--encre); font-weight: 400; }
+    .pro-form textarea { min-height: 120px; }
+    .pro-form .pro-optional { font-weight: 400; color: rgba(var(--ink),0.6); }
+    .pro-form button { justify-self: start; padding: 12px 22px; border: 0; border-radius: 8px; background: var(--terracotta); color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+    .pro-form button[disabled] { opacity: 0.6; cursor: wait; }
+    .pro-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .pro-status { font-weight: 600; }
+    .pro-status.ok { color: var(--pin); }
+    .pro-status.err { color: var(--terracotta-deep); }
+    .pro-note { font-size: 0.85rem; color: rgba(var(--ink),0.65); }
+  </style>
+bodyHtml: |
+  <section class="wrap legal-body">
+    <span class="tag">Professionnels</span>
+    <h1>Espace pro</h1>
+    <p>Vous tenez un hébergement, un restaurant ou un lieu qui accueille les chiens, ou vous proposez un service pour chiens (vétérinaire, toilettage, dogwash, garde, éducation) ? Coco Explore référence <strong>gratuitement</strong> les adresses utiles aux propriétaires de chiens partout en France.</p>
+    <ul>
+      <li><strong>Ajouter votre établissement</strong> : nous vérifions les informations sur votre site ou vos pages officielles avant de publier la fiche.</li>
+      <li><strong>Corriger votre fiche</strong> : horaires, tarifs, conditions d'accueil des chiens… indiquez simplement ce qui a changé.</li>
+      <li><strong>Gagner en visibilité</strong> : une mise en avant optionnelle existe, voir <a href="/devenir-partenaire">Devenir partenaire</a>.</li>
+    </ul>
+
+    <form class="pro-form" id="pro-form" novalidate>
+      <label>Votre demande
+        <select name="type">
+          <option value="ajout">Ajouter mon établissement</option>
+          <option value="correction">Corriger ma fiche</option>
+          <option value="partenaire">Être mis en avant (partenaire)</option>
+          <option value="autre">Autre demande</option>
+        </select>
+      </label>
+      <label>Nom de l'établissement <input name="etablissement" required maxlength="120" autocomplete="organization"></label>
+      <label>Commune <input name="ville" required maxlength="80" autocomplete="address-level2"></label>
+      <label>Votre nom <span class="pro-optional">(facultatif)</span> <input name="nom" maxlength="80" autocomplete="name"></label>
+      <label>E-mail pour vous répondre <input name="email" type="email" required maxlength="120" autocomplete="email"></label>
+      <label>Téléphone <span class="pro-optional">(facultatif)</span> <input name="telephone" type="tel" maxlength="30" autocomplete="tel"></label>
+      <label>Site web ou lien de votre fiche <span class="pro-optional">(facultatif)</span> <input name="lien" maxlength="300" inputmode="url"></label>
+      <label>Votre message <span class="pro-optional">(ce qu'il faut ajouter ou corriger, conditions d'accueil des chiens…)</span> <textarea name="message" maxlength="1500"></textarea></label>
+      <div class="pro-hp" aria-hidden="true"><label>Ne pas remplir <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button type="submit">Envoyer ma demande</button>
+      <p class="pro-status" id="pro-status" role="status"></p>
+      <p class="pro-note">Vos coordonnées servent uniquement à traiter votre demande et à vous répondre (voir la <a href="/politique-confidentialite">politique de confidentialité</a>). Le référencement reste gratuit et le contenu des fiches n'est jamais influencé par un paiement.</p>
+    </form>
+  </section>
+  <script>
+  (function () {
+    var form = document.getElementById("pro-form"), status = document.getElementById("pro-status");
+    var q = new URLSearchParams(location.search).get("fiche");
+    if (q && /^[a-z0-9-]+$/.test(q)) { form.elements.type.value = "correction"; form.elements.lien.value = "https://cocoexplore.com/" + q; }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = {}; new FormData(form).forEach(function (v, k) { data[k] = v; });
+      if (!data.etablissement || !data.ville || !data.email) { status.className = "pro-status err"; status.textContent = "Merci de remplir le nom de l'établissement, la commune et l'e-mail."; return; }
+      var btn = form.querySelector("button"); btn.disabled = true; status.className = "pro-status"; status.textContent = "Envoi en cours…";
+      fetch("/api/pro", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (res.ok) { form.reset(); status.className = "pro-status ok"; status.textContent = "Merci ! Votre demande est bien arrivée, nous revenons vers vous rapidement."; }
+          else { status.className = "pro-status err"; status.textContent = (res.j && res.j.error) || "L'envoi a échoué, réessayez ou écrivez à contact@cocoexplore.com."; }
+        })
+        .catch(function () { status.className = "pro-status err"; status.textContent = "L'envoi a échoué, réessayez ou écrivez à contact@cocoexplore.com."; })
+        .then(function () { btn.disabled = false; });
+    });
+  })();
+  </script>
+---

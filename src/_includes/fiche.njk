@@ -136,6 +136,12 @@ extraScripts: |
       <svg class="icon"><use href="#i-alert"/></svg>
       <div><span class="label">{{ "Spotted a mistake?" if lang == "en" else "Une erreur ?" }}</span><span class="value"><a href="mailto:contact@cocoexplore.com?subject={{ reportSubject | urlencode }}&amp;body={{ reportBody | urlencode }}">{{ "Let us know" if lang == "en" else "Nous la signaler" }}</a></span></div>
     </div>
+    {%- if lang != "en" and breadcrumbCatId in ["veterinaires", "restaurants", "hebergements", "toiletteurs", "dogwash", "dogsitters", "education", "activites"] %}
+    <div class="info-item">
+      <svg class="icon"><use href="#i-house"/></svg>
+      <div><span class="label">C'est votre établissement ?</span><span class="value"><a href="/espace-pro?fiche={{ permalinkPath | cleanUrl | urlencode }}">Modifier cette fiche</a></span></div>
+    </div>
+    {%- endif %}
   </div>
 </section>
 

@@ -1,14 +1,23 @@
 {
   "name": "Coco Explore",
   "short_name": "Coco Explore",
-  "description": "Le guide pour sortir avec son chien en région PACA",
-  "start_url": "/index.html",
+  "description": "Le guide pour voyager avec son chien partout en France : plages, balades, hébergements, restaurants, vétérinaires.",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#F8F3E7",
-  "theme_color": "#BE5B3B",
+  "theme_color": "#3C5943",
   "lang": "fr",
   "icons": [
-    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" },
-    { "src": "assets/apple-touch-icon.png", "sizes": "512x512", "type": "image/png" }
-  ]
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "assets/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/"
 }
