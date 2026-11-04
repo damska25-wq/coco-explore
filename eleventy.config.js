@@ -666,6 +666,27 @@ export default function (eleventyConfig) {
       ? { label: "Restrictions", cls: "badge-restrict" }
       : null
   );
+  // Badge unique d'une vignette : règle chien classée (`regleChien`, plages/lacs/Côte d'Azur),
+  // sinon déduction historique depuis les infoItems, badge urgences des vétérinaires,
+  // puis badge « Restrictions » d'après le titre.
+  const REGLE_BADGES = {
+    "toute-annee": { label: "Toute l'année", cls: "badge-year-round" },
+    "saisonnier": { label: "Saisonnier", cls: "badge-seasonal" },
+    "zones": { label: "Zones limitées", cls: "badge-restrict" },
+    "interdit": { label: "Interdits", cls: "badge-restrict" },
+  };
+  eleventyConfig.addFilter("cardBadge", function (fiche) {
+    const d = (fiche && fiche.data) || {};
+    const cat = d.breadcrumbCatId;
+    let badge = null;
+    if (d.regleChien && REGLE_BADGES[d.regleChien]) badge = REGLE_BADGES[d.regleChien];
+    else if (d.regleChien === "incertain") badge = null;
+    else if (cat === "plages" || cat === "cote-azur") badge = eleventyConfig.getFilter("accessBadge")(d.infoItems);
+    else if (cat === "veterinaires") badge = eleventyConfig.getFilter("vetBadge")(d.infoItems);
+    if (!badge) badge = eleventyConfig.getFilter("restrictBadge")(d.title);
+    if (!badge && d.regleChien === "incertain") badge = { label: "Règle à vérifier", cls: "badge-unknown" };
+    return badge;
+  });
   eleventyConfig.addFilter("accessBadge", (infoItems) => {
     const find = (label) => (infoItems || []).find((i) => i.label === label);
     const chiens = find("Chiens");

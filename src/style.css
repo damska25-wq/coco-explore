@@ -486,6 +486,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .access-badge.badge-seasonal { background: var(--ocre); color: var(--pin-deep); }
 .access-badge.badge-restrict { background: #B4532A; color: #fff; }
 .access-badge.badge-urgence { background: var(--terracotta-deep); }
+.access-badge.badge-unknown { background: #6B6F68; color: #fff; }
 /* Badge « Partenaire » (programme payant, voir CLAUDE.md) : vert profond et
    or, en haut à droite de la vignette — distinct des badges d'accès (en haut
    à gauche, « Toute l'année » / « Saisonnier »), qu'il ne masque plus. */

@@ -174,8 +174,7 @@ extraScripts: |
     </div>
     <div class="fiche-grid">
       {%- for fiche in collections.fiches | latestByCategory(section.id, 18) %}
-      {%- set badge = ((fiche.data.infoItems | accessBadge) if (section.id == "plages" or section.id == "cote-azur") else ((fiche.data.infoItems | vetBadge) if section.id == "veterinaires" else null)) %}
-      {%- if not badge %}{% set badge = fiche.data.title | restrictBadge %}{% endif %}
+      {%- set badge = fiche | cardBadge %}
       <a href="{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}" data-avis="{{ fiche.data.avisSlug }}">
         <div class="thumb">
           {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}

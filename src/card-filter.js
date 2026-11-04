@@ -23,7 +23,9 @@
       return b;
     }
     row.appendChild(btn("Toutes", cards.length, ""));
-    labels.sort().forEach(function (l) { row.appendChild(btn(l, counts[l], l)); });
+    var ORDER = ["Toute l'année", "Saisonnier", "Zones limitées", "Restrictions", "Interdits", "Urgences 24h/24", "Règle à vérifier"];
+    var rank = function (l) { var i = ORDER.indexOf(l); return i < 0 ? 50 : i; };
+    labels.sort(function (a, b) { return rank(a) - rank(b) || a.localeCompare(b); }).forEach(function (l) { row.appendChild(btn(l, counts[l], l)); });
     row.addEventListener("click", function (e) {
       var b = e.target.closest("button");
       if (!b) return;
