@@ -25,7 +25,7 @@ Points ouverts, du plus rapide au plus long. Les retirer de cette liste quand il
 **Après la mesure Search Console de mi-novembre**
 - K4 (50 vétérinaires, titres hébergements) : comparer CTR/positions ; si positif, étendre le modèle aux autres vétérinaires.
 - ~1 700 titres > 70 caractères et ~1 700 descriptions de 161-200 caractères : ne les reprendre que si la mesure montre un effet sur le CTR.
-- ~1 400 vétérinaires sans mention 24h/24 à repasser en rigueur maximale.
+- **1 367 vétérinaires sans mention 24h/24 à repasser en rigueur maximale** (plan préparé le 04/11 : `scratchpad/vets-lots.md` et `vets-lots.json`, non versionnés). Lot 0 = les 85 fiches vues dans Search Console (5 400 impressions sur 3 mois, export du 01/11 ; en tête Lac Joué-lès-Tours, Penin Miramont, UVDelta Saint-Laurent-du-Var, Animal Clinic Norroy, Univet Sarcelles, 2 Toute Urgence Rennes, UrgVet Rochecorbon — plusieurs services d'urgence dont la fiche n'affirme pas le 24h/24), puis 23 lots de ~60 fiches par départements. À lancer après la vague Savoie et la mesure K4, en appliquant directement le modèle de titre K4 s'il est validé (un seul passage par fiche). Supermetrics : essai expiré le 15/10, données Search Console à exporter à la main.
 
 **Suivis partenaires (l'utilisateur relance lui-même, pas de rappel programmé)**
 - Les Petits Loots (Angers) : relance envoyée par l'utilisateur le 31/10 (avantages partenaire mis en avant, fiche gratuite en repli). Sans réponse vers le 7/11 : revérifier la fiche prête (`propositions/les-petits-loots/`) sur leurs sources et la publier gratuitement, sans badge.
