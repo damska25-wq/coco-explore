@@ -32,7 +32,7 @@ extraHead: |
 </section>
 
 <section class="fiches wrap">
-  <div class="fiche-grid">
+  <div class="fiche-grid" data-filterable>
     {%- for fiche in dep.fiches %}
     {% include "fiche-card.njk" %}
     {%- endfor %}
@@ -82,4 +82,4 @@ extraHead: |
 </section>
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": cp.faq | faqEntities} | dump | safe }}</script>
 {%- endif %}
-
+<script src="/card-filter.js" defer></script>

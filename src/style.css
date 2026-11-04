@@ -1062,3 +1062,23 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .gear-box li a::after { content: "→"; flex: none; }
 .gear-box li a:hover, .gear-box li a:focus-visible { background: var(--surface-soft); }
 .gear-box-note { color: rgba(var(--ink), 0.6); font-size: 0.8rem; margin: 8px 0 0; }
+
+/* Barre d'actions fixe en bas des fiches (téléphone uniquement) */
+.fiche-actionbar { display: none; }
+@media (max-width: 760px) {
+  .fiche-actionbar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: var(--surface); border-top: 1px solid rgba(var(--ink), 0.12); padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); gap: 8px; box-shadow: 0 -4px 14px rgba(0,0,0,0.06); }
+  .fiche-actionbar a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 6px; border-radius: 8px; border: 1px solid var(--heading-soft); color: var(--heading); font-weight: 600; font-size: 0.95rem; text-decoration: none; }
+  .fiche-actionbar a:first-child { background: var(--pin); border-color: var(--pin); color: #fff; }
+  .fiche-actionbar .icon { width: 18px; height: 18px; }
+  body:has(.fiche-actionbar) { padding-bottom: 72px; }
+}
+
+.dept-filter-count { display: inline-block; min-width: 1.6em; margin-left: 4px; padding: 0 6px; border-radius: 999px; background: rgba(var(--ink), 0.08); font-size: 0.8em; font-weight: 600; text-align: center; }
+.dept-filter-btn.active .dept-filter-count { background: rgba(0,0,0,0.12); }
+
+.card-filter-row { margin: 0 0 18px; }
+.fiche-card[hidden] { display: none !important; }
+
+.hiver-stations { padding-left: 1.2em; }
+.hiver-stations li { margin: 6px 0; }
+.hiver-dep { color: rgba(var(--ink),0.6); font-size: 0.9em; }

@@ -82,6 +82,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/map.js");
   eleventyConfig.addPassthroughCopy("src/notes.js");
   eleventyConfig.addPassthroughCopy("src/nearby.js");
+  eleventyConfig.addPassthroughCopy("src/card-filter.js");
   eleventyConfig.addPassthroughCopy("src/geoloc.js");
   eleventyConfig.addPassthroughCopy("src/conseils.js");
   eleventyConfig.addPassthroughCopy("src/search.js");
@@ -425,6 +426,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("whereDept", (fiches, depId) =>
     (fiches || []).filter((f) => (f.data.departement || []).includes(depId))
   );
+  eleventyConfig.addFilter("whereData", (list, key, value) => (list || []).filter((f) => f && f.data && f.data[key] === value));
   eleventyConfig.addFilter("whereEq", (list, key, value) =>
     (list || []).filter((item) => item[key] === value)
   );
@@ -488,6 +490,15 @@ export default function (eleventyConfig) {
   const LD_DOUBT = /confirm|annuaire|v[ée]rifier|divergen|contradict|ancien|non trouv|non publi|doute|incertain|approximati|selon|ex-|ferm/i;
   // Numéros de téléphone français cliquables (tel:) dans le bandeau des fiches,
   // seulement sur les lignes de contact et si la valeur ne contient pas déjà un lien.
+  // Premier numéro de la ligne Téléphone (barre d'actions mobile des fiches).
+  eleventyConfig.addFilter("firstTel", (items) => {
+    for (const it of items || []) {
+      if (!/^(t[ée]l[ée]phone|phone)$/i.test(String(it.label || "").trim())) continue;
+      const m = String(it.value || "").replace(/<[^>]+>/g, "").match(/(?:\+33\s?|0)[1-9](?:[\s.]?\d\d){4}/);
+      if (m) return "+33" + m[0].replace(/[\s.]/g, "").replace(/^\+33/, "0").slice(1);
+    }
+    return "";
+  });
   eleventyConfig.addFilter("telLinks", (value, label) => {
     const v = String(value == null ? "" : value);
     if (!/t[ée]l[ée]phone|phone|urgence|emergenc|contact|garde/i.test(String(label || "")) || /<a\b/i.test(v)) return v;
@@ -496,6 +507,7 @@ export default function (eleventyConfig) {
       return pre + '<a href="tel:+33' + digits.slice(1) + '" data-track="telephone">' + num + "</a>";
     });
   });
+  eleventyConfig.addFilter("setKey", (obj, k, v) => Object.assign({}, obj, { [k]: v }));
   eleventyConfig.addFilter("ldMerge", (obj, extra) => Object.assign({}, obj, extra));
   eleventyConfig.addFilter("ldContact", (items) => {
     const out = {};

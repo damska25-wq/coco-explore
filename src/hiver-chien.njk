@@ -1,0 +1,40 @@
+---
+permalink: hiver-chien.html
+permalinkPath: hiver-chien.html
+title: "Vacances d'hiver avec son chien : stations, règles et bons réflexes"
+description: "Partir à la montagne cet hiver avec ton chien : les stations où Coco Explore référence des adresses, les règles en montagne et les bons réflexes face au froid."
+layout: base.njk
+---
+{%- set hiverStations = ["Chamonix-Mont-Blanc", "Megève", "La Clusaz", "Courchevel", "Tignes", "Les Deux Alpes", "Briançon", "Embrun", "Barcelonnette", "Cauterets", "Saint-Lary-Soulan", "Bagnères-de-Luchon", "Gérardmer", "Annecy", "Aix-les-Bains"] %}
+<section class="wrap guide-page">
+  <div class="cat-page-crumb"><a href="/">Coco Explore</a> / Vacances d'hiver avec son chien</div>
+  <span class="tag">Saison</span>
+  <h1>Vacances d'hiver avec son chien</h1>
+  <p class="guide-lead">Neige, balades en raquettes ou simple séjour au chalet : la montagne en hiver se partage très bien avec son chien, à condition de connaître les règles des stations et de protéger ton compagnon du froid. Voici tout ce que Coco Explore a rassemblé pour préparer ton séjour.</p>
+
+  <h2>Les bons réflexes face au froid</h2>
+  <p>Froid selon le gabarit et le pelage, coussinets abîmés par la neige et le sel, antigel, glace, pistes de ski de fond et parcs nationaux : notre guide détaille les risques et les gestes simples, d'après les sources vétérinaires et officielles.</p>
+  <p class="cat-see-more"><a href="/guide-hiver-neige-chien">Lire le guide « Chien en hiver : froid, neige, montagne et bons gestes » →</a></p>
+
+  <h2>Les stations où trouver des adresses</h2>
+  <p>Pour chaque station, la page dédiée rassemble les hébergements qui acceptent les chiens, les balades, les vétérinaires et, quand une source officielle existe, l'essentiel des règles locales (laisse, remontées, espaces interdits).</p>
+  <ul class="hiver-stations">
+    {%- for st in hiverStations %}
+    {%- set city = (collections.cityPages | whereEq("ville", st))[0] %}
+    {%- if city %}
+    {%- set nHeb = (city.fiches | whereData("breadcrumbCatId", "hebergements")).length %}
+    <li><a href="/{{ city.slug }}"><strong>{{ city.ville }}</strong></a> <span class="hiver-dep">({{ city.dep.nom }})</span> : {{ city.fiches.length }} adresses{% if nHeb %}, dont {{ nHeb }} hébergement{{ "s" if nHeb > 1 }}{% endif %}</li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+  <p>Tu pars ailleurs ? Retrouve tous les <a href="/hebergement-chien">hébergements qui acceptent les chiens</a> et les <a href="/balade-chien">balades</a>, classés par département.</p>
+
+  <h2>Les règles en montagne</h2>
+  <p>Cœur des parcs nationaux, réserves naturelles, alpages et chiens de protection des troupeaux : les règles changent d'un massif à l'autre. Notre guide de la randonnée fait le point, et le guide hiver précise ce qui concerne les pistes et la neige.</p>
+  <p class="cat-see-more"><a href="/guide-randonnee-regles-chien">Lire le guide « Randonner avec son chien : où et quand a-t-on le droit ? » →</a></p>
+
+  <h2>Sur la route des vacances</h2>
+  <p>La plupart des départs au ski se font en voiture : ce que dit la loi, où installer ton chien, les pauses… tout est dans notre guide.</p>
+  <p class="cat-see-more"><a href="/guide-voiture-chien">Lire le guide « Voyager en voiture avec son chien » →</a></p>
+  <p>Et en cas de pépin sur place, garde sous la main notre guide pour <a href="/guide-urgence-veterinaire-chien">trouver un vétérinaire de garde en vacances</a>.</p>
+</section>
