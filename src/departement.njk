@@ -58,10 +58,20 @@ eleventyComputed:
   { id: "education", label: "Éducation canine" },
   { id: "activites", label: "Parcs canins" }
 ] %}
+{%- set deptCounts = {} %}
+{%- set deptTotal = 0 %}
+{%- for section in sections %}{% if section.catGrid %}
+{%- set n = (collections.fiches | byCategoryAndDept(section.catGrid.countIds, dep.id)).length %}
+{%- set deptCounts = deptCounts | setKey(section.id, n) %}
+{%- set deptTotal = deptTotal + n %}
+{%- endif %}{% endfor %}
 <div class="wrap">
   <div class="dept-filter-row" id="dept-filter-row" role="group" aria-label="Filtrer les fiches par catégorie">
     {%- for f in deptFilters %}
-    <button type="button" class="dept-filter-btn{% if loop.first %} active{% endif %}" data-cat="{{ f.id }}" aria-pressed="{% if loop.first %}true{% else %}false{% endif %}">{{ f.label }}</button>
+    {%- set fc = deptTotal if f.id == "tout" else deptCounts[f.id] %}
+    {%- if f.id == "tout" or fc %}
+    <button type="button" class="dept-filter-btn{% if loop.first %} active{% endif %}" data-cat="{{ f.id }}" aria-pressed="{% if loop.first %}true{% else %}false{% endif %}">{{ f.label }}{% if fc %} <span class="dept-filter-count">{{ fc }}</span>{% endif %}</button>
+    {%- endif %}
     {%- endfor %}
   </div>
   <p class="dept-filter-empty" id="dept-filter-empty" hidden>Pas encore de fiche ici, on y travaille !</p>

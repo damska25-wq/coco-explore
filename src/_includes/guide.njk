@@ -42,6 +42,16 @@ layout: base.njk
   <div class="guide-body">
     {{ bodyHtml | safe }}
   </div>
+  {%- if faq and faq.length %}
+  <section class="guide-faq">
+    <h2>Questions fréquentes</h2>
+    {%- for item in faq %}
+    <h3>{{ item.q | safe }}</h3>
+    <p>{{ item.a | safe }}</p>
+    {%- endfor %}
+  </section>
+  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq | faqEntities} | dump | safe }}</script>
+  {%- endif %}
   {%- if sources and sources.length %}
   <section class="guide-sources">
     <h2>Sources</h2>

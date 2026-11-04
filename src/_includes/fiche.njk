@@ -233,3 +233,11 @@ extraScripts: |
   </div>
 </section>
 {%- endif %}
+{%- set barTel = infoItems | firstTel %}
+{%- if barTel or (lat and lng) or siteWeb %}
+<nav class="fiche-actionbar" aria-label="{{ 'Quick actions' if lang == 'en' else 'Actions rapides' }}">
+  {%- if barTel %}<a href="tel:{{ barTel }}" data-track="telephone"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>{{ "Call" if lang == "en" else "Appeler" }}</a>{% endif %}
+  {%- if lat and lng %}<a href="https://www.google.com/maps/dir/?api=1&amp;destination={{ lat }},{{ lng }}" target="_blank" rel="noopener" data-track="itineraire"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>{{ "Directions" if lang == "en" else "Itinéraire" }}</a>{% endif %}
+  {%- if siteWeb %}<a href="{{ siteWeb | safe }}" target="_blank" rel="noopener {{ 'sponsored' if partenaire else 'nofollow' }}" data-track="site_officiel"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg>{{ "Website" if lang == "en" else "Site" }}</a>{% endif %}
+</nav>
+{%- endif %}

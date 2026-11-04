@@ -33,7 +33,7 @@ extraHead: |
 </section>
 
 <section class="fiches wrap">
-  <div class="fiche-grid">
+  <div class="fiche-grid" data-filterable>
     {%- for fiche in vc.fiches %}
     {% include "fiche-card.njk" %}
     {%- endfor %}
@@ -66,3 +66,4 @@ extraHead: |
     <li><a href="/{{ cp.slug }}">{{ cp.linkNat }}</a></li>
   </ul>
 </section>
+<script src="/card-filter.js" defer></script>
