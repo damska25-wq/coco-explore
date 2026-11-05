@@ -1387,5 +1387,56 @@
         "url": "https://www.explorenicecotedazur.com/explorer/villes-villages/littoral/villefranche-sur-mer/les-plages"
       }
     ]
+  },
+  "strasbourg-avec-son-chien": {
+    "html": "<p>À Strasbourg, le règlement des espaces verts publics impose de tenir tout chien en laisse (2,50 m au maximum) et de rester sur les cheminements ; les ébats libres ne sont autorisés que sur des espaces prévus à cet effet, et l'accès de certains squares et aires de jeux est interdit aux animaux (un panneau le rappelle). La Ville compte 12 aires d'ébats et 110 canisites, dont l'<a href=\"/fiche-activite-caniparc-parc-romains-strasbourg-67\">aire d'ébats du Parc des Romains</a> ; laisse aussi au <a href=\"/fiche-balade-parc-orangerie-strasbourg-67\">parc de l'Orangerie</a> et au <a href=\"/fiche-balade-parc-citadelle-strasbourg-67\">parc de la Citadelle</a>.</p><p>Marché de Noël (du 27 novembre au 24 décembre 2026) : la Ville écrit que les chiens tenus en laisse sont acceptés dans les allées de tous les marchés, mais que la visite avec un animal est fortement déconseillée les samedis et dimanches à cause de la foule, et que les matinées en semaine sont à privilégier. Les chiens ne sont pas admis dans les commerces d'alimentation, chaque établissement reste libre d'accepter ou non les animaux, et dans les transports ils sont refusés dans les bus CTS mais gratuits dans les trams (petits chiens en sac ou panier ; les plus grands en laisse et muselés).</p>",
+    "sources": [
+      {
+        "label": "Ville de Strasbourg : règlement des espaces verts publics (arrêté)",
+        "url": "https://www.strasbourg.eu/documents/976405/1163347/reglement-espaces-verts-publics.pdf/54824333-9b10-7dad-8d0f-d1d4f166365a"
+      },
+      {
+        "label": "Noël à Strasbourg : emmener son chien sur le marché de Noël",
+        "url": "https://noel.strasbourg.eu/fr/emmener-son-chien-sur-le-marche-de-noel"
+      },
+      {
+        "label": "Noël à Strasbourg : foire aux questions (chiens sur les marchés)",
+        "url": "https://noel.strasbourg.eu/foire-aux-questions"
+      }
+    ]
+  },
+  "colmar-avec-son-chien": {
+    "html": "<p>À Colmar, l'arrêté municipal sur la divagation des animaux interdit de laisser circuler les chiens sans laisse et sous la surveillance de leur propriétaire ; l'accès du cimetière est interdit aux chiens, même en laisse. L'arrêté mentionne 35 canisites sur la commune, et l'office de tourisme indique que les chiens peuvent évoluer, sous la surveillance de leur maître, dans les espaces verts clos ou les parcs non clôturés de la ville, comme le <a href=\"/fiche-balade-champ-de-mars-colmar-68\">parc du Champ de Mars</a> et le <a href=\"/fiche-balade-parc-chateau-deau-colmar-68\">parc du Château d'eau</a>. La <a href=\"/fiche-balade-petite-venise-colmar-68\">Petite Venise</a> a aussi sa fiche.</p><p>Marchés de Noël (du 23 novembre au 29 décembre 2026) : je n'ai trouvé aucune règle sur les chiens sur les pages de la Ville, de l'office de tourisme ou du site officiel des marchés ; renseigne-toi auprès de l'office de tourisme (03 89 20 68 92). Ce qui est publié : le réseau de bus TRACE n'accepte que les petits chiens dans un sac ou un panier, et le chauffeur des navettes de Noël vers les villages peut refuser les animaux en cas de forte affluence. Conseil de Coco (pas une règle) : dans les rues piétonnes très denses, garde ton chien en laisse courte.</p>",
+    "sources": [
+      {
+        "label": "Ville de Colmar : arrêté sur la divagation des animaux et les déjections canines",
+        "url": "https://www.colmar.fr/sites/colmar.fr/files/vivre/avis_-_arretes/arrete-divagation-animaux-160107.pdf"
+      },
+      {
+        "label": "Office de tourisme de Colmar : le canitourisme (parcs, canisites, bus TRACE)",
+        "url": "https://www.tourisme-colmar.com/fr/pratique/sur-ce-site/toutourisme"
+      },
+      {
+        "label": "La Magie de Noël à Colmar : les marchés et les navettes de Noël",
+        "url": "https://noel-colmar.com/fr/navettes-de-noel"
+      }
+    ]
+  },
+  "mulhouse-avec-son-chien": {
+    "html": "<p>À Mulhouse, la Ville rappelle que tous les chiens doivent être tenus en laisse sur la voie publique (muselière en plus pour les catégories 1 et 2). Les chiens sont interdits au <a href=\"https://www.zoo-mulhouse.com/infos-pratiques/horaires\" rel=\"noopener\">zoo de Mulhouse</a> (seuls les chiens d'aveugles y entrent). Les parcs de la ville, comme le <a href=\"/fiche-balade-parc-steinbach-mulhouse-68\">parc Steinbach</a>, le <a href=\"/fiche-balade-parc-a-sculptures-william-wyler-mulhouse-68\">parc à sculptures</a> ou les <a href=\"/fiche-balade-berges-doller-mulhouse-68\">bords de la Doller</a>, ont leur fiche ; je n'ai pas trouvé en ligne de règlement municipal des parcs, donc respecte les panneaux sur place.</p><p>Marché de Noël (place de la Réunion, du 20 novembre au 24 décembre 2026, puis les 26 et 27 décembre) : l'office de tourisme coche « Animaux acceptés » sur sa fiche du marché, sans autre condition publiée ; la laisse de la voie publique s'applique donc. Une source non officielle va dans le même sens (chiens bienvenus).</p>",
+    "sources": [
+      {
+        "label": "Ville de Mulhouse : chiens dangereux, règles de circulation (laisse sur la voie publique)",
+        "url": "https://www.mulhouse.fr/mes-demarches/chiens-dangereux"
+      },
+      {
+        "label": "Zoo de Mulhouse : horaires et règlement (animaux interdits)",
+        "url": "https://www.zoo-mulhouse.com/infos-pratiques/horaires"
+      },
+      {
+        "label": "Mulhouse Tourisme : marché de Noël de Mulhouse (animaux acceptés)",
+        "url": "https://www.tourisme-mulhouse.com/a-faire-sur-place/agenda-et-grand-evenements/tout-lagenda/marche-de-noel-de-mulhouse-mulhouse-fr-3839632/"
+      }
+    ]
   }
 }
