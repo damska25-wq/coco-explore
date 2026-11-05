@@ -9,6 +9,7 @@ export default {
   balades: [rando, ["guide-collations-randonnee-chien", "Préparer des collations maison pour la randonnée"]],
   veterinaires: [["guide-urgence-veterinaire-chien", "Urgence vétérinaire en vacances : trouver un vétérinaire de garde"]],
   hebergements: [["guide-voiture-chien", "Voyager en voiture avec son chien : règles, installation, chaleur"], ["guide-camping-location-repas-chien", "Camping ou location : garder les repas de son chien au frais"], ["guide-repas-route-chien", "Gérer les repas de son chien sur la route"]],
+  dogsitters: [["guide-garde-chien-vacances", "Faire garder son chien pendant les fêtes et les vacances"]],
   restaurants: [["guide-aliments-terroir-chien", "Spécialités du terroir : les aliments à éviter pour son chien"]],
   activites: [rando, ["guide-chien-sportif-rations", "Canicross et longues randonnées : adapter les rations de son chien"]],
 };
