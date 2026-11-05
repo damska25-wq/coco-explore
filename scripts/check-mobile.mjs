@@ -5,7 +5,9 @@
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
-import { chromium } from "playwright";
+import { createRequire } from "node:module";
+// Playwright est installé globalement dans l'environnement (require le trouve, pas import).
+const { chromium } = createRequire(import.meta.url)("playwright");
 
 const ROOT = path.resolve("_site");
 const PER_TYPE = Number(process.argv[2] || 4);

@@ -641,7 +641,10 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .info-item .icon { width: 18px; height: 18px; color: var(--terracotta); flex-shrink: 0; stroke-width: 1.6; }
 
 .info-item .label { font-size: 0.74rem; color: rgba(var(--ink),0.55); font-weight: 600; display: block; }
-.info-item .value { font-weight: 700; font-size: 0.95rem; line-height: 1.25; }
+.info-item > div { min-width: 0; }
+.fiche-body { overflow-wrap: anywhere; }
+.fiche-body > div, .fiche-body > aside { min-width: 0; }
+.info-item .value { font-weight: 700; font-size: 0.95rem; line-height: 1.25; overflow-wrap: anywhere; }
 .info-item .value a { color: var(--terracotta-deep); text-decoration: none; }
 .info-item .value a:hover { text-decoration: underline; }
 
@@ -977,6 +980,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .guide-body h3 { font-size: 1.1rem; color: var(--heading); margin-top: 1.2em; }
 .guide-body p, .guide-body li { max-width: 68ch; }
 .guide-body table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.95rem; }
+@media (max-width: 600px) { .guide-body table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; } }
 .guide-body th, .guide-body td { border: 1px solid rgba(var(--ink),0.15); padding: 8px 10px; text-align: left; vertical-align: top; }
 .guide-body .callout { margin: 1.2em 0; }
 .guide-hero { margin: 18px 0 8px; }
