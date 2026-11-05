@@ -2,7 +2,7 @@
 permalink: "{{ permalinkPath }}"
 permalinkPath: fiche-veterinaire-moucherotte-pont-de-claix.html
 title: "Clinique Vétérinaire du Moucherotte, Le Pont-de-Claix"
-description: "Clinique Vétérinaire du Moucherotte, 69 cours Saint-André au Pont-de-Claix (Isère) : adresse, téléphone et informations pratiques."
+description: "Clinique Vétérinaire du Moucherotte, 69 cours Saint-André au Pont-de-Claix (Isère) : téléphone, horaires et renvoi vers la Maison des Urgences."
 ogImage: "https://images.unsplash.com/photo-1775032534848-079dca1fe1c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80"
 heroImage: "https://images.unsplash.com/photo-1775032534848-079dca1fe1c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80"
 tag: "Vétérinaire"
@@ -19,12 +19,13 @@ slug: "veterinaire-moucherotte-pont-de-claix"
 layout: fiche.njk
 cardTag: "Le Pont-de-Claix"
 cardTitle: "Clinique Vétérinaire du Moucherotte (Le Pont-de-Claix)"
-cardTeaser: "Clinique vétérinaire cours Saint-André au Pont-de-Claix, reliée au système collectif de garde de l'agglomération grenobloise."
+cardTeaser: "Clinique vétérinaire cours Saint-André au Pont-de-Claix, renvoyant vers la Maison des Urgences de Grenoble hors horaires."
 cardPictos:
   - "i-vet"
 order: 14310
 lat: 45.13243
 lng: 5.70002
+siteWeb: "https://cliniqueveterinairedumoucherotte.com/"
 infoItems:
   - icon: "i-pin"
     label: "Adresse"
@@ -32,21 +33,21 @@ infoItems:
   - icon: "i-phone"
     label: "Téléphone"
     value: "04 76 98 04 51"
-  - icon: "i-info"
-    label: "Urgences"
-    value: "Une source confirme explicitement que cet établissement est relié au système collectif « SOS Véto Petits Animaux Agglomération de Grenoble » (04 76 47 66 66), une astreinte tournante entre cliniques affiliées — pas une garde propre au cabinet"
+  - icon: "i-clock"
+    label: "Horaires"
+    value: "Lun-ven 8h-12h / 14h-19h, sam 9h-12h d'après les conditions générales de la clinique (des annuaires indiquent une fermeture à 18h30 et le samedi dès 8h : appeler pour confirmer)"
   - icon: "i-alert"
-    label: "Confiance"
-    value: "Haute pour l'adresse, le téléphone et la nature collective du numéro d'urgence"
+    label: "Urgences"
+    value: "Hors horaires d'ouverture, la clinique renvoie vers la Maison des Urgences Vétérinaires Grenoble Métropole (Échirolles), 04 80 42 33 23 ; entre 12h et 14h, urgences via VetoAdom Alpin (04 58 17 32 32)"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
       <h2>L'ambiance</h2>
-      <p>La Clinique Vétérinaire du Moucherotte est installée cours Saint-André, au Pont-de-Claix, commune de l'agglomération grenobloise située entre le Vercors et les contreforts de Belledonne — d'où son nom, en référence au sommet du Moucherotte qui domine le Vercors.</p>
+      <p>La Clinique Vétérinaire du Moucherotte est installée cours Saint-André, au Pont-de-Claix, commune de l'agglomération grenobloise. Elle soigne chiens, chats et NAC (hors oiseaux et reptiles) et dispose d'un parking.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Une source confirme explicitement que cet établissement est relié au système collectif « SOS Véto Petits Animaux Agglomération de Grenoble » (04 76 47 66 66) : une astreinte tournante partagée entre plusieurs cliniques affiliées de l'agglomération, et non une garde de nuit propre à ce seul cabinet. Selon le tour de garde, ton chien pourrait être orienté vers un autre établissement du réseau.</p>
-      <div class="callout">Le conseil de Coco : en cas de besoin en dehors des horaires, le numéro collectif de l'agglomération (04 76 47 66 66) t'orientera vers le vétérinaire de garde du jour — qui n'est pas forcément celui-ci. Garde aussi en tête la Maison des Urgences Vétérinaires Grenoble Métropole, à Échirolles, pour les cas confirmés les plus sérieux.</div>
+      <p>D'après les conditions générales de fonctionnement de la clinique, elle est ouverte du lundi au vendredi de 8h à 12h puis de 14h à 19h, et le samedi de 9h à 12h ; certains annuaires indiquent une fermeture à 18h30 et le samedi à partir de 8h, d'où l'intérêt d'appeler. Pour les urgences, la clinique indique avoir passé une convention avec la Maison des Urgences d'Échirolles (04 80 42 33 23) ; la nuit et les jours fériés, son répondeur donne ces coordonnées. Entre 12h et 14h, la convention porte sur VetoAdom Alpin (04 58 17 32 32), un service à domicile ; elle cite aussi Qonlyvet (Saint-Priest, 04 81 09 18 40).</p>
+      <div class="callout">Le conseil de Coco : en dehors des horaires, appelle la Maison des Urgences Vétérinaires Grenoble Métropole (Échirolles, 04 80 42 33 23), vers laquelle la clinique renvoie.</div>
 
       <h2>Aux alentours</h2>
       <p>Le Pont-de-Claix, au confluent du Drac et de la Romanche, offre plusieurs itinéraires de promenade le long des berges pour sortir ton chien avant ou après la visite.</p>
@@ -56,14 +57,21 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse et téléphone : confiance haute.</li>
-          <li><svg><use href="#i-alert"/></svg> Garde de nuit = astreinte collective de l'agglomération, pas une ligne propre au cabinet.</li>
+          <li><svg><use href="#i-alert"/></svg> Pas de garde de nuit propre à la clinique : renvoi vers la Maison des Urgences d'Échirolles (04 80 42 33 23).</li>
+          <li><svg><use href="#i-info"/></svg> Horaires du samedi et de fin de journée variables selon les sources : appeler avant de venir.</li>
         </ul>
       </div>
       <div class="sidebar-card">
         <h3>Localisation</h3>
         <ul>
           <li><svg><use href="#i-pin"/></svg> 69 cours Saint-André, 38800 Le Pont-de-Claix · Tél 04 76 98 04 51</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>Sources</h3>
+        <ul>
+          <li><svg><use href="#i-link"/></svg> cliniqueveterinairedumoucherotte.com, conditions générales de fonctionnement (PDF) (horaires, urgences), lue le 05/11/2026</li>
+          <li><svg><use href="#i-link"/></svg> Annuaires CaptainVet et 118712 (horaires divergents), consultés le 05/11/2026</li>
         </ul>
       </div>
     </aside>
