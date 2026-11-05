@@ -538,7 +538,7 @@
     ]
   },
   "biarritz-avec-son-chien": {
-    "html": "<p>À Biarritz, l'office de tourisme rapporte un arrêté municipal publié le 15 décembre 2023 : plages fermées aux chiens 24h/24 du 1er avril au 30 septembre pour la <a href=\"/fiche-grande-plage-miramar-biarritz\">Grande Plage et le Miramar</a>, et du 1er mai au 30 septembre pour toutes les autres (<a href=\"/fiche-cote-des-basques-biarritz\">Côte des Basques</a>, <a href=\"/fiche-plages-biarritz-marbella-milady-port-vieux\">Marbella, Milady, Port Vieux</a>) ; le reste de l'année, en laisse de 9h à 11h, interdit de 11h à 18h, libre de 18h à 9h. La FAQ de l'office donne une autre version : interdiction 24h/24 pendant les périodes de surveillance (Grande Plage et Miramar du 1er avril au 31 octobre, les autres du 1er mai au 30 septembre), puis chiens en laisse de 7h à 11h seulement : regarde les panneaux, surtout en octobre.</p><p>En ville, le ramassage des déjections est obligatoire (arrêté municipal) et des distributeurs de sacs sont installés un peu partout. Le parc Mazon, le jardin public, le jardin de la Côte des Basques et le plateau de l'Atalaye acceptent les chiens en laisse. Biarritz compte quatre canisites clôturés où ton chien court sans laisse, et un <a href=\"/fiche-balade-chemin-chien-en-liberte-mouriscot-biarritz\">chemin « chien en liberté » au lac Mouriscot</a> (300 m jusqu'à une clairière, chiens identifiés, à moins de 100 m et au rappel, catégories 1 et 2 interdites). Les chiens ne sont pas admis dans les bus Txik Txak, sauf petits gabarits en panier.</p>",
+    "html": "<p>À Biarritz, l'office de tourisme rapporte un arrêté municipal publié le 15 décembre 2023 : plages fermées aux chiens 24h/24 du 1er avril au 30 septembre pour la <a href=\"/fiche-grande-plage-miramar-biarritz\">Grande Plage et le Miramar</a>, et du 1er mai au 30 septembre pour toutes les autres (<a href=\"/fiche-cote-des-basques-biarritz\">Côte des Basques</a>, <a href=\"/fiche-plages-biarritz-marbella-milady-port-vieux\">Marbella, Milady, Port Vieux</a>) ; le reste de l'année, en laisse de 9h à 11h, interdit de 11h à 18h, libre de 18h à 9h. Nous n'avons pas trouvé le texte de l'arrêté en ligne, et l'office donne en réalité trois versions : sa FAQ (interdiction 24h/24 du 1er avril au 31 octobre pour la Grande Plage et le Miramar, du 1er mai au 30 septembre pour les autres, puis chiens en laisse de 7h à 11h seulement), sa page « Plages » (mêmes dates d'interdiction ; du 1er novembre au 31 mars, interdit de 11h à 18h et en laisse impérativement de 9h à 11h) et la fiche de la Grande Plage sur tourisme64.com (chiens non acceptés sur l'ensemble des plages toute l'année, dérogation pour les chiens guides) : regarde les panneaux, surtout en octobre.</p><p>En ville, le ramassage des déjections est obligatoire (arrêté municipal) et des distributeurs de sacs sont installés un peu partout. Le parc Mazon, le jardin public, le jardin de la Côte des Basques et le plateau de l'Atalaye acceptent les chiens en laisse. Biarritz compte quatre canisites clôturés où ton chien court sans laisse, et un <a href=\"/fiche-balade-chemin-chien-en-liberte-mouriscot-biarritz\">chemin « chien en liberté » au lac Mouriscot</a> (300 m jusqu'à une clairière, chiens identifiés, à moins de 100 m et au rappel, catégories 1 et 2 interdites). Les chiens ne sont pas admis dans les bus Txik Txak, sauf petits gabarits en panier.</p>",
     "sources": [
       {
         "label": "Destination Biarritz : destination toutouristique",
@@ -547,6 +547,14 @@
       {
         "label": "Destination Biarritz : FAQ (chiens sur les plages)",
         "url": "https://www.destination-biarritz.fr/pratique/faq/"
+      },
+      {
+        "label": "Destination Biarritz : page « Plages de Biarritz » (règle chiens)",
+        "url": "https://www.destination-biarritz.fr/decouvrir/plages"
+      },
+      {
+        "label": "Tourisme 64 : fiche de la Grande Plage de Biarritz",
+        "url": "https://www.tourisme64.com/activites/biarritz/LOIAQU064FS00058-la-grande-plage"
       }
     ]
   },
@@ -1225,7 +1233,7 @@
     ]
   },
   "crozon-avec-son-chien": {
-    "html": "<p>À Crozon, comme sur tout le Finistère, les chiens sont interdits sur les plages du 1er juin au 30 septembre : Ouest-France rappelait le 12 juin 2026 que c'est valable cet été (arrêté préfectoral du 19 janvier 2018 sur l'accès des chevaux et des chiens aux plages du Finistère) et qu'il n'y aura pas de cani-plage cette année à Crozon. La mairie avait en plus pris l'arrêté n° 309-2025 interdisant les chiens sur la <a href=\"/fiche-plage-morgat-crozon-29\">plage de Morgat</a>, de la pointe de Rulianec au port de plaisance, du 15 avril au 30 septembre 2025, à cause d'un couple de grands gravelots qui nichait sur la plage : nous n'avons pas trouvé de version 2026.</p><p>À Lostmarc'h et à la Palue (<a href=\"/fiche-plage-lostmarch-crozon-29\">notre fiche Lostmarc'h</a>), la ville précise que la baignade est interdite à cause des baïnes.</p>",
+    "html": "<p>À Crozon, comme sur tout le Finistère, les chiens sont interdits sur les plages du 1er juin au 30 septembre : Ouest-France rappelait le 12 juin 2026 que c'est valable cet été (arrêté préfectoral du 19 janvier 2018 sur l'accès des chevaux et des chiens aux plages du Finistère) et qu'il n'y aura pas de cani-plage cette année à Crozon. La mairie avait en plus pris l'arrêté n° 309-2025 interdisant les chiens sur la <a href=\"/fiche-plage-morgat-crozon-29\">plage de Morgat</a>, de la pointe de Rulianec au port de plaisance, du 15 avril au 30 septembre 2025, à cause d'un couple de grands gravelots qui nichait sur la plage : nous n'avons pas trouvé de version 2026. La communauté de communes (4 juin 2026) rappelle seulement que les plages sont interdites aux chiens jusqu'au 30 septembre et signale qu'un couple de grands gravelots a niché fin mai 2026 dans l'enclos de protection de la plage de Morgat ; la ville précise que les chiens restent admis du 1er octobre au 30 mai.</p><p>À Lostmarc'h et à la Palue (<a href=\"/fiche-plage-lostmarch-crozon-29\">notre fiche Lostmarc'h</a>), la ville précise que la baignade est interdite à cause des baïnes.</p>",
     "sources": [
       {
         "label": "Ville de Crozon : arrêté n° 309-2025 (plage de Morgat)",
@@ -1238,6 +1246,14 @@
       {
         "label": "Ouest-France (12/06/2026) : pas de cani-plage cet été à Crozon",
         "url": "https://www.ouest-france.fr/bretagne/crozon-29160/aucune-decision-ne-sera-prise-dans-la-precipitation-il-ny-aura-pas-de-cani-plage-cet-ete-a-crozon-voici-pourquoi-9f47250a-6631-11f1-99fc-6db54956824f"
+      },
+      {
+        "label": "Communauté de communes Presqu'île de Crozon : grands gravelots à Morgat (04/06/2026)",
+        "url": "https://www.comcom-crozon.com/actualites/une-nichee-inesperee-de-grands-gravelots-a-morgat"
+      },
+      {
+        "label": "Ville de Crozon : l'animal en ville et sur la plage (arrêté préfectoral du 19/01/2018)",
+        "url": "https://www.crozon.bzh/soyons-citoyen/lanimal-en-ville-et-sur-la-plage"
       }
     ]
   },
@@ -1285,8 +1301,16 @@
     ]
   },
   "dinard-avec-son-chien": {
-    "html": "<p>À Dinard, l'office de tourisme indique que les plages sont autorisées aux chiens du 16 septembre au 14 juin ; il ne détaille pas la règle du 15 juin au 15 septembre et nous n'avons pas trouvé le texte de l'arrêté (voir la <a href=\"/fiche-plages-dinard-35\">fiche des plages de Dinard</a>). Sur les bords de la Rance, les plages de La Richardais et du Minihic-sur-Rance sont interdites à tous les animaux, même tenus en laisse, selon la même source.</p><p>L'office précise que le GR34 (sentier côtier) se parcourt avec un chien tenu en laisse. Le <a href=\"/fiche-balade-parc-port-breton-dinard-35\">parc de Port-Breton</a> est une autre balade en ville.</p>",
+    "html": "<p>À Dinard, l'arrêté municipal n° 2024/415 du 15 mars 2024 (article 13, publié sur ville-dinard.fr) interdit tous les animaux, chiens compris, même tenus en laisse, sur toutes les plages de la ville du 15 juin au 15 septembre ; le magazine municipal de juin 2025 précise que les digues de bord de mer et les parcs restent accessibles aux animaux de compagnie pendant cette période. Le reste de l'année, l'arrêté ne limite pas les chiens et ne mentionne pas de laisse sur la plage : l'office de tourisme les dit autorisés du 16 septembre au 14 juin (voir la <a href=\"/fiche-plages-dinard-35\">fiche des plages de Dinard</a>). Sur les bords de la Rance, les plages de La Richardais et du Minihic-sur-Rance sont interdites à tous les animaux, même en laisse, selon l'office.</p><p>L'office précise que le GR34 (sentier côtier) se parcourt avec un chien tenu en laisse. Le <a href=\"/fiche-balade-parc-port-breton-dinard-35\">parc de Port-Breton</a> est une autre balade en ville.</p>",
     "sources": [
+      {
+        "label": "Ville de Dinard : arrêté n° 2024/415 du 15/03/2024 relatif à la réglementation des activités des plages, art. 13 (lu le 05/11/2026)",
+        "url": "https://www.ville-dinard.fr/wp-content/uploads/2025/07/2024.415-ARRETE-DES-PLAGES.pdf"
+      },
+      {
+        "label": "Ville de Dinard : magazine municipal de juin 2025 (chiens interdits du 15 juin au 15 septembre, digues et parcs accessibles)",
+        "url": "https://www.ville-dinard.fr/wp-content/uploads/2025/06/Dinard-Label-Ville-112-Juin-2025.pdf"
+      },
       {
         "label": "Dinard Émeraude Tourisme : plages autorisées aux chiens sur la Côte d'Émeraude (mise à jour 28/10/2026)",
         "url": "https://www.dinardemeraudetourisme.com/experiences/en-amoureux/plages-autorisees-aux-chiens-sur-la-cote-demeraude"
@@ -1818,7 +1842,7 @@
     ]
   },
   "la-croix-valmer-avec-son-chien": {
-    "html": "<p>À La Croix-Valmer, l'office de tourisme interdit les chiens sur les plages de 7h à 20h du 1er mai au 30 octobre, en laisse en dehors de ces horaires. Sa FAQ parle d'une interdiction de 7h à 22h sans préciser de dates, et une fiche relayée par l'office de Grimaud autorise les chiens en laisse de 22h à 7h : les sources divergent, regarde les panneaux (<a href=\"/fiche-plage-debarquement-croix-valmer\">plage du Débarquement</a>). La zone de baignade reste interdite.</p><p>Dans le domaine du Cap Lardier, les chiens sont acceptés en laisse, et ils peuvent traverser les plages sur le <a href=\"/fiche-balade-sentier-littoral-croix-valmer\">sentier du littoral</a>.</p>",
+    "html": "<p>À La Croix-Valmer, l'office de tourisme interdit les chiens sur les plages de 7h à 20h du 1er mai au 30 octobre, en laisse en dehors de ces horaires. Sa FAQ parle d'une interdiction de 7h à 22h sans préciser de dates, une fiche relayée par l'office de Grimaud autorise les chiens en laisse de 22h à 7h, et la page « Plages » de la mairie (lacroixvalmer.fr) liste les animaux parmi les interdictions sans horaire ni date : les sources divergent et nous n'avons pas trouvé l'arrêté, regarde les panneaux (<a href=\"/fiche-plage-debarquement-croix-valmer\">plage du Débarquement</a>). La zone de baignade reste interdite.</p><p>Dans le domaine du Cap Lardier, les chiens sont acceptés en laisse, et ils peuvent traverser les plages sur le <a href=\"/fiche-balade-sentier-littoral-croix-valmer\">sentier du littoral</a>.</p>",
     "sources": [
       {
         "label": "La Croix-Valmer Tourisme : plage du Débarquement",
@@ -1835,6 +1859,10 @@
       {
         "label": "Grimaud Tourisme : sentier du littoral (La Croix-Valmer)",
         "url": "https://www.grimaud-provence.com/offres/sentier-du-littoral-la-croix-valmer-fr-3640472/"
+      },
+      {
+        "label": "Mairie de La Croix-Valmer : page « Plages » (interdictions)",
+        "url": "https://www.lacroixvalmer.fr/Plages"
       }
     ]
   },
@@ -1983,7 +2011,7 @@
     ]
   },
   "le-grau-du-roi-avec-son-chien": {
-    "html": "<p>Au Grau-du-Roi, selon l'arrêté du 27 avril 2023 (relayé par Objectif Gard), tout chien circulant dans les espaces publics de la zone urbaine doit être tenu en laisse de 3 mètres maximum, sans accès aux aires de jeux pour enfants ; les plages leur restent interdites. Dans un communiqué du 29 mai 2026, la ville annonce deux zones de plage ouvertes aux chiens à titre expérimental début juillet 2026 : le <a href=\"/fiche-plage-boucanet-grau-du-roi\">Boucanet</a> rive droite (à hauteur de l'ex-Aquaparc) et la pointe de l'<a href=\"/fiche-plage-espiguette-grau-du-roi\">Espiguette</a>, près du camping municipal. Laisse obligatoire, déjections ramassées, sacs distribués aux entrées de plage.</p><p>Au moment du communiqué, les autorisations étaient encore en cours d'obtention : vérifie les panneaux.</p>",
+    "html": "<p>Au Grau-du-Roi, selon l'arrêté du 27 avril 2023 (relayé par Objectif Gard), tout chien circulant dans les espaces publics de la zone urbaine doit être tenu en laisse de 3 mètres maximum, sans accès aux aires de jeux pour enfants. Les plages étaient jusqu'ici interdites aux chiens ; depuis début juillet 2026, la commune expérimente deux zones de plage ouvertes aux chiens (communiqué de la ville du 29 mai 2026, puis page de l'office de tourisme et journal municipal de l'été 2026) : la plage rive droite du <a href=\"/fiche-plage-boucanet-grau-du-roi\">Boucanet</a>, à hauteur de l'ex-Aquaparc (entrée n° 17), et la pointe de l'<a href=\"/fiche-plage-espiguette-grau-du-roi\">Espiguette</a>, près du camping municipal. Laisse obligatoire en permanence, déjections ramassées, accès uniquement dans les espaces délimités ; partout ailleurs, les chiens restent interdits sur les plages et peuvent être verbalisés (office de tourisme).</p><p>C'est un dispositif expérimental pour la saison 2026 : la durée au-delà de l'été n'est pas publiée dans les pages que nous avons lues (un guide tiers cite un arrêté du 2 juillet 2026 valable 12 mois, non lu). Vérifie qu'il est toujours en place avant de venir.</p>",
     "sources": [
       {
         "label": "Ville du Grau-du-Roi : communiqué de presse, plages dog friendly (29/05/2026)",
@@ -1992,6 +2020,14 @@
       {
         "label": "Objectif Gard : tenue en laisse obligatoire pour les chiens dans les espaces publics",
         "url": "https://www.objectifgard.com/gard/camargue/grau-du-roi-tenue-en-laisse-obligatoire-pour-les-chiens-dans-les-espaces-publics-109600.php"
+      },
+      {
+        "label": "Office de tourisme du Grau-du-Roi : plages dog-friendly (page mise à jour le 28/10/2026)",
+        "url": "https://letsgrau.com/actualites/plages-chiens-grau-du-roi"
+      },
+      {
+        "label": "Ville du Grau-du-Roi : journal d'information municipal n° 204 (juin-août 2026)",
+        "url": "https://ville-legrauduroi.fr/app/uploads/sites/10/2026/05/MGDR_JIM204_08_2026_.pdf"
       }
     ]
   },
@@ -3305,8 +3341,16 @@
     ]
   },
   "saint-malo-avec-son-chien": {
-    "html": "<p>À Saint-Malo, les chiens sont interdits sur toutes les plages du 1er mai au 30 septembre, même en laisse, selon Ouest-France (24 avril 2026) et Ille-et-Vilaine Tourisme ; certains guides tiers donnent le 1er avril. Nous n'avons pas pu lire l'arrêté municipal, et la page de la ville que nous avons lue (juin 2025) ne traite pas des plages (voir la <a href=\"/fiche-plages-saint-malo-35\">fiche des plages</a>). Hors saison, les chiens sont acceptés en laisse. La ville confirme que les chiens tenus en laisse sont autorisés sur les remparts et les digues, à condition de ramasser les déjections.</p><p>Depuis octobre 2025, une aire de liberté de 2 800 m² (deux enclos de 1 400 m²) ouvre toute l'année dans le <a href=\"/fiche-balade-parc-briantais-saint-malo-35\">parc de la Briantais</a> : les chiens y courent sans laisse, jusqu'à 50 simultanément. Son accès principal est modifié jusqu'au printemps (accès par la partie basse, sas n° 2).</p>",
+    "html": "<p>À Saint-Malo, l'arrêté municipal 2024-DSP/AC/001 du 22 mars 2024 (article 16, publié sur saint-malo.fr) interdit les chiens et autres mammifères domestiques, même tenus en laisse ou par une longe, sur les plages du 1er mai au 30 septembre, sauf chiens guides d'handicapés et chiens des services de police ; la Ville l'a rappelé le 3 juillet 2026 (chiens interdits sur l'ensemble des plages jusqu'au 30 septembre inclus). Le 1er avril donné par certains guides tiers ne figure pas dans l'arrêté. En dehors de cette période, l'arrêté des plages ne limite pas les chiens et ne parle pas de laisse ; selon actu.fr, la laisse reste imposée sur l'espace public (arrêté de circulation des animaux, que nous n'avons pas lu), et la Ville confirme que les chiens tenus en laisse sont autorisés sur les remparts et les digues, propriétaires tenus de ramasser (voir la <a href=\"/fiche-plages-saint-malo-35\">fiche des plages</a>).</p><p>Depuis octobre 2025, une aire de liberté de 2 800 m² (deux enclos de 1 400 m²) ouvre toute l'année dans le <a href=\"/fiche-balade-parc-briantais-saint-malo-35\">parc de la Briantais</a> : les chiens y courent sans laisse, jusqu'à 50 simultanément. Son accès principal est modifié jusqu'au printemps (accès par la partie basse, sas n° 2).</p>",
     "sources": [
+      {
+        "label": "Ville de Saint-Malo : arrêté 2024-DSP/AC/001 « réglementation des plages » du 22/03/2024, art. 16 (lu le 05/11/2026)",
+        "url": "https://www.saint-malo.fr/wp-content/uploads/2023/11/2024-DSP-AC-001-REGLEMENTATION-DES-PLAGES.pdf"
+      },
+      {
+        "label": "Ville de Saint-Malo : surveillance des plages 2026, rappel de l'interdiction jusqu'au 30 septembre (03/07/2026)",
+        "url": "https://www.saint-malo.fr/actualites/surveillance-plages-saint-malo-2026/"
+      },
       {
         "label": "Ville de Saint-Malo : la plage et la baignade (juin 2025, remparts et digues)",
         "url": "https://www.saint-malo.fr/actualites/la-plage-et-la-baignade-a-saint-malo/"
@@ -3314,10 +3358,6 @@
       {
         "label": "Ville de Saint-Malo : aire de liberté pour chiens (décembre 2025)",
         "url": "https://www.saint-malo.fr/actualites/modification-acces-de-laire-de-liberte-pour-chiens"
-      },
-      {
-        "label": "Ouest-France : interdiction des chiens sur la plage, 1er mai-30 septembre (24 avril 2026)",
-        "url": "https://www.ouest-france.fr/bretagne/saint-malo-35400/cest-trop-restrictif-a-saint-malo-elles-demandent-de-revoir-linterdiction-des-chiens-sur-la-plage-8a3d15bc-3d63-11f1-ac09-2dd9a94cc119"
       }
     ]
   },
