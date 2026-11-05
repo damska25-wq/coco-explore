@@ -1,6 +1,7 @@
 {#- Vignette de fiche (même rendu que sur l'accueil et les pages département). Attend une variable `fiche`. -#}
 {%- set badge = fiche | cardBadge %}
-<a href="/{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}" data-avis="{{ fiche.data.avisSlug }}"{% if badge %} data-badge="{{ badge.label }}"{% endif %}>
+{%- set supp = fiche | suppTier %}
+<a href="/{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}" data-avis="{{ fiche.data.avisSlug }}"{% if badge %} data-badge="{{ badge.label }}"{% endif %}{% if supp %} data-supp="{{ supp }}"{% endif %}>
   <div class="thumb">
     {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
     <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">

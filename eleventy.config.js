@@ -679,6 +679,33 @@ export default function (eleventyConfig) {
     "zones": { label: "Zones limitées", cls: "badge-restrict" },
     "interdit": { label: "Interdits", cls: "badge-restrict" },
   };
+  // Filtre « supplément chien » des hébergements (pastilles de card-filter.js) : seulement quand la fiche
+  // donne un tarif net, sans doute ni contradiction (sinon rien).
+  const SUPP_LABEL = /chien|animal|animaux|suppl[ée]ment/i;
+  const SUPP_DOUBT = /guide|assistance|bringfido|d'après|sous réserve|cas par cas|majorité|source dist|possiblement|mentionn|précis|indiqu|trouvé|avec suppl|payant|selon l'h|selon les|plateforme|\d\s*à\s*\d|reconfirm|autour de|restaurant|contradi|à confirmer|a confirmer|non confirm|selon un|seule? source|tiers|revendeur|agrégateur|ota\b|expedia|booking|trip\.com|hotels\.com|confiance (faible|moyenne|basse)|doute|diverg|environ|usd|\$|semaine|séjour|sejour|selon la catégorie|selon le type|selon la saison|haute saison|basse saison|à partir de|a partir de|jusqu'à|jusqu'a|non précisé|non detaill|non détaill|ménage|caution|dépôt/i;
+  eleventyConfig.addFilter("suppTier", function (fiche) {
+    if (!fiche || !fiche.data || fiche.data.breadcrumbCatId !== "hebergements") return null;
+    const items = fiche.data.infoItems;
+
+  if (!Array.isArray(items)) return null;
+  let tier = null;
+  for (const it of items) {
+    const l = String(it && it.label || "").trim(), v = String(it && it.value || "");
+    if (!SUPP_LABEL.test(l)) continue;
+    if (/non admis|non accept|interdit|refus|pas accept|n'accept/i.test(v)) return null;
+    if (SUPP_DOUBT.test(v) || SUPP_DOUBT.test(l)) return null;
+    const free = /gratuit|sans suppl[ée]ment|pas de suppl[ée]ment|sans frais|aucun suppl[ée]ment|offert/i.test(v);
+    const amounts = [...v.matchAll(/(\d+(?:[.,]\d+)?)\s*(?:€|euros?)\s*(?:\/|par|la|le)?\s*(?:nuit|jour|nuitée)/gi)].map(m => parseFloat(m[1].replace(",", ".")));
+    const anyEuro = /\d\s*(?:€|euros?)/i.test(v);
+    let t = null;
+    if (free && !anyEuro) t = "Sans supplément";
+    else if (!free && amounts.length && new Set(amounts).size === 1 && amounts[0] > 0 && amounts[0] <= 10 && (v.match(/\d\s*(?:€|euros?)/gi) || []).length === 1) t = "Supplément ≤ 10 €/nuit";
+    else if (anyEuro || free) return null;
+    if (t) { if (tier && tier !== t) return null; tier = t; }
+  }
+  return tier;
+  });
+
   eleventyConfig.addFilter("cardBadge", function (fiche) {
     const d = (fiche && fiche.data) || {};
     const cat = d.breadcrumbCatId;
