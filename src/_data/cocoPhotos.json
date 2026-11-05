@@ -1,14 +1,45 @@
 {
   "escalet": [
-    { "src": "/assets/coco-escalet-rochers.jpg", "alt": "Coco assise sur les rochers de L'Escalet, la crique et le sentier du littoral en arrière-plan", "legende": "Sur les rochers de L'Escalet", "date": "2026-10-17" },
-    { "src": "/assets/coco-escalet-passerelle.jpg", "alt": "Coco sur la passerelle en bois qui mène à la mer à L'Escalet", "legende": "La passerelle vers la mer" }
+    {
+      "src": "/assets/coco-escalet-rochers.jpg",
+      "alt": "Coco assise sur les rochers de L'Escalet, la crique et le sentier du littoral en arrière-plan",
+      "legende": "Sur les rochers de L'Escalet",
+      "date": "2026-10-17",
+      "commentaire": "Un matin d'octobre, la crique pour nous tout seuls ou presque. Coco a pris la pose sur les rochers encore tièdes, avant de repartir renifler le long du sentier."
+    },
+    {
+      "src": "/assets/coco-escalet-passerelle.jpg",
+      "alt": "Coco sur la passerelle en bois qui mène à la mer à L'Escalet",
+      "legende": "La passerelle vers la mer",
+      "commentaire": "La petite passerelle entre les ganivelles, juste avant les rochers : Coco l'a traversée trois fois, persuadée qu'il y avait quelque chose à trouver au bout."
+    }
   ],
   "bonporteau": [
-    { "src": "/assets/coco-bonporteau-passerelle.jpg", "alt": "Coco sur une passerelle en bois dans les roseaux, sur le sentier vers Bonporteau", "legende": "Sur le sentier, côté Bonporteau" }
+    {
+      "src": "/assets/coco-bonporteau-passerelle.jpg",
+      "alt": "Coco sur une passerelle en bois dans les roseaux, sur le sentier vers Bonporteau",
+      "legende": "Sur le sentier, côté Bonporteau",
+      "commentaire": "Le passage dans les roseaux, à l'ombre : un vrai coin de fraîcheur sur le sentier. Coco s'est assise au milieu comme pour dire « on fait une pause ? »."
+    }
   ],
   "cavalaire-sur-mer-avec-son-chien": [
-    { "src": "/assets/coco-cavalaire-plage.jpg", "alt": "Coco rapporte un bâton dans l'eau d'une plage de Cavalaire-sur-Mer", "legende": "Baignade hors saison à Cavalaire" },
-    { "src": "/assets/coco-cavalaire-galets.jpg", "alt": "Coco sur une plage de galets à Cavalaire-sur-Mer", "legende": "Sur une plage de galets" },
-    { "src": "/assets/coco-cavalaire-chemin.jpg", "alt": "Coco sur un chemin de terre ombragé à Cavalaire-sur-Mer", "legende": "Balade sur un chemin de Cavalaire" }
+    {
+      "src": "/assets/coco-cavalaire-plage.jpg",
+      "alt": "Coco rapporte un bâton dans l'eau d'une plage de Cavalaire-sur-Mer",
+      "legende": "Baignade hors saison à Cavalaire",
+      "commentaire": "Hors saison, Coco ne demande qu'une chose : un bâton et un peu d'eau calme. Rappel : sur les plages de Cavalaire, les chiens ne sont admis qu'en dehors des horaires affichés à l'entrée, alors on y va tôt le matin ou en fin de journée."
+    },
+    {
+      "src": "/assets/coco-cavalaire-galets.jpg",
+      "alt": "Coco sur une plage de galets à Cavalaire-sur-Mer",
+      "legende": "Sur une plage de galets",
+      "commentaire": "Sortie de baignade, la queue en l'air et les pattes pleines de sable : le genre de moment pour lequel on a créé ce site."
+    },
+    {
+      "src": "/assets/coco-cavalaire-chemin.jpg",
+      "alt": "Coco sur un chemin de terre ombragé à Cavalaire-sur-Mer",
+      "legende": "Balade sur un chemin de Cavalaire",
+      "commentaire": "Une balade tranquille sous les arbres, le matin, quand il fait encore frais. Coco ralentit à chaque buisson, c'est elle qui donne le rythme."
+    }
   ]
 }

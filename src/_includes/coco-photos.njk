@@ -7,7 +7,7 @@
     {%- for p in cp %}
     <figure>
       <img src="{{ p.src }}" alt="{{ p.alt }}" loading="lazy" width="675" height="900">
-      <figcaption>{{ p.legende }}{% if p.date %} · {{ p.date | dateLong }}{% endif %}</figcaption>
+      <figcaption><strong>{{ p.legende }}</strong>{% if p.date %} · {{ p.date | dateLong }}{% endif %}{% if p.commentaire %}<br>{{ p.commentaire }}{% endif %}</figcaption>
     </figure>
     {%- endfor %}
   </div>
