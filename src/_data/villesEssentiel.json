@@ -1,6 +1,6 @@
 {
   "agde-avec-son-chien": {
-    "html": "<p>À Agde, du 25 mai au 12 septembre, les chiens sont interdits sur les plages, sauf sur la zone du Clôt de la Tamarissière (entre l'accès 10 et la limite avec Vias) : ils y sont libres de 7h à 9h et de 19h à 21h, et en laisse le reste du temps. Les panneaux délimitent la zone ; voir la <a href=\"/fiche-plage-tamarissiere-agde\">fiche de la plage de la Tamarissière</a>. L'office de tourisme ne donne pas ici de règle pour les autres périodes de l'année.</p>",
+    "html": "<p>À Agde, du 25 mai au 12 septembre, les chiens sont interdits sur les plages, sauf sur la zone du Clôt de la Tamarissière (entre l'accès 10 et la limite avec Vias, délimitée par des panneaux) : ils y sont libres (« gambadage ») de 7h à 9h et de 19h à 21h, et en laisse le reste du temps. La plage est surveillée de 11h à 18h30 du 4 juillet au 30 août 2026 ; voir la <a href=\"/fiche-plage-tamarissiere-agde\">fiche de la plage de la Tamarissière</a>. L'office de tourisme ne donne pas ici de règle pour les autres périodes de l'année.</p>",
     "sources": [
       {
         "label": "Office de tourisme Cap d'Agde Méditerranée : plage de la Tamarissière",
@@ -26,31 +26,39 @@
     ]
   },
   "aix-les-bains-avec-son-chien": {
-    "html": "<p>À Aix-les-Bains, Grand Lac indique que les chiens ne sont pas admis, même en laisse, pendant la saison estivale sur les plages de <strong>Mémard</strong> (Grand Port) et du <strong>Rowing</strong>, ni sur les autres plages surveillées du lac du Bourget ; la surveillance court du 27 juin au 30 août 2026. Hors de ces plages, le site de Grand Lac ne publie pas de zone canine : renseigne-toi auprès de la mairie ou de l'office de tourisme avant de poser ta serviette.</p><p>En ville, la mairie fournit gratuitement des sacs à déjections dans 40 distributeurs, et rappelle que ne pas ramasser peut valoir une amende. Pour dégourdir ses pattes sans baignade, pense au <a href=\"/fiche-balade-bois-vidal-aix-les-bains\">bois Vidal</a>, où l'office de tourisme dit les chiens bienvenus.</p>",
+    "html": "<p>À Aix-les-Bains, Grand Lac (page mise à jour le 12 octobre 2026) indique que les animaux domestiques ne sont pas autorisés, même en laisse, pendant la saison estivale sur les plages de <strong>Mémard</strong> (Grand Port) et du <strong>Rowing</strong>, comme sur les autres plages du lac du Bourget qu'il gère ; la surveillance court du 27 juin au 30 août 2026 (du 13 juin au 30 août au Bourget-du-Lac). Cette page ne publie pas de zone canine et ne dit rien du reste de l'année : renseigne-toi auprès de la mairie ou de l'office de tourisme avant de poser ta serviette.</p><p>En ville, la mairie met gratuitement à disposition des sacs à déjections dans 40 distributeurs, et rappelle que ne pas respecter la règle peut valoir une amende. Pour dégourdir ses pattes sans baignade, pense au <a href=\"/fiche-balade-bois-vidal-aix-les-bains\">bois Vidal</a> : l'office de tourisme y indique les animaux acceptés, et Explore Savoie précise « tenus en laisse de moins de 2,50 m ».</p>",
     "sources": [
       {
-        "label": "Grand Lac : les plages du lac du Bourget (animaux non autorisés en saison estivale)",
+        "label": "Grand Lac : les plages du lac du Bourget",
         "url": "https://grand-lac.fr/au-quotidien/services-a-la-population/plages"
       },
       {
-        "label": "Mairie d'Aix-les-Bains : déchets et propreté (propreté canine)",
+        "label": "Ville d'Aix-les-Bains : déchets et propreté (propreté canine)",
         "url": "https://www.aixlesbains.fr/mon-quotidien/cadre-de-vie-et-environnement/dechets-et-proprete"
+      },
+      {
+        "label": "Aix-les-Bains Riviera des Alpes : bois Vidal",
+        "url": "https://www.aixlesbains-rivieradesalpes.com/patrimoine-naturel/bois-vidal-aix-les-bains"
+      },
+      {
+        "label": "Explore Savoie : promenade confort du bois Vidal",
+        "url": "https://www.explore-savoie.com/randonnees-et-balades/promenade-confort-le-bois-vidal-5734178"
       }
     ]
   },
   "ajaccio-avec-son-chien": {
-    "html": "<p>À Ajaccio, la mairie rappelle que, par arrêté du maire, l'accès des plages est strictement interdit aux chiens (page publiée le 7 juin 2024 ; voir <a href=\"/fiche-plage-ricanto-ajaccio-2a\">le Ricanto</a> et <a href=\"/fiche-plage-capo-di-feno-ajaccio-2a\">Capo di Feno</a>). La mairie signale aussi des déjections canines sur les plages urbaines et rappelle que ramasser est obligatoire sur la voie publique et dans les jardins ; elle annonce 35 € d'amende.</p><p>Deux sites protégés de la commune, Vignola et Suartello, sont interdits à la divagation animale, y compris canine (arrêtés préfectoraux de juin et juillet 2024). À la <a href=\"/fiche-balade-pointe-parata-sanguinaires-ajaccio-2a\">Pointe de la Parata</a> (Grand Site de France), la charte du promeneur demande de tenir son chien en laisse.</p>",
+    "html": "<p>À Ajaccio, la mairie rappelle que, par arrêté du maire, l'accès des plages est strictement interdit aux chiens (page publiée le 7 juin 2024, sans date de fin ; voir <a href=\"/fiche-plage-ricanto-ajaccio-2a\">le Ricanto</a> et <a href=\"/fiche-plage-capo-di-feno-ajaccio-2a\">Capo di Feno</a>). Elle signale aussi des déjections canines sur les plages urbaines et rappelle que ramasser est obligatoire sur la voie publique, les trottoirs, les espaces verts et les jardins publics ; abandonner une déjection expose à une contravention de 35 €.</p><p>Deux sites protégés de la commune, Vignola (67,5 ha) et Suartello (3 ha), sont interdits à la divagation animale, y compris canine, par arrêtés préfectoraux de protection de biotope (21 juin et 8 juillet 2024).</p>",
     "sources": [
       {
-        "label": "Mairie d'Ajaccio — Déjections canines sur les plages (arrêté municipal des plages)",
+        "label": "Mairie d'Ajaccio : déjections canines sur les plages",
         "url": "https://ajaccio.corsica/dejections-canines-plages-une-question-civisme/"
       },
       {
-        "label": "Préfecture de Corse-du-Sud — Arrêté APPB Vignola (21/06/2024)",
+        "label": "Préfecture de Corse : arrêté Vignola (juin 2024)",
         "url": "https://www.corse.developpement-durable.gouv.fr/IMG/pdf/ap_2a-2024-06-21-00008__vignola.pdf"
       },
       {
-        "label": "Préfecture de Corse-du-Sud — Arrêté APPB Suartello (08/07/2024)",
+        "label": "Préfecture de Corse : arrêté Suartello (juillet 2024)",
         "url": "https://www.corse.developpement-durable.gouv.fr/IMG/pdf/ap_2a-2024-07-08-00001_suartello.pdf"
       }
     ]
@@ -149,23 +157,23 @@
     ]
   },
   "anglet-avec-son-chien": {
-    "html": "<p>À Anglet, la laisse est obligatoire sur la voie publique, dans les parcs, les jardins et sur la promenade littorale, et le ramassage des déjections est obligatoire (des sacs gratuits sont distribués en ville). Sur le sable, les chiens sont interdits pendant la surveillance des bains de mer ; ils sont admis sans laisse du 1er novembre au 1er avril (catégorie 2 en laisse et muselée, catégorie 1 interdite). L'été, la <a href=\"/fiche-plage-cavaliers-anglet\">zone canine de la plage des Cavaliers</a> (200 m, test 2026) accueille les chiens de 19h à 10h ; la <a href=\"/fiche-plages-anglet\">fiche des autres plages</a> détaille le reste.</p><p>Les forêts du Pignada et du Lazaret sont ouvertes aux chiens toute l'année : sans laisse sur les chemins et sentiers, en laisse sur les voies vertes, avec d'éventuelles restrictions d'avril à juin pour la faune. Le magazine municipal signale aussi des parcs canins à Louillot et à Belay. Voir la <a href=\"/fiche-balade-foret-du-pignada-anglet\">balade en forêt du Pignada</a>.</p>",
+    "html": "<p>À Anglet, la FAQ de la ville demande la laisse sur la voie publique, les voies vertes, les parcs, jardins, squares et espaces verts non clos du littoral ; le ramassage des déjections est obligatoire (sacs gratuits en ville, d'après l'office). Sur le sable, les chiens sont interdits, même en laisse, pendant la surveillance des bains de mer, et admis sans laisse du 1er novembre au 1er avril (l'office écrit « du 1er novembre au 31 mars »), hors chiens de catégories 1 et 2. Jusqu'au 31 octobre 2026, la ville expérimente une <a href=\"/fiche-plage-cavaliers-anglet\">zone canine de 200 m à la plage des Cavaliers</a>, de 19h à 10h : sans laisse et baignade comprise pour les catégories 3, en laisse et muselés pour la catégorie 2, interdit en catégorie 1. La <a href=\"/fiche-plages-anglet\">fiche des autres plages</a> détaille le reste.</p><p>Les forêts du Pignada et du Lazaret sont ouvertes aux chiens toute l'année : sans laisse sur les chemins et sentiers, en laisse sur les voies vertes ; d'avril à juin, des restrictions localisées peuvent être prises par arrêté municipal pour la faune. Le magazine municipal de mars-avril 2026 signale des parcs canins à Louillot et à Belay. Voir la <a href=\"/fiche-balade-foret-du-pignada-anglet\">balade en forêt du Pignada</a>.</p>",
     "sources": [
       {
-        "label": "Ville d'Anglet : FAQ (laisse, plages, déjections)",
+        "label": "Ville d'Anglet : FAQ (animaux)",
         "url": "https://www.anglet.fr/outils/foire-aux-questions-faq"
       },
       {
-        "label": "Anglet Mag n°178 (mars-avril 2026)",
-        "url": "https://virtuel.anglet.fr/mag/mag_178/anglet_mag_178_partie_2.html"
+        "label": "Ville d'Anglet : une plage autorisée aux chiens (30/06/2026)",
+        "url": "https://www.anglet.fr/ma-ville/environnement/fiche-pratique/actualites/une-plage-autorisee-aux-chiens/"
       },
       {
-        "label": "Anglet Tourisme : Avec mon chien",
+        "label": "Office de tourisme d'Anglet : avec mon chien",
         "url": "https://www.anglet-tourisme.com/avec-mon-chien/"
       },
       {
-        "label": "Ville d'Anglet : une plage autorisée aux chiens",
-        "url": "https://www.anglet.fr/ma-ville/environnement/fiche-pratique/actualites/une-plage-autorisee-aux-chiens/"
+        "label": "Anglet Mag n° 178 (mars-avril 2026) : l'animal en ville",
+        "url": "https://virtuel.anglet.fr/mag/mag_178/anglet_mag_178_partie_2.html"
       }
     ]
   },
@@ -216,41 +224,49 @@
     ]
   },
   "antibes-avec-son-chien": {
-    "html": "<p>À Antibes Juan-les-Pins, nous n'avons trouvé aucune règle publiée par la ville ou l'office de tourisme sur les chiens sur les plages : la fiche de la <a href=\"/fiche-antibes-salis\">plage de la Salis</a> le signale, renseigne-toi auprès de la mairie avant de t'y rendre. De nombreux points de distribution de sacs en papier sont à la disposition des propriétaires de chiens.</p>",
+    "html": "<p>À Antibes Juan-les-Pins, nous n'avons trouvé aucun arrêté en ligne sur les chiens à la plage. En juin 2026, Nice-Matin rapporte que la ville rappelle que « la réglementation actuelle interdit la présence des animaux sur les plages publiques » pour des raisons d'hygiène, et qu'aucune plage dédiée aux chiens n'est aménagée ; la fiche Handiplage de l'office de tourisme indique de son côté que les chiens sont interdits sur les plages et dans l'eau, sauf chiens guides et d'assistance. Pour la <a href=\"/fiche-antibes-salis\">plage de la Salis</a>, renseigne-toi quand même auprès de la mairie. De nombreux points de distribution de sacs en papier sont à la disposition des propriétaires de chiens.</p>",
     "sources": [
       {
-        "label": "Office de tourisme d'Antibes Juan-les-Pins — tourisme durable (sacs pour déjections)",
+        "label": "Nice-Matin (08/06/2026) : plage des Mineurs à Mandelieu, point sur Antibes",
+        "url": "https://www.nicematin.com/societe/animaux/s-il-y-en-a-beaucoup-plus-je-changerai-d-endroit-sur-cette-plage-de-mandelieu-la-napoule-les-chiens-font-leurs-premiers-pas-en-liberte-encadree-10683851"
+      },
+      {
+        "label": "Destination Côte d'Azur France : Handi-plage d'Antibes (office de tourisme)",
+        "url": "https://cotedazurfrance.fr/offres/handi-plage-antibes-fr-5374276"
+      },
+      {
+        "label": "Office de tourisme d'Antibes Juan-les-Pins : tourisme durable (sacs pour chiens)",
         "url": "https://www.antibesjuanlespins.com/decouvrir/les-incontournables/antibes-juan-les-pins-pour-un-tourisme-durable"
       }
     ]
   },
   "arcachon-avec-son-chien": {
-    "html": "<p>À Arcachon, l'arrêté municipal du 5 mai 2026 interdit les chiens, même en laisse, sur toutes les plages du 1er avril au 31 octobre. La page « Les animaux » de la mairie donne une autre période (plages interdites du 31 mars au 1er décembre, chiens bienvenus du 1er décembre au 31 mars, en laisse) : novembre reste donc à confirmer auprès de la mairie. Voir la <a href=\"/fiche-plage-arcachon\">fiche des plages</a>.</p><p>En ville, la laisse et le ramassage des déjections sont obligatoires ; la ville a installé 44 distributeurs de sacs. Selon la mairie, les chiens sont les bienvenus dans l'espace qui leur est réservé au Parc Mauresque, dans les espaces boisés et à la plaine des sports (hors terrains), toujours en laisse.</p>",
+    "html": "<p>À Arcachon, l'arrêté municipal n° 371 du 5 mai 2026 (plages, activités nautiques et baignades) rappelle l'interdiction des chiens, même tenus en laisse, sur les plages bordant la zone réglementée du 1er avril au 31 octobre, seuls les chiens guides de personnes malvoyantes faisant exception. La page « Les animaux » de la mairie donne une autre période (plages non admises du 31 mars au 1er décembre, chiens bienvenus du 1er décembre au 31 mars, en laisse) : novembre reste donc à confirmer auprès de la mairie. Voir la <a href=\"/fiche-plage-arcachon\">fiche des plages</a>.</p><p>En ville, la laisse et le ramassage des déjections sont obligatoires ; la ville a installé 44 distributeurs de sacs. Selon la mairie, les chiens sont les bienvenus dans l'espace qui leur est réservé au Parc Mauresque, dans les espaces boisés et à la plaine des sports (hors terrains), toujours en laisse.</p>",
     "sources": [
       {
-        "label": "Mairie d'Arcachon : Les animaux",
+        "label": "Mairie d'Arcachon : les animaux",
         "url": "https://www.ville-arcachon.fr/les-animaux/"
       },
       {
-        "label": "Mairie d'Arcachon : La propreté (distributeurs de sacs)",
+        "label": "Mairie d'Arcachon : propreté (distributeurs de sacs)",
         "url": "https://www.ville-arcachon.fr/proprete"
+      },
+      {
+        "label": "Mairie d'Arcachon : arrêté n° 371 du 5 mai 2026 (plages et baignades)",
+        "url": "https://www.ville-arcachon.fr/wp-content/uploads/2026/05/2026_371-reglementation-activites-nautiques-et-annexes.pdf"
       }
     ]
   },
   "argeles-sur-mer-avec-son-chien": {
-    "html": "<p>À Argelès-sur-Mer, l'office de tourisme indique que les chiens sont interdits sur toute la plage sauf sur deux secteurs : au sud de la digue, au niveau du parking des pêcheurs (voir la <a href=\"/fiche-plage-racou-argeles\">plage du Racou</a>), et au nord du poste P1, vers la réserve naturelle du Mas Larrieu (voir la <a href=\"/fiche-plage-marenda-argeles\">plage de la Marenda</a>). Dans ces secteurs, les chiens restent en laisse sous la responsabilité de leur maître, et leur bain comme leur dressage sont interdits de 9h30 à 19h.</p><p>L'office de tourisme accueille aussi les visiteurs avec leur chien et leur met un toutou bar à l'accueil. Les plages d'Argelès n'ont pas de douches.</p>",
+    "html": "<p>À Argelès-sur-Mer, l'office de tourisme indique que la présence des chiens est interdite sur la totalité de la plage, sauf sur deux secteurs : au niveau du parking des pêcheurs, au sud de la digue (zone portuaire interdite à la baignade ; voir la <a href=\"/fiche-plage-racou-argeles\">plage du Racou</a>), et au nord du poste P1, vers la réserve naturelle du Mas Larrieu (voir la <a href=\"/fiche-plage-marenda-argeles\">plage de la Marenda</a>). Dans ces secteurs, les chiens restent en laisse sous la responsabilité de leur maître, et leur bain comme leur dressage sont interdits de 9h30 à 19h. Les pages de l'office datent de mars 2024 et ne donnent pas de dates de saison.</p><p>Les balades en ville, en pinède et sur les sentiers sont possibles toute l'année, selon l'office.</p>",
     "sources": [
       {
-        "label": "Office de tourisme d'Argelès-sur-Mer — plages autorisées aux chiens",
+        "label": "Office de tourisme d'Argelès-sur-Mer : plages autorisées aux chiens",
         "url": "https://www.argeles-sur-mer.com/cap-mediteranee/les-plages/plages-autorisees-aux-chiens"
       },
       {
-        "label": "Office de tourisme d'Argelès-sur-Mer — Argelès avec son chien",
+        "label": "Office de tourisme d'Argelès-sur-Mer : Argelès avec son chien",
         "url": "https://www.argeles-sur-mer.com/micro-aventures/on-a-teste/argeles-sur-mer-avec-chien-dog-friendly"
-      },
-      {
-        "label": "Office de tourisme d'Argelès-sur-Mer — les plages",
-        "url": "https://www.argeles-sur-mer.com/cap-mediteranee/les-plages"
       }
     ]
   },
@@ -324,28 +340,28 @@
     ]
   },
   "bagneres-de-luchon-avec-son-chien": {
-    "html": "<p>À Luchon, l'office de tourisme des Pyrénées Haut-Garonnaises indique « animaux acceptés » à la station de Superbagnères, accessible par la <a href=\"/fiche-activite-telecabine-cremaillere-express-luchon\">télécabine Crémaillère Express</a> (ouverte en été de juin à début septembre en 2026). L'ascension à pied par la <a href=\"/fiche-balade-superbagneres-par-la-cremaillere-luchon\">Crémaillère</a> est classée très difficile (13 km, 1 200 m de dénivelé).</p><p>De juin à octobre, les troupeaux sont en estive dans les vallées d'Oueil, du Larboust et du Lys, avec des patous : l'office impose la laisse en zone d'estive, de contourner les troupeaux et de rester calme si un patou s'approche. Certains itinéraires, comme le port de Vénasque au départ de l'Hospice de France, signalent officiellement la présence de patous.</p>",
+    "html": "<p>À Luchon, l'office de tourisme de Haute-Garonne indique « animaux acceptés » à la station de Superbagnères, accessible par la <a href=\"/fiche-activite-telecabine-cremaillere-express-luchon\">télécabine Crémaillère Express</a> : en été 2026, de 9h à 17h tous les week-ends de juin, tous les jours du 3 juillet au 30 août et les trois premiers week-ends de septembre, avec un tarif de 3 € pour un animal de compagnie.</p><p>De juin à octobre, les troupeaux sont en estive dans les vallées d'Oueil, du Larboust et du Lys, avec des patous : Pyrénées 31 impose la laisse en zone d'estive, de contourner les troupeaux et de rester calme si un patou s'approche. Certains itinéraires, comme le port de Vénasque au départ de l'Hospice de France (animaux acceptés, présence de patous signalée), préviennent officiellement de leur présence.</p>",
     "sources": [
       {
-        "label": "Pyrénées 31 : le patou veille, apprenons à respecter son rôle",
+        "label": "Pyrénées 31 : le patou veille",
         "url": "https://www.pyrenees31.com/le-patou-veille-apprenons-a-respecter-son-role"
       },
       {
-        "label": "Pyrénées 31 : fiche itinéraire 23, port de Vénasque (présence de patou)",
+        "label": "Pyrénées 31 : fiche itinéraire n° 23, port de Vénasque",
         "url": "https://www.pyrenees31.com/api/itineraires/ITIMID031V50PPXX/pdf"
       },
       {
-        "label": "Haute-Garonne Tourisme : station de Luchon-Superbagnères (animaux acceptés)",
+        "label": "Haute-Garonne Tourisme : station de Luchon-Superbagnères",
         "url": "https://www.hautegaronnetourisme.com/activites/station-de-luchon-superbagneres"
       },
       {
-        "label": "Haute-Garonne Tourisme : télécabine Crémaillère Express (été 2026)",
+        "label": "Haute-Garonne Tourisme : télécabine Crémaillère Express",
         "url": "https://www.hautegaronnetourisme.com/activites/telecabine-cremaillere-express"
       }
     ]
   },
   "bandol-avec-son-chien": {
-    "html": "<p>À Bandol, l'office de tourisme et la ville indiquent que les chiens sont interdits sur les plages, sauf sur la Dog Beach, une plage de galets réservée à ton compagnon, en contrebas du stade Deferrari ; voir la <a href=\"/fiche-bandol\">fiche de la Dog Beach</a>. Ces pages ne donnent ni règle de laisse ni dates.</p>",
+    "html": "<p>À Bandol, l'office de tourisme et la ville indiquent que les chiens sont interdits sur les plages, sauf sur la Dog Beach, une plage de galets réservée à ton compagnon, en contrebas du parc Deferrari (la ville dit « stade Deferrari ») ; voir la <a href=\"/fiche-bandol\">fiche de la Dog Beach</a>. Ces pages ne donnent ni règle de laisse ni dates.</p>",
     "sources": [
       {
         "label": "Bandol Tourisme : les plages",
@@ -446,14 +462,14 @@
     ]
   },
   "berck-sur-mer-avec-son-chien": {
-    "html": "<p>À Berck-sur-Mer, l'office de tourisme indique deux portions de plage accessibles aux chiens toute l'année : la <a href=\"/fiche-balade-plage-sud-baie-authie-berck-62\">plage Sud</a> (accès par la promenade du Professeur Jean Debeyre, chiens tenus en laisse) et la <a href=\"/fiche-balade-plage-nord-terminus-berck-62\">plage Nord</a> du quartier Terminus (accès par l'esplanade Parmentier, au-delà de la base de char à voile). En juillet-août, l'accès à la plage est autorisé en dehors de la zone de baignade surveillée, délimitée par des drapeaux à bandes jaune et rouge : l'office précise que le non-respect peut être verbalisé. La ville annonce la surveillance du 1er juillet au 31 août 2026.</p><p>L'office liste aussi deux sentiers nature dans les dunes (la boucle de 3,4 km du sentier dunaire de la baie d'Authie et celle de 2,1 km de la plaine dunaire) et met en ligne le plan des distributeurs de sacs à déjections de la station.</p>",
+    "html": "<p>À Berck-sur-Mer, l'office de tourisme indique deux portions de plage accessibles aux chiens toute l'année : la <a href=\"/fiche-balade-plage-sud-baie-authie-berck-62\">plage Sud</a> (accès par la promenade du Professeur Jean Debeyre, près de la base nautique, chiens tenus en laisse) et la <a href=\"/fiche-balade-plage-nord-terminus-berck-62\">plage Nord</a> du quartier Terminus (accès par l'esplanade Parmentier, au-delà de la base de char à voile). En juillet-août, l'accès à la plage est autorisé en dehors de la zone de baignade surveillée, délimitée par des drapeaux à bandes jaune et rouge : le non-respect peut être verbalisé. La ville annonce la surveillance du 1er juillet au 31 août 2026.</p><p>En balade, l'office demande la laisse et des sacs pour les déjections, et la muselière pour les catégories 1 et 2. Il liste aussi deux sentiers dans les dunes, une boucle de 3,4 km depuis la plage Sud et une de 2,1 km dans la plaine dunaire.</p>",
     "sources": [
       {
-        "label": "Office de tourisme de Berck-sur-Mer : Avec mon animal de compagnie",
+        "label": "Office de tourisme de Berck : avec mon animal de compagnie",
         "url": "https://www.berck-tourisme.com/fr/sejourner/avec-mon-animal-de-compagnie"
       },
       {
-        "label": "Ville de Berck-sur-Mer : Les plages (surveillance 2026)",
+        "label": "Ville de Berck : les plages (surveillance 2026)",
         "url": "https://berck.fr/au-quotidien/le-cadre-de-vie/le-littoral-berckois/les-plages"
       }
     ]
@@ -522,14 +538,14 @@
     ]
   },
   "biarritz-avec-son-chien": {
-    "html": "<p>À Biarritz, les plages sont fermées aux chiens 24h/24 du 1er avril au 30 septembre pour la <a href=\"/fiche-grande-plage-miramar-biarritz\">Grande Plage et le Miramar</a>, et du 1er mai au 30 septembre pour toutes les autres (<a href=\"/fiche-cote-des-basques-biarritz\">Côte des Basques</a>, <a href=\"/fiche-plages-biarritz-marbella-milady-port-vieux\">Marbella, Milady, Port Vieux</a>). Le reste de l'année : 9h-11h en laisse, interdit de 11h à 18h, puis libre de 18h à 9h (arrêté municipal publié le 15 décembre 2023). Pour la Grande Plage et le Miramar, l'office de tourisme donne tantôt le 30 septembre, tantôt le 31 octobre comme fin de l'interdiction : regarde les panneaux en octobre.</p><p>En ville, le ramassage des déjections est obligatoire et des distributeurs de sacs sont installés un peu partout. Le parc Mazon, le jardin public, le jardin de la Côte des Basques et le plateau de l'Atalaye acceptent les chiens en laisse. Biarritz compte quatre canisites clôturés où ton chien court sans laisse (lac Marion, au-dessus de la gare du Midi, quartier Kléber, square Hirigoyen) et un <a href=\"/fiche-balade-chemin-chien-en-liberte-mouriscot-biarritz\">chemin « chien en liberté » au lac Mouriscot</a> (rappel à la voix exigé, chiens de catégories 1 et 2 interdits).</p>",
+    "html": "<p>À Biarritz, l'office de tourisme rapporte un arrêté municipal publié le 15 décembre 2023 : plages fermées aux chiens 24h/24 du 1er avril au 30 septembre pour la <a href=\"/fiche-grande-plage-miramar-biarritz\">Grande Plage et le Miramar</a>, et du 1er mai au 30 septembre pour toutes les autres (<a href=\"/fiche-cote-des-basques-biarritz\">Côte des Basques</a>, <a href=\"/fiche-plages-biarritz-marbella-milady-port-vieux\">Marbella, Milady, Port Vieux</a>) ; le reste de l'année, en laisse de 9h à 11h, interdit de 11h à 18h, libre de 18h à 9h. La FAQ de l'office donne une autre version : interdiction 24h/24 pendant les périodes de surveillance (Grande Plage et Miramar du 1er avril au 31 octobre, les autres du 1er mai au 30 septembre), puis chiens en laisse de 7h à 11h seulement : regarde les panneaux, surtout en octobre.</p><p>En ville, le ramassage des déjections est obligatoire (arrêté municipal) et des distributeurs de sacs sont installés un peu partout. Le parc Mazon, le jardin public, le jardin de la Côte des Basques et le plateau de l'Atalaye acceptent les chiens en laisse. Biarritz compte quatre canisites clôturés où ton chien court sans laisse, et un <a href=\"/fiche-balade-chemin-chien-en-liberte-mouriscot-biarritz\">chemin « chien en liberté » au lac Mouriscot</a> (300 m jusqu'à une clairière, chiens identifiés, à moins de 100 m et au rappel, catégories 1 et 2 interdites). Les chiens ne sont pas admis dans les bus Txik Txak, sauf petits gabarits en panier.</p>",
     "sources": [
       {
-        "label": "Destination Biarritz : que faire avec son chien (arrêté du 15/12/2023, canisites)",
+        "label": "Destination Biarritz : destination toutouristique",
         "url": "https://www.destination-biarritz.fr/pratique/destination-toutouristique-que-faire-avec-son-chien-a-biarritz"
       },
       {
-        "label": "Destination Biarritz : FAQ",
+        "label": "Destination Biarritz : FAQ (chiens sur les plages)",
         "url": "https://www.destination-biarritz.fr/pratique/faq/"
       }
     ]
@@ -560,7 +576,7 @@
     ]
   },
   "biscarrosse-avec-son-chien": {
-    "html": "<p>Biscarrosse est l'une des stations les plus ouvertes aux chiens du littoral landais. Sur les plages océanes, les chiens en laisse sont admis toute l'année, de la plage Sud à la plage du Vivier. Du 1er juin au 30 septembre, dans les zones de baignade réglementées (panneaux noir et jaune), ils ne sont admis qu'avant 10h et après 20h ; hors de ces zones, aucune restriction d'horaire (<a href=\"/fiche-biscarrosse-plage-ocean\">détail de la fiche plages</a>). Les chiens de catégorie peuvent devoir être muselés.</p><p>Côté lac, l'office de tourisme indique les mêmes créneaux avant 10h et après 20h l'été sur les plages du Lac Nord, et la <a href=\"/fiche-plage-beau-rivage-sanguinet\">plage Beau Rivage à Sanguinet</a> accueille les chiens toute l'année. La forêt (13 000 hectares) se parcourt en laisse sur les sentiers. Des poubelles équipées de sacs sont disséminées sur le territoire ; l'office rappelle une amende pouvant aller jusqu'à 135 € si tu ne ramasses pas.</p>",
+    "html": "<p>Biarritz mis à part, Biscarrosse est l'une des stations les plus ouvertes aux chiens du littoral landais. D'après l'office de tourisme Bisca Grands Lacs, du 1er juin au 30 septembre, les chiens en laisse sont admis sur les plages océanes avant 10h et après 20h dans les zones réglementées (panneaux noir et jaune, qui incluent la baignade), et sans restriction d'horaires hors de ces zones (muselière selon la réglementation) ; le reste de l'année, en laisse sur toutes les plages océanes, de la plage Sud à la plage du Vivier (<a href=\"/fiche-biscarrosse-plage-ocean\">détail de la fiche plages</a>).</p><p>Côté lac, mêmes créneaux (avant 10h et après 20h l'été) sur les plages du Lac Nord, et la <a href=\"/fiche-plage-beau-rivage-sanguinet\">plage Beau Rivage à Sanguinet</a> est présentée comme accueillante pour les chiens ; à Parentis, la plage devant le camping de la Forêt Lahitte teste une formule « dog-friendly » en laisse. La forêt (13 000 hectares) se parcourt en laisse sur les sentiers. Des poubelles équipées de sacs sont disséminées sur le territoire ; l'office rappelle une amende pouvant aller jusqu'à 135 € si tu ne ramasses pas.</p>",
     "sources": [
       {
         "label": "Bisca Grands Lacs : emmener son chien en vacances",
@@ -590,11 +606,15 @@
     ]
   },
   "bonifacio-avec-son-chien": {
-    "html": "<p>À Bonifacio, l'office de tourisme de Porto-Vecchio et le plan touristique de la ville indiquent que les chiens sont admis, tenus en laisse, sur toutes les plages de la commune (voir <a href=\"/fiche-plage-rondinara-bonifacio-2a\">Rondinara</a>). Ils sont interdits sur les îles Lavezzi et l'île de Piana. Un arrêté municipal de 2014 interdit les animaux sur les sites de baignade surveillés de juin à août, de 9h30 à 19h : lis les panneaux à l'arrivée.</p><p>Dans la ville haute, aucune règle particulière n'est publiée pour les chiens : laisse comme partout en ville. L'Escalier du Roy d'Aragon est en revanche interdit aux chiens, par mesure de sécurité, selon l'office de tourisme de Bonifacio.</p>",
+    "html": "<p>À Bonifacio, l'office de tourisme de Porto-Vecchio indique que les chiens sont admis, tenus en laisse, sur toutes les plages de la commune de Bonifacio (voir <a href=\"/fiche-plage-rondinara-bonifacio-2a\">Rondinara</a>) ; ils sont interdits sur les îles Lavezzi et l'île de Piana. Un arrêté municipal du 17 mars 2014 (art. 18) interdit en outre les animaux sur les sites de baignade surveillés de juin à août, de 9h30 à 19h : lis les panneaux à l'arrivée.</p><p>L'Escalier du Roy d'Aragon est interdit aux chiens, par mesure de sécurité, selon l'office de tourisme de Bonifacio.</p>",
     "sources": [
       {
-        "label": "Office de tourisme de Porto-Vecchio — FAQ plages (chiens, communes de Porto-Vecchio et Bonifacio)",
+        "label": "Office de tourisme de Porto-Vecchio : FAQ (chiens sur les plages)",
         "url": "https://www.portovecchio-tourisme.corsica/faq-les-questions-les-plus-frequemment-posees"
+      },
+      {
+        "label": "Office de tourisme de Bonifacio : Escalier du Roy d'Aragon",
+        "url": "https://reservation.bonifacio.fr/visitez-l-escalier-du-roy-d-aragon.html"
       }
     ]
   },
@@ -620,10 +640,10 @@
     ]
   },
   "bormes-les-mimosas-avec-son-chien": {
-    "html": "<p>À Bormes-les-Mimosas, du 15 juin au 30 septembre, les chiens en laisse ne sont admis que sur la partie de la plage de Cabasson près du Fort (côté est de l'épi rocheux) et sur la plage du Gouron, selon la mairie ; les déjections doivent être ramassées. L'office de tourisme présente le Gouron comme ouvert aux chiens toute l'année : voir les fiches du <a href=\"/fiche-plage-gouron-bormes-les-mimosas\">Gouron</a> et de <a href=\"/fiche-plage-cabasson-bormes-les-mimosas\">Cabasson</a>.</p><p>Sur les sentiers de randonnée, les chiens doivent être tenus en laisse ; le fort de Brégançon ne se visite pas avec un chien.</p>",
+    "html": "<p>À Bormes-les-Mimosas, du 15 juin au 30 septembre, les chiens en laisse ne sont admis que sur la partie de la plage de Cabasson près du Fort (côté est de l'épi rocheux) et sur la plage du Gouron, selon la mairie, qui précise que seuls les chiens d'utilité sont admis sur l'ensemble des plages communales ; les déjections doivent être ramassées. L'office de tourisme présente le Gouron comme ouvert aux chiens toute l'année : voir les fiches du <a href=\"/fiche-plage-gouron-bormes-les-mimosas\">Gouron</a> et de <a href=\"/fiche-plage-cabasson-bormes-les-mimosas\">Cabasson</a>.</p><p>Selon l'office, les chiens sont acceptés sur les randonnées à condition d'être tenus en laisse, mais pas dans les parcs de la ville ; le fort de Brégançon ne se visite pas avec un chien.</p>",
     "sources": [
       {
-        "label": "Ville de Bormes-les-Mimosas : les animaux domestiques",
+        "label": "Ville de Bormes : les animaux domestiques",
         "url": "https://www.ville-bormes.fr/ma-ville/environnement/biodiversite-vie-sauvage-et-nuisibles/animaux-domestiques"
       },
       {
@@ -631,7 +651,7 @@
         "url": "https://www.bormeslesmimosas.com/equipements/plage-du-gouron/"
       },
       {
-        "label": "Office de tourisme de Bormes : FAQ",
+        "label": "Office de tourisme de Bormes : foire aux questions",
         "url": "https://www.bormeslesmimosas.com/bormes-pratique/foire-aux-questions/"
       }
     ]
@@ -696,7 +716,7 @@
     ]
   },
   "cabourg-avec-son-chien": {
-    "html": "<p>À Cabourg, les chiens sont admis toute l'année sur la plage de Cap Cabourg, à l'extrémité est de la ville (<a href=\"/fiche-plages-cabourg-14\">notre fiche</a>), et ne sont pas autorisés sur le reste de la plage. Dans les rues, les jardins du Casino et la promenade Marcel Proust, la ville rappelle que la laisse est obligatoire.</p><p>Des distributeurs de sacs à déjections sont installés dans toute la ville. Depuis la plage de Cap Cabourg part une balade au bord de la Dives jusqu'au centre commercial Balbec.</p>",
+    "html": "<p>À Cabourg, la ville indique que les chiens peuvent aller toute l'année sur la plage de Cap Cabourg, à l'extrémité est (<a href=\"/fiche-plages-cabourg-14\">notre fiche</a>), et qu'ils ne sont pas autorisés sur le reste de la plage. Dans les rues, aux jardins du Casino et sur la promenade Marcel Proust, elle rappelle l'obligation de tenir son chien en laisse pendant les balades.</p><p>Des distributeurs de sacs à déjections sont installés partout dans la ville. De la plage de Cap Cabourg part une balade au bord de la Dives jusqu'au centre commercial Balbec ; la ville cite aussi le parcours du cœur autour de la Divette (2,5 km) et les marais jusqu'à Varaville.</p>",
     "sources": [
       {
         "label": "Ville de Cabourg : le guide pour des vacances au poil",
@@ -734,18 +754,30 @@
     ]
   },
   "calvi-avec-son-chien": {
-    "html": "<p>À Calvi, l'office de tourisme Calvi-Balagne écrit que les animaux, même tenus en laisse, sont interdits sur la plage de la ville (sable fin sur près de 4 km, surveillée du 15 juin au 15 septembre). Il indique la même règle sur les plages voisines de Sant'Ambroggio (Lumio) et de l'Argentella.</p><p>Dans la citadelle, les informations de l'office se contredisent : la fiche de la citadelle et son bureau d'information affichent « animaux non acceptés », alors que la visite libre est marquée « animaux acceptés ». Appelle le 04 95 65 16 67 avant de venir. Le sentier des douaniers vers la Revellata est coché « animaux acceptés » par l'office.</p>",
+    "html": "<p>À Calvi, l'office de tourisme Calvi-Balagne écrit que les animaux, même en laisse, sont interdits sur la plage de la ville (près de 4 km de sable, surveillée du 15 juin au 15 septembre, de 9h30 à 18h30) et sur la plage de Sant'Ambroggio (Lumio).</p><p>Dans la citadelle, quartier habité accessible toute l'année, les pages de l'office se contredisent : la fiche de la citadelle, son bureau d'information et l'audioguide affichent « animaux non acceptés », alors que celle de la visite de la ville (« le grand tour ») est marquée « animaux acceptés ». Appelle le 04 95 65 16 67 avant de venir. Le sentier des douaniers vers la Revellata est coché « animaux acceptés » par l'office.</p>",
     "sources": [
       {
-        "label": "Balagne Corsica — Calvi, côté plage",
+        "label": "Balagne Corsica : Calvi, côté plage",
         "url": "https://balagne-corsica.com/decouvrir-la-balagne/mer-et-plages/calvi-cote-plage"
       },
       {
-        "label": "Balagne Corsica — Sant'Ambroggio, côté plage",
+        "label": "Balagne Corsica : Sant'Ambroggio, côté plage",
         "url": "https://balagne-corsica.com/decouvrir-la-balagne/mer-et-plages/sant-ambroggio-plage"
       },
       {
-        "label": "Balagne Corsica — Office de tourisme Calvi Balagne",
+        "label": "Balagne Corsica : la citadelle de Calvi",
+        "url": "https://balagne-corsica.com/patrimoine-culturel/la-citadelle-de-calvi"
+      },
+      {
+        "label": "Balagne Corsica : visite de la ville de Calvi, le grand tour",
+        "url": "https://balagne-corsica.com/equipement/visite-de-la-ville-de-calvi-le-grand-tour"
+      },
+      {
+        "label": "Balagne Corsica : rando 28, Revellata",
+        "url": "https://balagne-corsica.com/equipement/boucle-de-la-revellata"
+      },
+      {
+        "label": "Balagne Corsica : office de tourisme Calvi-Balagne",
         "url": "https://balagne-corsica.com/commerce-et-service/office-de-tourisme-calvi-balagne"
       }
     ]
@@ -754,47 +786,63 @@
     "html": "<p>À Cancale, la mairie interdit l'accès des animaux aux plages du 1er juin au 30 septembre, de 10h à 19h, même tenus en laisse. Cela concerne la grève du port de La Houle, les plages de l'Abri des Flots, de Port Briac, de Port Mer et Port Picain, ainsi que celles du Saussaye, du Verger et du Petit Port (<a href=\"/fiche-plages-cancale-pointe-du-grouin-35\">notre fiche</a>).</p><p>En dehors de ces dates et de ces heures, la page de la mairie ne donne pas d'autre restriction. Un arrêté distinct encadre aussi la circulation des animaux sur le marché du dimanche.</p>",
     "sources": [
       {
-        "label": "Ville de Cancale : réglementations locales (accès des animaux aux plages)",
+        "label": "Ville de Cancale : réglementations locales (animaux)",
         "url": "https://www.ville-cancale.fr/cadre-de-vie/securite-et-tranquillite-publique/reglementations-locales"
       }
     ]
   },
   "canet-en-roussillon-avec-son-chien": {
-    "html": "<p>À Canet-en-Roussillon, la ville présente la <a href=\"/fiche-plage-lido-canet-roussillon\">plage du Lido</a>, le long de la D81 entre Canet Sud et l'embouchure de l'étang, comme sa « Dog Beach » ; elle n'est pas surveillée. Le guide « plages dog friendly » 2026 de Perpignan Méditerranée cite aussi Canet, mais ses dates et sa règle de laisse n'ont pas pu être lues : appelle la mairie (04 68 86 70 00) avant de venir.</p>",
+    "html": "<p>À Canet-en-Roussillon, la ville présente la <a href=\"/fiche-plage-lido-canet-roussillon\">plage du Lido</a>, le long de la D81 entre Canet Sud et l'embouchure de l'étang, comme sa « Dog Beach » ; elle n'est pas surveillée et la page ne donne ni dates ni règle de laisse. Le guide « plages dog friendly » 2026 de Perpignan Méditerranée cite aussi Canet (plage Nord, plage du Lido, étang de Canet), mais le texte lu ne permet pas d'associer clairement chaque plage à ses dates ni à sa règle de laisse, et rappelle que les arrêtés municipaux peuvent changer : appelle la mairie (04 68 86 70 00) avant de venir.</p>",
     "sources": [
       {
-        "label": "Ville de Canet-en-Roussillon : plage du Lido",
+        "label": "Mairie de Canet-en-Roussillon : plage du Lido",
         "url": "https://www.canetenroussillon.fr/prestataires/plage-du-lido/"
       },
       {
-        "label": "Perpignan Méditerranée : plages dog friendly, édition 2026",
+        "label": "Perpignan Méditerranée Tourisme : guide des plages dog friendly 2026",
         "url": "https://cdt66.media.tourinsoft.eu/upload/PERPIGNAN-MEDITERRANEE---GUIDE-DES-PLAGES-DOG-FRIENDLY--2-.pdf"
       }
     ]
   },
   "cannes-avec-son-chien": {
-    "html": "<p>À Cannes, les chiens ne peuvent aller que sur trois plages naturelles, celles du Midi, de Zamenhof et de Gazagnaire, du 1er novembre au 1er mai, sans restriction d'horaire ; voir les fiches <a href=\"/fiche-plage-du-midi-cannes\">Midi</a>, <a href=\"/fiche-plage-zamenhof-cannes\">Zamenhof</a> et <a href=\"/fiche-plage-gazagnaire-cannes\">Gazagnaire</a>. La plage <a href=\"/fiche-plage-brigitte-bardot-cannes\">Brigitte Bardot</a> est ouverte aux chiens sur la même période d'après la presse, pas d'après la page de la ville ; à l'inverse, les <a href=\"/fiche-iles-lerins\">îles de Lérins</a> acceptent les chiens en laisse.</p><p>En ville, la ville dispose d'un parc canin sécurisé de 400 m² rue du Lys, devant le square des frères Gaudino Joly, avec un parcours d'agilité. Les « citydogs » bleus distribuent des sacs, et ne pas ramasser les déjections expose à une amende pouvant atteindre 750 €.</p>",
+    "html": "<p>À Cannes, la mairie indique que les chiens peuvent aller sur les plages naturelles du Midi, de Zamenhof et de Gazagnaire du 1er novembre au 1er mai, sans restriction d'horaire ; voir les fiches <a href=\"/fiche-plage-du-midi-cannes\">Midi</a>, <a href=\"/fiche-plage-zamenhof-cannes\">Zamenhof</a> et <a href=\"/fiche-plage-gazagnaire-cannes\">Gazagnaire</a>. La plage <a href=\"/fiche-plage-brigitte-bardot-cannes\">Brigitte Bardot</a> est ouverte aux chiens sur la même période d'après Nice-Matin (juin 2026), pas d'après la page de la ville. À l'inverse, l'office de tourisme indique que les <a href=\"/fiche-iles-lerins\">îles de Lérins</a> acceptent les chiens en laisse ; un guide tiers affirme pourtant qu'ils sont interdits à Saint-Honorat, à vérifier auprès de la compagnie de bateau.</p><p>En ville, la ville dispose d'un parc canin sécurisé de 400 m² rue du Lys, devant le square des frères Gaudino Joly, avec un parcours d'agilité et deux distributeurs de sacs. Ne pas ramasser les déjections expose à une amende pouvant atteindre 750 €.</p>",
     "sources": [
       {
-        "label": "Ville de Cannes — Animal citadin",
+        "label": "Ville de Cannes : animal citadin",
         "url": "https://www.cannes.com/fr/cadre-de-vie/animal-citadin.html"
       },
       {
-        "label": "Ville de Cannes — plan d'action pour le bien-être animal",
+        "label": "Ville de Cannes : plan d'action pour le bien-être animal",
         "url": "https://www.cannes.com/fr/index/actualites/annee-2024/mai/le-nouveau-plan-d-action-pour-le-bien-etre-animal.html"
+      },
+      {
+        "label": "Nice-Matin (08/06/2026) : chiens sur les plages de la Côte d'Azur",
+        "url": "https://www.nicematin.com/societe/animaux/s-il-y-en-a-beaucoup-plus-je-changerai-d-endroit-sur-cette-plage-de-mandelieu-la-napoule-les-chiens-font-leurs-premiers-pas-en-liberte-encadree-10683851"
+      },
+      {
+        "label": "Ville de Cannes : les îles de Lérins (chien en laisse)",
+        "url": "https://www.cannes.com/fr/index/les-iles-de-lerins.html"
+      },
+      {
+        "label": "Provence-Alpes-Côte d'Azur Tourisme : île Sainte-Marguerite (office de tourisme de Cannes)",
+        "url": "https://provence-alpes-cotedazur.com/decouvrir/espaces-naturels/patrimoine-naturel/ile-sainte-marguerite-cannes-fr-5464684"
       }
     ]
   },
   "capbreton-avec-son-chien": {
-    "html": "<p>À Capbreton, deux sources officielles divergent. Tourisme Landes écrit que les chiens sont interdits du 1er juin au 30 septembre sur les sept plages et qu'on peut s'y promener hors saison. La brochure 2026 de l'office de tourisme Landes Atlantique Sud annonce, elle, que les animaux ne sont pas admis tout au long de l'année. La page « arrêtés » de la mairie que j'ai consultée ne contient pas d'arrêté sur les plages : appelle la mairie (05 58 72 10 09) avant de venir, et regarde la <a href=\"/fiche-capbreton-plages\">fiche des plages</a>.</p><p>La même brochure cite le sentier de la dune et les barthes de l'Adour parmi les balades possibles en laisse.</p>",
+    "html": "<p>À Capbreton, les sources officielles divergent. Tourisme Landes écrit que les chiens sont interdits du 1er juin au 30 septembre sur les sept plages et qu'on peut s'y promener hors saison. La brochure 2026 de l'office de tourisme Landes Atlantique Sud annonce que les animaux ne sont pas admis tout au long de l'année. La page « Conseils des nageurs sauveteurs » de la mairie liste « les chiens sur la plage » parmi les interdictions de la commune, sans date ; aucun arrêté sur les plages n'est publié sur sa page « arrêtés ». Appelle la mairie (05 58 72 10 09) avant de venir, et regarde la <a href=\"/fiche-capbreton-plages\">fiche des plages</a>.</p><p>La même brochure cite le sentier de la dune et les barthes de l'Adour parmi les balades possibles en laisse.</p>",
     "sources": [
       {
         "label": "Tourisme Landes : les plages qui tolèrent les chiens",
         "url": "https://www.tourismelandes.com/decouvrir-la-destination/atmospheres-landaises/partir-en-vacances-avec-son-chien-dans-les-landes/les-chiens-autorises-sur-les-plages-landaises/les-plages-qui-tolerent-les-chiens"
       },
       {
-        "label": "Landes Atlantique Sud : brochure « Les mascottes en vacances » (13/06/2026)",
+        "label": "Landes Atlantique Sud : brochure « Les mascottes en vacances » 2026",
         "url": "https://www.landesatlantiquesud.com/app/uploads/2026/07/2026-les-mascottes-en-vacances-fr-version-du-13-juin-2026.pdf"
+      },
+      {
+        "label": "Mairie de Capbreton : conseils des nageurs sauveteurs",
+        "url": "https://www.capbreton.fr/infos-pratiques/mes-loisirs/vive-la-plage/conseils-des-nageurs-sauveteurs.html"
       },
       {
         "label": "Mairie de Capbreton : arrêtés",
@@ -824,61 +872,61 @@
     ]
   },
   "carnac-avec-son-chien": {
-    "html": "<p>À Carnac, l'office de tourisme indique que les chiens sont interdits sur toutes les plages toute l'année, même en laisse, seuls les chiens d'assistance de personnes malvoyantes ou aveugles faisant exception (<a href=\"/fiche-plages-carnac-56\">fiche des plages de Carnac</a>). L'office renvoie vers Plouharnel (plage de Mané Guen, en laisse toute l'année), La Trinité-sur-Mer (deux plages, avant 10h et après 19h du 1er avril au 30 septembre) et Quiberon pour se baigner avec ton chien.</p>",
+    "html": "<p>À Carnac, l'office de tourisme indique que les chiens sont interdits sur toutes les plages toute l'année, même en laisse, seuls les chiens d'assistance de personnes malvoyantes ou aveugles faisant exception (<a href=\"/fiche-plages-carnac-56\">fiche des plages de Carnac</a>). Il renvoie vers Plouharnel (plage de Mané Guen, en laisse toute l'année), La Trinité-sur-Mer (deux plages entre le Poulbert et Kervillen, avant 10h et après 19h du 1er avril au 30 septembre, arrêté 2026-155 selon la Baie de Quiberon) et Quiberon pour se baigner avec ton chien.</p>",
     "sources": [
       {
         "label": "Office de tourisme de Carnac : les plages",
         "url": "https://www.ot-carnac.fr/station-balneaire/plages"
       },
       {
-        "label": "Office de tourisme Baie de Quiberon : plages autorisées aux chiens",
+        "label": "Baie de Quiberon : les plages autorisées aux chiens",
         "url": "https://www.baiedequiberon.bzh/les-plages-autorisees-aux-chiens"
       }
     ]
   },
   "cassis-avec-son-chien": {
-    "html": "<p>Cassis est au cœur du Parc national des Calanques : dans le cœur du parc, les chiens doivent être tenus en laisse toute l'année, et l'été l'accès au massif dépend de la carte quotidienne du risque d'incendie (interdit les jours rouges). Pour le sentier jusqu'à Port-Miou et Port-Pin, voir la <a href=\"/fiche-balade-port-miou-port-pin-cassis\">fiche balade</a>. Aucun arrêté en ligne sur les chiens n'a été trouvé pour les quatre plages de la commune (Grande Mer, Bestouan, Corton, Arène) : renseigne-toi à la mairie au 04 42 18 36 36.</p>",
+    "html": "<p>À Cassis, la ville écrit, au titre de la saison estivale, que les animaux, même tenus en laisse, sont interdits sur les plages ; la page ne précise pas de dates ni de règle hors saison, et ne distingue pas les plages de la Grande Mer, du Bestouan, du Corton et de l'Arène : renseigne-toi à la mairie (04 42 18 36 36).</p><p>Cassis est au cœur du Parc national des Calanques : dans le cœur du parc, promener un chien non tenu en laisse est interdit toute l'année, et du 1er juin au 30 septembre l'accès aux massifs dépend de la carte quotidienne du risque d'incendie (interdit les jours rouges). Pour le sentier jusqu'à Port-Miou et Port-Pin, voir la <a href=\"/fiche-balade-port-miou-port-pin-cassis\">fiche balade</a>.</p>",
     "sources": [
+      {
+        "label": "Ville de Cassis : lieux de baignade (animaux sur les plages)",
+        "url": "https://www.cassis.fr/gerer-mon-quotidien/environnement-et-nature/lieux-de-baignades"
+      },
       {
         "label": "Parc national des Calanques : rappel de la réglementation",
         "url": "https://www.calanques-parcnational.fr/fr/node/10986/printable/print"
       },
       {
-        "label": "Parc national des Calanques : réglementations à terre",
+        "label": "Parc national des Calanques : réglementations à terre (risque incendie)",
         "url": "https://www.calanques-parcnational.fr/fr/reglementations-terre-calanques-de-marseille-cassis-la-ciotat-iles-frioul"
-      },
-      {
-        "label": "Ville de Cassis : lieux de baignade",
-        "url": "https://www.cassis.fr/gerer-mon-quotidien/environnement-et-nature/lieux-de-baignades"
       }
     ]
   },
   "cauterets-avec-son-chien": {
-    "html": "<p>À Cauterets, attention au Parc national des Pyrénées : dans son cœur, les chiens sont interdits même tenus en laisse, sauf quelques routes et sentiers listés par le Parc. Au Pont d'Espagne, l'office de tourisme les autorise en laisse du 1er mai au 31 octobre jusqu'au plateau du Clot et jusqu'au <a href=\"/fiche-pont-despagne-lac-de-gaube\">lac de Gaube</a> en passant par la télécabine et le télésiège ; le GR10 entre le Pont d'Espagne et le lac reste interdit aux chiens. Du 1er novembre au 30 avril, ils sont interdits sur tout le secteur, y compris sur la neige, les pistes nordiques et les itinéraires raquettes.</p><p>Hors Parc, en estive, l'office demande de garder ton chien en laisse et de contourner les troupeaux et les patous, comme au <a href=\"/fiche-balade-cambasque-pont-de-sahucs-cauterets\">plateau du Cambasque</a>.</p>",
+    "html": "<p>À Cauterets, attention au Parc national des Pyrénées : dans son cœur, les chiens sont interdits même tenus en laisse, sauf sur quelques routes et sentiers listés par le Parc (route du Pont d'Espagne, et en été les sentiers du parking du Puntas au chalet du Clot, de la gare supérieure du télésiège de Gaube à l'hôtellerie du lac, et la piste d'Ilhéou). Au Pont d'Espagne, l'office de tourisme les autorise en laisse du 1er mai au 31 octobre jusqu'au plateau du Clot et jusqu'au <a href=\"/fiche-pont-despagne-lac-de-gaube\">lac de Gaube</a>, uniquement via la télécabine et le télésiège ; le GR10 n'est pas dans ces exceptions. Du 1er novembre au 30 avril, les chiens ne sont pas admis sur le site du Pont d'Espagne.</p><p>Hors Parc, en estive, des communes imposent la laisse sur les estives où pâturent les troupeaux : garde ton chien en laisse et contourne les troupeaux et les patous, comme au <a href=\"/fiche-balade-cambasque-pont-de-sahucs-cauterets\">plateau du Cambasque</a>.</p>",
     "sources": [
       {
-        "label": "Parc national des Pyrénées : animaux domestiques (chiens interdits en cœur de parc)",
+        "label": "Parc national des Pyrénées : animaux domestiques",
         "url": "https://www.pyrenees-parcnational.fr/fr/le-parc-national-des-pyrenees/la-reglementation/animaux-domestiques"
       },
       {
-        "label": "Office de tourisme de Cauterets : le Pont d'Espagne",
+        "label": "Office de tourisme de Cauterets : Pont d'Espagne",
         "url": "https://www.cauterets.com/nos-tops/le-pont-despagne"
       },
       {
-        "label": "Office de tourisme de Cauterets : Pont d'Espagne, été 2026",
+        "label": "Cauterets : brochure Pont d'Espagne été 2026",
         "url": "https://www.cauterets.com/app/uploads/2026/04/pont-espagne-ete-2026-webpdf.pdf"
       }
     ]
   },
   "cavalaire-sur-mer-avec-son-chien": {
-    "html": "<p>À Cavalaire-sur-Mer, la brochure officielle 2026-2027 de la ville indique que les animaux sont interdits sur les plages de 6h à 21h, même tenus en laisse. Les horaires et les périodes diffèrent selon les documents (la <a href=\"/fiche-grande-plage-cavalaire\">fiche de la plage du Centre-Ville</a> reprend d'autres horaires) : fie-toi aux panneaux d'entrée. Dans la navette estivale gratuite, seuls les petits chiens de moins de 10 kg sont acceptés, en laisse sur les genoux ou dans un panier.</p>",
+    "html": "<p>À Cavalaire-sur-Mer, la brochure officielle 2026-2027 de la ville indique que les animaux sont interdits sur les plages de 6h à 21h, même tenus en laisse, sans préciser de période. Les horaires et les périodes diffèrent selon les documents de la commune (la <a href=\"/fiche-grande-plage-cavalaire\">fiche de la plage du Centre-Ville</a> reprend d'autres horaires) : fie-toi aux panneaux d'entrée. Dans la navette estivale gratuite (du 1er juillet au 31 août), seuls les petits chiens de moins de 10 kg sont acceptés, en laisse sur les genoux ou dans un panier.</p>",
     "sources": [
       {
-        "label": "Ville de Cavalaire-sur-Mer : brochure Destination 2026-2027",
+        "label": "Ville de Cavalaire : brochure Destination Cavalaire 2026-2027",
         "url": "https://www.cavalairesurmer.fr/wp-content/uploads/2026/06/Destination-Cavalaire-2026-2027-Web.pdf"
       },
       {
-        "label": "Ville de Cavalaire-sur-Mer : navettes estivales 2026",
+        "label": "Ville de Cavalaire : navettes estivales 2026",
         "url": "https://www.cavalaire.fr/sites/default/files/atoms/files/depliantmobiliteete2026-cavalaire-web.pdf"
       }
     ]
@@ -1100,10 +1148,10 @@
     ]
   },
   "collioure-avec-son-chien": {
-    "html": "<p>À Collioure, l'office de tourisme précise que les plages et les criques de la commune sont interdites aux chiens toute l'année. Il recommande deux plages voisines, à Argelès-sur-Mer : le Racou (zone sud de la digue) et la Marenda (zone nord, chiens en laisse). Les chiens ne sont pas acceptés dans la navette de la ville ; ils sont admis dans les trains, en laisse et muselés.</p>",
+    "html": "<p>À Collioure, l'office de tourisme précise que les plages et les criques autour de la commune restent interdites aux chiens toute l'année. Il recommande deux plages voisines, à Argelès-sur-Mer : le Racou (zone sud de la digue) et la Marenda (zone nord, chiens en laisse). Les chiens ne sont pas autorisés au château royal, ni dans la navette de la ville, ni dans les bus ; ils sont admis dans les trains, en laisse et muselés (page de l'office datée d'avril 2024).</p>",
     "sources": [
       {
-        "label": "Collioure Tourisme : voyager avec mon chien à Collioure",
+        "label": "Office de tourisme de Collioure : voyager avec mon chien",
         "url": "https://www.tourisme-collioure.com/voyager-avec-mon-chien-a-collioure"
       }
     ]
@@ -1147,7 +1195,7 @@
     ]
   },
   "concarneau-avec-son-chien": {
-    "html": "<p>À Concarneau, la ville indique que toutes les plages sont interdites aux chiens, même tenus en laisse, du 15 mars au 15 novembre, pour des raisons de salubrité et en raison d'une fréquentation toute l'année ; en dehors de cette période, ils sont admis sur les plages à condition d'être tenus en laisse (arrêté n° 2018-285, <a href=\"/fiche-plages-concarneau-29\">notre fiche</a>).</p>",
+    "html": "<p>À Concarneau, la ville indique que toutes les plages sont interdites aux chiens, même tenus en laisse, du 15 mars au 15 novembre, pour des raisons de salubrité publique et en raison d'une fréquentation toute l'année ; en dehors de cette période, ils peuvent être admis sur les plages à condition d'être tenus en laisse (arrêté n° 2018-285, <a href=\"/fiche-plages-concarneau-29\">notre fiche</a>).</p>",
     "sources": [
       {
         "label": "Ville de Concarneau : plages (animaux sur la plage)",
@@ -1177,10 +1225,10 @@
     ]
   },
   "crozon-avec-son-chien": {
-    "html": "<p>À Crozon, comme sur tout le Finistère, les plages sont interdites aux chiens du 1er juin au 30 septembre (arrêté préfectoral de 2018 cité par la mairie ; Ouest-France rappelait en juin 2026 que c'est valable cet été, et qu'il n'y aura pas de cani-plage cette année à Crozon). La mairie a en plus pris un arrêté d'interdiction sur la <a href=\"/fiche-plage-morgat-crozon-29\">plage de Morgat</a>, de la pointe de Rulianec au port de plaisance, du 15 avril au 30 septembre 2025, à cause d'un couple de grands gravelots qui nichait sur la plage : nous n'avons pas trouvé la version 2026.</p><p>À Lostmarc'h et à la Palue (<a href=\"/fiche-plage-lostmarch-crozon-29\">notre fiche Lostmarc'h</a>), la ville précise que la baignade est interdite à cause des baïnes.</p>",
+    "html": "<p>À Crozon, comme sur tout le Finistère, les chiens sont interdits sur les plages du 1er juin au 30 septembre : Ouest-France rappelait le 12 juin 2026 que c'est valable cet été (arrêté préfectoral du 19 janvier 2018 sur l'accès des chevaux et des chiens aux plages du Finistère) et qu'il n'y aura pas de cani-plage cette année à Crozon. La mairie avait en plus pris l'arrêté n° 309-2025 interdisant les chiens sur la <a href=\"/fiche-plage-morgat-crozon-29\">plage de Morgat</a>, de la pointe de Rulianec au port de plaisance, du 15 avril au 30 septembre 2025, à cause d'un couple de grands gravelots qui nichait sur la plage : nous n'avons pas trouvé de version 2026.</p><p>À Lostmarc'h et à la Palue (<a href=\"/fiche-plage-lostmarch-crozon-29\">notre fiche Lostmarc'h</a>), la ville précise que la baignade est interdite à cause des baïnes.</p>",
     "sources": [
       {
-        "label": "Ville de Crozon : arrêté 309-2025, interdiction des chiens à Morgat",
+        "label": "Ville de Crozon : arrêté n° 309-2025 (plage de Morgat)",
         "url": "https://www.crozon.bzh/download/184/littoral-plages/14607/crozon-309-2025-interdiction-chiens-plage-de-morgat-14-avril-2025.pdf"
       },
       {
@@ -1188,16 +1236,16 @@
         "url": "https://www.crozon.bzh/plage-et-greve/liste-des-plages"
       },
       {
-        "label": "Ouest-France : pas de cani-plage cet été à Crozon (12 juin 2026)",
+        "label": "Ouest-France (12/06/2026) : pas de cani-plage cet été à Crozon",
         "url": "https://www.ouest-france.fr/bretagne/crozon-29160/aucune-decision-ne-sera-prise-dans-la-precipitation-il-ny-aura-pas-de-cani-plage-cet-ete-a-crozon-voici-pourquoi-9f47250a-6631-11f1-99fc-6db54956824f"
       }
     ]
   },
   "deauville-avec-son-chien": {
-    "html": "<p>À Deauville, les chiens ne sont pas interdits sur la plage mais soumis à des horaires, toujours en laisse, selon l'office de tourisme : sans restriction du 1er janvier au 30 avril et du 16 septembre au 31 décembre ; du 1er mai au 15 juin et du 1er au 15 septembre, libre en semaine mais avant 10h et après 19h les week-ends, jours fériés et ponts ; du 16 juin au 31 août, avant 10h et après 19h tous les jours (voir la <a href=\"/fiche-plages-deauville-14\">fiche de la plage</a>). Les digues et promenades sont accessibles aux chiens toute l'année, à toute heure.</p><p>Le parc des Lais de Mer, face à la mer, se parcourt sans restriction d'horaires, chien en laisse. À Villers-sur-Mer, tout près, un caniparc clos de 800 m² accueille gratuitement les chiens sans laisse 7 jours sur 7.</p>",
+    "html": "<p>À Deauville, les chiens ne sont pas interdits sur la plage mais soumis à des horaires, toujours en laisse, selon l'office de tourisme : sans restriction du 1er janvier au 30 avril et du 16 septembre au 31 décembre ; du 1er mai au 15 juin et du 1er au 15 septembre, sans restriction en semaine mais avant 10h et après 19h les week-ends, jours fériés et ponts ; du 16 juin au 31 août, avant 10h et après 19h tous les jours (voir la <a href=\"/fiche-plages-deauville-14\">fiche de la plage</a>). Les digues et promenades sont accessibles aux chiens toute l'année, à toute heure.</p><p>Le parc des Lais de Mer, face à la mer, se parcourt sans restriction d'horaires, chien en laisse. À Villers-sur-Mer, tout près, un caniparc clos de 800 m² accueille gratuitement les chiens sans laisse 7 jours sur 7.</p>",
     "sources": [
       {
-        "label": "inDeauville (office de tourisme) : voyager avec son chien",
+        "label": "inDeauville : voyager avec son chien",
         "url": "https://www.indeauville.fr/actualite/voyager-avec-son-chien/"
       }
     ]
