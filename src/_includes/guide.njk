@@ -52,6 +52,12 @@ layout: base.njk
   </section>
   <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq | faqEntities} | dump | safe }}</script>
   {%- endif %}
+  {%- if not ("Bimo" in kicker) %}
+  <aside class="guide-author">
+    <img src="/assets/coco-auteur.jpg" alt="Coco, la labrador de Coco Explore" width="64" height="64" loading="lazy">
+    <p><strong>Rédigé par l'équipe Coco Explore</strong>, avec Coco 🐾<br>Mis à jour le {{ updated | dateLong }}{% if sources and sources.length %}, vérifié sur {{ sources.length }} source{{ "s" if sources.length > 1 }} officielle{{ "s" if sources.length > 1 }}{% endif %}. <a href="/notre-methode">Notre méthode</a></p>
+  </aside>
+  {%- endif %}
   {%- if sources and sources.length %}
   <section class="guide-sources">
     <h2>Sources</h2>

@@ -1098,3 +1098,6 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .install-app .icon { width: 18px; height: 18px; flex: none; }
 .install-app-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; border: 1px solid var(--heading-soft); background: var(--surface); color: var(--heading); font: inherit; font-weight: 600; cursor: pointer; }
 .fiche-hero .fiche-method-link { color: inherit; text-decoration: underline; text-decoration-color: rgba(255,253,248,0.35); text-underline-offset: 2px; }
+.guide-author { display: flex; align-items: center; gap: 14px; margin: 2em 0 0; padding: 14px 16px; background: var(--surface); border: 1px solid rgba(var(--ink),0.1); border-radius: 12px; }
+.guide-author img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.guide-author p { margin: 0; font-size: 0.9rem; line-height: 1.5; }
