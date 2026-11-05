@@ -1448,7 +1448,7 @@
     ]
   },
   "arzon-avec-son-chien": {
-    "html": "<p>À Arzon, les chiens sont interdits sur les plages du 15 avril au 15 septembre, même en laisse (arrêté municipal 2026-62) ; seuls les chiens d'assistance et les chiens sauveteurs font exception. La mairie ne cite pas d'autre interdiction : le reste de l'année, les plages sont de nouveau ouvertes aux animaux (voir la <a href=\"/fiche-plages-arzon-port-navalo-56\">fiche des plages d'Arzon et Port-Navalo</a>).</p><p>Sur le domaine public (trottoirs, places, squares), le chien doit être tenu en laisse, et l'accès est interdit dans les parcs publics et les parcs d'enfants. Les déjections sont interdites sur la voie publique et les espaces verts : 68 € d'amende. Sur le sentier côtier de Petit Mont, le livret officiel demande la laisse (<a href=\"/fiche-balade-petit-mont-fogeo-arzon-56\">fiche de la balade</a>).</p>",
+    "html": "<p>À Arzon, les chiens sont interdits sur les plages du 15 avril au 15 septembre, même en laisse (arrêté municipal 2026-62 sur les lieux de baignade) ; seuls les chiens d'assistance accompagnant leur maître et les chiens sauveteurs font exception. La mairie écrit que l'accès des animaux est « uniquement » interdit sur cette période : le reste de l'année, les plages sont de nouveau ouvertes aux animaux (voir la <a href=\"/fiche-plages-arzon-port-navalo-56\">fiche des plages d'Arzon et Port-Navalo</a>).</p><p>Sur le domaine public (trottoirs, places, parcs, squares, jardins), le chien doit toujours être tenu en laisse, et l'accès des animaux est interdit dans les parcs publics et les parcs d'enfants. Les déjections sont interdites sur la voie publique, les trottoirs et les espaces verts : 68 € d'amende. Pour le sentier de Petit Mont, voir la <a href=\"/fiche-balade-petit-mont-fogeo-arzon-56\">fiche de la balade</a>.</p>",
     "sources": [
       {
         "label": "Mairie d'Arzon : la règlementation animale",
@@ -1461,7 +1461,7 @@
     ]
   },
   "bidart-avec-son-chien": {
-    "html": "<p>À Bidart, les fiches de l'office de tourisme indiquent que les chiens ne sont pas autorisés sur les plages du 1er juin au 30 septembre ; sur la plage du Centre, la formulation est « durant la période de surveillance » (mi-juin à fin septembre). Pour le reste de l'année, Tourisme 64 écrit « en laisse » du 1er octobre au 31 mai. Nous n'avons pas lu l'arrêté municipal : l'affichage à l'entrée de chaque plage fait foi (<a href=\"/fiche-plages-bidart\">fiche des plages de Bidart</a>).</p><p>Pour le sentier du littoral, les sources officielles se contredisent : la page de Bidart Tourisme dit « animaux interdits », la fiche d'itinéraire du Pays basque dit « chien en laisse ». À confirmer auprès de l'office avant de partir (<a href=\"/fiche-balade-sentier-du-littoral-bidart-64\">fiche du sentier</a>).</p>",
+    "html": "<p>À Bidart, les fiches de l'office de tourisme indiquent que les chiens ne sont pas autorisés sur les plages du Centre, du Pavillon Royal et de l'Uhabia du 1er juin au 30 septembre ; la page de la plage du Centre ajoute « durant la période de surveillance » (mi-juin à fin septembre). Pour le reste de l'année, Tourisme 64 écrit « en laisse » du 1er octobre au 31 mai. Nous n'avons pas lu l'arrêté municipal : l'affichage à l'entrée de chaque plage fait foi (<a href=\"/fiche-plages-bidart\">fiche des plages de Bidart</a>).</p><p>Pour le sentier du littoral, la page de Bidart Tourisme lue ne donne pas de règle pour les chiens, et Tourisme 64 demande de tenir son chien en laisse en pleine nature comme dans les espaces publics. Notre fiche relève toutefois une contradiction entre deux sources officielles (« animaux interdits » d'un côté, « chien en laisse » de l'autre) : à confirmer auprès de l'office avant de partir (<a href=\"/fiche-balade-sentier-du-littoral-bidart-64\">fiche du sentier</a>).</p>",
     "sources": [
       {
         "label": "Bidart Tourisme : plage du Centre",
@@ -1478,11 +1478,15 @@
       {
         "label": "Tourisme 64 : voyager avec son chien au Pays basque",
         "url": "https://www.tourisme64.com/voyager-avec-son-chien-au-pays-basque"
+      },
+      {
+        "label": "Bidart Tourisme : le sentier du littoral",
+        "url": "https://www.bidarttourisme.com/ce-que-lon-vous-promet/des-randonnees-et-des-voies-cyclables/le-sentier-du-littoral/"
       }
     ]
   },
   "douarnenez-avec-son-chien": {
-    "html": "<p>À Douarnenez, promener un chien, même en laisse, est interdit sur les plages du 1er juin au 30 septembre, comme les chevaux (arrêté préfectoral cité par la Ville). Pour la plage du Ris, la page de la Ville et sa foire aux questions ne donnent que cette période, alors que le magazine de l'office de tourisme (mars 2026) écrit que le maire y interdit chiens et chevaux toute l'année : la <a href=\"/fiche-plage-du-ris-douarnenez-29\">fiche de la plage du Ris</a> garde cet écart. Hors saison, la Ville ne détaille pas de règle pour les autres plages : garde la laisse.</p><p>Sur la voie publique, les chiens doivent être tenus en laisse (arrêté de Douarnenez Communauté). Les déjections non ramassées coûtent de 35 à 150 € selon l'arrêté intercommunal ; le magazine de la Ville cite 135 €.</p>",
+    "html": "<p>À Douarnenez, promener un chien, même en laisse, est interdit sur les plages du 1er juin au 30 septembre, comme les chevaux (la Ville cite un arrêté préfectoral ; le magazine de l'office de tourisme, mars 2026, le date du 19 janvier 2018 et écrit qu'il autorise chiens et chevaux en dehors de cette période). Pour la plage du Ris, la page de la Ville et sa foire aux questions ne donnent que cette période, alors que le magazine de l'office écrit que le maire y interdit chiens et chevaux toute l'année : la <a href=\"/fiche-plage-du-ris-douarnenez-29\">fiche de la plage du Ris</a> garde cet écart.</p><p>Sur la voie publique, les chiens doivent être tenus en laisse (arrêté de Douarnenez Communauté). Les déjections ne doivent souiller ni la voie publique, ni les trottoirs, ni les espaces verts, ni les aires de jeux : l'amende encourue va de 35 à 150 €.</p>",
     "sources": [
       {
         "label": "Ville de Douarnenez : six plages à Douarnenez",
@@ -1516,7 +1520,7 @@
     ]
   },
   "la-grande-motte-avec-son-chien": {
-    "html": "<p>À La Grande-Motte, les chiens ne sont pas admis sur les plages, sauf sur un secteur balisé du Grand Travers que la mairie situe entre les accès 59 et 60 (page « Gestion des chiens ») ou à l'accès n°60 (page « Réglementation »). Les chiens d'assistance font exception. Voir la <a href=\"/fiche-plage-grand-travers-grande-motte\">fiche de la plage du Grand Travers</a>.</p><p>En ville, la laisse est obligatoire dans les « zones oranges » du plan de la mairie, sous peine de contravention. Les propriétaires doivent ramasser les déjections (amende possible) ; des distributeurs de sachets gratuits sont installés.</p>",
+    "html": "<p>À La Grande-Motte, la mairie écrit que les chiens ne sont pas admis sur les plages, sauf sur la plage située entre les accès 59 et 60 du Grand Travers (page « Gestion des chiens ») ; la page « Réglementation » parle d'un secteur de plage balisé à l'accès n°60, et l'office de tourisme d'une « petite partie » de la plage, accès n°60. Les chiens d'assistance sont autorisés sur les plages. Voir la <a href=\"/fiche-plage-grand-travers-grande-motte\">fiche de la plage du Grand Travers</a>.</p><p>En ville, la laisse est obligatoire dans les « zones oranges » du plan de la mairie, sous peine de contravention. Les déjections laissées sur l'espace public peuvent être verbalisées ; des distributeurs de sachets sont mis gratuitement à disposition. Ces pages de la mairie datent de 2023 : vérifie les panneaux sur place.</p>",
     "sources": [
       {
         "label": "Mairie de La Grande-Motte : gestion des chiens",
@@ -1533,7 +1537,7 @@
     ]
   },
   "le-crotoy-avec-son-chien": {
-    "html": "<p>Au Crotoy, la Ville et l'office de tourisme ne donnent pas la même règle pour la plage. La Ville écrit que les chiens sont admis de l'allée de la Grève au parking de la Maye (près de 2 km), et interdits, même en laisse, face au front de mer bâti, sans citer de période. L'office de tourisme Baie de Somme précise : interdits devant le front bâti du 1er avril au 31 octobre, admis en laisse sur toute la plage du 11 novembre au 31 mars. Dans tous les cas, au-delà du parking de la Maye commence la réserve naturelle, interdite aux chiens (voir la <a href=\"/fiche-balade-plage-crotoy-80\">fiche de la plage</a>).</p><p>En ville, la laisse est obligatoire et les déjections coûtent au moins 68 € ; des sacs sont distribués gratuitement. Sur le sentier du littoral, Somme Tourisme se contredit pour Saint-Valery (<a href=\"/fiche-balade-sentier-du-littoral-crotoy-80\">fiche du sentier</a>).</p>",
+    "html": "<p>Au Crotoy, la Ville et l'office de tourisme ne donnent pas la même précision pour la plage. La Ville écrit que les animaux, même en laisse, ne sont pas autorisés sur l'estran face au front de mer bâti (page de 2021, sans période) et encore moins au-delà du parking de la Maye, où commence la réserve naturelle de la baie de Somme. L'office de tourisme Baie de Somme précise : chiens interdits devant le front bâti du 1er avril au 31 octobre, admis en laisse de l'allée de la Grève jusqu'à l'entrée de la réserve (plage de la Maye) ; du 11 novembre au 31 mars, autorisés sur toute la plage sauf la réserve naturelle. Le texte ne dit rien du 1er au 10 novembre (voir la <a href=\"/fiche-balade-plage-crotoy-80\">fiche de la plage</a>).</p><p>En ville, les chiens ne sont bienvenus que tenus en laisse et les déjections coûtent 68 € minimum (Ville) ; l'office distribue des pinces à déjections en papier au bureau d'information touristique. À Saint-Valery-sur-Somme, Somme Tourisme (octobre 2024) écrit que les chiens sont admis en laisse sur la plage mais interdits sur le sentier du littoral ; notre <a href=\"/fiche-balade-sentier-du-littoral-crotoy-80\">fiche du sentier</a> relève une contradiction avec d'autres sources.</p>",
     "sources": [
       {
         "label": "Ville du Crotoy : sécurité en baie, nos amis les animaux",
@@ -1550,7 +1554,7 @@
     ]
   },
   "mandelieu-la-napoule-avec-son-chien": {
-    "html": "<p>À Mandelieu-La Napoule, l'office de tourisme écrit que toutes les plages de la ville sont interdites aux chiens. Une exception à titre expérimental : du 1er juin au 30 septembre 2026, une partie de la plage des Mineurs leur est ouverte, chiens en laisse sur le sable jusqu'au rivage et détachés seulement pour la baignade, sous la surveillance de leur maître. La reconduction n'est pas annoncée dans les pages lues : renseigne-toi en mairie (<a href=\"/fiche-plage-mineurs-mandelieu-la-napoule\">fiche de la plage des Mineurs</a>).</p><p>La Ville cite aussi des espaces canins au parc de Marande, au parc de l'Argentière et dans la forêt urbaine Maurice-Muller (communiqué relayé par la presse).</p>",
+    "html": "<p>À Mandelieu-La Napoule, l'office de tourisme écrit que toutes les plages de la ville sont interdites aux chiens. Une exception à titre expérimental : du 1er juin au 30 septembre 2026, une partie de la plage des Mineurs leur est ouverte. Les chiens sont tenus en laisse sur la plage jusqu'au rivage ; la baignade est autorisée sans laisse dans la zone dédiée, à condition que l'animal reste sous le contrôle de son maître et à portée de voix. Une borne de propreté est prévue sur le site. La reconduction n'est pas annoncée dans les pages lues : renseigne-toi en mairie (<a href=\"/fiche-plage-mineurs-mandelieu-la-napoule\">fiche de la plage des Mineurs</a>).</p><p>La Ville cite aussi des espaces canins au parc de Marande, au parc de l'Argentière et dans la forêt urbaine Maurice-Muller (communiqué relayé par la presse).</p>",
     "sources": [
       {
         "label": "Mairie de Mandelieu-La Napoule : plage accessible aux chiens",
@@ -1567,7 +1571,7 @@
     ]
   },
   "mimizan-avec-son-chien": {
-    "html": "<p>À Mimizan, l'office de tourisme demande de tenir le chien en laisse à toute heure et tous les jours. Pendant la surveillance des baignades, il n'est admis qu'en dehors des zones réglementées, délimitées par des panneaux orange et noir : l'office et Tourisme Landes citent l'extrémité nord de la plage Remember et l'extrémité sud de la plage Sud. Nous n'avons pas trouvé l'arrêté communal en ligne ; renseigne-toi en mairie (05 58 09 44 44) avant ton séjour (<a href=\"/fiche-mimizan-plages\">fiche des plages</a>).</p><p>L'office rappelle aussi de ramasser les déjections, y compris sur les sentiers (voir la <a href=\"/fiche-balade-promenade-fleurie-mimizan-40\">promenade fleurie</a>, chiens en laisse).</p>",
+    "html": "<p>À Mimizan, l'office de tourisme demande de tenir le chien en laisse à toute heure et tous les jours sur les plages où les chiens sont permis, et renvoie aux panneaux orange et noir qui délimitent les zones réglementées (le texte de l'office est ambigu sur le sens exact du panneau). Tourisme Landes précise que, pendant la surveillance des baignades, le chien n'est admis qu'en dehors de ces zones, et cite l'extrémité nord de la plage Remember et l'extrémité sud de la plage Sud. Aucune de ces pages (2024 et 2023) ne donne de dates, et nous n'avons pas trouvé l'arrêté communal en ligne : renseigne-toi en mairie ou à l'office avant ton séjour (<a href=\"/fiche-mimizan-plages\">fiche des plages</a>).</p><p>En forêt aussi, l'office invite à garder le chien en laisse (voir la <a href=\"/fiche-balade-promenade-fleurie-mimizan-40\">promenade fleurie</a>).</p>",
     "sources": [
       {
         "label": "Office de tourisme de Mimizan : la plage avec mon chien",
@@ -1580,7 +1584,7 @@
     ]
   },
   "seignosse-avec-son-chien": {
-    "html": "<p>À Seignosse, du 1er juin au 30 septembre, les chiens sont interdits sur les plages de 11h à 19h (page de la mairie sur la nouvelle organisation). En dehors de cet horaire, la mairie ne signale pas d'interdiction mais demande de tenir le chien en laisse. Sur les postes de secours, la mairie précise aussi « animaux non autorisés dans la zone réglementée » (voir la <a href=\"/fiche-seignosse-plages\">fiche des plages</a>).</p><p>Amendes citées par la mairie : 35 € pour un chien non tenu en laisse, 135 € pour des déjections non ramassées. À l'Étang Noir, réserve naturelle, les animaux ne sont pas admis selon les offices de tourisme (<a href=\"/fiche-lac-etang-noir-seignosse\">fiche</a>).</p>",
+    "html": "<p>À Seignosse, la mairie indique que du 1er juin au 30 septembre, les chiens sont interdits sur les plages de 11h à 19h. En dehors de cet horaire, elle ne signale pas d'interdiction mais cite une amende de 35 € pour un chien non tenu en laisse : garde-le en laisse. Les pages des postes de secours précisent « animaux non autorisés dans la zone réglementée » ; la surveillance dure plus longtemps que l'interdiction horaire (au Penon, du 1er mai au 25 octobre). Tourisme Landes (page de 2023) écrit que les animaux sont interdits dans la zone réglementée du 1er mai au 31 octobre : cet écart avec la mairie n'est pas tranché (voir la <a href=\"/fiche-seignosse-plages\">fiche des plages</a>).</p><p>Autres amendes citées par la mairie : 35 € pour circulation sur les plages pendant l'interdiction, 135 € pour des déjections non ramassées. Pour l'Étang Noir, voir notre <a href=\"/fiche-lac-etang-noir-seignosse\">fiche</a>.</p>",
     "sources": [
       {
         "label": "Mairie de Seignosse : chiens sur les plages, une nouvelle organisation",
@@ -1589,11 +1593,15 @@
       {
         "label": "Mairie de Seignosse : surveillance des plages",
         "url": "https://seignosse.fr/article/surveillance-des-plages"
+      },
+      {
+        "label": "Tourisme Landes : les plages qui tolèrent les chiens",
+        "url": "https://www.tourismelandes.com/decouvrir-la-destination/atmospheres-landaises/partir-en-vacances-avec-son-chien-dans-les-landes/les-chiens-autorises-sur-les-plages-landaises/les-plages-qui-tolerent-les-chiens"
       }
     ]
   },
   "wimereux-avec-son-chien": {
-    "html": "<p>À Wimereux, Pas-de-Calais Tourisme (FAQ, juillet 2026) écrit que l'accès aux chiens, même en laisse, est interdit toute l'année sur la digue-promenade et sur la plage principale ; la plage Nord est ouverte aux chiens en laisse. Une ancienne page de l'office du Boulonnais (2022) est plus nuancée : plage principale interdite du 15 avril au 30 septembre seulement et tolérée en laisse du 1er octobre au 14 avril. Nous n'avons pas retrouvé l'arrêté de la commune : cet écart reste ouvert (<a href=\"/fiche-balade-plage-wimereux-principale-digue-62\">fiche de la plage et de la digue</a>).</p><p>Pour une balade sans doute, les dunes de la Slack et la Pointe aux Oies, espace naturel sensible géré par Eden 62, admettent le chien tenu en laisse selon le panneau du site (<a href=\"/fiche-balade-dunes-de-la-slack-wimereux-62\">fiche</a>).</p>",
+    "html": "<p>À Wimereux, Pas-de-Calais Tourisme (FAQ, juillet 2026) écrit que l'accès aux chiens, même en laisse, est interdit toute l'année sur la digue-promenade et sur la plage principale ; la plage Nord est ouverte aux chiens en laisse. Une ancienne page de Boulonnais Au Top (2022) est plus nuancée pour la plage : interdite du 15 avril au 30 septembre entre le centre de voile et la digue Nord seulement, tolérée en laisse sur la totalité de la plage du 1er octobre au 14 avril ; elle tolère aussi les extrémités de la digue toute l'année hors zones de baignade et de surveillance, mais interdit la digue-promenade toute l'année. Nous n'avons pas retrouvé l'arrêté de la commune : cet écart reste ouvert (<a href=\"/fiche-balade-plage-wimereux-principale-digue-62\">fiche de la plage et de la digue</a>).</p><p>Nous n'avons pas relu ici la règle du gestionnaire (Eden 62) pour les dunes de la Slack et la Pointe aux Oies : voir la <a href=\"/fiche-balade-dunes-de-la-slack-wimereux-62\">fiche</a>.</p>",
     "sources": [
       {
         "label": "Pas-de-Calais Tourisme : FAQ, chiens sur les plages",
@@ -1606,14 +1614,22 @@
     ]
   },
   "saint-cyprien-avec-son-chien": {
-    "html": "<p>À Saint-Cyprien (Pyrénées-Orientales), les fiches de l'office de tourisme classent les plages Maillol, du Pont Tournant et Sud en « animaux non acceptés » ; entre la plage Maillol et celle de l'office, les chiens sont interdits même en laisse. Aucune période d'ouverture aux chiens n'est publiée. L'office renvoie vers Argelès (Racou, partie gauche, et Marenda, en laisse) et Canet (Lido, en laisse) : à reconfirmer auprès de ces communes (<a href=\"/fiche-plage-saint-cyprien-plage-chiens-interdits-66\">fiche des plages</a>).</p><p>Le parc de la Prade accepte les chiens en laisse et abrite une aire d'agility ouverte de 8h à 18h jusqu'au 31 décembre 2026 (<a href=\"/fiche-balade-parc-de-la-prade-saint-cyprien-66\">fiche</a>) ; ils ne sont pas admis au jardin des Plantes des Capellans (<a href=\"/fiche-balade-jardin-des-plantes-capellans-saint-cyprien-66\">fiche</a>).</p>",
+    "html": "<p>À Saint-Cyprien (Pyrénées-Orientales), les fiches de Tourisme Pyrénées-Orientales (relayant l'office) classent les plages Maillol et du Pont Tournant en « animaux non acceptés » (« chiens interdits ») ; entre la plage Maillol et celle de l'office, les chiens sont interdits même en laisse. Aucune période d'ouverture aux chiens n'est publiée dans les pages lues. L'office renvoie vers Argelès (Racou, partie gauche hors zone surveillée, et Marenda, en laisse) et Canet (Lido, en laisse, zone non surveillée) en citant un blog comme source : à reconfirmer auprès de ces communes (<a href=\"/fiche-plage-saint-cyprien-plage-chiens-interdits-66\">fiche des plages</a>).</p><p>Le parc de la Prade accepte les chiens tenus en laisse et abrite une aire d'agility pour chiens, ouverte de 8h à 18h du 1er novembre 2025 au 31 décembre 2026 (<a href=\"/fiche-balade-parc-de-la-prade-saint-cyprien-66\">fiche</a>) ; le jardin des plantes des Capellans est « interdit aux animaux » selon l'office (<a href=\"/fiche-balade-jardin-des-plantes-capellans-saint-cyprien-66\">fiche</a>).</p>",
     "sources": [
       {
         "label": "Office de tourisme de Saint-Cyprien : séjourner avec un chien",
         "url": "https://www.tourisme-saint-cyprien.com/sejourner-a-saint-cyprien-avec-un-chien"
       },
       {
-        "label": "Tourisme Pyrénées-Orientales : plage Maillol, Saint-Cyprien",
+        "label": "Office de tourisme de Saint-Cyprien : parc de la Prade",
+        "url": "https://www.tourisme-saint-cyprien.com/patrimoine-culturel/parc-de-la-prade"
+      },
+      {
+        "label": "Office de tourisme de Saint-Cyprien : jardin des plantes des Capellans",
+        "url": "https://www.tourisme-saint-cyprien.com/saint-cyprien-la-destination/le-jardin-des-plantes/"
+      },
+      {
+        "label": "Tourisme Pyrénées-Orientales : plage Maillol",
         "url": "https://www.tourisme-pyreneesorientales.com/activites/plage-maillol-saint-cyprien-fr-5744243"
       },
       {
@@ -1848,7 +1864,7 @@
     ]
   },
   "obernai-avec-son-chien": {
-    "html": "<p>À Obernai, la Ville rappelle que chaque propriétaire doit ramasser les déjections de son chien (règlement sanitaire départemental du Bas-Rhin) ; sinon l'amende est de 135 €. Tous les quartiers ont des canisites, des distributeurs de sacs et des poubelles (86 distributeurs sur le plan de la Ville). Hors de la ville, la Ville cite l'arrêté de 1955 modifié en 1989 : il est interdit de laisser divaguer les chiens dans les vignes, les prés et les bois, et, en forêt, de les promener sans laisse en dehors des allées forestières du 15 avril au 30 juin.</p><p>Le marché de Noël de la Gastronomie et de l'Artisanat se tient du 27 novembre au 31 décembre 2026 (10 h-20 h du dimanche au jeudi, 10 h-21 h les vendredis et samedis, fermeture à 16 h les 24 et 31, fermé le 25) ; des navettes gratuites desservent le centre les week-ends. La Ville et l'office de tourisme ne publient aucune règle sur les chiens au marché : en cas de foule, la laisse courte reste le plus prudent.</p>",
+    "html": "<p>À Obernai, la Ville rappelle que chaque propriétaire doit ramasser les déjections de son chien (règlement sanitaire départemental du Bas-Rhin) ; sinon la contravention est de 135 €. Tous les quartiers ont des canisites, des distributeurs de sacs et des poubelles. Hors de la ville, la Ville cite l'arrêté de 1955 modifié en 1989 : il est interdit de laisser divaguer les chiens dans les terres, les prés, les vignes, les vergers et les bois, et, en forêt, de les promener sans laisse en dehors des allées forestières du 15 avril au 30 juin. Elle renvoie aussi à des arrêtés municipaux à télécharger, que nous n'avons pas lus.</p><p>Le marché de Noël de la Gastronomie et de l'Artisanat se tient du 27 novembre au 31 décembre 2026 (10 h-20 h du dimanche au jeudi, 10 h-21 h les vendredis et samedis, fermeture à 16 h les 24 et 31, fermé le 25). La Ville et l'office de tourisme ne publient aucune règle sur les chiens au marché dans les pages lues : en cas de foule, la laisse courte reste le plus prudent.</p>",
     "sources": [
       {
         "label": "Ville d'Obernai — Les animaux en ville",
@@ -1865,7 +1881,7 @@
     ]
   },
   "selestat-avec-son-chien": {
-    "html": "<p>À Sélestat, le bulletin municipal Le Sélestadien (n° 63, 2017) indique que les chiens doivent être tenus en laisse en ville, que leurs déjections doivent être ramassées et que la divagation est interdite ; ce texte est ancien, vérifie les panneaux. Dans la réserve de l'Ill*Wald, la Ville demande la laisse et de rester sur les chemins (amende jusqu'à 135 €) : voir le <a href=\"/fiche-balade-illwald-circuit-club-vosgien-selestat-67\">circuit de l'Ill*Wald</a> et le parcours de <a href=\"/fiche-balade-ill-aux-tresors-selestat-67\">l'Ill aux Trésors</a>.</p><p>Les marchés de Noël ont lieu du 20 novembre au 27 décembre 2026 sur les places de la Victoire, d'Armes et du Dr Maurice-Kubler (dimanche-jeudi 11 h-19 h, vendredi-samedi 11 h-20 h, 24 décembre 11 h-16 h, fermé le 25). La Ville ne publie aucune règle sur les chiens à ces marchés.</p>",
+    "html": "<p>À Sélestat, le bulletin municipal Le Sélestadien (n° 63, 2017) indique que la laisse est obligatoire pour tous les chiens en ville, que les déjections doivent être ramassées sur le domaine public et que la divagation est interdite ; ce texte est ancien, vérifie les panneaux. Dans la réserve de l'Ill*Wald, le dépliant de la Ville demande de tenir le chien en laisse et de rester sur les chemins autorisés (jusqu'à 135 € d'amende), et l'office de tourisme répond que les animaux y sont acceptés tenus en laisse : voir le <a href=\"/fiche-balade-illwald-circuit-club-vosgien-selestat-67\">circuit de l'Ill*Wald</a> et le parcours de <a href=\"/fiche-balade-ill-aux-tresors-selestat-67\">l'Ill aux Trésors</a>.</p><p>Les marchés de Noël ont lieu du 20 novembre au 27 décembre 2026 sur les places de la Victoire, d'Armes et du Dr Maurice-Kubler (dimanche-jeudi 11 h-19 h, vendredi-samedi 11 h-20 h, prolongations possibles d'une heure, 24 décembre 11 h-16 h, fermé le 25). La Ville ne publie aucune règle sur les chiens à ces marchés.</p>",
     "sources": [
       {
         "label": "Ville de Sélestat — Les marchés de Noël",
@@ -1874,11 +1890,23 @@
       {
         "label": "Ville de Sélestat — Noël à Sélestat",
         "url": "https://www.selestat.fr/mes-sorties/agenda/noel-a-selestat"
+      },
+      {
+        "label": "Le Sélestadien n° 63 (mai 2017)",
+        "url": "https://www.selestat.fr/fileadmin/user_upload/00-selestadiens/SELESTADIEN_63_web.pdf"
+      },
+      {
+        "label": "Ville de Sélestat : dépliant Ill*Wald, adopter les bons gestes",
+        "url": "https://www.selestat.fr/fileadmin/user_upload/Environnement/Documents/IllWald_Depliant-bons-gestes-FR-vf.pdf"
+      },
+      {
+        "label": "Sélestat Haut-Kœnigsbourg Tourisme : l'Ill*Wald",
+        "url": "https://www.selestat-haut-koenigsbourg.com/decouvrir/incontournables/illwald"
       }
     ]
   },
   "kaysersberg-vignoble-avec-son-chien": {
-    "html": "<p>Le marché de Noël authentique de Kaysersberg se tient seulement les vendredis, samedis et dimanches de l'Avent, de 10 h à 20 h : du 27 au 29 novembre, du 4 au 6, du 11 au 13 et du 18 au 20 décembre 2026, dans la cour de l'Arsenal et derrière l'église Sainte-Croix. L'office de tourisme ne publie aucune règle sur les chiens à ce marché ni dans les ruelles de la ville : en cas d'affluence, garde-le en laisse courte.</p><p>Une navette de Noël (bus) relie Colmar, Kaysersberg, Riquewihr, Ribeauvillé et Eguisheim les vendredis, samedis et dimanches ; sa règle pour les chiens n'est pas publiée dans les pages lues. Pour le camping, l'office indique des chiens admis en laisse, vaccins à jour.</p>",
+    "html": "<p>Le marché de Noël authentique de Kaysersberg se tient seulement les vendredis, samedis et dimanches de l'Avent, de 10 h à 20 h : du 27 au 29 novembre, du 4 au 6, du 11 au 13 et du 18 au 20 décembre 2026, dans la cour de l'Arsenal et derrière l'église Sainte-Croix ; un marché de Noël paysan, place de la Mairie, suit les mêmes dates et horaires. L'office de tourisme ne publie aucune règle sur les chiens à ces marchés ni dans les ruelles de la ville dans les pages lues : en cas d'affluence, garde-le en laisse courte.</p><p>Une navette de Noël (bus) relie notamment Colmar, Kaysersberg, Riquewihr, Ribeauvillé et Eguisheim les vendredis, samedis et dimanches (la liste des villages varie selon les pages de l'office) ; sa règle pour les chiens n'est pas publiée dans les pages lues.</p>",
     "sources": [
       {
         "label": "Office de tourisme de la vallée de Kaysersberg — Noël",
@@ -1895,7 +1923,7 @@
     ]
   },
   "riquewihr-avec-son-chien": {
-    "html": "<p>Le marché de Noël traditionnel de Riquewihr, organisé par le comité des fêtes, a lieu du 27 novembre au 20 décembre 2026 sur l'esplanade des remparts, les places du centre et la rue du Général-de-Gaulle (lundi-vendredi 10 h-18 h 30, samedi-dimanche 10 h-19 h, d'après la page de l'office reprise par le répertoire des marchés). L'office conseille de venir en semaine et en journée, et aucune règle sur les chiens n'est publiée : dans des ruelles très fréquentées le week-end, la laisse courte s'impose.</p><p>Un parking-relais avec navette est prévu au NaturOparc de Hunawihr les samedis et dimanches (10 € par véhicule). Le sentier viticole des Grands Crus (boucle de 17 km reliant Riquewihr à cinq villages voisins) est ouvert même pendant les vendanges tant qu'on reste sur les sentiers balisés ; l'office ne dit rien sur les chiens.</p>",
+    "html": "<p>Le marché de Noël traditionnel de Riquewihr, organisé par le comité des fêtes, a lieu du 27 novembre au 20 décembre 2026 sur l'esplanade des remparts, les places du centre et la rue du Général-de-Gaulle (lundi-vendredi 10 h-18 h 30, samedi-dimanche 10 h-19 h, nocturne le 27 novembre jusqu'à 20 h, d'après la page de l'office reprise par le répertoire des marchés). L'office conseille de venir en semaine et en journée, et aucune règle sur les chiens n'est publiée dans les pages lues : dans des ruelles très fréquentées le week-end, la laisse courte s'impose.</p><p>Un parking-relais avec navette est prévu au NaturOparc de Hunawihr les samedis et dimanches du 28 novembre au 20 décembre (10 € par véhicule, horaires de navette à confirmer). Le sentier viticole des Grands Crus (« Perles du Vignoble », grande boucle de 17 km autour de Riquewihr et de cinq villages voisins) reste accessible pendant les vendanges tant qu'on suit les sentiers balisés (dépliant de 2019) ; il ne dit rien des chiens.</p>",
     "sources": [
       {
         "label": "Répertoire des marchés — Riquewihr 2026 (d'après l'office, noel-colmar.com)",
@@ -1912,7 +1940,7 @@
     ]
   },
   "eguisheim-avec-son-chien": {
-    "html": "<p>Le marché de Noël authentique d'Eguisheim occupe les ruelles du village, autour de la place du Château-Saint-Léon, du 27 novembre au 30 décembre 2026, fermé les 24, 25 et 26 décembre (répertoires de marchés ; un camping annonce une fin au 23 décembre : dates à confirmer auprès de l'office). Aucune règle sur les chiens n'est publiée pour ce marché ; dans un village aussi serré, tiens-le en laisse courte.</p><p>Côté vignes, le sentier viticole des Grands Crus d'Eguisheim (environ 2 h, départ rue du Bassin entre le parc à cigognes et le camping) est présenté par l'office de tourisme, sans règle sur les chiens. Les <a href=\"/fiche-balade-trois-chateaux-haut-eguisheim-68\">Trois Châteaux</a> sont notés « animaux acceptés » par Visit Alsace.</p>",
+    "html": "<p>Le marché de Noël authentique d'Eguisheim occupe les ruelles du village, autour de la place du Château-Saint-Léon, du 27 novembre au 30 décembre 2026, fermé les 24, 25 et 26 décembre (office de tourisme, d'après un répertoire d'événements ; un autre répertoire écrit « 27 novembre-23 et 27-30 décembre », ce qui revient au même). Les horaires 2026 n'étaient pas encore publiés début octobre. Aucune règle sur les chiens n'est publiée pour ce marché ; dans un village aussi serré, tiens-le en laisse courte.</p><p>Côté vignes, le sentier viticole des Grands Crus d'Eguisheim (environ 2 h, départ rue du Bassin entre le parc à cigognes et le camping, par un chemin de terre) est présenté par l'office de tourisme, sans règle sur les chiens. Pour monter vers les Trois Châteaux, voir la <a href=\"/fiche-balade-trois-chateaux-haut-eguisheim-68\">fiche</a>.</p>",
     "sources": [
       {
         "label": "Répertoire des marchés — Eguisheim 2026",
@@ -1929,7 +1957,7 @@
     ]
   },
   "ribeauville-avec-son-chien": {
-    "html": "<p>Le marché de Noël médiéval de Ribeauvillé a lieu en décembre 2026, d'après le répertoire des marchés les samedis 5 et 12 (10 h-19 h) et dimanches 6 et 13 (10 h-18 h), dans la Grand'Rue et les places du centre. Visit Alsace le marque « animaux acceptés », sans condition publiée. Le centre est fermé aux voitures pendant le marché : parking-relais à Bergheim (10 €) avec navette gratuite.</p><p>Le sentier viticole des Grands Crus (17 km, village par village) reste accessible pendant les vendanges tant qu'on suit les sentiers balisés ; ni la Ville ni l'office ne publient de règle sur les chiens. Pour une balade au-dessus de la ville, voir les <a href=\"/fiche-balade-trois-chateaux-ribeauville-68\">Trois Châteaux</a>.</p>",
+    "html": "<p>Le marché de Noël médiéval de Ribeauvillé a lieu en décembre 2026, d'après un répertoire de marchés : samedis 5 et 12 (10 h-19 h) et dimanches 6 et 13 (10 h-18 h), dans la Grand'Rue et les places du centre. Le centre est fermé aux voitures pendant le marché : parking-relais de la zone du Muehlbach (10 € par véhicule, tarif 2025) avec navette, et navette de Noël depuis Colmar. Aucune règle sur les chiens n'est publiée dans les pages lues : la foule est dense l'après-midi, la laisse courte est le plus prudent.</p><p>La page de la Ville sur les randonnées propose plusieurs circuits au départ de Ribeauvillé, dont les Trois Châteaux (5,8 km, 2 h 30, niveau intermédiaire ; voir la <a href=\"/fiche-balade-trois-chateaux-ribeauville-68\">fiche</a>), sans règle pour les chiens. Le sentier viticole des Grands Crus (17 km, autour de Riquewihr) reste accessible pendant les vendanges tant qu'on suit les sentiers balisés (dépliant de 2019).</p>",
     "sources": [
       {
         "label": "Marché de Noël de Ribeauvillé 2026 — dates",
@@ -1946,7 +1974,7 @@
     ]
   },
   "foix-avec-son-chien": {
-    "html": "<p>À Foix, la Ville rappelle que les chiens doivent être tenus en laisse en ville et que laisser des déjections coûte 68 € ; elle compte 7 canisites et 15 distributeurs de sacs dans le centre historique. Le château de Foix n'admet pas les animaux, même en laisse ou dans un sac (office de tourisme).</p><p>Au-dessus de la ville, le topo de l'office demande de tenir son chien en laisse, de garder ses distances avec les troupeaux en estive et d'être vigilant en période de chasse : voir <a href=\"/fiche-balade-saint-sauveur-foix-09\">Saint-Sauveur</a>, <a href=\"/fiche-balade-terrasses-du-pech-foix-09\">les Terrasses du Pech</a> et <a href=\"/fiche-balade-castella-de-labarre-foix-09\">le Castella de Labarre</a>. À Montségur, le <a href=\"/fiche-balade-chateau-de-montsegur-09\">sentier et l'enceinte du château</a> admettent les chiens en laisse.</p>",
+    "html": "<p>À Foix, la Ville rappelle que les chiens doivent être tenus en laisse en ville et que laisser des déjections coûte 68 € ; elle compte 7 canisites et 15 distributeurs de sacs dans le centre historique. Le château de Foix n'admet pas les animaux, même en laisse ou dans un sac (office de tourisme).</p><p>Au-dessus de la ville, le topo de l'office demande de tenir son chien en laisse, de garder ses distances avec les troupeaux en estive et d'être vigilant en période de chasse : voir <a href=\"/fiche-balade-saint-sauveur-foix-09\">Saint-Sauveur</a>, <a href=\"/fiche-balade-terrasses-du-pech-foix-09\">les Terrasses du Pech</a> et <a href=\"/fiche-balade-castella-de-labarre-foix-09\">le Castella de Labarre</a>. À Montségur, le site officiel écrit que les chiens doivent être tenus en laisse (voir le <a href=\"/fiche-balade-chateau-de-montsegur-09\">sentier et l'enceinte du château</a>).</p>",
     "sources": [
       {
         "label": "Ville de Foix — Animaux en ville",
@@ -1967,7 +1995,7 @@
     ]
   },
   "moustiers-sainte-marie-avec-son-chien": {
-    "html": "<p>À Moustiers, l'office de tourisme écrit que le territoire du Verdon impose la laisse pour les chiens. La réglementation interdit aussi les chiens sur certains itinéraires, cités en exemples : le sentier Blanc-Martel (La Palud-sur-Verdon) et le sentier du Garde-Canal (Quinson). Ces sentiers sont hors de la commune mais très proposés aux randonneurs ; voir <a href=\"/fiche-balade-regles-chiens-moustiers-sainte-marie\">notre fiche sur les règles</a> et, au départ du village, le <a href=\"/fiche-balade-sentier-treguier-moustiers-sainte-marie\">sentier de Tréguier</a> et le <a href=\"/fiche-balade-tour-du-village-claux-moustiers-sainte-marie\">tour du village</a>.</p><p>Le Parc naturel régional du Verdon interdit les chiens sur le domaine de Valx (Maison du Parc, route des Salles-Aups), à cause d'un troupeau et de chiens de protection. Sur le lac de Sainte-Croix, la plage du Galetas (commune d'Aiguines) admet les chiens en laisse, sauf dans la zone de baignade surveillée (poste ouvert en juillet-août).</p>",
+    "html": "<p>À Moustiers, l'office de tourisme écrit que le territoire du Verdon impose la laisse pour les chiens. La réglementation interdit aussi les chiens sur certains itinéraires, cités en exemples : le sentier Blanc-Martel (La Palud-sur-Verdon) et le sentier du Garde-Canal (Quinson). Ces sentiers sont hors de Moustiers (La Palud-sur-Verdon, Quinson) ; voir <a href=\"/fiche-balade-regles-chiens-moustiers-sainte-marie\">notre fiche sur les règles</a> et, au départ du village, le <a href=\"/fiche-balade-sentier-treguier-moustiers-sainte-marie\">sentier de Tréguier</a> et le <a href=\"/fiche-balade-tour-du-village-claux-moustiers-sainte-marie\">tour du village</a>.</p><p>Le Parc naturel régional du Verdon interdit les chiens sur le domaine de Valx (Maison du Parc, route des Salles-Aups), à cause d'un troupeau et de chiens de protection. Sur le lac de Sainte-Croix, la plage du Galetas (commune d'Aiguines) admet les chiens en laisse, sauf dans la zone de baignade surveillée (poste ouvert en juillet-août).</p>",
     "sources": [
       {
         "label": "Office de tourisme de Moustiers — espaces naturels fragiles du territoire du Verdon",
