@@ -178,6 +178,7 @@ export default function (eleventyConfig) {
     "Saint-Valery-sur-Somme", "Sainte-Maxime", "Sanary-sur-Mer", "Sarlat-la-Canéda", "Sarzeau", "Sète",
     "Six-Fours-les-Plages", "Soorts-Hossegor", "Tignes", "Trouville-sur-Mer", "Vallon-Pont-d'Arc",
     "Villefranche-sur-Mer", "Val-d'Isère", "Les Arcs", "La Plagne", "Méribel", "Val Thorens", "Les Menuires", "Morzine", "Font-Romeu",
+    "Obernai", "Sélestat", "Kaysersberg Vignoble", "Riquewihr", "Eguisheim", "Ribeauvillé", "La Bresse",
   ];
   const slugify = (str) =>
     str
