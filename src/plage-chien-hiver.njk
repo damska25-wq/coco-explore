@@ -6,6 +6,7 @@ description: "Hors saison, beaucoup de plages rouvrent aux chiens. La liste des 
 altLangUrl: "en/dog-friendly-beaches-in-winter"
 layout: base.njk
 ---
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Coco Explore", "item": "https://cocoexplore.com/"}, {"@type": "ListItem", "position": 2, "name": "Plages", "item": "https://cocoexplore.com/plage-chien"}, {"@type": "ListItem", "position": 3, "name": "Plages en hiver", "item": "https://cocoexplore.com/plage-chien-hiver"}]}</script>
 {#- Plages et littoral dont la règle chien (regleChien) est « toute-annee » ou « saisonnier » (interdites seulement une partie de l'année, le plus souvent l'été). -#}
 {%- set plagesAll = (collections.fiches | whereData("breadcrumbCatId", "plages")).concat(collections.fiches | whereData("breadcrumbCatId", "cote-azur")) %}
 {%- set hiverPlages = [] %}
