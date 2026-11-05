@@ -1,0 +1,90 @@
+---
+permalink: noel-chien.html
+permalinkPath: noel-chien.html
+title: "Noël et marchés de Noël avec son chien : règles et bons réflexes"
+description: "Marchés de Noël en Alsace avec ton chien : les règles publiées ville par ville, et les dangers des fêtes (chocolat, houx, gui) d'après les sources vétérinaires."
+layout: base.njk
+---
+{%- set noelVilles = ["Strasbourg", "Colmar", "Mulhouse", "Obernai", "Sélestat", "Kaysersberg Vignoble", "Riquewihr", "Eguisheim", "Ribeauvillé"] %}
+<section class="wrap guide-page">
+  <div class="cat-page-crumb"><a href="/">Coco Explore</a> / Noël avec son chien</div>
+  <span class="tag">Saison</span>
+  <h1>Noël et marchés de Noël avec son chien</h1>
+  <p class="guide-lead">Chalets illuminés, vin chaud, foule dans les ruelles : un marché de Noël se visite très bien avec son chien, à condition de savoir ce que dit chaque ville, et de ne pas oublier les pièges de la maison pendant les fêtes. Voici ce que Coco Explore a relevé sur les sources officielles (lues le 05/11/2026), sans rien inventer : quand aucune règle n'est publiée, nous l'écrivons.</p>
+
+  <h2>Les marchés de Noël avec son chien</h2>
+  <p>Les règles varient d'une ville à l'autre, et elles sont rarement affichées sur les sites des marchés eux-mêmes. Les dates ci-dessous sont celles de l'édition 2026 ; vérifie-les avant de partir.</p>
+
+  <h3>Strasbourg</h3>
+  <p>La Ville écrit que les chiens tenus en laisse sont acceptés dans les allées de tous les marchés (du 27 novembre au 24 décembre 2026), mais que la visite avec un animal est <strong>fortement déconseillée les samedis et dimanches</strong> à cause de la foule : mieux vaut venir en semaine, le matin. Les chiens ne sont pas autorisés dans les commerces d'alimentation, et chaque établissement reste libre d'accepter ou non les animaux. Dans les transports, ils ne sont pas admis dans les bus CTS mais voyagent gratuitement dans les trams (petits chiens en sac ou panier ; les plus grands en laisse et muselés). <a href="/strasbourg">Voir la page Strasbourg →</a></p>
+
+  <h3>Colmar</h3>
+  <p>Pour les marchés de Noël (du 23 novembre au 29 décembre 2026), nous n'avons trouvé <strong>aucune règle sur les chiens</strong> sur le site officiel des marchés ni sur les pages de l'office de tourisme : renseigne-toi auprès de l'office (03 89 20 68 92). À Colmar, l'arrêté municipal impose la laisse. Les bus TRACE n'acceptent que les petits chiens dans un sac ou un panier, et le conducteur des navettes de Noël peut refuser les animaux en cas de forte affluence. Conseil de Coco (pas une règle) : dans les rues piétonnes très denses, garde ton chien en laisse courte. <a href="/colmar">Voir la page Colmar →</a></p>
+
+  <h3>Mulhouse</h3>
+  <p>L'office de tourisme indique « Animaux acceptés » sur sa fiche du marché de Noël (place de la Réunion, du 20 novembre au 24 décembre 2026, puis les 26 et 27 décembre), sans autre condition publiée. La laisse est obligatoire dans les espaces publics, d'après la Ville. <a href="/mulhouse">Voir la page Mulhouse →</a></p>
+
+  <h3>Obernai et Sélestat</h3>
+  <p>Aucune règle sur les chiens n'est publiée pour les marchés de Noël d'Obernai et de Sélestat dans les pages que nous avons lues. À Sélestat, la laisse est obligatoire pour tous les chiens en ville d'après un bulletin municipal de 2017 (à recouper avec un arrêté récent). <a href="/obernai">Obernai →</a> · <a href="/selestat">Sélestat →</a></p>
+
+  <h3>Riquewihr, Kaysersberg, Eguisheim et Ribeauvillé</h3>
+  <p>Là non plus, <strong>aucune règle de laisse ni d'interdiction</strong> n'est publiée sur les marchés de Noël de Riquewihr (27 novembre au 20 décembre 2026), Kaysersberg et Eguisheim (27 novembre au 23 décembre) ; à Ribeauvillé, le marché médiéval (5 au 13 décembre 2026) est coché « Animaux acceptés : oui » par Visit Alsace, sans condition. Les navettes de Noël entre Colmar, Kaysersberg, Riquewihr et Ribeauvillé : la règle pour les chiens n'est pas publiée. Prévois la laisse courte et renseigne-toi auprès de l'office de tourisme. <a href="/riquewihr">Riquewihr →</a> · <a href="/kaysersberg-vignoble">Kaysersberg →</a> · <a href="/eguisheim">Eguisheim →</a> · <a href="/ribeauville">Ribeauvillé →</a></p>
+
+  <h2>Les villes alsaciennes où trouver des adresses</h2>
+  <p>Hébergements qui acceptent les chiens, balades, vétérinaires : la page de chaque ville rassemble les adresses de Coco Explore.</p>
+  <ul class="hiver-stations">
+    {%- for st in noelVilles %}
+    {%- set city = (collections.cityPages | whereEq("ville", st))[0] %}
+    {%- if city %}
+    {%- set nHeb = (city.fiches | whereData("breadcrumbCatId", "hebergements")).length %}
+    <li><a href="/{{ city.slug }}"><strong>{{ city.ville }}</strong></a> <span class="hiver-dep">({{ city.dep.nom }})</span> : {{ city.fiches.length }} adresses{% if nHeb %}, dont {{ nHeb }} hébergement{{ "s" if nHeb > 1 }}{% endif %}</li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+
+  <h2>Les dangers des fêtes pour ton chien</h2>
+  <p>Repas de fêtes, décorations, plantes : la maison change à Noël, et certains pièges sont sérieux. Voici ce que disent les sources vétérinaires et officielles que nous avons lues.</p>
+  <ul>
+    <li><strong>Le chocolat.</strong> Le Centre antipoison animal de l'Ouest (CAPAE-Ouest) rappelle que le chien est l'espèce la plus touchée et que le chocolat noir est beaucoup plus toxique que le chocolat au lait ou blanc. Les premiers signes (soif, vomissements, agitation, tremblements) peuvent apparaître dans l'heure ou seulement plusieurs heures après ; dans les cas graves, troubles cardiaques, coma, voire décès. L'hôpital vétérinaire de l'Université de Montréal ajoute qu'il n'y a pas d'antidote mais que le pronostic est généralement bon avec une prise en charge précoce : appelle vite ton vétérinaire en précisant le type et la quantité ingérés.</li>
+    <li><strong>Le raisin et les raisins secs.</strong> Toxiques pour le chien d'après le CAPAE-Ouest : les raisins secs conservent toute leur toxicité, et une grappe de raisin frais peut être fatale pour un chien d'une dizaine de kilos. Dans les cas graves, une insuffisance rénale aiguë apparaît en 48 à 72 heures. Pense aux plateaux de fromages, aux brioches et aux gâteaux.</li>
+    <li><strong>Les os de volaille.</strong> Un petit morceau de viande de volaille est généralement inoffensif, mais les morceaux avec os sont fortement déconseillés : fins et pointus, ils peuvent se coincer dans l'œsophage ou l'intestin. Ferme bien la poubelle. (Hôpital vétérinaire de l'Université de Montréal ; cette source ne distingue pas os cuits et crus.)</li>
+    <li><strong>Le houx, le gui et le poinsettia.</strong> L'Anses indique que les feuilles et baies de houx sont toxiques pour les animaux domestiques (troubles digestifs, voire neurologiques avec beaucoup de baies), que les feuilles et baies de gui sont toxiques, voire mortelles, et que mâchonner plusieurs feuilles ou tiges de poinsettia peut provoquer des troubles digestifs et une salivation excessive. L'hôpital vétérinaire de Montréal juge la dose toxique du houx très faible (deux baies peuvent donner des symptômes chez un chien de taille moyenne).</li>
+    <li><strong>Guirlandes, rubans et emballages.</strong> Ils peuvent être avalés et bloquer le tube digestif. Selon la même source, si ton animal vient d'avaler un corps étranger, appelle un vétérinaire avant de le faire vomir ou de tirer dessus ; mets les décorations hors de portée.</li>
+    <li><strong>Autres pièges de table.</strong> Le xylitol (édulcorant des produits « sans sucre ») impose une consultation en urgence quelle que soit la quantité, et les boissons alcoolisées sucrées ou la pâte à pain crue peuvent intoxiquer le chien (même source).</li>
+  </ul>
+  <p>En cas d'ingestion, l'Anses recommande d'appeler un centre antipoison vétérinaire (Lyon 04 78 87 10 40, 24h/24 selon l'Anses ; Nantes 02 40 68 77 40, de 8h30 à minuit selon le CAPAE-Ouest) et de garder l'étiquette ou une photo de la plante. Les numéros et les démarches sont détaillés dans notre guide.</p>
+  <p class="cat-see-more"><a href="/guide-urgence-veterinaire-chien">Lire le guide « Trouver un vétérinaire de garde en vacances » →</a></p>
+
+  <h2>Feux d'artifice et Nouvel An</h2>
+  <p>La SPA rappelle que les bruits forts et soudains des feux d'artifice effraient les chiens et peuvent les faire fuir, notamment pour le Nouvel An. Ses conseils :</p>
+  <ul>
+    <li>garde ton chien à l'intérieur, pas dans le jardin, portes, fenêtres et volets fermés, avec une musique douce ou la télévision pour couvrir les bruits ;</li>
+    <li>si tu dois sortir avec lui, laisse courte (plutôt qu'une laisse enrouleuse), identification à jour (médaille, puce ou tatouage), et évite la zone de tir juste avant et après ;</li>
+    <li>ne prends pas un chiot avec toi : le stress peut le traumatiser ;</li>
+    <li>si ton chien est très anxieux, demande conseil à ton vétérinaire.</li>
+  </ul>
+
+  <h2>Pour préparer ton séjour</h2>
+  <ul>
+    <li><a href="/hiver-chien">Vacances d'hiver avec son chien : stations, règles et bons réflexes</a></li>
+    <li><a href="/guide-voiture-chien">Voyager en voiture avec son chien</a></li>
+    <li><a href="/guides">Tous nos guides pratiques</a></li>
+  </ul>
+
+  <section class="guide-sources">
+    <h2>Sources</h2>
+    <p>Pages lues le 05/11/2026. Les règles, dates et horaires des marchés changent chaque année : vérifie auprès de l'organisme concerné avant de partir.</p>
+    <ul>
+      <li><a href="https://noel.strasbourg.eu/fr/emmener-son-chien-sur-le-marche-de-noel" target="_blank" rel="noopener nofollow">Noël à Strasbourg : emmener son chien sur le marché de Noël</a></li>
+      <li><a href="https://noel.strasbourg.eu/foire-aux-questions" target="_blank" rel="noopener nofollow">Noël à Strasbourg : foire aux questions</a></li>
+      <li><a href="https://www.tourisme-colmar.com/fr/pratique/sur-ce-site/toutourisme" target="_blank" rel="noopener nofollow">Office de tourisme de Colmar : le canitourisme</a></li>
+      <li><a href="https://noel-colmar.com/fr/navettes-de-noel" target="_blank" rel="noopener nofollow">La Magie de Noël à Colmar : navettes de Noël</a></li>
+      <li><a href="https://www.tourisme-mulhouse.com/a-faire-sur-place/agenda-et-grand-evenements/tout-lagenda/marche-de-noel-de-mulhouse-mulhouse-fr-3839632/" target="_blank" rel="noopener nofollow">Mulhouse Tourisme : marché de Noël de Mulhouse</a></li>
+      <li><a href="https://www.anses.fr/fr/actualite/plantes-decoratives-leur-ingestion-peut-etre-toxique-hommes-animaux" target="_blank" rel="noopener nofollow">Anses : plantes décoratives, leur ingestion peut être toxique pour les Hommes comme pour les animaux</a></li>
+      <li><a href="https://www.centre-antipoison-animal.com/chocolat.html" target="_blank" rel="noopener nofollow">CAPAE-Ouest : le chocolat</a></li>
+      <li><a href="https://www.centre-antipoison-animal.com/raisin.html" target="_blank" rel="noopener nofollow">CAPAE-Ouest : le raisin</a></li>
+      <li><a href="https://chuv.umontreal.ca/le-chuv/hopital-des-animaux-de-compagnie/ressources/les-risques-du-temps-des-fetes" target="_blank" rel="noopener nofollow">Hôpital vétérinaire de l'Université de Montréal : les risques du temps des Fêtes</a></li>
+      <li><a href="https://www.la-spa.fr/prendre-soin/chiens/comportement-du-chien/feux-dartifice-les-conseils-pour-proteger-votre-chien" target="_blank" rel="noopener nofollow">La SPA : feux d'artifice, les conseils pour protéger votre chien</a></li>
+    </ul>
+  </section>
+</section>
