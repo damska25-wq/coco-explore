@@ -4,6 +4,15 @@ permalinkPath: noel-chien.html
 title: "Noël et marchés de Noël avec son chien : règles et bons réflexes"
 description: "Marchés de Noël en Alsace avec ton chien : les règles publiées ville par ville, et les dangers des fêtes (chocolat, houx, gui) d'après les sources vétérinaires."
 altLangUrl: "en/christmas-with-your-dog"
+faq:
+  - q: "Peut-on aller au marché de Noël de Strasbourg avec son chien ?"
+    a: "Oui : la Ville écrit que les chiens tenus en laisse sont acceptés dans les allées de tous les marchés, mais elle déconseille fortement la visite avec un animal les samedis et dimanches à cause de la foule. Mieux vaut venir en semaine, le matin."
+  - q: "Le chocolat est-il dangereux pour un chien ?"
+    a: "Oui. Le Centre antipoison animal de l'Ouest rappelle que le chien est l'espèce la plus touchée et que le chocolat noir est beaucoup plus toxique que le chocolat au lait. En cas d'ingestion, appelle un centre antipoison vétérinaire ou ton vétérinaire."
+  - q: "Comment protéger son chien des feux d'artifice du Nouvel An ?"
+    a: "La SPA conseille de garder ton chien à l'intérieur, portes, fenêtres et volets fermés, avec une musique douce, de le promener en laisse courte avec une identification à jour, et de demander conseil à ton vétérinaire s'il est très anxieux."
+  - q: "Que faire si je pars pour les fêtes sans mon chien ?"
+    a: "Pension, pet-sitter ou garde chez un proche : notre guide « Faire garder son chien pendant les fêtes » explique les règles et les documents à prévoir, et la page garde et pension liste les adresses près de chez toi."
 layout: base.njk
 ---
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Coco Explore", "item": "https://cocoexplore.com/"}, {"@type": "ListItem", "position": 2, "name": "Noël avec son chien", "item": "https://cocoexplore.com/noel-chien"}]}</script>
@@ -73,6 +82,15 @@ layout: base.njk
     <li><a href="/guide-voiture-chien">Voyager en voiture avec son chien</a></li>
     <li><a href="/guides">Tous nos guides pratiques</a></li>
   </ul>
+
+  <section class="guide-faq">
+    <h2>Questions fréquentes</h2>
+    {%- for item in faq %}
+    <h3>{{ item.q | safe }}</h3>
+    <p>{{ item.a | safe }}</p>
+    {%- endfor %}
+  </section>
+  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq | faqEntities} | dump | safe }}</script>
 
   <section class="guide-sources">
     <h2>Sources</h2>
