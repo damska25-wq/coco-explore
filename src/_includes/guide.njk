@@ -55,7 +55,7 @@ layout: base.njk
   {%- if sources and sources.length %}
   <section class="guide-sources">
     <h2>Sources</h2>
-    <p>Informations vérifiées sur les sources ci-dessous à la date de mise à jour. Les règles et les tarifs évoluent : vérifie toujours auprès de l'organisme concerné avant de partir.</p>
+    <p>Informations vérifiées sur les sources ci-dessous à la date de mise à jour. Les règles et les tarifs évoluent : vérifie toujours auprès de l'organisme concerné avant de partir. Comment on travaille : <a href="/notre-methode">notre méthode</a>.</p>
     <ul>
       {%- for s in sources %}
       <li><a href="{{ s.url }}" target="_blank" rel="noopener nofollow">{{ s.label }}</a></li>

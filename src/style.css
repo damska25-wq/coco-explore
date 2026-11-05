@@ -1097,3 +1097,4 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .install-app[hidden] { display: none; }
 .install-app .icon { width: 18px; height: 18px; flex: none; }
 .install-app-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; border: 1px solid var(--heading-soft); background: var(--surface); color: var(--heading); font: inherit; font-weight: 600; cursor: pointer; }
+.fiche-hero .fiche-method-link { color: inherit; text-decoration: underline; text-decoration-color: rgba(255,253,248,0.35); text-underline-offset: 2px; }

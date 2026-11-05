@@ -55,7 +55,7 @@ extraScripts: |
         la mention du mois de vérification plutôt qu'une date de mise à jour
         antérieure. #}
     {%- set ficheLastmod = page.inputPath | lastmod %}
-    <span class="fiche-updated"><svg class="fiche-verified-icon" width="13" height="13" aria-hidden="true"><use href="#i-check"/></svg>{{ "Checked against official sources" if lang == "en" else "Infos vérifiées sur sources officielles" }} · {% if ficheLastmod >= "2026-10-01" %}{{ "updated" if lang == "en" else "mise à jour le" }} {{ ficheLastmod | dateLong(lang) }}{% else %}{{ "October 2026" if lang == "en" else "octobre 2026" }}{% endif %}</span>
+    <span class="fiche-updated"><svg class="fiche-verified-icon" width="13" height="13" aria-hidden="true"><use href="#i-check"/></svg>{% if lang == "en" %}Checked against official sources{% else %}<a href="/notre-methode" class="fiche-method-link">Infos vérifiées sur sources officielles</a>{% endif %} · {% if ficheLastmod >= "2026-10-01" %}{{ "updated" if lang == "en" else "mise à jour le" }} {{ ficheLastmod | dateLong(lang) }}{% else %}{{ "October 2026" if lang == "en" else "octobre 2026" }}{% endif %}</span>
   </div>
   {%- if photoUsername %}
   <span class="fiche-photo-credit">Photo : <a href="https://unsplash.com/@{{ photoUsername | safe }}?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">{{ photoName | safe }}</a> / <a href="https://unsplash.com/?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>
