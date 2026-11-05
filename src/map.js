@@ -2,18 +2,19 @@
   // Groupes de filtres de la carte, alignés sur les catégories du site
   // (mêmes identifiants que les sections de fiches sous la carte et dans
   // menu/accueil) — garantit que chaque fiche appartient à un filtre.
+  // Ordre d'hiver (05/11/2026), aligné sur src/_data/sections.js ; ordre d'été à rétablir au printemps (plages en tête).
   var CAT_GROUPS = [
-    { catIds: ["plages", "cote-azur"], label: "Plages", color: "#BE5B3B", activeBg: "#ba593a" },
-    { catIds: ["balades"], label: "Balades", color: "#3C5943", activeBg: "#3C5943" },
-    { catIds: ["lacs"], label: "Lacs & points d'eau", color: "#3E7CB1", activeBg: "#3d79ad" },
-    { catIds: ["restaurants"], label: "Restaurants", color: "#D98E3E", activeBg: "#a56520" },
     { catIds: ["hebergements"], label: "Hébergements", color: "#C99A4A", activeBg: "#956e2c" },
+    { catIds: ["dogsitters"], label: "Garde de chien", color: "#7C6FAE", activeBg: "#796cac" },
+    { catIds: ["balades"], label: "Balades", color: "#3C5943", activeBg: "#3C5943" },
+    { catIds: ["veterinaires"], label: "Vétérinaires", color: "#B0413E", activeBg: "#B0413E" },
+    { catIds: ["dogwash"], label: "Douche à chien", color: "#2A9D9D", activeBg: "#228181" },
+    { catIds: ["restaurants"], label: "Restaurants", color: "#D98E3E", activeBg: "#a56520" },
     { catIds: ["activites"], label: "Activités", color: "#3E8E7E", activeBg: "#388071" },
     { catIds: ["toiletteurs"], label: "Toiletteurs", color: "#A65C8C", activeBg: "#A65C8C" },
-    { catIds: ["dogwash"], label: "Douche à chien", color: "#2A9D9D", activeBg: "#228181" },
-    { catIds: ["veterinaires"], label: "Vétérinaires", color: "#B0413E", activeBg: "#B0413E" },
-    { catIds: ["dogsitters"], label: "Garde de chien", color: "#7C6FAE", activeBg: "#796cac" },
-    { catIds: ["education"], label: "Éducation canine", color: "#4F6D7A", activeBg: "#4F6D7A" }
+    { catIds: ["education"], label: "Éducation canine", color: "#4F6D7A", activeBg: "#4F6D7A" },
+    { catIds: ["plages", "cote-azur"], label: "Plages", color: "#BE5B3B", activeBg: "#ba593a" },
+    { catIds: ["lacs"], label: "Lacs & points d'eau", color: "#3E7CB1", activeBg: "#3d79ad" }
   ];
   var URGENCE_COLOR = "#8B1E1E"; // nuance de marqueur pour les urgences vétérinaires, dans le même groupe/filtre que les vétérinaires
 
@@ -240,8 +241,9 @@
   // Catégorie affichée par défaut au chargement, pour que la carte ne soit
   // pas vide au premier coup d'œil — l'utilisateur reste libre d'en choisir
   // une autre ou de revenir à rien via le même bouton.
-  if (!revealFromHash(true) && layerByCatId.plages) {
-    setActiveKey("Plages");
+  // Hiver : hébergements par défaut (au printemps, revenir à « Plages »).
+  if (!revealFromHash(true) && layerByCatId.hebergements) {
+    setActiveKey("Hébergements");
   }
   window.addEventListener("hashchange", function () { revealFromHash(true); });
 

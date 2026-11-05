@@ -1,15 +1,17 @@
+// Ordre d'hiver (05/11/2026) : hébergements, garde, balades, vétérinaires, dogwash d'abord ; plages et lacs en fin.
+// Ordre d'été à rétablir au printemps : plages, cote-azur, balades, lacs, restaurants, hebergements, activites, toiletteurs, dogwash, veterinaires, dogsitters, education.
 export default [
   {
-    id: "plages",
-    eyebrow: "Plages",
-    heading: "Où poser sa serviette avec son chien",
-    catGrid: { icon: "i-beach", label: "Plages", countIds: ["plages", "cote-azur"] },
+    id: "hebergements",
+    eyebrow: "Hébergements",
+    heading: "Où dormir avec son chien",
+    catGrid: { icon: "i-house", label: "Hébergements", countIds: ["hebergements"] },
   },
   {
-    id: "cote-azur",
-    eyebrow: "De Menton à la Camargue",
-    heading: "Les meilleurs spots hors Var",
-    intro: "Le littoral n'est pas très généreux avec les chiens en dehors du Var — voici les exceptions qui valent le détour, jusqu'aux Bouches-du-Rhône et à la Camargue.",
+    id: "dogsitters",
+    eyebrow: "Garde de chien",
+    heading: "Faire garder son chien en toute confiance",
+    catGrid: { icon: "i-paw", label: "Garde de chien", countIds: ["dogsitters"] },
   },
   {
     id: "balades",
@@ -18,22 +20,22 @@ export default [
     catGrid: { icon: "i-trail", label: "Balades", countIds: ["balades"] },
   },
   {
-    id: "lacs",
-    eyebrow: "Lacs &amp; points d'eau",
-    heading: "Changer de la mer",
-    catGrid: { icon: "i-lake", label: "Lacs &amp; points d'eau", countIds: ["lacs"] },
+    id: "veterinaires",
+    eyebrow: "Vétérinaires",
+    heading: "Pour la santé de ton compagnon",
+    catGrid: { icon: "i-vet", label: "Vétérinaires", countIds: ["veterinaires"] },
+  },
+  {
+    id: "dogwash",
+    eyebrow: "Douche à chien",
+    heading: "Rincer son chien après la plage ou la balade",
+    catGrid: { icon: "i-drop", label: "Douche à chien", countIds: ["dogwash"] },
   },
   {
     id: "restaurants",
     eyebrow: "Restaurants",
     heading: "Où passer à table sans laisser son chien dehors",
     catGrid: { icon: "i-fork", label: "Restaurants", countIds: ["restaurants"] },
-  },
-  {
-    id: "hebergements",
-    eyebrow: "Hébergements",
-    heading: "Où dormir avec son chien",
-    catGrid: { icon: "i-house", label: "Hébergements", countIds: ["hebergements"] },
   },
   {
     id: "activites",
@@ -48,27 +50,27 @@ export default [
     catGrid: { icon: "i-scissors", label: "Toiletteurs", countIds: ["toiletteurs"] },
   },
   {
-    id: "dogwash",
-    eyebrow: "Douche à chien",
-    heading: "Rincer son chien après la plage ou la balade",
-    catGrid: { icon: "i-drop", label: "Douche à chien", countIds: ["dogwash"] },
-  },
-  {
-    id: "veterinaires",
-    eyebrow: "Vétérinaires",
-    heading: "Pour la santé de ton compagnon",
-    catGrid: { icon: "i-vet", label: "Vétérinaires", countIds: ["veterinaires"] },
-  },
-  {
-    id: "dogsitters",
-    eyebrow: "Garde de chien",
-    heading: "Faire garder son chien en toute confiance",
-    catGrid: { icon: "i-paw", label: "Garde de chien", countIds: ["dogsitters"] },
-  },
-  {
     id: "education",
     eyebrow: "Éducation canine",
     heading: "Clubs canins et éducateurs pour bien vivre avec son chien",
     catGrid: { icon: "i-dog", label: "Éducation canine", countIds: ["education"] },
+  },
+  {
+    id: "plages",
+    eyebrow: "Plages",
+    heading: "Où poser sa serviette avec son chien",
+    catGrid: { icon: "i-beach", label: "Plages", countIds: ["plages", "cote-azur"] },
+  },
+  {
+    id: "cote-azur",
+    eyebrow: "De Menton à la Camargue",
+    heading: "Les meilleurs spots hors Var",
+    intro: "Le littoral n'est pas très généreux avec les chiens en dehors du Var — voici les exceptions qui valent le détour, jusqu'aux Bouches-du-Rhône et à la Camargue.",
+  },
+  {
+    id: "lacs",
+    eyebrow: "Lacs &amp; points d'eau",
+    heading: "Changer de la mer",
+    catGrid: { icon: "i-lake", label: "Lacs &amp; points d'eau", countIds: ["lacs"] },
   },
 ];
