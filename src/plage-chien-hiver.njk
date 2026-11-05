@@ -1,0 +1,36 @@
+---
+permalink: plage-chien-hiver.html
+permalinkPath: plage-chien-hiver.html
+title: "Plages autorisées aux chiens en hiver : la liste par département"
+description: "Hors saison, beaucoup de plages rouvrent aux chiens. La liste des plages où ton chien est admis toute l'année ou seulement hors saison, avec la règle de chaque plage."
+layout: base.njk
+---
+{#- Plages et littoral dont la règle chien (regleChien) est « toute-annee » ou « saisonnier » (interdites seulement une partie de l'année, le plus souvent l'été). -#}
+{%- set plagesAll = (collections.fiches | whereData("breadcrumbCatId", "plages")).concat(collections.fiches | whereData("breadcrumbCatId", "cote-azur")) %}
+{%- set hiverPlages = [] %}
+{%- for f in plagesAll %}{% if f.data.regleChien == "saisonnier" or f.data.regleChien == "toute-annee" %}{% set hiverPlages = (hiverPlages.push(f), hiverPlages) %}{% endif %}{% endfor %}
+{%- set nSais = (hiverPlages | whereData("regleChien", "saisonnier")).length %}
+{%- set nToute = (hiverPlages | whereData("regleChien", "toute-annee")).length %}
+<section class="wrap guide-page">
+  <div class="cat-page-crumb"><a href="/">Coco Explore</a> / <a href="/plage-chien">Plages</a> / Plages en hiver</div>
+  <span class="tag">Saison</span>
+  <h1>Plages autorisées aux chiens en hiver</h1>
+  <p class="guide-lead">L'hiver, c'est la saison des grandes balades sur le sable : beaucoup de plages interdites aux chiens l'été leur rouvrent hors saison. Voici les {{ hiverPlages.length }} plages de Coco Explore où ton chien est admis toute l'année ({{ nToute }}) ou seulement hors saison ({{ nSais }}), classées par département.</p>
+  <div class="callout">Les dates changent d'une commune à l'autre (fin septembre, 1er octobre, 1er novembre…) et la laisse reste souvent obligatoire. Ouvre la fiche de chaque plage avant d'y aller : la règle exacte et sa source y sont écrites. Les plages dont la règle est floue ou contradictoire ne figurent pas ici.</div>
+  <p>Pour la règle de toutes les plages, interdites comprises, consulte la page <a href="/plage-chien">plages et chiens</a>. Et si tu pars à la montagne : <a href="/hiver-chien">vacances d'hiver avec son chien</a>.</p>
+</section>
+
+{%- for dep in departements | sort(false, false, "region") %}
+{%- set depPlages = hiverPlages | whereDept(dep.id) %}
+{%- if depPlages.length %}
+<section class="fiches wrap">
+  <h2>{{ dep.nom }} <span class="hiver-dep">({{ dep.region }}, {{ depPlages.length }} plage{{ "s" if depPlages.length > 1 }})</span></h2>
+  <div class="fiche-grid" data-filterable>
+    {%- for fiche in depPlages %}
+    {% include "fiche-card.njk" %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+{%- endfor %}
+<script src="/card-filter.js" defer></script>
