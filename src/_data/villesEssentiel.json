@@ -2348,7 +2348,7 @@
     ]
   },
   "rouen-avec-son-chien": {
-    "html": "<p>À Rouen, l'arrêté de police des jardins (mai 2026) autorise les chiens dans les espaces verts sauf mention contraire à l'entrée, et ne les laisse libres que dans les aménagements dédiés de type caniparc ; le Jardin des plantes n'admet pas les animaux. La Ville recense 6 canisites et 14 espaces canins, et des caniparcs ont ouvert (jardin de l'Hôtel de Ville, île Lacroix, quartier Pasteur), voir nos fiches <a href=\"/fiche-activite-parcs-caniparcs-rouen-76\">parcs et caniparcs</a> et <a href=\"/fiche-balade-ile-lacroix-rouen-76\">île Lacroix</a>.</p><p>Sur le réseau Astuce (métro, TEOR, bus), seuls les chiens guides et les petits animaux de compagnie sont admis, sans gêne pour les autres voyageurs, dans un panier d'après le guide du réseau : pas de grand chien.</p>",
+    "html": "<p>À Rouen, l'arrêté de police des jardins (mai 2025) autorise les chiens dans les espaces verts sauf mention contraire à l'entrée, et ne les laisse libres que dans les aménagements dédiés de type caniparc ; le Jardin des plantes n'admet pas les animaux. La Ville recense 6 canisites et 14 espaces canins, et des caniparcs ont ouvert (jardin de l'Hôtel de Ville, île Lacroix, quartier Pasteur), voir nos fiches <a href=\"/fiche-activite-parcs-caniparcs-rouen-76\">parcs et caniparcs</a> et <a href=\"/fiche-balade-ile-lacroix-rouen-76\">île Lacroix</a>.</p><p>Sur le réseau Astuce (métro, TEOR, bus), seuls les chiens guides et les petits animaux de compagnie sont admis, sans gêne pour les autres voyageurs, dans un panier d'après le guide du réseau : pas de grand chien.</p>",
     "sources": [
       {
         "label": "Ville de Rouen — Arrêté de police des jardins, espaces verts et espaces naturels (2026)",
@@ -2716,7 +2716,7 @@
     ]
   },
   "toulon-avec-son-chien": {
-    "html": "<p>À Toulon, la laisse est obligatoire sur l'ensemble de la commune, et le ramassage des déjections aussi, y compris dans les caniparcs (4e classe, 135 €). La Ville compte 30 canisites dont 15 caniparcs où les chiens courent sans laisse, plus de 300 distributeurs de sacs et deux espaces de baignade clôturés pour chiens (anse Tabarly et Pipady, au pied de la Tour Royale), par exemple le <a href=\"/fiche-activite-parc-lices\">parc des Lices</a>. Le <a href=\"/fiche-balade-sentier-douaniers-mitre-toulon-83\">sentier des douaniers et le chemin de la Mitre</a> sont ouverts aux chiens en laisse du 1er octobre au 30 avril, et le massif du Faron les accueille, avec le téléphérique gratuit pour eux.</p><p>Plages du Mourillon : l'arrêté de 2025 n'admet les chiens en laisse que sur la promenade Henri-Fabre (1er septembre-31 mai, puis de 6 h à 8 h 30 l'été), alors que la page de la Ville mise à jour après l'arrêté du 28 septembre 2026 dit « toute l'année, sauf sur le sable, les plages et la plaine des sports » : vérifie sur place. Réseau Mistral : petits chiens en panier gratuits, grands chiens attachés et muselés avec un titre « 1 voyage » (guide mobilité 2026).</p>",
+    "html": "<p>À Toulon, la laisse est obligatoire sur l'ensemble de la commune, et le ramassage des déjections aussi, y compris dans les caniparcs (4e classe, 135 €). La Ville compte 30 canisites dont 15 caniparcs où les chiens courent sans laisse, plus de 300 distributeurs de sacs et deux espaces de baignade clôturés pour chiens (anse Tabarly et Pipady, au pied de la Tour Royale), par exemple le <a href=\"/fiche-activite-parc-lices\">parc des Lices</a>. Le <a href=\"/fiche-balade-sentier-douaniers-mitre-toulon-83\">sentier des douaniers et le chemin de la Mitre</a> sont ouverts aux chiens en laisse du 1er octobre au 30 avril, et le massif du Faron les accueille, avec le téléphérique gratuit pour eux.</p><p>Plages du Mourillon : l'arrêté municipal du 28 septembre 2026 autorise les chiens en laisse toute l'année sur le site, dont la promenade Henri-Fabre, mais pas sur le sable, les pelouses, les plaines de jeux ni les structures sportives ; deux parcs à chiens sont aménagés entre le parking et les plages, et la <a href=\"/fiche-anse-tabarly-toulon\">plage à chiens de l'anse Tabarly</a> reste ouverte toute l'année. Réseau Mistral : petits chiens en panier gratuits, grands chiens attachés et muselés avec un titre « 1 voyage » (guide mobilité 2026).</p>",
     "sources": [
       {
         "label": "Ville de Toulon : « Toulon, ville amie des chiens » (lieux dédiés aux chiens)",
@@ -2737,6 +2737,10 @@
       {
         "label": "Réseau Mistral : guide mobilité 2026",
         "url": "https://s3.eu-west-1.amazonaws.com/files.reseaumistral.com/s3fs-public/documents/RDTPM_guidemobilite_2026_4mai_BD_LB.pdf?VersionId=krXEsPB4lNrxfr7.fyi43XXQKrlRpESt"
+      },
+      {
+        "label": "Ville de Toulon — arrêté plages du Mourillon du 28/09/2026",
+        "url": "https://toulon.fr/sites/default/files/2026-10/AR%20PLAGES%20MOURILLON%2028-09-2026_0.pdf"
       }
     ]
   },
