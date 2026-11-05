@@ -1,0 +1,38 @@
+---
+permalink: en/dog-friendly-beaches-in-winter.html
+permalinkPath: en/dog-friendly-beaches-in-winter.html
+altLangUrl: "plage-chien-hiver"
+lang: "en"
+title: "Dog-friendly beaches in winter: the list by department"
+description: "Off-season, many beaches reopen to dogs. The list of beaches where your dog is allowed all year or only off-season, with each beach's rule."
+layout: base.njk
+---
+{#- Beaches and coast where the dog rule (regleChien) is "toute-annee" or "saisonnier". -#}
+{%- set plagesAll = (collections.fiches | whereData("breadcrumbCatId", "plages")).concat(collections.fiches | whereData("breadcrumbCatId", "cote-azur")) %}
+{%- set hiverPlages = [] %}
+{%- for f in plagesAll %}{% if f.data.regleChien == "saisonnier" or f.data.regleChien == "toute-annee" %}{% set hiverPlages = (hiverPlages.push(f), hiverPlages) %}{% endif %}{% endfor %}
+{%- set nSais = (hiverPlages | whereData("regleChien", "saisonnier")).length %}
+{%- set nToute = (hiverPlages | whereData("regleChien", "toute-annee")).length %}
+<section class="wrap guide-page">
+  <div class="cat-page-crumb"><a href="/en/">Coco Explore</a> / Beaches in winter</div>
+  <span class="tag">Season</span>
+  <h1>Dog-friendly beaches in winter</h1>
+  <p class="guide-lead">Winter is the season of long walks on the sand: many beaches closed to dogs in summer reopen to them off-season. Here are the {{ hiverPlages.length }} Coco Explore beaches where your dog is allowed all year ({{ nToute }}) or only off-season ({{ nSais }}), sorted by department.</p>
+  <div class="callout">Dates change from one town to another (end of September, 1 October, 1 November...) and a leash is often still required. Open each beach's listing before you go: the exact rule and its source are written there. Beaches whose rule is unclear or contradictory are not listed here. Please note: the listings are in French (your browser can translate them), and the department names and regions are in French too.</div>
+  <p>For the rule on every beach, bans included, see the <a href="/plage-chien">beaches and dogs</a> page (in French). And if you are heading to the mountains: <a href="/en/winter-holidays-with-your-dog">winter holidays with your dog</a>.</p>
+</section>
+
+{%- for dep in departements | sort(false, false, "region") %}
+{%- set depPlages = hiverPlages | whereDept(dep.id) %}
+{%- if depPlages.length %}
+<section class="fiches wrap">
+  <h2>{{ dep.nom }} <span class="hiver-dep">({{ dep.region }}, {{ depPlages.length }} beach{{ "es" if depPlages.length > 1 }})</span></h2>
+  <div class="fiche-grid" data-filterable>
+    {%- for fiche in depPlages %}
+    {% include "fiche-card.njk" %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+{%- endfor %}
+<script src="/card-filter.js" defer></script>

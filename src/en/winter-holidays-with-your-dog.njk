@@ -1,0 +1,44 @@
+---
+permalink: en/winter-holidays-with-your-dog.html
+permalinkPath: en/winter-holidays-with-your-dog.html
+altLangUrl: "hiver-chien"
+lang: "en"
+title: "Winter holidays with your dog: resorts, rules and good habits"
+description: "Heading to the mountains this winter with your dog: the resorts where Coco Explore lists addresses, mountain rules and good habits in the cold."
+layout: base.njk
+---
+{%- set hiverStations = ["Chamonix-Mont-Blanc", "Megève", "La Clusaz", "Courchevel", "Méribel", "Val Thorens", "Les Menuires", "La Plagne", "Les Arcs", "Val-d'Isère", "Tignes", "Morzine", "Les Deux Alpes", "Briançon", "Embrun", "Barcelonnette", "Cauterets", "Saint-Lary-Soulan", "Font-Romeu", "Bagnères-de-Luchon", "Gérardmer", "La Bresse", "Annecy", "Aix-les-Bains"] %}
+<section class="wrap guide-page">
+  <div class="cat-page-crumb"><a href="/en/">Coco Explore</a> / Winter holidays with your dog</div>
+  <span class="tag">Season</span>
+  <h1>Winter holidays with your dog</h1>
+  <p class="guide-lead">Snow, snowshoe walks or just a stay in a chalet: the mountains in winter are very much something to share with your dog, as long as you know the resorts' rules and protect your companion from the cold. Here is everything Coco Explore has gathered to prepare your trip. The pages linked below are in French.</p>
+
+  <h2>Good habits in the cold</h2>
+  <p>Cold depending on size and coat, paws damaged by snow and salt, antifreeze, ice, cross-country ski tracks and national parks: our guide details the risks and simple actions, based on veterinary and official sources.</p>
+  <p class="cat-see-more"><a href="/guide-hiver-neige-chien">Read the guide "Dogs in winter: cold, snow, mountains and good habits" (in French) →</a></p>
+
+  <h2>Resorts where to find listings</h2>
+  <p>For each resort, the dedicated page gathers dog-friendly accommodation, walks, vets and, when an official source exists, the essentials of local rules (leash, ski lifts, off-limits areas).</p>
+  <ul class="hiver-stations">
+    {%- for st in hiverStations %}
+    {%- set city = (collections.cityPages | whereEq("ville", st))[0] %}
+    {%- if city %}
+    {%- set nHeb = (city.fiches | whereData("breadcrumbCatId", "hebergements")).length %}
+    <li><a href="/{{ city.slug }}"><strong>{{ city.ville }}</strong></a> <span class="hiver-dep">({{ city.dep.nom }})</span>: {{ city.fiches.length }} listings{% if nHeb %}, including {{ nHeb }} accommodation{{ "s" if nHeb > 1 }}{% endif %}</li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+  <p>Going somewhere else? Find all the <a href="/hebergement-chien">accommodation that accepts dogs</a> and the <a href="/balade-chien">walks</a>, sorted by department (in French).</p>
+
+  <h2>Rules in the mountains</h2>
+  <p>Core areas of national parks, nature reserves, alpine pastures and livestock guardian dogs: the rules change from one massif to another. Our hiking guide takes stock, and the winter guide covers slopes and snow.</p>
+  <p class="cat-see-more"><a href="/guide-randonnee-regles-chien">Read the guide "Hiking with your dog: where and when is it allowed?" (in French) →</a></p>
+
+  <h2>On the road for the holidays</h2>
+  <p>Most ski trips are made by car: what the law says, where to put your dog, breaks... it is all in our guide.</p>
+  <p class="cat-see-more"><a href="/guide-voiture-chien">Read the guide "Travelling by car with your dog" (in French) →</a></p>
+  <p>And in case of trouble on site, keep our guide to <a href="/guide-urgence-veterinaire-chien">finding an on-call vet on holiday</a> (in French) handy.</p>
+  <p>Prefer the sea? Many beaches reopen to dogs off-season: <a href="/en/dog-friendly-beaches-in-winter">beaches open to dogs in winter</a>.</p>
+  <p>Going away for the holidays? Christmas market rules and seasonal dangers: <a href="/en/christmas-with-your-dog">Christmas and Christmas markets with your dog</a>.</p>
+</section>

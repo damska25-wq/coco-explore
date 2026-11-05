@@ -19,6 +19,21 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://cocoexplore.com/en/christmas-with-your-dog</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cocoexplore.com/en/winter-holidays-with-your-dog</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cocoexplore.com/en/dog-friendly-beaches-in-winter</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>0.5</priority>
+  </url>
 {%- for fiche in collections.fichesEn %}
   <url>
     <loc>https://cocoexplore.com/{{ fiche.data.permalinkPath | cleanUrl }}</loc>

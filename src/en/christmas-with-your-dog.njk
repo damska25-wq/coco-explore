@@ -1,0 +1,92 @@
+---
+permalink: en/christmas-with-your-dog.html
+permalinkPath: en/christmas-with-your-dog.html
+altLangUrl: "noel-chien"
+lang: "en"
+title: "Christmas and Christmas markets with your dog: rules and good habits"
+description: "Alsace Christmas markets with your dog: the rules published town by town, and the holiday dangers (chocolate, holly, mistletoe) according to veterinary sources."
+layout: base.njk
+---
+{%- set noelVilles = ["Strasbourg", "Colmar", "Mulhouse", "Obernai", "Sélestat", "Kaysersberg Vignoble", "Riquewihr", "Eguisheim", "Ribeauvillé"] %}
+<section class="wrap guide-page">
+  <div class="cat-page-crumb"><a href="/en/">Coco Explore</a> / Christmas with your dog</div>
+  <span class="tag">Season</span>
+  <h1>Christmas and Christmas markets with your dog</h1>
+  <p class="guide-lead">Lit-up wooden chalets, mulled wine, crowds in the narrow streets: a Christmas market is perfectly doable with your dog, as long as you know what each town says, and don't forget the holiday hazards at home. Here is what Coco Explore found on official sources (read on 05/11/2026), without inventing anything: when no rule is published, we say so. The city pages linked below are in French.</p>
+
+  <h2>Christmas markets with your dog</h2>
+  <p>Rules vary from town to town, and they are rarely posted on the markets' own websites. The dates below are for the 2026 edition; check them before you go.</p>
+
+  <h3>Strasbourg</h3>
+  <p>The city says that dogs on a leash are accepted in the aisles of all the markets (27 November to 24 December 2026), but that visiting with an animal is <strong>strongly discouraged on Saturdays and Sundays</strong> because of the crowds: it is better to come on a weekday, in the morning. Dogs are not allowed in food shops, and each business is free to accept animals or not. On public transport, they are not admitted on CTS buses but travel free on trams (small dogs in a bag or basket; larger ones on a leash and muzzled). <a href="/strasbourg-avec-son-chien">See the Strasbourg page (in French) →</a></p>
+
+  <h3>Colmar</h3>
+  <p>For the Christmas markets (23 November to 29 December 2026), we found <strong>no rule about dogs</strong> on the markets' official website or on the tourist office pages: ask the tourist office (+33 3 89 20 68 92). In Colmar, the municipal order requires a leash. TRACE buses only accept small dogs in a bag or basket, and the driver of the Christmas shuttles may refuse animals when it is busy. Coco's tip (not a rule): in very crowded pedestrian streets, keep your dog on a short leash. <a href="/colmar-avec-son-chien">See the Colmar page (in French) →</a></p>
+
+  <h3>Mulhouse</h3>
+  <p>The tourist office lists "Animals accepted" on its Christmas market page (place de la Réunion, 20 November to 24 December 2026, then 26 and 27 December), with no other condition published. A leash is required in public spaces, according to the city. <a href="/mulhouse-avec-son-chien">See the Mulhouse page (in French) →</a></p>
+
+  <h3>Obernai and Sélestat</h3>
+  <p>No rule about dogs is published for the Christmas markets of Obernai and Sélestat in the pages we read. In Sélestat, a leash is required for all dogs in town according to a 2017 municipal bulletin (to be checked against a recent order). <a href="/obernai-avec-son-chien">Obernai (in French) →</a> · <a href="/selestat-avec-son-chien">Sélestat (in French) →</a></p>
+
+  <h3>Riquewihr, Kaysersberg, Eguisheim and Ribeauvillé</h3>
+  <p>Here too, <strong>no leash rule or ban</strong> is published for the Christmas markets of Riquewihr (27 November to 20 December 2026), Kaysersberg (Fridays, Saturdays and Sundays of Advent, 27 November to 20 December 2026) and Eguisheim (27 November to 30 December 2026, closed from 24 to 26 December according to market directories); in Ribeauvillé, the medieval market (5 to 13 December 2026) has no dog rule that we could read. For the Christmas shuttles between Colmar, Kaysersberg, Riquewihr and Ribeauvillé, the rule for dogs is not published. Plan on a short leash and check with the tourist office. <a href="/riquewihr-avec-son-chien">Riquewihr (in French) →</a> · <a href="/kaysersberg-vignoble-avec-son-chien">Kaysersberg (in French) →</a> · <a href="/eguisheim-avec-son-chien">Eguisheim (in French) →</a> · <a href="/ribeauville-avec-son-chien">Ribeauvillé (in French) →</a></p>
+
+  <h2>Alsatian towns where to find listings</h2>
+  <p>Dog-friendly accommodation, walks, vets: each town's page gathers the Coco Explore listings (in French).</p>
+  <ul class="hiver-stations">
+    {%- for st in noelVilles %}
+    {%- set city = (collections.cityPages | whereEq("ville", st))[0] %}
+    {%- if city %}
+    {%- set nHeb = (city.fiches | whereData("breadcrumbCatId", "hebergements")).length %}
+    <li><a href="/{{ city.slug }}"><strong>{{ city.ville }}</strong></a> <span class="hiver-dep">({{ city.dep.nom }})</span>: {{ city.fiches.length }} listings{% if nHeb %}, including {{ nHeb }} accommodation{{ "s" if nHeb > 1 }}{% endif %}</li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+
+  <h2>Holiday dangers for your dog</h2>
+  <p>Festive meals, decorations, plants: the house changes at Christmas, and some of the traps are serious. Here is what the veterinary and official sources we read say.</p>
+  <ul>
+    <li><strong>Chocolate.</strong> The Western France animal poison centre (CAPAE-Ouest) points out that the dog is the most affected species and that dark chocolate is far more toxic than milk or white chocolate. The first signs (thirst, vomiting, restlessness, tremors) can appear within the hour or only several hours later; in serious cases, heart problems, coma, even death. The University of Montreal veterinary hospital adds that there is no antidote but that the outlook is generally good with early treatment: call your vet quickly, stating the type and amount eaten.</li>
+    <li><strong>Grapes and raisins.</strong> Toxic to dogs according to CAPAE-Ouest: raisins keep all their toxicity, and a bunch of fresh grapes can be fatal for a dog of around ten kilos. In serious cases, acute kidney failure appears within 48 to 72 hours. Think of cheese platters, brioches and cakes.</li>
+    <li><strong>Poultry bones.</strong> A small piece of poultry meat is generally harmless, but pieces with bones are strongly discouraged: thin and sharp, they can get stuck in the oesophagus or intestine. Close the bin properly. (University of Montreal veterinary hospital; this source does not distinguish cooked from raw bones.)</li>
+    <li><strong>Holly, mistletoe and poinsettia.</strong> Anses states that holly leaves and berries are toxic to pets (digestive, even neurological problems with many berries), that mistletoe leaves and berries are toxic, even deadly, and that chewing several poinsettia leaves or stems can cause digestive problems and excessive drooling. The Montreal veterinary hospital considers the toxic dose of holly very low (two berries can cause symptoms in a medium-sized dog).</li>
+    <li><strong>Garlands, ribbons and wrapping.</strong> They can be swallowed and block the digestive tract. According to the same source, if your pet has just swallowed a foreign object, call a vet before making it vomit or pulling on it; keep decorations out of reach.</li>
+    <li><strong>Other table traps.</strong> Xylitol (a sweetener in "sugar-free" products) requires an urgent consultation whatever the amount, and sweet alcoholic drinks or raw bread dough can poison a dog (same source).</li>
+  </ul>
+  <p>If your dog has swallowed something, Anses recommends calling a veterinary poison centre (Lyon +33 4 78 87 10 40, 24/7 according to Anses; Nantes +33 2 40 68 77 40, 8:30 am to midnight according to CAPAE-Ouest) and keeping the label or a photo of the plant. Numbers and steps are detailed in our guide (in French).</p>
+  <p class="cat-see-more"><a href="/guide-urgence-veterinaire-chien">Read the guide "Finding an on-call vet on holiday" (in French) →</a></p>
+
+  <h2>Fireworks and New Year</h2>
+  <p>The SPA (French animal welfare society) points out that the loud, sudden noise of fireworks frightens dogs and can make them run away, especially at New Year. Its advice:</p>
+  <ul>
+    <li>keep your dog indoors, not in the garden, with doors, windows and shutters closed, and soft music or the television to mask the noise;</li>
+    <li>if you have to go out with it, use a short leash (rather than a retractable one), keep its identification up to date (tag, microchip or tattoo), and avoid the firing area just before and after;</li>
+    <li>do not take a puppy with you: the stress can traumatise it;</li>
+    <li>if your dog is very anxious, ask your vet for advice.</li>
+  </ul>
+
+  <h2>Planning your trip</h2>
+  <ul>
+    <li><a href="/en/winter-holidays-with-your-dog">Winter holidays with your dog: resorts, rules and good habits</a></li>
+    <li><a href="/guide-voiture-chien">Travelling by car with your dog (in French)</a></li>
+    <li><a href="/guides">All our practical guides (in French)</a></li>
+  </ul>
+
+  <section class="guide-sources">
+    <h2>Sources</h2>
+    <p>Pages read on 05/11/2026 (all in French). Market rules, dates and opening hours change every year: check with the organisation concerned before you go.</p>
+    <ul>
+      <li><a href="https://noel.strasbourg.eu/fr/emmener-son-chien-sur-le-marche-de-noel" target="_blank" rel="noopener nofollow">Noël à Strasbourg: emmener son chien sur le marché de Noël</a></li>
+      <li><a href="https://noel.strasbourg.eu/foire-aux-questions" target="_blank" rel="noopener nofollow">Noël à Strasbourg: foire aux questions</a></li>
+      <li><a href="https://www.tourisme-colmar.com/fr/pratique/sur-ce-site/toutourisme" target="_blank" rel="noopener nofollow">Colmar tourist office: le canitourisme</a></li>
+      <li><a href="https://noel-colmar.com/fr/navettes-de-noel" target="_blank" rel="noopener nofollow">La Magie de Noël à Colmar: navettes de Noël</a></li>
+      <li><a href="https://www.tourisme-mulhouse.com/a-faire-sur-place/agenda-et-grand-evenements/tout-lagenda/marche-de-noel-de-mulhouse-mulhouse-fr-3839632/" target="_blank" rel="noopener nofollow">Mulhouse Tourisme: marché de Noël de Mulhouse</a></li>
+      <li><a href="https://www.anses.fr/fr/actualite/plantes-decoratives-leur-ingestion-peut-etre-toxique-hommes-animaux" target="_blank" rel="noopener nofollow">Anses: decorative plants, ingesting them can be toxic for humans and animals</a></li>
+      <li><a href="https://www.centre-antipoison-animal.com/chocolat.html" target="_blank" rel="noopener nofollow">CAPAE-Ouest: chocolate</a></li>
+      <li><a href="https://www.centre-antipoison-animal.com/raisin.html" target="_blank" rel="noopener nofollow">CAPAE-Ouest: grapes</a></li>
+      <li><a href="https://chuv.umontreal.ca/le-chuv/hopital-des-animaux-de-compagnie/ressources/les-risques-du-temps-des-fetes" target="_blank" rel="noopener nofollow">University of Montreal veterinary hospital: holiday season risks</a></li>
+      <li><a href="https://www.la-spa.fr/prendre-soin/chiens/comportement-du-chien/feux-dartifice-les-conseils-pour-proteger-votre-chien" target="_blank" rel="noopener nofollow">La SPA: fireworks, advice to protect your dog</a></li>
+    </ul>
+  </section>
+</section>
