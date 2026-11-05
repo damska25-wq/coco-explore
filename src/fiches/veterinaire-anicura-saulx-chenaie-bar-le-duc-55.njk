@@ -25,6 +25,7 @@ cardPictos:
 order: 45600
 lat: 48.75859
 lng: 5.15606
+siteWeb: "https://www.anicura.fr/cliniques/la-chenaie/"
 infoItems:
   - icon: "i-pin"
     label: "Adresse"
@@ -34,16 +35,13 @@ infoItems:
     value: "03 29 79 42 90"
   - icon: "i-clock"
     label: "Horaires"
-    value: "Lundi-vendredi 9h-12h et 14h-18h30, samedi 9h-12h, fermé dimanche"
-  - icon: "i-info"
-    label: "Statut"
-    value: "Le site officiel du réseau AniCura référence lui-même cet établissement dans son propre outil « cliniques d'urgence », avec la consigne d'appeler avant de se déplacer. C'est une auto-déclaration du réseau qui exploite la clinique — pas une confirmation indépendante d'une garde physique permanente sur ce site"
+    value: "Lundi-samedi 9h-12h, lundi-vendredi 14h-18h30, fermé dimanche"
   - icon: "i-alert"
+    label: "Urgences"
+    value: "La page de la clinique n'affiche pas de garde propre : elle renvoie vers l'outil « cliniques d'urgence » du réseau AniCura ; appeler le 03 29 79 42 90 avant de se déplacer"
+  - icon: "i-info"
     label: "Divergence signalée"
-    value: "Un annuaire tiers (veterinaire-disponible.com) liste le même établissement avec un numéro différent, 03 29 75 18 09 — probablement une ancienne coordonnée datant d'avant l'intégration au réseau AniCura (2022), signalée sans trancher"
-  - icon: "i-check"
-    label: "Confiance"
-    value: "Moyenne-haute — adresse, téléphone et horaires désormais confirmés directement par le site officiel de la clinique (source primaire), en plus de l'intégration au réseau AniCura déjà confirmée par communiqué de presse"
+    value: "Un annuaire tiers (veterinaire-disponible.com) donne un autre numéro, 03 29 75 18 09, probablement une ancienne coordonnée d'avant l'intégration au réseau AniCura (2022)"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -51,8 +49,8 @@ bodyHtml: |
       <p>AniCura de la Saulx – La Chênaie est installé 24 rue d'Aulnois, à Bar-le-Duc, préfecture de la Meuse, en bord de l'Ornain.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>Ce cabinet est issu de l'ancienne association vétérinaire de la Saulx, intégrée au réseau AniCura en juillet 2022 selon un communiqué de presse du groupe. L'ensemble forme aujourd'hui un groupe de trois sites, à Bar-le-Duc, Revigny-sur-Ornain et Saint-Dizier. Le site officiel de la clinique confirme les horaires de Bar-le-Duc : lundi-samedi 9h-12h, et en semaine (lundi-vendredi) également 14h-18h30. Ce même réseau AniCura référence l'établissement dans son propre outil de localisation des « cliniques d'urgence », avec la consigne d'appeler avant de se déplacer — mais c'est une auto-déclaration du réseau qui exploite la clinique, pas une confirmation indépendante d'une garde physique permanente. Un ancien numéro (03 29 75 18 09) circule encore sur un annuaire tiers, probablement obsolète depuis l'intégration au réseau en 2022.</p>
-      <div class="callout">Le conseil de Coco : ce n'est pas une garde confirmée 24h/24 — appelle le 03 29 79 42 90 avant de venir, surtout hors horaires, pour savoir si ce site ou un autre site du groupe peut te recevoir.</div>
+      <p>Cette clinique est issue de l'ancienne association vétérinaire de la Saulx, intégrée au réseau AniCura en juillet 2022 selon un communiqué de presse du groupe. La page officielle de la clinique sur anicura.fr (lue le 5 novembre 2026) donne les horaires du lundi au samedi de 9h à 12h et, du lundi au vendredi, de 14h à 18h30. Elle propose un bouton « Urgence » qui renvoie vers l'outil des cliniques d'urgence du réseau, mais n'annonce pas de garde de nuit ou de week-end assurée sur place : appelle le 03 29 79 42 90 avant de venir, surtout hors horaires. Un ancien numéro (03 29 75 18 09) circule encore sur un annuaire tiers, probablement obsolète.</p>
+      <div class="callout">Le conseil de Coco : hors horaires, pas de garde annoncée sur la page de la clinique — appelle le 03 29 79 42 90 pour savoir où emmener ton chien.</div>
 
       <h2>Aux alentours</h2>
       <p>Bar-le-Duc, traversée par l'Ornain, offre un centre-ville agréable à parcourir avec son chien, entre la ville basse et la ville haute.</p>
@@ -62,15 +60,21 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse, téléphone et horaires confirmés par le site officiel de la clinique.</li>
-          <li><svg><use href="#i-info"/></svg> Référencée par le réseau AniCura comme « clinique d'urgence » — auto-déclaration, pas une garde sur place confirmée indépendamment.</li>
-          <li><svg><use href="#i-phone"/></svg> Appelle le 03 29 79 42 90 avant de te déplacer, surtout en dehors des horaires affichés.</li>
+          <li><svg><use href="#i-check"/></svg> Adresse, téléphone et horaires confirmés par la page officielle AniCura de la clinique.</li>
+          <li><svg><use href="#i-alert"/></svg> Pas de garde propre annoncée : appelle avant de te déplacer, surtout hors horaires.</li>
+          <li><svg><use href="#i-phone"/></svg> Téléphone : 03 29 79 42 90.</li>
         </ul>
       </div>
       <div class="sidebar-card">
         <h3>Localisation</h3>
         <ul>
           <li><svg><use href="#i-pin"/></svg> 24 rue d'Aulnois, 55000 Bar-le-Duc · Tél 03 29 79 42 90</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>Sources</h3>
+        <ul>
+          <li><svg><use href="#i-link"/></svg> <a href="https://www.anicura.fr/cliniques/la-chenaie/" rel="noopener">Page officielle AniCura de la clinique</a> et <a href="https://www.anicura.fr/cliniques/la-chenaie/contact" rel="noopener">page contact</a>, lues le 5 novembre 2026</li>
         </ul>
       </div>
     </aside>
