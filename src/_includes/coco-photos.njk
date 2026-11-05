@@ -1,0 +1,15 @@
+{#- Encadré « Coco y est allée » : photos prises sur place par l'équipe (src/_data/cocoPhotos.json, clé = slug de fiche ou de page ville). -#}
+{%- if cp and cp.length %}
+<{{ "div" if cpInline else "section" }} class="{{ "" if cpInline else "wrap " }}coco-photos">
+  <h2><svg width="18" height="18" aria-hidden="true"><use href="#i-paw"/></svg> Coco y est allée</h2>
+  <p class="coco-photos-intro">Photos prises sur place par l'équipe Coco Explore, avec Coco.</p>
+  <div class="coco-photos-grid">
+    {%- for p in cp %}
+    <figure>
+      <img src="{{ p.src }}" alt="{{ p.alt }}" loading="lazy" width="675" height="900">
+      <figcaption>{{ p.legende }}{% if p.date %} · {{ p.date | dateLong }}{% endif %}</figcaption>
+    </figure>
+    {%- endfor %}
+  </div>
+</{{ "div" if cpInline else "section" }}>
+{%- endif %}

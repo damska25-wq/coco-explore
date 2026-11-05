@@ -1101,3 +1101,11 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .guide-author { display: flex; align-items: center; gap: 14px; margin: 2em 0 0; padding: 14px 16px; background: var(--surface); border: 1px solid rgba(var(--ink),0.1); border-radius: 12px; }
 .guide-author img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .guide-author p { margin: 0; font-size: 0.9rem; line-height: 1.5; }
+.coco-photos { margin-top: 1.5em; margin-bottom: 1.5em; }
+.coco-photos h2 { display: flex; align-items: center; gap: 8px; font-size: 1.25rem; color: var(--heading); }
+.coco-photos h2 svg { color: var(--terracotta-deep); }
+.coco-photos-intro { font-size: 0.9rem; color: rgba(var(--ink),0.7); margin-top: -0.4em; }
+.coco-photos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.coco-photos-grid figure { margin: 0; }
+.coco-photos-grid img { width: 100%; height: 240px; object-fit: cover; border-radius: 10px; display: block; }
+.coco-photos-grid figcaption { font-size: 0.82rem; color: rgba(var(--ink),0.7); margin-top: 6px; }

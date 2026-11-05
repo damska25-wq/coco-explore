@@ -194,6 +194,8 @@ extraScripts: |
 
 {{ bodyHtml | safe }}
 
+{%- if lang != "en" %}{% set cp = cocoPhotos[slug] %}{% include "coco-photos.njk" %}{% endif %}
+
 {%- if lang != "en" and guidesByCat[breadcrumbCatId] %}
 <section class="wrap fiche-guides callout">
   <p><strong>À lire aussi :</strong>

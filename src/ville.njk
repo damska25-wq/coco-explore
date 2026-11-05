@@ -30,6 +30,8 @@ extraHead: |
   <p>Coco Explore référence <strong>{{ city.fiches.length }} adresses {{ city.aVille }}</strong> pour sortir avec son chien :
   {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}{{ comma() or " " }}{{ section.catGrid.label | lower | safe }} ({{ n }}){% endif %}{% endif %}{% endfor %}.
   Chaque fiche précise les règles et les conditions d'accueil du chien que nous avons pu vérifier.</p>
+  {%- set cp = cocoPhotos[city.slug] %}
+  {%- set cpInline = true %}{% include "coco-photos.njk" %}
   {%- set essentiel = villesEssentiel[city.slug] %}
   {%- if essentiel %}
   <h2>L'essentiel avec son chien {{ city.aVille }}</h2>

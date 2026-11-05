@@ -1,0 +1,14 @@
+{
+  "escalet": [
+    { "src": "/assets/coco-escalet-rochers.jpg", "alt": "Coco assise sur les rochers de L'Escalet, la crique et le sentier du littoral en arrière-plan", "legende": "Sur les rochers de L'Escalet", "date": "2026-10-17" },
+    { "src": "/assets/coco-escalet-passerelle.jpg", "alt": "Coco sur la passerelle en bois qui mène à la mer à L'Escalet", "legende": "La passerelle vers la mer" }
+  ],
+  "bonporteau": [
+    { "src": "/assets/coco-bonporteau-passerelle.jpg", "alt": "Coco sur une passerelle en bois dans les roseaux, sur le sentier vers Bonporteau", "legende": "Sur le sentier, côté Bonporteau" }
+  ],
+  "cavalaire-sur-mer-avec-son-chien": [
+    { "src": "/assets/coco-cavalaire-plage.jpg", "alt": "Coco rapporte un bâton dans l'eau d'une plage de Cavalaire-sur-Mer", "legende": "Baignade hors saison à Cavalaire" },
+    { "src": "/assets/coco-cavalaire-galets.jpg", "alt": "Coco sur une plage de galets à Cavalaire-sur-Mer", "legende": "Sur une plage de galets" },
+    { "src": "/assets/coco-cavalaire-chemin.jpg", "alt": "Coco sur un chemin de terre ombragé à Cavalaire-sur-Mer", "legende": "Balade sur un chemin de Cavalaire" }
+  ]
+}
