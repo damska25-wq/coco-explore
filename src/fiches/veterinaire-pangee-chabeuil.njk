@@ -2,7 +2,7 @@
 permalink: "{{ permalinkPath }}"
 permalinkPath: fiche-veterinaire-pangee-chabeuil.html
 title: "Clinique Vétérinaire de la Pangée, Chabeuil"
-description: "Clinique Vétérinaire de la Pangée, 53 Avenue de Romans à Chabeuil (Drôme) : adresse, horaires sur rendez-vous, téléphone. Aucune garde 24h/24 confirmée."
+description: "Clinique Vétérinaire de la Pangée, 53 avenue de Romans à Chabeuil (Drôme) : adresse, horaires sur rendez-vous, téléphone et renvoi des urgences hors horaires."
 ogImage: "https://images.unsplash.com/photo-1641044609669-bd3a608dc653?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80"
 heroImage: "https://images.unsplash.com/photo-1641044609669-bd3a608dc653?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80"
 tag: "Vétérinaire"
@@ -19,28 +19,29 @@ slug: "veterinaire-pangee-chabeuil"
 layout: fiche.njk
 cardTag: "Chabeuil"
 cardTitle: "Clinique Vétérinaire de la Pangée (Chabeuil)"
-cardTeaser: "Clinique avenue de Romans à Chabeuil, ouverte sur rendez-vous ; aucune garde ou urgence dédiée confirmée."
+cardTeaser: "Clinique avenue de Romans à Chabeuil, sur rendez-vous ; hors horaires, renvoi vers le service d'urgences de l'agglomération valentinoise."
 cardPictos:
   - "i-vet"
 order: 7208
+siteWeb: "https://pangeevet.fr/"
 lat: 44.90916
 lng: 5.01968
 infoItems:
   - icon: "i-pin"
     label: "Adresse"
-    value: "53 Avenue de Romans, 26120 Chabeuil"
+    value: "53 avenue de Romans, 26120 Chabeuil"
   - icon: "i-phone"
     label: "Téléphone"
     value: "04 75 59 02 07"
   - icon: "i-clock"
     label: "Horaires"
-    value: "Lun-ven 8h-12h et 14h-19h sur RDV, sam 8h-15h en continu sur RDV, fermé le dimanche"
+    value: "Lun-ven 8h-12h et 14h-19h, sam 8h-15h (horaires d'annuaires), consultations sur rendez-vous, dimanche fermé"
   - icon: "i-link"
     label: "Site officiel"
     value: "pangeevet.fr"
   - icon: "i-alert"
-    label: "Confiance"
-    value: "Moyenne sur l'adresse et les horaires ; aucune garde ou urgence dédiée n'est mentionnée, seul un renvoi générique « contacter par téléphone » apparaît"
+    label: "Urgences"
+    value: "Hors horaires d'ouverture, les conditions de fonctionnement du site renvoient vers le service d'urgences de l'agglomération valentinoise (08 99 79 71 93, avec transfert d'appels) ; numéro à confirmer par téléphone"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -48,8 +49,9 @@ bodyHtml: |
       <p>La Clinique Vétérinaire de la Pangée est installée avenue de Romans, à Chabeuil, à l'est de Valence au pied du Vercors. Son site officiel est pangeevet.fr.</p>
 
       <h2>Ce qu'il faut savoir avant d'y aller</h2>
-      <p>La clinique fonctionne entièrement sur rendez-vous : du lundi au vendredi de 8h à 12h puis de 14h à 19h, et le samedi de 8h à 15h en continu. Elle est fermée le dimanche. Je n'ai trouvé aucune mention d'une garde ou d'un service d'urgence dédié pour cet établissement — seulement une indication générique invitant à contacter la clinique par téléphone.</p>
-      <div class="callout">Le conseil de Coco : pense à prendre rendez-vous avant de venir, cette clinique ne fonctionne pas en accès libre. Pour une urgence en dehors des horaires, je n'ai rien trouvé de confirmé sur un éventuel service dédié, donc mieux vaut appeler le 04 75 59 02 07 ou consulter pangeevet.fr pour connaître la marche à suivre.</div>
+      <p>La clinique fonctionne sur rendez-vous : du lundi au vendredi de 8h à 12h puis de 14h à 19h, et le samedi de 8h à 15h (horaires relevés sur des annuaires, la page horaires du site n'a pas pu être lue). Elle est fermée le dimanche.</p>
+      <p>Pour les urgences, les conditions générales de fonctionnement publiées sur pangeevet.fr indiquent qu'en dehors des horaires d'ouverture on peut s'adresser au service d'urgences de l'agglomération valentinoise au 08 99 79 71 93, avec un transfert d'appels. La clinique n'annonce pas de garde assurée par elle-même.</p>
+      <div class="callout">Le conseil de Coco : prends rendez-vous avant de venir. En cas d'urgence hors horaires, appelle d'abord la clinique (04 75 59 02 07) pour confirmer le numéro de garde.</div>
 
       <h2>Aux alentours</h2>
       <p>Chabeuil, au pied des premiers contreforts du Vercors, est un bon point de départ pour des balades entre plaine et montagne avec ton chien.</p>
@@ -59,15 +61,20 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-info"/></svg> Adresse et horaires — confiance moyenne.</li>
-          <li><svg><use href="#i-info"/></svg> Fonctionnement uniquement sur rendez-vous.</li>
-          <li><svg><use href="#i-alert"/></svg> Aucune garde ou urgence dédiée confirmée.</li>
+          <li><svg><use href="#i-clock"/></svg> Sur rendez-vous ; horaires relevés sur des annuaires.</li>
+          <li><svg><use href="#i-alert"/></svg> Hors horaires : renvoi vers le service d'urgences de l'agglomération valentinoise (conditions de fonctionnement du site).</li>
         </ul>
       </div>
       <div class="sidebar-card">
         <h3>Localisation</h3>
         <ul>
           <li><svg><use href="#i-pin"/></svg> 53 Avenue de Romans, 26120 Chabeuil · Tél 04 75 59 02 07</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>Sources</h3>
+        <ul>
+          <li><svg><use href="#i-link"/></svg> <a href="https://pangeevet.fr/" rel="noopener" target="_blank">pangeevet.fr</a> (lue le 05/11/2026)</li>
         </ul>
       </div>
     </aside>
