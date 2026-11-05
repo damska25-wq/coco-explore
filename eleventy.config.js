@@ -180,6 +180,7 @@ export default function (eleventyConfig) {
     "Villefranche-sur-Mer", "Val-d'Isère", "Les Arcs", "La Plagne", "Méribel", "Val Thorens", "Les Menuires", "Morzine", "Font-Romeu",
     "Obernai", "Sélestat", "Kaysersberg Vignoble", "Riquewihr", "Eguisheim", "Ribeauvillé", "La Bresse",
     "Mandelieu-la-Napoule", "Saint-Cyprien", "La Grande-Motte", "Douarnenez", "Bidart", "Seignosse",
+    "Mimizan", "Le Crotoy", "Arzon", "Moustiers-Sainte-Marie", "Wimereux", "Houlgate",
   ];
   const slugify = (str) =>
     str
