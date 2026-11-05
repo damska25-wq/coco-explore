@@ -170,7 +170,7 @@
     ]
   },
   "angouleme-avec-son-chien": {
-    "html": "<p>À Angoulême, d'après le magazine municipal de juin 2026, un arrêté impose la laisse sur toute la commune ; les chiens, même tenus en laisse, sont interdits sur les pelouses, dans les jardins publics et sur les aires de jeux pour enfants, et la laisse est rappelée le long de la coulée verte et dans le bois de l'Anguienne. La Ville fournit des distributeurs de « canipoches » gratuits ; abandonner une déjection est puni de 135 € dans son guide de la propreté. Voir <a href=\"/fiche-balade-coulee-verte-angouleme\">la coulée verte</a> et <a href=\"/fiche-activite-ile-aux-vaches-angouleme\">l'île aux Vaches</a>.</p><p>Dans les bus möbius (STGA), seuls les chiens guides ou d'assistance et les petits chiens transportés dans une caisse fermée sont admis.</p>",
+    "html": "<p>À Angoulême, d'après le magazine municipal de juin 2026, un arrêté impose la laisse sur toute la commune ; les chiens, même tenus en laisse, sont interdits sur les pelouses, dans les jardins publics et sur les aires de jeux pour enfants, et la laisse est rappelée le long de la coulée verte et dans le bois de l'Anguienne. La Ville fournit des distributeurs de « canipoches » gratuits ; l'arrêté prévoit une amende en cas de non-respect. Voir <a href=\"/fiche-balade-coulee-verte-angouleme\">la coulée verte</a> et <a href=\"/fiche-activite-ile-aux-vaches-angouleme\">l'île aux Vaches</a>.</p><p>Dans les bus möbius (STGA), seuls les chiens guides ou d'assistance et les petits chiens transportés dans une caisse fermée sont admis.</p>",
     "sources": [
       {
         "label": "Ville d'Angoulême — Angoulême Mag n°126 (juin 2026), Chiens : les bons réflexes",
@@ -181,12 +181,12 @@
         "url": "https://www.angouleme.fr/mon-quotidien/proprete-urbaine"
       },
       {
-        "label": "Ville d'Angoulême — Guide de la propreté (2022)",
-        "url": "https://www.angouleme.fr/wp-content/uploads/2024/01/guide_proprete_2022.pdf"
-      },
-      {
         "label": "möbius (STGA) — Guide mobilité 2026-2027",
         "url": "https://www.stga.fr/sites/default/files/communication/download/GUIDE%20MOBILITE%CC%81%202026-2027%20WEB.pdf"
+      },
+      {
+        "label": "Ville d'Angoulême — Guide de la propreté (2022), canipoches",
+        "url": "https://www.angouleme.fr/wp-content/uploads/2024/01/guide_proprete_2022.pdf"
       }
     ]
   },
@@ -417,7 +417,7 @@
     ]
   },
   "belfort-avec-son-chien": {
-    "html": "<p>À Belfort, la Ville écrit que les chiens doivent être tenus en laisse dans toute la ville, y compris à l'étang des Forges, les caniparcs étant les seuls lieux sans laisse ; ils sont interdits dans les aires de jeux pour enfants. Il existe deux caniparcs : celui du fort Hatry (4 000 m², avenue de Dubail) et celui de l'étang des Forges. Ramasser les déjections est obligatoire : la Ville met environ 84 distributeurs de sacs à disposition et annonce 135 € d'amende (une autre page de la Ville cite 68 €). Voir aussi <a href=\"/fiche-activite-parc-douce-belfort-90\">le parc de la Douce</a>, <a href=\"/fiche-etang-forges-belfort-90\">l'étang des Forges</a> et <a href=\"/fiche-balade-foret-salbert-belfort-90\">la forêt du Salbert</a>.</p><p>Dans les bus Optymo, les animaux sont interdits ; seuls sont tolérés les petits animaux dans un panier et les chiens guides d'aveugles tenus par un harnais.</p>",
+    "html": "<p>À Belfort, la Ville écrit que les chiens doivent être tenus en laisse dans toute la ville, y compris à l'étang des Forges, les caniparcs étant les seuls lieux sans laisse ; ils sont interdits dans les aires de jeux pour enfants. Il existe deux caniparcs : celui du fort Hatry (4 000 m², avenue de Dubail) et celui de l'étang des Forges. Ramasser les déjections est obligatoire : la Ville met environ 84 distributeurs de sacs à disposition et annonce 135 € d'amende (le magazine municipal d'avril 2024 citait encore 68 €). Voir aussi <a href=\"/fiche-activite-parc-douce-belfort-90\">le parc de la Douce</a>, <a href=\"/fiche-etang-forges-belfort-90\">l'étang des Forges</a> et <a href=\"/fiche-balade-foret-salbert-belfort-90\">la forêt du Salbert</a>.</p><p>Dans les bus Optymo, les animaux sont interdits ; seuls sont tolérés les petits animaux dans un panier et les chiens guides d'aveugles tenus par un harnais.</p>",
     "sources": [
       {
         "label": "Ville de Belfort — Belfort Mag n°316, Belfort pratique (laisse, étang des Forges)",
@@ -1191,7 +1191,7 @@
     ]
   },
   "dijon-avec-son-chien": {
-    "html": "<p>Dijon annonce 125 parcs et jardins accessibles aux chiens à condition qu'ils soient tenus en laisse, comme sur tout l'espace public. Pour les laisser courir, la Ville compte 13 caniparcs clos (parc des Carrières Bacquin, parc du Drapeau, parc du Suzon, square Montchapet…) et un caniludiparc de 1 000 m² au parc de la Toison d'Or (une autre page de la Ville parle de 14 caniparcs). Ne pas ramasser les déjections coûte 135 € ; 144 totems distribuent des sacs. Voir <a href=\"/fiche-balade-parc-colombiere-dijon-21\">le parc de la Colombière</a>, <a href=\"/fiche-activite-jardin-arquebuse-dijon\">le jardin de l'Arquebuse</a> et <a href=\"/fiche-balade-lac-kir-dijon-21\">le lac Kir</a>.</p><p>Sur le réseau Divia, les animaux sont interdits, sauf les chiens guides ou d'assistance et les petits animaux en panier, sac, poussette ou cage fermés, sur les genoux.</p>",
+    "html": "<p>Dijon annonce 125 parcs et jardins accessibles aux chiens à condition qu'ils soient tenus en laisse, comme sur tout l'espace public. Pour les laisser courir, la Ville compte 13 caniparcs clos (parc des Carrières Bacquin, parc du Drapeau, parc du Suzon, square Montchapet…) et un caniludiparc sans laisse au parc de la Toison d'Or (une autre page de la Ville parle de 14 caniparcs). La baignade des chiens dans les bassins publics est interdite. Ne pas ramasser les déjections coûte 135 € ; 144 totems distribuent des sacs. Voir <a href=\"/fiche-balade-parc-colombiere-dijon-21\">le parc de la Colombière</a>, <a href=\"/fiche-activite-jardin-arquebuse-dijon\">le jardin de l'Arquebuse</a> et <a href=\"/fiche-balade-lac-kir-dijon-21\">le lac Kir</a>.</p><p>Sur le réseau Divia, les animaux sont interdits, sauf les chiens guides ou d'assistance et les petits animaux en panier, sac, poussette ou cage fermés, sur les genoux.</p>",
     "sources": [
       {
         "label": "Ville de Dijon — Déjections canines",
@@ -1880,7 +1880,7 @@
     ]
   },
   "laval-avec-son-chien": {
-    "html": "<p>À Laval, le règlement des espaces verts (arrêté 28/09 de la Ville) interdit les animaux sur les pelouses ; dans les parcs ouverts aux chiens, ils sont tenus en laisse en permanence et promenés dans les allées, avec ramassage des déjections sauf dans les « canisites » prévus à cet effet. Le <a href=\"/fiche-balade-jardin-perrine-laval-53\">jardin de la Perrine</a> demande une laisse courte.</p><p>Dans les bus TUL, les animaux ne sont pas admis, sauf les chiens d'aveugle et les animaux de petite taille transportés dans une cage de transport.</p>",
+    "html": "<p>À Laval, le règlement des espaces verts (arrêté n° 28/09 de la Ville, un texte ancien, daté de 2009 d'après le fichier) interdit les animaux sur les pelouses ; dans les parcs ouverts aux chiens, ils sont tenus en laisse en permanence et promenés dans les allées, avec ramassage des déjections sauf dans les « canisites » prévus à cet effet. Le <a href=\"/fiche-balade-jardin-perrine-laval-53\">jardin de la Perrine</a> demande une laisse courte.</p><p>Dans les bus TUL, les animaux ne sont pas admis, sauf les chiens d'aveugle et les animaux de petite taille transportés dans une cage de transport.</p>",
     "sources": [
       {
         "label": "Ville de Laval — Jardin de la Perrine",
@@ -1986,7 +1986,7 @@
     ]
   },
   "le-puy-en-velay-avec-son-chien": {
-    "html": "<p>Au Puy-en-Velay, le jardin Henri-Vinay accepte les animaux domestiques tenus en laisse dans les allées, et le parc Kaeppelin n'admet que les chiens en laisse, uniquement dans les allées ; les chiens de 1re catégorie sont interdits dans ces parcs (la Ville précise même dans tous ses squares et jardins pour Henri-Vinay), ceux de 2e catégorie doivent être muselés et en laisse au parc Kaeppelin, et les déjections doivent être ramassées. Sur la Via Fluvia, la brochure 2026 demande aussi la laisse et le ramassage (voir <a href=\"/fiche-balade-voie-verte-velay-puy-en-velay-43\">la voie verte du Velay</a>).</p><p>Sur le réseau de bus Mobilité en Velay (TUDIP), le règlement n'autorise que les chiens guides ou d'assistance ; une amende de 100 € sur place est prévue pour les animaux non autorisés.</p>",
+    "html": "<p>Au Puy-en-Velay, le jardin Henri-Vinay accepte les animaux domestiques tenus en laisse dans les allées, et le parc Kaeppelin n'admet que les chiens en laisse, uniquement dans les allées ; les chiens de 1re catégorie sont interdits au parc Kaeppelin ; au jardin Henri-Vinay, la Ville exclut les chiens de 1re et 2e catégorie, même muselés, dans tous ses squares et jardins publics, alors que ceux de 2e catégorie sont admis muselés et en laisse au parc Kaeppelin. Les déjections doivent être ramassées. Sur la Via Fluvia, la brochure 2026 demande aussi la laisse et le ramassage (voir <a href=\"/fiche-balade-voie-verte-velay-puy-en-velay-43\">la voie verte du Velay</a>).</p><p>Sur le réseau de bus Mobilité en Velay (TUDIP), le règlement n'autorise que les chiens guides ou d'assistance ; une amende de 100 € sur place est prévue pour les animaux non autorisés.</p>",
     "sources": [
       {
         "label": "Mairie du Puy-en-Velay — Le jardin Henri Vinay",
@@ -2463,11 +2463,19 @@
     ]
   },
   "montpellier-avec-son-chien": {
-    "html": "<p>À Montpellier, la Ville rappelle l'obligation de tenir son chien en laisse en ville et publie une carte des parcs qui acceptent les chiens, avec des « espaces chiens » clos dans de nombreux parcs (Méric, Montcalm, Malbosc, Rieucoulon, Agriparc du Mas Nouguier…), comme dans le <a href=\"/fiche-balade-parc-montcalm-montpellier-34\">parc Montcalm</a> ou le <a href=\"/fiche-balade-parc-malbosc-montpellier-34\">parc Malbosc</a>. D'après l'office de tourisme, la promenade du Peyrou se fait en laisse, et les chiens ne sont pas admis au zoo ni au Jardin des plantes.</p><p>Sur le réseau TaM (tram et bus), le règlement intérieur tolère les chiens tenus en laisse et muselés, ainsi que les petits chiens et chats transportés dans un panier ou une cage fermée, à condition de ne gêner personne.</p>",
+    "html": "<p>À Montpellier, un arrêté municipal (n° 2009/11 du 22 juillet 2009, cité par le guide de la Ville) impose la laisse sur tout le territoire de la commune ; ne pas ramasser une déjection coûte 135 €. La Ville publie une carte des parcs qui acceptent les chiens, avec des « espaces chiens » clos dans de nombreux parcs (Méric, Montcalm, Malbosc, Rieucoulon, Agriparc du Mas Nouguier, Rimbaud, Clemenceau…), comme dans le <a href=\"/fiche-balade-parc-montcalm-montpellier-34\">parc Montcalm</a> ou le <a href=\"/fiche-balade-parc-malbosc-montpellier-34\">parc Malbosc</a>. D'après l'office de tourisme, la promenade du Peyrou se fait en laisse, et les chiens ne sont pas admis au zoo ni au Jardin des plantes (sauf chiens guides).</p><p>Sur le réseau TaM (tram et bus), le règlement intérieur tolère les chiens-guides, les chiens muselés et tenus en laisse, ainsi que les petits chiens et chats transportés dans un panier ou une cage fermée, à condition de ne gêner personne.</p>",
     "sources": [
       {
         "label": "Ville de Montpellier — J'ai un animal en ville (carte des espaces chiens)",
         "url": "https://www.montpellier.fr/vie-quotidienne/vivre-ici/proteger-les-animaux/jai-un-animal-en-ville"
+      },
+      {
+        "label": "Ville de Montpellier — Guide réglementaire de l'animal en ville (arrêté du 22 juillet 2009)",
+        "url": "https://www.montpellier.fr/sites/default/files/2024-12/Guide-reglementaire-2023.pdf"
+      },
+      {
+        "label": "Ville de Montpellier — Brigades de lutte contre les incivilités (amende crotte de chien)",
+        "url": "https://www.montpellier.fr/actions/competences/securites-et-tranquillite-publique/regulation-du-domaine-public-et-mobilites/lutter-contre-les-incivilites"
       },
       {
         "label": "En Commun (Ville) — Séances d'éducation canine dans les espaces chiens, 2026",
