@@ -73,7 +73,7 @@
     ]
   },
   "alencon-avec-son-chien": {
-    "html": "<p>À Alençon, l'arrêté 2020-159 impose que tout chien soit constamment tenu en laisse sur la voie publique. Dans les parcs, squares et jardins, le règlement municipal 2021-89 tolère les animaux de compagnie en laisse, à condition qu'ils ne dégradent ni ne souillent les lieux ; la Fuie des Vignes, site naturel protégé, est soumise à la même règle. Des sachets pour déjections sont mis à disposition un peu partout en ville.</p>",
+    "html": "<p>À Alençon, l'arrêté 2020-159 impose que tout chien soit constamment tenu en laisse sur la voie publique. Dans les parcs, squares et jardins, le règlement municipal 2021-89 tolère les animaux de compagnie en laisse, à condition qu'ils ne dégradent ni ne souillent les lieux ; leurs besoins doivent être faits dans les lieux aménagés ou ramassés par le propriétaire. À la Fuie des Vignes, site naturel protégé et inondable, la Ville demande de rester sur les chemins et rappelle que les chiens y sont en laisse comme partout en ville.</p>",
     "sources": [
       {
         "label": "Ville d'Alençon — Arrêté 2020-159 divagation et circulation des chiens",
@@ -90,7 +90,7 @@
     ]
   },
   "amboise-avec-son-chien": {
-    "html": "<p>À Amboise, la ville met à disposition une dizaine de distributeurs de sacs à déjections (parking des Tanneurs, place du Marché, parc de la Sapinière, parvis Saint-Denis, camping de l'Île d'Or…), et des sacs sont aussi donnés à l'accueil de la mairie. Au plan d'eau de la Varenne-sous-Chandon, les chiens doivent être en laisse et ne peuvent pas nager (la baignade y est interdite). Au château royal, ton chien reste en laisse courte (moins de 2 m) dans les jardins, doit être porté à l'intérieur et n'a pas accès aux souterrains.</p>",
+    "html": "<p>À Amboise, la ville met à disposition une dizaine de distributeurs de sacs à déjections (parking des Tanneurs, place du Marché, parc de la Sapinière, parvis Saint-Denis, camping de l'Île d'Or…), et des sacs sont aussi donnés à l'accueil de la mairie et à l'agence postale de la gare. Au plan d'eau de la Varenne-sous-Chandon, les chiens doivent être en laisse et ne peuvent pas nager (la baignade y est interdite). Au château royal, le règlement de visite impose une laisse de moins de 2 m dans les jardins et ton chien doit être porté dans les espaces intérieurs ; seuls les chiens d'assistance sont admis partout.</p>",
     "sources": [
       {
         "label": "Ville d'Amboise — Animaux",
@@ -255,10 +255,10 @@
     ]
   },
   "arras-avec-son-chien": {
-    "html": "<p>À Arras, la ville rappelle que les chiens doivent être tenus en laisse dans l'espace public (150 € d'amende selon sa publication) et propose des <strong>parcs canins clos</strong> où ils peuvent courir librement : aux Grandes Prairies (2 400 m², ouvert en 2023), près de la Citadelle (jardin du Gouverneur) et au Val de Scarpe (ouvert en 2025, chiens de catégorie 1 interdits, catégorie 2 muselés). Un autre est annoncé rue Émile-Zola.</p>",
+    "html": "<p>À Arras, la Ville rappelle que les chiens doivent être tenus en laisse dans l'espace public (150 € d'amende) et propose des <strong>parcs canins</strong> où ils peuvent courir librement : au Jardin du Gouverneur et à la base de loisirs des Grandes Prairies (inauguré en 2023, deux chiens maximum par personne), plus un caniparc au parc de la Scarpe, ouvert en 2025 (accessible jour et nuit, chiens de catégorie 1 interdits, catégorie 2 muselés). Un autre parc est annoncé rue Émile-Zola.</p>",
     "sources": [
       {
-        "label": "Ville d'Arras — Publication sur la laisse (Facebook officiel)",
+        "label": "Ville d'Arras — Publication sur la laisse et les parcs canins (Facebook officiel)",
         "url": "https://www.facebook.com/VilleArras/posts/%F0%9D%90%88%F0%9D%90%A7%F0%9D%90%9C%F0%9D%90%A2%F0%9D%90%AF%F0%9D%90%A2%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%AD%F0%9D%90%9E%CC%81%F0%9D%90%AC-tenir-son-chien-en-laisse-cest-la-r%C3%A8gle-pour-la-s%C3%A9curit%C3%A9-de-tous-pr/1083477467142673"
       },
       {
@@ -285,7 +285,7 @@
     ]
   },
   "aurillac-avec-son-chien": {
-    "html": "<p>À Aurillac, dans tous les espaces urbanisés (centre-ville, voie publique, parcs et jardins publics), ton chien doit être tenu en laisse, sauf dans les <strong>espaces canins de liberté</strong> clos : Peyrolles, square des frères Andrieu, Cité Clairvivre, presqu'île de la Ponétie (et le cours d'Angoulême selon le guide du chien citadin). La mairie cite 35 € d'amende pour un chien non tenu en laisse et a annoncé des verbalisations à 135 € pour les déjections non ramassées.</p>",
+    "html": "<p>À Aurillac, dans tous les espaces urbanisés (centre-ville, voie publique, parcs et jardins publics), ton chien doit être tenu en laisse, sauf dans les <strong>espaces canins de liberté</strong> clos : Peyrolles (derrière le gymnase), square des frères Andrieu, Cité Clairvivre, presqu'île de la Ponétie (le guide du chien citadin cite aussi le cours d'Angoulême). Un arrêté municipal prévoit 35 € d'amende pour un chien non tenu en laisse.</p>",
     "sources": [
       {
         "label": "Mairie d'Aurillac — Obligation de tenue des chiens en laisse",
@@ -307,7 +307,7 @@
     ]
   },
   "avignon-avec-son-chien": {
-    "html": "<p>À Avignon, l'arrêté municipal sur les squares et espaces verts (2021) <strong>interdit l'accès aux chiens, même tenus en laisse</strong>, dans les squares et espaces verts, sauf dans les squares équipés d'un caniparc : il faut alors rejoindre le caniparc par la sortie la plus proche, sans détour et en laisse. La mairie précise que les animaux ne sont pas autorisés au Rocher des Doms. Au pont d'Avignon, l'office de tourisme indique que les chiens sont acceptés en laisse, mais pas au palais des Papes (chiens guides exceptés).</p>",
+    "html": "<p>À Avignon, l'arrêté municipal sur les squares et espaces verts (2021) <strong>interdit l'accès aux chiens, même tenus en laisse</strong>, sauf dans les squares équipés d'un caniparc : il faut alors rejoindre le caniparc par la sortie la plus proche, sans détour et en laisse. La Ville précise que les animaux ne sont pas autorisés au Rocher des Doms. Sur le pont d'Avignon, l'office de tourisme indique que les animaux sont les bienvenus, tenus en laisse.</p>",
     "sources": [
       {
         "label": "Ville d'Avignon — Arrêté réglementant les squares et espaces verts (2021)",
@@ -383,7 +383,7 @@
     ]
   },
   "beaune-avec-son-chien": {
-    "html": "<p>À Beaune, un arrêté municipal impose la laisse, et le ramassage immédiat des déjections sur le domaine public (135 € d'amende, police municipale). Les chiens en laisse sont admis dans les parcs de la ville. L'espace canin du parking République, où les chiens peuvent courir en liberté, a rouvert en 2026 avec un double portail et un point d'eau. La mairie renforce aussi les distributeurs de sacs.</p>",
+    "html": "<p>À Beaune, un arrêté municipal impose la laisse et le ramassage immédiat des déjections sur le domaine public ; la Ville annonce 135 € d'amende (sa page « Nuisances » cite 68 €, majorés à 180 €) et la police municipale verbalise. Les chiens tenus en laisse sont admis dans les parcs. Le parc à chiens du secteur République doit rouvrir à partir de l'été 2026, avec un point d'eau et un double portail. La mairie renforce aussi les distributeurs de sacs « toutounet ».</p>",
     "sources": [
       {
         "label": "Ville de Beaune — Les parcs et jardins",
@@ -404,7 +404,7 @@
     ]
   },
   "beauvais-avec-son-chien": {
-    "html": "<p>À Beauvais, le toutouguide de l'office de tourisme rappelle de tenir ton chien en laisse et de ramasser ses déjections (135 € d'amende) ; des sacs sont disponibles en ville et à l'office de tourisme. Au plan d'eau du Canada, les chiens en laisse sont autorisés d'après le règlement affiché sur la plaquette de la base de loisirs.</p>",
+    "html": "<p>À Beauvais, le toutouguide de l'office de tourisme rappelle de tenir ton chien en laisse sur la voie publique et de ramasser ses déjections (135 € d'amende) ; des sacs sont disponibles en ville et à l'office de tourisme. Il cite le parc Marcel-Dassault (ouvert toute l'année, chien en laisse) et le plan d'eau du Canada, où la plaquette de la base de loisirs indique « chiens tenus en laisse autorisés ».</p>",
     "sources": [
       {
         "label": "Visit Beauvais — Toutouguide 2027",
@@ -505,7 +505,7 @@
     ]
   },
   "beziers-avec-son-chien": {
-    "html": "<p>À Béziers, le règlement des parcs et jardins impose que tout animal soit constamment tenu en laisse ; les aires de jeux sont interdites aux chiens, même en laisse, ainsi que les pelouses, et les chiens de catégories 1 et 2 sont interdits dans les parcs. Dans le centre-ville, un contrôle d'identification génétique (ADN canin) vise les chiens des habitants ; l'office de tourisme précise que les touristes n'y sont pas soumis. Dans les bus Beemob, les petits animaux sont admis en panier ou sac ; les chiens muselés et en laisse sont tolérés avec un titre de transport.</p>",
+    "html": "<p>À Béziers, le règlement des parcs, jardins et squares (2021) <strong>interdit les animaux domestiques</strong> dans l'enceinte des parcs et jardins, sauf les chiens identifiés génétiquement (ADN transmis à la mairie), qui doivent être tenus en laisse ; les pelouses et les aires de jeux restent interdites aux chiens, même en laisse, et les chiens de catégories 1 et 2 sont exclus. Seuls les espaces verts périurbains de Tabarka, Bourbaki et du Bosquet font exception. Dans le centre-ville, le contrôle d'ADN canin vise les chiens des habitants ; l'office de tourisme précise que les touristes n'y sont pas soumis (le règlement des parcs ne fait pas cette distinction). Dans les bus Beemob, les petits animaux sont admis en panier ou sac ; les chiens muselés et en laisse sont tolérés avec un titre de transport.</p>",
     "sources": [
       {
         "label": "Ville de Béziers — Règlement général des parcs, jardins et squares",
@@ -679,7 +679,7 @@
     ]
   },
   "brive-la-gaillarde-avec-son-chien": {
-    "html": "<p>À Brive, l'office de tourisme (guide Toutourisme) indique que les chiens sont admis en laisse dans le parc de la Guierle, le parc des Perrières, le square Auboiroux et sur la voie verte de la Corrèze (17 km). Un point d'eau (« toutoubar ») est accessible toute l'année devant l'office. Dans les bus Libéo, les animaux sont interdits, sauf les chiens guides et les petits animaux transportés dans un panier, un sac ou une cage sur les genoux, gratuitement.</p>",
+    "html": "<p>À Brive, l'office de tourisme (guide Toutourisme) indique que les chiens sont admis en laisse dans le parc de la Guierle, le parc des Perrières, le square Auboiroux et sur la voie verte de la Corrèze (17 km). Deux miroirs d'eau (parc Simone-Veil, place Bernard-Murat) permettent de les rafraîchir, et un point d'eau (« toutoubar ») est accessible toute l'année devant l'office. Au lac du Causse, les chiens sont les bienvenus en laisse et peuvent se baigner en dehors de la zone surveillée. Dans les bus Libéo, les animaux sont interdits, sauf les chiens guides et les petits animaux transportés dans un panier, un sac ou une cage sur les genoux, gratuitement.</p>",
     "sources": [
       {
         "label": "Brive Tourisme — Activités à faire avec son chien",
@@ -803,7 +803,7 @@
     ]
   },
   "carcassonne-avec-son-chien": {
-    "html": "<p>À Carcassonne, l'office de tourisme indique que les chiens sont admis en laisse dans toute la Cité médiévale, sauf au château comtal et à la basilique Saint-Nazaire ; les animaux ne sont pas non plus autorisés dans le monument (château et remparts), chiens d'assistance exceptés. Une visite guidée « Toutou Tour » est proposée aux propriétaires de chiens. Dans les bus du réseau RTCA, seuls sont acceptés les petits chiens portés dans un sac ou un contenant.</p>",
+    "html": "<p>À Carcassonne, l'office de tourisme indique que les chiens sont admis en laisse dans toute la Cité médiévale, sauf au château comtal et à la basilique Saint-Nazaire ; les animaux ne sont pas non plus autorisés dans le monument (château et remparts), chiens d'assistance exceptés. Une visite guidée « Toutou Tour » (1 h 15) est proposée aux propriétaires de chiens, le dimanche à 10 h en juillet-août. Dans les bus du réseau RTCA, seuls sont acceptés les petits chiens portés dans un sac ou un contenant.</p>",
     "sources": [
       {
         "label": "Office de tourisme de Carcassonne — FAQ",
@@ -884,7 +884,7 @@
     ]
   },
   "chalon-sur-saone-avec-son-chien": {
-    "html": "<p>À Chalon-sur-Saône, la ville installe dans les quartiers des <strong>canisites</strong> entretenus quotidiennement et des distributeurs de sacs à déjections (plan à télécharger sur chalon.fr). Dans les bus Zoom, seuls les petits animaux dans un panier posé sur les genoux sont admis, ainsi que les chiens d'assistance.</p>",
+    "html": "<p>À Chalon-sur-Saône, la ville installe dans les quartiers des <strong>canisites</strong> entretenus quotidiennement et des distributeurs de sacs à déjections (plan à télécharger sur chalon.fr). Un parc pour chiens existe rue Salvador-Allende (quartier du Plateau) et un espace clos pour laisser les chiens en liberté a été voté en 2024 au parc de la Biodiversité (réalisation non confirmée). Dans les bus Zoom, seuls les petits animaux dans un panier posé sur les genoux sont admis, ainsi que les chiens d'assistance (muselés).</p>",
     "sources": [
       {
         "label": "Ville de Chalon-sur-Saône — Propreté urbaine",
@@ -947,11 +947,15 @@
     ]
   },
   "charleville-mezieres-avec-son-chien": {
-    "html": "<p>À Charleville-Mézières, la Ville indique que les chiens sont interdits au parc animalier. Le <a href=\"/fiche-balade-parc-mont-olympe-charleville-mezieres-08\">parc du Mont Olympe</a> est présenté par la Ville comme un espace où les animaux sont acceptés.</p>",
+    "html": "<p>À Charleville-Mézières, la Ville indique que les chiens sont interdits, même en laisse, au parc animalier d'Aiglemont. Le <a href=\"/fiche-balade-parc-mont-olympe-charleville-mezieres-08\">parc du Mont Olympe</a> est présenté par la Ville (« animaux acceptés ») et par l'office de tourisme (« animaux bienvenus ») comme un espace où les chiens sont admis ; ces pages ne publient pas de règle de laisse.</p>",
     "sources": [
       {
         "label": "Ville de Charleville-Mézières — parc animalier",
         "url": "https://www.charleville-mezieres.fr/parc-animalier"
+      },
+      {
+        "label": "Ville de Charleville-Mézières — Le mont Olympe",
+        "url": "https://www.charleville-mezieres.fr/directory/entry/le-mont-olympe"
       }
     ]
   },
@@ -977,7 +981,7 @@
     ]
   },
   "chateauroux-avec-son-chien": {
-    "html": "<p>À Châteauroux, le <a href=\"/fiche-parc-belle-isle-chateauroux-36\">caniparc de Belle-Isle</a> laisse les chiens évoluer librement sous la surveillance de leur propriétaire (7 h-17 h du 1er novembre au 28 février, 7 h-21 h du 1er mars au 31 octobre) ; les chiens de 1re catégorie y sont interdits et ceux de 2e catégorie doivent être muselés et tenus en laisse. La Ville a installé 50 distributeurs de sacs en centre-ville et dans les parcs ; une déjection non ramassée coûte 135 €.</p>",
+    "html": "<p>À Châteauroux, l'arrêté municipal impose la laisse sur les voies publiques et les domaines publics et privés de la commune, et interdit les aires de jeux pour enfants aux chiens, même en laisse. Le <a href=\"/fiche-parc-belle-isle-chateauroux-36\">caniparc de Belle-Isle</a> laisse les chiens évoluer librement sous la surveillance de leur propriétaire (7 h-17 h du 1er novembre au 28 février, 7 h-21 h du 1er mars au 31 octobre) ; les chiens de 1re catégorie y sont interdits et ceux de 2e catégorie doivent être muselés et tenus en laisse. La Ville a installé 50 distributeurs de sacs en centre-ville et dans les parcs ; une déjection non ramassée coûte 135 €.</p>",
     "sources": [
       {
         "label": "Châteauroux Métropole — caniparc de Belle-Isle",
@@ -986,11 +990,15 @@
       {
         "label": "Châteauroux Métropole — le chien dans ma ville",
         "url": "https://www.chateauroux-metropole.fr/vie-pratique/proprete/le-chien-dans-ma-ville"
+      },
+      {
+        "label": "Ville de Châteauroux — Arrêté chiens tenus en laisse (2018)",
+        "url": "https://www.chateauroux-metropole.fr/wp-content/uploads/2025/10/Arrete_chiens_tenus_en_laisse_signe.pdf"
       }
     ]
   },
   "chatellerault-avec-son-chien": {
-    "html": "<p>Dans les bus du réseau TAC de Châtellerault, le règlement d'exploitation n'admet gratuitement que les animaux domestiques de petite taille, dans un panier fermé, un sac ou une cage aérés, sur les genoux ; ils ne peuvent pas occuper une place assise. Les chiens guides sont admis à côté de leur maître, tenus en laisse. La Ville publie aussi une carte des canisettes.</p>",
+    "html": "<p>Dans les bus du réseau TAC de Châtellerault, le règlement d'exploitation n'admet gratuitement que les animaux domestiques de petite taille, dans un panier fermé, un sac ou une cage aérés, sur les genoux ; ils ne peuvent pas occuper une place assise. Les chiens guides sont admis à côté de leur maître, tenus en laisse. Pour le transport à la demande, la présence d'un chien doit être signalée à la réservation. La Ville publie aussi une carte des canisettes.</p>",
     "sources": [
       {
         "label": "Règlement d'exploitation du réseau de transport du Grand Châtellerault",
@@ -1071,7 +1079,7 @@
     ]
   },
   "cluny-avec-son-chien": {
-    "html": "<p>À Cluny, l'office de tourisme rappelle que le chien doit être tenu en laisse sur la voie et dans les espaces publics, et que seule la partie extérieure de l'abbaye est citée parmi les lieux accessibles ; le site officiel de l'<a href=\"/fiche-activite-abbaye-cluny-jardins-71\">abbaye</a> n'admet que les chiens d'assistance. Le parc du <a href=\"/fiche-activite-haras-national-cluny-71\">Haras national</a> est ouvert aux chiens tenus en laisse (arrêté 2023-311). Ramasser les déjections est obligatoire : 35 € d'amende selon la Ville, 68 € minimum selon l'office de tourisme.</p>",
+    "html": "<p>À Cluny, l'office de tourisme rappelle que le chien doit être tenu en laisse sur la voie et dans les espaces publics, et que seule la partie extérieure de l'abbaye est citée parmi les lieux accessibles ; le site officiel de l'<a href=\"/fiche-activite-abbaye-cluny-jardins-71\">abbaye</a> ne cite que les chiens d'assistance tenus en laisse comme autorisés. Le parc du <a href=\"/fiche-activite-haras-national-cluny-71\">Haras national</a> est ouvert aux chiens tenus en laisse (arrêté 2023-311). Ramasser les déjections est obligatoire : 35 € d'amende selon la Ville, 68 € minimum selon l'office de tourisme.</p>",
     "sources": [
       {
         "label": "Office de tourisme de Cluny — guide de bienvenue pour les toutous",
@@ -1122,8 +1130,12 @@
     ]
   },
   "compiegne-avec-son-chien": {
-    "html": "<p>À Compiègne, le <a href=\"/fiche-balade-parc-chateau-compiegne-60\">parc du château</a> est fermé aux chiens. La <a href=\"/fiche-balade-foret-compiegne-60\">forêt domaniale</a>, qui commence près du centre, suit la règle générale : chien en laisse hors des allées forestières du 15 avril au 30 juin.</p>",
+    "html": "<p>À Compiègne, le <a href=\"/fiche-balade-parc-chateau-compiegne-60\">parc du château</a> n'accepte pas les chiens, quelle que soit leur taille et même transportés dans un sac (FAQ du château). La <a href=\"/fiche-balade-foret-compiegne-60\">forêt domaniale</a>, qui commence près du centre, suit la règle générale : chien en laisse hors des allées forestières du 15 avril au 30 juin.</p>",
     "sources": [
+      {
+        "label": "Château de Compiègne — foire aux questions",
+        "url": "https://chateaudecompiegne.fr/foire-aux-questions"
+      },
       {
         "label": "Agglomération de la région de Compiègne — la forêt domaniale",
         "url": "https://www.agglo-compiegne.fr/la-foret-domaniale"
@@ -1353,7 +1365,7 @@
     ]
   },
   "evreux-avec-son-chien": {
-    "html": "<p>Dans les bus Transurbain d'Évreux, seuls les chiens d'aveugle et les petits animaux transportés dans un panier ou un sac sont autorisés.</p>",
+    "html": "<p>Dans les bus Transurbain d'Évreux, les chiens d'aveugle sont autorisés, ainsi que les animaux de petite taille à condition qu'ils soient transportés dans un panier ou un sac.</p>",
     "sources": [
       {
         "label": "Transurbain — règles du savoir-voyager",
@@ -1429,7 +1441,7 @@
     ]
   },
   "fontainebleau-avec-son-chien": {
-    "html": "<p>À Fontainebleau, un arrêté municipal (2013.005.P) oblige à tenir les chiens en laisse dans l'espace public ; une déjection non ramassée coûte au moins 135 €. Au <a href=\"/fiche-balade-parc-chateau-grand-canal-fontainebleau-77\">château</a>, les animaux sont interdits dans les cours et jardins, et seul le parc autour du Grand Canal admet les chiens en laisse. En <a href=\"/fiche-balade-foret-fontainebleau-77\">forêt</a>, l'ONF rappelle la laisse obligatoire hors allées forestières du 15 avril au 30 juin.</p>",
+    "html": "<p>À Fontainebleau, la Ville rappelle que les chiens doivent être tenus en laisse sur la voie publique et dans les lieux publics ; une déjection non ramassée coûte au moins 135 €. Au <a href=\"/fiche-balade-parc-chateau-grand-canal-fontainebleau-77\">château</a>, les animaux de compagnie sont interdits dans le château et les jardins, et seul le parc autour du Grand Canal admet les chiens (en laisse, selon le règlement de visite). En <a href=\"/fiche-balade-foret-fontainebleau-77\">forêt</a>, l'ONF rappelle que la laisse est obligatoire hors allées forestières du 15 avril au 30 juin.</p>",
     "sources": [
       {
         "label": "Ville de Fontainebleau — mon chien en ville",
@@ -1450,7 +1462,7 @@
     ]
   },
   "fougeres-avec-son-chien": {
-    "html": "<p>À Fougères, un arrêté municipal impose la laisse sur tout le domaine public et interdit les chiens à l'intérieur des équipements publics. La Ville rappelle en 2024 une amende de 135 € pour les déjections non ramassées. Selon l'office de tourisme, le jardin public est fermé aux chiens, alors que le <a href=\"/fiche-activite-jardin-val-de-nancon-fougeres-35\">jardin du Val Nançon</a> les accepte en laisse.</p>",
+    "html": "<p>À Fougères, un arrêté municipal impose la laisse sur tout le domaine public et interdit les chiens à l'intérieur des équipements publics. La Ville rappelle en 2024 que les chiens doivent être tenus en laisse en ville et dans les parcs, et qu'une déjection non ramassée coûte 135 €. Selon l'office de tourisme, le jardin public est fermé aux chiens, alors que le <a href=\"/fiche-activite-jardin-val-de-nancon-fougeres-35\">jardin du Val Nançon</a> les accepte en laisse.</p>",
     "sources": [
       {
         "label": "Ville de Fougères — arrêté de 1999 sur la circulation des chiens",
@@ -2158,7 +2170,7 @@
     ]
   },
   "loches-avec-son-chien": {
-    "html": "<p>À Loches, tout propriétaire de chien doit ramasser immédiatement les déjections de son animal sur le domaine public ; des poubelles pour déchets canins sont installées dans le centre-ville et des sacs gratuits sont disponibles en mairie. Abandonner des déchets sur la voie publique est puni d'une amende forfaitaire de 68 €.</p>",
+    "html": "<p>À Loches, tout propriétaire de chien doit ramasser immédiatement les déjections de son animal sur le domaine public communal ; des poubelles pour déchets canins sont installées dans le centre-ville et des sacs gratuits sont disponibles en mairie. La page de la Ville cite une amende forfaitaire de 68 € pour tout dépôt ou abandon de déchets sur la voie publique.</p>",
     "sources": [
       {
         "label": "Ville de Loches : réglementations",
@@ -2201,7 +2213,7 @@
     ]
   },
   "louviers-avec-son-chien": {
-    "html": "<p>Dans les parcs et jardins de Louviers, la Ville rend obligatoire de tenir son chien en laisse courte et de ramasser ses déjections ; les deux-roues, le barbecue et la baignade y sont interdits. Cette règle figure sur la page « Parcs et jardins » de la mairie (jardin public Aristide-Briand, jardin du Manoir de Bigard, square Albert-Ier, jardin de Saint-Lubin).</p>",
+    "html": "<p>Dans les parcs et jardins de Louviers, la Ville rend obligatoire de tenir son chien en laisse courte et de ramasser ses déjections ; les deux-roues, le barbecue, la baignade et la pêche y sont interdits. Ces règles figurent sur la page « Parcs et jardins » de la mairie (ouverts de 8h30 à 20h du 1er avril au 31 octobre, de 8h30 à 17h ensuite).</p>",
     "sources": [
       {
         "label": "Ville de Louviers : parcs et jardins",
@@ -2386,7 +2398,7 @@
     ]
   },
   "millau-avec-son-chien": {
-    "html": "<p>À Millau, les chiens doivent obligatoirement être tenus en laisse sur la voie publique et dans tous les lieux publics. La Ville compte 10 canisites et 150 distributeurs de sacs. Un caniparc clos de plus de 700 m² est ouvert à l'île de la Maladrerie, près des serres municipales : accès continu, 10 chiens au maximum, sacs fournis. Seuls les chiens guides d'aveugle circulent librement dans les parcs et jardins (arrêté de 2016).</p>",
+    "html": "<p>À Millau, les chiens doivent obligatoirement être tenus en laisse sur la voie publique et dans tous les lieux publics. La Ville compte 10 canisites et 150 distributeurs de sacs. Un caniparc clos de plus de 700 m² est ouvert à l'île de la Maladrerie, près des serres municipales : accès continu, 10 chiens au maximum, chiens de plus de 4 mois identifiés et vaccinés, sacs fournis.</p><p>Attention aux parcs : l'arrêté municipal de 2016 interdit l'entrée et la circulation des animaux domestiques dans les parcs, jardins et squares qu'il liste (parc de la Victoire, jardin de la Mairie, jardin Raux, plusieurs squares) ; seuls les chiens guides de personnes malvoyantes sont admis.</p>",
     "sources": [
       {
         "label": "Ville de Millau : animaux en ville",
@@ -2429,7 +2441,7 @@
     ]
   },
   "montauban-avec-son-chien": {
-    "html": "<p>À Montauban, la Ville compte 10 canisites et de nombreux dérouleurs de sacs canins gratuits. Dans les bus du Grand Montauban, seuls sont acceptés les chiens guides ou d'assistance et les animaux de petite taille transportés sur les genoux dans un panier bien fermé (règlement d'exploitation).</p>",
+    "html": "<p>À Montauban, la Ville compte 10 canisites et de nombreux dérouleurs de sacs canins gratuits. Dans les bus du Grand Montauban, sont tolérés les chiens-guides et les animaux de petite taille transportés sur les genoux dans un panier bien fermé ou une cage (règlement d'exploitation).</p>",
     "sources": [
       {
         "label": "Ville de Montauban : propreté",
@@ -2442,7 +2454,7 @@
     ]
   },
   "montlucon-avec-son-chien": {
-    "html": "<p>À Montluçon, la laisse est obligatoire pour tous les chiens en ville, dans les espaces publics (guide « Mon chien dans ma ville »). La Ville compte 12 canisites, 46 distributeurs de sacs et 2 parcs à chiens clos ; les agents peuvent verbaliser les déjections non ramassées (68 € minimum). Au parc des Ilets, l'office de tourisme indique les chiens acceptés tenus en laisse. Dans les bus Maelis, seuls les chiens guides et les animaux de petite taille portés dans un panier ou un sac de transport sont acceptés, gratuitement.</p>",
+    "html": "<p>À Montluçon, la laisse est obligatoire pour tous les chiens en ville, dans les espaces publics (guide « Mon chien dans ma ville », 2019). La Ville compte 12 canisites, 46 distributeurs de sacs et 2 parcs à chiens (un parc à chiens est clos, précise le guide) ; les agents peuvent verbaliser les déjections non ramassées (68 € minimum). Au parc des Ilets, l'office de tourisme indique les chiens acceptés tenus en laisse. Dans les bus Maelis, seuls les chiens guides d'aveugle et les animaux de petite taille portés dans un panier ou un sac de transport sont acceptés, gratuitement.</p>",
     "sources": [
       {
         "label": "Ville de Montluçon : propreté urbaine",
@@ -2593,7 +2605,7 @@
     ]
   },
   "nevers-avec-son-chien": {
-    "html": "<p>À Nevers, l'arrêté municipal sur la salubrité et la tranquillité publiques impose de tenir les chiens en laisse sur le domaine public et interdit de laisser souiller les espaces plantés ou fleuris, sauf aux endroits réservés aux animaux. La Ville compte 11 canisites et 36 bornes de sacs ; le parc Roger-Salengro a un canisite avec une aire d'ébat. Dans les bus Taneo, les chiens de petite taille dans un panier et les chiens guides voyagent gratuitement ; les gros chiens muselés et tenus en laisse sont admis avec un ticket validé.</p>",
+    "html": "<p>À Nevers, l'arrêté municipal sur la salubrité et la tranquillité publiques impose de tenir les chiens en laisse sur le domaine public et interdit de laisser souiller les espaces plantés ou fleuris, sauf aux endroits réservés aux animaux. La Ville compte 11 canisites et 36 bornes de sacs. Dans les bus Taneo, les chiens de petite taille non dangereux dans un panier et les chiens d'aveugle voyagent gratuitement ; les gros chiens muselés et tenus en laisse sont admis moyennant un titre de transport payant.</p>",
     "sources": [
       {
         "label": "Ville de Nevers : arrêté municipal salubrité, sécurité et tranquillité publiques (2012)",
@@ -2627,7 +2639,7 @@
     ]
   },
   "nimes-avec-son-chien": {
-    "html": "<p>À Nîmes, le règlement des parcs et jardins de la Ville demande de tenir les chiens en laisse et de ramasser leurs déjections, par exemple aux <a href=\"/fiche-balade-jardins-fontaine-nimes\">Jardins de la Fontaine</a>, où l'office de tourisme indique « animaux acceptés ». Plusieurs dizaines de canisites et des canisacs sont répartis en ville ; une déjection non ramassée coûte 38 € de contravention, plus 38 € de frais de nettoyage si la Ville les facture (76 € au total). Le site du réseau Tango ne publie pas de règle sur les chiens dans les bus.</p>",
+    "html": "<p>À Nîmes, le règlement des parcs et jardins de la Ville demande de tenir les chiens en laisse et de ramasser leurs déjections, par exemple aux <a href=\"/fiche-balade-jardins-fontaine-nimes\">Jardins de la Fontaine</a>, où l'office de tourisme indique « animaux acceptés ». Plusieurs dizaines de canisites et des canisacs sont répartis en ville ; une déjection non ramassée coûte 38 € de contravention, plus 38 € de frais de nettoyage si la Ville les facture (76 € au total).</p>",
     "sources": [
       {
         "label": "Ville de Nîmes : les espaces verts et naturels",
@@ -2892,7 +2904,7 @@
     ]
   },
   "quimper-avec-son-chien": {
-    "html": "<p>À Quimper, les chiens doivent être tenus en laisse (Ville de Quimper) et leurs maîtres sont invités à ramasser les déjections partout, dans les jardins, squares et rues comme dans les canisites, de petits espaces sablés et clôturés répartis dans le centre-ville. Sur le réseau de bus QUB, les chiens sont interdits, sauf les chiens guides ; seuls les animaux domestiques de petite taille transportés dans un panier, un sac ou une cage bien fermés peuvent être admis.</p>",
+    "html": "<p>À Quimper, la Ville rappelle qu'en ville les chiens doivent être tenus en laisse (arrêté municipal). Des canisites, petits espaces sablés et clôturés de 15 à 20 m² avec distributeur de sachets gratuits, sont répartis dans le centre-ville ; leurs utilisateurs sont invités à ramasser les déjections. Sur le réseau de bus QUB, les animaux sont interdits sauf les chiens guides et d'assistance ; seuls les animaux domestiques de petite taille dans un panier, un sac ou une cage bien fermés, sur les genoux, sont admis.</p>",
     "sources": [
       {
         "label": "Ville de Quimper : animal en ville / fourrière",
@@ -2918,7 +2930,7 @@
     ]
   },
   "redon-avec-son-chien": {
-    "html": "<p>Dans les bus du réseau RED (lignes A, B et C), seuls les animaux de petite taille transportés dans un panier, un sac ou une cage bien fermés sont admis ; les chiens d'assistance et chiens guides le sont aussi. Sur le port de plaisance, le règlement de Redon Agglomération demande de tenir ou garder sous contrôle les chiens qui circulent sur les pontons et ouvrages portuaires.</p>",
+    "html": "<p>Dans les bus du réseau RED, seuls les animaux de petite taille transportés dans un panier, un sac ou une cage bien fermés sont admis ; les chiens d'assistance et chiens guides le sont aussi. Sur le port de plaisance, le règlement de Redon Agglomération demande de tenir ou garder sous contrôle les chiens qui circulent sur les pontons et ouvrages portuaires.</p>",
     "sources": [
       {
         "label": "RED : foire aux questions (animaux à bord)",
@@ -3020,7 +3032,7 @@
     ]
   },
   "rochefort-avec-son-chien": {
-    "html": "<p>À Rochefort, la laisse est obligatoire pour tous les chiens sur la voie publique (amende de 35 €, pouvant être majorée jusqu'à 150 €) et les déjections non ramassées coûtent 135 €. Un premier parc canin clôturé de 2 100 m² a ouvert le 17 juillet 2026 boulevard de la Résistance, entre le collège Lafayette et le Polygone : les chiens y évoluent sans laisse (20 maximum à la fois), sacs et poubelles sur place, chiens de 1re catégorie interdits et de 2e catégorie muselés.</p><p>Au Jardin des Retours, l'office de tourisme indique que les chiens sont admis tenus en laisse.</p>",
+    "html": "<p>À Rochefort, la laisse est obligatoire pour tous les chiens sur la voie publique (amende de 35 €, pouvant être majorée jusqu'à 150 €) et les déjections non ramassées coûtent 135 €. Un premier parc canin clôturé de 2 100 m² est ouvert boulevard de la Résistance, entre le collège Lafayette et le Polygone : accès libre, chiens sans laisse (20 au maximum à la fois), sacs et poubelles sur place, chiens de 1re catégorie non admis et de 2e catégorie muselés.</p><p>Au Jardin des Retours, l'office de tourisme indique que les chiens sont admis tenus en laisse.</p>",
     "sources": [
       {
         "label": "Ville de Rochefort : en ville, je tiens mon chien en laisse",
@@ -3037,7 +3049,7 @@
     ]
   },
   "rodez-avec-son-chien": {
-    "html": "<p>La Ville de Rodez met 90 distributeurs de sacs à déjections canines à disposition dans toute la commune. Dans les bus Agglobus (gratuits), seuls les chiens guides tenus en laisse et les animaux de petite taille transportés dans un panier sont admis ; la foire aux questions du réseau précise même que les animaux, « même tenus en laisse », sont interdits sauf les chiens guides muselés et les petits animaux en cage de transport fermée. Pour un chien de taille moyenne ou grande, prévois donc de te déplacer à pied.</p>",
+    "html": "<p>La Ville de Rodez met 90 distributeurs de sacs à déjections canines à disposition dans toute la commune. Dans les bus Agglobus, seuls les chiens guides tenus en laisse et les animaux de petite taille transportés dans un panier sont admis ; la foire aux questions du réseau précise même que les animaux, « même tenus en laisse », sont interdits sauf les chiens guides muselés et les petits animaux en cage de transport fermée. Pour un chien de taille moyenne ou grande, prévois donc de te déplacer à pied.</p>",
     "sources": [
       {
         "label": "Ville de Rodez : propreté (distributeurs de sacs)",
@@ -3109,7 +3121,7 @@
     ]
   },
   "saint-brieuc-avec-son-chien": {
-    "html": "<p>À Saint-Brieuc, l'office de tourisme demande de tenir son chien en laisse dans le parc de la vallée de Gouédic, qui traverse la ville jusqu'au port du Légué. Dans la réserve naturelle de la baie de Saint-Brieuc, les chiens doivent être tenus en laisse en tout temps, et la circulation des chiens est interdite dans deux zones de protection renforcée (fond de l'anse d'Yffiniac et estuaire du Gouessant). À la plage des Rosaires, sur la commune voisine de Plérin, les chiens sont admis du 15 juin au 15 septembre 2026 avant 10h et après 19h, en laisse.</p><p>Les cars BreizhGo qui desservent la ville n'admettent que les petits animaux transportés dans un panier et les chiens guides ou d'assistance.</p>",
+    "html": "<p>À Saint-Brieuc, l'office de tourisme demande de tenir son chien en laisse dans le parc de la vallée de Gouédic, qui traverse la ville jusqu'au port du Légué. Dans la réserve naturelle de la baie de Saint-Brieuc, les chiens doivent être tenus en laisse en tout temps, et la circulation des chiens est interdite dans deux zones de protection renforcée (fond de l'anse d'Yffiniac et estuaire du Gouessant). À la plage des Rosaires, sur la commune voisine de Plérin, les chiens sont admis du 15 juin au 15 septembre 2026 avant 10h et après 19h, en laisse.</p><p>D'après la fiche horaires de la ligne 5 (Rostrenen-Quintin-Saint-Brieuc), les cars BreizhGo n'admettent que les petits animaux transportés dans un panier et les chiens guides ou d'assistance tenus en laisse.</p>",
     "sources": [
       {
         "label": "Office de tourisme Baie de Saint-Brieuc : parc de la vallée de Gouédic",
@@ -3258,7 +3270,7 @@
     ]
   },
   "saint-quentin-avec-son-chien": {
-    "html": "<p>À Saint-Quentin, la laisse est obligatoire dans les lieux publics et, selon la presse locale et nationale, un arrêté de l'été 2026 la limite à deux mètres (longes interdites) place de l'Hôtel-de-Ville, sur les parvis de la basilique et de la gare, dans les parcs et jardins et sur les chemins de halage, avec jusqu'à 150 € d'amende. Au parc des Champs-Élysées, l'office de tourisme rappelle que les chiens sont admis en laisse mais pas dans le « Jardin d'horticulture » ; au parc d'Isle, ils sont admis en laisse sauf dans la partie « Isle Sauvage » et sur le sentier d'observation.</p><p>Plus de 120 totems canins (sacs) sont répartis dans la ville ; les déjections non ramassées coûtent 135 € d'après le Toutouguide 2026.</p>",
+    "html": "<p>À Saint-Quentin, le Toutouguide 2026 de l'office de tourisme rappelle que le chien doit être tenu en laisse sur la voie publique (longes interdites). Un arrêté du 10 juillet 2026, relayé par France 3, limite la laisse à deux mètres (laisse à enrouleur bloquée) place de l'Hôtel-de-Ville, sur les parvis de la basilique et de la gare, dans les parcs et jardins, sur les chemins de halage et aux abords des écoles, avec jusqu'à 150 € d'amende. Au parc des Champs-Élysées, les chiens sont admis en laisse mais pas dans le « Jardin d'horticulture » ; au parc d'Isle, ils sont admis en laisse sauf dans la partie « Isle Sauvage » et sur le sentier d'observation.</p><p>Plus de 120 totems canins (sacs) sont répartis dans la ville. Les déjections non ramassées coûtent 135 € d'après le Toutouguide, alors que le règlement des parcs de 2012 citait un minimum de 35 €.</p>",
     "sources": [
       {
         "label": "Destination Saint-Quentin : Toutouguide 2026",
@@ -3448,7 +3460,7 @@
     ]
   },
   "soissons-avec-son-chien": {
-    "html": "<p>Dans les bus du réseau TUS (et le transport à la demande Flexi'TUS), les chiens guides tenus en laisse et les petits animaux dans un panier, un sac ou sur les genoux voyagent gratuitement ; les autres chiens sont acceptés attachés et muselés, avec un titre de transport. Les musées de Soissons sont interdits aux animaux, sauf chiens guides et chiens d'assistance.</p>",
+    "html": "<p>Dans les bus du réseau TUS, les chiens guides d'aveugle tenus en laisse et les animaux de petite taille dans un panier, un sac ou sur les genoux voyagent gratuitement ; les autres chiens sont acceptés attachés et muselés, avec un titre de transport. Les musées de Soissons sont interdits aux animaux, sauf chiens guides d'aveugle et chiens d'assistance.</p>",
     "sources": [
       {
         "label": "Mobil'infos (SITUS) : réseau TUS, questions fréquentes",
@@ -3491,7 +3503,7 @@
     ]
   },
   "tarbes-avec-son-chien": {
-    "html": "<p>À Tarbes, le jardin Massey est interdit aux chiens, même tenus en laisse (règlement de la Ville et office de tourisme). Pour le reste, la Ville met en place 33 canisites et 61 distributeurs de sacs ; l'amende pour déjections non ramassées est de 135 € sur la page « L'animal dans la ville » de la mairie et de 68 € sur le plan des canisites de l'office de tourisme.</p>",
+    "html": "<p>À Tarbes, le jardin Massey est interdit aux chiens, même tenus en laisse (page de la Ville). Pour le reste, la Ville met en place 33 canisites et 61 distributeurs de sacs ; l'amende pour déjections non ramassées est de 135 € sur la page « L'animal dans la ville » de la mairie et de 68 € sur le plan des canisites de l'office de tourisme.</p>",
     "sources": [
       {
         "label": "Ville de Tarbes : le jardin Massey",
@@ -3714,7 +3726,7 @@
     ]
   },
   "vendome-avec-son-chien": {
-    "html": "<p>À Vendôme, l'office de tourisme (Guide du toutourisme 2026) signale un canisite square Clemenceau et liste des espaces pour se dégourdir les pattes en ville, comme les Prés aux Chats (3 000 m²). Le Bois de l'Oratoire et les plans d'eau voisins (Villiers-sur-Loir, Naveil, Saint-Ouen) demandent la laisse. Les déjections non ramassées exposent à 90 € d'amende (135 € majorée). Dans les cimetières, les animaux sont interdits, même en laisse.</p>",
+    "html": "<p>À Vendôme, l'office de tourisme (Guide du toutourisme 2026) signale un canisite square Clemenceau et liste des espaces pour se dégourdir les pattes en ville, comme les Prés aux Chats (3 000 m²) ou les Grands-Prés (9 000 m², chiens en laisse). Le Bois de l'Oratoire et les plans d'eau voisins (Villiers-sur-Loir, Naveil) demandent la laisse. Les déjections non ramassées exposent à 90 € d'amende (135 € majorée). Dans les cimetières, les animaux sont interdits, même en laisse, sauf chiens guides.</p>",
     "sources": [
       {
         "label": "Office de tourisme de Vendôme : Guide du toutourisme 2026",
