@@ -1884,6 +1884,19 @@
       }
     ]
   },
+  "la-roche-sur-yon-avec-son-chien": {
+    "html": "<p>Aucun arrêté de laisse ni règlement des parcs propre aux chiens n'est publié par la Ville dans les sources lues : l'office de tourisme cite le <a href=\"/fiche-balade-jardin-mitterrand-compagnons-roche-sur-yon-85\">jardin François-Mitterrand</a>, les <a href=\"/fiche-balade-parcs-rivoli-alluchon-roche-sur-yon-85\">parcs d'Alluchon et de Rivoli</a>, la forêt de la Chaize ou l'étang du Plessis-Bergeret parmi les lieux où promener son chien « librement ou en laisse », sans autre précision. La laisse reste donc la prudence en ville.</p><p>Seule interdiction écrite : les cimetières municipaux, fermés aux animaux même tenus en laisse (règlement des cimetières 2025, articles 19 et 99). L'office cite aussi la place Napoléon et son bestiaire mécanique, en accès libre, parmi les sites visitables avec un chien, et propose un point d'eau pour chiens à l'accueil.</p>",
+    "sources": [
+      {
+        "label": "Office de tourisme Destination La Roche-sur-Yon — Toutou Guide",
+        "url": "https://www.destination-larochesuryon.fr/cote-pratique/toutou-guide-vacances-chien-la-roche-sur-yon"
+      },
+      {
+        "label": "Ville de La Roche-sur-Yon — règlement des cimetières 2025",
+        "url": "https://larochesuryon.fr/app/uploads/2026/01/reglement_des_cimetieres_2025.pdf"
+      }
+    ]
+  },
   "la-rochelle-avec-son-chien": {
     "html": "<p>À La Rochelle, la ville impose la laisse sur tout l'espace public (68 € d'amende sans laisse) et le ramassage des déjections (135 € sinon) ; elle indique 140 points de distribution de sacs. Pour les plages, la page « Le chien en ville » (mise à jour en 2024) dit les chiens autorisés du 15 octobre au 31 mars et interdits du 1er avril au 14 octobre, alors que son dépliant de 2022 dit seulement « interdit sur les plages ». Le site de l'agglomération précise qu'ils sont admis en laisse du 15 octobre au 31 mars, et toute l'année seulement sur la plage de Port-Neuf et la partie nord de la 3e plage des Minimes ; la fiche Minimes de ce même site parle d'une interdiction du 1er avril au 14 octobre (seuls les chiens de personnes à mobilité réduite admis). Regarde les panneaux avant de poser la serviette.</p><p>Pour que ton chien coure sans laisse, la ville a aménagé deux parcs canins, à <a href=\"/fiche-activite-parc-canin-mireuil-la-rochelle\">Mireuil</a> et à <a href=\"/fiche-activite-parc-canin-villeneuve-les-salines-la-rochelle\">Villeneuve-les-Salines</a>, ainsi qu'un « espace de liberté » dans le parc Frank Delmas, délimité par des ganivelles (dépliant municipal de 2022).</p>",
     "sources": [
