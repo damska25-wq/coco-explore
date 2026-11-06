@@ -4,3 +4,7 @@
 
 [functions]
   directory = "netlify/functions"
+
+[build.environment]
+  # Le build Eleventy dépasse la mémoire par défaut de Node (~2 Go) depuis novembre 2026.
+  NODE_OPTIONS = "--max-old-space-size=4096"
