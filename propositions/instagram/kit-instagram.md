@@ -1,0 +1,83 @@
+# Kit Instagram : « Commente MOT → je t'envoie le lien »
+
+But : faire venir sur le site des gens qui ne passent pas par Google, grâce aux reels de Coco. Chaque reel se termine par « Commente MOT et je t'envoie la liste ». Un outil répond tout seul en message privé avec le lien.
+
+---
+
+## 1. Mise en place (une seule fois, environ 20 minutes)
+
+1. **Compte Instagram professionnel** : Paramètres → Type de compte et outils → Passer à un compte professionnel (« Créateur » convient). C'est gratuit et ça donne aussi les statistiques.
+2. **ManyChat** (manychat.com) : crée un compte avec « Se connecter avec Instagram ». La formule gratuite suffit pour démarrer ; vérifie dans leur interface les limites actuelles (nombre de contacts, automatisations).
+3. Dans ManyChat : **Automation → New Automation → « Respond to comments on your post or reel »** (le nom exact peut varier). Pour chaque reel :
+   - **Déclencheur** : le reel concerné, mot-clé = le mot choisi (ex. `PLAGE`), en ajoutant aussi les variantes `plage` et `Plage` si l'outil ne gère pas la casse.
+   - **Réponse publique au commentaire** (optionnelle, ça fait vivre le post) : « C'est envoyé en message privé 🐾 ».
+   - **Message privé** : le texte de la section 3, avec un bouton qui ouvre le lien.
+4. Teste avec un deuxième compte (ou un ami) avant de publier.
+
+> Instagram n'autorise l'envoi automatique qu'en réponse à une action de la personne (commentaire, message). C'est ce que fait ce mécanisme : pas de message non sollicité.
+
+---
+
+## 2. Les liens (avec suivi dans Google Analytics)
+
+Les paramètres `utm` permettent de voir dans Analytics (Acquisition → Trafic → Source/support « instagram / dm ») combien de visites chaque reel rapporte. Copie les liens tels quels :
+
+| Mot-clé | Page | Lien à mettre dans le bouton |
+|---|---|---|
+| PLAGE | Plages où le chien est admis l'hiver | https://cocoexplore.com/plage-chien-hiver?utm_source=instagram&utm_medium=dm&utm_campaign=plage-hiver |
+| NOEL | Noël avec son chien (marchés, dangers des fêtes) | https://cocoexplore.com/noel-chien?utm_source=instagram&utm_medium=dm&utm_campaign=noel |
+| GARDE | Faire garder son chien pendant les vacances | https://cocoexplore.com/guide-garde-chien-vacances?utm_source=instagram&utm_medium=dm&utm_campaign=garde |
+| NEIGE | Vacances à la montagne avec son chien | https://cocoexplore.com/hiver-chien?utm_source=instagram&utm_medium=dm&utm_campaign=hiver |
+| RANDO (printemps-été) | Règles de randonnée (laisse, parcs, massifs fermés) | https://cocoexplore.com/guide-randonnee-regles-chien?utm_source=instagram&utm_medium=dm&utm_campaign=rando |
+
+---
+
+## 3. Les messages privés automatiques (à copier)
+
+**PLAGE**
+> Coucou, c'est Coco 🐾 Voici les plages et le littoral où les chiens sont admis hors saison, département par département, avec la règle de chaque plage. Pense à vérifier l'affichage sur place, les arrêtés changent !
+> [Voir les plages ouvertes aux chiens]
+
+**NOEL**
+> Coucou, c'est Coco 🎄🐾 Marchés de Noël avec son chien (Strasbourg, Colmar, villages d'Alsace…), aliments dangereux pendant les fêtes, feux d'artifice et vétérinaires de garde : tout est là.
+> [Lire le guide de Noël]
+
+**GARDE**
+> Coucou, c'est Coco 🐾 Pension, pet-sitter, garde en famille : les papiers à prévoir, les questions à poser et les adresses près de chez toi.
+> [Lire le guide garde]
+
+**NEIGE**
+> Coucou, c'est Coco ❄️🐾 Les stations de montagne où partir avec son chien : hébergements qui l'acceptent, balades, vétérinaires.
+> [Voir les stations]
+
+**RANDO**
+> Coucou, c'est Coco 🥾🐾 Laisse en forêt, parcs nationaux, massifs fermés l'été, troupeaux et patous : les règles à connaître avant de partir.
+> [Lire le guide rando]
+
+---
+
+## 4. Idées de reels (15 à 30 secondes, Coco à l'écran)
+
+Règle : ne montrer Coco sur une plage qu'aux dates et heures où les chiens y sont admis (sinon les commentaires le relèveront vite). Pas de visage d'enfant reconnaissable.
+
+1. **« L'hiver, la plage est à nous » (mot-clé PLAGE)** — Coco qui court au bord de l'eau en hiver.
+   - Texte à l'écran : « En hiver, beaucoup de plages rouvrent aux chiens 🐾 » → « Mais pas toutes, et pas partout pareil » → « J'ai la liste, département par département ».
+   - Légende : « Hors saison, plein de plages rouvrent aux chiens… mais les règles changent d'une commune à l'autre. Commente PLAGE et je t'envoie la liste vérifiée 🐾 »
+2. **« 3 choses à ne pas donner à ton chien à Noël » (NOEL)** — Coco qui regarde la table d'un air innocent.
+   - Texte à l'écran : chocolat, raisins secs, os de volaille cuits (repris de la page Noël, sources Anses / CAPAE-Ouest) → « et le reste ? ».
+   - Légende : « Commente NOEL et je t'envoie le guide complet (et les marchés de Noël où je peux venir) 🎄 »
+3. **« Tu pars sans moi ? » (GARDE)** — Coco devant une valise.
+   - Légende : « Pension, pet-sitter, famille… Commente GARDE et je t'envoie ce qu'il faut vérifier avant de me confier 🐾 »
+4. **« Ma première neige » (NEIGE)** — Coco dans la neige.
+   - Légende : « Commente NEIGE et je t'envoie les stations où les chiens sont les bienvenus ❄️ »
+5. **Série « Coco y est allée »** — chaque lieu visité (Escalet, Bonporteau, Le Lavandou…) avec le lien de la fiche en message privé (mot-clé = nom du lieu, ex. ESCALET).
+
+**Fréquence conseillée** : 1 à 2 reels par semaine ; republier le reel PLAGE ou NOEL en story avec le sticker « lien » de temps en temps.
+
+---
+
+## 5. Suivre les résultats
+
+- Instagram : nombre de commentaires du mot-clé et de messages envoyés (statistiques ManyChat).
+- Google Analytics : Acquisition → Acquisition de trafic → filtre « Source/support = instagram / dm », colonne « Campagne » (plage-hiver, noel, garde…).
+- Après 3-4 reels, on regarde ce qui marche et on refait plus de ce sujet-là.
