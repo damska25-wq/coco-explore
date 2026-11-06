@@ -1371,5 +1371,159 @@
     "url": "https://geotrek.parc-vosges-nord.fr/api/fr/treks/16025/gr53-la-traversee-du-massif-des-vosges.pdf"
    }
   ]
+ },
+ "haut-rhin": {
+  "html": "<p>Dans la réserve naturelle nationale du Frankenthal-Missheimle (Stosswihr, massif du Hohneck), le gestionnaire (Parc naturel régional des Ballons des Vosges) indique que les chiens sont tolérés à condition d'être systématiquement tenus en laisse, sauf sur le Sentier des Roches où ils sont strictement interdits ; hors des sentiers balisés, la circulation des personnes y est interdite, et plusieurs sentiers dont le Sentier des Roches sont fermés du 1er novembre au 30 avril.</p><p>Sur le domaine nordique du Markstein-Grand-Ballon, le guide de bonnes pratiques de l'association départementale du ski de fond du Haut-Rhin demande de tenir les chiens en laisse et les interdit sur les pistes de ski de fond. Nous n'avons pas trouvé de règle chien commune à tout le département : pour le reste, voir nos <a href=\"/balade-chien-haut-rhin\">balades avec son chien dans le Haut-Rhin</a>.</p>",
+  "sources": [
+   {
+    "label": "Réserve naturelle nationale Frankenthal-Missheimle — foire aux questions (PNR des Ballons des Vosges)",
+    "url": "http://www.ballonsdesvosges-reservesnaturelles.fr/frankenthal-missheimle"
+   },
+   {
+    "label": "Le Markstein Grand-Ballon — guide des bonnes pratiques à la neige (ADPSF 68)",
+    "url": "https://www.lemarkstein.net/files/4715/5075/1369/Guide_des_bonnes_pratiques__la_neige_Nordique_Luge_Raquettes.pdf"
+   }
+  ]
+ },
+ "vosges": {
+  "html": "<p>Dans la réserve naturelle nationale du Tanet-Gazon du Faing (Le Valtin et Plainfaing), le décret de 1988 interdit d'introduire des chiens non tenus en laisse (sauf chiens de police, de secours, de bergers et de chasse). La réserve naturelle nationale des Ballons Comtois, dont une partie se trouve à Saint-Maurice-sur-Moselle (Ballon d'Alsace), interdit les chiens même tenus en laisse ; d'après ses gestionnaires (ONF et Parc des Ballons des Vosges), il est aussi interdit d'y sortir des sentiers du 15 décembre au 14 juillet.</p><p>Nous n'avons pas trouvé de règle chien commune à tout le département : pour le reste, voir nos <a href=\"/balade-chien-vosges\">balades avec son chien dans les Vosges</a>.</p>",
+  "sources": [
+   {
+    "label": "Légifrance — Décret n°88-110 du 28 janvier 1988 (réserve naturelle du Tanet-Gazon-du-Faing), article 17",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000312395"
+   },
+   {
+    "label": "Réserve naturelle nationale Ballons Comtois — foire aux questions (ONF / PNR des Ballons des Vosges)",
+    "url": "https://www.ballonsdesvosges-reservesnaturelles.fr/ballons-comtois"
+   }
+  ]
+ },
+ "aisne": {
+  "html": "<p>Nous n'avons pas trouvé de règle chien propre au département. Dans les bois et forêts, Service-Public et l'ONF rappellent la règle nationale : du 15 avril au 30 juin, les chiens doivent être tenus en laisse en dehors des allées forestières (voir par exemple notre <a href=\"/fiche-balade-foret-retz-villers-cotterets-02\">fiche de la forêt de Retz</a>).</p><p>Côté incendie, l'arrêté préfectoral n° 2026-359 du 12 août 2026 interdisait les feux, les barbecues et de fumer dans et à proximité des bois et forêts jusqu'au 15 septembre 2026 (terminé ; vérifie l'arrêté de l'année avant de partir) et prévoyait que le préfet puisse fermer l'accès du public aux forêts par arrêté en cas de risque très élevé. Nos adresses : <a href=\"/balade-chien-aisne\">balades dans l'Aisne</a>.</p>",
+  "sources": [
+   {
+    "label": "Service-Public — Promenades en forêt : tenir son chien en laisse jusqu'au 30 juin",
+    "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17343"
+   },
+   {
+    "label": "ONF — Promener mon chien sans laisse en forêt",
+    "url": "https://www.onf.fr/vivre-la-foret/+/96::promener-mon-chien-sans-laisse-foret-peux-peux-pas.html"
+   },
+   {
+    "label": "Préfecture de l'Aisne — arrêté n° 2026-359 du 12 août 2026 (copie publiée par la commune de Brasles)",
+    "url": "https://www.brasles.fr/IMG/pdf/arrete_no2026-359_reglementant_temporairement_activites_forets_et_espaces_naturels.pdf"
+   }
+  ]
+ },
+ "nord": {
+  "html": "<p>Sur la Voie verte de la Plaine de la Scarpe, espace naturel sensible du Département, l'arrêté du président du Département du Nord impose de tenir les chiens impérativement en laisse. Dans la forêt domaniale de Mormal, la brochure de l'office de tourisme du Pays de Mormal (avec l'ONF) demande de tenir les chiens en laisse et renvoie au calendrier de chasse de l'ONF, à consulter avant de partir.</p><p>Nous n'avons pas trouvé de règle chien commune à tout le département ; voir nos <a href=\"/balade-chien-nord\">balades avec son chien dans le Nord</a> et la <a href=\"/fiche-balade-foret-mormal-59\">fiche de la forêt de Mormal</a>.</p>",
+  "sources": [
+   {
+    "label": "Département du Nord — arrêté du Président, Voie verte de la Plaine de la Scarpe (article 10)",
+    "url": "https://api.neopse.com/rest/site/files/download/278812"
+   },
+   {
+    "label": "Office de tourisme du Pays de Mormal — La forêt domaniale de Mormal (brochure)",
+    "url": "https://www.cc-paysdemormal.fr/app/uploads/2022/01/32111.pdf"
+   }
+  ]
+ },
+ "oise": {
+  "html": "<p>Nous n'avons pas trouvé de règle chien commune à tout le département. Côté incendie, l'arrêté préfectoral du 2 juillet 2026, valable jusqu'au 15 septembre 2026 (terminé ; vérifie l'arrêté de l'année), interdisait les feux, les barbecues et de fumer à moins de 200 mètres des bois et forêts, et prévoyait que le préfet puisse interdire l'accès du public aux forêts en cas de risque élevé. Des arrêtés temporaires l'ont renforcé durant l'été 2026, par exemple les 29 et 30 juillet (véhicules motorisés sur les chemins non goudronnés des forêts, rassemblements de plus de 20 personnes).</p><p>Pour les sorties : <a href=\"/balade-chien-oise\">balades avec son chien dans l'Oise</a>.</p>",
+  "sources": [
+   {
+    "label": "Préfecture de l'Oise — arrêté du 2 juillet 2026 (copie publiée par la commune de Nogent-sur-Oise)",
+    "url": "https://www.nogentsuroise.fr/images/2-NOGENT-SUR-OISE/Arr%C3%AAt%C3%A9s_Municipaux/Arretes-2026/AP_Usage_feu_02-07-2026_vf.pdf"
+   },
+   {
+    "label": "Préfecture de l'Oise — arrêté des 29 et 30 juillet 2026 (copie publiée par la mairie de Marest)",
+    "url": "https://mairie-de-marest.e-monsite.com/medias/files/arrete-risques-incendie.pdf"
+   }
+  ]
+ },
+ "pas-de-calais": {
+  "html": "<p>Eden 62, le syndicat qui gère les espaces naturels sensibles du Département (et des terrains du Conservatoire du littoral), indique « chien tenu en laisse autorisé » sur ses fiches du Cap Blanc-Nez, du Cap Gris-Nez, des dunes de la Slack (Wimereux, Ambleteuse) et des dunes d'Ecault (Equihen-Plage, Saint-Étienne-au-Mont) ; des arrêtés municipaux complètent la règle sur certains de ces sites (liens sur les pages d'Eden 62).</p><p>Nous n'avons pas trouvé de règle chien commune à tout le littoral du département : pour les plages, voir <a href=\"/plage-chien-pas-de-calais\">nos plages avec son chien dans le Pas-de-Calais</a> ; pour les sentiers, par exemple <a href=\"/fiche-balade-cap-blanc-nez-escalles-62\">Cap Blanc-Nez</a>, <a href=\"/fiche-balade-cap-gris-nez-audinghen-62\">Cap Gris-Nez</a> et <a href=\"/fiche-balade-dunes-de-la-slack-wimereux-62\">dunes de la Slack</a>.</p>",
+  "sources": [
+   {
+    "label": "Eden 62 — Cap Blanc-Nez",
+    "url": "https://eden62.fr/espaces-naturels-a-decouvrir/les-espaces-naturels-sensibles-2/cap-blanc-nez"
+   },
+   {
+    "label": "Eden 62 — Cap Gris-Nez",
+    "url": "https://eden62.fr/espaces-naturels-a-decouvrir/les-espaces-naturels-sensibles-2/cap-gris-nez"
+   },
+   {
+    "label": "Eden 62 — Dunes de Slack",
+    "url": "https://eden62.fr/espaces-naturels-a-decouvrir/les-espaces-naturels-sensibles-2/dunes-de-slack"
+   },
+   {
+    "label": "Eden 62 — Dunes d'Ecault",
+    "url": "https://eden62.fr/espaces-naturels-a-decouvrir/les-espaces-naturels-sensibles-2/dunes-decault"
+   }
+  ]
+ },
+ "somme": {
+  "html": "<p>Le Parc du Marquenterre et la réserve naturelle nationale de la Baie de Somme sont interdits aux chiens, même tenus en laisse ou portés (charte d'accueil de la réserve, 2026 ; site du parc). À la Maye (Le Crotoy), Somme Tourisme précise que les chiens sont admis en laisse à gauche du parking, côté plage, mais interdits à droite, dans la réserve.</p><p>Pour les plages, la règle dépend de chaque commune (Le Crotoy, Fort-Mahon, Cayeux…) : voir <a href=\"/plage-chien-somme\">nos plages avec son chien dans la Somme</a> et les <a href=\"/balade-chien-somme\">balades</a>.</p>",
+  "sources": [
+   {
+    "label": "DREAL Hauts-de-France — Charte d'accueil et de bonnes pratiques de la RNN Baie de Somme (mars 2026)",
+    "url": "https://www.hauts-de-france.developpement-durable.gouv.fr/IMG/pdf/2026-03-04_1410-2524_charte-d-accueil-et-de-bonnes-pratique-rnn-baie-de-somme-vf2026.pdf"
+   },
+   {
+    "label": "Parc du Marquenterre — infos pratiques",
+    "url": "https://www.parcdumarquenterre.fr/infos-pratiques"
+   },
+   {
+    "label": "Somme Tourisme — Balader mon chien en Baie de Somme",
+    "url": "https://www.somme-tourisme.com/balader-mon-chien-en-baie-de-somme"
+   }
+  ]
+ },
+ "loire-atlantique": {
+  "html": "<p>Dans les espaces naturels sensibles ouverts au public du Département (39 sites), la règle affichée par le Département est de tenir son chien en laisse ; feux, barbecues, camping et bivouac y sont interdits. Dans la réserve naturelle régionale Marais de Brière (Saint-Joachim), la délibération de classement de 2012 interdit les animaux domestiques (sauf chiens de police, de secours et de bergers), et dans la réserve naturelle nationale du lac de Grand-Lieu, la circulation des personnes est interdite sur l'ensemble de la réserve.</p><p>Nous n'avons pas trouvé de règle chien commune à tout le littoral : voir <a href=\"/plage-chien-loire-atlantique\">nos plages</a> et <a href=\"/balade-chien-loire-atlantique\">nos balades avec son chien en Loire-Atlantique</a>.</p>",
+  "sources": [
+   {
+    "label": "Département de Loire-Atlantique — Les espaces naturels sensibles (règles d'usage)",
+    "url": "https://www.loire-atlantique.fr/44/environnement-transition-ecologique/les-espaces-naturels-sensibles-ens/c_1286560"
+   },
+   {
+    "label": "Région Pays de la Loire — délibération du 19/11/2012, RNR Marais de Brière, article 3.8 (AIDA)",
+    "url": "https://aida.ineris.fr/reglementation/deliberation-191112-relative-classement-reserve-naturelle-regionale-marais-briere"
+   },
+   {
+    "label": "SNPN — Réserve naturelle nationale du lac de Grand-Lieu",
+    "url": "https://www.snpn.com/reservedulacdegrandlieu"
+   }
+  ]
+ },
+ "maine-et-loire": {
+  "html": "<p>Côté incendie, à partir du 22 juin 2026 la préfecture a interdit, d'après le Parc naturel régional Loire-Anjou-Touraine qui relayait l'arrêté, la circulation non motorisée (à pied, à cheval, à vélo) dans les bois et forêts à haut risque de 12 h à 23 h 59 tant que le risque restait « élevé » (terminé ; vérifie la situation avant de partir : la DRAAF Pays de la Loire liste les arrêtés en cours par département).</p><p>Au parc départemental de l'Isle-Briand (Le Lion-d'Angers), le règlement de 2018 tolère les chiens tenus en laisse à proximité des autres promeneurs et des chevaux (voir la <a href=\"/fiche-balade-parc-isle-briand-lion-dangers-49\">fiche du parc</a>). Nous n'avons pas trouvé de règle chien commune à tout le département : <a href=\"/balade-chien-maine-et-loire\">balades avec son chien en Maine-et-Loire</a>.</p>",
+  "sources": [
+   {
+    "label": "Parc naturel régional Loire-Anjou-Touraine — risque incendie, arrêté de la préfecture de Maine-et-Loire (juin 2026)",
+    "url": "https://www.parc-loire-anjou-touraine.fr/download/5931"
+   },
+   {
+    "label": "DRAAF Pays de la Loire — mesures de restriction d'activité, risque incendie en forêt, juin à septembre 2026",
+    "url": "https://draaf.pays-de-la-loire.agriculture.gouv.fr/de-juin-a-septembre-2026-mesures-de-restriction-d-activite-en-fonction-du-a1959.html"
+   },
+   {
+    "label": "Département de Maine-et-Loire — arrêté et règlement intérieur du parc de l'Isle-Briand (2018)",
+    "url": "https://www.maine-et-loire.fr/fileadmin/Departement/Conseil-departemental/grands-projets/Arrete_Parc_dep_Isle-Briand_reglement_interieur.pdf"
+   }
+  ]
+ },
+ "mayenne": {
+  "html": "<p>Mayenne Tourisme indique que, à l'exception de quelques instants de liberté dans les bois, la laisse reste obligatoire le long des chemins de randonnée, des voies vertes et des chemins de halage, espaces partagés avec cyclistes et cavaliers. Côté incendie, la préfecture rappelle que le feu est interdit en permanence du 1er mars au 30 septembre dans les bois et forêts ; en été 2026, quand le risque était « élevé », ses arrêtés ont aussi interdit l'accès du public aux bois de plus de 0,5 hectare et à 200 m autour, de 12 h à 23 h 59 (terminé ; vérifie la situation avant de partir).</p><p>Nous n'avons pas trouvé de règle chien départementale pour les espaces naturels : <a href=\"/balade-chien-mayenne\">balades avec son chien en Mayenne</a>.</p>",
+  "sources": [
+   {
+    "label": "Mayenne Tourisme — En vacances avec mon chien (Sud Mayenne)",
+    "url": "https://www.destination-mayenne.com/offices-de-tourisme-mayenne-53/le-pays-du-sud-mayenne/decouvrir-le-sud-mayenne/en-vacances-avec-mon-chien"
+   },
+   {
+    "label": "Préfecture de la Mayenne — risque feux de forêt, niveau élevé (mis à jour le 03/09/2026)",
+    "url": "https://www.mayenne.gouv.fr/Actualites/Risque-feux-de-foret-et-d-espaces-naturels-niveau-eleve-orange2"
+   }
+  ]
  }
 }
