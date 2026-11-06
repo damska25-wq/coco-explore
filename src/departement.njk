@@ -40,6 +40,15 @@ eleventyComputed:
   </div>
 </section>
 
+{%- set essD = deptEssentiel[dep.slug] %}
+{%- if essD %}
+<section class="wrap dept-essentiel">
+  <h2>L'essentiel avec son chien {{ dep.seoH1 | replace("Où aller avec son chien ", "") }}</h2>
+  {{ essD.html | safe }}
+  <p class="ville-sources">Sources : {% for s in essD.sources %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+</section>
+{%- endif %}
+
 <div class="wrap coco-map-wrap">
   <div id="coco-dept-map" data-dept="{{ dep.id }}"></div>
 </div>

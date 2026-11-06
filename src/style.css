@@ -1112,3 +1112,6 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .coco-photos-grid figcaption { font-size: 0.86rem; line-height: 1.5; color: rgba(var(--ink),0.78); margin-top: 6px; }
 .coco-photos-grid figcaption strong { color: var(--heading); font-weight: 600; }
 .hero-locate-hint:empty { display: none; }
+.dept-essentiel { margin-top: 1.5em; margin-bottom: 1.5em; max-width: 80ch; }
+.dept-essentiel h2 { font-size: 1.3rem; color: var(--heading); }
+.dept-essentiel .ville-sources { font-size: 0.85rem; color: rgba(var(--ink),0.6); }
