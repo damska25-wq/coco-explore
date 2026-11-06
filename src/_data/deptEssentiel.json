@@ -362,5 +362,147 @@
         "url": "https://ville-cintre.fr/admin/upload/20260723_AP_interdiction_acces_for_t_Broc_liande_nuit.pdf"
       }
     ]
+  },
+  "pyrenees-orientales": {
+    "html": "<p>Chaque été, la préfecture réglemente l'accès aux massifs forestiers selon un niveau de risque d'incendie publié chaque jour pour les 9 zones du département : au niveau « exceptionnel », la circulation est interdite à tous, y compris à pied, sur les pistes non revêtues et les sentiers des massifs concernés. En 2026, un arrêté du 14 septembre a prolongé cette période réglementée jusqu'au 30 septembre ; elle est donc terminée, et les dates de 2027 sont à confirmer. Regarde la carte du jour avant chaque sortie en été.</p><p>Dans les réserves naturelles catalanes, les chiens sont interdits, sauf à Conat, Jujols et Nohèdes où ils sont admis tenus en laisse. En montagne, la Fédération des réserves rappelle de ne pas approcher, caresser ni nourrir les chiens de protection de troupeaux (patous) : reste calme et contourne le troupeau. Nos adresses : <a href=\"/balade-chien-pyrenees-orientales\">balades</a>, <a href=\"/plage-chien-pyrenees-orientales\">plages</a> et <a href=\"/lac-chien-pyrenees-orientales\">lacs</a>.</p>",
+    "sources": [
+      {
+        "label": "Préfecture des Pyrénées-Orientales — circulation dans les massifs à risques",
+        "url": "https://www.pyrenees-orientales.gouv.fr/Actions-de-l-Etat/Agriculture-foret-et-developpement-rural/Foret/Prevention-des-forets-contre-les-incendies/2.Circulation-dans-les-massifs-et-l-utilisation-de-certains-materiels-a-risques/Reglementation-applicable-relative-a-la-circulation-dans-les-massifs-a-risques"
+      },
+      {
+        "label": "Arrêté préfectoral de report de la fin de période, 2026",
+        "url": "https://www.prevention-incendie66.com/wp-content/uploads/2026/09/AP_Report_circulation_travaux-30septembre.pdf"
+      },
+      {
+        "label": "Fédération des réserves naturelles catalanes — la règlementation",
+        "url": "https://www.reserves-naturelles-catalanes.org/decouvrir/la-reglementation"
+      }
+    ]
+  },
+  "morbihan": {
+    "html": "<p>Dans la réserve naturelle nationale des marais de Séné, les chiens sont interdits (décret de 1996) ; seule tolérance, en période d'ouverture de la chasse : ils peuvent circuler sous le contrôle de leur maître au nord de l'étier de Falguérec.</p><p>Pour les plages, nous n'avons pas trouvé de règle publiée à l'échelle du département : elle est fixée commune par commune, parfois avec des périodes d'interdiction même pour les chiens en laisse. Regarde la règle de la plage précise sur nos pages <a href=\"/plage-chien-morbihan\">plages</a> et <a href=\"/balade-chien-morbihan\">balades</a>.</p>",
+    "sources": [
+      {
+        "label": "Légifrance — décret n° 96-746 du 21 août 1996, réserve naturelle des marais de Séné",
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000561138"
+      }
+    ]
+  },
+  "seine-maritime": {
+    "html": "<p>Dans les forêts domaniales normandes, l'ONF publie chaque saison un calendrier de chasse par forêt (celui de 2026-2027 est en ligne depuis le 21 septembre 2026), avec les lots chassés cartographiés ; les jours de chasse, des panneaux « Chasse en cours » sont posés en bordure du lot. Les chasses en battue et à courre mettent en mouvement des chiens de chasse : consulte le calendrier avant de partir. Le sentier du marais d'Amfard (réserve naturelle de l'estuaire de la Seine) traverse des milieux soumis aux marées et borde une zone chassée ; la Maison de l'Estuaire publie un annuaire des marées et des dates de chasse.</p><p>Nous n'avons pas trouvé de règle sur les chiens publiée à l'échelle du département : pour les plages, c'est chaque commune qui décide. Voir nos pages <a href=\"/plage-chien-seine-maritime\">plages</a> et <a href=\"/balade-chien-seine-maritime\">balades</a>.</p>",
+    "sources": [
+      {
+        "label": "ONF — calendriers de chasse 2026-2027 en forêt domaniale normande",
+        "url": "https://www.onf.fr/vivre-la-foret/+/2dd6::les-calendriers-de-chasse-2026-2027-sont-en-ligne.html"
+      },
+      {
+        "label": "Maison de l'Estuaire — les sentiers de la réserve naturelle",
+        "url": "https://maisondelestuaire.org/sentiers.html"
+      }
+    ]
+  },
+  "orne": {
+    "html": "<p>La chasse est ouverte dans l'Orne du 20 septembre 2026 au 28 février 2027 (arrêté préfectoral de la campagne 2026-2027). Dans les forêts domaniales normandes, l'ONF publie un calendrier de chasse par forêt, avec les lots chassés cartographiés ; les jours de chasse, des panneaux « Chasse en cours » sont posés en bordure du lot, et des chiens de chasse (battues, chasse à courre) parcourent la forêt. Consulte le calendrier avant de partir et choisis un autre jour ou un autre secteur si ta sortie tombe sur une battue.</p><p>Nous n'avons pas trouvé de règle sur les chiens publiée à l'échelle du département. Pour les sorties, voir nos <a href=\"/balade-chien-orne\">balades avec son chien dans l'Orne</a>.</p>",
+    "sources": [
+      {
+        "label": "Préfecture de l'Orne — arrêté d'ouverture et de clôture de la chasse 2026-2027",
+        "url": "https://www.chasseurdefrance.com/wp-content/uploads/2026/08/FDC-61.pdf"
+      },
+      {
+        "label": "ONF — calendriers de chasse 2026-2027 en forêt domaniale normande",
+        "url": "https://www.onf.fr/vivre-la-foret/+/2dd6::les-calendriers-de-chasse-2026-2027-sont-en-ligne.html"
+      }
+    ]
+  },
+  "lozere": {
+    "html": "<p>Dans le cœur du Parc national des Cévennes, la divagation des chiens est interdite : ils doivent être tenus en laisse, pour la tranquillité de la faune sauvage et des troupeaux (la règle ne vise pas les chiens de bergers ni les chiens de chasse en action de chasse autorisée). Les chiens de protection de troupeaux (patous) gardent leur troupeau en général de la mi-mai, au plus tôt, à fin octobre : le Parc conseille de ralentir, de contourner largement le troupeau, de s'immobiliser face au chien sans le regarder dans les yeux, et de ne jamais le caresser ni le nourrir.</p><p>Le Département de la Lozère publie une carte, non exhaustive, des zones avec chiens de protection. Nos adresses : <a href=\"/balade-chien-lozere\">balades</a> et <a href=\"/lac-chien-lozere\">lacs</a>.</p>",
+    "sources": [
+      {
+        "label": "Parc national des Cévennes — les règles pour tous (cœur du Parc)",
+        "url": "https://cevennes-parcnational.fr/fr/le-parc-national-des-cevennes/la-reglementation-du-coeur/les-regles-pour-tous"
+      },
+      {
+        "label": "Parc national des Cévennes — chiens de protection des troupeaux, les bons comportements",
+        "url": "https://www.cevennes-parcnational.fr/fr/actualites/chiens-de-protection-des-troupeaux-les-bons-comportements-adopter-0"
+      }
+    ]
+  },
+  "nievre": {
+    "html": "<p>Dans les lacs du Morvan, la baignade est en principe permise tant qu'aucune interdiction n'est affichée, mais plusieurs lacs ne sont pas des zones de baignade officielles (Chaumeçon, Crescent, Chamboux) et ne sont pas contrôlés. La saison de baignade 2026 est terminée (aux Settons, plage surveillée du 10 juillet au 17 août) ; 2027 est à confirmer. À la mise à jour du 24 septembre 2026, la baignade et la pêche étaient interdites à l'étang du Goulot (niveau d'eau insuffisant), et la baignade est interdite l'été côté nord du lac du Crescent, près du barrage (commune de Chastellux-sur-Cure). En cas d'eau verdâtre ou de dépôts (cyanobactéries possibles), l'office du Morvan conseille de ne pas se baigner.</p><p>Nous n'avons pas trouvé de règle sur les chiens publiée à l'échelle du département. Voir nos <a href=\"/lac-chien-nievre\">lacs</a> et <a href=\"/balade-chien-nievre\">balades</a>.</p>",
+    "sources": [
+      {
+        "label": "Morvan Sommets et Grands Lacs — où se baigner ? (mise à jour du 24/09/2026)",
+        "url": "https://www.morvansommetsetgrandslacs.com/ou-se-baigner"
+      }
+    ]
+  },
+  "eure": {
+    "html": "<p>Dans les forêts domaniales normandes, l'ONF publie chaque saison un calendrier de chasse par forêt (celui de 2026-2027 est en ligne depuis le 21 septembre 2026), avec les lots chassés cartographiés ; les jours de chasse, des panneaux « Chasse en cours » sont posés en bordure du lot, et des chiens de chasse parcourent la forêt lors des battues et de la chasse à courre. Consulte-le avant ta balade.</p><p>Côté Eure, les sentiers de la réserve naturelle de l'estuaire de la Seine (Berville-sur-Mer, Conteville) demandent de rester sur les chemins balisés ; la règle propre aux chiens y est signalée par des pictogrammes, que nous n'avons pas pu lire sous forme de texte : regarde-les à l'entrée. Pour les sorties, voir nos <a href=\"/balade-chien-eure\">balades avec son chien dans l'Eure</a>.</p>",
+    "sources": [
+      {
+        "label": "ONF — calendriers de chasse 2026-2027 en forêt domaniale normande",
+        "url": "https://www.onf.fr/vivre-la-foret/+/2dd6::les-calendriers-de-chasse-2026-2027-sont-en-ligne.html"
+      },
+      {
+        "label": "Maison de l'Estuaire — les sentiers de la réserve naturelle",
+        "url": "https://maisondelestuaire.org/sentiers.html"
+      }
+    ]
+  },
+  "cotes-darmor": {
+    "html": "<p>Dans la réserve naturelle nationale des Sept-Îles (Perros-Guirec), le débarquement des chiens est interdit sur l'ensemble de la réserve : on ne peut donc pas emmener son chien sur l'île aux Moines. Dans la réserve naturelle de la baie de Saint-Brieuc, les chiens doivent être tenus en laisse en tout temps, et leur circulation est interdite dans les zones de protection renforcée (fond de l'anse d'Yffiniac et estuaire du Gouessant) ; la réserve annonce des amendes minimales de 35 à 135 €.</p><p>Pour les plages, la règle dépend de chaque commune. Voir nos pages <a href=\"/plage-chien-cotes-darmor\">plages</a> et <a href=\"/balade-chien-cotes-darmor\">balades</a>.</p>",
+    "sources": [
+      {
+        "label": "Perros-Guirec / LPO — réglementation de la réserve naturelle des Sept-Îles (2023)",
+        "url": "https://www.perros-guirec.com/app/uploads/perros-guirec/2023/09/Reglementation-2023-VF.pdf"
+      },
+      {
+        "label": "Réserve naturelle de la baie de Saint-Brieuc — la réglementation",
+        "url": "https://www.reservebaiedesaintbrieuc.com/proteger/la-reglementation-1"
+      }
+    ]
+  },
+  "val-de-marne": {
+    "html": "<p>Dans les parcs départementaux, le Département indique sur chaque fiche si les chiens sont admis. Tenus en laisse, ils sont acceptés au parc du Val-de-Marne (Créteil), au parc des Lilas (Vitry-sur-Seine), à la Plage-Bleue (Valenton), au parc du Plateau (Champigny-sur-Marne) et au parc du Morbras (Sucy-en-Brie, Ormesson-sur-Marne) ; au parc du Rancy (Bonneuil-sur-Marne), ils sont admis en laisse sauf dans la partie clôturée.</p><p>Ils sont interdits aux parcs de la Roseraie (L'Haÿ-les-Roses), des Cormailles (Ivry-sur-Seine), du Coteau de Bièvre (Gentilly) et de la Plaine des Bordes (Chennevières-sur-Marne). Voir aussi nos <a href=\"/balade-chien-val-de-marne\">balades avec son chien dans le Val-de-Marne</a>.</p>",
+    "sources": [
+      {
+        "label": "Département du Val-de-Marne — parc du Val-de-Marne",
+        "url": "https://www.valdemarne.fr/vivre-en-val-de-marne/parcs-et-espaces-naturels/le-parc-du-val-de-marne-et-lile-de-loisirs-de-creteil"
+      },
+      {
+        "label": "Département du Val-de-Marne — parc de la Roseraie",
+        "url": "https://www.valdemarne.fr/vivre-en-val-de-marne/le-parc-de-la-roseraie"
+      },
+      {
+        "label": "Département du Val-de-Marne — parc des Cormailles",
+        "url": "https://www.valdemarne.fr/vivre-en-val-de-marne/parcs-et-espaces-naturels/le-parc-des-cormailles"
+      },
+      {
+        "label": "Département du Val-de-Marne — parc du Coteau de Bièvre",
+        "url": "https://www.valdemarne.fr/vivre-en-val-de-marne/le-parc-du-coteau-de-bievre"
+      },
+      {
+        "label": "Département du Val-de-Marne — Plaine des Bordes",
+        "url": "https://www.valdemarne.fr/vivre-en-val-de-marne/parcs-et-espaces-naturels/la-plaine-des-bordes"
+      },
+      {
+        "label": "Département du Val-de-Marne — parc du Rancy",
+        "url": "https://www.valdemarne.fr/vivre-en-val-de-marne/le-parc-du-rancy"
+      }
+    ]
+  },
+  "loir-et-cher": {
+    "html": "<p>Au domaine national de Chambord, les chiens tenus en laisse sont autorisés dans le parc (abords du château). Les animaux, même portés à bras ou en sac, sont interdits dans le château, les jardins à la française, les écuries et les véhicules 4×4, sauf chiens d'assistance. Aucun service de garde n'est proposé sur place.</p><p>La chasse est ouverte dans le département du 27 septembre 2026 au 28 février 2027 (arrêté préfectoral du 29 mai 2026) ; en forêt, regarde les panneaux et les calendriers avant de partir. Voir nos <a href=\"/balade-chien-loir-et-cher\">balades</a> et <a href=\"/lac-chien-loir-et-cher\">lacs</a>.</p>",
+    "sources": [
+      {
+        "label": "Domaine national de Chambord — règlement du domaine",
+        "url": "https://www.chambord.org/informations-pratiques/services-sur-place/reglement-du-domaine"
+      },
+      {
+        "label": "Préfecture de Loir-et-Cher — arrêté n° 41-2026-05-29-00005, chasse 2026-2027",
+        "url": "https://files.appli-intramuros.com/legal_documents/3853/d422b7f783ced5c18da6dae6b76db371.pdf"
+      }
+    ]
   }
 }
