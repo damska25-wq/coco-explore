@@ -1525,5 +1525,83 @@
     "url": "https://www.mayenne.gouv.fr/Actualites/Risque-feux-de-foret-et-d-espaces-naturels-niveau-eleve-orange2"
    }
   ]
+ },
+ "sarthe": {
+  "html": "<p>Nous n'avons pas trouvé de règle chien commune à tout le département. Le sujet à connaître en été, c'est le risque d'incendie en forêt : par arrêté préfectoral du 16 juillet 2026, tout usage du feu (barbecue, feu de camp, cigarette comprise) a été interdit dans les bois et forêts et jusqu'à 200 m de leur lisière, du 16 juillet au 30 septembre 2026 (terminé ; vérifie la situation avant de partir). Quand le niveau « élevé » est déclenché, la préfecture peut aussi interdire l'accès à pied, à vélo et à cheval aux bois et forêts de 12h à 23h59, comme du 23 au 26 juin 2026.</p><p>Pour tes balades, vois nos <a href=\"/balade-chien-sarthe\">balades avec chien en Sarthe</a> (forêt de Bercé, Perseigne, Alpes mancelles…) ; la règle de laisse dépend de chaque forêt ou commune, indiquée sur chaque fiche.</p>",
+  "sources": [
+   {
+    "label": "Préfecture de la Sarthe — arrêté du 16 juillet 2026 portant interdiction temporaire des usages du feu dans les bois et forêts",
+    "url": "https://www.arnage.fr/wp-content/uploads/2026/06/AP_usage-du-feu-72-16-juillet-2026-.pdf"
+   },
+   {
+    "label": "Préfecture de la Sarthe — Restrictions d'accès aux forêts pour risque d'incendie élevé (23 au 26 juin 2026)",
+    "url": "https://www.sarthe.gouv.fr/Actualites/Breves/Restrictions-d-acces-aux-forets-et-de-certains-usages-du-feu-pour-risque-d-incendie-eleve-en-Sarthe"
+   }
+  ]
+ },
+ "vendee": {
+  "html": "<p>En Vendée, les règles pour les chiens sur les plages sont fixées commune par commune (dates, horaires, zones, laisse), et Vendée Tourisme demande de vérifier la signalétique sur place et renvoie vers l'office de tourisme le plus proche ; un panneau d'interdiction non respecté peut coûter 11 € d'amende, d'après Vendée Tourisme. Regarde donc la commune de ta plage dans nos <a href=\"/plage-chien-vendee\">plages avec chien en Vendée</a>.</p><p>En forêt, le risque d'incendie peut limiter l'accès : par exemple l'arrêté préfectoral n° 750 du 17 août 2026 (niveau « élevé », valable jusqu'au 20 août 2026, terminé) interdisait tout usage du feu, y compris fumer, dans les bois et jusqu'à 200 m, et l'accès du public (à pied, à vélo, à cheval) aux forêts de 12h à 23h59 ; il laissait aux collectivités la possibilité de restreindre la circulation dans les forêts littorales. Nos <a href=\"/balade-chien-vendee\">balades en Vendée</a> indiquent la règle de chaque site.</p>",
+  "sources": [
+   {
+    "label": "Vendée Tourisme — Plages accessibles aux chiens en Vendée",
+    "url": "https://www.vendee-tourisme.com/plages-accessibles-aux-chiens-en-vendee"
+   },
+   {
+    "label": "Préfecture de la Vendée — arrêté préfectoral n° 750 du 17 août 2026 (recueil des actes administratifs n° 85-2026-167)",
+    "url": "https://www.vendee.gouv.fr/contenu/telechargement/37528/237584/file/recueil-85-2026-167-recueil-des-actes-administratifs-special-1.pdf"
+   }
+  ]
+ },
+ "guadeloupe": {
+  "html": "<p>Dans le cœur du Parc national de la Guadeloupe (massif forestier de la Basse-Terre, dont la Soufrière et les chutes du Carbet, îlets du Grand Cul-de-Sac Marin, marais Choisy et Lambis…), le chien est interdit, même tenu en laisse : c'est la consigne du Parc, qui s'appuie sur l'article 3 du décret du 3 juin 2009. Voir notre fiche <a href=\"/fiche-balade-soufriere-chutes-carbet-971\">Soufrière et chutes du Carbet</a>.</p><p>Pour les plages, aucune règle commune au département n'a été trouvée : elle dépend de chaque commune, voir nos <a href=\"/plage-chien-guadeloupe\">plages avec chien en Guadeloupe</a> et nos <a href=\"/balade-chien-guadeloupe\">balades</a>.</p>",
+  "sources": [
+   {
+    "label": "Parc national de la Guadeloupe — Réglementation dans les cœurs terrestres",
+    "url": "https://www.guadeloupe-parcnational.fr/fr/le-parc-national-de-la-guadeloupe/reglementation/reglementation-dans-les-coeurs-terrestres"
+   },
+   {
+    "label": "Légifrance — Décret n° 2009-614 du 3 juin 2009 (parc national de la Guadeloupe)",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000020691914"
+   }
+  ]
+ },
+ "martinique": {
+  "html": "<p>Dans la réserve naturelle nationale de la presqu'île de la Caravelle (La Trinité), les chiens sont interdits, même tenus en laisse, depuis le décret n° 2025-1153 du 2 décembre 2025 ; l'interdiction ne s'applique pas aux animaux qui assistent des personnes handicapées ni aux chiens de police et de sauvetage. Voir notre fiche <a href=\"/fiche-balade-presquile-caravelle-972\">presqu'île de la Caravelle</a>.</p><p>Nous n'avons pas trouvé de règle chien commune à tout le département : pour les plages et les sentiers, elle dépend de chaque commune ou de chaque site, voir nos <a href=\"/plage-chien-martinique\">plages</a> et <a href=\"/balade-chien-martinique\">balades avec chien en Martinique</a> (Sainte-Anne de Martinique ne se confond pas avec Sainte-Anne de Guadeloupe).</p>",
+  "sources": [
+   {
+    "label": "Légifrance — Décret n° 2025-1153 du 2 décembre 2025 (réserve naturelle nationale de la Presqu'île de la Caravelle)",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000052982893"
+   }
+  ]
+ },
+ "guyane": {
+  "html": "<p>Deux réserves naturelles du littoral interdisent d'introduire des animaux domestiques, donc les chiens : la réserve de l'Amana à Awala-Yalimapo (décret du 13 mars 1998, article 22) et la réserve des marais de Kaw-Roura (décret du 13 mars 1998, article 23). Des exceptions existent pour la chasse et les activités agricoles ou pastorales autorisées par ces décrets. Voir nos fiches <a href=\"/fiche-balade-reserve-amana-973\">réserve de l'Amana</a> et <a href=\"/fiche-balade-montagne-kaw-973\">Montagne et marais de Kaw</a>.</p><p>Nous n'avons pas trouvé de règle chien commune à tout le département, ni de consigne chien dans les pages du Parc amazonien de Guyane que nous avons lues (accès des animaux domestiques en zone de cœur réglementé par le directeur du Parc d'après le décret de 2007) ; pour les plages, voir nos <a href=\"/plage-chien-guyane\">plages avec chien en Guyane</a> et nos <a href=\"/balade-chien-guyane\">balades</a>.</p>",
+  "sources": [
+   {
+    "label": "Légifrance — Décret n° 98-165 du 13 mars 1998 (réserve naturelle de l'Amana)",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000753477"
+   },
+   {
+    "label": "DEAL Guyane — Décret n° 98-166 du 13 mars 1998 (réserve naturelle des marais de Kaw-Roura)",
+    "url": "https://www.guyane.developpement-durable.gouv.fr/IMG/pdf/annexe_4_decret_creation_rnnkr_1998-2.pdf"
+   },
+   {
+    "label": "Légifrance — Décret n° 2007-266 du 27 février 2007 (Parc amazonien de Guyane)",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000241891"
+   }
+  ]
+ },
+ "mayotte": {
+  "html": "<p>Sur l'îlot Mbouzi (réserve naturelle nationale), il est interdit d'introduire des animaux, donc des chiens, sauf ceux qui participent à des missions de police, de recherche ou de sauvetage (décret du 26 janvier 2007, article 6). Voir notre fiche <a href=\"/fiche-balade-ilot-mbouzi-976\">îlot Mbouzi</a>.</p><p>Le guide du Parc naturel marin de Mayotte demande de garder son chien en laisse sur les plages, car il peut blesser les tortues et détruire leurs nids, et il cite parmi les interdits sur les îlots le fait de débarquer des animaux domestiques, même en laisse (page du guide à relire avant de partir). Sur les plages de ponte protégées, voir notre fiche <a href=\"/fiche-balade-plages-tortues-interdites-mayotte-976\">Saziley, Moya, Charifou, Papani</a>. Nous n'avons pas trouvé de règle chien commune à tout le département.</p>",
+  "sources": [
+   {
+    "label": "Légifrance — Décret n° 2007-105 du 26 janvier 2007 (réserve naturelle de l'îlot Mbouzi)",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000819767"
+   },
+   {
+    "label": "Parc naturel marin de Mayotte — guide des bons gestes (usagers du lagon)",
+    "url": "https://parc-marin-mayotte.fr/media/1066/download"
+   }
+  ]
  }
 }
