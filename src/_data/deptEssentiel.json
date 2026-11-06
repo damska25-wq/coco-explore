@@ -845,5 +845,179 @@
     "url": "https://www.risque-prevention-incendie.fr/aude/"
    }
   ]
+ },
+ "rhone": {
+  "html": "<p>Nous n'avons pas trouvé de règle chien commune à tout le département. Pour les sorties dans le Parc naturel régional du Pilat (une partie du massif est en dehors du Rhône : vérifie la commune), l'office de tourisme du Pilat indique que les chiens sont les bienvenus, qu'il faut surveiller son chien pour ne pas déranger la faune sauvage, et que le mieux est de le tenir en laisse. Le Parc rappelle aussi que des chiens de protection gardent certains troupeaux : tenir son chien en laisse et ne jamais s'approcher d'un troupeau avec lui, même tenu en laisse. Un arrêté préfectoral permanent du Rhône (n° DDT-2024-A105 du 4 juillet 2024) interdit l'usage du feu à toute personne autre que le propriétaire sur les terrains forestiers et à moins de 200 m d'un massif boisé ; du 15 mai au 30 septembre, en cas de risque important, il interdit aussi barbecue, feu de camp et cigarette.</p><p>Pour les sorties sur place, voir nos <a href=\"/balade-chien-rhone\">balades avec son chien dans le Rhône</a> et nos <a href=\"/lac-chien-rhone\">lacs</a>.</p>",
+  "sources": [
+   {
+    "label": "Office de tourisme du Pilat — FAQ (chiens dans le Parc)",
+    "url": "https://www.pilat-tourisme.fr/pratique/informations-utiles/foire-aux-questions"
+   },
+   {
+    "label": "Parc naturel régional du Pilat — Tous responsables (chiens de protection)",
+    "url": "https://www.parc-naturel-pilat.fr/comprendre-le-territoire/territoire-vivant/tous-responsables"
+   },
+   {
+    "label": "Préfecture du Rhône — arrêté sur l'usage du feu près des massifs boisés",
+    "url": "https://www.rhone.gouv.fr/Actions-de-l-Etat/Agriculture-foret-et-developpement-rural/Foret/Reglementation-forestiere/Arrete-prefectoral-reglementant-l-usage-du-feu-dans-et-a-proximite-de-massifs-boises-en-prevention-des-feux-de-vegetation-et-de-foret"
+   }
+  ]
+ },
+ "puy-de-dome": {
+  "html": "<p>Les chiens sont interdits dans la réserve naturelle nationale de la vallée de Chaudefour (Chambon-sur-Lac) : son décret de création (1991) ne prévoit d'exception que pour les chiens de secours, de bergers et de chasse, et la page de la réserve précise « même tenus en laisse ». Une autre page du Parc des Volcans d'Auvergne indique que, dans les réserves de Chastreix-Sancy et de Chaudefour, les chiens ne sont admis que sur le GR30 et en laisse : les deux versions diffèrent pour Chaudefour, vérifie avant de partir. Au Puy de Sancy, l'office de tourisme accepte les chiens en laisse, en aller-retour sur le GR4E de mai à octobre, mais pas dans le Val de Courre, classé réserve naturelle.</p><p>Sur le circuit du puy de Dôme depuis le col de Ceyssat, la fiche du Département indique que les chiens doivent être tenus en laisse en raison des troupeaux et des chiens de protection. Voir nos <a href=\"/balade-chien-puy-de-dome\">balades</a> et nos <a href=\"/lac-chien-puy-de-dome\">lacs avec son chien dans le Puy-de-Dôme</a>.</p>",
+  "sources": [
+   {
+    "label": "Décret n° 91-460 du 14 mai 1991 — réserve naturelle de la vallée de Chaudefour (Légifrance)",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000570729/2021-09-24"
+   },
+   {
+    "label": "Parc des Volcans d'Auvergne — réserve de la vallée de Chaudefour",
+    "url": "https://www.decouvrir.parcdesvolcans.fr/reserve-vallee-de-chaudefour"
+   },
+   {
+    "label": "Parc des Volcans d'Auvergne — réglementation d'hiver, réserve de Chastreix-Sancy (GR30)",
+    "url": "https://www.decouvrir.parcdesvolcans.fr/reserve-chastreix-sancy-reglementation-hiver"
+   },
+   {
+    "label": "Sancy.com — fiche du Puy de Sancy (accueil des animaux)",
+    "url": "https://www.sancy.com/fr/fiche/patrimoine-naturel/le-puy-de-sancy-mont-dore_TFO4638613"
+   },
+   {
+    "label": "Puy-de-Dôme Tourisme — le puy de Dôme depuis Ceyssat (Département, PDIPR)",
+    "url": "https://www.puydedome-tourisme.com/fr/fiche/equipement/le-puy-de-dome-ceyssat_TFO890374/"
+   }
+  ]
+ },
+ "haute-loire": {
+  "html": "<p>Nous n'avons pas trouvé de règle chien commune à tout le département. Le guide des espaces naturels sensibles des Départements de la Loire et de la Haute-Loire demande, dans ses « règles d'or », de rester sur les sentiers avec les chiens tenus en laisse, et signale par un pictogramme les sites où les chiens en laisse sont admis. Dans le Parc naturel régional Livradois-Forez (dont le Département de la Haute-Loire est partenaire), le Parc demande de tenir son chien en laisse si sa présence est autorisée dans la zone pastorale, et de ne pas caresser ni nourrir les chiens de protection.</p><p>Voir nos <a href=\"/balade-chien-haute-loire\">balades avec son chien en Haute-Loire</a>.</p>",
+  "sources": [
+   {
+    "label": "Départements de la Loire et de la Haute-Loire — guide des espaces naturels sensibles",
+    "url": "https://static.apidae-tourisme.com/filestore/objets-touristiques/documents/37/46/15937061/guide_ens_2022bd_compressed.pdf"
+   },
+   {
+    "label": "Parc Livradois-Forez — bonnes pratiques (espaces pastoraux, chiens de protection)",
+    "url": "https://www.auvergne-livradois-forez.com/je-suis-sur-place/pratique/bonnes-pratiques"
+   }
+  ]
+ },
+ "drome": {
+  "html": "<p>Du 1er juillet au 15 septembre, l'accès aux massifs forestiers de la Drôme est réglementé selon le niveau de danger feux de forêt (arrêté préfectoral DDT-SEF-2026-0176 du 4 juin 2026) : la préfecture publie chaque jour, vers 17h30, une carte d'accès pour le lendemain ; consulte-la avant de partir. Après le feu de forêt commencé le 24 juin 2026 (plus de 4 400 ha), l'arrêté préfectoral du 21 août 2026 interdit l'accès, la circulation et la présence de toute personne dans les forêts domaniales de Justin, de Laup et de Solaure-en-Diois et dans la forêt communale de Solaure-en-Diois, jusqu'à la fin des opérations d'études et de sécurisation (pas de date de fin publiée dans l'arrêté) : vérifie s'il est toujours en vigueur.</p><p>Dans la réserve naturelle nationale des Hauts-Plateaux du Vercors, les chiens sont interdits toute l'année, même tenus en laisse (Parc du Vercors, gestionnaire ; la réserve s'étend aussi sur l'Isère). Voir nos <a href=\"/balade-chien-drome\">balades</a> et nos <a href=\"/lac-chien-drome\">lacs avec son chien dans la Drôme</a>.</p>",
+  "sources": [
+   {
+    "label": "Préfecture de la Drôme — accès aux massifs forestiers en période estivale",
+    "url": "https://www.drome.gouv.fr/Actions-de-l-Etat/Agriculture.-forets-et-developpement-rural/Forets/Prevention-contre-les-incendies-de-forets/Acces-aux-massifs-forestiers-en-periode-estivale"
+   },
+   {
+    "label": "Préfecture de la Drôme — arrêté du 21 août 2026 (forêts de Justin, Laup, Solaure-en-Diois)",
+    "url": "https://www.mairie-die.fr/wp-content/uploads/2026/08/AP-interdiction-acces-Justin.pdf"
+   },
+   {
+    "label": "Parc du Vercors — réserve naturelle nationale des Hauts-Plateaux",
+    "url": "https://parc-du-vercors.fr/RNNHPV"
+   }
+  ]
+ },
+ "ardeche": {
+  "html": "<p>Dans la réserve naturelle nationale des Gorges de l'Ardèche, les chiens sont admis tenus en laisse sur les sentiers (décret du 8 novembre 2018) ; le syndicat de gestion précise qu'ils ne sont pas admis dans les canoës. Dans le Parc naturel régional des Monts d'Ardèche, le Parc demande de tenir son chien en laisse et de ne pas nourrir les chiens de bergers ; l'office de tourisme départemental demande aussi la laisse sur les voies vertes.</p><p>En été, certains massifs ne sont pas accessibles en raison du risque d'incendie : renseigne-toi auprès de la préfecture. Pour la baignade, la règle varie selon les communes et les sites surveillés : voir nos <a href=\"/plage-chien-ardeche\">plages</a>, <a href=\"/lac-chien-ardeche\">lacs</a> et <a href=\"/balade-chien-ardeche\">balades en Ardèche</a>.</p>",
+  "sources": [
+   {
+    "label": "Gorges de l'Ardèche (SGGA) — réglementation dans les Gorges",
+    "url": "https://www.gorgesdelardeche.fr/pratique/reglementation-dans-les-gorges/"
+   },
+   {
+    "label": "Décret n° 2018-964 du 8 novembre 2018 — réserve naturelle des Gorges de l'Ardèche (Légifrance)",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037598378"
+   },
+   {
+    "label": "Parc des Monts d'Ardèche — conseils aux randonneurs",
+    "url": "https://www.destination-parc-monts-ardeche.fr/a-savoir/les-conseils-a-suivre"
+   },
+   {
+    "label": "Ardèche Tourisme — charte de bonnes pratiques (massifs fermés l'été)",
+    "url": "https://pro.ardeche-guide.com/documents/bonnes-pratiques-lappel-de-la-nature-9865.pdf"
+   }
+  ]
+ },
+ "ain": {
+  "html": "<p>Dans la réserve naturelle nationale de la Haute Chaîne du Jura, les chiens sont interdits toute l'année, même tenus en laisse, sauf chiens de bergers, de secours, de chasse en période de chasse et de traîneaux dans le plan de circulation (gestionnaire de la réserve et Parc du Haut-Jura). Ailleurs dans le Parc naturel régional du Haut-Jura, le Parc dit de tenir son chien en laisse autant que possible. Sur le massif du Grand Colombier, espace naturel sensible, la charte de bonne cohabitation demande de tenir son chien en laisse et de respecter les secteurs où les chiens sont interdits.</p><p>Voir nos <a href=\"/balade-chien-ain\">balades</a> et nos <a href=\"/lac-chien-ain\">lacs avec son chien dans l'Ain</a>.</p>",
+  "sources": [
+   {
+    "label": "Réserve naturelle nationale de la Haute Chaîne du Jura — interdits en réserve",
+    "url": "https://www.rnn-hautechainedujura.fr/reglementation/interdits-en-rnn"
+   },
+   {
+    "label": "Parc naturel régional du Haut-Jura — randonner avec mon chien",
+    "url": "https://www.parc-haut-jura.fr/tourisme/randonner-avec-mon-chien-tout-ce-quil-faut-savoir"
+   },
+   {
+    "label": "Communauté de communes Bugey Sud — charte de bonne cohabitation, massif du Grand Colombier",
+    "url": "https://ccbugeysud.com/wp-content/uploads/2025/06/V2-2025-Charte-GRAND-PUBLIC-web2.pdf"
+   }
+  ]
+ },
+ "creuse": {
+  "html": "<p>Dans la réserve naturelle nationale de l'étang des Landes, la page de la réserve demande de tenir les chiens en laisse et de rester sur les chemins ; le canotage et la baignade y sont interdits. Dans le Parc naturel régional de Millevaches, les chiens sont les bienvenus mais l'office de tourisme de la Haute-Corrèze conseille de les tenir en laisse, et précise que certaines randonnées sont interdites aux chiens près de troupeaux gardés par des patous.</p><p>La chasse est ouverte du 13 septembre 2026 au 28 février 2027 (arrêté préfectoral n° 23-2026-06-01-00013) ; pour le grand gibier, l'arrêté la limite à certains jours (notamment jeudi, samedi, dimanche et jours fériés) selon les espèces : renseigne-toi avant de partir. Voir nos <a href=\"/balade-chien-creuse\">balades</a> et nos <a href=\"/lac-chien-creuse\">lacs avec son chien dans la Creuse</a>.</p>",
+  "sources": [
+   {
+    "label": "Réserve naturelle nationale de l'étang des Landes — réglementation",
+    "url": "https://etang-des-landes.creuse.fr/reglementation"
+   },
+   {
+    "label": "Tourisme Haute-Corrèze — Parc naturel régional de Millevaches (randonner avec son chien)",
+    "url": "https://www.tourisme-hautecorreze.fr/la-haute-correze/le-parc-naturel-regional-de-millevaches"
+   },
+   {
+    "label": "Préfecture de la Creuse — arrêté d'ouverture et de fermeture de la chasse 2026-2027",
+    "url": "https://gouzon23.com/wp-content/uploads/2026/06/Arrete-prefectoral-n-23-2026-06-01-00013-du-1er-juin-2026-ouverture-fermeture-chasse-2026-2027.pdf"
+   }
+  ]
+ },
+ "charente": {
+  "html": "<p>Nous n'avons pas trouvé de règle chien commune à tout le département. Le règlement départemental de prévention des incendies de forêts, approuvé le 10 août 2026, interdit l'emploi du feu toute l'année dans les bois de plus de 5 000 m² et sur 200 m autour dans les zones sensibles, et le tabac du 1er mars au 31 octobre ; dès le niveau « sévère », la circulation des personnes y est restreinte ou interdite entre 14h et 22h et le bivouac interdit. Le niveau de vigilance du jour est donné au 05 45 97 61 40. Sur le site protégé de 301 ha de Touvérac, Le Tâtre et Oriolles, un arrêté préfectoral interdit les chiens non tenus en laisse.</p><p>En juillet 2026, la préfecture a signalé une présence importante de cyanobactéries dans la Charente en amont de Vars et dans la Dronne, notamment dangereuses pour les chiens (intoxication grave, parfois mortelle) : la préfecture demande d'empêcher les chiens de boire l'eau concernée. Vérifie avant de laisser ton chien se baigner. Voir nos <a href=\"/balade-chien-charente\">balades avec son chien en Charente</a>.</p>",
+  "sources": [
+   {
+    "label": "Préfecture de la Charente — réglementation contre les feux d'espaces naturels (règlement du 10 août 2026)",
+    "url": "https://www.charente.gouv.fr/Actions-de-l-Etat/Agriculture-foret-et-espaces-naturels/Foret/Reglementation-pour-la-protection-contre-les-risques-des-feux-d-espaces-naturels"
+   },
+   {
+    "label": "Préfecture de la Charente — cyanobactéries (mise à jour du 15/07/2026)",
+    "url": "https://www.charente.gouv.fr/Actualites/Presence-importante-de-cyanobacteries-dans-plusieurs-cours-d-eau-et-plans-d-eau-de-la-Charente"
+   },
+   {
+    "label": "DREAL Nouvelle-Aquitaine — arrêté préfectoral, site de Touvérac",
+    "url": "https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/IMG/pdf/arrete_touverac.pdf"
+   }
+  ]
+ },
+ "charente-maritime": {
+  "html": "<p>Dans la réserve naturelle nationale de Moëze-Oléron, les chiens sont strictement interdits toute l'année, même tenus en laisse ; ils sont seulement admis en laisse courte sur la plage de Saint-Froult (communiqué de la LPO, gestionnaire, du 10 mars 2026). Pour les plages, il n'existe pas de règle commune : elle dépend de l'arrêté de chaque commune, avec souvent des interdictions l'été (voir nos <a href=\"/plage-chien-charente-maritime\">plages avec son chien en Charente-Maritime</a>).</p><p>Un arrêté préfectoral du 30 avril 2026 réglemente l'usage du feu à l'air libre dans le département ; cinq massifs sont classés à risque (île de Ré, île d'Oléron, presqu'île d'Arvert, forêt de la Lande, Double Saintongeaise) et la préfecture publie le niveau de vigilance du lendemain à partir de 18 heures. Voir aussi nos <a href=\"/balade-chien-charente-maritime\">balades</a>.</p>",
+  "sources": [
+   {
+    "label": "Réserve naturelle de Moëze-Oléron (LPO) — communiqué « Nos amis les chiens et le monde sauvage », 10/03/2026",
+    "url": "https://www.reserve-moeze-oleron.fr/wp-content/uploads/sites/71/2026/03/Communique-de-presse_Chiens-RNNMO-2026.pdf"
+   },
+   {
+    "label": "Préfecture de la Charente-Maritime — prévention des incendies de forêt et d'espaces naturels",
+    "url": "https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Securite/Securite-civile/Prevention-des-incendies-de-foret-d-espaces-naturels-et-agricoles"
+   },
+   {
+    "label": "Préfecture de la Charente-Maritime — PDPFCI (massifs à risque)",
+    "url": "https://www.charente-maritime.gouv.fr/Actions-de-l-Etat/Agriculture-foret-et-developpement-rural/Foret/Defense-des-forets-contre-l-incendie-PDPFCI"
+   }
+  ]
+ },
+ "dordogne": {
+  "html": "<p>Nous n'avons pas trouvé de règle chien commune à tout le département. En été, la préfecture fixe un niveau de risque incendie de forêt qui change chaque jour (règlement départemental) : le département a été placé en niveau « sévère » le 24 juin 2026 : dans les massifs forestiers sensibles, la présence des personnes y a alors été interdite entre 14h et 22h (avec des dérogations), ainsi que le bivouac, et les feux, barbecues et réchauds interdits dans les massifs et à moins de 200 m. Renseigne-toi sur le site de la préfecture avant une balade en forêt.</p><p>Plusieurs sites du Périgord Noir acceptent les chiens en laisse, mais, d'après l'office de tourisme Lascaux Dordogne, les grottes n'acceptent pas les animaux, à l'exception du site des grottes du Roc de Cazelle (chiens en laisse). Voir nos <a href=\"/balade-chien-dordogne\">balades</a>, <a href=\"/lac-chien-dordogne\">lacs</a> et <a href=\"/plage-chien-dordogne\">plages de rivière en Dordogne</a>.</p>",
+  "sources": [
+   {
+    "label": "Préfecture de la Dordogne — niveau de risque incendie de forêt (communiqué du 24/06/2026)",
+    "url": "https://www.dordogne.gouv.fr/Publications/Espace-Presse/Communiques-de-presse-2026/Risque-incendie-de-foret-la-Dordogne-placee-en-niveau-de-risque-severe"
+   },
+   {
+    "label": "Office de tourisme Lascaux Dordogne — visiter la Dordogne avec son chien",
+    "url": "https://www.lascaux-dordogne.com/sur-mesure/venir-avec-son-chien"
+   }
+  ]
  }
 }
