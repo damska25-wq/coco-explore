@@ -83,7 +83,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/notes.js");
   eleventyConfig.addPassthroughCopy("src/nearby.js");
   eleventyConfig.addPassthroughCopy("src/card-filter.js");
-  eleventyConfig.addPassthroughCopy("src/install.js");
   eleventyConfig.addPassthroughCopy("src/geoloc.js");
   eleventyConfig.addPassthroughCopy("src/search.js");
   eleventyConfig.addPassthroughCopy("src/favoris.js");
