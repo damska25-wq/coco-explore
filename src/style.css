@@ -1050,6 +1050,13 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 /* Encadré centré verticalement entre les raccourcis et le bas de la bande verte */
 .hero .wrap:has(.season-banner:not([hidden])) { padding-bottom: 32px; }
 .hero-text .season-banner { margin-top: 32px; }
+/* Accueil : plus d'air entre les blocs de la bande verte */
+.hero-text h1 { margin-top: 22px; }
+.hero-text .coco-signature { margin-top: 22px; }
+.hero-text > p:not(.season-banner) { margin-top: 24px; }
+.hero-text .search-wrap { margin-top: 30px; }
+.hero-text .hero-locate { margin-top: 22px; }
+.hero-text .hero-near { margin-top: 22px; }
 .season-banner a { color: #FFFDF8; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
 .season-banner-tag { display: inline-block; padding: 2px 8px; margin-right: 4px; border-radius: 999px; background: #FFFDF8; color: #2f4a3a; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
 
