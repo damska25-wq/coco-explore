@@ -1047,6 +1047,9 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .hero-near a:hover { background: rgba(255,253,248,0.26); }
 .season-banner { margin: 14px 0 0; padding: 10px 14px; border-radius: 14px; background: rgba(255,253,248,0.14); border: 1px solid rgba(255,253,248,0.35); color: #FFFDF8; font-size: 0.92rem; line-height: 1.45; }
 .season-banner[hidden] { display: none; }
+/* Encadré centré verticalement entre les raccourcis et le bas de la bande verte */
+.hero .wrap:has(.season-banner:not([hidden])) { padding-bottom: 32px; }
+.hero-text .season-banner { margin-top: 32px; }
 .season-banner a { color: #FFFDF8; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
 .season-banner-tag { display: inline-block; padding: 2px 8px; margin-right: 4px; border-radius: 999px; background: #FFFDF8; color: #2f4a3a; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
 
