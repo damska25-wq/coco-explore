@@ -33,8 +33,10 @@ extraHead: |
 </section>
 
 <section class="fiches wrap">
+  {#- Accueil du chien établi d'abord, puis non confirmé ou refusé (filtre dogStatusIs). #}
+  {%- set orderedFiches = (vc.fiches | dogStatusIs("ok")).concat(vc.fiches | dogStatusIs(["neutre", "refus"])) %}
   <div class="fiche-grid" data-filterable>
-    {%- for fiche in vc.fiches %}
+    {%- for fiche in orderedFiches %}
     {% include "fiche-card.njk" %}
     {%- endfor %}
   </div>

@@ -19,6 +19,14 @@ extraHead: |
     .ville-links { margin: 8px 0 0; padding-left: 1.2em; }
     .ville-links li { margin: 4px 0; }
     .ville-sources { font-size: 0.85rem; color: rgba(var(--ink),0.6); }
+    .ville-sommaire { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 4px; padding: 0; list-style: none; }
+    .ville-sommaire a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 13px; border-radius: 999px; border: 1px solid rgba(var(--ink),0.18); background: var(--surface, transparent); color: var(--heading); font-size: 0.9rem; text-decoration: none; }
+    .ville-sommaire a:hover { border-color: var(--heading-soft); }
+    .ville-sommaire .n { font-size: 0.8rem; color: rgba(var(--ink),0.6); }
+    .ville-section { scroll-margin-top: 80px; }
+    .ville-autres { margin-top: 20px; }
+    .ville-autres > summary { cursor: pointer; font-weight: 600; color: var(--heading); padding: 10px 0; }
+    .ville-autres > p { font-size: 0.9rem; color: rgba(var(--ink),0.7); max-width: 72ch; }
   </style>
 ---
 <script type="application/ld+json">{{ city.fiches | ficheItems | listJsonLd([{ name: "Coco Explore", path: "" }, { name: city.dep.nom, path: "departement-" + city.dep.slug }, { name: city.ville, path: city.slug }], city.ville + " avec son chien") | safe }}</script>
@@ -30,6 +38,11 @@ extraHead: |
   <p>Coco Explore référence <strong>{{ city.fiches.length }} adresses {{ city.aVille }}</strong> pour sortir avec son chien :
   {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}{{ comma() or " " }}{{ section.catGrid.label | lower | safe }} ({{ n }}){% endif %}{% endif %}{% endfor %}.
   Chaque fiche précise les règles et les conditions d'accueil du chien que nous avons pu vérifier.</p>
+  <ul class="ville-sommaire" aria-label="Aller à une catégorie">
+  {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}
+    <li><a href="#{{ section.id }}">{{ section.catGrid.label | safe }} <span class="n">{{ n }}</span></a></li>
+  {%- endif %}{% endif %}{% endfor %}
+  </ul>
   {%- set cp = cocoPhotos[city.slug] %}
   {%- set cpInline = true %}{% include "coco-photos.njk" %}
   {%- set essentiel = villesEssentiel[city.slug] %}
@@ -72,11 +85,26 @@ extraHead: |
     {%- endif %}
     {%- endif %}
   </div>
+  {%- set mainFiches = sectionFiches | dogStatusIs("ok") %}
+  {%- set autresFiches = sectionFiches | dogStatusIs(["neutre", "refus"]) %}
+  {%- if mainFiches.length %}
   <div class="fiche-grid">
-    {%- for fiche in sectionFiches %}
+    {%- for fiche in mainFiches %}
     {% include "fiche-card.njk" %}
     {%- endfor %}
   </div>
+  {%- endif %}
+  {%- if autresFiches.length %}
+  <details class="ville-autres"{% if not mainFiches.length %} open{% endif %}>
+    <summary>Autres adresses : accueil du chien non confirmé ou refusé ({{ autresFiches.length }})</summary>
+    <p>Pour ces adresses, nous n'avons pas trouvé de source officielle qui confirme l'accueil du chien, ou l'établissement indique qu'il ne l'accepte pas. Le détail est dans chaque fiche : appelle avant d'y aller.</p>
+    <div class="fiche-grid">
+      {%- for fiche in autresFiches %}
+      {% include "fiche-card.njk" %}
+      {%- endfor %}
+    </div>
+  </details>
+  {%- endif %}
 </section>
 {%- endif %}
 {%- endif %}

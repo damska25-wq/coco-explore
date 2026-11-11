@@ -337,15 +337,20 @@ export default function (eleventyConfig) {
   // Biarritz avec son chien »… dès CITY_CAT_MIN_FICHES fiches de la catégorie
   // dans la ville. Reprend les textes des pages catégorie × département avec
   // {enNom} = « à Biarritz ».
-  const CITY_CAT_MIN_FICHES = 3;
-  eleventyConfig.addCollection("cityCategoryPages", (collectionApi) => {
+  // Seuil relevé de 3 à 5 le 11/11/2026 (décision de l'utilisateur, après la
+  // chute Google : les pages de 3-4 fiches doublonnaient la page ville). Les
+  // anciennes pages de 3-4 fiches sont redirigées (301) vers la section de la
+  // page ville (collection cityCategoryRedirects, src/_redirects.njk).
+  const CITY_CAT_MIN_FICHES = 5;
+  const CITY_CAT_OLD_MIN = 3;
+  const computeCityCategory = (collectionApi, min, max = Infinity) => {
     const cities = computeCityPages(collectionApi);
     return categoryPages
       .filter((cp) => !cp.secondary)
       .flatMap((cp) =>
         cities.map((city) => ({ cp, city, fiches: city.fiches.filter((f) => inCategoryPage(f, cp)) }))
       )
-      .filter((p) => p.fiches.length >= CITY_CAT_MIN_FICHES)
+      .filter((p) => p.fiches.length >= min && p.fiches.length < max)
       // Ville homonyme d'un département (Paris) : la page catégorie × département suffit.
       .filter((p) => !departements.some((d) => `${d.slug}-avec-son-chien` === p.city.slug))
       .map((p) => ({
@@ -353,7 +358,13 @@ export default function (eleventyConfig) {
         slug: `${p.cp.slug}-${p.city.slug.replace(/-avec-son-chien$/, "")}`,
         enNom: p.city.aVille,
       }));
-  });
+  };
+  eleventyConfig.addCollection("cityCategoryPages", (collectionApi) =>
+    computeCityCategory(collectionApi, CITY_CAT_MIN_FICHES)
+  );
+  eleventyConfig.addCollection("cityCategoryRedirects", (collectionApi) =>
+    computeCityCategory(collectionApi, CITY_CAT_OLD_MIN, CITY_CAT_MIN_FICHES)
+  );
 
   // Données structurées des pages de liste (catégorie, catégorie × département,
   // ville) : fil d'Ariane (BreadcrumbList) + liste des lieux (ItemList).
@@ -400,6 +411,26 @@ export default function (eleventyConfig) {
   );
 
   // Fiches d'un lot appartenant à l'une des catégories données.
+  // Restaurants et hébergements : accueil du chien établi par le titre de la
+  // fiche (« chien accepté », « petits chiens »…), refusé (« chiens non
+  // acceptés ») ou non établi (titre neutre « Nom, Commune »). Le nom de
+  // l'établissement est retiré avant le test (« Le Chien Fou », « Les Chiens
+  // Fous »). Sert aux pages ville : les fiches non établies ou refusées sont
+  // regroupées dans un bloc replié, après les autres (11/11/2026).
+  const dogStatusOf = (f) => {
+    const d = f.data || {};
+    if (!["restaurants", "hebergements"].includes(d.breadcrumbCatId)) return "ok";
+    let t = String(d.title || "").toLowerCase();
+    for (const n of [d.cardTitle, d.h1, d.breadcrumbLast]) {
+      if (n) t = t.split(String(n).toLowerCase()).join(" ");
+    }
+    if (/non accept|non admis|refus|interdit|pas accept|non autoris/.test(t)) return "refus";
+    if (/chien|animaux|animal|toutou|dog/.test(t)) return "ok";
+    return "neutre";
+  };
+  eleventyConfig.addFilter("dogStatusIs", (fiches, statuses) =>
+    (fiches || []).filter((f) => [].concat(statuses).includes(dogStatusOf(f)))
+  );
   eleventyConfig.addFilter("inCategories", (fiches, catIds) =>
     (fiches || []).filter((f) => (catIds || []).includes(f.data.breadcrumbCatId))
   );
