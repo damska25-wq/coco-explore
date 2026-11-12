@@ -58,7 +58,7 @@ extraScripts: |
     <span class="fiche-updated"><svg class="fiche-verified-icon" width="13" height="13" aria-hidden="true"><use href="#i-check"/></svg>{% if lang == "en" %}Checked against official sources{% else %}<a href="/notre-methode" class="fiche-method-link">Infos vérifiées sur sources officielles</a>{% endif %} · {% if ficheLastmod >= "2026-10-01" %}{{ "updated" if lang == "en" else "mise à jour le" }} {{ ficheLastmod | dateLong(lang) }}{% else %}{{ "October 2026" if lang == "en" else "octobre 2026" }}{% endif %}</span>
   </div>
   {%- if photoUsername %}
-  <span class="fiche-photo-credit">Photo : <a href="https://unsplash.com/@{{ photoUsername | safe }}?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">{{ photoName | safe }}</a> / <a href="https://unsplash.com/?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>
+  <span class="fiche-photo-credit">{{ "Illustrative photo" if lang == "en" else "Photo d'illustration" }} · <a href="https://unsplash.com/@{{ photoUsername | safe }}?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">{{ photoName | safe }}</a> / <a href="https://unsplash.com/?utm_source=coco_explore&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></span>
   {%- endif %}
 </section>
 

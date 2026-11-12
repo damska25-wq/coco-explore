@@ -20,6 +20,9 @@ extraHead: |
     .cat-page-crumb a { color: inherit; }
     .cat-page-brief ul { padding-left: 1.2em; max-width: 80ch; }
     .cat-page-brief li { margin: 8px 0; line-height: 1.5; }
+    .cat-bref { padding-left: 1.2em; max-width: 80ch; }
+    .cat-bref li { margin: 4px 0; }
+    .cat-bref-note { font-size: 0.85rem; color: rgba(var(--ink),0.6); }
   </style>
 ---
 {%- set cp = vc.cp %}
@@ -29,7 +32,14 @@ extraHead: |
   <div class="cat-page-crumb"><a href="/">Coco Explore</a> / <a href="/{{ city.slug }}">{{ city.ville }}</a> / {{ cp.label }}</div>
   <span class="tag">{{ cp.tag }}</span>
   <h1>{{ cp.h1Dep | fill({ enNom: vc.enNom }) }}</h1>
-  <p>{{ cp.introDep | fill({ enNom: vc.enNom, n: vc.fiches.length, villes: (vc.fiches | ficheVilles(10)) }) | dropVille(city.ville) | safe }}</p>
+  {%- set briefRows = vc.fiches | catBrief(cp.cat) %}
+  <p>Coco Explore référence <strong>{{ vc.fiches.length }} {{ cp.unit[1] if vc.fiches.length > 1 else cp.unit[0] }} {{ vc.enNom }}</strong>. En bref :</p>
+  <ul class="cat-bref">
+    {%- for b in briefRows %}
+    <li><strong>{{ b.label }} :</strong> {{ b.text }}</li>
+    {%- endfor %}
+  </ul>
+  <p class="cat-bref-note">Chiffres calculés sur nos fiches ; le détail et les sources sont dans chaque fiche. Les règles et les conditions changent : vérifie avant d'y aller.</p>
 </section>
 
 <section class="fiches wrap">

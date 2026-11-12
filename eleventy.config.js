@@ -150,6 +150,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("categoryDeptPages", (collectionApi) =>
     categoryDepts(collectionApi).filter((dep) => dep.hasPage)
   );
+  // Seuil des pages catégorie × département relevé de 3 à 5 fiches le
+  // 12/11/2026 (accord de l'utilisateur, après la chute Google) : les anciennes
+  // pages de 3-4 fiches sont redirigées (301) vers la section de la page
+  // département (src/_redirects.njk).
+  eleventyConfig.addCollection("categoryDeptRedirects", (collectionApi) =>
+    categoryDepts(collectionApi).filter((dep) => !dep.hasPage && dep.fiches.length >= 3)
+  );
 
   // Pages ville (src/ville.njk) : une page "<Ville> avec son chien" pour
   // chaque commune comptant au moins CITY_MIN_FICHES fiches (champ cardTag),
@@ -795,6 +802,46 @@ export default function (eleventyConfig) {
     if (gd) serv.push(pl(gd, "garde de chien", "gardes de chien"));
     if (ed) serv.push(pl(ed, "éducateur ou club canin", "éducateurs ou clubs canins"));
     if (serv.length) lines.push({ label: "Services", text: serv.join(", ") });
+    return lines;
+  });
+  // Bloc « En bref » des pages catégorie × département et ville × catégorie
+  // (12/11/2026) : chiffres calculés sur les fiches de la page, à la place du
+  // texte d'introduction identique d'une page à l'autre.
+  eleventyConfig.addFilter("catBrief", function (fiches, cat) {
+    const fs = fiches || [];
+    const pl = (n, one, many) => `${n} ${n > 1 ? many : one}`;
+    const lines = [];
+    if (cat === "hebergements" || cat === "restaurants") {
+      const ok = fs.filter((f) => dogStatusOf(f) === "ok");
+      const refus = fs.filter((f) => dogStatusOf(f) === "refus").length;
+      const neutre = fs.length - ok.length - refus;
+      lines.push({ label: "Chien accepté", text: cat === "hebergements" ? pl(ok.length, "hébergement", "hébergements") : pl(ok.length, "restaurant", "restaurants") });
+      if (cat === "hebergements") {
+        const tiers = ok.map((f) => eleventyConfig.getFilter("suppTier")(f));
+        const free = tiers.filter((t) => t === "Sans supplément").length;
+        const low = tiers.filter((t) => t === "Supplément ≤ 10 €/nuit").length;
+        if (free) lines.push({ label: "Sans supplément pour le chien", text: String(free) });
+        if (low) lines.push({ label: "Supplément de 10 €/nuit au plus", text: String(low) });
+      }
+      if (neutre) lines.push({ label: "Accueil du chien à confirmer", text: pl(neutre, "adresse", "adresses") });
+      if (refus) lines.push({ label: "Chiens non acceptés", text: pl(refus, "adresse", "adresses") + " (signalées pour t'éviter un refus)" });
+    } else if (["plages", "lacs"].includes(cat)) {
+      const c = (r) => fs.filter((f) => f.data.regleChien === r).length;
+      const rows = [["toute-annee", "Chien admis toute l'année"], ["saisonnier", "Hors saison seulement"], ["zones", "Sur des zones limitées"], ["interdit", "Interdit aux chiens"]];
+      let known = 0;
+      for (const [k, l] of rows) if (c(k)) { lines.push({ label: l, text: String(c(k)) }); known += c(k); }
+      if (fs.length - known) lines.push({ label: "Règle à vérifier", text: String(fs.length - known) });
+    } else if (cat === "veterinaires") {
+      const g = fs.filter((f) => vetBadge(f.data.infoItems)).length;
+      if (g) lines.push({ label: "Urgences 24h/24 vérifiées", text: pl(g, "clinique", "cliniques") });
+    }
+    // Communes les plus représentées.
+    const byTown = {};
+    for (const f of fs) { const t = f.data.cardTag; if (t && !/[\/+→]| et /.test(t)) byTown[t] = (byTown[t] || 0) + 1; }
+    const towns = Object.entries(byTown).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr"));
+    if (towns.length) {
+      lines.push({ label: "Communes", text: `${towns.length} (${towns.slice(0, 5).map(([t, n]) => `${t} ${n}`).join(", ")}${towns.length > 5 ? "…" : ""})` });
+    }
     return lines;
   });
   eleventyConfig.addFilter("cardBadge", function (fiche) {

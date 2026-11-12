@@ -29,6 +29,11 @@ eleventyExcludeFromCollections: true
 {%- for city in collections.cityPages %}
 /{{ city.slug }}.html /{{ city.slug }} 301!
 {%- endfor %}
+# Pages catégorie × département de 3-4 fiches fusionnées dans la page département (12/11/2026).
+{%- for dep in collections.categoryDeptRedirects %}
+/{{ dep.cp.slug }}-{{ dep.slug }}.html /departement-{{ dep.slug }}#{{ dep.cp.cat }} 301!
+/{{ dep.cp.slug }}-{{ dep.slug }} /departement-{{ dep.slug }}#{{ dep.cp.cat }} 301!
+{%- endfor %}
 # Pages ville × catégorie de 3-4 fiches fusionnées dans la page ville (11/11/2026).
 {%- for vc in collections.cityCategoryRedirects %}
 /{{ vc.slug }}.html /{{ vc.city.slug }}#{{ vc.cp.cat }} 301!
