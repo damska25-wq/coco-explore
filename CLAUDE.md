@@ -422,7 +422,7 @@ arrivants dans la région, donc avec un besoin assez immédiat.
 Plus de détails ici si ça vous intéresse : [lien vers devenir-partenaire.html]
 
 Belle journée à vous,
-[Prénom/nom]
+Damien
 Coco Explore — cocoexplore.com
 ```
 
@@ -532,6 +532,7 @@ Quand un professionnel demande à ne plus être référencé : supprimer sa ou s
 
 ## Conventions du projet (voir aussi contexte de session)
 
+- **Signature des mails (12/11/2026, demande de l'utilisateur)** : toujours « Damien » puis « Coco Explore — cocoexplore.com », **jamais le nom de famille** de l'utilisateur (ni dans la signature ni dans le corps).
 - **Tout ce qu'on ajoute doit être lié au chien** (rappel de l'utilisateur, 29/10/2026) : lieux et établissements qui accueillent les chiens (preuve officielle), services pour chiens (vétérinaires, toiletteurs, dogwash, garde, éducation), ou information utile au propriétaire de chien (règle d'interdiction d'un lieu très fréquenté, titre explicite). Jamais un lieu « généraliste » sans rapport avec le chien.
 - **Toute nouvelle fiche est créée en mode SIRENE, rigueur maximale, sans exception** (règle de l'utilisateur, 29/10/2026) : chaque information lue sur une source officielle (site de l'établissement, mairie, arrêté, office de tourisme, gestionnaire), rien d'inventé, doutes visibles si les sources divergent, pas de doublon avec une fiche existante. Méthode : `scratchpad/brief-verif.md` + brief de création du chantier en cours.
 - Fiches : `src/fiches/*.njk`, frontmatter YAML + `bodyHtml`.
