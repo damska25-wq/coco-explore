@@ -24,6 +24,8 @@ extraHead: |
     .ville-sommaire a:hover { border-color: var(--heading-soft); }
     .ville-sommaire .n { font-size: 0.8rem; color: rgba(var(--ink),0.6); }
     .ville-section { scroll-margin-top: 80px; }
+    .ville-bref { padding-left: 1.2em; max-width: 80ch; }
+    .ville-bref li { margin: 6px 0; line-height: 1.5; }
     .ville-autres { margin-top: 20px; }
     .ville-autres > summary { cursor: pointer; font-weight: 600; color: var(--heading); padding: 10px 0; }
     .ville-autres > p { font-size: 0.9rem; color: rgba(var(--ink),0.7); max-width: 72ch; }
@@ -43,6 +45,16 @@ extraHead: |
     <li><a href="#{{ section.id }}">{{ section.catGrid.label | safe }} <span class="n">{{ n }}</span></a></li>
   {%- endif %}{% endif %}{% endfor %}
   </ul>
+  {%- set brief = city.fiches | cityBrief %}
+  {%- if brief.length %}
+  <h2>En bref {{ city.aVille }}</h2>
+  <ul class="ville-bref">
+    {%- for b in brief %}
+    <li><strong>{{ b.label }} :</strong> {% if b.anchor %}<a href="#{{ b.anchor }}">{{ b.text }}</a>{% else %}{{ b.text }}{% endif %}</li>
+    {%- endfor %}
+  </ul>
+  <p class="ville-sources">Chiffres calculés sur les fiches Coco Explore de la commune ; les conditions détaillées sont dans chaque fiche.</p>
+  {%- endif %}
   {%- set cp = cocoPhotos[city.slug] %}
   {%- set cpInline = true %}{% include "coco-photos.njk" %}
   {%- set essentiel = villesEssentiel[city.slug] %}

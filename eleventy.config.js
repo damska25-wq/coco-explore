@@ -736,6 +736,67 @@ export default function (eleventyConfig) {
   return tier;
   });
 
+  // Bloc « En bref » des pages ville (11/11/2026) : chiffres calculés sur nos
+  // fiches de la ville, sans texte ajouté. Une ligne par sujet présent.
+  eleventyConfig.addFilter("cityBrief", function (fiches) {
+    const fs = fiches || [];
+    const cat = (...ids) => fs.filter((f) => ids.includes(f.data.breadcrumbCatId));
+    const pl = (n, one, many) => `${n} ${n > 1 ? many : one}`;
+    const lines = [];
+    const heb = cat("hebergements");
+    if (heb.length) {
+      const ok = heb.filter((f) => dogStatusOf(f) === "ok");
+      const tiers = ok.map((f) => eleventyConfig.getFilter("suppTier")(f));
+      const free = tiers.filter((t) => t === "Sans supplément").length;
+      const low = tiers.filter((t) => t === "Supplément ≤ 10 €/nuit").length;
+      let t = ok.length
+        ? `${pl(ok.length, "hébergement", "hébergements")} où le chien est accepté`
+        : "aucun hébergement où l'accueil du chien est confirmé";
+      const extra = [];
+      if (free) extra.push(`${free} sans supplément`);
+      if (low) extra.push(`${low} avec un supplément de 10 €/nuit au plus`);
+      if (extra.length) t += ` (dont ${extra.join(", ")})`;
+      if (heb.length > ok.length) t += ` ; ${pl(heb.length - ok.length, "autre adresse", "autres adresses")} à confirmer ou refusant les chiens`;
+      lines.push({ label: "Dormir", text: t, anchor: "hebergements" });
+    }
+    const resto = cat("restaurants");
+    if (resto.length) {
+      const ok = resto.filter((f) => dogStatusOf(f) === "ok").length;
+      let t = ok ? `${pl(ok, "restaurant", "restaurants")} qui acceptent le chien` : "aucun restaurant où l'accueil du chien est confirmé";
+      if (ok === 1) t = "1 restaurant qui accepte le chien";
+      if (resto.length > ok) t += ` ; ${pl(resto.length - ok, "autre adresse", "autres adresses")} à confirmer ou refusant les chiens`;
+      lines.push({ label: "Manger", text: t, anchor: "restaurants" });
+    }
+    const eau = cat("plages", "cote-azur", "lacs");
+    if (eau.length) {
+      const c = (r) => eau.filter((f) => f.data.regleChien === r).length;
+      const parts = [];
+      if (c("toute-annee")) parts.push(`chien admis toute l'année : ${c("toute-annee")}`);
+      if (c("saisonnier")) parts.push(`hors saison seulement : ${c("saisonnier")}`);
+      if (c("zones")) parts.push(`sur des zones limitées : ${c("zones")}`);
+      if (c("interdit")) parts.push(`interdit aux chiens : ${c("interdit")}`);
+      const rest = eau.length - c("toute-annee") - c("saisonnier") - c("zones") - c("interdit");
+      if (rest) parts.push(`règle à vérifier : ${rest}`);
+      const nPl = cat("plages", "cote-azur").length, nLa = cat("lacs").length;
+      const what = [nPl ? pl(nPl, "plage", "plages") : "", nLa ? pl(nLa, "lac ou plan d'eau", "lacs ou plans d'eau") : ""].filter(Boolean).join(" et ");
+      lines.push({ label: "Baignade", text: `${what} (${parts.join(" ; ")})`, anchor: nPl ? "plages" : "lacs" });
+    }
+    const bal = cat("balades");
+    if (bal.length) lines.push({ label: "Se promener", text: pl(bal.length, "balade", "balades"), anchor: "balades" });
+    const vet = cat("veterinaires");
+    if (vet.length) {
+      const g = vet.filter((f) => eleventyConfig.getFilter("vetBadge")(f.data.infoItems)).length;
+      lines.push({ label: "Santé", text: `${pl(vet.length, "vétérinaire", "vétérinaires")}${g ? `, dont ${g} avec urgences 24h/24 vérifiées` : ""}`, anchor: "veterinaires" });
+    }
+    const serv = [];
+    const tl = cat("toiletteurs").length, dw = cat("dogwash").length, gd = cat("dogsitters").length, ed = cat("education").length;
+    if (tl) serv.push(pl(tl, "toiletteur", "toiletteurs"));
+    if (dw) serv.push(pl(dw, "dogwash", "dogwash"));
+    if (gd) serv.push(pl(gd, "garde de chien", "gardes de chien"));
+    if (ed) serv.push(pl(ed, "éducateur ou club canin", "éducateurs ou clubs canins"));
+    if (serv.length) lines.push({ label: "Services", text: serv.join(", ") });
+    return lines;
+  });
   eleventyConfig.addFilter("cardBadge", function (fiche) {
     const d = (fiche && fiche.data) || {};
     const cat = d.breadcrumbCatId;
