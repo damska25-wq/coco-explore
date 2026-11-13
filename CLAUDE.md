@@ -51,6 +51,8 @@ Quand un professionnel demande à ne plus être référencé : supprimer sa ou s
 
 ## Points ouverts (13/11/2026)
 
+- **Mises en ligne** : 13/11 à 1 h 05 puis 13 h 30 (2e, demandée par l'utilisateur) ; prochaine au plus tôt le 14/11.
+
 - **Chute Google depuis le 30/10/2026** (décision de l'utilisateur : rien retirer ni désindexer, améliorer l'existant, remesurer). **Mesure Search Console le 15/11** (rappel programmé, 9 h 12) : script `scratchpad/mesure-1511.py avant.csv apres.csv` (export « Pages ») ; groupes témoins non modifiés `scratchpad/vets-temoin.txt` (133), `restos-temoin.txt` (52), `hebs-temoin.txt` (100). Selon les chiffres : étendre ou non les modèles de titres, reprendre les ~1 700 titres > 70 caractères / descriptions 161-200 caractères, titres de plages du Var en forme de question. Si rien n'est revenu : en reparler chiffres en main.
 - **Après le 15/11** : fiches minces restantes et ~2 900 fiches sans aucune source nommée (recherche nécessaire, par petits lots) ; ~150 fiches à source faible (annuaire seul, titres neutres).
 - **Rappels programmés** : 21/11 (dates passées : Étangs de Hollande, canal du Midi), 08/01/2027 (fin de la saison de Noël : bandeau `#season-banner`, page `/noel-chien`), 01/04/2027 (défaire la mise en avant d'hiver : ordre des catégories dans `src/_data/sections.js` et `CAT_GROUPS` de `src/map.js`, carte de l'accueil sur « Plages », lien garde du bandeau).
