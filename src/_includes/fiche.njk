@@ -39,6 +39,18 @@ extraScripts: |
   ]
 } %}
 <script type="application/ld+json">{{ jsonLdBreadcrumb | dump | safe }}</script>
+{%- set ldLastmod = page.inputPath | lastmod %}
+{%- set jsonLdPage = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://cocoexplore.com/" + (permalinkPath | cleanUrl),
+  "name": title,
+  "inLanguage": "en" if lang == "en" else "fr",
+  "dateModified": ldLastmod if ldLastmod >= "2026-10-01" else "2026-10-31",
+  "about": { "@type": breadcrumbCatId | schemaType, "name": h1 },
+  "publisher": { "@type": "Organization", "name": "Coco Explore", "url": "https://cocoexplore.com/" }
+} %}
+<script type="application/ld+json">{{ jsonLdPage | dump | safe }}</script>
 <section class="fiche-hero">
   {%- set heroSrcset = heroImage | imgSrcset %}
   <img class="fiche-hero-img" src="{{ heroImage | optimizeImg | safe }}"{% if heroSrcset %} srcset="{{ heroSrcset | safe }}" sizes="100vw"{% endif %} alt="{{ h1 | safe }}, {{ tag | lower | safe }} à {{ lieu | safe }}" loading="eager" fetchpriority="high"{% if heroImagePosition %} style="object-position: {{ heroImagePosition | safe }};"{% endif %}>
