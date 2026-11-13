@@ -594,3 +594,7 @@ Géocodeur officiel BAN (api-adresse.data.gouv.fr) interrogé via Parallel Searc
 ## 13/11/2026 — fusion Deauville
 
 Décision de l'utilisateur (« oui ») : `toiletteur-dogharmony-deauville-14` supprimé (même salon que Felix Canis : Dog'Harmony fermé le 19/09/2023, transfert au 119 B av. de la République selon Pappers/BODACC), 301 vers `/fiche-toiletteur-felix-canis-deauville-14` ; aucune page disparue (Deauville 16 fiches).
+
+## 13/11/2026 — lectures ciblées
+
+Fiche créée : `dogwash-la-niche-le-havre-76` (La Niche Urban Dogshop, 139 rue de Paris, Le Havre ; baignoire libre-service sur réservation, 7 à 38 € ; order 104970 ; position BAN). Club des Poilus toujours pas ouvert. Hôtel Saint-Marc (aucun site officiel, office Brocéliande : animaux acceptés) et Le Lys (supplément non publié) inchangés. Plages : La Croix-Valmer toujours contradictoire, Morgat sans arrêté 2026, Sète/Gouron/Sant Vicens confirmés (rapports `scratchpad/lectures-ciblees-1311-A/B.txt`).
