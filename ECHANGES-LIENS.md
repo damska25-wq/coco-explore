@@ -36,3 +36,22 @@ Uniquement `<p class="fiche-collab">Fiche réalisée en collaboration avec …</
 **31/10/2026** : dernier article de la nouvelle série Bimo publié (sujet 2, chien sportif) : `/guide-chien-sportif-rations` (`src/guides/chien-sportif-rations.njk`, image `src/assets/guides/chien-sportif-canicross-ration(-og).jpg`, reçue seule ; texte collé par l'utilisateur, le .docx n'ayant pas pu être téléchargé). Chaque affirmation relue sur sa source (AAHA facteurs énergétiques, grille WSAVA, WSU dilatation-torsion, consensus UK BWG 2021). Corrections : « C'est pour ça qu'on a créé Bimo » → « Des outils comme Bimo peuvent aider » ; effort intense « jusqu'à 11 » → « de 5,0 à 11 » (AAHA) ; phrase attribuée à l'AAHA sur le réglage par l'état corporel rendue générale (non lue dans l'encadré AAHA) ; « une pesée toutes les deux semaines » présentée comme exemple ; « l'eau bien plus qu'un supplément de nourriture » remplacé par le rappel du BWG (la déshydratation gêne la thermorégulation) ; 74 % des coups de chaleur liés à l'exercice précisés (cas à cause connue, 5 % en voiture) ; conseils BWG complétés (heures chaudes/humides, chien peu entraîné) ; liens internes (urgence vétérinaire, collations, balades, règles de randonnée). Guide ajouté aux « À lire aussi » des activités (`guidesByCat.js`). **Série de 3 articles terminée.**
 
 **31/10/2026** : Bimo propose de continuer (1/semaine ou 2/mois). Décision de l'utilisateur : **un article par mois**. Page `/guides` réorganisée par thèmes (Transports et formalités, Règles et sécurité, **Alimentation en voyage** = section de la série Bimo, chapeau avec lien sponsorisé, ancre `/guides#alimentation`). Ordre proposé à Bimo : fêtes de fin d'année (reçu vers le 15-20/11), hiver/montagne, train/avion/ferry, restaurant, passer la frontière (sources Commission européenne/douanes indispensables). Articles centrés sur l'alimentation, renvoyant vers nos guides. Même cadre (800-1 200 mots, sources, Word ou texte + 2 images, mention et lien sponsorisé, relecture libre).
+
+## Demandes de liens envoyées (mails « Votre fiche sur Coco Explore »)
+
+Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propositions/liens-entrants/mails-prets-2026-11-14*.md`.
+
+| # | Établissement | E-mail | Envoyé le | Statut | Notes |
+|---|---|---|---|---|---|
+| 1 | Pension Cayron (Roquebrune-sur-Argens) | contact@pensioncayron.com | 14/11/2026 | envoyé | |
+| 2 | Les Fripouilles du Rocher (Roquebrune-sur-Argens) | lesfripouillesdurocher@hotmail.fr | 14/11/2026 | envoyé | |
+| 3 | Peace and Dog's (Loriol-sur-Drôme) | peace.and.dogs26@gmail.com | 14/11/2026 | envoyé | |
+| 4 | Pension canine Des Élucines (Oloron-Sainte-Marie) | contact@elucines.com | 14/11/2026 | envoyé | |
+| 5 | Dog Faculty (La Houssaye) | contact@dogfaculty.com | 14/11/2026 | envoyé | |
+| 6 | Pension des Aulnes (Touville-sur-Montfort) | contact@pension-des-aulnes.fr | 14/11/2026 | envoyé | |
+| 7 | Pôle Canin (Mérignac) | contact@polecanin.fr | 14/11/2026 | envoyé | |
+| 8 | AntibesDogz (Antibes) | reservation@antibesdogz.fr | 14/11/2026 | envoyé | |
+| 9 | Flair & Crocs Azuréen (Cannes) | contact@fca-cannes.fr | 14/11/2026 | envoyé | |
+| 10 | Varec'h Kayak Bretagne (Baden) | varechkayak@gmail.com | 14/11/2026 | envoyé | |
+| 11 | Strolls Paris | info@strollsparis.com | 14/11/2026 | envoyé | |
+| 12 | Doggypark (Geispolsheim) | doggypark.strasbourg@gmail.com | 14/11/2026 | envoyé | |
