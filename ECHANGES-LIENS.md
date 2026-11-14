@@ -55,3 +55,18 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 10 | Varec'h Kayak Bretagne (Baden) | varechkayak@gmail.com | 14/11/2026 | envoyé | |
 | 11 | Strolls Paris | info@strollsparis.com | 14/11/2026 | envoyé | |
 | 12 | Doggypark (Geispolsheim) | doggypark.strasbourg@gmail.com | 14/11/2026 | envoyé | |
+| 13 | Doghouse (Le Rouget-Pers) | doghousepension@gmail.com | 14/11/2026 | envoyé | |
+| 14 | Domaine des Rintintins (Saint-Just-Luzac) | pensiondepepiron@gmail.com | 14/11/2026 | envoyé | |
+| 15 | Domaine de l'Auzaire (Les Achards) | domaine-de-lauzaire@outlook.fr | 14/11/2026 | envoyé | |
+| 16 | Le Toutous Ranch (Perrignier) | letoutousranch@gmail.com | 14/11/2026 | envoyé | |
+| 17 | Pension du Mont Liévain (Thieux) | pension.montlievain@orange.fr | 14/11/2026 | envoyé | |
+| 18 | Chenil du Clos des Jarousses (Saint-Pardoux-l'Ortigier) | contact@chenil-jarousses.fr | 14/11/2026 | envoyé | |
+| 19 | Les Grands Chenils de l'Ouest (Bouguenais) | lgco@wanadoo.fr | 14/11/2026 | envoyé | |
+| 20 | Véro Animaux Services (Haguenau) | contact@veroanimaux.fr | 14/11/2026 | envoyé | |
+| 21 | Debbie et les chiens (Fauillet) | debbieetleschiens@gmail.com | 14/11/2026 | envoyé | |
+| 22 | Club HAM (Saint-Avold) | clubcaninham@gmail.com | 14/11/2026 | envoyé | |
+| 23 | CaniMinet (Senlis) | info@caniminet.com | 14/11/2026 | envoyé | |
+| 24 | Domaine de l'Empreinte (Tercé) | pensionlempreinte@gmail.com | 14/11/2026 | envoyé | |
+| 25 | L'École des Woofs (Saint-Pierre-du-Mont) | lecoledeswoofs@gmail.com | 14/11/2026 | envoyé | |
+| 26 | Domaine de Milly (Noron-la-Poterie) | pensionmilly@hotmail.com | 14/11/2026 | envoyé | |
+| 27 | Garde à Woofs (Vaudevant) | contact@gardeawoofs.fr | 14/11/2026 | envoyé | |
