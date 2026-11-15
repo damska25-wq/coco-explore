@@ -41,3 +41,10 @@ Examiner l'existant, réutiliser fiches et données, éviter doublons et pages s
 
 ## Veille concurrentielle
 Mensuelle sur Emmène Ton Chien, PlayDogs, ToutouTrip (fonctionnalités, navigation, services, recherche, offres, UX) — pour repérer des opportunités, pas pour copier.
+
+## Décision de l'utilisateur (15/11/2026)
+« Je suis tes recommandations, on ne s'emballe pas, l'objectif est de retrouver la confiance de Google et de remonter au classement. »
+- Priorité unique jusqu'au retour de Google : chantier « amélioration générale » (fiches étoffées, sourcées, titres honnêtes), sans nouvelle page ni nouvelle fonctionnalité.
+- Pas de « Coco vous guide » conversationnel, pas de parcours 24 h / 48 h, pas d'alertes, pas de nouvelle monétisation tant que l'indexation n'est pas revenue.
+- Pilote Var (plages, lacs, balades : parking, ombre, point d'eau, accès à pied, Confirmé / À confirmer / Non renseigné) : seulement après le retour de Google, et d'abord sous forme de texte dans les fiches existantes ; Coco Score limité aux lieux publics, jamais aux commerces.
+- Ensuite (si Google repart) : filtres sur les pages plages/lacs du Var, bloc « Plan B » (alternatives à moins de 10 km) sur les plages à interdiction saisonnière.
