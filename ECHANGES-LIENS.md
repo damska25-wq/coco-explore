@@ -52,7 +52,7 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 7 | Pôle Canin (Mérignac) | contact@polecanin.fr | 14/11/2026 | envoyé | |
 | 8 | AntibesDogz (Antibes) | reservation@antibesdogz.fr | 14/11/2026 | envoyé | |
 | 9 | Flair & Crocs Azuréen (Cannes) | contact@fca-cannes.fr | 14/11/2026 | envoyé | |
-| 10 | Varec'h Kayak Bretagne (Baden) | varechkayak@gmail.com | 14/11/2026 | envoyé | |
+| 10 | Varec'h Kayak Bretagne (Baden) | varechkayak@gmail.com | 14/11/2026 | réponse 15/11 | Corrections reçues et appliquées le 15/11 (pas de chien sur les paddles ni en randonnée accompagnée, tarifs en hausse en 2027) ; pas de réponse sur le lien |
 | 11 | Strolls Paris | info@strollsparis.com | 14/11/2026 | envoyé | |
 | 12 | Doggypark (Geispolsheim) | doggypark.strasbourg@gmail.com | 14/11/2026 | envoyé | |
 | 13 | Doghouse (Le Rouget-Pers) | doghousepension@gmail.com | 14/11/2026 | envoyé | |
