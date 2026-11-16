@@ -49,7 +49,7 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 4 | Pension canine Des Élucines (Oloron-Sainte-Marie) | contact@elucines.com | 14/11/2026 | envoyé | |
 | 5 | Dog Faculty (La Houssaye) | contact@dogfaculty.com | 14/11/2026 | envoyé | |
 | 6 | Pension des Aulnes (Touville-sur-Montfort) | contact@pension-des-aulnes.fr | 14/11/2026 | envoyé | |
-| 7 | Pôle Canin (Mérignac) | contact@polecanin.fr | 14/11/2026 | envoyé | |
+| 7 | Pôle Canin (Mérignac) | contact@polecanin.fr | 14/11/2026 | réponse 16/11 | Réponse positive : signale le Pôle Canin Campus à Cestas (parc de loisirs, garderie de jour), qui a déjà sa fiche ; titre de la fiche Cestas mis en avant le 16/11. Lien non encore demandé explicitement en retour |
 | 8 | AntibesDogz (Antibes) | reservation@antibesdogz.fr | 14/11/2026 | envoyé | |
 | 9 | Flair & Crocs Azuréen (Cannes) | contact@fca-cannes.fr | 14/11/2026 | envoyé | |
 | 10 | Varec'h Kayak Bretagne (Baden) | varechkayak@gmail.com | 14/11/2026 | réponse 15/11 | Corrections reçues et appliquées le 15/11 (pas de chien sur les paddles ni en randonnée accompagnée, tarifs en hausse en 2027) ; pas de réponse sur le lien |
