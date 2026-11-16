@@ -63,7 +63,7 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 18 | Chenil du Clos des Jarousses (Saint-Pardoux-l'Ortigier) | contact@chenil-jarousses.fr | 14/11/2026 | envoyé | |
 | 19 | Les Grands Chenils de l'Ouest (Bouguenais) | lgco@wanadoo.fr | 14/11/2026 | envoyé | |
 | 20 | Véro Animaux Services (Haguenau) | contact@veroanimaux.fr | 14/11/2026 | envoyé | |
-| 21 | Debbie et les chiens (Fauillet) | debbieetleschiens@gmail.com | 14/11/2026 | envoyé | |
+| 21 | Debbie et les chiens (Fauillet) | debbieetleschiens@gmail.com | 14/11/2026 | envoyé | réponse 16/11 : fiche validée telle quelle (« Tout m'a l'air parfait »), pas de lien mentionné |
 | 22 | Club HAM (Saint-Avold) | clubcaninham@gmail.com | 14/11/2026 | envoyé | |
 | 23 | CaniMinet (Senlis) | info@caniminet.com | 14/11/2026 | envoyé | |
 | 24 | Domaine de l'Empreinte (Tercé) | pensionlempreinte@gmail.com | 14/11/2026 | envoyé | |
