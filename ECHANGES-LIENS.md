@@ -78,3 +78,5 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 **16/11/2026** : Bimo valide les ajustements de l'article n° 6 (fêtes, en ligne le 16/11) et le lien depuis la page Noël. Prochain article (hiver/montagne) annoncé vers mi-janvier 2027.
 
 - **La Maison Plûme (Villequier, 76)** — réponse reçue le 16/11/2026 au mail de la série 3 : supplément animal 20 €/nuit (option de réservation), balades (voies piétonnes au bord de la Seine, sacs gratuits sur le quai, forêt derrière la maison), photo de la maison fournie pour remplacer la photo Unsplash. Fiche corrigée le 16/11 ; réponse prête dans `propositions/liens-entrants/reponses-a-envoyer-apres-mise-en-ligne.md`, à envoyer après la prochaine mise en ligne. Pas de lien demandé dans cette réponse (déjà demandé dans le premier mail).
+
+- **Réponses envoyées le 16/11/2026** (après la mise en ligne de 15 h 39) : La Maison Plûme, Domaine Arleblanc, Camping de l'Océan (Kerhostin), Pôle Canin (Cestas), Debbie et les chiens (mot de remerciement).
