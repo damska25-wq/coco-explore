@@ -59,3 +59,30 @@ Belle journée,
 Damien
 Coco Explore — cocoexplore.com
 ```
+
+## Domaine Arleblanc (Rosières), demande reçue par l'espace pro le 16/11
+
+**Adresse :**
+```
+info@arleblanc.com
+```
+
+**Objet :**
+```
+Votre fiche Coco Explore est corrigée
+```
+
+**Texte :**
+```
+Bonjour,
+
+Merci pour votre message via l'espace pro. Votre fiche est corrigée : chiens acceptés sur les emplacements, dans les mobil-homes et les gîtes, supplément de 3,50 € par nuit hors été et 5 € du 3 juillet au 28 août 2027, terrasses avec portillon, toutou-bar, accès à la Beaume et plage pour les chiens, et chiens interdits à la piscine, aux sanitaires et à l'épicerie.
+
+https://cocoexplore.com/fiche-domaine-arleblanc-rosieres
+
+Si vous avez une page « liens utiles » sur votre site, un lien vers votre fiche aiderait les propriétaires de chiens qui cherchent un camping en Ardèche. Ce n'est bien sûr pas une condition.
+
+Belle journée,
+Damien
+Coco Explore — cocoexplore.com
+```
