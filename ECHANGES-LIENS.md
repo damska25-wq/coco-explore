@@ -70,6 +70,36 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 25 | L'École des Woofs (Saint-Pierre-du-Mont) | lecoledeswoofs@gmail.com | 14/11/2026 | envoyé | |
 | 26 | Domaine de Milly (Noron-la-Poterie) | pensionmilly@hotmail.com | 14/11/2026 | envoyé | |
 | 27 | Garde à Woofs (Vaudevant) | contact@gardeawoofs.fr | 14/11/2026 | envoyé | |
+| 28 | Château de Langeais | contact@chateau-de-langeais.com | 15-16/11/2026 | envoyé | |
+| 29 | Grottes du Cerdon | info@grotte-cerdon.com | 15-16/11/2026 | envoyé | |
+| 30 | Grottes du Roc de Cazelle | info@rocdecazelle.com | 15-16/11/2026 | envoyé | |
+| 31 | Jardins de Kerdalo | lesjardinsdekerdalo@gmail.com | 16/11/2026 | envoyé | |
+| 32 | Domaine de la Bastide Blanche | contact@bastide-blanche.fr | 16/11/2026 | envoyé | |
+| 33 | Vign'Appart | contact@vignappart.com | 15-16/11/2026 | envoyé | |
+| 34 | Auberge des Montauds | contact@auberge-des-montauds.fr | 15-16/11/2026 | envoyé | |
+| 35 | Camping Le Petit Liou | info@camping-lepetitliou.com | 15-16/11/2026 | envoyé | |
+| 36 | Camping de l'Océan | info@relaisdelocean.com | 15-16/11/2026 | réponse 16/11 | dates 2027, BP 18 retirée, Bocabo signalé ; fiche corrigée, réponse envoyée le 16/11 ; pas de réponse sur le lien |
+| 37 | Maison d'hôtes Le Pic d'Anie | contact@hebergement-picdanie.fr | 15-16/11/2026 | envoyé | |
+| 38 | Camping Domaine Arleblanc | info@arleblanc.com | 15-16/11/2026 | réponse 16/11 | corrections via l'espace pro (tarifs 2027, services, interdictions) ; fiche corrigée, réponse envoyée le 16/11 |
+| 39 | Domaine Le Gui | info@domainelegui.com | 15-16/11/2026 | envoyé | |
+| 40 | Gîte L'Écrin de la Brenne | contact@ecrin-brenne.fr | 15-16/11/2026 | envoyé | |
+| 41 | Vedettes Jolie France (Îles Chausey) | accueil@vedettesjoliefrance.com | 15-16/11/2026 | envoyé | |
+| 42 | La Maison Plûme | reservation@lamaisonplume.com | 15-16/11/2026 | réponse 16/11 | supplément 20 €/nuit, balades, photo fournie ; fiche corrigée, réponse envoyée le 16/11 |
+| 43 | Château de la Roche | contact@lechateaudelaroche.fr | 16/11/2026 | envoyé | |
+| 44 | Haras national de Cluny | accueil@ehnc.fr | 16/11/2026 | envoyé | |
+| 45 | Hôtel Aux Ducs de Savoie | info@ducs-de-savoie.com | 16/11/2026 | envoyé | |
+| 46 | L'Esprit Chien | cyno-pro@lespritchien.fr | 16/11/2026 | envoyé | |
+| 47 | Le Pouget | info@lepouget-dordogne.fr | 16/11/2026 | envoyé | |
+| 48 | Centre canin Lady Noire | contact@lady-noire.fr | 16/11/2026 | envoyé | |
+| 49 | Animar | contact@animar.fr | 16/11/2026 | envoyé | |
+| 50 | Animalegria | contact@animalegria.fr | 16/11/2026 | envoyé | |
+| 51 | Les Trois Frênes | contact@lestroisfrenes.com | 16/11/2026 | envoyé | |
+| 52 | Centre Canin Thomas Cormier | contact@centrecaninthomascormier.com | 16/11/2026 | envoyé | |
+| 53 | Com'Chien et Chat | contact@com-chien-chat.com | 16/11/2026 | envoyé | |
+| 54 | Pension du Pont de Sèvres | contact@pensiondupontdesevres.fr | 16/11/2026 | envoyé | |
+| 55 | Pitchounes | contact@pitchounes16.com | 16/11/2026 | envoyé | |
+| 56 | Paw'sitive Job | contact@pawsitivejob.fr | 16/11/2026 | envoyé | |
+| 57 | Les Nouvelles Carrières Noires | contact@lescarrieresnoires.fr | 16/11/2026 | envoyé | |
 
 **15/11/2026** : article Bimo n° 6 (fêtes de fin d'année) préparé : `/guide-fetes-repas-chien` (`src/guides/fetes-repas-chien.njk`, image `src/assets/guides/chien-fetes-repas-maison-aliments-a-eviter(-og).jpg`), en ligne avec la prochaine mise en ligne (16/11). Chaque affirmation relue sur sa source (ASPCA conseils fêtes, aliments à éviter et aliments à partager ; CAPAE-Ouest chocolat et raisin ; FDA xylitol ; AAHA pancréatite ; WSAVA guide des friandises ; Ordre des vétérinaires). Corrections : « les os cuits » → os de volaille (ASPCA), « cuits comme crus » attribué à la WSAVA ; échalote attribuée à ASPCA + WSAVA ; « courge cuite » → « potiron cuit » (ASPCA) ; phrase commerciale « C'est justement le rôle de Bimo » → « Des outils comme Bimo peuvent aider » ; section « Fiche image SEO » retirée ; liens internes (feux d'artifice, Noël avec son chien, vétérinaires, urgence vétérinaire, hébergements) ; lien depuis `/noel-chien` et « À lire aussi » des restaurants. Prochain sujet proposé à Bimo : hiver/montagne, vers mi-janvier 2027 (choix de l'utilisateur le 15/11 : l'article des fêtes, reçu mi-novembre, couvre décembre ; publication avant les vacances de février).
 
