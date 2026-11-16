@@ -86,3 +86,30 @@ Belle journée,
 Damien
 Coco Explore — cocoexplore.com
 ```
+
+## La Maison Plûme (Villequier), réponse reçue le 16/11
+
+**Adresse :**
+```
+reservation@lamaisonplume.com
+```
+
+**Objet :**
+```
+Re: Votre fiche sur Coco Explore
+```
+
+**Texte :**
+```
+Bonjour,
+
+Merci beaucoup pour votre réponse et pour la photo, elle est superbe. La fiche de La Maison Plûme est mise à jour : votre photo remplace l'ancienne, le supplément de 20 € par nuit à choisir dans les options de la réservation est indiqué, et une partie présente les balades avec son chien (voies piétonnes au bord de la Seine devant la maison, sacs à crottes gratuits sur le quai, forêt juste derrière pour les grandes balades).
+
+https://cocoexplore.com/fiche-maison-plume-villequier-76
+
+N'hésitez pas à me dire si quelque chose est encore à ajuster.
+
+Belle journée,
+Damien
+Coco Explore — cocoexplore.com
+```
