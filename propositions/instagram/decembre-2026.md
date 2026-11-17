@@ -113,5 +113,5 @@ Texte de la story : « Chiens interdits de 10 h à 17 h l'hiver 👉 la règle c
 
 - **Stories à la une :** créer « Var », « Fêtes » et « Conseils », et y ranger les stories avec lien.
 - **Vidéo :** si tu as une courte vidéo de Coco au même endroit (10 à 20 secondes), publie-la plutôt en réel avec la même légende : Instagram la montre davantage aux non-abonnés.
-- **Abonnements :** se désabonner peu à peu des comptes sans rapport avec les chiens ou le voyage, une cinquantaine par jour au maximum.
+- **Abonnements :** les comptes suivis sont en lien avec les chiens, les animaux, la nature et le voyage : on les garde. Suivre et liker à un rythme régulier mais raisonnable (pas des centaines d'actions d'un coup), pour éviter les blocages temporaires d'Instagram ; préférer quelques vrais commentaires sur les comptes du même univers.
 - **Suivi :** m'envoyer une capture du tableau de bord fin décembre pour voir ce qui a marché.
