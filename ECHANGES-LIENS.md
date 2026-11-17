@@ -100,6 +100,21 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 55 | Pitchounes | contact@pitchounes16.com | 16/11/2026 | envoyé | |
 | 56 | Paw'sitive Job | contact@pawsitivejob.fr | 16/11/2026 | envoyé | |
 | 57 | Les Nouvelles Carrières Noires | contact@lescarrieresnoires.fr | 16/11/2026 | envoyé | |
+| 58 | Moulin de Petoulle (Charenton-du-Cher) | moulindepetoulle@gmail.com | 17/11/2026 | envoyé | |
+| 59 | Camping Les Bois du Bardelet (Poilly-lez-Gien) | contact@bardelet.com | 17/11/2026 | envoyé | |
+| 60 | Camping Merendella (Moriani-Plage) | contact@merendella.com | 17/11/2026 | envoyé | |
+| 61 | Le Mas Normand (Ver-sur-Mer) | lemasnormand14@gmail.com | 17/11/2026 | envoyé | |
+| 62 | Canoë Les 7 Rives (Montignac-Lascaux) | contact@canoe-montignac.com | 17/11/2026 | envoyé | |
+| 63 | Camping Gwel Kaër (Lanvéoc) | info@camping-gwel-kaer.com | 17/11/2026 | envoyé | |
+| 64 | Chez Cabeillou (Orthez) | chezcabeillou64@gmail.com | 17/11/2026 | envoyé | |
+| 65 | Camping Le Panoramic (Telgruc-sur-Mer) | info@camping-panoramic.com | 17/11/2026 | envoyé | |
+| 66 | Au Site Normand (Clécy) | sitenormand@orange.fr | 17/11/2026 | envoyé | |
+| 67 | Villa Aliénor (Les Andelys) | villa.alienor@gmail.com | 17/11/2026 | envoyé | |
+| 68 | Château les Reuilles (Savignac-de-Duras) | lesreuilles.chateau@gmail.com | 17/11/2026 | envoyé | |
+| 69 | Domaine du Ciran (Ménestreau-en-Villette) | contact@domaineduciran.com | 17/11/2026 | envoyé | |
+| 70 | Dogwash Perle and Co (Mouans-Sartoux) | dogwashperleandco@gmail.com | 17/11/2026 | envoyé | |
+| 71 | Lab Wash, Lab & Compagnie (La Martyre) | contact@labetcompagnie.com | 17/11/2026 | envoyé | |
+| 72 | Au Terrier (Châteauroux) | auterriertoilettage@gmail.com | 17/11/2026 | envoyé | |
 
 **15/11/2026** : article Bimo n° 6 (fêtes de fin d'année) préparé : `/guide-fetes-repas-chien` (`src/guides/fetes-repas-chien.njk`, image `src/assets/guides/chien-fetes-repas-maison-aliments-a-eviter(-og).jpg`), en ligne avec la prochaine mise en ligne (16/11). Chaque affirmation relue sur sa source (ASPCA conseils fêtes, aliments à éviter et aliments à partager ; CAPAE-Ouest chocolat et raisin ; FDA xylitol ; AAHA pancréatite ; WSAVA guide des friandises ; Ordre des vétérinaires). Corrections : « les os cuits » → os de volaille (ASPCA), « cuits comme crus » attribué à la WSAVA ; échalote attribuée à ASPCA + WSAVA ; « courge cuite » → « potiron cuit » (ASPCA) ; phrase commerciale « C'est justement le rôle de Bimo » → « Des outils comme Bimo peuvent aider » ; section « Fiche image SEO » retirée ; liens internes (feux d'artifice, Noël avec son chien, vétérinaires, urgence vétérinaire, hébergements) ; lien depuis `/noel-chien` et « À lire aussi » des restaurants. Prochain sujet proposé à Bimo : hiver/montagne, vers mi-janvier 2027 (choix de l'utilisateur le 15/11 : l'article des fêtes, reçu mi-novembre, couvre décembre ; publication avant les vacances de février).
 
