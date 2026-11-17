@@ -109,7 +109,7 @@ extraHead: |
   {%- if autresFiches.length %}
   <details class="ville-autres"{% if not mainFiches.length %} open{% endif %}>
     <summary>Autres adresses : accueil du chien non confirmé ou refusé ({{ autresFiches.length }})</summary>
-    <p>Pour ces adresses, nous n'avons pas trouvé de source officielle qui confirme l'accueil du chien, ou l'établissement indique qu'il ne l'accepte pas. Le détail est dans chaque fiche : appelle avant d'y aller.</p>
+    <p>Pour ces adresses, aucune source officielle ne confirme l'accueil du chien, ou l'établissement indique qu'il ne l'accepte pas. Le détail est dans chaque fiche : appelle avant d'y aller.</p>
     <div class="fiche-grid">
       {%- for fiche in autresFiches %}
       {% include "fiche-card.njk" %}
