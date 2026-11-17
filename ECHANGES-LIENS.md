@@ -115,6 +115,21 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 70 | Dogwash Perle and Co (Mouans-Sartoux) | dogwashperleandco@gmail.com | 17/11/2026 | envoyé | |
 | 71 | Lab Wash, Lab & Compagnie (La Martyre) | contact@labetcompagnie.com | 17/11/2026 | envoyé | |
 | 72 | Au Terrier (Châteauroux) | auterriertoilettage@gmail.com | 17/11/2026 | envoyé | |
+| 73 | Hôtellerie Saint-Yves (Chartres) | hotellerie@maison-st-yves.com | 17/11/2026 | envoyé |  |
+| 74 | Hôtel Le Pré de la Cure (Yvoire) | lepredelacure@wanadoo.fr | 17/11/2026 | envoyé |  |
+| 75 | Sud Hôtel (Bastia) | sudhotelbastia@gmail.com | 17/11/2026 | envoyé | 1er envoi revenu (ancienne adresse contact@sudhotel-bastia.com), renvoyé à l'adresse du site officiel |
+| 76 | Camping de Champlitte (Champlitte) | campingchamplitte@yahoo.com | 17/11/2026 | envoyé |  |
+| 77 | Ferme des Buttons (Rosnay) | lafermedesbuttons@gmail.com | 17/11/2026 | envoyé |  |
+| 78 | Logis Hôtel-Restaurant Les Capucins (Avallon) | contact@avallonlescapucins.com | 17/11/2026 | envoyé |  |
+| 79 | Camping Le Fanal (Isigny-sur-Mer) | info@camping-lefanal.com | 17/11/2026 | envoyé |  |
+| 80 | Le Pitchoun (Le Val) | lepitchoun.contact@gmail.com | 17/11/2026 | envoyé |  |
+| 81 | Camping du Lauzart (Lescun) | campingdulauzart@pyreneesloisirs.fr | 17/11/2026 | envoyé |  |
+| 82 | Hôtel-restaurant Le Connétable (Saint-Bonnet-en-Champsaur) | contact@hotel-le-connetable.com | 17/11/2026 | envoyé |  |
+| 83 | Esthétique Canin (Le Cannet) | esthetique.canin06110@gmail.com | 17/11/2026 | envoyé |  |
+| 84 | Dog&cat élégance (Tours) | message Instagram @dogandcat_elegance | 17/11/2026 | envoyé | adresse du site inopérante (domaine inexistant), contact par Instagram |
+| 85 | Dogwash Mende (Mende) | dogwashmende@orange.fr | 17/11/2026 | envoyé |  |
+| 86 | Auberge du Cratère (Volvic) | auberge.cratere@orange.fr | 17/11/2026 | envoyé |  |
+| 87 | Campo di Fiori, maisons de charme (Calvi) | contact@location-campodifiori.com | 17/11/2026 | envoyé |  |
 
 **15/11/2026** : article Bimo n° 6 (fêtes de fin d'année) préparé : `/guide-fetes-repas-chien` (`src/guides/fetes-repas-chien.njk`, image `src/assets/guides/chien-fetes-repas-maison-aliments-a-eviter(-og).jpg`), en ligne avec la prochaine mise en ligne (16/11). Chaque affirmation relue sur sa source (ASPCA conseils fêtes, aliments à éviter et aliments à partager ; CAPAE-Ouest chocolat et raisin ; FDA xylitol ; AAHA pancréatite ; WSAVA guide des friandises ; Ordre des vétérinaires). Corrections : « les os cuits » → os de volaille (ASPCA), « cuits comme crus » attribué à la WSAVA ; échalote attribuée à ASPCA + WSAVA ; « courge cuite » → « potiron cuit » (ASPCA) ; phrase commerciale « C'est justement le rôle de Bimo » → « Des outils comme Bimo peuvent aider » ; section « Fiche image SEO » retirée ; liens internes (feux d'artifice, Noël avec son chien, vétérinaires, urgence vétérinaire, hébergements) ; lien depuis `/noel-chien` et « À lire aussi » des restaurants. Prochain sujet proposé à Bimo : hiver/montagne, vers mi-janvier 2027 (choix de l'utilisateur le 15/11 : l'article des fêtes, reçu mi-novembre, couvre décembre ; publication avant les vacances de février).
 
