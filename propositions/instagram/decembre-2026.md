@@ -1,117 +1,84 @@
-# Instagram @danslesyeuxdecoco — 4 publications pour décembre 2026
+# Instagram @danslesyeuxdecoco — décembre 2026 (version courte)
 
-Une publication par semaine. Pour chacune : la photo de Coco à choisir, la légende à copier-coller, puis une story avec le lien vers la fiche (autocollant « Lien » dans la story).
-Toutes les infos viennent des fiches du site, vérifiées sur les sources officielles (dates de lecture dans chaque fiche). Programmation possible d'un coup dans l'application gratuite Meta Business Suite.
+Style voulu par Damien : une jolie photo naturelle (balade ou Coco), un ou deux mots sur l'endroit, et le lien cocoexplore.com bien visible. Pas d'explications façon guide.
+
+Important : sur Instagram, un lien écrit dans la légende n'est pas cliquable. Les seuls liens cliquables sont celui de la bio et l'autocollant « Lien » dans une story. D'où « 🔗 lien en bio » dans la légende, et une story avec l'autocollant vers la fiche.
 
 ---
 
-## Publication 1 — jeudi 3 décembre : plage de l'Escalet (Ramatuelle)
+## 1. Plage de l'Escalet (Ramatuelle)
 
-**Photo :** Coco à l'Escalet (sur les rochers ou sur la passerelle).
+**Photo :** Coco à l'Escalet.
 
 **Légende :**
 ```
-L'Escalet, c'est ma plage d'hiver préférée 🐾🌊
+Plage de l'Escalet 🌊🐾
+Ma plage d'hiver préférée, toujours en laisse.
 
-✅ Chiens acceptés en laisse (office de tourisme de Ramatuelle, et un panneau de la commune le rappelle sur place)
-🅿️ Parking gratuit de novembre à mai
-🚿 Deux douches près du parking : parfait pour me rincer le sel des pattes
-🔥 Feux interdits sur le site
+🔗 cocoexplore.com (lien en bio)
 
-En hiver, la plage est calme et la lumière est magnifique. Mon humain me garde en laisse, et tout le monde est content 😊
-
-Toutes les infos pratiques sont sur cocoexplore.com (lien en bio).
-
-#plagechien #chienbienvenu #ramatuelle #var #voyageravecsonchien #labrador #cotedazur #balade
+#plagechien #ramatuelle #var #labrador
 ```
 
-**Story avec lien :** https://cocoexplore.com/fiche-escalet
-Texte de la story : « Chiens en laisse acceptés, parking gratuit l'hiver 👉 toutes les infos »
+**Story :** autocollant « Lien » → https://cocoexplore.com/fiche-escalet
 
 ---
 
-## Publication 2 — jeudi 10 décembre : le mont Vinaigre, dans l'Estérel
+## 2. Mont Vinaigre, Estérel
 
-**Photo :** Coco dans les roches rouges de l'Estérel.
+**Photo :** Coco dans les roches rouges.
 
 **Légende :**
 ```
-L'hiver, c'est LA saison pour l'Estérel 🔴⛰️
+Estérel, mont Vinaigre ⛰️🔴
+L'hiver, c'est le meilleur moment.
 
-Ma balade : le mont Vinaigre, au départ du parking du col du Testanier (Fréjus)
-📏 7,25 km aller-retour, 343 m de dénivelé, environ 2 h, niveau moyen (office de tourisme Estérel Côte d'Azur)
-🌳 En grande partie à l'ombre des arbres
+🔗 cocoexplore.com (lien en bio)
 
-Pourquoi l'hiver ? De mi-juin à fin septembre, l'accès aux massifs du Var peut être interdit à cause du risque d'incendie. En décembre, pas de souci, et il fait doux 😎
-
-Laisse conseillée toute l'année, et pense à l'eau pour moi !
-
-Fiche complète sur cocoexplore.com (lien en bio).
-
-#esterel #randonneechien #balade #frejus #var #voyageravecsonchien #labrador #hiver
+#esterel #randonneechien #var #labrador
 ```
 
-**Story avec lien :** https://cocoexplore.com/fiche-balade-mont-vinaigre-esterel-frejus
-Texte de la story : « 7 km, 2 h, parfait en hiver 👉 l'itinéraire »
+**Story :** autocollant « Lien » → https://cocoexplore.com/fiche-balade-mont-vinaigre-esterel-frejus
 
 ---
 
-## Publication 3 — jeudi 17 décembre : les repas de fêtes
+## 3. Les fêtes
 
-**Photo :** Coco avec sa couronne 👑 (déjà dans tes photos).
+**Photo :** Coco avec sa couronne 👑.
 
 **Légende :**
 ```
-Même avec ma couronne, je n'ai pas droit à tout pendant les fêtes 👑🎄
+Reine des fêtes 👑🎄
+Mais pas de chocolat pour moi !
 
-Ce qui doit rester hors de ma portée :
-🍫 Le chocolat, surtout le noir (centre antipoison vétérinaire de l'école de Nantes)
-🍇 Le raisin, frais ou sec : panettone, mendiants, kouglof…
-🍬 Les bonbons et desserts « sans sucre » : ils peuvent contenir du xylitol, dangereux pour moi
-🍗 Les os de volaille : la carcasse va dans une poubelle fermée !
-🧅 Les sauces et farces avec oignon, ail ou échalote
+🔗 cocoexplore.com (lien en bio)
 
-Si je vomis plusieurs fois ou si je suis tout mou après le réveillon : on appelle le vétérinaire.
-
-Le guide complet, avec une vraie gamelle de fête sans risque, est sur cocoexplore.com (lien en bio).
-
-#noelchien #chien #fetes #santechien #labrador #conseilchien #noel
+#noelchien #labrador #chien
 ```
 
-**Story avec lien :** https://cocoexplore.com/guide-fetes-repas-chien
-Texte de la story : « Les aliments de Noël interdits au chien 👉 le guide »
+**Story :** autocollant « Lien » → https://cocoexplore.com/guide-fetes-repas-chien
 
 ---
 
-## Publication 4 — samedi 26 décembre : plage de Bonporteau (Cavalaire-sur-Mer)
+## 4. Plage de Bonporteau (Cavalaire-sur-Mer)
 
-**Photo :** Coco sur la passerelle de Bonporteau.
+**Photo :** Coco sur la passerelle.
 
 **Légende :**
 ```
-Bonporteau, une petite crique sauvage… avec une règle à connaître ⚠️🐾
+Bonporteau 🌅🐾
+L'hiver, on y va tôt le matin ou en fin de journée.
 
-Selon la commune de Cavalaire-sur-Mer, les chiens y sont interdits, même en laisse :
-🕙 de 10 h à 17 h du 1er novembre au 31 mars
-☀️ de 6 h à 22 h du 1er avril au 31 octobre
+🔗 cocoexplore.com (lien en bio)
 
-Donc l'hiver, on y va tôt le matin ou en fin d'après-midi 🌅
-
-À savoir : accès par un sentier très pentu, plage non surveillée, pas de restauration sur place. On se gare le long de la route départementale.
-
-Les détails sont sur cocoexplore.com (lien en bio).
-
-#plagechien #cavalairesurmer #var #voyageravecsonchien #labrador #cotedazur #crique
+#cavalairesurmer #var #plagechien #labrador
 ```
 
-**Story avec lien :** https://cocoexplore.com/fiche-bonporteau
-Texte de la story : « Chiens interdits de 10 h à 17 h l'hiver 👉 la règle complète »
+**Story :** autocollant « Lien » → https://cocoexplore.com/fiche-bonporteau
 
 ---
 
-## Petits conseils pour le compte
+## Pour le compte
 
-- **Stories à la une :** créer « Var », « Fêtes » et « Conseils », et y ranger les stories avec lien.
-- **Vidéo :** si tu as une courte vidéo de Coco au même endroit (10 à 20 secondes), publie-la plutôt en réel avec la même légende : Instagram la montre davantage aux non-abonnés.
-- **Abonnements :** les comptes suivis sont en lien avec les chiens, les animaux, la nature et le voyage : on les garde. Suivre et liker à un rythme régulier mais raisonnable (pas des centaines d'actions d'un coup), pour éviter les blocages temporaires d'Instagram ; préférer quelques vrais commentaires sur les comptes du même univers.
-- **Suivi :** m'envoyer une capture du tableau de bord fin décembre pour voir ce qui a marché.
+- **Abonnements :** les comptes suivis sont en lien avec les chiens, les animaux, la nature et le voyage : on les garde. Suivre et liker à un rythme régulier mais raisonnable, pour éviter les blocages temporaires d'Instagram ; quelques vrais commentaires sur des comptes du même univers.
+- **Rythme :** à ton envie, une publication par semaine ou toutes les deux semaines.
