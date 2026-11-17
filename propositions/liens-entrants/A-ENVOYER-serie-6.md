@@ -84,7 +84,7 @@ Coco Explore — cocoexplore.com
 
 **Adresse :**
 ```
-contact@sudhotel-bastia.com
+sudhotelbastia@gmail.com
 ```
 
 **Objet :**
@@ -422,40 +422,18 @@ Coco Explore — cocoexplore.com
 
 ---
 
-## 84. Dog&cat élégance (Tours)
+## 84. Dog&cat élégance (Tours) — PAR MESSAGE INSTAGRAM, pas par mail
 
-**Adresse :**
+L'adresse e-mail affichée sur leur site ne fonctionne pas (le domaine n'existe pas). Envoie plutôt ce message privé à leur compte Instagram **@dogandcat_elegance** (ou à leur page Facebook « dogcatelegance »).
+
+**Message :**
 ```
-contact@dogcatelegance.fr
-```
+Bonjour ! Je m'occupe de Coco Explore (cocoexplore.com), un guide gratuit pour voyager avec son chien en France. Votre salon y a une fiche, sans aucun frais : https://cocoexplore.com/fiche-toiletteur-dog-cat-elegance-tours-37
 
-**Objet :**
-```
-Votre fiche sur Coco Explore
-```
+Pourriez-vous me dire si quelque chose est à corriger ? Petite info au passage : l'adresse contact@dogcatelegance.fr affichée sur votre site ne reçoit pas les mails (le domaine dogcatelegance.fr n'existe pas, votre site est sur dogandcatelegance.fr).
 
-**Texte :**
-```
-Bonjour,
-
-Je m'occupe de Coco Explore (cocoexplore.com), un guide gratuit et
-indépendant pour voyager avec son chien en France. Dog&cat élégance y a
-une fiche, sans aucun frais :
-https://cocoexplore.com/fiche-toiletteur-dog-cat-elegance-tours-37
-
-Nous l'avons rédigée à partir de votre site et des informations
-officielles. Pourriez-vous y jeter un œil et me dire si quelque chose
-est à corriger (conditions d'accueil des chiens, tarifs, horaires) ?
-Je la mets à jour rapidement.
-
-Si vous avez une page « liens utiles » ou « on parle de nous », un lien
-vers votre fiche aiderait aussi les propriétaires de chiens qui cherchent
-un toiletteur dans votre secteur. Ce n'est bien sûr pas une condition : la
-fiche reste en ligne dans tous les cas.
-
-Merci et belle journée,
-Damien
-Coco Explore — cocoexplore.com
+Belle journée,
+Damien – Coco Explore
 ```
 
 ---
