@@ -127,7 +127,7 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 82 | Hôtel-restaurant Le Connétable (Saint-Bonnet-en-Champsaur) | contact@hotel-le-connetable.com | 17/11/2026 | envoyé |  |
 | 83 | Esthétique Canin (Le Cannet) | esthetique.canin06110@gmail.com | 17/11/2026 | envoyé |  |
 | 84 | Dog&cat élégance (Tours) | aucune adresse valide (contact@dogcatelegance.fr inopérante) | — | non envoyé | adresse du site inopérante ; salon « fermé temporairement » selon Google Maps (nov. 2026) ; contact possible par Instagram @dogandcat_elegance ou 06 29 74 06 93 |
-| 85 | Dogwash Mende (Mende) | dogwashmende@orange.fr | 17/11/2026 | envoyé |  |
+| 85 | Dogwash Mende (Mende) | dogwashmende@orange.fr | 17/11/2026 | réponse 17/11 | précisions reçues (local à part, 6h-23h 7j/7, 8 €/10 min avec pause, équipements, bouton d'appel) ; fiche corrigée le 17/11 |
 | 86 | Auberge du Cratère (Volvic) | auberge.cratere@orange.fr | 17/11/2026 | envoyé |  |
 | 87 | Campo di Fiori, maisons de charme (Calvi) | contact@location-campodifiori.com | 17/11/2026 | envoyé |  |
 

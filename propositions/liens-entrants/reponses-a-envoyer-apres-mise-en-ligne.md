@@ -113,3 +113,30 @@ Belle journée,
 Damien
 Coco Explore — cocoexplore.com
 ```
+
+## Dogwash Mende, réponse reçue le 17/11
+
+**Adresse :**
+```
+dogwashmende@orange.fr
+```
+
+**Objet :**
+```
+Re: Votre fiche sur Coco Explore
+```
+
+**Texte :**
+```
+Bonjour,
+
+Merci beaucoup pour toutes ces précisions. La fiche est corrigée : local à part sous l'animalerie, ouvert tous les jours de 6h à 23h, local chauffé avec banc, table, point d'eau, sèche-mains et prise pour le téléphone, séchage au pulseur, 8 € les 10 minutes avec pause possible, bouton d'appel pendant les heures de l'animalerie, et le rappel de laisser les lieux propres.
+
+https://cocoexplore.com/fiche-dogwash-mende
+
+Si vous avez une page « liens utiles » ou une page Facebook, un lien vers la fiche aiderait les propriétaires de chiens de passage en Lozère à vous trouver. Ce n'est bien sûr pas une condition.
+
+Bonne soirée,
+Damien
+Coco Explore — cocoexplore.com
+```
