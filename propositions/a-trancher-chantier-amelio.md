@@ -11,6 +11,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 ## Fermetures probables (registre officiel)
 - Brienon-sur-Armançon (lot 572) : établissement fermé le 14/02/2022, société radiée (Infogreffe).
 - Saint-André-les-Vergers (Guérinot, radié et fermé depuis le 31/12/2011).
+- Saint-Martin-de-Ré (Île de Ré) : site fermé le 1er avril 2025 → 301 vers la fiche de La Flotte ?
 - Vénissieux (Gambetta, radié le 01/07/2021) et Sancoins (`veterinaire-garouachi-moncef-sancoins-18`, radié le 28/07/2022 ; slug avec prénom et nom).
 - Mamers (Bellevue) : fermeture au 1er octobre 2025, regroupement dans Docto Vet (Maine Libre du 23/09/2025).
 - Saint-Florentin (Beauroy) : fermée depuis janvier 2025 (L'Yonne républicaine du 20/02/2026).
@@ -26,7 +27,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 
 ## Divers
 - Le Creusot (Crosot'vet) : déménagée au 18 rue Charleville, Le Breuil ; champ lieu encore « Le Creusot » (à changer en vérifiant la page ville).
-- Pointe-à-Pitre (slug `veterinaire-hodebar-…`, devenue Clinique KaruVet), Étampes (slug Gorvel, devenue Clinique du Dr Planté), Corbeil (slug `veterinaire-franconny-corbeil-91`, faute de frappe pour Francony), Rives (slug `veterinaire-fure-rives`, clinique à Beaucroissant), Limoux (slug avec noms des vétérinaires, enseigne Anim'Aude Vet), Tonnerre (enseigne Croix Blanche non confirmée) et Kourou (slug avec nom de famille, devenue Cabinet de l'Horloge) : slugs à renommer.
+- Creil (slug avec le nom du vétérinaire Saudubray, devenue « Clinique Vétérinaire de Creil »), Guebwiller (slug `klein-pier`, devenue Clinique de la Lauch), Pointe-à-Pitre (slug `veterinaire-hodebar-…`, devenue Clinique KaruVet), Étampes (slug Gorvel, devenue Clinique du Dr Planté), Corbeil (slug `veterinaire-franconny-corbeil-91`, faute de frappe pour Francony), Rives (slug `veterinaire-fure-rives`, clinique à Beaucroissant), Limoux (slug avec noms des vétérinaires, enseigne Anim'Aude Vet), Tonnerre (enseigne Croix Blanche non confirmée) et Kourou (slug avec nom de famille, devenue Cabinet de l'Horloge) : slugs à renommer.
 - La Tour-du-Pin (Combe-Oelschlager) : noms de famille dans le titre et le h1.
 - Chantilly (Gard) : peut-être vétérinaire pour chevaux uniquement (lien avec le chien non établi).
 - Site de CHV Atlantia (Nantes) apparemment piraté (texte de spam) : pas de lien tant qu'il n'est pas nettoyé.
