@@ -17,12 +17,13 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Verneuil-sur-Avre (radié 2020), Sainte-Sigolène (radié 2019) : gardés pour l'instant.
 
 ## Fermetures signalées par Google seul (à confirmer par un appel)
-- La Mure (Centre), Équeurdreville-Hainneville (Brunerie Valenchon), Saint-Claude (Bacq Lacroix, redressement judiciaire 2021, Google « fermé »), Nemours (1000 Pattes), Cogolin (Vetartis, appeler le 04 94 54 60 81), Mens (activité incertaine, cessation signalée par le Département en 2022), Vire (Sainte-Anne), Ploemeur (vétérinaire des Plages), Eyguières (Cabinet du Moulin), Nogent-le-Rotrou (Fenoll), Villeneuve-d'Ascq (Flers Bourg), Vire (Clinique VBN, ex-Mon Véto Vire), Auch (Mousquetaires, déménagée au 7 rue de Blazy sous le nom Auscitaine ?), Neuvic (Printemps), Saint-Brieuc (Robien), Retournac (Rostagnat Chaize), Montréal-la-Cluse, Châteaudun, dogwash de Lyon.
+- Eaubonne (Colonna, « temporairement fermée » selon Google), Fontainebleau (`veterinaire-coudriers-fontainebleau-77` : même téléphone que `veterinaire-source-fontainebleau-77`, doublon probable → 301 vers Source ?), La Mure (Centre), Équeurdreville-Hainneville (Brunerie Valenchon), Saint-Claude (Bacq Lacroix, redressement judiciaire 2021, Google « fermé »), Nemours (1000 Pattes), Cogolin (Vetartis, appeler le 04 94 54 60 81), Mens (activité incertaine, cessation signalée par le Département en 2022), Vire (Sainte-Anne), Ploemeur (vétérinaire des Plages), Eyguières (Cabinet du Moulin), Nogent-le-Rotrou (Fenoll), Villeneuve-d'Ascq (Flers Bourg), Vire (Clinique VBN, ex-Mon Véto Vire), Auch (Mousquetaires, déménagée au 7 rue de Blazy sous le nom Auscitaine ?), Neuvic (Printemps), Saint-Brieuc (Robien), Retournac (Rostagnat Chaize), Montréal-la-Cluse, Châteaudun, dogwash de Lyon.
 
 ## Adresses de pages à renommer (avec 301)
 - Montceau (slug `beaudot-giroux`, devenue Cabinet de Bellevue Filvet), slug `beeckman` (ancien exploitant), Bucaille (slug contient « froment »), Thionville (`veterinaire-laetitia-texier-thionville-57`, devenue Iasovet), Les Herbiers (`veterinaire-marien-cambon-sourdin-tanghe-maytie-les-herbiers-85`, devenue Clinique de l'Amiral), Pont-Sainte-Maxence (`veterinaire-maheu-tordo-…`, devenue Clinique des Bords de l'Oise), Ponson Moulon (slug `katou-…`).
 
 ## Divers
+- La Tour-du-Pin (Combe-Oelschlager) : noms de famille dans le titre et le h1.
 - Chantilly (Gard) : peut-être vétérinaire pour chevaux uniquement (lien avec le chien non établi).
 - Site de CHV Atlantia (Nantes) apparemment piraté (texte de spam) : pas de lien tant qu'il n'est pas nettoyé.
 - Sens (Brunot) : vétérinaire à domicile, nom de famille dans le titre (cité par l'office de tourisme et la SPA) ; position au centre de la commune. Garder le nom ou titre sans nom ?
