@@ -146,7 +146,7 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 101 | Logis Hôtel Le Fontarabie (Fontenay-le-Comte) | reception@hotel-fontarabie.com | 18/11/2026 | envoyé | |
 | 102 | Gîte La Chapelle (La Rosière) | gitelachapelle@orange.fr | 18/11/2026 | mail revenu | adresse inexistante (Orange, destinataire invalide) ; retirée de la fiche ; seul contact : 03 84 94 65 28 |
 | 103 | Camping Le Mandriale (Cargèse) | camping.le.mandriale@gmail.com | 18/11/2026 | réponse auto 18/11 | camping fermé ; réservations 2027 dès le 1er février, 7 nuits minimum (ajouté à la fiche) ; relancer après le 1er février 2027 |
-| 104 | Poppy's Dogs (Lourdes) | poppysdogs65@gmail.com | 18/11/2026 | envoyé | |
+| 104 | Poppy's Dogs (Lourdes) | poppysdogs65@gmail.com | 18/11/2026 | réponse 18/11 | précisions (pas de nouveaux clients en toilettage, griffes ouvertes à tous, chats pour les griffes, vente sur commande, tarifs en fourchettes) ; fiche corrigée le 18/11 ; pas de réponse sur le lien |
 | 105 | Camping de Ceyreste (Ceyreste) | campingceyreste@gmail.com | 18/11/2026 | envoyé | |
 | 106 | Au Plaisir Du Chien (Loudéac) | auplaisirduchien22@gmail.com | 18/11/2026 | envoyé | |
 | 107 | Hôtel Le Clos d'Amboise (Amboise) | infos@leclosdamboise.com | 18/11/2026 | envoyé | |
