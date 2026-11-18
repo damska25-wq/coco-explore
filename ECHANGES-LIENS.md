@@ -140,6 +140,16 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 95 | Hôtel-Restaurant Le Styvel (Camaret-sur-Mer) | hotelstyvel@wanadoo.fr | 18/11/2026 | envoyé | nouveau style |
 | 96 | Camping Les Pieds dans l'Eau (Crozon) | info@campingcrozon.com | 18/11/2026 | envoyé | nouveau style |
 | 97 | Aux Quatre Pat' (Lavaur) | auxquatrepat@gmail.com | 18/11/2026 | envoyé | nouveau style |
+| 98 | Hôtel Le Beaugency (Beaugency) | reception@lebeaugency45.fr | 18/11/2026 | envoyé | |
+| 99 | Logis Hôtel Les Glycines (Melle) | contact@hotel-lesglycines.com | 18/11/2026 | envoyé | |
+| 100 | Brasserie L'Europe (Pau) | contact@leuropepau.com | 18/11/2026 | envoyé | |
+| 101 | Logis Hôtel Le Fontarabie (Fontenay-le-Comte) | reception@hotel-fontarabie.com | 18/11/2026 | envoyé | |
+| 102 | Gîte La Chapelle (La Rosière) | gitelachapelle@orange.fr | 18/11/2026 | mail revenu | adresse inexistante (Orange, destinataire invalide) ; retirée de la fiche ; seul contact : 03 84 94 65 28 |
+| 103 | Camping Le Mandriale (Cargèse) | camping.le.mandriale@gmail.com | 18/11/2026 | envoyé | |
+| 104 | Poppy's Dogs (Lourdes) | poppysdogs65@gmail.com | 18/11/2026 | envoyé | |
+| 105 | Camping de Ceyreste (Ceyreste) | campingceyreste@gmail.com | 18/11/2026 | envoyé | |
+| 106 | Au Plaisir Du Chien (Loudéac) | auplaisirduchien22@gmail.com | 18/11/2026 | envoyé | |
+| 107 | Hôtel Le Clos d'Amboise (Amboise) | infos@leclosdamboise.com | 18/11/2026 | envoyé | |
 
 **15/11/2026** : article Bimo n° 6 (fêtes de fin d'année) préparé : `/guide-fetes-repas-chien` (`src/guides/fetes-repas-chien.njk`, image `src/assets/guides/chien-fetes-repas-maison-aliments-a-eviter(-og).jpg`), en ligne avec la prochaine mise en ligne (16/11). Chaque affirmation relue sur sa source (ASPCA conseils fêtes, aliments à éviter et aliments à partager ; CAPAE-Ouest chocolat et raisin ; FDA xylitol ; AAHA pancréatite ; WSAVA guide des friandises ; Ordre des vétérinaires). Corrections : « les os cuits » → os de volaille (ASPCA), « cuits comme crus » attribué à la WSAVA ; échalote attribuée à ASPCA + WSAVA ; « courge cuite » → « potiron cuit » (ASPCA) ; phrase commerciale « C'est justement le rôle de Bimo » → « Des outils comme Bimo peuvent aider » ; section « Fiche image SEO » retirée ; liens internes (feux d'artifice, Noël avec son chien, vétérinaires, urgence vétérinaire, hébergements) ; lien depuis `/noel-chien` et « À lire aussi » des restaurants. Prochain sujet proposé à Bimo : hiver/montagne, vers mi-janvier 2027 (choix de l'utilisateur le 15/11 : l'article des fêtes, reçu mi-novembre, couvre décembre ; publication avant les vacances de février).
 
