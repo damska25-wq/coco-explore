@@ -130,6 +130,16 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 85 | Dogwash Mende (Mende) | dogwashmende@orange.fr | 17/11/2026 | réponse 17/11 | précisions reçues (local à part, 6h-23h 7j/7, 8 €/10 min avec pause, équipements, bouton d'appel) ; fiche corrigée le 17/11 |
 | 86 | Auberge du Cratère (Volvic) | auberge.cratere@orange.fr | 17/11/2026 | envoyé |  |
 | 87 | Campo di Fiori, maisons de charme (Calvi) | contact@location-campodifiori.com | 17/11/2026 | envoyé |  |
+| 88 | Camping Monaco Parc (Longny-au-Perche) | campingmonacoparc@gmail.com | 18/11/2026 | envoyé | nouveau style |
+| 89 | La Signoria & Spa (Calvi) | info@hotel-la-signoria.com | 18/11/2026 | envoyé | nouveau style |
+| 90 | Hôtellerie du Cheval Blanc (Sainte-Maure-de-Touraine) | contact@hotellerieduchevalblanc.fr | 18/11/2026 | envoyé | nouveau style |
+| 91 | Camping Toul ar Ster (Penmarc'h) | campingpenmarch@orange.fr | 18/11/2026 | envoyé | nouveau style |
+| 92 | Le Petit Gourmet (Montmorillon) | petitgourmet@free.fr | 18/11/2026 | envoyé | nouveau style |
+| 93 | Camping Canal de Berry (Saint-Amand-Montrond) | accueil@campingcanaldeberry.fr | 18/11/2026 | envoyé | nouveau style |
+| 94 | Le Clos Marie (Langeais) | leclosmarie@free.fr | 18/11/2026 | envoyé | nouveau style |
+| 95 | Hôtel-Restaurant Le Styvel (Camaret-sur-Mer) | hotelstyvel@wanadoo.fr | 18/11/2026 | envoyé | nouveau style |
+| 96 | Camping Les Pieds dans l'Eau (Crozon) | info@campingcrozon.com | 18/11/2026 | envoyé | nouveau style |
+| 97 | Aux Quatre Pat' (Lavaur) | auxquatrepat@gmail.com | 18/11/2026 | envoyé | nouveau style |
 
 **15/11/2026** : article Bimo n° 6 (fêtes de fin d'année) préparé : `/guide-fetes-repas-chien` (`src/guides/fetes-repas-chien.njk`, image `src/assets/guides/chien-fetes-repas-maison-aliments-a-eviter(-og).jpg`), en ligne avec la prochaine mise en ligne (16/11). Chaque affirmation relue sur sa source (ASPCA conseils fêtes, aliments à éviter et aliments à partager ; CAPAE-Ouest chocolat et raisin ; FDA xylitol ; AAHA pancréatite ; WSAVA guide des friandises ; Ordre des vétérinaires). Corrections : « les os cuits » → os de volaille (ASPCA), « cuits comme crus » attribué à la WSAVA ; échalote attribuée à ASPCA + WSAVA ; « courge cuite » → « potiron cuit » (ASPCA) ; phrase commerciale « C'est justement le rôle de Bimo » → « Des outils comme Bimo peuvent aider » ; section « Fiche image SEO » retirée ; liens internes (feux d'artifice, Noël avec son chien, vétérinaires, urgence vétérinaire, hébergements) ; lien depuis `/noel-chien` et « À lire aussi » des restaurants. Prochain sujet proposé à Bimo : hiver/montagne, vers mi-janvier 2027 (choix de l'utilisateur le 15/11 : l'article des fêtes, reçu mi-novembre, couvre décembre ; publication avant les vacances de février).
 
