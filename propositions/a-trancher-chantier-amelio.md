@@ -6,6 +6,8 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - `veterinaire-reiller-salle-sarcelles-95` : même clinique que `veterinaire-univet-sarcelles-95` (déménagée le 15/04/2026) → 301 vers la fiche Univet.
 - `veterinaire-perrin-launois-brogniez-78` : clinique pour chevaux (Clinique Équine Desbrosse), pas pour chiens → 301 vers la page vétérinaires des Yvelines.
 
+- `veterinaire-villedieu-50` : doublon probable de `veterinaire-olepattes-villedieu-50` (même numéro 02 33 61 01 76) → 301 vers olepattes.
+
 ## Fermetures probables (registre officiel)
 - Brienon-sur-Armançon (lot 572) : établissement fermé le 14/02/2022, société radiée (Infogreffe).
 - `veterinaire-janvier-laigle-61` : activité cessée le 24/08/2018 (Sirene).
@@ -13,12 +15,13 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Verneuil-sur-Avre (radié 2020), Sainte-Sigolène (radié 2019) : gardés pour l'instant.
 
 ## Fermetures signalées par Google seul (à confirmer par un appel)
-- Mens (activité incertaine, cessation signalée par le Département en 2022), Vire (Sainte-Anne), Ploemeur (vétérinaire des Plages), Eyguières (Cabinet du Moulin), Nogent-le-Rotrou (Fenoll), Villeneuve-d'Ascq (Flers Bourg), Vire (Clinique VBN, ex-Mon Véto Vire), Auch (Mousquetaires, déménagée au 7 rue de Blazy sous le nom Auscitaine ?), Neuvic (Printemps), Saint-Brieuc (Robien), Retournac (Rostagnat Chaize), Montréal-la-Cluse, Châteaudun, dogwash de Lyon.
+- Cogolin (Vetartis, appeler le 04 94 54 60 81), Mens (activité incertaine, cessation signalée par le Département en 2022), Vire (Sainte-Anne), Ploemeur (vétérinaire des Plages), Eyguières (Cabinet du Moulin), Nogent-le-Rotrou (Fenoll), Villeneuve-d'Ascq (Flers Bourg), Vire (Clinique VBN, ex-Mon Véto Vire), Auch (Mousquetaires, déménagée au 7 rue de Blazy sous le nom Auscitaine ?), Neuvic (Printemps), Saint-Brieuc (Robien), Retournac (Rostagnat Chaize), Montréal-la-Cluse, Châteaudun, dogwash de Lyon.
 
 ## Adresses de pages à renommer (avec 301)
 - Bucaille (slug contient « froment »), Thionville (`veterinaire-laetitia-texier-thionville-57`, devenue Iasovet), Les Herbiers (`veterinaire-marien-cambon-sourdin-tanghe-maytie-les-herbiers-85`, devenue Clinique de l'Amiral), Pont-Sainte-Maxence (`veterinaire-maheu-tordo-…`, devenue Clinique des Bords de l'Oise), Ponson Moulon (slug `katou-…`).
 
 ## Divers
+- Saint-Pierre (972) : identité de la clinique douteuse (même rue, plusieurs noms), titre neutre.
 - Esteban Barber Dogs : classé dogwash à tort (c'est un toiletteur ?).
 - Montsûrs : champ lieu « Montsûrs-Saint-Céneré » (commune déléguée).
 - Orgues : la clinique est à Espaly-Saint-Marcel, la fiche dit Le Puy-en-Velay.
