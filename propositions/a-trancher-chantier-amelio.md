@@ -23,6 +23,8 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Montceau (slug `beaudot-giroux`, devenue Cabinet de Bellevue Filvet), slug `beeckman` (ancien exploitant), Bucaille (slug contient « froment »), Thionville (`veterinaire-laetitia-texier-thionville-57`, devenue Iasovet), Les Herbiers (`veterinaire-marien-cambon-sourdin-tanghe-maytie-les-herbiers-85`, devenue Clinique de l'Amiral), Pont-Sainte-Maxence (`veterinaire-maheu-tordo-…`, devenue Clinique des Bords de l'Oise), Ponson Moulon (slug `katou-…`).
 
 ## Divers
+- Chantilly (Gard) : peut-être vétérinaire pour chevaux uniquement (lien avec le chien non établi).
+- Site de CHV Atlantia (Nantes) apparemment piraté (texte de spam) : pas de lien tant qu'il n'est pas nettoyé.
 - Sens (Brunot) : vétérinaire à domicile, nom de famille dans le titre (cité par l'office de tourisme et la SPA) ; position au centre de la commune. Garder le nom ou titre sans nom ?
 - Toucy : numéro de rue 39 ou 95 selon les sources.
 - La Souterraine : slug contient « cazin » (ancien nom, devenue Phoenix).
