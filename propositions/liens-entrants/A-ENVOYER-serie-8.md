@@ -128,7 +128,7 @@ Coco Explore — cocoexplore.com
 
 ---
 
-## 102. Gîte La Chapelle (La Rosière)
+## 102. Gîte La Chapelle (La Rosière) — MAIL REVENU : adresse inexistante, ne pas renvoyer
 
 **Adresse :**
 ```
