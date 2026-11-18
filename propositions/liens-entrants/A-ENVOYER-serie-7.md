@@ -20,7 +20,7 @@ Votre camping sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre camping y a sa page, gratuitement : https://cocoexplore.com/fiche-camping-monaco-parc-longny-au-perche-61
 
@@ -51,7 +51,7 @@ Votre hôtel sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre hôtel y a sa page, gratuitement : https://cocoexplore.com/fiche-hotel-la-signoria-calvi-2b
 
@@ -82,7 +82,7 @@ Votre hôtel sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre hôtel y a sa page, gratuitement : https://cocoexplore.com/fiche-hotellerie-cheval-blanc-sainte-maure-de-touraine-37
 
@@ -113,7 +113,7 @@ Votre camping sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre camping y a sa page, gratuitement : https://cocoexplore.com/fiche-camping-toul-ar-ster-penmarch
 
@@ -144,7 +144,7 @@ Votre restaurant sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre restaurant y a sa page, gratuitement : https://cocoexplore.com/fiche-restaurant-le-petit-gourmet-montmorillon
 
@@ -175,7 +175,7 @@ Votre camping sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre camping y a sa page, gratuitement : https://cocoexplore.com/fiche-camping-canal-de-berry-saint-amand-montrond-18
 
@@ -206,7 +206,7 @@ Votre chambre d'hôtes sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre chambre d'hôtes y a sa page, gratuitement : https://cocoexplore.com/fiche-le-clos-marie-langeais-37
 
@@ -237,7 +237,7 @@ Votre hôtel-restaurant sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre hôtel-restaurant y a sa page, gratuitement : https://cocoexplore.com/fiche-hotel-styvel-camaret-sur-mer
 
@@ -268,7 +268,7 @@ Votre camping sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre camping y a sa page, gratuitement : https://cocoexplore.com/fiche-camping-pieds-dans-leau-crozon
 
@@ -299,7 +299,7 @@ Votre salon sur Coco Explore
 ```
 Bonjour,
 
-Je m'appelle Damien et je voyage beaucoup avec Coco, ma labradore. Avec elle, j'ai créé Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en France.
+Je m'occupe de Coco Explore, un site qui aide les propriétaires de chiens à trouver où partir en vacances et en balade avec leur compagnon, partout en France.
 
 Votre salon y a sa page, gratuitement : https://cocoexplore.com/fiche-toiletteur-aux-quatre-pat-lavaur
 
