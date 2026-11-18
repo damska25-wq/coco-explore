@@ -39,7 +39,7 @@ extraHead: |
   {%- set comma = joiner(", ") %}
   <p>Coco Explore référence <strong>{{ city.fiches.length }} adresses {{ city.aVille }}</strong> pour sortir avec son chien :
   {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}{{ comma() or " " }}{{ section.catGrid.label | lower | safe }} ({{ n }}){% endif %}{% endif %}{% endfor %}.
-  Chaque fiche précise les règles et les conditions d'accueil du chien que nous avons pu vérifier.</p>
+  Chaque fiche précise les règles et les conditions d'accueil du chien, avec ses sources.</p>
   <ul class="ville-sommaire" aria-label="Aller à une catégorie">
   {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}
     <li><a href="#{{ section.id }}">{{ section.catGrid.label | safe }} <span class="n">{{ n }}</span></a></li>
