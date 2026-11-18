@@ -7,6 +7,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - `veterinaire-perrin-launois-brogniez-78` : clinique pour chevaux (Clinique Équine Desbrosse), pas pour chiens → 301 vers la page vétérinaires des Yvelines.
 
 ## Fermetures probables (registre officiel)
+- Brienon-sur-Armançon (lot 572) : établissement fermé le 14/02/2022, société radiée (Infogreffe).
 - `veterinaire-janvier-laigle-61` : activité cessée le 24/08/2018 (Sirene).
 - Joyeuse (lot 566) : établissement place de la Recluse fermé le 15/10/2021 (registre).
 - Verneuil-sur-Avre (radié 2020), Sainte-Sigolène (radié 2019) : gardés pour l'instant.
