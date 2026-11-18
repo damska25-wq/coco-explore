@@ -11,6 +11,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 ## Fermetures probables (registre officiel)
 - Brienon-sur-Armançon (lot 572) : établissement fermé le 14/02/2022, société radiée (Infogreffe).
 - Saint-André-les-Vergers (Guérinot, radié et fermé depuis le 31/12/2011).
+- Briollay (Ma Campagne) : établissement fermé le 01/01/2024 (Annuaire des entreprises).
 - Saint-Martin-de-Ré (Île de Ré) : site fermé le 1er avril 2025 → 301 vers la fiche de La Flotte ?
 - Vénissieux (Gambetta, radié le 01/07/2021) et Sancoins (`veterinaire-garouachi-moncef-sancoins-18`, radié le 28/07/2022 ; slug avec prénom et nom).
 - Mamers (Bellevue) : fermeture au 1er octobre 2025, regroupement dans Docto Vet (Maine Libre du 23/09/2025).
@@ -26,6 +27,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Montceau (slug `beaudot-giroux`, devenue Cabinet de Bellevue Filvet), slug `beeckman` (ancien exploitant), Bucaille (slug contient « froment »), Thionville (`veterinaire-laetitia-texier-thionville-57`, devenue Iasovet), Les Herbiers (`veterinaire-marien-cambon-sourdin-tanghe-maytie-les-herbiers-85`, devenue Clinique de l'Amiral), Pont-Sainte-Maxence (`veterinaire-maheu-tordo-…`, devenue Clinique des Bords de l'Oise), Ponson Moulon (slug `katou-…`).
 
 ## Divers
+- Malestroit (Vet&Sphère Tirpen) : cabinet et laboratoire ; la clinique chiens/chats est à Saint-Marcel (02 97 75 20 36). Garder ou remplacer par une fiche Saint-Marcel ?
 - Le Creusot (Crosot'vet) : déménagée au 18 rue Charleville, Le Breuil ; champ lieu encore « Le Creusot » (à changer en vérifiant la page ville).
 - Barneville-Carteret (slug `veterinaire-martin-pluquet-potiez-walpole-barneville-50`, anciens noms ; annexe de Bricquebec), Creil (slug avec le nom du vétérinaire Saudubray, devenue « Clinique Vétérinaire de Creil »), Guebwiller (slug `klein-pier`, devenue Clinique de la Lauch), Pointe-à-Pitre (slug `veterinaire-hodebar-…`, devenue Clinique KaruVet), Étampes (slug Gorvel, devenue Clinique du Dr Planté), Corbeil (slug `veterinaire-franconny-corbeil-91`, faute de frappe pour Francony), Rives (slug `veterinaire-fure-rives`, clinique à Beaucroissant), Limoux (slug avec noms des vétérinaires, enseigne Anim'Aude Vet), Tonnerre (enseigne Croix Blanche non confirmée) et Kourou (slug avec nom de famille, devenue Cabinet de l'Horloge) : slugs à renommer.
 - La Tour-du-Pin (Combe-Oelschlager) : noms de famille dans le titre et le h1.
