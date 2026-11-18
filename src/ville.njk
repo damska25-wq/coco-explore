@@ -23,12 +23,24 @@ extraHead: |
     .ville-sommaire a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 13px; border-radius: 999px; border: 1px solid rgba(var(--ink),0.18); background: var(--surface, transparent); color: var(--heading); font-size: 0.9rem; text-decoration: none; }
     .ville-sommaire a:hover { border-color: var(--heading-soft); }
     .ville-sommaire .n { font-size: 0.8rem; color: rgba(var(--ink),0.6); }
-    .ville-section { scroll-margin-top: 80px; }
     .ville-bref { padding-left: 1.2em; max-width: 80ch; }
     .ville-bref li { margin: 6px 0; line-height: 1.5; }
     .ville-autres { margin-top: 20px; }
     .ville-autres > summary { cursor: pointer; font-weight: 600; color: var(--heading); padding: 10px 0; }
     .ville-autres > p { font-size: 0.9rem; color: rgba(var(--ink),0.7); max-width: 72ch; }
+    .ville-catbar { position: sticky; top: var(--hdr-h, 64px); z-index: 15; background: var(--surface); border-bottom: 1px solid rgba(var(--ink),0.08); }
+    .ville-catbar ul { display: flex; flex-wrap: nowrap; gap: 8px; margin: 0 auto; padding: 10px 16px; list-style: none; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    .ville-catbar ul::-webkit-scrollbar { display: none; }
+    .ville-catbar a { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(var(--ink),0.18); color: var(--heading); font-size: 0.88rem; text-decoration: none; background: var(--surface); }
+    .ville-catbar a .n { font-size: 0.78rem; color: rgba(var(--ink),0.6); }
+    .ville-catbar a[aria-current="true"] { background: var(--heading); border-color: var(--heading); color: var(--surface); }
+    .ville-catbar a[aria-current="true"] .n { color: inherit; opacity: 0.8; }
+    .ville-section { scroll-margin-top: calc(var(--hdr-h, 64px) + 64px); }
+    .ville-up { margin: 14px 0 0; font-size: 0.9rem; }
+    .ville-up a { color: rgba(var(--ink),0.7); }
+    .fiche-grid .fiche-card.is-hidden { display: none; }
+    .ville-more { display: block; margin: 16px auto 0; padding: 10px 18px; border-radius: 999px; border: 1px solid rgba(var(--ink),0.25); background: var(--surface); color: var(--heading); font: inherit; font-weight: 600; cursor: pointer; }
+    .ville-more:hover { border-color: var(--heading-soft); }
   </style>
 ---
 <script type="application/ld+json">{{ city.fiches | ficheItems | listJsonLd([{ name: "Coco Explore", path: "" }, { name: city.dep.nom, path: "departement-" + city.dep.slug }, { name: city.ville, path: city.slug }], city.ville + " avec son chien") | safe }}</script>
@@ -40,7 +52,7 @@ extraHead: |
   <p>Coco Explore référence <strong>{{ city.fiches.length }} adresses {{ city.aVille }}</strong> pour sortir avec son chien :
   {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}{{ comma() or " " }}{{ section.catGrid.label | lower | safe }} ({{ n }}){% endif %}{% endif %}{% endfor %}.
   Chaque fiche précise les règles et les conditions d'accueil du chien, avec ses sources.</p>
-  <ul class="ville-sommaire" aria-label="Aller à une catégorie">
+  <ul class="ville-sommaire" id="categories" aria-label="Aller à une catégorie">
   {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}
     <li><a href="#{{ section.id }}">{{ section.catGrid.label | safe }} <span class="n">{{ n }}</span></a></li>
   {%- endif %}{% endif %}{% endfor %}
@@ -77,6 +89,17 @@ extraHead: |
   {%- endif %}
 </section>
 
+<nav class="ville-catbar" aria-label="Catégories {{ city.deVille }}">
+  <ul>
+  {%- for section in sections %}{% if section.catGrid %}{% set n = (city.fiches | inCategories(section.catGrid.countIds)).length %}{% if n %}
+    <li><a href="#{{ section.id }}" data-target="{{ section.id }}">{{ section.catGrid.label | safe }} <span class="n">{{ n }}</span></a></li>
+  {%- endif %}{% endif %}{% endfor %}
+  {%- if city.nearby.length %}
+    <li><a href="#autour" data-target="autour">À proximité <span class="n">{{ city.nearby.length }}</span></a></li>
+  {%- endif %}
+  </ul>
+</nav>
+
 {%- for section in sections %}
 {%- if section.catGrid %}
 {%- set sectionFiches = city.fiches | inCategories(section.catGrid.countIds) %}
@@ -100,7 +123,7 @@ extraHead: |
   {%- set mainFiches = sectionFiches | dogStatusIs("ok") %}
   {%- set autresFiches = sectionFiches | dogStatusIs(["neutre", "refus"]) %}
   {%- if mainFiches.length %}
-  <div class="fiche-grid">
+  <div class="fiche-grid" data-collapse="{{ section.catGrid.label | lower | striptags }}">
     {%- for fiche in mainFiches %}
     {% include "fiche-card.njk" %}
     {%- endfor %}
@@ -117,6 +140,7 @@ extraHead: |
     </div>
   </details>
   {%- endif %}
+  <p class="ville-up"><a href="#categories">↑ Toutes les catégories</a></p>
 </section>
 {%- endif %}
 {%- endif %}
@@ -148,3 +172,42 @@ extraHead: |
     {%- endfor %}
   </ul>
 </section>
+
+<script>
+(function () {
+  var hdr = document.querySelector('.site-header');
+  function setH() { if (hdr) document.documentElement.style.setProperty('--hdr-h', hdr.offsetHeight + 'px'); }
+  setH(); window.addEventListener('resize', setH);
+  var LIMIT = 6;
+  document.querySelectorAll('.fiche-grid[data-collapse]').forEach(function (grid) {
+    var cards = grid.querySelectorAll(':scope > .fiche-card');
+    if (cards.length <= LIMIT + 2) return;
+    for (var i = LIMIT; i < cards.length; i++) cards[i].classList.add('is-hidden');
+    var rest = cards.length - LIMIT;
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'ville-more';
+    btn.textContent = 'Voir les ' + rest + ' autres (' + grid.getAttribute('data-collapse') + ')';
+    btn.addEventListener('click', function () {
+      grid.querySelectorAll('.fiche-card.is-hidden').forEach(function (c) { c.classList.remove('is-hidden'); });
+      btn.remove();
+    });
+    grid.insertAdjacentElement('afterend', btn);
+  });
+  var bar = document.querySelector('.ville-catbar');
+  if (!bar || !('IntersectionObserver' in window)) return;
+  var links = {};
+  bar.querySelectorAll('a[data-target]').forEach(function (a) { links[a.getAttribute('data-target')] = a; });
+  var current = null;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var a = links[e.target.id]; if (!a || a === current) return;
+      if (current) current.removeAttribute('aria-current');
+      a.setAttribute('aria-current', 'true'); current = a;
+      var ul = bar.querySelector('ul');
+      ul.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' });
+    });
+  }, { rootMargin: '-35% 0px -60% 0px' });
+  document.querySelectorAll('.ville-section[id]').forEach(function (s) { io.observe(s); });
+})();
+</script>

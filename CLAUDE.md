@@ -42,6 +42,7 @@ Quand un professionnel demande à ne plus être référencé : supprimer sa ou s
 ## Mécanique du site (repères)
 
 - Pages ville : `computeCityPages` (`eleventy.config.js`), page dès 15 fiches (10 pour `STATION_VILLES`) ; blocs « L'essentiel » dans `src/_data/villesEssentiel.json` (villes) et `deptEssentiel.json` (101 départements) ; « En bref » calculés (`cityBrief`, `catBrief`) ; restaurants/hébergements à titre neutre ou refus dans un bloc replié.
+- Navigation des pages ville/station (18/11/2026, `src/ville.njk`) : barre de catégories collante sous l'en-tête (`.ville-catbar`, catégorie en cours surlignée), sections de plus de 8 fiches confirmées raccourcies à 6 avec bouton « Voir les N autres » (toutes les fiches restent dans le HTML), lien « ↑ Toutes les catégories » en bas de chaque section. Filtres (toute l'année, terrasse, autour de moi) gardés pour plus tard (pilote Var).
 - Seuils : pages ville × catégorie et catégorie × département dès 5 fiches (`CITY_CAT_MIN_FICHES`, `minFiches` de `categoryPages.js`).
 - Programme partenaire : `partenaire: true` → badge doré et priorité d'affichage (sauf gardes 24h/24 vétérinaires d'abord) ; page `/devenir-partenaire` ; tarif cible 19-29 €/mois, 1er mois offert ; un seul badge, payant.
 - Avis visiteurs : modération avant publication (`netlify/functions/avis.mjs`, `/admin-avis` protégé par `ADMIN_KEY`, jamais écrit), notification ntfy (`NTFY_TOPIC`). Espace pro : `/espace-pro` → `/api/pro` (ntfy).
