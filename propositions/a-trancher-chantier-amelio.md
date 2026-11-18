@@ -13,7 +13,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Verneuil-sur-Avre (radié 2020), Sainte-Sigolène (radié 2019) : gardés pour l'instant.
 
 ## Fermetures signalées par Google seul (à confirmer par un appel)
-- Vire (Sainte-Anne), Ploemeur (vétérinaire des Plages), Eyguières (Cabinet du Moulin), Nogent-le-Rotrou (Fenoll), Villeneuve-d'Ascq (Flers Bourg), Vire (Clinique VBN, ex-Mon Véto Vire), Auch (Mousquetaires, déménagée au 7 rue de Blazy sous le nom Auscitaine ?), Neuvic (Printemps), Saint-Brieuc (Robien), Retournac (Rostagnat Chaize), Montréal-la-Cluse, Châteaudun, dogwash de Lyon.
+- Mens (activité incertaine, cessation signalée par le Département en 2022), Vire (Sainte-Anne), Ploemeur (vétérinaire des Plages), Eyguières (Cabinet du Moulin), Nogent-le-Rotrou (Fenoll), Villeneuve-d'Ascq (Flers Bourg), Vire (Clinique VBN, ex-Mon Véto Vire), Auch (Mousquetaires, déménagée au 7 rue de Blazy sous le nom Auscitaine ?), Neuvic (Printemps), Saint-Brieuc (Robien), Retournac (Rostagnat Chaize), Montréal-la-Cluse, Châteaudun, dogwash de Lyon.
 
 ## Adresses de pages à renommer (avec 301)
 - Bucaille (slug contient « froment »), Thionville (`veterinaire-laetitia-texier-thionville-57`, devenue Iasovet), Les Herbiers (`veterinaire-marien-cambon-sourdin-tanghe-maytie-les-herbiers-85`, devenue Clinique de l'Amiral), Pont-Sainte-Maxence (`veterinaire-maheu-tordo-…`, devenue Clinique des Bords de l'Oise), Ponson Moulon (slug `katou-…`).
