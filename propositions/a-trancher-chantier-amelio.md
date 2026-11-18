@@ -10,6 +10,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 
 ## Fermetures probables (registre officiel)
 - Brienon-sur-Armançon (lot 572) : établissement fermé le 14/02/2022, société radiée (Infogreffe).
+- Mamers (Bellevue) : fermeture au 1er octobre 2025, regroupement dans Docto Vet (Maine Libre du 23/09/2025).
 - Saint-Florentin (Beauroy) : fermée depuis janvier 2025 (L'Yonne républicaine du 20/02/2026).
 - `veterinaire-janvier-laigle-61` : activité cessée le 24/08/2018 (Sirene).
 - Joyeuse (lot 566) : établissement place de la Recluse fermé le 15/10/2021 (registre).
