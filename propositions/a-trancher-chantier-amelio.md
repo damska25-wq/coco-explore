@@ -178,3 +178,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Clinique du Jeu de Paume, Béthune (lot 857) | siteWeb pointait vers un homonyme de Blois (retiré) ; le vrai site contient du texte de casino (piraté) | Pas de lien pour l'instant ; revoir plus tard |
 | Vétérinaire Decazeville (lot 858) | Pas de site ; deux SELARL à la même adresse (une fermée, une active) | Garder, doute dans l'encadré |
 | Clinique Lalande, Montauban (lot 858) | « Urgences 24/24 7j/7 » sans détail | Pas de badge (prudence) |
+| Maubert, Matour, Amiens (lot 860) | Maubert : nom du praticien dans le titre (cabinet professionnel) ; Matour : adresse et téléphone non confirmés ; Amiens : pas de site, horaires non publiés | Garder |
