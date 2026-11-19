@@ -153,3 +153,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaire Alençon (lot 842) | Ancien SIRET marqué fermé par un agrégateur, activité visible en 2026 | Garder |
 | Clinique de Saint-Sulpice-sur-Risle (lot 842) | Deux noms commerciaux (de l'Aigle / des Deux Rivières), pas de site | Garder, nom à vérifier |
 | Saint-Péray, Calvi, Argentan (lot 844) | Saint-Péray : site du réseau Arche ; Calvi : pas de site, samedi divergent ; Argentan : ancienne adresse encore citée | Garder, doutes dans l'encadré |
+| Anicoon Ploemeur (lot 843) | 17 rue de Saint-Bieuzy (CGV) ou 2 rue Jean Moulin (accueil du site) | Garder, demander à la clinique |
+| Anicoon Larmor-Plage (lot 843) | 02 97 33 62 62 (CGV) ou 02 97 86 00 67 (accueil du site) | Garder, écart signalé dans la fiche |
+| Animalins Mayenne (lot 843) | Deux adresses selon les annuaires, site illisible | Garder, adresse à vérifier |
+| Animédis La Ciotat (lot 843) | 20 ou 464 avenue Ernest Subilia | Garder, adresse à vérifier |
