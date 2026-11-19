@@ -205,3 +205,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Educanine17, Éducation Cannes-In (lot 879) | Pages de 2020, activité actuelle non confirmée ; site educanine17.fr inaccessible | Garder avec doute ; supprimer si rien d'ici le printemps |
 | Lucky Dogs, Prayssas (lot 881) | Position à 3 km de Google Maps, adresse non publiée, fiche courte | Garder ; placer au centre de la commune si rien de plus |
 | Jardin du Tiers-État (Poitiers), Jardins du Casone (Ajaccio) (lot 881) | Pas d'adresse précise ; Casone sans règle chien propre | Garder en titre neutre |
+| Mas Jambost, Limoges ; Parc Michel d'Ornano, Caen (lot 883) | Position à 1,8 km de Google, pas d'adresse officielle (Limoges) ; étiquettes « animaux » croisées entre parc et abbaye (Caen, retenu : parc accepté, abbaye non) | Garder |
