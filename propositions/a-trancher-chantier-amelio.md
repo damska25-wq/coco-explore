@@ -163,3 +163,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaire du Champ de Foire, Argenton-sur-Creuse (lot 847) | « Fermé définitivement » sur Google Maps seulement ; absent du répertoire de l'office de tourisme | Garder avec doute ; supprimer (301) si un appel au 02 54 24 05 98 confirme la fermeture |
 | Vétérinaire Cizaire, Beaune-la-Rolande (lot 848) | Hunimalis et Google Maps : Ladon, 301 avenue du 24 Novembre ; adresse de Beaune non relue | Vérifier par appel (02 38 95 52 16) ; si Ladon, changer lieu, coordonnées et slug (301) |
 | Alpha, Cannes (lot 848) | Pas d'adresse de rue sur la page officielle | Garder |
+| Saint-Tropez (Plages), Codomier (Saint-Affrique), Suquet (Cannes) (lot 849) | Horaires 18h/19h selon la page ; ancien numéro et page Sevetys non relus (retirés) ; pas de numéro propre (Suquet) | Garder |
