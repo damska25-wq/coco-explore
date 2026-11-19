@@ -132,3 +132,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Lady And Her Dog, Grenoble (lot 835) | Nom actuel incertain | Garder en titre neutre, nom à vérifier |
 | La Boule de Poils, Besançon (lot 835) | Horaires divergents ; même adresse qu'« Angele Toilettage » (sans fiche sur le site) | Garder ; vérifier si le salon a changé de nom |
 | K'wouaf Poil (Guéret), La Belle et le Clochard, La Niche (Dax) (lot 835) | Annuaires ou Google Maps seulement | Garder en titre neutre |
+| Les Cabotins, Ajaccio (lot 836) | Google Maps : autre téléphone (portable non repris) et autres horaires | Garder, doute dans l'encadré |
+| Look Canin, Mulhouse (lot 836) | Changement de propriétaire évoqué par des avis, enseigne et adresse inchangées | Garder |
+| La Maison des Toutous, Moncetz-l'Abbaye (lot 836) | Entreprise individuelle, adresse peut-être un domicile (retirée, centre de la commune) | Garder sans adresse de rue |
