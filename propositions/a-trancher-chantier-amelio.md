@@ -189,3 +189,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Saint-Acheul, Amiens (lot 864) | « Définitivement fermée » sur Google Maps, avis évoquant un déménagement ; page Sevetys introuvable | Garder avec « signalée fermée » ; supprimer (301) si confirmé |
 | Tetu, Bourges (lot 866) | Seule source officielle : liste préfectorale de 2017 ; horaires non publiés ; activité à confirmer | Garder en titre neutre ; vérifier par appel |
 | Soissons Perrier/Chevalier, Mondoux (lot 866) | Annuaires seuls (Soissons) ; samedi divergent (Mondoux) | Garder |
+| veterinaire-vecoven-montigny (Le Moule, lot 868) | Adresse de page aux noms des associés ; enseigne officielle Clinique Vétérinaire du Moule | Renommer le slug avec 301 (lot de renommages groupé) |
+| Vallée des Vignes, Amiens (lot 868) | Jeudi fermé (Sevetys) ou ouvert (Google Maps) | Garder, doute dans l'encadré |
