@@ -164,3 +164,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaire Cizaire, Beaune-la-Rolande (lot 848) | Hunimalis et Google Maps : Ladon, 301 avenue du 24 Novembre ; adresse de Beaune non relue | Vérifier par appel (02 38 95 52 16) ; si Ladon, changer lieu, coordonnées et slug (301) |
 | Alpha, Cannes (lot 848) | Pas d'adresse de rue sur la page officielle | Garder |
 | Saint-Tropez (Plages), Codomier (Saint-Affrique), Suquet (Cannes) (lot 849) | Horaires 18h/19h selon la page ; ancien numéro et page Sevetys non relus (retirés) ; pas de numéro propre (Suquet) | Garder |
+| Vétérinaire du Doron, Courchevel (lot 851) | « Définitivement fermée » sur Google Maps seulement | Garder avec doute ; supprimer (301) si fermeture confirmée |
+| Vétérinaire de Nérac (lot 851) | « Temporairement fermée » sur Google Maps | Garder, doute dans l'encadré |
+| Desrousseaux, Le Passage-d'Agen (lot 851) | Nom de praticien dans le nom du cabinet (professionnel public) ; deux numéros pour la même adresse | Garder ; numéro à vérifier |
