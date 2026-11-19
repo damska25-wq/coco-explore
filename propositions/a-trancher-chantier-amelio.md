@@ -174,3 +174,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Gafsi (Pamiers), Gaube (Le Lamentin) (lot 854) | Pas d'enseigne officielle ; Google Maps nomme Gaube « Vétérinaire l'Acajou » | Garder |
 | Vétérinaire Bonifacio (lot 855) | « Fermé » sur Google Maps seulement, pas d'adresse précise, nom de praticien dans l'adresse de page | Garder avec « signalé fermé » ; supprimer (301) si confirmé |
 | Vétérinaire Pithiviers (lot 855) | Titre et adresse de page au nom de la vétérinaire, enseigne non lue | Garder (nom professionnel) |
+| Alimavet, Lunéville (lot 856) | Adresse corrigée (31 rue de la Pologne) ; ancien domaine alimavet54.fr détourné (casino), retiré ; l'adresse de page garde un prénom de l'ancien vétérinaire (« herve ») | Renommer le slug en alimavet avec 301 |
