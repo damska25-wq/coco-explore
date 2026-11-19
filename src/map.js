@@ -5,7 +5,7 @@
   // Ordre d'hiver (05/11/2026), aligné sur src/_data/sections.js ; ordre d'été à rétablir au printemps (plages en tête).
   var CAT_GROUPS = [
     { catIds: ["hebergements"], label: "Hébergements", color: "#C99A4A", activeBg: "#956e2c" },
-    { catIds: ["dogsitters"], label: "Garde de chien", color: "#7C6FAE", activeBg: "#796cac" },
+    { catIds: ["dogsitters"], label: "Pension canine", color: "#7C6FAE", activeBg: "#796cac" },
     { catIds: ["balades"], label: "Balades", color: "#3C5943", activeBg: "#3C5943" },
     { catIds: ["veterinaires"], label: "Vétérinaires", color: "#B0413E", activeBg: "#B0413E" },
     { catIds: ["dogwash"], label: "Douche à chien", color: "#2A9D9D", activeBg: "#228181" },

@@ -13,6 +13,15 @@ window.COCO_PAGES=[
 {%- for city in collections.cityPages %}
 {"slug":{{ city.slug | dump | safe }},"titre":{{ (city.ville + " avec son chien") | dump | safe }},"lieu":{{ city.dep.nom | dump | safe }},"categorie":"Page ville"},
 {%- endfor %}
+{%- for cp in categoryPages %}
+{"slug":{{ cp.slug | dump | safe }},"titre":{{ (cp.label + " avec son chien en France") | dump | safe }},"lieu":"France","categorie":"Catégorie","catId":{{ cp.cat | dump | safe }}},
+{%- endfor %}
+{%- for d in collections.categoryDeptPages %}
+{"slug":{{ (d.cp.slug + "-" + d.slug) | dump | safe }},"titre":{{ (d.cp.label + " " + d.enNom) | dump | safe }},"lieu":{{ d.nom | dump | safe }},"categorie":"Département","catId":{{ d.cp.cat | dump | safe }}},
+{%- endfor %}
+{%- for vc in collections.cityCategoryPages %}
+{"slug":{{ vc.slug | dump | safe }},"titre":{{ (vc.cp.label + " " + vc.enNom) | dump | safe }},"lieu":{{ vc.city.ville | dump | safe }},"categorie":"Page ville","catId":{{ vc.cp.cat | dump | safe }}},
+{%- endfor %}
 {%- for g in collections.guides %}
 {"slug":{{ g.data.permalinkPath | cleanUrl | dump | safe }},"titre":{{ g.data.h1 | dump | safe }},"lieu":{{ g.data.description | dump | safe }},"categorie":"Guide"}{% if not loop.last %},{% endif %}
 {%- endfor %}

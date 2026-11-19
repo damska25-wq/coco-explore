@@ -9,9 +9,9 @@ export default [
   },
   {
     id: "dogsitters",
-    eyebrow: "Garde de chien",
+    eyebrow: "Pension canine",
     heading: "Faire garder son chien en toute confiance",
-    catGrid: { icon: "i-paw", label: "Garde de chien", countIds: ["dogsitters"] },
+    catGrid: { icon: "i-paw", label: "Pension canine", countIds: ["dogsitters"] },
   },
   {
     id: "balades",

@@ -186,7 +186,7 @@ export default [
   {
     cat: "dogsitters",
     slug: "garde-pension-chien",
-    label: "Garde de chien",
+    label: "Pension canine",
     tag: "Garde de chien",
     minFiches: 5,
     unit: ["adresse", "adresses"],
