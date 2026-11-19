@@ -157,3 +157,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Anicoon Larmor-Plage (lot 843) | 02 97 33 62 62 (CGV) ou 02 97 86 00 67 (accueil du site) | Garder, écart signalé dans la fiche |
 | Animalins Mayenne (lot 843) | Deux adresses selon les annuaires, site illisible | Garder, adresse à vérifier |
 | Animédis La Ciotat (lot 843) | 20 ou 464 avenue Ernest Subilia | Garder, adresse à vérifier |
+| Vétérinaires avec nom de praticien dans l'adresse de page (lots 845-846) : veterinaire-benard-saint-denis-974, veterinaire-bardet-neuilly-92, veterinaire-boogaerts-chiffre-buzancais-36 | Noms de vétérinaires en exercice (cabinet professionnel, pas un particulier) | Garder les adresses (nom professionnel public) ; renommer seulement si un praticien le demande |
+| Baume-les-Dames, Arcachon (lot 845) | Baume : « Urgence 24h/24 » sans détail, pas de badge ; Arcachon : jeudi contradictoire sur le site | Garder |
+| Vétérinaire Orléans 4 rue Saint-Paul, Besse, Lille (lot 846) | Adresses non relues (Orléans, Besse) ; lundi contradictoire (Lille) | Garder, doutes dans l'encadré |
