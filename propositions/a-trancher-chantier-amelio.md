@@ -187,3 +187,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | veterinaire-reginensi-troyes-10, veterinaire-robert-charnay-les-macon (lot 863) | Adresses de page sur d'anciens noms de praticiens ; Charnay devenu Clinique Naturevet | Renommer les slugs avec 301 (lot de renommages groupé) |
 | Erquy, Thury-Harcourt, Dinard (lot 863) | Site injoignable (Erquy) ; adresses non relues (limite de débit) | Repasser lors d'un prochain lot |
 | Saint-Acheul, Amiens (lot 864) | « Définitivement fermée » sur Google Maps, avis évoquant un déménagement ; page Sevetys introuvable | Garder avec « signalée fermée » ; supprimer (301) si confirmé |
+| Tetu, Bourges (lot 866) | Seule source officielle : liste préfectorale de 2017 ; horaires non publiés ; activité à confirmer | Garder en titre neutre ; vérifier par appel |
+| Soissons Perrier/Chevalier, Mondoux (lot 866) | Annuaires seuls (Soissons) ; samedi divergent (Mondoux) | Garder |
