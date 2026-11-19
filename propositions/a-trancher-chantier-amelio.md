@@ -88,3 +88,11 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Étaples : autre club possible au 13 avenue de Rocquigny (doublon non établi).
 - Albi : session 2026 terminée le 7/11 ; fiche à reformuler quand la Ville publiera de nouvelles dates.
 - Tergnier : annuaire seul.
+
+## Phase 2 SIRENE (lots 699 et suivants) — à trancher
+
+| Fiche | Lot | Constat | Recommandation |
+|---|---|---|---|
+| `activite-veha-cerans-foulletourte` | 712 | Aucune source officielle (existence, activités) ; seul Google Maps la décrit comme éducateur à domicile. Portable et adresse non repris, position au centre de la commune. | Supprimer avec 301 vers `/education-canine-sarthe` si rien d'officiel d'ici la fin de la phase 2, sinon garder avec doute. |
+| `activite-sym-dog-lozere-mende` | 711 | Identité du professionnel non établie ; adresse de domicile retirée (centre de Mende). | Garder avec doute. |
+| `activite-sport-canin-choletais-cholet-49` | 711 | Club sans site ; seule la page de la Ville de Cholet le cite. | Garder. |
