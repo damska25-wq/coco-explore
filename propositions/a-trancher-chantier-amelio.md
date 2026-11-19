@@ -68,3 +68,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Bourg-lès-Valence (caniparc) : position à environ 2 km du lieu réel, à recaler.
 - Laxou (parc canin) : emplacement non publié par la Ville.
 - Cat'canin (champ lieu « Mulhouse », contact à Zimmersheim) et Os'moz (champ lieu en 85100, adresse en 85180) : champ lieu à corriger.
+- Mougins (club canin) : site du club injoignable, ancien domaine détourné retiré.
+- Garges-lès-Gonesse (club) : slug « aulnay-93 » obsolète, renommage avec 301 possible.
+- Étaples : autre club possible au 13 avenue de Rocquigny (doublon non établi).
