@@ -125,3 +125,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Élégance Canine Sallanches (lot 832) | « Fermé définitivement » sur Google Maps seulement ; encore listé par Mappy | Garder, doute dans l'encadré |
 | Dog Elégance, Biache-Saint-Vaast (lot 832) | Aucune source récente (avis jusqu'en 2015) ; un autre salon, Art Canin, actif dans la commune | Garder en titre neutre, vérifier si Art Canin lui succède |
 | Chris'Toilettage, Vierzon (lot 832) | Pas de numéro de rue publié ; position à 1,2 km de celle de Google Maps | Position recalée sur le point Google Maps du salon (lot 832) ; garder |
+| Esprit Canin 73, Aix-les-Bains (lot 833) | « Définitivement fermé » sur Google Maps seulement ; titre « signalé fermé » | Garder jusqu'à confirmation officielle |
+| toiletteur-esprit-canin-albertville (lot 833) | Salon renommé La Truffe Poudrée ; l'adresse de page garde l'ancien nom | Renommer le slug avec 301 |
+| Eneka, Hendaye (lot 833) | Un avis de 2019 parle d'un toilettage à domicile ; Facebook publie une adresse (20 route de Béhobie) | Garder l'adresse publiée par le salon |
