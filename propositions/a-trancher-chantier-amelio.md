@@ -168,3 +168,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaire de Nérac (lot 851) | « Temporairement fermée » sur Google Maps | Garder, doute dans l'encadré |
 | Desrousseaux, Le Passage-d'Agen (lot 851) | Nom de praticien dans le nom du cabinet (professionnel public) ; deux numéros pour la même adresse | Garder ; numéro à vérifier |
 | Vétérinaires Saint-Junien, Montrouge, Revin (lot 850) | Noms de vétérinaires dans l'adresse de page ; Revin « définitivement fermé » sur Google Maps mais société active (Infogreffe) ; Montrouge : relais d'urgences V2TU ou Vetoadom | Garder (noms professionnels) ; doutes dans l'encadré |
+| Vétérinaire Eymoutiers (lot 853) | « Définitivement fermé » sur Google Maps seulement ; autre cabinet (Grandchamp des Raux, 29 av. Foch) dans la commune | Garder avec doute ; supprimer (301) si fermeture confirmée |
+| Floralex, Fleuret-Zimmermann (lot 853) | Pas de site propre ; téléphone de Floralex rattaché à une « Clinique de la Route de Lyon » | Garder en titre neutre |
