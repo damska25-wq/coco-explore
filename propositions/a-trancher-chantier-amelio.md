@@ -194,3 +194,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaire à domicile, Pau (lot 870) | Portable professionnel publié par le vétérinaire lui-même | Garder (numéro publié par l'établissement) ; centre de la commune |
 | Vetorun (lot 870) | Pas de site officiel ; activité tournée vers l'élevage | Vérifier s'il soigne les chiens ; sinon supprimer (301) |
 | Dives-sur-Mer, Barcelonnette, Vetelios (lot 869) | Numéro de place 22 ou 56 (Dives) ; adresse divergente (Barcelonnette) ; adresse sans numéro (Vetelios) | Garder, positions inchangées |
+| VVF Saint-Lary-Soulan (lot 871) | Supplément 8 €/nuit selon Hautes-Pyrénées Tourisme ; conditions vvf.fr non lues ; slug « aure-pyreneen » | Garder ; slug à renommer avec 301 plus tard |
+| Vuylsteker, Perros-Guirec ; Zot'Véto, Saint-André (lot 871) | Google Maps seul (Perros-Guirec) ; numéro de rue non publié par la clinique (Saint-André) | Garder |
