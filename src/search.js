@@ -17,12 +17,12 @@
   // Mots vides ignorés : on peut taper une phrase (« une plage à Cavalaire »).
   var STOP = ("un une des le la les l a au aux de du d en et ou pour avec sans sur dans pres proche "
     + "autour moi mon ma mes ton ta son sa je cherche trouver ou quel quelle quels quelles "
-    + "chien chiens toutou toutous accepte acceptes acceptee admis ok friendly dog").split(" ");
+    + "pet canin canine canins canines animal animale animaux chien chiens toutou toutous accepte acceptes acceptee admis ok friendly dog").split(" ");
   // Mots qui désignent une catégorie (forme sans accent, au singulier).
   var CATS = {
     plage: ["plages", "cote-azur"], crique: ["plages", "cote-azur"],
     pension: ["dogsitters"], garde: ["dogsitters"], gardiennage: ["dogsitters"], garderie: ["dogsitters"],
-    dogsitter: ["dogsitters"], petsitter: ["dogsitters"], "pet-sitter": ["dogsitters"], chenil: ["dogsitters"],
+    dogsitter: ["dogsitters"], petsitter: ["dogsitters"], sitter: ["dogsitters"], chenil: ["dogsitters"],
     veto: ["veterinaires"], veterinaire: ["veterinaires"], clinique: ["veterinaires"], urgence: ["veterinaires"],
     resto: ["restaurants"], restaurant: ["restaurants"], cafe: ["restaurants"], creperie: ["restaurants"],
     hotel: ["hebergements"], camping: ["hebergements"], gite: ["hebergements"], chambre: ["hebergements"],
@@ -41,7 +41,7 @@
   }
 
   function parse(query) {
-    var words = normalize(query).replace(/[’'.,;:!?()]/g, " ").split(/\s+/).filter(Boolean);
+    var words = normalize(query).replace(/[’'.,;:!?()\-]/g, " ").split(/\s+/).filter(Boolean);
     var cats = [];
     var place = [];
     words.forEach(function (w) {
@@ -58,8 +58,13 @@
     if (!p.cats.length && !p.place.length) return [];
     function placeOk(l) {
       if (!p.place.length) return true;
-      var hay = normalize(l.titre) + " " + normalize(l.lieu) + " " + normalize(l.categorie);
-      return p.place.every(function (w) { return hay.indexOf(w) !== -1; });
+      var toks = (normalize(l.titre) + " " + normalize(l.lieu) + " " + normalize(l.categorie))
+        .split(/[^a-z0-9]+/).filter(Boolean).map(stem);
+      // Mot de 4 lettres ou plus : début de mot suffit (« cavala » → Cavalaire) ;
+      // mot court (« var », « nice ») : mot entier, pour ne pas trouver « Varrats ».
+      return p.place.every(function (w) {
+        return toks.some(function (t) { return w.length >= 4 ? t.indexOf(w) === 0 : t === w; });
+      });
     }
     function catOk(l) {
       return !p.cats.length || (l.catId && p.cats.indexOf(l.catId) !== -1);

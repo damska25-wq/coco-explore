@@ -118,7 +118,7 @@ extraScripts: |
     {%- set gdName = gd.fiche.data.cardTitle or gd.fiche.data.h1 %}
     <div class="info-item">
       <svg class="icon"><use href="#i-house"/></svg>
-      <div><span class="label">{{ "Nearest dog sitting" if lang == "en" else "Garde de chien la plus proche" }}</span><span class="value"><a href="/{{ gd.fiche.data.permalinkPath | cleanUrl }}">{{ gdName }}</a> ({% if gd.fiche.data.cardTag not in gdName %}{{ gd.fiche.data.cardTag }}, {% endif %}{{ ("less than 1" if lang == "en" else "moins de 1") if gd.km < 1 else (gd.km | round) }} km)</span></div>
+      <div><span class="label">{{ "Nearest dog sitting" if lang == "en" else "Pension canine la plus proche" }}</span><span class="value"><a href="/{{ gd.fiche.data.permalinkPath | cleanUrl }}">{{ gdName }}</a> ({% if gd.fiche.data.cardTag not in gdName %}{{ gd.fiche.data.cardTag }}, {% endif %}{{ ("less than 1" if lang == "en" else "moins de 1") if gd.km < 1 else (gd.km | round) }} km)</span></div>
     </div>
     {%- endif %}
     {%- endif %}
