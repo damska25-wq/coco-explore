@@ -193,3 +193,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vallée des Vignes, Amiens (lot 868) | Jeudi fermé (Sevetys) ou ouvert (Google Maps) | Garder, doute dans l'encadré |
 | Vétérinaire à domicile, Pau (lot 870) | Portable professionnel publié par le vétérinaire lui-même | Garder (numéro publié par l'établissement) ; centre de la commune |
 | Vetorun (lot 870) | Pas de site officiel ; activité tournée vers l'élevage | Vérifier s'il soigne les chiens ; sinon supprimer (301) |
+| Dives-sur-Mer, Barcelonnette, Vetelios (lot 869) | Numéro de place 22 ou 56 (Dives) ; adresse divergente (Barcelonnette) ; adresse sans numéro (Vetelios) | Garder, positions inchangées |
