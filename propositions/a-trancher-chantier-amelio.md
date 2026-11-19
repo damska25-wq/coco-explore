@@ -10,6 +10,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 
 ## Fermetures probables (registre officiel)
 - Brienon-sur-Armançon (lot 572) : établissement fermé le 14/02/2022, société radiée (Infogreffe).
+- Betton (Moulis) : radiée et fermée depuis le 31/12/2016 (Infogreffe, Sirene).
 - Saint-André-les-Vergers (Guérinot, radié et fermé depuis le 31/12/2011).
 - Briollay (Ma Campagne) : établissement fermé le 01/01/2024 (Annuaire des entreprises).
 - Saint-Martin-de-Ré (Île de Ré) : site fermé le 1er avril 2025 → 301 vers la fiche de La Flotte ?
