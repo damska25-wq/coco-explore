@@ -208,3 +208,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Mas Jambost, Limoges ; Parc Michel d'Ornano, Caen (lot 883) | Position à 1,8 km de Google, pas d'adresse officielle (Limoges) ; étiquettes « animaux » croisées entre parc et abbaye (Caen, retenu : parc accepté, abbaye non) | Garder |
 | Loups de Chabrières (lot 882) | Commune réelle Sainte-Feyre ; titre et lieu sur Guéret (adresse corrigée dans le texte) | Garder Guéret (nom d'usage « Monts de Guéret ») |
 | Musée Bertrand (Châteauroux), Aravisbus (lot 882) | Règle chiens vue seulement dans une FAQ Val de Loire, deux téléphones ; début d'hiver 10/12 ou 12/12 | Garder, doutes dans les fiches |
+| activite-education-canine-valerie-villexavier (lot 886, ex-valerie-rambeau, renommée avec 301 le 19/11) | Fiche squelette, Google Maps seule source | Garder en titre neutre, ou supprimer si rien d'officiel n'apparaît |
+| Tignes, Alpe d'Huez, Villa Algira (lot 886) | Sources officielles contradictoires sur le funiculaire (Tignes) ; liste illisible (Alpe d'Huez) ; « temporairement fermé » sur Google Maps (Villa Algira) | Garder en titre neutre, doutes dans l'encadré |
