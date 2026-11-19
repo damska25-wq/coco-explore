@@ -167,3 +167,30 @@ Bonne soirée,
 Damien
 Coco Explore — cocoexplore.com
 ```
+
+## Camping La Grande Tortue (Candé-sur-Beuvron), réponse reçue le 19/11
+
+**Adresse :**
+```
+camping@grandetortue.com
+```
+
+**Objet :**
+```
+Re: Votre camping sur Coco Explore
+```
+
+**Texte :**
+```
+Bonjour,
+
+Merci beaucoup pour votre réponse rapide. La page est à jour : le supplément de 5 € par nuit et par animal figure maintenant dans le titre et sur la fiche, ce qui aidera les propriétaires de chiens à préparer leur séjour.
+
+https://cocoexplore.com/fiche-camping-la-grande-tortue-cande-sur-beuvron-41
+
+Si une autre information change (dates d'ouverture, conditions d'accueil), écrivez-moi et je mets la page à jour.
+
+Belle journée,
+Damien
+Coco Explore — cocoexplore.com
+```
