@@ -167,3 +167,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaire du Doron, Courchevel (lot 851) | « Définitivement fermée » sur Google Maps seulement | Garder avec doute ; supprimer (301) si fermeture confirmée |
 | Vétérinaire de Nérac (lot 851) | « Temporairement fermée » sur Google Maps | Garder, doute dans l'encadré |
 | Desrousseaux, Le Passage-d'Agen (lot 851) | Nom de praticien dans le nom du cabinet (professionnel public) ; deux numéros pour la même adresse | Garder ; numéro à vérifier |
+| Vétérinaires Saint-Junien, Montrouge, Revin (lot 850) | Noms de vétérinaires dans l'adresse de page ; Revin « définitivement fermé » sur Google Maps mais société active (Infogreffe) ; Montrouge : relais d'urgences V2TU ou Vetoadom | Garder (noms professionnels) ; doutes dans l'encadré |
