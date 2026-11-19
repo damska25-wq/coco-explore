@@ -196,3 +196,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Dives-sur-Mer, Barcelonnette, Vetelios (lot 869) | Numéro de place 22 ou 56 (Dives) ; adresse divergente (Barcelonnette) ; adresse sans numéro (Vetelios) | Garder, positions inchangées |
 | VVF Saint-Lary-Soulan (lot 871) | Supplément 8 €/nuit selon Hautes-Pyrénées Tourisme ; conditions vvf.fr non lues ; slug « aure-pyreneen » | Garder ; slug à renommer avec 301 plus tard |
 | Vuylsteker, Perros-Guirec ; Zot'Véto, Saint-André (lot 871) | Google Maps seul (Perros-Guirec) ; numéro de rue non publié par la clinique (Saint-André) | Garder |
+| Amitiés Animales, Saint-Laurent-de-Céris (lot 872) | « Définitivement fermé » sur Google Maps (05/11/2026) ; site injoignable | Garder avec doute ; supprimer (301) si confirmé |
+| Alignements de Carnac (lot 872) | Le CMN et l'office de tourisme divergent sur l'accès des chiens | Garder, doute dans la fiche |
