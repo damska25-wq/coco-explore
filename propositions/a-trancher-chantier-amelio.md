@@ -120,3 +120,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Coq à l'Âne, Bizanos (lot 830) | Ancien fixe non relu, remplacé par le numéro de la fiche Google du salon | Garder, numéro à confirmer |
 | toiletteur-toilettage-canin-issoudun-36 (lot 829, ex-bourdette-anthony, renommée avec 301 le 19/11) | Particulier sans enseigne ni source officielle | Garder en titre neutre, ou supprimer si l'activité reste introuvable |
 | toiletteur-canicoiff-lyon (lot 829) | « Fermé temporairement » sur Google Maps seulement | Garder, doute dans l'encadré |
+| Dog and Co (Charleville) et Dog&cat élégance (Tours) (lot 831) | Fermeture signalée par Google Maps seulement | Garder, doute dans l'encadré |
+| Dog City Béziers (lot 831) | Annuaires seuls ; téléphone retiré (accessible seulement par un numéro surtaxé) | Garder en titre neutre |
