@@ -71,3 +71,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Mougins (club canin) : site du club injoignable, ancien domaine détourné retiré.
 - Garges-lès-Gonesse (club) : slug « aulnay-93 » obsolète, renommage avec 301 possible.
 - Étaples : autre club possible au 13 avenue de Rocquigny (doublon non établi).
+- Albi : session 2026 terminée le 7/11 ; fiche à reformuler quand la Ville publiera de nouvelles dates.
+- Tergnier : annuaire seul.
