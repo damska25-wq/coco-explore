@@ -122,3 +122,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | toiletteur-canicoiff-lyon (lot 829) | « Fermé temporairement » sur Google Maps seulement | Garder, doute dans l'encadré |
 | Dog and Co (Charleville) et Dog&cat élégance (Tours) (lot 831) | Fermeture signalée par Google Maps seulement | Garder, doute dans l'encadré |
 | Dog City Béziers (lot 831) | Annuaires seuls ; téléphone retiré (accessible seulement par un numéro surtaxé) | Garder en titre neutre |
+| Élégance Canine Sallanches (lot 832) | « Fermé définitivement » sur Google Maps seulement ; encore listé par Mappy | Garder, doute dans l'encadré |
+| Dog Elégance, Biache-Saint-Vaast (lot 832) | Aucune source récente (avis jusqu'en 2015) ; un autre salon, Art Canin, actif dans la commune | Garder en titre neutre, vérifier si Art Canin lui succède |
+| Chris'Toilettage, Vierzon (lot 832) | Pas de numéro de rue publié ; position à 1,2 km de celle de Google Maps | Position recalée sur le point Google Maps du salon (lot 832) ; garder |
