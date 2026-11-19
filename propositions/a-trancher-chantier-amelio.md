@@ -200,3 +200,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Alignements de Carnac (lot 872) | Le CMN et l'office de tourisme divergent sur l'accès des chiens | Garder, doute dans la fiche |
 | Club de chiens de défense, Beauvais ; domaine de Montigny-le-Gannelon (lot 876) | Fiche Google « fermée » (Beauvais) ; horaires de visite divergents et règle chiens non publiée (Montigny) | Garder avec doute |
 | activite-club-rives-de-ladour-aureilhan (lot 877) | Club installé à Bours, l'adresse de page dit Aureilhan | Renommer le slug avec 301 (lot de renommages groupé) |
+| Dog Spirit 47 ; Écomusée l'Olivier (Volx) ; École canine du Thouarsais (lot 878) | Site injoignable (Dog Spirit) ; fermeture annuelle depuis le 31/10 sans date de réouverture (Volx, à revoir au printemps) ; horaires divergents (Thouarsais) | Garder avec doute |
