@@ -170,3 +170,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaires Saint-Junien, Montrouge, Revin (lot 850) | Noms de vétérinaires dans l'adresse de page ; Revin « définitivement fermé » sur Google Maps mais société active (Infogreffe) ; Montrouge : relais d'urgences V2TU ou Vetoadom | Garder (noms professionnels) ; doutes dans l'encadré |
 | Vétérinaire Eymoutiers (lot 853) | « Définitivement fermé » sur Google Maps seulement ; autre cabinet (Grandchamp des Raux, 29 av. Foch) dans la commune | Garder avec doute ; supprimer (301) si fermeture confirmée |
 | Floralex, Fleuret-Zimmermann (lot 853) | Pas de site propre ; téléphone de Floralex rattaché à une « Clinique de la Route de Lyon » | Garder en titre neutre |
+| Goëlettes, Saint-Gilles-Croix-de-Vie (lot 854) | « Urgences assurées 24H/24H » mais garde du dimanche « pour nos clients » | Badge retiré, libellé « Urgences (selon l'établissement) » (règle clientèle) |
+| Gafsi (Pamiers), Gaube (Le Lamentin) (lot 854) | Pas d'enseigne officielle ; Google Maps nomme Gaube « Vétérinaire l'Acajou » | Garder |
