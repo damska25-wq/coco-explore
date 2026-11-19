@@ -116,3 +116,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | toiletteur-atout-poils-le-bugue (lot 827) | « Atout Poils » (Google Maps) contre « L'atelier du poil » (Hunimalis) à la même adresse | Garder, nom à vérifier par appel |
 | toiletteur-atout-poils-roquebrune (lot 827) | Enseigne réelle Crea'Dogs ; fermeture temporaire selon Google Maps seulement | Renommer le slug en crea-dogs avec 301 |
 | toiletteur-au-chien-coquin-la-baule-44 (lot 827) | Adresse non relue sur le site (site de 2021) | Garder, adresse à revérifier |
+| Chez Nala, Verdun (lot 830) | Mappy : 11 route de Paris à Verdun ; Google Maps : salon ouvert à Belleville-sur-Meuse | Garder, déménagement à vérifier |
+| Coq à l'Âne, Bizanos (lot 830) | Ancien fixe non relu, remplacé par le numéro de la fiche Google du salon | Garder, numéro à confirmer |
