@@ -184,3 +184,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Clinique de la Hervière (lot 861) | Lieu corrigé en La Colombe (adresse officielle) ; l'adresse de page garde « olepattes-villedieu » | Renommer le slug avec 301 |
 | Univet du Village, Neuilly (lot 861) | Adresse de page « obadia » (ancien nom) ; samedi contradictoire | Renommer le slug avec 301 |
 | Pauly, Penin, Pompignane, Plessis, Pintor (lot 862) | Slugs sur d'anciens noms (Pauly → Clinique des Moulins, Penin) ; Pompignane : deux numéros sur le site ; horaires d'annuaires | Garder ; renommer les slugs avec 301 plus tard |
+| veterinaire-reginensi-troyes-10, veterinaire-robert-charnay-les-macon (lot 863) | Adresses de page sur d'anciens noms de praticiens ; Charnay devenu Clinique Naturevet | Renommer les slugs avec 301 (lot de renommages groupé) |
+| Erquy, Thury-Harcourt, Dinard (lot 863) | Site injoignable (Erquy) ; adresses non relues (limite de débit) | Repasser lors d'un prochain lot |
