@@ -33,18 +33,15 @@ infoItems:
   - icon: "i-phone"
     label: "Téléphone"
     value: "04 75 25 13 49"
-  - icon: "i-scissors"
-    label: "Services"
-    value: "Tonte, lavage, séchage, coupe, épilation"
   - icon: "i-clock"
     label: "Horaires"
-    value: "Lundi 14h-17h, mardi-vendredi 9h-17h, samedi 9h-12h"
+    value: "Non publiés : appeler (salon affiché temporairement fermé sur Google Maps)"
   - icon: "i-euro"
     label: "Tarifs"
-    value: "Non trouvés"
+    value: "Non publiés"
   - icon: "i-check"
     label: "Confiance"
-    value: "Haute — adresse, téléphone, services et horaires confirmés"
+    value: "Moyenne — adresse confirmée par la fiche Google Maps, salon affiché temporairement fermé"
 bodyHtml: |
   <section class="wrap fiche-body">
     <div>
@@ -63,14 +60,19 @@ bodyHtml: |
       <div class="sidebar-card">
         <h3>À vérifier avant de venir</h3>
         <ul>
-          <li><svg><use href="#i-check"/></svg> Adresse, téléphone, services et horaires confirmés.</li>
-          <li><svg><use href="#i-alert"/></svg> Tarifs non trouvés — à demander par téléphone.</li>
+          <li><svg><use href="#i-alert"/></svg> Salon affiché « temporairement fermé » sur Google Maps : appeler avant de venir. Horaires et tarifs non publiés.</li>
         </ul>
       </div>
       <div class="sidebar-card">
         <h3>Localisation</h3>
         <ul>
           <li><svg><use href="#i-pin"/></svg> 8 rue Rampon, 07800 La Voulte-sur-Rhône · Tél 04 75 25 13 49</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>Sources</h3>
+        <ul>
+          <li><svg><use href="#i-globe"/></svg> Fiche Google Maps du salon et mairie de La Voulte-sur-Rhône (lavoultesurrhone.fr), lues le 19/11/2026.</li>
         </ul>
       </div>
     </aside>
