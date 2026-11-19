@@ -118,3 +118,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | toiletteur-au-chien-coquin-la-baule-44 (lot 827) | Adresse non relue sur le site (site de 2021) | Garder, adresse à revérifier |
 | Chez Nala, Verdun (lot 830) | Mappy : 11 route de Paris à Verdun ; Google Maps : salon ouvert à Belleville-sur-Meuse | Garder, déménagement à vérifier |
 | Coq à l'Âne, Bizanos (lot 830) | Ancien fixe non relu, remplacé par le numéro de la fiche Google du salon | Garder, numéro à confirmer |
+| toiletteur-toilettage-canin-issoudun-36 (lot 829, ex-bourdette-anthony, renommée avec 301 le 19/11) | Particulier sans enseigne ni source officielle | Garder en titre neutre, ou supprimer si l'activité reste introuvable |
+| toiletteur-canicoiff-lyon (lot 829) | « Fermé temporairement » sur Google Maps seulement | Garder, doute dans l'encadré |
