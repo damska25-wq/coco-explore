@@ -172,3 +172,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Floralex, Fleuret-Zimmermann (lot 853) | Pas de site propre ; téléphone de Floralex rattaché à une « Clinique de la Route de Lyon » | Garder en titre neutre |
 | Goëlettes, Saint-Gilles-Croix-de-Vie (lot 854) | « Urgences assurées 24H/24H » mais garde du dimanche « pour nos clients » | Badge retiré, libellé « Urgences (selon l'établissement) » (règle clientèle) |
 | Gafsi (Pamiers), Gaube (Le Lamentin) (lot 854) | Pas d'enseigne officielle ; Google Maps nomme Gaube « Vétérinaire l'Acajou » | Garder |
+| Vétérinaire Bonifacio (lot 855) | « Fermé » sur Google Maps seulement, pas d'adresse précise, nom de praticien dans l'adresse de page | Garder avec « signalé fermé » ; supprimer (301) si confirmé |
+| Vétérinaire Pithiviers (lot 855) | Titre et adresse de page au nom de la vétérinaire, enseigne non lue | Garder (nom professionnel) |
