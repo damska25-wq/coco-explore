@@ -33,6 +33,8 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Montceau (slug `beaudot-giroux`, devenue Cabinet de Bellevue Filvet), slug `beeckman` (ancien exploitant), Bucaille (slug contient « froment »), Thionville (`veterinaire-laetitia-texier-thionville-57`, devenue Iasovet), Les Herbiers (`veterinaire-marien-cambon-sourdin-tanghe-maytie-les-herbiers-85`, devenue Clinique de l'Amiral), Pont-Sainte-Maxence (`veterinaire-maheu-tordo-…`, devenue Clinique des Bords de l'Oise), Ponson Moulon (slug `katou-…`).
 
 ## Divers
+- Vézillon (Can'idéal27, toiletteur + éducation + pension, peut-être à domicile) : adresse de rue publiée par sa page Facebook gardée ; passer au centre de la commune ?
+- Xertigny (Canilyne) : adresse contradictoire (mairie : place de la Brasserie).
 - Malestroit (Vet&Sphère Tirpen) : cabinet et laboratoire ; la clinique chiens/chats est à Saint-Marcel (02 97 75 20 36). Garder ou remplacer par une fiche Saint-Marcel ?
 - Vastel : hameau à Saint-Maurice-en-Cotentin, pas à Barneville-Carteret (titre et champ lieu à corriger).
 - Montbrison → la clinique est à Savigneux (champ lieu à corriger).
