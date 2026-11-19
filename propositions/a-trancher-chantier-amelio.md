@@ -129,3 +129,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | toiletteur-esprit-canin-albertville (lot 833) | Salon renommé La Truffe Poudrée ; l'adresse de page garde l'ancien nom | Renommer le slug avec 301 |
 | Eneka, Hendaye (lot 833) | Un avis de 2019 parle d'un toilettage à domicile ; Facebook publie une adresse (20 route de Béhobie) | Garder l'adresse publiée par le salon |
 | Id'fix, Trans-en-Provence (lot 834) | Google Maps (05/11/2026) : 29 av. de la Gare ; Opendi/Alentoor : centre commercial Arcadia ; déménagement non confirmé | Garder, adresse dans l'encadré, à vérifier par appel |
+| Lady And Her Dog, Grenoble (lot 835) | Nom actuel incertain | Garder en titre neutre, nom à vérifier |
+| La Boule de Poils, Besançon (lot 835) | Horaires divergents ; même adresse qu'« Angele Toilettage » (sans fiche sur le site) | Garder ; vérifier si le salon a changé de nom |
+| K'wouaf Poil (Guéret), La Belle et le Clochard, La Niche (Dax) (lot 835) | Annuaires ou Google Maps seulement | Garder en titre neutre |
