@@ -206,3 +206,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Lucky Dogs, Prayssas (lot 881) | Position à 3 km de Google Maps, adresse non publiée, fiche courte | Garder ; placer au centre de la commune si rien de plus |
 | Jardin du Tiers-État (Poitiers), Jardins du Casone (Ajaccio) (lot 881) | Pas d'adresse précise ; Casone sans règle chien propre | Garder en titre neutre |
 | Mas Jambost, Limoges ; Parc Michel d'Ornano, Caen (lot 883) | Position à 1,8 km de Google, pas d'adresse officielle (Limoges) ; étiquettes « animaux » croisées entre parc et abbaye (Caen, retenu : parc accepté, abbaye non) | Garder |
+| Loups de Chabrières (lot 882) | Commune réelle Sainte-Feyre ; titre et lieu sur Guéret (adresse corrigée dans le texte) | Garder Guéret (nom d'usage « Monts de Guéret ») |
+| Musée Bertrand (Châteauroux), Aravisbus (lot 882) | Règle chiens vue seulement dans une FAQ Val de Loire, deux téléphones ; début d'hiver 10/12 ou 12/12 | Garder, doutes dans les fiches |
