@@ -179,3 +179,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaire Decazeville (lot 858) | Pas de site ; deux SELARL à la même adresse (une fermée, une active) | Garder, doute dans l'encadré |
 | Clinique Lalande, Montauban (lot 858) | « Urgences 24/24 7j/7 » sans détail | Pas de badge (prudence) |
 | Maubert, Matour, Amiens (lot 860) | Maubert : nom du praticien dans le titre (cabinet professionnel) ; Matour : adresse et téléphone non confirmés ; Amiens : pas de site, horaires non publiés | Garder |
+| Logerot-Bauduin, Saint-Dizier (lot 859) | Exploitant non confirmé : fiche Google « fermé définitivement » à cette adresse ; clinique du Val d'Ornel listée à Bettancourt-la-Ferrée | Garder avec doute ; vérifier par appel |
+| Quiberon, Luchon, Montbard (lot 859) | Quiberon : n° 15 (registre) ou n° 65 (mairie) ; Luchon et Montbard : un seul annuaire, nom de praticien dans l'adresse de page | Garder |
