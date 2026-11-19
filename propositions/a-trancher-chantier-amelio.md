@@ -181,3 +181,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Maubert, Matour, Amiens (lot 860) | Maubert : nom du praticien dans le titre (cabinet professionnel) ; Matour : adresse et téléphone non confirmés ; Amiens : pas de site, horaires non publiés | Garder |
 | Logerot-Bauduin, Saint-Dizier (lot 859) | Exploitant non confirmé : fiche Google « fermé définitivement » à cette adresse ; clinique du Val d'Ornel listée à Bettancourt-la-Ferrée | Garder avec doute ; vérifier par appel |
 | Quiberon, Luchon, Montbard (lot 859) | Quiberon : n° 15 (registre) ou n° 65 (mairie) ; Luchon et Montbard : un seul annuaire, nom de praticien dans l'adresse de page | Garder |
+| Clinique de la Hervière (lot 861) | Lieu corrigé en La Colombe (adresse officielle) ; l'adresse de page garde « olepattes-villedieu » | Renommer le slug avec 301 |
+| Univet du Village, Neuilly (lot 861) | Adresse de page « obadia » (ancien nom) ; samedi contradictoire | Renommer le slug avec 301 |
+| Pauly, Penin, Pompignane, Plessis, Pintor (lot 862) | Slugs sur d'anciens noms (Pauly → Clinique des Moulins, Penin) ; Pompignane : deux numéros sur le site ; horaires d'annuaires | Garder ; renommer les slugs avec 301 plus tard |
