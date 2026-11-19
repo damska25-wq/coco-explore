@@ -135,3 +135,8 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Les Cabotins, Ajaccio (lot 836) | Google Maps : autre téléphone (portable non repris) et autres horaires | Garder, doute dans l'encadré |
 | Look Canin, Mulhouse (lot 836) | Changement de propriétaire évoqué par des avis, enseigne et adresse inchangées | Garder |
 | La Maison des Toutous, Moncetz-l'Abbaye (lot 836) | Entreprise individuelle, adresse peut-être un domicile (retirée, centre de la commune) | Garder sans adresse de rue |
+| Patoune Françoise, Valençay (lot 837) | Aucune source retrouvée | Supprimer avec 301 si rien n'apparaît |
+| Passion Canine, Trévoux (lot 837) | Adresse et téléphone non recoupés | Garder en titre neutre |
+| Pattes à Plouf, Fécamp (lot 837) | « Probablement fermé » sur PagesJaunes, actif sur Google Maps | Garder, doute dans l'encadré |
+| Mr & Mrs Dog, Metz (lot 837) | Trois graphies du nom | Garder |
+| O Chien Moussant (lot 837) | Champ lieu « Aube » corrigé en Saint-Parres-lès-Vaudes (base publiée par le site) | Fait |
