@@ -149,3 +149,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Toutou Tif, Sens (lot 841) | « Définitivement fermé » sur Google Maps, actif sur Mappy | Garder, doute dans l'encadré |
 | Trinité Hôtel (lot 841) | Office de tourisme : « animal de compagnie 8 € » sans unité | Titre sans supplément ; demander l'unité à l'hôtel |
 | Vétérinaire Les 3 Rivières (lot 841) | 23 quater ou 28 route de Longwy selon les documents | Garder, adresse à vérifier |
+| Vétérinaire des Acacias, Orléans (lot 842) | Déménage à Saran (69 rue Marcel Paul) le 26/11/2026, annoncé par le site | Après le 26/11 : lieu, titre, coordonnées et slug vers Saran (301) |
+| Vétérinaire Alençon (lot 842) | Ancien SIRET marqué fermé par un agrégateur, activité visible en 2026 | Garder |
+| Clinique de Saint-Sulpice-sur-Risle (lot 842) | Deux noms commerciaux (de l'Aigle / des Deux Rivières), pas de site | Garder, nom à vérifier |
