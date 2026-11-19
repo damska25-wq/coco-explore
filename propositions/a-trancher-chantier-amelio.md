@@ -199,3 +199,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Amitiés Animales, Saint-Laurent-de-Céris (lot 872) | « Définitivement fermé » sur Google Maps (05/11/2026) ; site injoignable | Garder avec doute ; supprimer (301) si confirmé |
 | Alignements de Carnac (lot 872) | Le CMN et l'office de tourisme divergent sur l'accès des chiens | Garder, doute dans la fiche |
 | Club de chiens de défense, Beauvais ; domaine de Montigny-le-Gannelon (lot 876) | Fiche Google « fermée » (Beauvais) ; horaires de visite divergents et règle chiens non publiée (Montigny) | Garder avec doute |
+| activite-club-rives-de-ladour-aureilhan (lot 877) | Club installé à Bours, l'adresse de page dit Aureilhan | Renommer le slug avec 301 (lot de renommages groupé) |
