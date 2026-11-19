@@ -58,3 +58,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Montsûrs : champ lieu « Montsûrs-Saint-Céneré » (commune déléguée).
 - Orgues : la clinique est à Espaly-Saint-Marcel, la fiche dit Le Puy-en-Velay.
 - Espritvet : le site espritvet.com semble détourné (titre de spam), non cité.
+
+## Phase 2 SIRENE (lots 699 et suivants)
+- Saint-Quentin (AEC, éducation canine) : adresse et portable publiés comme coordonnées professionnelles, gardés ; passer au centre de la commune si c'est un domicile ?
