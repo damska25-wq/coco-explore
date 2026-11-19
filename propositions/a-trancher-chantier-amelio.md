@@ -186,3 +186,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Pauly, Penin, Pompignane, Plessis, Pintor (lot 862) | Slugs sur d'anciens noms (Pauly → Clinique des Moulins, Penin) ; Pompignane : deux numéros sur le site ; horaires d'annuaires | Garder ; renommer les slugs avec 301 plus tard |
 | veterinaire-reginensi-troyes-10, veterinaire-robert-charnay-les-macon (lot 863) | Adresses de page sur d'anciens noms de praticiens ; Charnay devenu Clinique Naturevet | Renommer les slugs avec 301 (lot de renommages groupé) |
 | Erquy, Thury-Harcourt, Dinard (lot 863) | Site injoignable (Erquy) ; adresses non relues (limite de débit) | Repasser lors d'un prochain lot |
+| Saint-Acheul, Amiens (lot 864) | « Définitivement fermée » sur Google Maps, avis évoquant un déménagement ; page Sevetys introuvable | Garder avec « signalée fermée » ; supprimer (301) si confirmé |
