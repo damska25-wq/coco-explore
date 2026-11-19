@@ -201,3 +201,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Club de chiens de défense, Beauvais ; domaine de Montigny-le-Gannelon (lot 876) | Fiche Google « fermée » (Beauvais) ; horaires de visite divergents et règle chiens non publiée (Montigny) | Garder avec doute |
 | activite-club-rives-de-ladour-aureilhan (lot 877) | Club installé à Bours, l'adresse de page dit Aureilhan | Renommer le slug avec 301 (lot de renommages groupé) |
 | Dog Spirit 47 ; Écomusée l'Olivier (Volx) ; École canine du Thouarsais (lot 878) | Site injoignable (Dog Spirit) ; fermeture annuelle depuis le 31/10 sans date de réouverture (Volx, à revoir au printemps) ; horaires divergents (Thouarsais) | Garder avec doute |
+| Exposition canine d'Angers (lot 879) | Parc des Expositions à Saint-Sylvain-d'Anjou (Verrières-en-Anjou), champ lieu « Angers » ; titre « chiens de visiteurs non acceptés » | Garder lieu Angers (page ville), précision dans le texte |
+| Educanine17, Éducation Cannes-In (lot 879) | Pages de 2020, activité actuelle non confirmée ; site educanine17.fr inaccessible | Garder avec doute ; supprimer si rien d'ici le printemps |
