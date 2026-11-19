@@ -128,3 +128,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Esprit Canin 73, Aix-les-Bains (lot 833) | « Définitivement fermé » sur Google Maps seulement ; titre « signalé fermé » | Garder jusqu'à confirmation officielle |
 | toiletteur-esprit-canin-albertville (lot 833) | Salon renommé La Truffe Poudrée ; l'adresse de page garde l'ancien nom | Renommer le slug avec 301 |
 | Eneka, Hendaye (lot 833) | Un avis de 2019 parle d'un toilettage à domicile ; Facebook publie une adresse (20 route de Béhobie) | Garder l'adresse publiée par le salon |
+| Id'fix, Trans-en-Provence (lot 834) | Google Maps (05/11/2026) : 29 av. de la Gare ; Opendi/Alentoor : centre commercial Arcadia ; déménagement non confirmé | Garder, adresse dans l'encadré, à vérifier par appel |
