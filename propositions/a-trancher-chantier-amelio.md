@@ -8,6 +8,9 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 
 - `veterinaire-villedieu-50` : doublon probable de `veterinaire-olepattes-villedieu-50` (même numéro 02 33 61 01 76) → 301 vers olepattes.
 
+- Loudéac (SOCAVET) : vétérinaire d'élevage (porc, volaille) selon son registre et LinkedIn ; accueil des chiens non établi → 301 ?
+- Grigny (Simmenauer) : son numéro est celui de Mon Véto Ris-Orangis → fermée ou déménagée ; 301 ou fiche Ris-Orangis.
+
 ## Fermetures probables (registre officiel)
 - Brienon-sur-Armançon (lot 572) : établissement fermé le 14/02/2022, société radiée (Infogreffe).
 - Betton (Moulis) : radiée et fermée depuis le 31/12/2016 (Infogreffe, Sirene).
