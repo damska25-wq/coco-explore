@@ -64,3 +64,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 - Fait pour la vie privée (19/11) : `activite-aurelie-lecesne-la-rochelle` → `activite-aurelie-education-canine-la-rochelle` (301).
 - Balade ton chien en Vendée : aucune source officielle.
 - Cabot Caboche : Malemort non citée par la page lue ; commune à confirmer (Brive-la-Gaillarde ?).
+- Amiens (caniparc Condorcet / Mac Orlan) : lieu non confirmé par la Ville ; réorienter vers l'aire de bien-être canin de Saint-Ladre ?
+- Bourg-lès-Valence (caniparc) : position à environ 2 km du lieu réel, à recaler.
+- Laxou (parc canin) : emplacement non publié par la Ville.
