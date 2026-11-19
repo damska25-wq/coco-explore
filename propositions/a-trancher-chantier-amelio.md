@@ -61,3 +61,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 
 ## Phase 2 SIRENE (lots 699 et suivants)
 - Saint-Quentin (AEC, éducation canine) : adresse et portable publiés comme coordonnées professionnelles, gardés ; passer au centre de la commune si c'est un domicile ?
+- Fait pour la vie privée (19/11) : `activite-aurelie-lecesne-la-rochelle` → `activite-aurelie-education-canine-la-rochelle` (301).
+- Balade ton chien en Vendée : aucune source officielle.
+- Cabot Caboche : Malemort non citée par la page lue ; commune à confirmer (Brive-la-Gaillarde ?).
