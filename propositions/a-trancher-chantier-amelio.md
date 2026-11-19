@@ -143,3 +143,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Styl'dog, Saint-Jean-de-Maurienne (lot 839) | Même numéro rattaché par Google Maps à « Toutou Youtou », signalé définitivement fermé ; aucune source officielle | Garder, doute dans l'encadré (supprimer si fermeture confirmée) |
 | Tendance Toilettage, Saint-Yrieix-sur-Charente (lot 839) | Position Google à 1,9 km de la nôtre, site injoignable | Garder la position actuelle |
 | toiletteur-stop-couaf-redon-35 (lot 839) | Adresse de page avec l'ancien nom (salon devenu Noms d'un Chien) | Renommer le slug avec 301 |
+| Toutou Coif', Orléans (lot 840) | Centre commercial Dauphine à Saint-Marceau, pas La Source ; lieu ramené à « Orléans (45100) » | Fait ; position à vérifier |
+| Tom&Co, Coignières (lot 840) | Toiletteuse indépendante (numéro publié sur sa page de réservation) ; « temporairement fermé » sur Google Maps ; DogWash cité par Cylex seul | Garder, doute dans l'encadré |
+| Toutou Mobile, Niort (lot 840) | Activité itinérante ; base Niort (Google) ou Saint-Martin-de-Saint-Maixent (PagesJaunes) | Garder à Niort, centre de la commune |
