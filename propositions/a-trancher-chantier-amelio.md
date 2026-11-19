@@ -140,3 +140,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Pattes à Plouf, Fécamp (lot 837) | « Probablement fermé » sur PagesJaunes, actif sur Google Maps | Garder, doute dans l'encadré |
 | Mr & Mrs Dog, Metz (lot 837) | Trois graphies du nom | Garder |
 | O Chien Moussant (lot 837) | Champ lieu « Aube » corrigé en Saint-Parres-lès-Vaudes (base publiée par le site) | Fait |
+| Styl'dog, Saint-Jean-de-Maurienne (lot 839) | Même numéro rattaché par Google Maps à « Toutou Youtou », signalé définitivement fermé ; aucune source officielle | Garder, doute dans l'encadré (supprimer si fermeture confirmée) |
+| Tendance Toilettage, Saint-Yrieix-sur-Charente (lot 839) | Position Google à 1,9 km de la nôtre, site injoignable | Garder la position actuelle |
+| toiletteur-stop-couaf-redon-35 (lot 839) | Adresse de page avec l'ancien nom (salon devenu Noms d'un Chien) | Renommer le slug avec 301 |
