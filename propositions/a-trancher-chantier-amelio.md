@@ -146,3 +146,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Toutou Coif', Orléans (lot 840) | Centre commercial Dauphine à Saint-Marceau, pas La Source ; lieu ramené à « Orléans (45100) » | Fait ; position à vérifier |
 | Tom&Co, Coignières (lot 840) | Toiletteuse indépendante (numéro publié sur sa page de réservation) ; « temporairement fermé » sur Google Maps ; DogWash cité par Cylex seul | Garder, doute dans l'encadré |
 | Toutou Mobile, Niort (lot 840) | Activité itinérante ; base Niort (Google) ou Saint-Martin-de-Saint-Maixent (PagesJaunes) | Garder à Niort, centre de la commune |
+| Toutou Tif, Sens (lot 841) | « Définitivement fermé » sur Google Maps, actif sur Mappy | Garder, doute dans l'encadré |
+| Trinité Hôtel (lot 841) | Office de tourisme : « animal de compagnie 8 € » sans unité | Titre sans supplément ; demander l'unité à l'hôtel |
+| Vétérinaire Les 3 Rivières (lot 841) | 23 quater ou 28 route de Longwy selon les documents | Garder, adresse à vérifier |
