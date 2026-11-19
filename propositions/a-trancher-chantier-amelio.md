@@ -152,3 +152,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Vétérinaire des Acacias, Orléans (lot 842) | Déménage à Saran (69 rue Marcel Paul) le 26/11/2026, annoncé par le site | Après le 26/11 : lieu, titre, coordonnées et slug vers Saran (301) |
 | Vétérinaire Alençon (lot 842) | Ancien SIRET marqué fermé par un agrégateur, activité visible en 2026 | Garder |
 | Clinique de Saint-Sulpice-sur-Risle (lot 842) | Deux noms commerciaux (de l'Aigle / des Deux Rivières), pas de site | Garder, nom à vérifier |
+| Saint-Péray, Calvi, Argentan (lot 844) | Saint-Péray : site du réseau Arche ; Calvi : pas de site, samedi divergent ; Argentan : ancienne adresse encore citée | Garder, doutes dans l'encadré |
