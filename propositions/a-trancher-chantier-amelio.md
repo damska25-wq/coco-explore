@@ -1,3 +1,18 @@
+# Décisions du chantier amélioration — TRANCHÉES le 19/11/2026
+
+L'utilisateur a validé les recommandations le 19/11/2026 (« je suis tes recommandations ») :
+
+- **Supprimées avec 301 (43 fiches)** : doublons (Reiller-Sallé → Univet Sarcelles, Villedieu-50 → Olepattes, Coudriers → Source Fontainebleau, Saint-Martin-de-Ré → La Flotte), hors sujet (clinique pour chevaux Brogniez, SOCAVET élevage, Canaldog, Élégance Canine mobile Sarthe, Rêve d'Encre tatouage, Roval cosmétiques, Rose Anglaise élevage), vétérinaire de Grigny (numéro de Ris-Orangis), fermetures officielles (vétérinaires : Brienon, Betton, Saint-André-les-Vergers, Briollay, Vénissieux, Sancoins, Mamers, Saint-Florentin, L'Aigle, Joyeuse ; toiletteurs : Ti'Dog Nanterre, Lovely Dog Châtillon et Ermont, Fais le Beau Rosny, Instinct Animal Guingamp, Club du Chien et du Chat Villefranche, Chien Chic Ussel, CRUFT Pau, Olivia Saint-Florentin, P'tits Fauves Lons, Pat'Os'Sec Clamart, Ki Naet Quimperlé, Mon Ami Toilettage Bolbec, Dodus Rochechouart, Cham'Dog, Chic Milou Loudéac, Ho Dog Chic Paris 6e, Dog's Brushing Grasse), existence introuvable (Dog Attitude Saint-Marcellin, toilettage Decize, toilettage L'Isle-sur-le-Doubs). Redirections vers la page catégorie × département (ou la fiche gardée pour les doublons) ; fiche EN de Grasse supprimée aussi.
+- **Gardées malgré la fermeture** (leur suppression faisait disparaître une page ville) : Toilet'Eure (Louviers) et Dog'attitude (Sens), titres « fermé ».
+- **24 adresses renommées avec 301** (anciens noms, noms de personnes, commune erronée) : Bellevue Filvet Montceau, Esneval Criquetot, Bucaille Lamastre, Iasovet Thionville, Amiral Les Herbiers, Bords de l'Oise Pont-Sainte-Maxence, Ponson Moulon Aubenas, Sillé-le-Guillaume, Quatre Pattes Saint-Rémy, Pont-sur-Yonne, Rhonelle Valenciennes, Georges Cuvier Héricourt, Barneville-Carteret, Clinique de Creil, Lauch Guebwiller, Phoenix La Souterraine, Château Fiat Haguenau, KaruVet Pointe-à-Pitre, Francony Corbeil, Fure Beaucroissant, Planté Étampes, Anim'Aude Vet Limoux, club canin Garges, Coralie Biarritz.
+- **Champs « lieu » corrigés** : Vastel (Saint-Maurice-en-Cotentin, titre aussi), Savigneux, Le Breuil, Espaly-Saint-Marcel (Orgues, titre aussi), Os'moz (85180), Ronchamp, Taponnat-Fleurignac, Pusey, Les Fins (titre aussi), Le Laussou, et 8 fiches de vétérinaires dont le lieu contenait le nom de la clinique.
+- **Gardées avec le doute affiché** (pas de preuve officielle de fermeture) : toutes les fermetures signalées par Google seul, les fiches à annuaire seul, les numéros publiés par les établissements eux-mêmes (Méaudre, Amiens, Cosne, Vézillon, AEC Saint-Quentin), les vétérinaires nommés par l'office de tourisme (Sens).
+- **Restent à faire plus tard** : Cani Clean 2A (Porto-Vecchio) à reclasser en dogwash, Esteban Barber Dogs à reclasser en toiletteur, fiche Puppies (Metz) et Happy Dog (Joyeuse) à créer en SIRENE si l'utilisateur le souhaite, caniparc d'Amiens (Saint-Ladre) et de Bourg-lès-Valence à recaler.
+
+---
+
+## Liste d'origine (pour mémoire)
+
 # Décisions à prendre (chantier amélioration, lots 550 et suivants)
 
 Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne avec le doute affiché.
