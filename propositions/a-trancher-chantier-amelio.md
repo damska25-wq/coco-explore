@@ -222,3 +222,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Griffe de Tess, Millau (lot 921) | « Définitivement fermé » sur Google Maps, encore listée dans le Mémo canin 2026 de l'office de tourisme | Garder (l'office la liste) |
 | NAC Services, Chauny (lot 921) | Annuaire seul, site inaccessible, activité surtout NAC | Supprimer avec 301 (lien au chien faible) |
 | Happy Dog, Val de Saire (lot 921) | Aucune source officielle, existence non confirmée | Supprimer avec 301 |
+| Dogwash Chennevières, Dogwash Publier (lot 923) | La page officielle ne cite pas de libre-service ; titres neutres | Reclasser en toiletteur ou animalerie si le libre-service reste introuvable |
+| Rémalard, Montrollet (lot 923) | Fermeture (définitive / temporaire) signalée par Google Maps seulement | Garder avec doute |
