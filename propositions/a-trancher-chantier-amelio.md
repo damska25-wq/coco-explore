@@ -213,3 +213,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Bois Chenu (Cambrai), La Flèche, Saumur (lot 890) | Adresse officielle à Proville (lieu Cambrai gardé) ; boucle « Sur le Loir » non documentée, fiche recentrée sur La Monnerie ; Saumur recentrée sur la boucle « L'île du Nord » | Garder |
 | DOUBLON : balade-roche-doetre-14 et balade-roche-oetre-gorges-rouvre-61 (lots 905-906) | Deux fiches pour la Roche d'Oëtre (Saint-Philbert-sur-Orne) ; la seconde a le titre avec la règle chien | Garder balade-roche-oetre-gorges-rouvre-61, supprimer balade-roche-doetre-14 avec 301 vers elle |
 | Abbaye de Léhon ; Robec (Rouen) (lot 905) | Horaires tous « fermé » du 27/09/2026 au 04/06/2027 sur l'office ; règlement de police illisible | Garder, doutes dans l'encadré |
+| camping-municipal-chenes-valencay-36 (lot 915) | Ancien camping municipal repris, devenu « Camping Les Chênes » ; l'adresse de page dit encore « municipal » | Renommer le slug avec 301 (lot de renommages groupé) |
+| Camping municipal du Cap Fréhel (lot 915) | Tarif animal de 1,10 € relayé seulement par le Petit Futé ; position à vérifier | Garder, tarif hors titre |
