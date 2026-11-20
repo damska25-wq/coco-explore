@@ -230,3 +230,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Dog Wash Tom&Co Cherbourg-Tourlaville (lot 927) | Absent de la liste officielle Tom&Co à deux lectures | Supprimer avec 301 |
 | My Dogwash Marseille (lot 926) | « Temporairement fermée » sur Google Maps seulement | Garder avec doute |
 | 8 dogwash Zoomalia (Aire-sur-l'Adour, Anglet, Azay-le-Brûlé, Biganos, Flourens, Caussade, La Roche-sur-Yon, Lannemezan) (lot 931) | Leur page magasin ne liste pas le « toilettage en libre-service » (seules Foix et Bout-du-Pont-de-l'Arn le listent) ; doute dans l'encadré | Garder en dogwash avec le doute ; vérifier par appel avant tout reclassement |
+| 10 dogwash Zoomalia de plus (lot 932, dont Mimizan, Moissac, Pamiers, Lourdes) | Dog Wash non listé sur la page de chaque magasin ; seule la page générale Zoomalia et le blog 2022 l'annoncent pour « la plupart » des boutiques | Même traitement que le lot 931 : garder avec doute, vérifier par appel |
