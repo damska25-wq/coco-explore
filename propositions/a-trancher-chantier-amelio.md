@@ -219,3 +219,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Caboch'Art, Saint-Aignan (lot 919) | cabochart.fr présente une autre activité ; Beauval ne cite plus la pension | Supprimer avec 301 si la fermeture se confirme |
 | Cani-Walk (lot 919) | « Temporairement fermé » sur Google Maps | Garder, doute dans l'encadré |
 | Docil'Animo, Dog Activity, Domaine de l'Auzaire (lot 920) | Page tarifs en 404 (Docil'Animo) ; site injoignable (Dog Activity) ; fermeture pour congés du 15/11 au 16/12/2026 annoncée par le site (Auzaire) | Garder |
+| Griffe de Tess, Millau (lot 921) | « Définitivement fermé » sur Google Maps, encore listée dans le Mémo canin 2026 de l'office de tourisme | Garder (l'office la liste) |
+| NAC Services, Chauny (lot 921) | Annuaire seul, site inaccessible, activité surtout NAC | Supprimer avec 301 (lien au chien faible) |
+| Happy Dog, Val de Saire (lot 921) | Aucune source officielle, existence non confirmée | Supprimer avec 301 |
