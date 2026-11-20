@@ -218,3 +218,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | L'Arche de nos compagnons, Saint-Germain-du-Pinel (lot 918) | Bulletin municipal (01/2025) : la SPA s'installe « en lieu et place » de la pension ; article TVR du 07/05/2026 sur le refuge SPA | Supprimer avec 301 (fermeture quasi certaine) |
 | Caboch'Art, Saint-Aignan (lot 919) | cabochart.fr présente une autre activité ; Beauval ne cite plus la pension | Supprimer avec 301 si la fermeture se confirme |
 | Cani-Walk (lot 919) | « Temporairement fermé » sur Google Maps | Garder, doute dans l'encadré |
+| Docil'Animo, Dog Activity, Domaine de l'Auzaire (lot 920) | Page tarifs en 404 (Docil'Animo) ; site injoignable (Dog Activity) ; fermeture pour congés du 15/11 au 16/12/2026 annoncée par le site (Auzaire) | Garder |
