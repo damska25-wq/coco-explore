@@ -216,3 +216,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | camping-municipal-chenes-valencay-36 (lot 915) | Ancien camping municipal repris, devenu « Camping Les Chênes » ; l'adresse de page dit encore « municipal » | Renommer le slug avec 301 (lot de renommages groupé) |
 | Camping municipal du Cap Fréhel (lot 915) | Tarif animal de 1,10 € relayé seulement par le Petit Futé ; position à vérifier | Garder, tarif hors titre |
 | L'Arche de nos compagnons, Saint-Germain-du-Pinel (lot 918) | Bulletin municipal (01/2025) : la SPA s'installe « en lieu et place » de la pension ; article TVR du 07/05/2026 sur le refuge SPA | Supprimer avec 301 (fermeture quasi certaine) |
+| Caboch'Art, Saint-Aignan (lot 919) | cabochart.fr présente une autre activité ; Beauval ne cite plus la pension | Supprimer avec 301 si la fermeture se confirme |
+| Cani-Walk (lot 919) | « Temporairement fermé » sur Google Maps | Garder, doute dans l'encadré |
