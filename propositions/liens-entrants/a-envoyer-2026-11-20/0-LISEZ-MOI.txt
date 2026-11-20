@@ -1,0 +1,10 @@
+Mails à envoyer (20/11/2026) : un fichier par mail, prêt à copier-coller.
+
+Dans chaque fichier : la ligne « À : » (adresse), la ligne « Objet : », puis le texte du mail à coller tel quel.
+
+Ordre conseillé :
+1- Les trois réponses (Grande Tortue, Poppy's Dogs, et Dogwash Mende seulement si elle n'est pas déjà partie).
+2- La série 9 (n° 108 à 117, sans le 115 Grande Tortue déjà parti), si ce n'est pas déjà fait.
+3- La série 10 (n° 118 à 127), nouveaux établissements.
+
+Après l'envoi, dis-moi lesquels sont partis : je les note dans ECHANGES-LIENS.md.
