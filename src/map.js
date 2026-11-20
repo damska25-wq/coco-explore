@@ -3,18 +3,21 @@
   // (mêmes identifiants que les sections de fiches sous la carte et dans
   // menu/accueil) — garantit que chaque fiche appartient à un filtre.
   // Ordre d'hiver (05/11/2026), aligné sur src/_data/sections.js ; ordre d'été à rétablir au printemps (plages en tête).
+  // Ordre (20/11/2026) : les 6 catégories les plus demandées d'abord, les autres
+  // derrière le bouton « + N autres » (more: true). Ordre d'été au printemps :
+  // plages, balades, restaurants, hébergements, vétérinaires, pension canine.
   var CAT_GROUPS = [
     { catIds: ["hebergements"], label: "Hébergements", color: "#C99A4A", activeBg: "#956e2c" },
-    { catIds: ["dogsitters"], label: "Pension canine", color: "#7C6FAE", activeBg: "#796cac" },
+    { catIds: ["restaurants"], label: "Restaurants", color: "#D98E3E", activeBg: "#a56520" },
     { catIds: ["balades"], label: "Balades", color: "#3C5943", activeBg: "#3C5943" },
     { catIds: ["veterinaires"], label: "Vétérinaires", color: "#B0413E", activeBg: "#B0413E" },
-    { catIds: ["dogwash"], label: "Douche à chien", color: "#2A9D9D", activeBg: "#228181" },
-    { catIds: ["restaurants"], label: "Restaurants", color: "#D98E3E", activeBg: "#a56520" },
-    { catIds: ["activites"], label: "Activités", color: "#3E8E7E", activeBg: "#388071" },
-    { catIds: ["toiletteurs"], label: "Toiletteurs", color: "#A65C8C", activeBg: "#A65C8C" },
-    { catIds: ["education"], label: "Éducation canine", color: "#4F6D7A", activeBg: "#4F6D7A" },
+    { catIds: ["dogsitters"], label: "Pension canine", color: "#7C6FAE", activeBg: "#796cac" },
     { catIds: ["plages", "cote-azur"], label: "Plages", color: "#BE5B3B", activeBg: "#ba593a" },
-    { catIds: ["lacs"], label: "Lacs & points d'eau", color: "#3E7CB1", activeBg: "#3d79ad" }
+    { catIds: ["lacs"], label: "Lacs & points d'eau", color: "#3E7CB1", activeBg: "#3d79ad", more: true },
+    { catIds: ["activites"], label: "Activités", color: "#3E8E7E", activeBg: "#388071", more: true },
+    { catIds: ["dogwash"], label: "Douche à chien", color: "#2A9D9D", activeBg: "#228181", more: true },
+    { catIds: ["toiletteurs"], label: "Toiletteurs", color: "#A65C8C", activeBg: "#A65C8C", more: true },
+    { catIds: ["education"], label: "Éducation canine", color: "#4F6D7A", activeBg: "#4F6D7A", more: true }
   ];
   var URGENCE_COLOR = "#8B1E1E"; // nuance de marqueur pour les urgences vétérinaires, dans le même groupe/filtre que les vétérinaires
 
@@ -195,6 +198,8 @@
     updatePrompt();
   }
 
+  var moreBtns = [];
+  var moreToggle = null;
   var filterBar = document.getElementById("coco-map-filters");
   if (filterBar) {
     var toutBtn = document.createElement("button");
@@ -217,9 +222,23 @@
       btn.textContent = group.label;
       btn.setAttribute("aria-pressed", "false");
       btn.addEventListener("click", function () { setActiveKey(group.label); });
+      if (group.more) { btn.classList.add("map-filter-more"); btn.hidden = true; moreBtns.push(btn); }
       filterBar.appendChild(btn);
       buttonsByKey[group.label] = btn;
     });
+    if (moreBtns.length) {
+      moreToggle = document.createElement("button");
+      moreToggle.type = "button";
+      moreToggle.className = "map-filter map-filter-all map-filter-toggle";
+      moreToggle.textContent = "+ " + moreBtns.length + " autres";
+      moreToggle.setAttribute("aria-expanded", "false");
+      moreToggle.addEventListener("click", showMoreFilters);
+      filterBar.appendChild(moreToggle);
+    }
+  }
+  function showMoreFilters() {
+    moreBtns.forEach(function (b) { b.hidden = false; });
+    if (moreToggle) moreToggle.hidden = true;
   }
 
   // Les fiches ont toutes un fil d'Ariane qui renvoie vers index.html#<catId>
@@ -229,6 +248,7 @@
     var catId = (window.location.hash || "").replace("#", "");
     var group = groupForCatId(catId);
     if (!group) return false;
+    if (group.more) showMoreFilters();
     setActiveKey(group.label);
     if (scrollTo && ficheSections[catId]) {
       window.setTimeout(function () {

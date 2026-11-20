@@ -42,7 +42,7 @@ extraScripts: |
       <span class="kicker">Gratuit, les 101 départements français, 10 000+ fiches</span>
       <h1>Partout avec mon chien</h1>
       <div class="coco-signature"><svg width="15" height="15" aria-hidden="true"><use href="#i-paw"/></svg>Le guide vu dans les yeux de Coco</div>
-      <p>Dogwash, garde, clubs canins, vétos, toiletteurs, plages, balades, hébergements, restos : tout pour son chien.</p>
+      <p>Plages, balades, hébergements, restos, vétos, garde, toiletteurs, dogwash : tout pour son chien.</p>
       <div class="search-wrap">
         <form class="search-bar" id="site-search-form" autocomplete="off">
           <input type="text" id="site-search-input" placeholder="Ex. : plage à Cavalaire, pension canine à Lyon…">
@@ -72,33 +72,6 @@ extraScripts: |
       <img src="assets/coco-hero.jpg" alt="Coco, labrador et mascotte de Coco Explore, en balade en laisse" fetchpriority="high">
       <figcaption>Coco, votre guide sur le terrain</figcaption>
     </figure>
-  </div>
-</section>
-
-<section class="categories wrap">
-  <div class="section-head">
-    <span class="eyebrow">Explorer par région</span>
-    <h2>Département par département</h2>
-    <p class="cat-see-more"><a href="/region-provence-alpes-cote-dazur">Découvrir la région Provence-Alpes-Côte d'Azur →</a></p>
-  </div>
-  <div class="region-accordion" id="region-accordion">
-    {%- for region in regions %}
-    <div class="region-accordion-item">
-      <button type="button" class="region-accordion-toggle" aria-expanded="false">
-        <span>{{ region.nom }}</span>
-        <span class="region-accordion-meta">{{ region.departements.length }} départements <svg class="region-accordion-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></span>
-      </button>
-      <div class="cat-grid region-accordion-body" hidden>
-        {%- for dep in region.departements %}
-        <a href="departement-{{ dep.slug }}" class="cat-card">
-          <svg class="icon"><use href="#i-pin"/></svg>
-          <h3>{{ dep.nom }}</h3>
-          <span class="count">{{ collections.fiches | countByDept(dep.id) }} fiches</span>
-        </a>
-        {%- endfor %}
-      </div>
-    </div>
-    {%- endfor %}
   </div>
 </section>
 
@@ -135,23 +108,6 @@ extraScripts: |
     {%- endfor %}
   </div>
   <p class="cat-see-more"><a href="/plan-du-site">Toutes les villes ({{ collections.cityPages.length }}) →</a></p>
-</section>
-
-<section class="categories wrap guides-home">
-  <div class="section-head">
-    <span class="eyebrow">Guides pratiques</span>
-    <h2>Les derniers guides pour voyager avec son chien</h2>
-  </div>
-  <div class="guide-list guide-list-cols">
-    {%- for g in (collections.guides | sort(true, false, "data.updated")).slice(0, 3) %}
-    <a href="/{{ g.data.permalinkPath | cleanUrl }}" class="guide-card">
-      <span class="tag">{{ g.data.kicker | safe }}</span>
-      <h3>{{ g.data.h1 | safe }}</h3>
-      <p>{{ g.data.description | safe }}</p>
-    </a>
-    {%- endfor %}
-  </div>
-  <p class="cat-see-more"><a href="/guides">Tous les guides ({{ collections.guides.length }}) →</a></p>
 </section>
 
 <section class="wrap categories carte-section" id="carte">
@@ -206,6 +162,50 @@ extraScripts: |
     {%- endif %}
   </section>
   {% endfor %}
+</section>
+
+<section class="categories wrap guides-home">
+  <div class="section-head">
+    <span class="eyebrow">Guides pratiques</span>
+    <h2>Les derniers guides pour voyager avec son chien</h2>
+  </div>
+  <div class="guide-list guide-list-cols">
+    {%- for g in (collections.guides | sort(true, false, "data.updated")).slice(0, 3) %}
+    <a href="/{{ g.data.permalinkPath | cleanUrl }}" class="guide-card">
+      <span class="tag">{{ g.data.kicker | safe }}</span>
+      <h3>{{ g.data.h1 | safe }}</h3>
+      <p>{{ g.data.description | safe }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+  <p class="cat-see-more"><a href="/guides">Tous les guides ({{ collections.guides.length }}) →</a></p>
+</section>
+
+<section class="categories wrap">
+  <div class="section-head">
+    <span class="eyebrow">Explorer par région</span>
+    <h2>Département par département</h2>
+    <p class="cat-see-more"><a href="/region-provence-alpes-cote-dazur">Découvrir la région Provence-Alpes-Côte d'Azur →</a></p>
+  </div>
+  <div class="region-accordion" id="region-accordion">
+    {%- for region in regions %}
+    <div class="region-accordion-item">
+      <button type="button" class="region-accordion-toggle" aria-expanded="false">
+        <span>{{ region.nom }}</span>
+        <span class="region-accordion-meta">{{ region.departements.length }} département{{ "s" if region.departements.length > 1 }} <svg class="region-accordion-chevron" width="20" height="20"><use href="#i-chevron-down"/></svg></span>
+      </button>
+      <div class="cat-grid region-accordion-body" hidden>
+        {%- for dep in region.departements %}
+        <a href="departement-{{ dep.slug }}" class="cat-card">
+          <svg class="icon"><use href="#i-pin"/></svg>
+          <h3>{{ dep.nom }}</h3>
+          <span class="count">{{ collections.fiches | countByDept(dep.id) }} fiches</span>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
 </section>
 
 <section class="fiches wrap" id="mes-favoris" hidden>

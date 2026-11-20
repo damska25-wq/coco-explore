@@ -850,6 +850,12 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .cookie-btn-solid:hover { background: var(--terracotta-deep); }
 .cookie-btn-ghost { background: transparent; color: var(--blanc); border-color: rgba(255,253,248,0.4); }
 .cookie-btn-ghost:hover { border-color: var(--blanc); }
+@media (max-width: 600px) {
+  .cookie-banner-inner { gap: 10px; padding-top: 10px; padding-bottom: 10px; flex-wrap: nowrap; }
+  .cookie-banner-inner p { font-size: 0.78rem; line-height: 1.35; }
+  .cookie-banner-actions { flex-direction: column; gap: 6px; }
+  .cookie-btn { padding: 6px 14px; min-height: 40px; font-size: 0.82rem; }
+}
 
 /* ---------- Conseils de Coco (page dédiée) & carte ---------- */
 

@@ -157,6 +157,17 @@ extraScripts: |
   </div>
 </section>
 
+{{ bodyHtml | safe }}
+
+{%- if lang != "en" %}{% set cp = cocoPhotos[slug] %}{% include "coco-photos.njk" %}{% endif %}
+
+{%- if lang != "en" and guidesByCat[breadcrumbCatId] %}
+<section class="wrap fiche-guides callout">
+  <p><strong>À lire aussi :</strong>
+  {%- for g in guidesByCat[breadcrumbCatId] %} <a href="/{{ g[0] }}">{{ g[1] }}</a>{{ " ·" if not loop.last }}{% endfor %}</p>
+</section>
+{%- endif %}
+
 <section class="wrap avis" data-fiche="{{ avisSlug }}" id="avis">
   <div class="avis-card">
     <div class="avis-head">
@@ -197,23 +208,6 @@ extraScripts: |
     </div>
   </div>
 </section>
-
-{%- if lang != "en" %}
-<section class="wrap avis-invite callout">
-  <p>Tu y es allé avec ton chien ? <a href="#avis">Raconte-nous ton passage →</a></p>
-</section>
-{%- endif %}
-
-{{ bodyHtml | safe }}
-
-{%- if lang != "en" %}{% set cp = cocoPhotos[slug] %}{% include "coco-photos.njk" %}{% endif %}
-
-{%- if lang != "en" and guidesByCat[breadcrumbCatId] %}
-<section class="wrap fiche-guides callout">
-  <p><strong>À lire aussi :</strong>
-  {%- for g in guidesByCat[breadcrumbCatId] %} <a href="/{{ g[0] }}">{{ g[1] }}</a>{{ " ·" if not loop.last }}{% endfor %}</p>
-</section>
-{%- endif %}
 
 {%- set relatedFiches = collections.fiches | related(breadcrumbCatId, departement, permalinkPath, 3) %}
 {%- if relatedFiches.length and lang != "en" %}
