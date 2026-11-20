@@ -215,3 +215,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Abbaye de Léhon ; Robec (Rouen) (lot 905) | Horaires tous « fermé » du 27/09/2026 au 04/06/2027 sur l'office ; règlement de police illisible | Garder, doutes dans l'encadré |
 | camping-municipal-chenes-valencay-36 (lot 915) | Ancien camping municipal repris, devenu « Camping Les Chênes » ; l'adresse de page dit encore « municipal » | Renommer le slug avec 301 (lot de renommages groupé) |
 | Camping municipal du Cap Fréhel (lot 915) | Tarif animal de 1,10 € relayé seulement par le Petit Futé ; position à vérifier | Garder, tarif hors titre |
+| L'Arche de nos compagnons, Saint-Germain-du-Pinel (lot 918) | Bulletin municipal (01/2025) : la SPA s'installe « en lieu et place » de la pension ; article TVR du 07/05/2026 sur le refuge SPA | Supprimer avec 301 (fermeture quasi certaine) |
