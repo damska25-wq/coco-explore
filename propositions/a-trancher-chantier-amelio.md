@@ -231,3 +231,6 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | My Dogwash Marseille (lot 926) | « Temporairement fermée » sur Google Maps seulement | Garder avec doute |
 | 8 dogwash Zoomalia (Aire-sur-l'Adour, Anglet, Azay-le-Brûlé, Biganos, Flourens, Caussade, La Roche-sur-Yon, Lannemezan) (lot 931) | Leur page magasin ne liste pas le « toilettage en libre-service » (seules Foix et Bout-du-Pont-de-l'Arn le listent) ; doute dans l'encadré | Garder en dogwash avec le doute ; vérifier par appel avant tout reclassement |
 | 10 dogwash Zoomalia de plus (lot 932, dont Mimizan, Moissac, Pamiers, Lourdes) | Dog Wash non listé sur la page de chaque magasin ; seule la page générale Zoomalia et le blog 2022 l'annoncent pour « la plupart » des boutiques | Même traitement que le lot 931 : garder avec doute, vérifier par appel |
+| etang-urbino-aleria-2b (lot 934) | Étang à Ghisonaccia (Conservatoire du littoral) : lieu et cardTag corrigés le 20/11 ; l'adresse de page dit encore « aleria » | Renommer le slug avec 301 (lot de renommages groupé) |
+| Pré-Martin (lot 934) | Adresse de page « mortagne-au-perche », lieu réel Merlerault-le-Pin | Renommer le slug avec 301 (lot de renommages groupé) |
+| Ferme des Colombons (lot 934) | Site inaccessible, titre et supplément gardés sans relecture | Revoir plus tard |
