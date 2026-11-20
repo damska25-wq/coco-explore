@@ -229,3 +229,4 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | La Réserve Animale, Paris 19e (lot 926) | Animalerie ; libre-service cité seulement par des avis | Supprimer avec 301 ou reclasser |
 | Dog Wash Tom&Co Cherbourg-Tourlaville (lot 927) | Absent de la liste officielle Tom&Co à deux lectures | Supprimer avec 301 |
 | My Dogwash Marseille (lot 926) | « Temporairement fermée » sur Google Maps seulement | Garder avec doute |
+| 8 dogwash Zoomalia (Aire-sur-l'Adour, Anglet, Azay-le-Brûlé, Biganos, Flourens, Caussade, La Roche-sur-Yon, Lannemezan) (lot 931) | Leur page magasin ne liste pas le « toilettage en libre-service » (seules Foix et Bout-du-Pont-de-l'Arn le listent) ; doute dans l'encadré | Garder en dogwash avec le doute ; vérifier par appel avant tout reclassement |
