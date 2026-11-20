@@ -29,3 +29,9 @@ Crea'Dogs (Roquebrune), La Truffe Poudrée (Albertville), Noms d'un Chien (Redon
 - Noms de vétérinaires dans l'adresse de page : ce sont des cabinets professionnels publics, pas des particuliers.
 - Fermetures signalées par Google Maps seul (une trentaine) : on garde avec « signalé fermé » et le doute dans l'encadré, jusqu'à une source officielle.
 - 18 dogwash Zoomalia : titres neutres en attendant des appels.
+
+## Fait le 20/11/2026 (accord de l'utilisateur : « je suis tes recommandations »)
+- 14 fiches supprimées avec 301 (les 12 du groupe 1, La Réserve Animale, Patoune Françoise) : **à ne pas recréer**.
+- Cani Cat's Center → toiletteur (`toiletteur-cani-cats-center-auxerre`) ; Le Clos de la Vouge → hébergement (`hebergement-clos-de-la-vouge-vougeot`) ; Les Peupliers de la Rive → Camping Plage des Tonnelles (`hebergement-camping-plage-des-tonnelles-saint-jean-de-monts-85`, nouvelle adresse et position).
+- 17 adresses de pages renommées avec 301 (le club de Garges l'était déjà depuis le 19/11).
+- Pages « Dogwash Bouches-du-Rhône » et « Pension canine Aisne » passées sous 5 fiches (redirection automatique) ; aucune page ville perdue.
