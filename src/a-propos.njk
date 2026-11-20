@@ -24,7 +24,7 @@ extraHead: |
     }
     .about-hero p { margin: 0; font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--heading); }
     .about-photo { margin: 28px 0; text-align: center; }
-    .about-photo img { max-width: 340px; width: 100%; border-radius: 10px; box-shadow: 0 12px 28px rgba(0,0,0,0.18); }
+    .about-photo img { max-width: 340px; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 12px 28px rgba(0,0,0,0.18); }
     .about-photo figcaption { margin-top: 10px; font-size: 0.88rem; color: rgba(var(--ink),0.65); }
     .legal-body .values { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; margin: 20px 0 8px; }
     .legal-body .values div { background: var(--surface); border: 1px solid rgba(var(--ink),0.1); border-radius: 10px; padding: 16px 18px; }
@@ -56,6 +56,11 @@ bodyHtml: |
     <figure class="about-photo">
       <img src="assets/coco-esterel.jpg" alt="Coco et un ami labrador au sommet d'une balade dans les roches rouges de l'Estérel" loading="lazy">
       <figcaption>Coco et un copain au sommet d'une balade dans l'Estérel.</figcaption>
+    </figure>
+
+    <figure class="about-photo">
+      <picture><source type="image/webp" srcset="assets/coco-portrait-maison.webp"><img src="assets/coco-portrait-maison.jpg" width="720" height="960" alt="Coco, labrador sable, la tête penchée sur le canapé" loading="lazy"></picture>
+      <figcaption>Coco à la maison, entre deux explorations.</figcaption>
     </figure>
 
     <h2>Ce qui compte pour nous</h2>
