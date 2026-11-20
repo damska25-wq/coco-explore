@@ -114,7 +114,7 @@ Damien
 Coco Explore — cocoexplore.com
 ```
 
-## Dogwash Mende, réponse reçue le 17/11
+## Dogwash Mende, réponse reçue le 17/11 (réponse envoyée le 20/11)
 
 **Adresse :**
 ```
@@ -141,7 +141,7 @@ Damien
 Coco Explore — cocoexplore.com
 ```
 
-## Poppy's Dogs (Lourdes), réponse reçue le 18/11
+## Poppy's Dogs (Lourdes), réponse reçue le 18/11 (réponse envoyée le 20/11)
 
 **Adresse :**
 ```
@@ -168,7 +168,7 @@ Damien
 Coco Explore — cocoexplore.com
 ```
 
-## Camping La Grande Tortue (Candé-sur-Beuvron), réponse reçue le 19/11
+## Camping La Grande Tortue (Candé-sur-Beuvron), réponse reçue le 19/11 (réponse envoyée le 20/11)
 
 **Adresse :**
 ```

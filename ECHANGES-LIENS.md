@@ -150,7 +150,26 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 | 105 | Camping de Ceyreste (Ceyreste) | campingceyreste@gmail.com | 18/11/2026 | envoyé | |
 | 106 | Au Plaisir Du Chien (Loudéac) | auplaisirduchien22@gmail.com | 18/11/2026 | envoyé | |
 | 107 | Hôtel Le Clos d'Amboise (Amboise) | infos@leclosdamboise.com | 18/11/2026 | envoyé | |
-| 115 | Camping La Grande Tortue (Candé-sur-Beuvron) | camping@grandetortue.com | 19/11/2026 | réponse 19/11 | supplément animal 5 €/nuit et par animal ; fiche corrigée le 19/11 (titre avec supplément) ; réponse de remerciement à envoyer après la mise en ligne |
+| 108 | K-Nin Concept Store (Belfort) | kninconceptstore@gmail.com | 20/11/2026 | envoyé | série 9 |
+| 109 | Clebs Concept Store (Rennes) | hello@clebs-store.fr | 20/11/2026 | envoyé | série 9 |
+| 110 | Pension Innovadog (Plieux) | pensioninnovadog@gmail.com | 20/11/2026 | envoyé | série 9 |
+| 111 | FlashDogPro (Aix-les-Bains) | flashdogpro@flashdogpro.com | 20/11/2026 | envoyé | série 9 |
+| 112 | Welldog (Divatte-sur-Loire) | contact@welldog.fr | 20/11/2026 | envoyé | série 9 |
+| 113 | Rebel Dogs Academy (Angers) | info@rebeldogs.academy | 20/11/2026 | envoyé | série 9 |
+| 114 | Camping Bellevue (Montferrat) | campingbellevue38@gmail.com | 20/11/2026 | envoyé | série 9 |
+| 115 | Camping La Grande Tortue (Candé-sur-Beuvron) | camping@grandetortue.com | 19/11/2026 | réponse 19/11 | supplément animal 5 €/nuit et par animal ; fiche corrigée le 19/11 (titre avec supplément) ; remerciement envoyé le 20/11 |
+| 116 | Camping La Maïade (Mimizan) | contact@campinglamaiade.fr | 20/11/2026 | envoyé | série 9 |
+| 117 | Camping Dolce Vita (Calvi) | info@dolce-vita-calvi.com | 20/11/2026 | envoyé | série 9 |
+| 118 | Camping de la Presqu'île (Crozon) | info@campingcrozon.bzh | 20/11/2026 | envoyé | série 10 |
+| 119 | Hôtel Château des Forges (Angers) | contact@lechateaudesforges.fr | 20/11/2026 | envoyé | série 10 |
+| 120 | Camping l'Île Blanche (La Flotte-en-Ré) | contact@ile-blanche.com | 20/11/2026 | envoyé | série 10 |
+| 121 | Camping Lou Pignada (Ondres) | info@camping-loupignada.com | 20/11/2026 | envoyé | série 10 |
+| 122 | Camping de l'Ombrade (Aurillac) | campingombrade@aurillacagglo.fr | 20/11/2026 | envoyé | série 10 |
+| 123 | Lave Ton Dog (Argelès-sur-Mer) | info@lavetondog.com | 20/11/2026 | envoyé | série 10 |
+| 124 | Lucky Wash (Poitiers) | contact@luckywash.fr | 20/11/2026 | envoyé | série 10 |
+| 125 | Hôtel La Couronne (Riquewihr) | couronne@hoteldelacouronne.com | 20/11/2026 | envoyé | série 10 |
+| 126 | Hôtel Le Tremplin (Méribel) | info@hoteltremplin.com | 20/11/2026 | envoyé | série 10 |
+| 127 | Hôtel Les Fougères (Soorts-Hossegor) | contact@hotel-lesfougeres.fr | 20/11/2026 | envoyé | série 10 |
 
 **15/11/2026** : article Bimo n° 6 (fêtes de fin d'année) préparé : `/guide-fetes-repas-chien` (`src/guides/fetes-repas-chien.njk`, image `src/assets/guides/chien-fetes-repas-maison-aliments-a-eviter(-og).jpg`), en ligne avec la prochaine mise en ligne (16/11). Chaque affirmation relue sur sa source (ASPCA conseils fêtes, aliments à éviter et aliments à partager ; CAPAE-Ouest chocolat et raisin ; FDA xylitol ; AAHA pancréatite ; WSAVA guide des friandises ; Ordre des vétérinaires). Corrections : « les os cuits » → os de volaille (ASPCA), « cuits comme crus » attribué à la WSAVA ; échalote attribuée à ASPCA + WSAVA ; « courge cuite » → « potiron cuit » (ASPCA) ; phrase commerciale « C'est justement le rôle de Bimo » → « Des outils comme Bimo peuvent aider » ; section « Fiche image SEO » retirée ; liens internes (feux d'artifice, Noël avec son chien, vétérinaires, urgence vétérinaire, hébergements) ; lien depuis `/noel-chien` et « À lire aussi » des restaurants. Prochain sujet proposé à Bimo : hiver/montagne, vers mi-janvier 2027 (choix de l'utilisateur le 15/11 : l'article des fêtes, reçu mi-novembre, couvre décembre ; publication avant les vacances de février).
 
@@ -161,3 +180,5 @@ Statut : `envoyé` · `réponse` · `lien reçu` · `refus`. Textes dans `propos
 - **La Maison Plûme (Villequier, 76)** — réponse reçue le 16/11/2026 au mail de la série 3 : supplément animal 20 €/nuit (option de réservation), balades (voies piétonnes au bord de la Seine, sacs gratuits sur le quai, forêt derrière la maison), photo de la maison fournie pour remplacer la photo Unsplash. Fiche corrigée le 16/11 ; réponse prête dans `propositions/liens-entrants/reponses-a-envoyer-apres-mise-en-ligne.md`, à envoyer après la prochaine mise en ligne. Pas de lien demandé dans cette réponse (déjà demandé dans le premier mail).
 
 - **Réponses envoyées le 16/11/2026** (après la mise en ligne de 15 h 39) : La Maison Plûme, Domaine Arleblanc, Camping de l'Océan (Kerhostin), Pôle Canin (Cestas), Debbie et les chiens (mot de remerciement).
+
+- **Envoyés le 20/11/2026** (après la mise en ligne du 20/11) : réponses au Camping La Grande Tortue, à Poppy's Dogs et au Dogwash Mende ; séries 9 (n° 108-117, sauf 115) et 10 (n° 118-127). 125 demandes de liens envoyées au total (105 au 18/11, n° 115 le 19/11, 19 le 20/11).
