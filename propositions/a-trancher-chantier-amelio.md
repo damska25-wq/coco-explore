@@ -225,3 +225,7 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | Dogwash Chennevières, Dogwash Publier (lot 923) | La page officielle ne cite pas de libre-service ; titres neutres | Reclasser en toiletteur ou animalerie si le libre-service reste introuvable |
 | Rémalard, Montrollet (lot 923) | Fermeture (définitive / temporaire) signalée par Google Maps seulement | Garder avec doute |
 | Cast & Dog's ; dogwash Le Chalet (Bastia) ; Aqua Toutou (lot 924) | Aucune source récente (Cast & Dog's, site hors service) ; borne de Bastia non confirmée récemment ; installation modifiée selon des avis (Aqua Toutou) | Garder avec doute ; supprimer Cast & Dog's si rien d'ici le printemps |
+| Model's Canin (Le Pouzin), Ô Truffes Zen (Brioude), Poppyland (Vineuil) (lot 926) | Toiletteurs sans libre-service, classés en dogwash | Fait le 20/11 : reclassés en toiletteur, slugs renommés avec 301 (règle du 31/10) |
+| La Réserve Animale, Paris 19e (lot 926) | Animalerie ; libre-service cité seulement par des avis | Supprimer avec 301 ou reclasser |
+| Dog Wash Tom&Co Cherbourg-Tourlaville (lot 927) | Absent de la liste officielle Tom&Co à deux lectures | Supprimer avec 301 |
+| My Dogwash Marseille (lot 926) | « Temporairement fermée » sur Google Maps seulement | Garder avec doute |
