@@ -234,3 +234,5 @@ Rien n'est supprimé ni renommé sans ton accord. Les fiches restent en ligne av
 | etang-urbino-aleria-2b (lot 934) | Étang à Ghisonaccia (Conservatoire du littoral) : lieu et cardTag corrigés le 20/11 ; l'adresse de page dit encore « aleria » | Renommer le slug avec 301 (lot de renommages groupé) |
 | Pré-Martin (lot 934) | Adresse de page « mortagne-au-perche », lieu réel Merlerault-le-Pin | Renommer le slug avec 301 (lot de renommages groupé) |
 | Ferme des Colombons (lot 934) | Site inaccessible, titre et supplément gardés sans relecture | Revoir plus tard |
+| hebergement-hotel-forum-beausoleil (lot 948) | Hôtel devenu Alfred Hotels Monaco ; ancien domaine forumhotel.net détourné (retiré) ; l'adresse de page dit encore « forum » | Renommer le slug avec 301 (lot de renommages groupé) |
+| La Réserve, Albi (lot 948) | Fermé temporairement jusqu'à fin avril 2027 (site officiel) ; supplément 15 € lu en cache du 30/10 | Garder |
