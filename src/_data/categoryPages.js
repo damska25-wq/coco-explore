@@ -132,7 +132,7 @@ export default [
     cat: "dogwash",
     slug: "dogwash-chien",
     label: "Dogwash",
-    tag: "Douche à chien",
+    tag: "Dogwash",
     minFiches: 5,
     unit: ["station", "stations"],
     nearby: true,

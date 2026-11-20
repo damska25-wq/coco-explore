@@ -15,7 +15,7 @@
     { catIds: ["plages", "cote-azur"], label: "Plages", color: "#BE5B3B", activeBg: "#ba593a" },
     { catIds: ["lacs"], label: "Lacs & points d'eau", color: "#3E7CB1", activeBg: "#3d79ad", more: true },
     { catIds: ["activites"], label: "Activités", color: "#3E8E7E", activeBg: "#388071", more: true },
-    { catIds: ["dogwash"], label: "Douche à chien", color: "#2A9D9D", activeBg: "#228181", more: true },
+    { catIds: ["dogwash"], label: "Dogwash", color: "#2A9D9D", activeBg: "#228181", more: true },
     { catIds: ["toiletteurs"], label: "Toiletteurs", color: "#A65C8C", activeBg: "#A65C8C", more: true },
     { catIds: ["education"], label: "Éducation canine", color: "#4F6D7A", activeBg: "#4F6D7A", more: true }
   ];

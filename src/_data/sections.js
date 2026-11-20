@@ -56,9 +56,9 @@ export default [
   },
   {
     id: "dogwash",
-    eyebrow: "Douche à chien",
+    eyebrow: "Dogwash",
     heading: "Rincer son chien après la plage ou la balade",
-    catGrid: { icon: "i-drop", label: "Douche à chien", countIds: ["dogwash"] },
+    catGrid: { icon: "i-drop", label: "Dogwash", countIds: ["dogwash"] },
   },
   {
     id: "toiletteurs",
