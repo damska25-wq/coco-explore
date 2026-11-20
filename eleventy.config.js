@@ -86,6 +86,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/card-filter.js");
   eleventyConfig.addPassthroughCopy("src/geoloc.js");
   eleventyConfig.addPassthroughCopy("src/search.js");
+  eleventyConfig.addPassthroughCopy("src/home-loader.js");
   eleventyConfig.addPassthroughCopy("src/favoris.js");
   eleventyConfig.addPassthroughCopy("src/dept-filter.js");
   eleventyConfig.addPassthroughCopy("src/dept-map.js");

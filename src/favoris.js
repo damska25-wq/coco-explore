@@ -66,7 +66,7 @@
       var thumb = document.createElement("div");
       thumb.className = "thumb";
       var img = document.createElement("img");
-      img.src = l.img;
+      img.src = l.img || ("https://images.unsplash.com/photo-" + l.u + "?crop=entropy&cs=tinysrgb&fit=max&w=600&q=80&auto=format%2Ccompress");
       img.alt = l.titre + " — " + l.categorie;
       img.loading = "lazy";
       thumb.appendChild(img);
