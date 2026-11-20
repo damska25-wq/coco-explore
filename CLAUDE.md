@@ -6,6 +6,7 @@ Guide gratuit en ligne pour voyager avec son chien en France (plages, restaurant
 
 ## Conventions du projet (voir aussi contexte de session)
 
+- **Format des mails à envoyer (20/11/2026, demande de l'utilisateur)** : toujours donner chaque mail avec l'adresse, l'objet et le texte dans **trois blocs séparés** (blocs de code, un bouton copier chacun), dans la réponse et dans un fichier `propositions/liens-entrants/A-COPIER-AAAA-MM-JJ.md` (exemple : `A-COPIER-2026-11-20.md`).
 - **Signature des mails (12/11/2026, demande de l'utilisateur)** : toujours « Damien » puis « Coco Explore — cocoexplore.com », **jamais le nom de famille** de l'utilisateur (ni dans la signature ni dans le corps).
 - **Tout ce qu'on ajoute doit être lié au chien** (rappel de l'utilisateur, 29/10/2026) : lieux et établissements qui accueillent les chiens (preuve officielle), services pour chiens (vétérinaires, toiletteurs, dogwash, garde, éducation), ou information utile au propriétaire de chien (règle d'interdiction d'un lieu très fréquenté, titre explicite). Jamais un lieu « généraliste » sans rapport avec le chien.
 - **Toute nouvelle fiche est créée en mode SIRENE, rigueur maximale, sans exception** (règle de l'utilisateur, 29/10/2026) : chaque information lue sur une source officielle (site de l'établissement, mairie, arrêté, office de tourisme, gestionnaire), rien d'inventé, doutes visibles si les sources divergent, pas de doublon avec une fiche existante. Méthode : `scratchpad/brief-verif.md` + brief de création du chantier en cours.
