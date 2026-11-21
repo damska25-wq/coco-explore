@@ -308,6 +308,14 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
   cursor: pointer;
 }
 .search-bar button:hover { background: var(--terracotta-deep); }
+.search-bar input { min-width: 0; width: 0; }
+.hero-text { min-width: 0; }
+.search-bar .search-mic { background: transparent; color: var(--terracotta); padding: 10px 12px; margin-right: 4px; display: inline-flex; align-items: center; justify-content: center; }
+.search-bar .search-mic[hidden] { display: none; }
+.search-bar .search-mic:hover { background: rgba(190,91,59,0.1); }
+.search-bar .search-mic.listening { background: var(--terracotta); color: var(--blanc); animation: mic-pulse 1.2s ease-in-out infinite; }
+@keyframes mic-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(190,91,59,0.5); } 50% { box-shadow: 0 0 0 8px rgba(190,91,59,0); } }
+@media (prefers-reduced-motion: reduce) { .search-bar .search-mic.listening { animation: none; } }
 
 .search-results {
   position: absolute;

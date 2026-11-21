@@ -73,4 +73,45 @@
     load();
   }
   window.addEventListener("hashchange", load);
+
+  // Recherche vocale : API du navigateur (Chrome, Safari, Edge), sans service
+  // ajouté par le site. Le bouton reste caché si le navigateur ne la propose pas.
+  var mic = document.getElementById("site-search-mic");
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (mic && input && SR) {
+    mic.hidden = false;
+    var rec = null;
+    var placeholder = input.placeholder;
+    mic.addEventListener("click", function () {
+      if (rec) { rec.stop(); return; }
+      load();
+      rec = new SR();
+      rec.lang = "fr-FR";
+      rec.interimResults = true;
+      rec.maxAlternatives = 1;
+      mic.classList.add("listening");
+      mic.setAttribute("aria-pressed", "true");
+      input.value = "";
+      input.placeholder = "Je t'écoute… (ex. : plage chien Hyères)";
+      rec.onresult = function (e) {
+        var text = "";
+        for (var i = 0; i < e.results.length; i++) text += e.results[i][0].transcript;
+        input.value = text.replace(/[.!?]+$/, "");
+        input.dispatchEvent(new Event("input"));
+      };
+      rec.onerror = function (e) {
+        if (e.error === "not-allowed" || e.error === "service-not-allowed") {
+          input.placeholder = "Micro refusé : autorise-le dans ton navigateur, ou écris ta recherche.";
+        }
+      };
+      rec.onend = function () {
+        mic.classList.remove("listening");
+        mic.setAttribute("aria-pressed", "false");
+        if (!input.value) { setTimeout(function () { input.placeholder = placeholder; }, 3000); }
+        else { input.placeholder = placeholder; input.focus(); }
+        rec = null;
+      };
+      try { rec.start(); } catch (err) { rec = null; mic.classList.remove("listening"); }
+    });
+  }
 })();
