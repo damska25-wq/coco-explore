@@ -1,0 +1,24 @@
+# Rapport : hébergements Aude (11) (lues le 22/11/2026)
+
+10 fiches prêtes (heroImage vide, order 0, departement ["11"]) ; rien dans src/. Front matter vérifié avec js-yaml (10 OK), 317-378 mots visibles, titres 38-68 car., descriptions ≤ 158 car. Sowell : supplément retiré du titre (79 car.), gardé dans description et texte. Le titre des fiches Port-Leucate utilise « Port-Leucate » (comme la fiche existante du camping Rives des Corbières).
+
+## Fiches
+
+- hotel-sowell-les-chevaliers-carcassonne | Sowell Hôtels Les Chevaliers, Carcassonne | 1 animal/hébergement, 10 €/nuit, interdit dans les locaux communs (restaurant, terrasse), à réserver avant l'arrivée | ouvert toute l'année | sowell.fr (page hôtel, FAQ hôtel, FAQ générale animaux) | BAN 0,965 | aucun doute
+- hotel-mercure-carcassonne-la-cite | Hôtel Mercure Carcassonne La Cité, Carcassonne | « Pet Friendly » + « Animaux acceptés », supplément et limites non publiés | accueil « toute l'année », piscine juin-septembre | all.accor.com (FR + EN) | BAN 0,969 | supplément non publié (encadré)
+- hotel-ibis-styles-carcassonne-la-cite | ibis Styles Carcassonne La Cité, Carcassonne | « Animaux acceptés », supplément et limites non publiés | piscine en saison, ouverture annuelle non écrite | all.accor.com (FR + EN) | BAN 0,958 | supplément non publié (encadré)
+- hotel-de-la-clape-narbonne-plage | Hôtel de la Clape, Narbonne-Plage | FAQ : animaux domestiques acceptés avec supplément (montant non publié) | période d'ouverture non publiée (seulement horaires d'arrivée selon la saison) | hoteldelaclape.com (accueil + FAQ) | BAN 0,963 | supplément non publié (encadré)
+- hotel-la-residence-narbonne | Hôtel La Résidence, Narbonne | « Animaux de compagnie acceptés (avec supplément) », montant non publié | non précisé | hotelresidence.fr (page Séjour) | BAN 0,965 | supplément non publié (encadré)
+- appart-hotel-zenitude-narbonne-centre | Zenitude Narbonne Centre, Narbonne | « Animaux acceptés* » = prestation en supplément, montant non publié (le 5 € vu sur l'office de tourisme n'est pas repris) | non précisé (réception 7 h-22 h) | zenitude-hotel-residences.com | BAN 0,972 | supplément non publié (encadré)
+- hotel-du-mas-vinassan | Hôtel du Mas, Vinassan (à 10 min de Narbonne) | animaux de compagnie admis, à signaler avant l'arrivée, supplément non publié | non précisé | hoteldumas.com (accueil + FAQ) | BAN 0,957 | supplément non publié (encadré) ; commune hors liste de priorité mais proche de Narbonne
+- hotel-rev-hotel-port-leucate | Rêv'Hôtel, Port-Leucate | 9 €/nuit, 1 animal max/chambre, NON admis en juillet et août | ouvert toute l'année | hotel-leucate.fr | BAN 0,74 (rue du Moulinas, bonne commune) | aucun doute (le tarif parking du site se contredit, non repris)
+- hotel-des-2-golfs-port-leucate | Hôtel des 2 Golfs, Port-Leucate | 8 €/animal/nuit, 1 par chambre, jamais seul en chambre | ouvert toute l'année | hoteldes2golfs.com (conditions, accueil, accès) | adresse du site « quai du Paurel » sans numéro, BAN 0,517 refusé : coordonnées GPS publiées par l'hôtel (42.8565938, 3.0364051), recoupées par BAN « 90 rue du Dour » (0,951, ~40 m) | limite de taille non publiée (encadré) ; les pages OT du site annoncent « 3 étoiles » sans qu'il soit écrit dans la fiche
+- residence-vvf-port-leucate | Résidence VVF Port-Leucate (Leucate) | 6 €/nuit/animal à la réservation, 8 € sur place, catégories 1 et 2 refusées | saisonnière : du 3 avril au 19 septembre 2027 (page VVF) | vvf.fr (page résidence + page animaux) | BAN 0,952 (rue de la Prade, adresse sans numéro : position au niveau de la rue) | « Infos pratiques » de la résidence non lues en détail : conditions de période/nombre renvoyées au site (encadré) ; pas de « supplément » dans le titre car 6 € ou 8 € selon le mode de réservation
+
+## Écartés
+
+- Tribe Carcassonne : « animaux acceptés » seulement sur les offices de tourisme (Carcassonne/Grand Carcassonne, supplément 20 €) ; la page Accor de l'hôtel (lue) ne liste pas les animaux.
+- Hôtel Le Donjon (Cité) : office de tourisme seul ; les pages hotel-donjon.fr lues ne disent rien des animaux.
+- Hôtel Espace Cité, Audotel, ibis Carcassonne Centre, Novotel Narbonne Sud, B&B Narbonne 2, ibis budget Narbonne Est, Domaine/camping Port-la-Nouvelle (Novela, mobil-home Qualidog) : pages officielles propres non lues ou ne confirmant pas ; office de tourisme ou annuaire seul. À reprendre si un second lot est demandé.
+- Déjà en base (doublon) : Hôtel de la Cité MGallery, ibis budget Carcassonne La Cité, Cerise Carcassonne Sud, Hôtel du Port (Port-la-Nouvelle), Phoebus, Sunrise Beach, Château Le Bouïs, Île du Gua Suites (Gruissan/Narbonne), camping Rives des Corbières, Sandaya La Franqui, camping LVL, Barberousse.
+- Aucun établissement de la liste n'apparaît dans CLAUDE.md, a-trancher-chantier-amelio.md ni decisions-en-attente-2026-11-20.md (grep fait). Gruissan et Port-la-Nouvelle : pas de nouvelle fiche, les établissements trouvés sont déjà en base.
