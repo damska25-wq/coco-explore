@@ -14,3 +14,5 @@ Fiches prêtes (heroImage vide, order 0) ; aucune écriture dans src/. Suppléme
 - hotel-des-pins-lege-cap-ferret | Hôtel des Pins, Cap Ferret (Lège-Cap-Ferret) | site de l'hôtel (hoteldespins.fr, tarifs 2026) : « Animal 15 € » sans unité, OT : « Animaux acceptés » ; titre sans supplément (unité non lue) ; saison 2026 jusqu'au 11/11 puis 20/12-03/01/2027 selon l'hôtel ; le site de l'hôtel ne dit pas en toutes lettres « chiens acceptés » (fiche gardée sur l'accord site + OT) ; téléphone lu sur la fiche OT
 
 Tâche A faite le 22/11/2026 : Hôtel des Pins, Océane et Aux Couleurs du Ferret complétés (voir lignes ci-dessus). Restent à relire avant publication : tarifs et dates des autres fiches. Plages : chaque fiche renvoie vers des fiches existantes (Arès, Hume, Andernos, Lège-Cap-Ferret) pour les règles chien, sans rien affirmer de neuf.
+
+- 22/11/2026 : Camping Aux Couleurs du Ferret mis de côté (`a-publier-plus-tard/`), décision de l'utilisateur : touché par les incendies, réouverture annoncée en 2027 ; à publier seulement à la réouverture, après relecture du site.
