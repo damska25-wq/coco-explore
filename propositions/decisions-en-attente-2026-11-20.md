@@ -35,3 +35,6 @@ Crea'Dogs (Roquebrune), La Truffe Poudrée (Albertville), Noms d'un Chien (Redon
 - Cani Cat's Center → toiletteur (`toiletteur-cani-cats-center-auxerre`) ; Le Clos de la Vouge → hébergement (`hebergement-clos-de-la-vouge-vougeot`) ; Les Peupliers de la Rive → Camping Plage des Tonnelles (`hebergement-camping-plage-des-tonnelles-saint-jean-de-monts-85`, nouvelle adresse et position).
 - 17 adresses de pages renommées avec 301 (le club de Garges l'était déjà depuis le 19/11).
 - Pages « Dogwash Bouches-du-Rhône » et « Pension canine Aisne » passées sous 5 fiches (redirection automatique) ; aucune page ville perdue.
+
+## Fait le 22/11/2026 (accord de l'utilisateur)
+- Supprimée avec 301 vers /restaurant-chien-gironde : restaurant-frida-bordeaux (Frida, 27-29 rue Buhan, Bordeaux ; liquidation judiciaire du 14/10/2026, fermeture définitive). À ne pas recréer.
