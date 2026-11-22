@@ -1,0 +1,27 @@
+# Lacs de l'Est (22/11/2026) : 8 fiches, toutes lues le 22/11/2026
+
+heroImage "" et order 0 à attribuer. Aucune fiche dans `src/`. Toutes passent js-yaml, description ≤ 160 caractères, texte ≥ 500 mots. Tous les départements visés (39, 25, 88, 10, 68) n'avaient aucune fiche « lac » avant ; le Jura, le Doubs, les Vosges, l'Aube et la Meuse avaient seulement des balades de tour de lac (Chalain, Clairvaux, Gérardmer, Madine, Orient, Der, Saint-Point, Remoray…), d'où le choix de lacs sans balade dédiée.
+
+| Fiche | Dép. | regleChien | Règle chien lue (source) | Position | Doute |
+|---|---|---|---|---|---|
+| lac-vouglans-maisod-39 | 39 | zones | Chiens interdits sur les 3 plages surveillées (Montagnes du Jura) ; Maisod : arrêté 2024_0009, interdit sur la plage de 10h à 19h (site de la commune) ; ailleurs admis, laisse « d'usage » | BAN « Port de la Mercantine, Maisod », score 0,93 (locality) | arrêté 2024 à reconfirmer ; Orgelet et La Tour-du-Meix non lus individuellement ; Surchauffant fermé depuis le 20/08/2026 |
+| lac-ilay-la-chaux-du-dombief-39 | 39 | toute-annee | Laisse, ne pas approcher la faune (Montagnes du Jura, page des 4 lacs) ; baignade tolérée (OT Haut-Jura Grandvaux, page des 4 lacs) ou interdite (page du lac, Jura Tourisme) | 46.6224549, 5.89198425 : lien itinéraire de la page Montagnes du Jura | divergence des sources sur la baignade (dite dans la fiche) |
+| lac-narlay-le-frasnois-39 | 39 | toute-annee | Laisse, baignade interdite, bivouac et feux interdits (Montagnes du Jura, Jura Tourisme) | 46.6423033, 5.9090872 : lien itinéraire de la page Montagnes du Jura | profondeur 40 à 48 m selon les sources (dit dans la fiche) ; accueil des chiens du camping non lu |
+| lac-bellefontaine-bellefontaine-39 | 39 | toute-annee | Laisse impérative (Montagnes du Jura) ; commune : sentiers, laisse ; baignade interdite | 46.58373, 6.09558 : départ de la fiche Visorando (petit parking D18/D46 près des lacs), source non officielle | position non officielle (dit dans la fiche) ; BAN « Route des Lacs » score 0,94 en 46.5706, 6.0886 était une rue, écartée |
+| lac-mortes-chapelle-des-bois-25 | 25 | toute-annee | Même texte commun aux deux lacs (commune de Bellefontaine, Montagnes du Jura) ; sentier Explore Doubs n° 24 | BAN « Les Mortes, 25240 Chapelle-des-Bois », score 0,94 (street = hameau) | position = hameau où se perd le ruisseau du lac, pas le plan d'eau lui-même (dit dans la fiche) ; un site tiers dit baignade possible, officiel dit interdite |
+| lac-bouzey-sanchey-88 | 88 | zones | Brochure de l'Agglo d'Épinal : laisse, rester sur le sentier ; Épinal Tourisme et Tourisme Vosges : animaux acceptés. Interdiction des chiens sur les 2 plages surveillées l'été : seulement vosges-tourisme.net | BAN « Rue du Lac, Sanchey » (adresse donnée par l'office), score 0,95 | **interdiction des chiens sur les plages sans arrêté ni page d'office lue** (dit dans la fiche) ; accueil des chiens du restaurant non lu |
+| lac-amance-dienville-10 | 10 | zones | Office des Grands Lacs de Champagne : « unique zone autorisée aux chiens » (baignade) ; PNR Forêt d'Orient : règles générales (100 m, laisse du 15/04 au 30/06), fiche rando : laisse | BAN « Port Dienville », score 0,77 (locality) | emplacement exact de la zone de baignade canine non publié ; interdiction des chiens sur la plage de Dienville non lue sur page officielle (déduite de « unique zone »), la brochure Toutourisme 2022 de Troyes dit l'interdiction pour le lac d'Orient |
+| lac-alfeld-sewen-68 | 68 | incertain | Aucune règle de laisse lue ; « animaux acceptés » (Visit Alsace) / « sous conditions » (Massif des Vosges) ; baignade interdite | BAN « Lac d'Alfeld, Sewen », score 0,94 (locality) | titre neutre ; fiche gardée pour la balade des lacs de Sewen et d'Alfeld (6 km, source syndicat mixte), la baignade interdite et l'alerte sur la réserve des Ballons comtois (Visorando, non officiel) |
+
+## Écartés
+- Lac de Chalain, lac de Clairvaux, lac de Bonlieu, lac de l'Abbaye, lacs des Rouges-Truites, Gérardmer, Longemer, Retournemer, Madine, Orient, Der, Saint-Point, Remoray, Chaillexon, Pierre-Percée, Kruth-Wildenstein, Lac Blanc/Lac Noir, lac des Truites, Mittersheim, Contrexéville, Vesoul : déjà couverts par une balade ou une fiche lac sur le site (une fiche lac ne ferait que doublonner).
+- Lac du Temple (Aube) : peu de données propres au lac (surtout la forêt et les observatoires), seulement les règles générales du Parc ; écarté faute d'apport.
+- Lac du Ballon et lac de la Lauch (Haut-Rhin) : seule source lue = presse (DNA, 24/07/2026) pour l'interdiction de baignade « valable aussi pour les chiens » au lac du Ballon, aucune page officielle lue ; écartés.
+- Lac de Sewen (Haut-Rhin) : intégré dans la fiche Alfeld, pas de fiche à part.
+- Lac des Settons, étangs de Lindre (Moselle), lacs de Haute-Marne autres que Liez/Vingeanne (déjà en balade) : non explorés, pas de source de règle chien lue dans le temps imparti.
+- Moselle : aucun lac sans fiche existante identifié avec règle officielle (Mittersheim déjà en balade).
+
+## Remarques
+- Les pages de tourisme lues sont souvent des caches de l'outil de recherche (dates `acquired_at` du 06/11 au 22/11/2026) : relire dates et arrêtés (Maisod 2024, plages surveillées 2026) juste avant publication.
+- La brochure Toutourisme de Troyes date de 2022, la page Maisod de la saison 2024.
+- Les fiches se renvoient entre elles et vers les balades existantes ; les liens vers les fiches nouvelles ne marcheront qu'après publication.
