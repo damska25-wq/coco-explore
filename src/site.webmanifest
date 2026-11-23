@@ -1,23 +1,25 @@
 {
+  "id": "/",
   "name": "Coco Explore",
   "short_name": "Coco Explore",
   "description": "Le guide pour voyager avec son chien partout en France : plages, balades, hébergements, restaurants, vétérinaires.",
-  "start_url": "/",
+  "start_url": "/?source=app",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#F8F3E7",
-  "theme_color": "#3C5943",
+  "theme_color": "#BE5B3B",
   "lang": "fr",
+  "dir": "ltr",
+  "categories": ["travel", "lifestyle"],
   "icons": [
-    {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    },
-    {
-      "src": "assets/apple-touch-icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
   ],
-  "scope": "/"
+  "shortcuts": [
+    { "name": "Carte", "short_name": "Carte", "url": "/#carte", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Guides pratiques", "short_name": "Guides", "url": "/guides", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] }
+  ]
 }
