@@ -7,9 +7,9 @@
   // derrière le bouton « + N autres » (more: true). Ordre d'été au printemps :
   // plages, balades, restaurants, hébergements, vétérinaires, pension canine.
   var CAT_GROUPS = [
+    { catIds: ["balades"], label: "Balades", color: "#3C5943", activeBg: "#3C5943" },
     { catIds: ["hebergements"], label: "Hébergements", color: "#C99A4A", activeBg: "#956e2c" },
     { catIds: ["restaurants"], label: "Restaurants", color: "#D98E3E", activeBg: "#a56520" },
-    { catIds: ["balades"], label: "Balades", color: "#3C5943", activeBg: "#3C5943" },
     { catIds: ["veterinaires"], label: "Vétérinaires", color: "#B0413E", activeBg: "#B0413E" },
     { catIds: ["dogsitters"], label: "Pension canine", color: "#7C6FAE", activeBg: "#796cac" },
     { catIds: ["plages", "cote-azur"], label: "Plages", color: "#BE5B3B", activeBg: "#ba593a" },

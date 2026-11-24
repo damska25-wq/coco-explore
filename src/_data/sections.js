@@ -1,6 +1,12 @@
-// Ordre d'hiver (20/11/2026, même ordre que CAT_GROUPS de src/map.js) : hébergements, restaurants, balades, vétérinaires, pension canine, plages, puis les catégories secondaires.
+// Ordre d'hiver (24/11/2026, même ordre que CAT_GROUPS de src/map.js ; balades en premier, demande de l'utilisateur pour des photos plus naturelles) : balades, hébergements, restaurants, vétérinaires, pension canine, plages, puis les catégories secondaires.
 // Ordre d'été à rétablir au printemps : plages, cote-azur, balades, lacs, restaurants, hebergements, activites, toiletteurs, dogwash, veterinaires, dogsitters, education.
 export default [
+  {
+    id: "balades",
+    eyebrow: "Balades",
+    heading: "Sentiers et chemins à explorer",
+    catGrid: { icon: "i-trail", label: "Balades", countIds: ["balades"] },
+  },
   {
     id: "hebergements",
     eyebrow: "Hébergements",
@@ -12,12 +18,6 @@ export default [
     eyebrow: "Restaurants",
     heading: "Où passer à table sans laisser son chien dehors",
     catGrid: { icon: "i-fork", label: "Restaurants", countIds: ["restaurants"] },
-  },
-  {
-    id: "balades",
-    eyebrow: "Balades",
-    heading: "Sentiers et chemins à explorer",
-    catGrid: { icon: "i-trail", label: "Balades", countIds: ["balades"] },
   },
   {
     id: "veterinaires",
