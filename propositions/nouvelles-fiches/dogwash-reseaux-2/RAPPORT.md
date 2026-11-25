@@ -25,3 +25,7 @@
 
 ## Écartés
 Aucun (pas de doublon : Tom&Co et Zoomalia existants à Compiègne, Lanester, Bressuire sont d'autres enseignes ; Truffaut Saint-Pavace est un autre magasin que Jardiland Saint-Saturnin).
+
+## Jardiland Lanester mis de côté (25/11/2026)
+
+Appel du 25/11/2026 : la station de lavage est à l'arrêt depuis un arrêté municipal pris pendant les périodes de sécheresse, et le magasin ne l'a pas encore remise en service. Fiche déplacée dans `a-publier-plus-tard/` : ne pas la publier tant que le magasin n'a pas confirmé la réouverture (rappeler le 02 97 89 36 36 avant toute publication, puis reporter tarif et fonctionnement).
