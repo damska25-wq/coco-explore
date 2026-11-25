@@ -22,3 +22,5 @@ Saintes (17), Alès (30), Villebarou (41), Trignac (44), Pontivy (56), Perpignan
 
 ## Écartés
 Aucun. Pas de doublon : les fiches existantes à Alès (Helio Wash), Villebarou (Tom&Co) et ailleurs sont d'autres enseignes (liées dans « Aux alentours »).
+
+- 25/11 : Alès confirmé par téléphone (10h-19h, 10 à 15 € selon la taille).
