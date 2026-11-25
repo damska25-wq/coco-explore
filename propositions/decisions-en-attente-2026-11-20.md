@@ -38,3 +38,6 @@ Crea'Dogs (Roquebrune), La Truffe Poudrée (Albertville), Noms d'un Chien (Redon
 
 ## Fait le 22/11/2026 (accord de l'utilisateur)
 - Supprimée avec 301 vers /restaurant-chien-gironde : restaurant-frida-bordeaux (Frida, 27-29 rue Buhan, Bordeaux ; liquidation judiciaire du 14/10/2026, fermeture définitive). À ne pas recréer.
+
+## Fait le 25/11/2026 (décision de l'utilisateur, après appel aux magasins)
+- Supprimées avec 301 vers /departement-seine-et-marne : dogwash-truffaut-ponthierry-77 et dogwash-truffaut-servon-77 (les deux magasins Truffaut n'ont plus de station de lavage chien, confirmé par téléphone le 25/11/2026). À ne pas recréer.
