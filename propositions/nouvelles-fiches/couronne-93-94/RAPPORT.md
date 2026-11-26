@@ -1,0 +1,27 @@
+# Couronne 93 / 94 : 10 fiches, lues le 26/11/2026
+
+heroImage "" et order 0 à attribuer. Aucune fiche dans `src/`. YAML validé avec PyYAML, titres ≤ 80, descriptions ≤ 160, textes 306 à 435 mots, tous les liens internes vérifiés dans `src/fiches`. Géocodage Géoplateforme (score ≥ 0,96 sauf Nogent et Chennevières à 0,74, voir tableau).
+
+| Fichier | Commune | Catégorie | Preuve chien | Sources | Position | Doute |
+|---|---|---|---|---|---|---|
+| activite-caniparc-clairiere-hachiko-bondy-93 | Bondy (93) | Espace canin | Règlement d'usage de la Ville, page d'inauguration (4/07/2026) | ville-bondy.fr (règlement PDF, agenda, page Parcs et jardins) | Rue Andreï Sakharov (0,96), niveau rue | Surface et équipements non publiés. Une copie tierce (windpress) du règlement évoque deux caniparcs (rue Sakharov et avenue de Metz) : non reprise, non confirmée sur le site de la Ville |
+| activite-caniparcs-livry-gargan-93 | Livry-Gargan (93) | Espace canin (3 parcs) | Page « Ville amie des animaux », fiche d'annuaire, règlement | livry-gargan.fr (3 pages) | Coordonnées de la fiche d'annuaire de la Ville (caniparc Espace Jules Verne) | Catégories 1 et 2 : « seules ou avec chiens connus » (page) contre « muselées » (règlement) |
+| activite-caniparcs-rosny-sous-bois-93 | Rosny-sous-Bois (93) | Espace canin (3 parcs) | Page « Les chats et les chiens » (3 rues citées) | rosnysousbois.fr (2 pages) | Rue Lucien-Piron (0,96), niveau rue | Ni numéros, ni horaires, ni règlement ; le « caniparc » des jardins de la Boissière peut recouper l'un des trois |
+| hebergement-ibis-marne-la-vallee-noisy-93 | Noisy-le-Grand (93) | Hôtel | « Animaux acceptés » dans les services (page Accor) | all.accor.com/hotel/1545 | 4 allée Bienvenue (0,96) | Supplément, nombre, taille non publiés |
+| hebergement-adagio-access-saint-denis-pleyel-93 | Saint-Denis (93) | Aparthotel | « Animaux acceptés » (Accor) + « animaux admis » (adagio-city.com) | Accor, Adagio, jeparticipe.saint-denis.fr (caniparc Pleyel) | 10 rue du Docteur Finot (0,97) | Supplément non publié ; caniparc du square du Landy cité sans adresse |
+| activite-parc-canin-dagobert-nogent-94 | Nogent-sur-Marne (94) | Espace canin | Deux articles de la Ville (juillet 2026) | ville-nogentsurmarne.com | Point placé entre rue du Roi-Dagobert (0,74) et rue de l'Armistice (0,97), à contrôler | Horaires, surface, règlement détaillé non publiés |
+| activite-caniparc-parc-bicetre-kremlin-bicetre-94 | Le Kremlin-Bicêtre (94) | Espace canin | Page Parcs et squares de la Ville (215 m²) | kremlinbicetre.fr (2 pages), ancien site Val-de-Marne Tourisme, Le Parisien 2020 | 78 rue du Général Leclerc (0,97) | Horaires divergents (tous les jours / 12h-19h45 / ouvert en permanence) ; admission des chiens dans le reste du parc non dite |
+| activite-caniparc-mail-cordier-chennevieres-94 | Chennevières-sur-Marne (94) | Espace canin | Page « La cause animale », règlement, arrêté 2026/213 ST | chennevieres.com (3 documents), Echo des villes | Mail Daniel Cordier (0,74), niveau rue | Echo des villes (rédigé avec l'IA) : la Ville prévoit de déplacer et agrandir le caniparc ; emplacement à confirmer |
+| hebergement-campanile-creteil-centre-94 | Créteil (94) | Hôtel | Pictogramme « Animaux bienvenus » (page hôtel) + page et FAQ Campanile | creteil-centre.campanile.com, campanile.com (2 pages) | 52 av. du Chemin de Mesly (0,97) | Montant du supplément non publié |
+| hebergement-campanile-creteil-bonneuil-94 | Bonneuil-sur-Marne (94) | Hôtel | Idem | creteil-bonneuil-sur-marne.campanile.com, campanile.com | 2 av. des Bleuets (0,96) | Idem |
+
+Hôtels : les pages Accor et Campanile ont été lues par l'outil de recherche (caches de septembre à novembre 2026) ; relire téléphone et conditions juste avant publication. Le Campanile Créteil Centre affiche un numéro mal formé (« +33 33 0143392315 ») : 01 43 39 23 15 retenu (numéro « Appeler l'hôtel »).
+
+## Écartés
+- Saint-Denis, caniparc de Pleyel (square du Landy) : seulement un billet de la plateforme de participation et un post Facebook, aucune adresse ni règle ; mentionné dans la fiche Adagio, pas de fiche propre. parcachienfrance.com cite une « aire canine allée Françoise Dolto » : annuaire tiers, non retenu.
+- Créteil : un projet de parc canin du budget participatif a été refusé par la Ville le 25/11/2026 (le texte du déposant dit qu'aucun espace canin n'existe). Vitry : parc Joliot-Curie interdit aux animaux, même en laisse ; Ivry, Fontenay, Pantin : pas d'espace canin publié par la Ville.
+- Vincennes : l'espace canin du bois relève de Paris (déjà couvert côté Paris).
+- Restaurants : Le Ruisseau (Saint-Mandé), La Banquette (Vincennes), Le Menec (Nogent), Le Bo'Vincennes : « animaux acceptés » seulement chez l'office de tourisme ou en annuaire ; le site de La Banquette ne cite que l'avis d'un client, ceux du Ruisseau et du Menec sont muets ; Chez Gégène : fermeture provisoire ; Le Pizzo (Montreuil) : fiche communautaire de 2023 seulement. Aucun restaurant retenu.
+- Hôtels écartés : Novotel Marne-la-Vallée Noisy (déjà en ligne : hebergement-novotel-noisy-grand-93), Séjours & Affaires Montreuil (preuve seulement chez ticati et l'office de tourisme), ibis Styles Montreuil, Romainville et B&B (pages officielles non lues).
+- Kremlin-Bicêtre : le caniparc de la rue Danton est cité par la Ville sans adresse : pas de fiche séparée.
+- Deux fiches regroupent trois caniparcs (Livry-Gargan, Rosny-sous-Bois), faute d'adresses et de pages séparées ; trois fiches Accor/Campanile + deux hôtels du même groupe ne dépassent pas 4 par catégorie.
