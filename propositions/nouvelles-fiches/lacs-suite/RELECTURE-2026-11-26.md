@@ -1,0 +1,9 @@
+# Relecture du 26/11/2026 : lacs-suite
+
+Aucun doublon dans src/fiches (grep Vens, Miroirs, Caniel, Enghien, Montendre/Desqueyroux : seulement des fiches d'autres établissements à Enghien). Titres raccourcis à 75 caractères maximum. YAML valide, `heroImage`/`order` laissés vides.
+
+- lac-vens-saint-etienne-de-tinee-06 : OK : règle du cœur de parc (chiens interdits même en laisse ou portés) relue sur le site du parc national ; fiche OT relue ; titre raccourci ; doute FFCAM gardé.
+- lac-miroirs-condette-62 : CORRIGÉ : interdiction « chien tenu même en laisse » relue chez Eden 62, Escapade62 (PDF Geotrek du 01/10/2026) et château d'Hardelot ; position recalée sur le point d'accès publié par Eden 62 (50.645806, 1.613539) ; doute sur la délibération de 2009 gardé.
+- lac-caniel-vittefleur-76 : CORRIGÉ : cyanobactéries confirmées par la presse citant l'ARS (19/06, 11/07, 15/07) et baignade encore interdite le 8/08/2026 (drapeaux rouge et violet) ; ajout : chiens refusés dans les bâtiments (Normandie Tourisme) ; titre raccourci. État actuel de la baignade non connu (hors saison) : encadré existant gardé.
+- lac-enghien-enghien-les-bains-95 : OK : page « Déjection canine » relue (arrêté 2003-024, chiens en laisse) ; arrêté 2003-69 non relu (doute des arrêtés anciens gardé) ; titre raccourci.
+- lac-baron-desqueyroux-montendre-17 : CORRIGÉ : découverte du règlement du lac adopté par le conseil municipal le 5 juin 2026 (bulletin municipal de juin 2026) : chiens en laisse, baignade des animaux interdite, camping/feux/barbecues interdits ; `regleChien` passé de `incertain` à `toute-annee`, titre, description, teaser, infoItems, texte et doute réécrits ; position recalée sur les coordonnées Apidae du lac (45.271782, -0.396113) ; texte intégral du règlement non lu (seul le résumé du bulletin).
