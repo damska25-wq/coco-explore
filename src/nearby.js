@@ -3,7 +3,7 @@
 // lieux est intégrée à la page (window.COCO_NEARBY) ; le calcul de distance
 // se fait dans le navigateur, la position n'est envoyée à aucun serveur.
 (function () {
-  var MAX = 6;
+  var MAX = 8;
 
   function render(pos) {
     var list = document.getElementById("nearby-list");
@@ -24,12 +24,21 @@
       var meta = document.createElement("span");
       meta.className = "nearby-meta";
       meta.textContent = l.l + " · " + (l.km < 1 ? "moins de 1 km" : "environ " + window.CocoGeoloc.formatDistance(l.km));
+      var go = document.createElement("a");
+      go.className = "nearby-go";
+      go.href = "https://www.google.com/maps/dir/?api=1&destination=" + l.a + "," + l.o;
+      go.target = "_blank";
+      go.rel = "noopener";
+      go.setAttribute("data-track", "itineraire-nearby");
+      go.textContent = "Itinéraire ↗";
+      meta.appendChild(document.createTextNode(" · "));
+      meta.appendChild(go);
       li.appendChild(a);
       li.appendChild(meta);
       list.appendChild(li);
     });
     list.hidden = false;
-    status.textContent = "Distances à vol d'oiseau, calculées depuis le centre de chaque commune.";
+    status.textContent = "Distances à vol d'oiseau depuis ta position ; quelques lieux sont placés au centre de leur commune quand l'adresse exacte n'est pas publiée.";
   }
 
   // Les lieux sont chargés à la demande (fichier /nearby-<catégorie>.js), pour ne pas

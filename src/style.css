@@ -1027,6 +1027,7 @@ a.brand:hover .paw { transform: rotate(-8deg) scale(1.08); }
 .nearby-list li { margin: 8px 0; }
 .nearby-list a { font-weight: 700; }
 .nearby-meta { display: block; font-size: 0.85rem; color: rgba(var(--ink),0.65); }
+.nearby-meta .nearby-go { font-weight: 600; white-space: nowrap; }
 
 /* Accueil : bloc « Les grandes villes avec son chien » */
 .city-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
