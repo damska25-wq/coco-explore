@@ -52,3 +52,10 @@ Contrôle par script, sans recherche : liens internes, doublons avec le site, en
 | vendee | 10 | 10 |
 
 Avant chaque lot : relire le `RAPPORT.md` du dossier (positions approximatives, tarifs lus en cache), relire les sources à la date du jour.
+
+## Lot test préparé le 26/11/2026 (décision de l'utilisateur : publication après la mesure Search Console de mi-décembre)
+
+20 fiches : `gard/` (10) et `vosges-jura/` (10).
+- Photos Unsplash attribuées (aucune utilisée ailleurs sur le site), `order` 105051 à 105070, YAML valide, liens internes vérifiés (aucun lien cassé).
+- **À faire juste avant de publier** : relire les sources officielles à la date du jour (tarifs, saisons, règles chiens) et mettre à jour les dates « lues le » ; revérifier la page Kyriad Nîmes (lue en cache de 2025) ; positions approximatives à reprendre si possible : Yelloh Village Petite Camargue (centre d'Aigues-Mortes), Beau Rivage (adresse de l'office) ; Hôtel Beau Site (Malbuisson) : vérifier la réouverture annoncée le 14/12/2026 ; Azureva Bussang : fermé en novembre.
+- Publication : copier les 20 fichiers dans `src/fiches/`, build + check-site, puis mise en ligne.
