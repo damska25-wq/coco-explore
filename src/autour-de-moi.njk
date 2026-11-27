@@ -1,0 +1,21 @@
+---
+permalink: autour-de-moi.html
+permalinkPath: autour-de-moi.html
+title: "Autour de moi avec mon chien : plages, balades, vétérinaires proches"
+description: "Localise-toi et vois d'un coup les plages, balades, hébergements, restaurants, vétérinaires, parcs canins, dogwash et pensions les plus proches de toi."
+layout: base.njk
+---
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Coco Explore", "item": "https://cocoexplore.com/"}, {"@type": "ListItem", "position": 2, "name": "Autour de moi", "item": "https://cocoexplore.com/autour-de-moi"}]}</script>
+<section class="wrap cat-page-intro">
+  <div class="breadcrumb"><a href="/">Coco Explore</a> / Autour de moi</div>
+  <h1>Autour de moi avec mon chien</h1>
+  <p>Un seul bouton pour voir les adresses les plus proches de toi dans chaque catégorie : plages, balades, hébergements, restaurants, vétérinaires, parcs canins, dogwash et pensions. Ta position reste sur ton téléphone : le calcul des distances se fait dans ton navigateur, rien n'est envoyé à un serveur.</p>
+  <div class="nearby-box" id="autour-box">
+    <button type="button" class="map-filter map-filter-all" id="autour-btn">Me localiser</button>
+    <p class="nearby-status" id="autour-status" role="status"></p>
+  </div>
+  <div id="autour-results"></div>
+  <p class="nearby-status">Distances à vol d'oiseau ; quelques lieux sont placés au centre de leur commune quand l'adresse exacte n'est pas publiée. Vérifie toujours la fiche (règles, horaires, saison) avant de partir.</p>
+</section>
+<script src="/geoloc.js" defer></script>
+<script src="/autour.js" defer></script>

@@ -159,6 +159,12 @@ extraScripts: |
 
 {{ bodyHtml | safe }}
 
+{%- if lang != "en" %}
+<section class="wrap fiche-report callout">
+  <p><strong>Une information a changé ?</strong> Fermeture, nouvelle règle pour les chiens, horaires ou tarifs : <a href="mailto:contact@cocoexplore.com?subject={{ reportSubject | urlencode }}&amp;body={{ reportBody | urlencode }}" data-track="signaler-erreur">signale-la en un clic</a>, la fiche sera vérifiée et corrigée.</p>
+</section>
+{%- endif %}
+
 {%- if lang != "en" %}{% set cp = cocoPhotos[slug] %}{% include "coco-photos.njk" %}{% endif %}
 
 {%- if lang != "en" and guidesByCat[breadcrumbCatId] %}
