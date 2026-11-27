@@ -67,7 +67,7 @@
       thumb.className = "thumb";
       var img = document.createElement("img");
       img.src = l.img || ("https://images.unsplash.com/photo-" + l.u + "?crop=entropy&cs=tinysrgb&fit=max&w=600&q=80&auto=format%2Ccompress");
-      img.alt = l.titre + " — " + l.categorie;
+      img.alt = (!l.img || l.img.indexOf("unsplash") > -1) ? "Photo d'illustration" : (l.titre + " — " + l.categorie);
       img.loading = "lazy";
       thumb.appendChild(img);
       var body = document.createElement("div");

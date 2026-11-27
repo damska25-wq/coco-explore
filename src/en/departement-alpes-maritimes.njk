@@ -44,7 +44,7 @@ description: "Beaches, walks, restaurants, accommodation, vets, groomers, dog wa
     <a href="/{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card">
       <div class="thumb">
         {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
-        <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
+        <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{% if 'unsplash' in (fiche.data.heroImage or '') %}Photo d'illustration{% else %}{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}{% endif %}" loading="lazy">
       </div>
       <div class="body">
         <span class="tag">{{ fiche.data.cardTag | safe }}</span>

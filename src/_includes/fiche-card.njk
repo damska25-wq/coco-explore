@@ -4,7 +4,7 @@
 <a href="/{{ fiche.data.permalinkPath | cleanUrl }}" class="fiche-card{% if fiche.data.partenaire %} is-partenaire{% endif %}" data-avis="{{ fiche.data.avisSlug }}"{% if badge %} data-badge="{{ badge.label }}"{% endif %}{% if supp %} data-supp="{{ supp }}"{% endif %}>
   <div class="thumb">
     {%- set cardSrcset = fiche.data.heroImage | imgSrcset %}
-    <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}" loading="lazy">
+    <img src="{{ fiche.data.heroImage | optimizeImg | safe }}"{% if cardSrcset %} srcset="{{ cardSrcset | safe }}" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 380px"{% endif %} alt="{% if 'unsplash' in (fiche.data.heroImage or '') %}Photo d'illustration{% else %}{{ fiche.data.cardTitle | safe }} — {{ fiche.data.cardTag | safe }}{% endif %}" loading="lazy">
     {%- if badge %}<span class="access-badge {{ badge.cls }}">{{ badge.label }}</span>{%- endif %}
 {%- if fiche.data.partenaire %}<span class="partner-badge"><svg width="13" height="13" aria-hidden="true"><use href="#i-medal"/></svg>Partenaire</span>{%- endif %}
   </div>
